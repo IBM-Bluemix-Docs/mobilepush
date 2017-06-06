@@ -9,10 +9,12 @@ copyright:
 {:shortdesc: .shortdesc}
 {:screen:.screen}
 {:codeblock:.codeblock}
+{:pre: .pre}
+{:tip: .tip}
 
 # About Push Notifications 
 {: #overview-push}
-Last updated: 01 June 2017
+Last updated: 06 June 2017
 {: .last-updated}
 
 IBM {{site.data.keyword.mobilepushshort}} is a service with which you can use to send notifications to mobile devices and browsers. Notifications can be targeted to all application users or to a specific set of users and devices using tags. You can administer devices, tags, and subscriptions.  

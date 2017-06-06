@@ -10,9 +10,9 @@ copyright:
 {:screen:.screen}
 {:codeblock:.codeblock}
 
-# Webhooks event-based notification
+# Register for Webhooks event-based notification
 {: #push_step_4_nf_webhook}
-Last updated: 01 June 2017
+Last updated: 06 June 2017
 {: .last-updated}
 
 

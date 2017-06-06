@@ -9,10 +9,12 @@ years: 2015, 2017
 {:shortdesc: .shortdesc}
 {:screen:.screen}
 {:codeblock:.codeblock}
+{:pre: .pre}
+{:tip: .tip}
 
 # Getting started with Push Notifications
 {: #gettingstartedtemplate}
-Last updated: 22 May 2017
+Last updated: 06 June 2017
 {: .last-updated}
 
 {:shortdesc}
@@ -26,7 +28,7 @@ The basic steps that will get you started:
 1. [Obtain your notification provider credentials](/docs/services/mobilepush/push_step_1.html).
 1. [Create a push instance and set it up with the obtained credentials](/docs/services/mobilepush/push_step_2.html)
 1. [Enable push on your mobile application or browser](/docs/services/mobilepush/push_step_3.html)
-1. [Send a Push Notification](/docs/services/mobilepush/push_step_4.html)
+1. [Sending a notification](/docs/services/mobilepush/push_step_4.html)
 
 The following image gives you an overview of the Push Notifications service life cycle.
 

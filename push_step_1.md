@@ -13,7 +13,7 @@ copyright:
 
 # Obtain your notification provider credentials
 {: #push_step_1}
-Last updated: 01 June 2017
+Last updated: 06 June 2017
 {: .last-updated}
 
 To set up {{site.data.keyword.mobilepushshort}} service, you need to obtain the required  credentials from your push notification provider. 
@@ -94,6 +94,7 @@ You must obtain separate certificates for your development and distribution envi
 6. For the Upload CSR file option, click **Choose File**, and select file  `CertificateSigningRequest.certSigningRequest`. 
 7. Click **Continue**.
 8. On the Download, Install and Backup pane, click **Download**. The `aps_development.cer` file is downloaded.
+	
 	![Download certificate](images/push_certificate_download.jpg)	
 	
 6. From the menu, select **Keychain Access > Certificate Assistant > Request a Certificate From a Certificate Authority…** 
@@ -103,6 +104,7 @@ You must obtain separate certificates for your development and distribution envi
 10. Click **Done**. You now have a CSR.
 11. Return to the **About Creating a Certificate Siging Request (CSR)** window and click **Continue**. 
 12. From the **Generate** screen, click **Choose File ...** and select the CSR file that you saved on your desktop. Then, click **Generate**.
+
 	![Generate certificate](images/generate_certificate.jpg)
 13. When your certificate is ready, click **Done**.
 14. On the **Push Notifications** screen, click **Download** to download your certificate, then click **Done**. 
@@ -111,10 +113,13 @@ You must obtain separate certificates for your development and distribution envi
 
 15. On your Mac, go to **Keychain Access > My Certificates**, and locate your newly installed certificate. Double-click the certificate to install it into the Keychain Access.
 16. Select the certificate and private key, and then select **Export** to convert the certificate into the personal information exchange format (`.p12` format).
+
 	![Export certificate and keys](images/keychain_export_key.jpg)
 17. In the **Save As** field, provide the certificate a meaningful name. For example, `sandbox_apns.p12_certifcate` or `production_apns.p12`, then click **Save**.
+	
 	![Export certificate and keys](images/certificate_p12v2.jpg)
 18. In the **Enter a password** field, enter a password to protect the exported items, then click **OK**. You can use this password to configure your APNs settings on the Push console.{: #step18}
+	
 	![Export certificate and keys](images/export_p12.jpg)
 19. The **Key Access.app** prompts you to export your key from the **Keychain** screen. Enter your administrative password for your Mac to allow your system to export these items, and then select the **Always Allow** option. A `.p12` certificate is generated on your desktop.
 

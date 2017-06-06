@@ -12,7 +12,7 @@ copyright:
 
 # Set up service client SDK's
 {: #push_step_3}
-Last updated: 22 May 2017
+Last updated: 06 June 2017
 {: .last-updated}
 
 After you have [obtained your notification credentials](push_step_1.html) and have [configured a push service instance](push_step_2.html), you need to set up the application for using Push Notifications service to register, subscribe and receive push notifications. 
@@ -57,7 +57,7 @@ Complete the following steps using the Firebase Cloud Messaging (FCM) console.
 10. Build the application.
 11. You can choose to register to the Push Notifications service by clicking the Register Device button on the application or by going through [Registering to the service using the Push Android SDK](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-android-push/tree/Doc#register-to-push-notifications-ervice).
 
-Your next step is to [Send a Push Notification](push_step_4.html).
+Your next step is to [Send a notification](push_step_4.html).
 
 
 ## On Cordova applications
@@ -67,7 +67,7 @@ Cordova is a platform for building hybrid applications with JavaScript, CSS, and
 
 To enable Cordova applications to receive push notifications to your devices, you need to configure the [Cordova Plugin Push SDK](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-cordova-plugin-push/tree/Doc#ios-app).
 
-After setting up the Cordova Plugin Push SDK, the next step is to [Send a Push Notification](push_step_4.html).
+After setting up the Cordova Plugin Push SDK, the next step is to [Send a notification](push_step_4.html).
 
 
 ## On iOS applications
@@ -75,7 +75,7 @@ After setting up the Cordova Plugin Push SDK, the next step is to [Send a Push N
 
 To enable iOS applications to receive {{site.data.keyword.mobilepushshort}} to your devices, you need to configure the [iOS SDK for Push Notifications service](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-swift-push/tree/Doc#setup-client-application). 
 
-After setting up the iOS SDK, your next step is to [Send a Push Notification](push_step_4.html).
+After setting up the iOS SDK, your next step is to [Send a notification](push_step_4.html).
 
 
 ## On Web browsers
@@ -83,4 +83,4 @@ After setting up the iOS SDK, your next step is to [Send a Push Notification](pu
 
 To enable your browser applications to receive push notifications, you need to configure the [Web SDK for Push Notifications service](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-javascript-webpush/blob/Doc/README.md).
 
-After setting up the Web SDK, your next step is to [Send a Push Notification](push_step_4.html).
+After setting up the Web SDK, your next step is to [Send a notification](push_step_4.html).
