@@ -33,7 +33,7 @@ To set up FCM and obtain your credentials, complete the steps:
 3. In the navigation pane, select **Settings** > **Project settings**.
 4. Choose the Cloud Messaging tab to obtain your project credentials - Server API Key and a Sender ID. Note that the Server key listed in FCM is the same as Server API Key.
    
-	![Obtaining credentials for FCM](images/push_acme_fcm.jpg)
+	![Obtaining credentials for FCM](images/FCM_settings_2.jpg)
 
 Once you have obtained your FCM credentials, the next step is to [Create a push instance and set it up with the obtained credentials](push_step_2.html).
 

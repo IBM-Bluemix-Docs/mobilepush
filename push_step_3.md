@@ -12,10 +12,12 @@ copyright:
 
 # Set up service client SDK's
 {: #push_step_3}
-Last updated: 06 June 2017
+Last updated: 07 June 2017
 {: .last-updated}
 
-After you have [obtained your notification credentials](push_step_1.html) and have [configured a push service instance](push_step_2.html), you need to set up the application for using Push Notifications service to register, subscribe and receive push notifications. 
+Ensure that you have [obtained your notification credentials](push_step_1.html) and have [configured a push service instance](push_step_2.html). You then need to set up the application for using Push Notifications service to register, subscribe and receive push notifications. 
+
+Based on your requirement, go through the following steps:
 
 
 ## On Android applications
@@ -30,17 +32,18 @@ Complete the steps for [Push Notifications Android SDK](https://github.com/ibm-b
 Complete the following steps using the Firebase Cloud Messaging (FCM) console.
 
 1. In the Firebase console, click the **Project Settings** icon.
-    ![Firebase Project Settings](images/FCM_4.jpg)
+    
+	![Firebase Project Settings](images/FCM_settings_6.jpg)
 
 3. Select **ADD APP** or **Add Firebase to your Android app** icon from the General tab on the Your apps pane.
-    ![Adding Firebase to Android](images/FCM_5.jpg)
-
+    
 4. In Add Firebase to your Android app window, add **com.ibm.mobilefirstplatform.clientsdk.android.push** as the Package Name. The App nickname field is optional. Click **REGISTER APP**. 
-    ![Adding Firebase to your Android window](images/FCM_1.jpg)
+    
+	![Adding Firebase to your Android window](images/FCM_1.jpg)
 
 5. Include the package name of your application, by entering the package name in Add Firebase to your Android app window. The App nickname field is optional. Click **ADD APP**. 
 
-	![Adding the package name of your application](images/FCM_2.jpg)
+	![Adding the package name of your application](images/FCM_settings_4.jpg)
 
 6. The `google-services.json` file is generated. 
 7. Open the app in Android Studio. Copy the `google-services.json` file to your Android application module root directory. Note that the `google-service.json` file includes the added package names.
