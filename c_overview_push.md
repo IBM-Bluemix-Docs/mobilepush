@@ -14,7 +14,7 @@ copyright:
 
 # About Push Notifications 
 {: #overview-push}
-Last updated: 06 June 2017
+Last updated: 07 June 2017
 {: .last-updated}
 
 IBM {{site.data.keyword.mobilepushshort}} is a service with which you can use to send notifications to mobile devices and browsers. Notifications can be targeted to all application users or to a specific set of users and devices using tags. You can administer devices, tags, and subscriptions.  
@@ -22,10 +22,10 @@ IBM {{site.data.keyword.mobilepushshort}} is a service with which you can use to
 You can choose to use the {{site.data.keyword.mobilepushshort}} service either as a part of MobileFirst Services Starter Boilerplate or as Bluemix [Dedicated Services](/docs/dedicated/index.html).  You can also use an SDK (software development kit) and [REST APIs ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://mobile.ng.bluemix.net/imfpush/){: new_window} to further develop your client applications.
 
 
-The {{site.data.keyword.mobilepushshort}} service is enabled for [OpenWhisk](/docs/openwhisk/index.html). OpenWhisk is a distributed, event-driven compute service that is alternatively known as serverless computing. This allows developers to focus on writing application logic, and create actions that are executed on demand.
+The {{site.data.keyword.mobilepushshort}} service is also enabled for [OpenWhisk](/docs/openwhisk/index.html). OpenWhisk is a distributed, event-driven compute service that is alternatively known as serverless computing. This allows developers to focus on writing application logic, and create actions that are executed on demand.
 
 
-## Push Notification service process
+## Service processes
 {: #overview_push_process}
 
 Mobile, Web browser clients and Google Chrome Apps & Extensions can subscribe and register for the {{site.data.keyword.mobilepushshort}} service. On start-up, the client applications will register and subscribe themselves to the {{site.data.keyword.mobilepushshort}} service. The notifications are dispatched to the Apple Push Notification Service (APNs) or Firebase Cloud Messaging (FCM)server and then sent to registered mobile device, browser clients or Chrome Apps & Extensions.
@@ -58,7 +58,7 @@ The {{site.data.keyword.mobilepushshort}} service manages all information relate
 
 Platform specific Push Notifications cloud services such as FCM/GCM or Apple Push Notification Service (APNs) that is used by IBM {{site.data.keyword.mobilepushshort}} service to dispatch notifications to the mobile and browser applications.
 
-### Push security
+### Security
 {: #push-security}
 
 {{site.data.keyword.mobilepushshort}} APIs are secured by two types of secrets:
@@ -77,7 +77,7 @@ Ensure that the `clientSecret` is kept confidential and never hard-coded into th
 
 
 
-## Push Notification message size
+## Message size
 {: #push-message-size}
 
 The {{site.data.keyword.mobilepushshort}} message payload size is dependent on the constraints laid out by the Gateways (FCM/GCM, APNs) and client platforms. 
@@ -85,7 +85,15 @@ The {{site.data.keyword.mobilepushshort}} message payload size is dependent on t
 - For iOS and Safari: For iOS 8 and later, the maximum size allowed is 2 kilobytes. APNs does not send notifications that exceed this limit.
 - For Android, Firefox browser, Chrome browser, and Chrome Apps & Extensions: There is a limitation of 4 kilobytes as the maximum allowed message payload size.
 
-## Push Notifications samples
+## Samples
 {: #push-blog}
 
+Sample applications are available for [Android](https://github.com/ibm-bluemix-mobile-services/bms-samples-android-hellopush/), [Cordova](https://github.com/ibm-bluemix-mobile-services/bms-samples-cordova-hellopush), and [iOS](https://github.com/ibm-bluemix-mobile-services/bms-samples-swift-hellopush).
 You can also find more information at the Push Notifications service [Blog](http://push-notification-service.mybluemix.net/) page.  
+
+
+## Scenario used in this service
+{: #push-scenario}
+
+The {{site.data.keyword.mobilepushshort}} service is explained using the sample scenario of the ACME Bank. The ACME Bank is in the phase of having their legacy IT infrastructure moved to IBM Bluemix Services and is currently building mobile back-end for their customer and employee facing apps. They are using {{site.data.keyword.mobilepushshort}} service to send notification to their customers on banking transactions and other important events and reminders.
+

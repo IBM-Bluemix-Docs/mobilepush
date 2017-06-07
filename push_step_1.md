@@ -13,7 +13,7 @@ copyright:
 
 # Obtain your notification provider credentials
 {: #push_step_1}
-Last updated: 06 June 2017
+Last updated: 07 June 2017
 {: .last-updated}
 
 To set up {{site.data.keyword.mobilepushshort}} service, you need to obtain the required  credentials from your push notification provider. 
@@ -118,7 +118,7 @@ You must obtain separate certificates for your development and distribution envi
 17. In the **Save As** field, provide the certificate a meaningful name. For example, `sandbox_apns.p12_certifcate` or `production_apns.p12`, then click **Save**.
 	
 	![Export certificate and keys](images/certificate_p12v2.jpg)
-18. In the **Enter a password** field, enter a password to protect the exported items, then click **OK**. You can use this password to configure your APNs settings on the Push console.{: #step18}
+18. In the **Enter a password** field, enter a password to protect the exported items, then click **OK**. You can use this password to configure your APNs settings on the Push Notifications service console.
 	
 	![Export certificate and keys](images/export_p12.jpg)
 19. The **Key Access.app** prompts you to export your key from the **Keychain** screen. Enter your administrative password for your Mac to allow your system to export these items, and then select the **Always Allow** option. A `.p12` certificate is generated on your desktop.
