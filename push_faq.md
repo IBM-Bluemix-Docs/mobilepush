@@ -61,11 +61,11 @@ lastupdated: "2017-04-08"
 
 4. Are the notifications that are sent stored in BMS servers?
 
-	Yes, the notifications are stored for a period of 7 days. It is recommended that you do not send any confidential messages as notifications.
+	Yes, the notifications are stored for a period of seven days. It is recommended that you do not send any confidential messages as notifications.
 
 5. Can I send notification to devices in Doze mode?
 
-	No. This feature is not supported.
+	This feature is not supported.
 
 6. What are the different pricing plans available for the Push Notifications service?
 
@@ -74,6 +74,13 @@ lastupdated: "2017-04-08"
 7.  Where can I find more information like tutorials or what's new?
 
 	Go through the Push Notifications service [blog](http://push-notification-service.mybluemix.net/).
+
+8. Is there a difference between a notification and a message?
+
+	Yes. A _message_ is what that user is submitting to the {{site.data.keyword.mobilepushshort}} service. The service dispatches this as a _notification_ to the notification gateway (APNs/FCM), and this is delivered to the device or web browser.
+
+	For every message that you submit to the service, the intended audience receives a notification.
+
 	
 	
 
