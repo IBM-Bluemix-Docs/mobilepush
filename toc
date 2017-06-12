@@ -18,10 +18,12 @@ Push Notifications
     
     {: .navgroup id="reference"}
     {: .topicgroup}
-    Sample applications
+    Sample apps
         [Android](https://github.com/ibm-bluemix-mobile-services/bms-samples-android-hellopush/)
         [Cordova](https://github.com/ibm-bluemix-mobile-services/bms-samples-cordova-hellopush)
         [iOS (Swift)](https://github.com/ibm-bluemix-mobile-services/bms-samples-swift-hellopush)
+	[BluePic](https://github.com/IBM/BluePic)
+        [Online Catalog Store](https://github.com/ibm-bluemix-mobile-services/mobiledashboard-storecatalog-backend)
 
     {: .topicgroup}
     SDK

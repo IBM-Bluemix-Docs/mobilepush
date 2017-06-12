@@ -10,9 +10,9 @@ copyright:
 {:screen:.screen}
 {:codeblock:.codeblock}
 
-# Set up service client SDK's
+# Step 3: Set up service client SDK's
 {: #push_step_3}
-Last updated: 08 June 2017
+Last updated: 12 June 2017
 {: .last-updated}
 
 Ensure that you have [obtained your notification credentials](push_step_1.html) and have [configured a push service instance](push_step_2.html). You then need to set up the application for using Push Notifications service to register, subscribe and receive push notifications. 

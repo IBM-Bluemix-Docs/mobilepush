@@ -10,9 +10,9 @@ copyright:
 {:screen:.screen}
 {:codeblock:.codeblock}
 
-# Sending a notification
+# Step 4: Sending a notification
 {: #push_step_4}
-Last updated: 06 June 2017
+Last updated: 12 June 2017
 {: .last-updated}
 
 

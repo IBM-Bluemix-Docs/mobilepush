@@ -11,9 +11,9 @@ copyright:
 {:screen:.screen}
 {:codeblock:.codeblock}
 
-# Obtain your notification provider credentials
+# Step 1: Obtain your notification provider credentials
 {: #push_step_1}
-Last updated: 07 June 2017
+Last updated: 12 June 2017
 {: .last-updated}
 
 To set up {{site.data.keyword.mobilepushshort}} service, you need to obtain the required  credentials from your push notification provider. 

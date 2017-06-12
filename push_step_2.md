@@ -10,9 +10,9 @@ copyright:
 {:screen:.screen}
 {:codeblock:.codeblock}
 
-# Configure a service instance 
+# Step 2: Configure a service instance 
 {: #push_step_2}
-Last updated: 01 June 2017
+Last updated: 12 June 2017
 {: .last-updated}
 
 Ensure that you have gone through [Obtain your notification credentials](push_step_1.html).

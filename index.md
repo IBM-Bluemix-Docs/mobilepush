@@ -12,9 +12,9 @@ years: 2015, 2017
 {:pre: .pre}
 {:tip: .tip}
 
-# Getting started with Push Notifications
+# Getting started tutorial
 {: #gettingstartedtemplate}
-Last updated: 09 June 2017
+Last updated: 12 June 2017
 {: .last-updated}
 
 {:shortdesc}
