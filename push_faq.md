@@ -29,9 +29,7 @@ lastupdated: "2017-04-08"
 
 3. I get the message "Service workers aren't supported in this browser" when attempting to initialize the SDK for Web Push. What might be the problem? 
 
-	Follow the steps mentioned in [Step 3: Set up Push service client SDK's](push_step_3.html).
-
-	Also ensure that:
+	Follow the steps mentioned in [Step 3: Set up Push service client SDK's](push_step_3.html).	Also ensure that:
  
 	1. You use the right start method. 
 	1. Include the `manifest.json` file in the root folder.
