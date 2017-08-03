@@ -50,7 +50,6 @@ The following optional customization options are supported:
 - Priority: Specifies the options for assigning delivery priority to messages. 
 	- A priority `high` or `max` will result in heads-up notification.
 	- A priority `low` or `default` will not open network connections on a sleeping device. 
-	- A priority `min` will be a silent notification.
 - Visibility: You can choose to set the notification visibility option to either `public` or `private`. 
 	- The `private` option restricts public viewing and you can choose to enable it if your device is secure with a pin or pattern, and the notification setting is set to **Hide sensitive notification content**. When the visibility is set as `private`, a `redact` field must be mentioned. Only the content specified in the `redact` field will show up on a secure locked screen on the device. 
 	- The `public` option would render the notifications to be freely read.
