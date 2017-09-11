@@ -11,8 +11,8 @@ copyright:
 {:codeblock:.codeblock}
 
 # Receive alerts on webhook events
-{: #tag_based_notifications}
-Last updated: 19 June 2017
+{: #webhook_event_based_notifications}
+Last updated: 08 September 2017
 {: .last-updated}
 
 
@@ -25,15 +25,13 @@ Webhooks are user-defined callbacks that are triggered by an event, such as regi
 - **onDeviceUnregister**: A webhook event is triggered when a device is unregistered. 
 - **onSubscribe**: A webhook event is triggered on a user subscribing to a tag.
 - **onUnsubscribe**: A webhook event is triggered for a user unsubscribing to a tag.
-- **onNotificationSend**: A webhook event is triggered for a notification that has been dispatched.
-- **onNotificationFailure**: A webhook event is triggered for notification failures.
 - **onNotificationStatusChange**: A webhook event is  triggered for every notification and denotes the status as SENT, FAILED, OPEN, or SEEN.
 
 
 **Note**: Notification dispatches are done in batches. A message dispatch can have multiple webhook events, that might include both failures and success. 
 The webhook events would have the same messageID as that of the dispatched message. 
 
-For more information on webhooks, see the [IBM Push Notifications REST API ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://mobile.{DomainName}/imfpush/#/webhooks){: new_window}.
+For more information on webhooks, see the [IBM Push Notifications REST API ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console-regional.stage1.ng.bluemix.net/apidocs/800){: new_window}.
 
 ## Receiving alerts on webhook events
 {: #webhook_alert_event}
@@ -98,7 +96,6 @@ Subscribers can choose to receive alerts on webhook events as JSON files. The ev
 		token: 'token1',
 		platform: 'G' },
 		tagName: 'tag1',
-		deviceId: 'device1',
 		subscriptionId: 'b0246677bfa655385fbc2b5532f6443f' },
 		applicationId: 'app1',
 		eventTimeStamp: 1487755527470 }
