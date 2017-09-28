@@ -54,7 +54,7 @@ lastupdated: "2017-06-27"
 
 	The {{site.data.keyword.mobilepushshort}} message payload size is dependent on the constraints laid out by the Gateways (FCM/GCM, APNs) and client platforms. 
 
-	For iOS 8 and later, the maximum size allowed is 2 kilobytes. Note that APNs does not send notifications that exceeds this limit. For Android, Firefox browser, Chrome browser, and Chrome Apps & Extensions, there is a limitation of 4 kilobytes as the maximum allowed message payload size.	
+	For iOS 8 and later, the maximum size allowed is 4 kilobytes. Note that APNs does not send notifications that exceeds this limit. For Android, Firefox browser, Chrome browser, and Chrome Apps & Extensions, there is a limitation of 4 kilobytes as the maximum allowed message payload size.	
 
 8. Are the notifications that are sent stored in BMS servers?
 

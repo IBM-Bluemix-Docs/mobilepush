@@ -14,7 +14,7 @@ copyright:
 
 # About Push Notifications 
 {: #overview-push}
-Last updated: 30 June 2017
+Last updated: 28 September 2017
 {: .last-updated}
 
 IBM {{site.data.keyword.mobilepushshort}} is a service with which you can use to send notifications to mobile devices and browsers. Notifications can be targeted to all application users or to a specific set of users and devices using tags. For every message that you submit to the service, the intended audience receives a notification.
@@ -64,7 +64,7 @@ Platform specific Push Notifications cloud services such as FCM/GCM or Apple Pus
 
 The {{site.data.keyword.mobilepushshort}} message payload size is dependent on the constraints laid out by the Gateways (FCM/GCM, APNs) and client platforms. 
 
-- For iOS and Safari: For iOS 8 and later, the maximum size allowed is 2 kilobytes. APNs does not send notifications that exceed this limit.
+- For iOS and Safari: For iOS 8 and later, the maximum size allowed is 4 kilobytes. APNs does not send notifications that exceed this limit.
 - For Android, Firefox browser, Chrome browser, and Chrome Apps & Extensions: There is a limitation of 4 kilobytes as the maximum allowed message payload size.
 
 ## Samples
