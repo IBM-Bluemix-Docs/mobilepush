@@ -25,12 +25,18 @@ To generate reports for all your the sent notifications, use the Push Messages G
 To generate reports for all your registered devices, use the Push Device Registrations GET report method in [REST APIs](https://mobile.{DomainName}/imfpush/#!/devices/get_apps_applicationId_devices_report){: new_window}.
 	![Registered devices report](images/monitoring_devices.jpg)
 
-Note that the {{site.data.keyword.mobilepushshort}} monitoring tab does not show analytics data.
+
 
 For information on how to enable monitoring utility for your platform:
 
  - [Monitoring push notifications on Android devices](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-android-push/tree/Doc#monitoring).
  - [Monitoring push notifications on iOS applications](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-swift-push/tree/Doc#enable-monitoring).
+
+Note:
+
+1. The {{site.data.keyword.mobilepushshort}} monitoring tab does not show analytics data.
+2. The report that is generated using the REST APIs will be cached and the cache is maintained for thirty minutes.
+Also, the data represented in the graph will be generated from the cached data.
  
 
 
