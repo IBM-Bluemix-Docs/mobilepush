@@ -12,7 +12,7 @@ copyright:
 
 # Monitor notifications 
 {: #push_monitoring}
-Last updated: 22 June 2017
+Last updated: 03 November 2017
 {: .last-updated}
 
 
