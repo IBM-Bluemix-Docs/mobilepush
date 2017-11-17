@@ -28,7 +28,8 @@ Push Notifications
         [Online Catalog Store](https://github.com/ibm-bluemix-mobile-services/mobiledashboard-storecatalog-backend)
 
     {: .topicgroup}
-    SDK        [Android SDK](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-android-push)
+    SDK        
+		[Android SDK](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-android-push)
         [Cordova SDK](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-cordova-plugin-push)
         [iOS SDK](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-swift-push)	
 		[Web SDK](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-javascript-webpush)
