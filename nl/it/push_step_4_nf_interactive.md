@@ -26,11 +26,11 @@ La notifica interattiva può essere inviata utilizzando la console Push Notifica
 
 Dalla console {{site.data.keyword.mobilepushshort}}: 
 
-1. Nella scheda delle notifiche, fai clic su **Invia notifica**.  
+1. Nella scheda delle notifiche, fai clic su **Invia notifica**. 
 2. Scegli i tuoi destinatari per la notifica e fai clic su **Avanti**. 
 3. Nella pagina di composizione della notifica, può essere inviato un push interattivo impostando il tipo su predefinito o misto e specificando il valore della categoria nella scheda del delle opzioni avanzate. 
 
-## Gestione di notifiche interattive  
+## Gestione di notifiche interattive 
 {: #handle_interactive_notifications}
 
 - Per iOS, utilizza [Enable and handle interactive notifications on Swift applications](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-swift-push/tree/Doc#enable-interactive-push-notifications).

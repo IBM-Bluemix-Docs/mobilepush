@@ -10,9 +10,9 @@ years: 2015, 2017
 {:screen:.screen}
 {:codeblock:.codeblock}
 
-# Ricezione di avvisi sugli eventi webhook 
-{: #tag_based_notifications}
-Ultimo aggiornamento: 19 giugno 2017
+# Ricezione di avvisi sugli eventi webhook
+{: #webhook_event_based_notifications}
+Ultimo aggiornamento: 8 settembre 2017
 {: .last-updated}
 
 
@@ -25,15 +25,13 @@ I webhook sono dei callback definiti dall'utente che vengono attivati da un even
 - **onDeviceUnregister**: un evento webhook viene attivato quando viene annullata la registrazione di un dispositivo. 
 - **onSubscribe**: un evento webhook viene attivato per la sottoscrizione dell'utente a una tag.
 - **onUnsubscribe**: un evento webhook viene attivato per l'annullamento della sottoscrizione dell'utente a una tag.
-- **onNotificationSend**: un evento webhook viene attivato per una notifica che è stata inviata.
-- **onNotificationFailure**: un evento webhook viene attivato per gli errori di notifica.
 - **onNotificationStatusChange**: un evento webhook viene attivato per per ogni notifica e indica lo stato come SENT, FAILED, OPEN o SEEN.
 
 
 **Nota**: gli invii delle notifiche vengono effettuati in batch. L'invio di un messaggio può avere più eventi webhook, che possono includere sia errori che esiti positivi. 
 Gli eventi webhook hanno lo stesso messageID del messaggio inviato. 
 
-Per ulteriori informazioni sui webhook, vedi [IBM Push Notifications REST API ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://mobile.{DomainName}/imfpush/#/webhooks "Icona link esterno"){: new_window}.
+Per ulteriori informazioni sui webhook, vedi [IBM Push Notifications REST API ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://console-regional.stage1.ng.bluemix.net/apidocs/800){: new_window}.
 
 ## Ricezione di avvisi sugli eventi webhook
 {: #webhook_alert_event}
@@ -98,7 +96,6 @@ I sottoscrittori possono scegliere di ricevere gli avvisi sugli eventi webhook i
 		token: 'token1',
 		platform: 'G' },
 		tagName: 'tag1',
-		deviceId: 'device1',
 		subscriptionId: 'b0246677bfa655385fbc2b5532f6443f' },
 		applicationId: 'app1',
 		eventTimeStamp: 1487755527470 }

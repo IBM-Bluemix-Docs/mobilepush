@@ -10,9 +10,9 @@ years: 2015, 2017
 {:screen:.screen}
 {:codeblock:.codeblock}
 
-# Passo 4: invio di una notifica
+# Passo 5: invio di una notifica
 {: #push_step_4}
-Ultimo aggiornamento: 22 giugno 2017
+Ultimo aggiornamento: 27 giugno 2017
 {: .last-updated}
 
 
@@ -27,7 +27,7 @@ Per inviare notifiche di push di base, completa la seguente procedura:
 
 2. Nel campo **Message**, componi il messaggio. Scegli di configurare le impostazioni facoltative come richiesto.
 3. Fai clic su **Send**.
-3. Verifica che i tuoi dispositivi abbiano ricevuto la notifica. 
+3. Verifica che i tuoi dispositivi abbiano ricevuto la notifica.
 
 Il seguente screenshot mostra una casella di avviso che gestisce una notifica push
 in primo piano su un dispositivo Android.
@@ -36,7 +36,7 @@ in primo piano su un dispositivo Android.
 Il seguente screenshot mostra una notifica push in background per Android.
 	![Notifica push in background su Android](images/background.jpg)
 
-## Impostazioni Android facoltative  
+## Impostazioni Android facoltative 
 {: #push_step_4_Android}
 
 Puoi anche personalizzare le impostazioni di {{site.data.keyword.mobilepushshort}} per inviare le notifiche ai dispositivi Android. 
@@ -51,7 +51,6 @@ Sono supportate le seguenti opzioni di personalizzazione facoltative:
 - Priorità: specifica le opzioni per l'assegnazione della priorità di consegna dei messaggi. 
 	- Una priorità `high` o `max` creerà una notifica di avviso.
 	- Una priorità `low` o `default` non aprirà le connessioni di rete in un dispositivo silenzioso. 
-	- Una priorità `min` sarà una notifica silenziosa.
 - Visibilità: puoi scegliere di impostare l'opzione di visibilità della notifica su `public` o `private`. 
 	- L'opzione `private` limita la visualizzazione pubblica e puoi scegliere di abilitarla se il tuo dispositivo è protetto da un pattern o un pin e l'impostazione di notifica è impostata su **Hide sensitive notification content**. Quando la visibilità è impostata su `private`, è necessario menzionare un campo `redact`. Solo il contenuto specificato nel campo `redact` sarà visualizzato nella schermata di blocco sicura nel dispositivo. 
 	- L'opzione `public` renderà possibile leggere le notifiche liberamente.
@@ -66,7 +65,7 @@ Sono supportate le seguenti opzioni di personalizzazione facoltative:
 	- Notifiche di testo di grandi dimensioni: puoi scegliere di includere ulteriore testo con un titolo. Assicurati il messaggio di testo di grandi dimensioni e le informazioni sul testo del titolo siano forniti.
 	- Notifiche di stile di posta in arrivo: puoi inviare la notifica nello stile di una notifica della posta in arrivo. Fornisci un test del titolo e il messaggio nelle righe.	 
 
-## Impostazioni iOS facoltative  
+## Impostazioni iOS facoltative 
 {: #push_step_4_ios}
 
 Puoi personalizzare le impostazioni di {{site.data.keyword.mobilepushshort}} per inviare le notifiche ai dispositivi iOS. Sono supportate le seguenti opzioni di personalizzazione facoltative.
@@ -80,7 +79,7 @@ Puoi anche scegliere di abilitare le [notifiche interattive](https://github.com/
 ## Monitoraggio delle notifiche distribuite 
 {: #push_step_4_monitor}
 
-Per configurare il tuo programma di utilità di monitoraggio, utilizza una delle seguenti opzioni:
+Il servizio {{site.data.keyword.mobilepushshort}} fornisce un programma di utilità di monitoraggio per aiutarti a verificare lo stato dei messaggi che vengono inviati. Per configurare il tuo programma di utilità di monitoraggio, utilizza una delle seguenti opzioni:
 
 - [Enable monitoring for Android applications](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-android-push/tree/Doc#monitoring).
 - [Enable monitoring for iOS applications](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-swift-push/tree/Doc#enable-monitoring).

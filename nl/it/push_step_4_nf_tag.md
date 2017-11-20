@@ -12,7 +12,7 @@ years: 2015, 2017
 
 # Notifiche basate sulle tag
 {: #tag_based_notifications}
-Ultimo aggiornamento: 19 giugno 2017
+Ultimo aggiornamento: 30 giugno 2017
 {: .last-updated}
 
 Le notifiche basate sulle tag sono messaggi destinati a tutti i dispositivi sottoscritti a una particolare tag. Le notifiche basate sulle tag
@@ -24,9 +24,7 @@ Le notifiche basate sulle tag sono messaggi destinati a tutti i dispositivi sott
                         base alle tag. Un messaggio viene indirizzato solo alle istanze dell'applicazione client (mobili, browser o come un'applicazione o estensioni) sottoscritte a una tag. Devi prima creare le tag per l'applicazione, impostare le sottoscrizioni di tag e iniziare quindi le notifiche basate sulle tag. Per inviare una notifica basata sulle tag che utilizza la API REST, assicurati che i "tagName" siano forniti all'inserimento nella risorsa messaggi.
 
 Puoi definire le tag e quindi utilizzarle per
-                        inviare e ricevere messaggi. Devi prima creare le tag per l'applicazione, impostare
-                        le sottoscrizioni di tag e iniziare quindi le notifiche basate sulle
-                        tag. Per inviare una notifica basata sulle tag utilizzando la [API REST](https://mobile.{DomainName}/imfpush/){: new_window}, assicurati che i "tagName" siano forniti durante l'inserimento nella risorsa messaggi.
+                        inviare e ricevere messaggi. Devi prima creare le tag per l'applicazione, creare le sottoscrizioni di tag e iniziare quindi le notifiche basate sulle tag. Per inviare una notifica basata sulle tag utilizzando la [API REST](https://mobile.{DomainName}/imfpush/){: new_window}, assicurati che i "tagName" siano forniti durante l'inserimento nella risorsa messaggi.
 
 
 ## Gestione delle tag
@@ -40,7 +38,7 @@ Utilizza la console {{site.data.keyword.mobilepushshort}} per creare ed eliminar
 
 Le notifiche basate sulle tag sono messaggi destinati a tutti i dispositivi sottoscritti a una particolare tag. Ciascun dispositivo può sottoscrivere qualsiasi numero di tag. 
 
-1. Nella console {{site.data.keyword.mobilepushshort}} **Tags**. 
+1. Nella console {{site.data.keyword.mobilepushshort}} **Tags**.
 1. Fai clic sul pulsante + **Crea tag**.   
    1. Nel campo **Nome**, immetti il nome della tag. Ad esempio, "coupons".
    1. Nel campo **Descrizione**, immetti una descrizione della tag.
@@ -67,7 +65,7 @@ Quando viene eliminata una tag, vengono eliminate anche le informazioni associat
 ## Ottieni le tag
 {: #get_tags}
 
-Le tag forniscono un modo per inviare notifiche mirate agli utenti sulla base dei loro interessi, a differenza dai broadcast generali che vengono inviati a tutte le applicazioni. Puoi creare e gestire le tag utilizzando la scheda Tag nella console {{site.data.keyword.mobilepushshort}}oppure utilizzare le API REST. Puoi utilizzare i frammenti di codice per gestire e sottoporre a query le tue sottoscrizioni di tag per la tua
+Le tag forniscono un modo per inviare notifiche mirate agli utenti sulla base dei loro interessi, a differenza dai broadcast generali che vengono inviati a tutte le applicazioni. Puoi creare e gestire le tag utilizzando la scheda Tags nella console {{site.data.keyword.mobilepushshort}}oppure utilizzare le API REST. Puoi utilizzare i frammenti di codice per gestire e sottoporre a query le tue sottoscrizioni di tag per la tua
             applicazione mobile. Puoi utilizzare i frammenti di codice per ottenere sottoscrizioni, sottoscrivere una tag, annullare la sottoscrizione a un tag o ottenere un elenco delle tag disponibili. Copia e incolla questi frammenti di codice nella tua applicazione mobile.
 
 
@@ -100,7 +98,7 @@ Le notifiche basate sulle tag sono messaggi destinati a tutti i dispositivi sott
 
 Crea le tag sulla schermata **Tag**. Per informazioni su come creare le tag, vedi [Creazione di tag](t_manage_tags.html).
 
-1. Dalla console **Push Notification**, fai clic su **Send Notifications**. 
+1. Dalla console **Push Notification**, fai clic su **Send Notifications**.
 1. Seleziona l'opzione **Device by Tag** nell'elenco a discesa **Send To**.
 1. Cerca le tag che vuoi utilizzare e selezionale.
 ![Schermata notifiche](images/tag_notification.jpg)

@@ -11,7 +11,7 @@ lastupdated: "2017-04-08"
 {:codeblock:.codeblock}
 
 
-# Notifiche broadcast  
+# Notifiche broadcast 
 {: #broadcast_notifications}
 
 Le notifiche broadcast sono messaggi destinati a tutte le istanze di un'applicazione installate nei dispositivi mobili, nei browser o implementate come applicazioni Chrome o istanze dell'estensione e configurate per il servizio {{site.data.keyword.mobilepushshort}}. Le notifiche broadcast sono abilitate per impostazione predefinita con qualsiasi applicazione abilitata per {{site.data.keyword.mobilepushshort}}.

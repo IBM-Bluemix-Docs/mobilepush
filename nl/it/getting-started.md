@@ -134,7 +134,7 @@ Avrai bisogno di un [account Bluemix](https://console.bluemix.net/registration/)
 
 3. Inizializza il core SDK e il Push SDK. 
 
-Un posto comune dove inserire il codice di inizializzazione è nel metodo onCreate() dell'attività principale nella tua applicazione Android: 
+Un posto comune dove inserire il codice di inizializzazione è nel metodo onCreate() dell'attività principale nella tua applicazione Android:
 
 ```
 // Inizializza l'SDK

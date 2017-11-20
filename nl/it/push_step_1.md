@@ -11,9 +11,9 @@ copyright:
 {:screen:.screen}
 {:codeblock:.codeblock}
 
-# Passo 1: ottieni le tue credenziali del provider della notifica
+# Passo 2: ottieni le tue credenziali del provider della notifica
 {: #push_step_1}
-Ultimo aggiornamento: 22 giugno 2017
+Ultimo aggiornamento: 27 giugno 2017
 {: .last-updated}
 
 Per configurare il servizio {{site.data.keyword.mobilepushshort}}, devi ottenere le credenziali dal provider di notifica di push. 
@@ -21,13 +21,13 @@ Per configurare il servizio {{site.data.keyword.mobilepushshort}}, devi ottenere
 ## Per Android
 {: #push_step_1_android}
 
-FCM (Firebase Cloud Messaging) è il gateway utilizzato per consegnare le notifiche di push ai dispositivi Android e al browser Google Chrome e alle estensioni e applicazioni Chrome. Per configurare il servizio {{site.data.keyword.mobilepushshort}} sulla console, devi ottenere le tue credenziali FCM (ID mittente e chiave API).  
+FCM (Firebase Cloud Messaging) è il gateway utilizzato per consegnare le notifiche di push ai dispositivi Android e al browser Google Chrome e alle estensioni e applicazioni Chrome. Per configurare il servizio {{site.data.keyword.mobilepushshort}} sulla console, devi ottenere le tue credenziali FCM (ID mittente e chiave API). 
 
 La chiave API è archiviata in modo protetto e utilizzata dal servizio {{site.data.keyword.mobilepushshort}} per stabilire una connessione al server FCM e l'ID mittente (numero progetto) viene utilizzato dall'SDK Android e dall'SDK JS per Google Chrome e Mozilla Firefox sul lato client. 
 
 Per configurare FCM e ottenere le tue credenziali, completa le seguenti istruzioni:
 
-1. Visita il sito [Firebase Console ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://console.firebase.google.com/?pli=1 "Icona link esterno"){: new_window}. È obbligatorio un account utente Google. 
+1. Visita il sito [Firebase Console ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://console.firebase.google.com/?pli=1){: new_window}. È obbligatorio un account utente Google. 
 2. Seleziona **Add project**. 
 3. Nella finestra Create a project, fornisci un nome progetto, scegli una regione/paese e fai clic su **Create project**.
 3. Nel pannello di navigazione, seleziona **Settings** > **Project settings**.
@@ -35,7 +35,26 @@ Per configurare FCM e ottenere le tue credenziali, completa le seguenti istruzio
    
 	![Ottenimento delle credenziali per FCM](images/FCM_settings_2.jpg)
 
-Una volta che hai ottenuto le tue credenziali FCM, il passo successivo è di [Creare un'istanza di push e configurarla con le credenziali ottenute](push_step_2.html).
+Potresti anche aver bisogno di generare il file `google-services.json`. Completa la seguente procedura:
+
+1. Nella console Firebase, fai clic sull'icona **Impostazioni progetto**.
+    
+	![Impostazioni progetto Firebase](images/FCM_settings_6.jpg)
+
+3. Seleziona **AGGIUNGI APPLICAZIONE** o l'icona **Aggiungi Firebase alla tua applicazione Android** dalla scheda Generale nel pannello Tue applicazioni.
+    
+4. Nella finestra Aggiungi Firebase alla tua applicazione Android, aggiungi **com.ibm.mobilefirstplatform.clientsdk.android.push** come nome pacchetto. Il campo Nome alternativo applicazione è facoltativo. Fai clic su **AGGIUNGI APPLICAZIONE**. 
+    
+	![Aggiunta di Firebase alla tua finestra Android](images/FCM_1.jpg)
+
+5. Includi il nome pacchetto della tua applicazione immettendolo nella finestra Aggiungi Firebase alla tua applicazione Android. Il campo Nome alternativo applicazione è facoltativo. Fai clic su **REGISTRA APPLICAZIONE**. 
+
+	![Aggiunta del nome del pacchetto alla tua applicazione](images/FCM_settings_4.jpg)
+
+6. Viene generato il file `google-services.json`. 
+
+
+Una volta che hai ottenuto le tue credenziali FCM e generato il file `google-services.json`, il passo successivo è [Crea un'istanza del servizio](push_step_2.html).
 
 **Nota**: FCM è la nuova versione di GCM (Google Cloud Messaging). Assicurati di utilizzare le credenziali FCM per le nuove applicazioni. Le applicazioni esistenti continueranno a funzionare con le configurazioni GCM.
 
@@ -53,9 +72,9 @@ Devi ottenere e configurare le tue credenziali APNS. I certificati APNS sono ges
 L'ID applicazione (l'identificativo del bundle) è un identificativo univoco che identifica una specifica
              applicazione. Ogni applicazione richiede un ID applicazione. I servizi come {{site.data.keyword.mobilepushshort}} sono configurati sull'ID applicazione.
 
-Assicurati di disporre di un account [Apple Developers ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://developer.apple.com/ "Icona link esterno"){: new_window}. Questo è un prerequisito obbligatorio.
+Assicurati di disporre di un account [Apple Developers ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://developer.apple.com/){: new_window}. Questo è un prerequisito obbligatorio.
 
-2. Vai al portale [Apple Developer ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://developer.apple.com "Icona link esterno"){: new_window}, fai clic su **Member Center** e seleziona **Certificates, Identifiers & Profiles**.
+2. Vai al portale [Apple Developer ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://developer.apple.com){: new_window}, fai clic su **Member Center** e seleziona **Certificates, Identifiers & Profiles**.
 3. Vai a **Identifiers** > **App IDs section**.
 3. Nella pagina **Registering App IDs**, fornisci il nome dell'applicazione nel campo del nome di descrizione dell'ID dell'applicazione. Ad esempio: ACME Push Notifications.
 4. Fornisci una stringa per il prefisso dell'ID applicazione.  
@@ -88,7 +107,7 @@ Devi ottenere dei certificati separati per gli ambienti di sviluppo e
 
 <!-- Create a development and distribution SSL certificate. -->
 
-1. Vai al sito web [Apple Developer ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://developer.apple.com "Icona link esterno"){: new_window}, fai clic su **Member Center** e seleziona **Certificates, Identifiers & Profiles**.
+1. Vai al sito web [Apple Developer ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://developer.apple.com){: new_window}, fai clic su **Member Center** e seleziona **Certificates, Identifiers & Profiles**.
 2. Nell'area **Identifiers**, fai clic su **App
                             IDs**.
 3. Dall'elenco di ID applicazione, seleziona il tuo ID applicazione e **Edit **.
@@ -126,10 +145,10 @@ Devi ottenere dei certificati separati per gli ambienti di sviluppo e
 
 	![Esporta certificato e chiavi](images/keychain_export_key.jpg)
 17. Nel campo **Save As**, dai al certificato un nome significativo. Ad esempio, `sandbox_apns.p12_certifcate` o `production_apns.p12` e fai quindi clic su **Save**.
-
+	
 	![Esporta certificato e chiavi](images/certificate_p12v2.jpg)
 18. Nel campo **Enter a password**, immetti una password per proteggere gli elementi esportati e fai quindi clic su **OK**. Puoi utilizzare questa password per configurare le tue impostazioni APNS sulla console del servizio Push Notifications.
-
+	
 	![Esporta certificato e chiavi](images/export_p12.jpg)
 19. **Key Access.app** ti chiede di esportare la tua chiave dalla schermata **Keychain**. Immetti la tua password amministrativa per il tuo Mac per consentire al tuo sistema di esportare questi elementi e seleziona quindi l'opzione **Always Allow**. Sul tuo desktop viene generato un certificato `.p12`.
 
@@ -148,8 +167,8 @@ Assicurati di aver registrato un ID applicazione, di averlo abilitato per il ser
 
 Crea un profilo di provisioning di sviluppo nel seguente modo:
 
-1. Vai al portale [Apple Developer ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://developer.apple.com "Icona link esterno"){: new_window}, fai clic su **Member Center** e seleziona **Certificates, Identifiers & Profiles**.
-2. Vai alla [Mac Developer Library ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://developer.apple.com/library/mac/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingProfiles/MaintainingProfiles.html#//apple_ref/doc/uid/TP40012582-CH30-SW62site "Icona link esterno"){: new_window} , scorri fino alla sezione **Creating Development Provisioning Profiles** e segui le istruzioni per creare un profilo di sviluppo.
+1. Vai al portale [Apple Developer ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://developer.apple.com){: new_window}, fai clic su **Member Center** e seleziona **Certificates, Identifiers & Profiles**.
+2. Vai alla [Mac Developer Library ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://developer.apple.com/library/mac/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingProfiles/MaintainingProfiles.html#//apple_ref/doc/uid/TP40012582-CH30-SW62site){: new_window} , scorri fino alla sezione **Creating Development Provisioning Profiles** e segui le istruzioni per creare un profilo di sviluppo.
 **Nota**: quando configuri un profilo di provisioning di sviluppo, seleziona le seguenti opzioni:
 	* **iOS App Development**
 	* **For iOS and watchOS apps **
@@ -160,15 +179,15 @@ Crea un profilo di provisioning di sviluppo nel seguente modo:
 
 Utilizza il profilo di provisioning di archivio per inoltrare la tua applicazione per la distribuzione all'App Store.
 
-1. Vai al portale [Apple Developer ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://developer.apple.com "Icona link esterno"){: new_window}, fai clic su **Member Center** e seleziona **Certificates, Identifiers & Profiles**.
+1. Vai al portale [Apple Developer ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://developer.apple.com){: new_window}, fai clic su **Member Center** e seleziona **Certificates, Identifiers & Profiles**.
 2. Fai doppio clic sul file di provisioning scaricato per installarlo in Xcode.
 
-Dopo aver ottenuto le credenziali FCM, il passo successivo è di [Creare un'istanza di push e configurarla con le credenziali ottenute](push_step_2.html). 
+Dopo aver ottenuto le credenziali FCM, il passo successivo è [Configura un'istanza del servizio](push_step_2.html).
 
 ## Per i browser web e le estensioni e applicazioni Chrome
 {: #configure-credential-for-browsers}
 
-Il servizio IBM {{site.data.keyword.mobilepushshort}} estende le funzionalità per inviare le notifiche al tuo browser e anche alle estensioni e applicazioni Chrome. 
+Il servizio IBM {{site.data.keyword.mobilepushshort}} estende le funzionalità per inviare le notifiche al tuo browser e anche alle estensioni e applicazioni Chrome.
 
 L'URL o il nome dominio del tuo sito Web è richiesto dal servizio {{site.data.keyword.mobilepushshort}} per identificare le richieste che devono essere consentite. 
 
@@ -176,7 +195,7 @@ Ad esempio: `https://www.acmebanks.com`
 
 Un'istanza del servizio {{site.data.keyword.mobilepushshort}} supporta un solo nome dominio alla volta. Pertanto, assicurati che sia impostato lo stesso valore per Chrome, Firefox e Safari. I browser Chrome e Safari richiedono una configurazione aggiuntiva per il push web. Avrai bisogno di una chiave API FCM in quanto viene utilizzato un endpoint FCM per consegnare i messaggi in Chrome. 
 
-Per configurare il servizio per i browser Chrome, Firefox e per le estensioni e applicazioni Chrome, consulta [Configura un'istanza del servizio Push](push_step_2.html).
+Per configurare il servizio per i browser Chrome, Firefox e per le estensioni e applicazioni Chrome, consulta [Configura un'istanza del servizio](push_step_2.html).
 
 
 ### Configurazione del push web per Safari 

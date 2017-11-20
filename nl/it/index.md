@@ -14,7 +14,7 @@ years: 2015, 2017
 
 # Esercitazione introduttiva
 {: #gettingstartedtemplate}
-Ultimo aggiornamento: 12 giugno 2017
+Ultimo aggiornamento: 8 settembre 2017
 {: .last-updated}
 
 {:shortdesc}
@@ -25,10 +25,11 @@ Le notifiche push sono il canale di comunicazione universalmente accettato tra l
 
 Passi di base introduttivi:
 
+1. [Crea un'istanza del servizio Bluemix](/docs/services/mobilepush/push_step_prereq.html)
 1. [Ottieni le tue credenziali del provider della notifica](/docs/services/mobilepush/push_step_1.html)
-1. [Configura un'istanza del servizio](/docs/services/mobilepush/push_step_2.html)
-1. [Configura la SDK client del servizio](/docs/services/mobilepush/push_step_3.html)
-1. [Invio di una notifica](/docs/services/mobilepush/push_step_4.html)
+1. [Configura l'istanza del servizio](/docs/services/mobilepush/push_step_2.html)
+1. [Configura la SDK client del servizio Push](/docs/services/mobilepush/push_step_3.html)
+1. [Invia una notifica](/docs/services/mobilepush/push_step_4.html)
 
 La seguente immagine ti fornisce una panoramica del ciclo di vita del servizio Push Notifications.
 

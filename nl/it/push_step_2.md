@@ -10,28 +10,13 @@ years: 2015, 2017
 {:screen:.screen}
 {:codeblock:.codeblock}
 
-# Passo 2: configura un'istanza del servizio  
+# Passo 3: configura un'istanza del servizio  
 {: #push_step_2}
-Ultimo aggiornamento: 12 giugno 2017
+Ultimo aggiornamento: 27 giugno 2017
 {: .last-updated}
 
 Assicurati di aver consultato [Ottieni le tue credenziali di notifica](push_step_1.html).
 
-I servizi possono essere associati - collegati ad altre applicazioni Bluemix o non associati. Le applicazioni non associate sono autonome e non collegate ad altre applicazioni. Le applicazioni del servizio Push Notifications non sono associate per impostazione predefinita.
-
-Puoi utilizzare una delle seguenti opzioni per creare un servizio associato o non associato:
-
-- Creando un'applicazione Bluemix mediante il contenitore tipo MobileFirst Services Starter dal catalogo. In questo modo si crea un servizio Push Notifications associato a un'applicazione di backend Bluemix.
-- Creando un servizio Push Notifications non associato direttamente dal catalogo Mobile. Puoi associarlo in seguito a un'applicazione o scegliere di utilizzarlo non associato. 
-- Utilizzando il [Catalogo Bluemix ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://console.ng.bluemix.net/catalog/ "Icona link esterno"){: new_window}.
-
-Devi disporre di un [account Bluemix](https://console.bluemix.net/registration/).
-
-Per creare un servizio Push Notifications dal catalogo, completa le seguenti istruzioni:
-
-1. Nel catalogo IBM Bluemix, fai clic su **Mobile** > **Push Notifications**.
-2. Fornisci un nome servizio e un nome credenziale. 
-3. Fai clic su **Create**. Il piano dei prezzi predefinito è Di base. 
 
 ## Per le estensioni e applicazioni Chrome e Android
 {: #push_step_2_Android}
@@ -41,7 +26,7 @@ Assicurati di aver consultato [Ottieni le tue credenziali del provider della not
 
 Per configurare le credenziali FCM per le applicazioni Android e per le estensioni e applicazioni Chrome, completa le seguenti istruzioni:
 
-1. Apri il tuo catalogo Bluemix e fai quindi clic sull'istanza del servizio {{site.data.keyword.mobilepushfull}} che hai creato.  
+1. Apri il tuo catalogo Bluemix e fai quindi clic sull'istanza del servizio {{site.data.keyword.mobilepushfull}} che hai creato. 
 2. Fai clic su **Manage** > **Configure**. 
 3. Scegli una delle seguenti opzioni: 
 	- Per Android: seleziona **Mobile** e quindi aggiorna la scheda delle credenziali push GCM/FCM con l'ID mittente/Numero progetto e la chiave API. 
@@ -69,11 +54,11 @@ Per utilizzare il servizio {{site.data.keyword.mobilepushshort}} per inviare not
 
 **Nota**: dopo che il file `.cer` è presente nel tuo accesso alla catena di chiavi, eseguine l'esportazione sul tuo computer per creare un certificato `.p12`.
 
-Per ulteriori informazioni sull'utilizzo di APNs, vedi [iOS Developer Library: Local and Push Notification Programming Guide ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://developer.apple.com/library/ios/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/Chapters/ProvisioningDevelopment.html#//apple_ref/doc/uid/TP40008194-CH104-SW4 "Icona link esterno"){: new_window}.
+Per ulteriori informazioni sull'utilizzo di APNs, vedi [iOS Developer Library: Local and Push Notification Programming Guide ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://developer.apple.com/library/ios/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/Chapters/ProvisioningDevelopment.html#//apple_ref/doc/uid/TP40008194-CH104-SW4){: new_window}.
 
-Per configurare APNS sulla console dei servizi Push Notification, completa la procedura: 
+Per configurare APNS sulla console dei servizi Push Notification, completa la procedura:
 
-1. Seleziona **Configure** nella console dei servizi Push Notification. 
+1. Seleziona **Configure** nella console dei servizi Push Notification.
 2. Scegli l'opzione **Mobile** per aggiornare le informazioni nel formato **APNs Push Credentials**.
 3. Scegli una delle seguenti opzioni:
 	- Per l'opzione **Mobile**
