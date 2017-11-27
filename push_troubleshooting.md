@@ -12,7 +12,7 @@ copyright:
 
 # Troubleshoot service issues
 {: #errors}
-Last updated: 19 June 2017
+Last updated: 13 July 2017
 {: .last-updated}
 
 This topic guides you in identifying and resolving the likely error scenarios you might encounter when using the Push Notifications service.
@@ -153,7 +153,7 @@ To obtain additional information about an error, search the docs for the related
 **Explanation**: The JSON body of the request has parameters that are not understood by the {{site.data.keyword.mobilepushshort}} server.
 
 
-**User response**: Verify that the JSON body in the request follows the format of the request that is expected by the {{site.data.keyword.mobilepushshort}} server. For more information, see [REST APIs ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://mobile.{DomainName}/imfpush/){: new_window}.
+**User response**: Verify that the JSON body in the request follows the format of the request that is expected by the {{site.data.keyword.mobilepushshort}} server. For more information, see [REST APIs ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console-regional.stage1.ng.bluemix.net/apidocs/800){: new_window}.
 
 
 
@@ -163,7 +163,7 @@ To obtain additional information about an error, search the docs for the related
 **Explanation**: The request URL has a query string with unrecognized parameters. For example, if the request for deleting the subscription has parameters other than deviceId and tagName, this error might occur.
 
 
-**User response**:  Verify that the JSON body in the request follows the format of the request that is expected by the {{site.data.keyword.mobilepushshort}} server. For more information, see [REST APIs ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://mobile.{DomainName}/imfpush/){: new_window}.
+**User response**:  Verify that the JSON body in the request follows the format of the request that is expected by the {{site.data.keyword.mobilepushshort}} server. For more information, see [REST APIs ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console-regional.stage1.ng.bluemix.net/apidocs/800){: new_window}.
 
 
 
@@ -173,7 +173,7 @@ To obtain additional information about an error, search the docs for the related
 **Explanation**: The request URL has a query string with missing required parameters. For example, the deviceId and tagName parameters might be missing from the request for deleting the subscription.
 
 
-**User response**:  Verify that the JSON body in the request follows the format of the request that is expected by the {{site.data.keyword.mobilepushshort}} server. For more information, see [REST APIs ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://mobile.{DomainName}/imfpush/){: new_window}.
+**User response**:  Verify that the JSON body in the request follows the format of the request that is expected by the {{site.data.keyword.mobilepushshort}} server. For more information, see [REST APIs ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console-regional.stage1.ng.bluemix.net/apidocs/800){: new_window}.
 
 
 
@@ -241,7 +241,7 @@ To obtain additional information about an error, search the docs for the related
 **Explanation**: The {{site.data.keyword.mobilepushshort}} service has been disabled for this application. This might be due to billing, or the app might have been disabled by the administrator.
 
 
-**User response**: See the Troubleshooting topics in the Bluemix Docs to check service status, review troubleshooting information, or for information about getting help.
+**User response**: See the Troubleshooting topics in the IBM Cloud Docs to check service status, review troubleshooting information, or for information about getting help.
 
 
 

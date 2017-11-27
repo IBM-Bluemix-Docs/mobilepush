@@ -14,7 +14,7 @@ copyright:
 
 # Security in Push Notifications 
 {: #overview-push}
-Last updated: 27 June 2017
+Last updated: 13 July 2017
 {: .last-updated}
 
 
@@ -23,12 +23,12 @@ The {{site.data.keyword.mobilepushshort}} APIs are secured by two types of secre
 - **appSecret**: The `appSecret` protects APIs that are typically invoked by back end applications - such as the API to send {{site.data.keyword.mobilepushshort}} and the API to configure settings.
 - **clientSecret**:  The `clientSecret` protects APIs that are typically invoked by mobile client applications. There is only one API related to registration of a device with an associated UserId that requires this `clientSecret`. None of the other APIs invoked from mobile clients require the `clientSecret`. 
 
-The `appSecret` and `clientSecret` are allocated to every service instance at the time of binding an application with {{site.data.keyword.mobilepushshort}} service. Refer to the [REST APIs ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://mobile.{DomainName}/imfpush/) documentation for information on how the secrets are to be passed and for what APIs.
+The `appSecret` and `clientSecret` are allocated to every service instance at the time of binding an application with {{site.data.keyword.mobilepushshort}} service. Refer to the [REST APIs ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console-regional.stage1.ng.bluemix.net/apidocs/800) documentation for information on how the secrets are to be passed and for what APIs.
 
 ## appSecret 
 {: #push-api-rest-secret}
 
-When an application binds to the {{site.data.keyword.mobilepushshort}}, the service generates an appSecret (a unique key) and passes it in the response header. If you are using the IBM {{site.data.keyword.mobilepushshort}} for Bluemix Rest API, use the REST API reference to obtain information on which APIs you need to secure. For information, see the [Push REST API ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://mobile.{DomainName}/imfpush/){: new_window}.
+When an application binds to the {{site.data.keyword.mobilepushshort}}, the service generates an appSecret (a unique key) and passes it in the response header. If you are using the IBM {{site.data.keyword.mobilepushshort}} for IBM Cloud Rest API, use the REST API reference to obtain information on which APIs you need to secure. For information, see the [Push REST API ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console-regional.stage1.ng.bluemix.net/apidocs/800){: new_window}.
 
 The request header must contain the appSecret. If not, the server returns a 401 Unauthorized Error code. When the {{site.data.keyword.mobilepushshort}} is added to an application, a specific AppID is created. As part of the response, you get a header called appSecret that is used for creating tags or sending messages. The operation happens through services in the catalog or the boilerplate.
 

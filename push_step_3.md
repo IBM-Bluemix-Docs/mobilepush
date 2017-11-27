@@ -12,7 +12,7 @@ copyright:
 
 # Step 4: Set up service client SDK's
 {: #push_step_3}
-Last updated: 27 June 2017
+Last updated: 21 July 2017
 {: .last-updated}
 
 Ensure that you have [obtained your notification credentials](push_step_1.html) and have [configured a push service instance](push_step_2.html). You then need to set up the application for using Push Notifications service to register, subscribe and receive push notifications. 
@@ -69,3 +69,16 @@ After setting up the iOS SDK, your next step is to [Send a notification](push_st
 To enable your browser applications to receive push notifications, you need to configure the [Web SDK for Push Notifications service](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-javascript-webpush/blob/Doc/README.md).
 
 After setting up the Web SDK, your next step is to [Send a notification](push_step_4.html).
+
+<!---
+## For HTTP/HTTPS endpoint
+{: #push_step3_https}
+
+HTTP endpoint registrations need to be done using [REST API](https://console-regional.stage1.ng.bluemix.net/apidocs/800-push-notifications). The API reference provide information on individual APIs. The following APIs have specific significance in HTTP:
+
+- POST on "/devices" to register a device using HTTP. The token is optional in case of HTTP. The JSON properties need to contain information on the device. The httpPath can be optionally provided so that it can be appended to the call that Push Notification service will make to invoke endpoint.
+- POST on "/messages" to send messages to HTTP endpoint. The messages can be sent targeting the HTTP platform. Additional payload can be included to send data specific to HTTP endpoints.
+
+
+After registering the HTTP/HTTPS endpoint, your next step is to [Send a notification](push_step_4.html).
+--->

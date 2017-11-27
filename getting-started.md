@@ -24,7 +24,7 @@ In this {{site.data.keyword.mobilepushfull}} getting started tutorial, we walk t
 ## Before you begin
 {: #prereqs}
 
-You'll need a [Bluemix account](https://console.bluemix.net/registration/), an instance of the 
+You'll need a [IBM Cloud account](https://console.bluemix.net/registration/), an instance of the 
 {{site.data.keyword.mobilepushshort}} service, and the following tools and requirements:
 
   * Android API 15+

@@ -19,13 +19,13 @@ Last updated: 08 September 2017
 
 {:shortdesc}
 
-{{site.data.keyword.mobilepushshort}} is available as a Bluemix Catalog service in the Mobile category and enables you to send and manage mobile and web push notifications. A push notification is an alert indicating a change or update on a mobile device or browser.
+{{site.data.keyword.mobilepushshort}} is available as an IBM Cloud Catalog service in the Mobile category and enables you to send and manage mobile and web push notifications. A push notification is an alert indicating a change or update on a mobile device or browser.
 
 Push Notifications are an universally accepted communication channel across enterprises or for a wide spectrum of audience. You can deliver these notifications as an onscreen banner alert or to a device's locked screen, thus providing information updates that are quickly and easily accessible.  
 
 The basic steps that will get you started:
 
-1. [Create a Bluemix service instance](/docs/services/mobilepush/push_step_prereq.html)
+1. [Create an IBM Cloud service instance](/docs/services/mobilepush/push_step_prereq.html)
 1. [Obtain your notification provider credentials](/docs/services/mobilepush/push_step_1.html)
 1. [Configure the service instance](/docs/services/mobilepush/push_step_2.html)
 1. [Setup Push service client SDK's](/docs/services/mobilepush/push_step_3.html)

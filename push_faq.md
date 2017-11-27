@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2017
-lastupdated: "2017-06-27"
+lastupdated: "2017-09-28"
 
 ---
 {:new_window: target="_blank"}
@@ -36,7 +36,7 @@ lastupdated: "2017-06-27"
  
 	1. You use the right start method. 
 	1. Include the `manifest.json` file in the root folder.
-	1. Host your website. Preferably create a `node.js` starter in Bluemix to try it out. For example: https://<mysamplewebsite>.mybluemix.net/.	
+	1. Host your website. Preferably create a `node.js` starter in IBM Cloud to try it out. For example: https://<mysamplewebsite>.mybluemix.net/.	
 
 4. How do I resolve Web push web configuration errors?
 
@@ -89,7 +89,7 @@ lastupdated: "2017-06-27"
 	- Open: The number of devices where notification was opened.
 	- Invalid: The number of devices on which the token in invalid.
 
-	For more information, see the GET messages report in [IBM Push Notifications ReST API](https://mobile.ng.bluemix.net/imfpush/).	
+	For more information, see the GET messages report in [IBM Push Notifications ReST API](https://console-regional.stage1.ng.bluemix.net/apidocs/800).	
 
 14. Does push notification monitor the push notification delivery up to the end user device? For both Android and iOS?
 
@@ -101,7 +101,7 @@ lastupdated: "2017-06-27"
 
 16. I am sending notification by tags, but have a long list of tags that might be difficult to add manually. 
 	
-	You can use REST APIs to automate the tag additions. See [POST bulk messages](https://mobile.ng.bluemix.net/imfpush/).
+	You can use REST APIs to automate the tag additions. See [POST bulk messages](https://console-regional.stage1.ng.bluemix.net/apidocs/800).
 
 17. How can I filter the push notification delivery by information stored in the user's mobile device?
 

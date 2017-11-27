@@ -12,7 +12,7 @@ copyright:
 
 # Step 5: Sending a notification
 {: #push_step_4}
-Last updated: 27 June 2017
+Last updated: 03 August 2017
 {: .last-updated}
 
 
@@ -74,6 +74,20 @@ You can customize the {{site.data.keyword.mobilepushshort}} settings for sending
 - **Additional payload**: Specifies the custom payload values for your notifications.
 
 You can also choose to enable [interactive notifications](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-swift-push/tree/Doc#interactive-notifications) and [rich media notifications](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-swift-push/tree/Doc#enabling-rich-media-notifications).
+
+<!---
+## Messages sent to HTTP/HTTPS
+{: #push_step_4_http}
+
+A sample message sent to HTTP/HTTPS would be having the following structure:
+
+```
+{“alert”:“ACME Banks",“payload”:“{\“nid\“:\“Rg1OtTjV\“}”,“properties”: "deviceId": "ACMEBanksDeviceId"}
+```
+	{: codeblock}
+
+The HTTP endpoint will need to parse the message and deliver it to device. 
+--->
 
 ## Monitoring for delivered notifications 
 {: #push_step_4_monitor}

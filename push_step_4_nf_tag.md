@@ -12,12 +12,12 @@ copyright:
 
 # Tag-based notifications
 {: #tag_based_notifications}
-Last updated: 30 June 2017
+Last updated: 13 July 2017
 {: .last-updated}
 
 Tag-based notifications are messages targeted to all devices that are subscribed to a particular tag. Tags-based notifications allow segmentation of notifications based on subject areas or topics. Notification recipients can choose to receive notifications only if it is about a subject or topic that is of interest. Therefore, tags-based notification provides a means to segment recipients. This feature enables the ability to define tags and then send and receive messages by tags. A message is targeted to only the client application instances (on mobile, browser or as an app or extensions) that are subscribed to the tag. You must first create tags for the application, set up the tag subscriptions and then initiate the tag-based notifications. To send a tag-based notification that uses the REST API, ensure that the "tagNames" are provided when posting to the message resource.
 
-You can define tags and then send and receive messages using tags. You must first create the tags for the application, create subscriptions and then initiate the tag-based notifications. To send a Tag-based notification using the [REST API](https://mobile.{DomainName}/imfpush/){: new_window}, ensure that the "tagNames" are provided when posting to the message resource.
+You can define tags and then send and receive messages using tags. You must first create the tags for the application, create subscriptions and then initiate the tag-based notifications. To send a Tag-based notification using the [REST API](https://console-regional.stage1.ng.bluemix.net/apidocs/800){: new_window}, ensure that the "tagNames" are provided when posting to the message resource.
 
 
 ## Managing tags
@@ -86,7 +86,7 @@ Use the following API to allow your devices to retrieve tags, subscribe to a tag
 ## Using tag-based notifications
 {: #using_tags}
 
-Tag-based notifications are messages targeted to all devices that are subscribed to a particular tag. Each device can be subscribed to any number of tags. This topic describes how to send tag-based notifications. Subscriptions are maintained by the {{site.data.keyword.mobilepushshort}} service Bluemix instance. When a tag is deleted, all information associated with that tag, including its subscribers and devices are deleted. No automatic unsubscribe is needed for this tag since it no longer exists and no further action is required from the client side.
+Tag-based notifications are messages targeted to all devices that are subscribed to a particular tag. Each device can be subscribed to any number of tags. This topic describes how to send tag-based notifications. Subscriptions are maintained by the {{site.data.keyword.mobilepushshort}} service IBM Cloud instance. When a tag is deleted, all information associated with that tag, including its subscribers and devices are deleted. No automatic unsubscribe is needed for this tag since it no longer exists and no further action is required from the client side.
 
 Create tags on the **Tag** screen. For information about how to create tags, see [Creating tags](t_manage_tags.html).
 

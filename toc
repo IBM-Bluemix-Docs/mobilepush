@@ -1,4 +1,4 @@
-<!-- Markdown Navigation -->
+	<!-- Markdown Navigation -->
 {: navgroup: .navgroup}
 {: topicgroup: .topicgroup}
 
@@ -24,22 +24,24 @@ Push Notifications
         [Android](https://github.com/ibm-bluemix-mobile-services/bms-samples-android-hellopush/)
         [Cordova](https://github.com/ibm-bluemix-mobile-services/bms-samples-cordova-hellopush)
         [iOS](https://github.com/ibm-bluemix-mobile-services/bms-samples-swift-hellopush)
-	[BluePic](https://github.com/IBM/BluePic)
-        [Online Catalog Store](https://github.com/ibm-bluemix-mobile-services/mobiledashboard-storecatalog-backend)
-
+		[HTTPS endpoint SMS](https://github.com/ibm-bluemix-push-notifications/bms-push-sms-sample)
+		[HTTPS endpoint email](https://github.com/ibm-bluemix-push-notifications/bms-push-email-sample)
+	
+    {: .topicgroup}
+    [Swift App with Push and Analytics](https://console.bluemix.net/docs/tutorials/ios-mobile-push-analytics.html#ios-mobile-application-with-push-and-analytics)
+        
     {: .topicgroup}
     SDK
         [Android SDK](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-android-push)
         [Cordova SDK](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-cordova-plugin-push)
         [iOS SDK](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-swift-push)	
 		[Web SDK](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-javascript-webpush)
-    {: .navgroup-end}
-    
+   	
     {: .topicgroup}
     API reference
         [API Reference for Android](https://www.javadoc.io/doc/com.ibm.mobilefirstplatform.clientsdk.android/push/3.6.1)
         [API Reference for iOS](http://ibm-bluemix-mobile-services.github.io/API-docs/client-SDK/BMSPush/Swift/index.html)
-        [REST API Reference](https://mobile.ng.bluemix.net/imfpush/)
+        [REST API Reference](https://console-regional.stage1.ng.bluemix.net/apidocs/800)
     {: .navgroup-end}
     
     {: .navgroup id="howto"}
@@ -52,8 +54,7 @@ Push Notifications
         push_step_4_nf_adv.md
 
     {: .navgroup id="help"}
-    push_restapi.md
-    push_monitoring.md	
+   	push_monitoring.md	
     push_security.md	
     push_webhook.md
     push_troubleshooting.md
