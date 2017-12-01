@@ -86,7 +86,7 @@ Verwenden Sie die folgende API, um Ihren Geräten das Abrufen von Tags, das Subs
 ## Tagbasierte Benachrichtigungen verwenden
 {: #using_tags}
 
-Tagbasierte Benachrichtigungen sind Benachrichtigungen, die alle diejenigen Geräte zum Ziel haben, die einen bestimmten Tag subskribiert haben. Jedes Gerät kann beliebig viele Tags subskribieren. Dieses Thema beschreibt, wie tagbasierte Benachrichtigungen gesendet werden. Subskriptionen werden von der Bluemix-Instanz des {{site.data.keyword.mobilepushshort}}-Service verwaltet. Wenn ein Tag gelöscht wird, werden alle diesem Tag zugeordneten Informationen (einschließlich Subskribenten und Geräte) gelöscht. Für diesen Tag ist keine automatische Aufhebung der Subskription erforderlich, da er nicht mehr vorhanden ist und daher clientseitig keine weiteren Aktionen nötig sind.
+Tagbasierte Benachrichtigungen sind Benachrichtigungen, die alle diejenigen Geräte zum Ziel haben, die einen bestimmten Tag subskribiert haben. Jedes Gerät kann beliebig viele Tags subskribieren. Dieses Thema beschreibt, wie tagbasierte Benachrichtigungen gesendet werden. Subskriptionen werden von der IBM Cloud-Instanz des {{site.data.keyword.mobilepushshort}}-Service verwaltet. Wenn ein Tag gelöscht wird, werden alle diesem Tag zugeordneten Informationen (einschließlich Subskribenten und Geräte) gelöscht. Für diesen Tag ist keine automatische Aufhebung der Subskription erforderlich, da er nicht mehr vorhanden ist und daher clientseitig keine weiteren Aktionen nötig sind.
 
 Erstellen Sie Tags in der Anzeige **Tag**. Informationen zum Erstellen von Tags finden Sie in [Tags erstellen](t_manage_tags.html).
 

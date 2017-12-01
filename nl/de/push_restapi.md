@@ -28,8 +28,8 @@ Mit der Push-REST-API können Back-End-Serveranwendungen und -Clients auf Funkti
 
 Führen Sie die folgenden Schritte aus, um die Basis-URL für die REST-API abzurufen:
 
-1. Erstellen Sie im Bluemix®-Katalog im Abschnitt 'Boilerplates' eine Back-End-Anwendung. Wählen Sie dazu 'MobileFirst Services Starter' aus. Hierdurch wird der {{site.data.keyword.mobilepushshort}}-Service an die Anwendung gebunden. Sie können auch eine Serviceinstanz von Push erstellen und diese ungebunden lassen. 
-1. Navigieren Sie auf der Hauptseite des Bluemix-Katalogs zum Bereich **Anwendungen** und wählen Sie dort Ihre App aus.
+1. Erstellen Sie im IBM Cloud®-Katalog im Abschnitt 'Boilerplates' eine Back-End-Anwendung. Wählen Sie dazu 'MobileFirst Services Starter' aus. Hierdurch wird der {{site.data.keyword.mobilepushshort}}-Service an die Anwendung gebunden. Sie können auch eine Serviceinstanz von Push erstellen und diese ungebunden lassen. 
+1. Navigieren Sie auf der Hauptseite des IBM Cloud-Katalogs zum Bereich **Anwendungen** und wählen Sie dort Ihre App aus.
 3. Klicken Sie auf **Mobile Systemerweiterungen**. Die Werte für die Route und für die App-GUID werden am Anfang der Detailseite für Ihre App angezeigt. In der Anzeige 'Berechtigungsnachweise anzeigen' werden Informationen über 'AppSecret' angezeigt. Für manche APIs können Sie den geheimen Anwendungsschlüssel sowie den geheimen Clientschlüssel über 'Mobile Systemerweiterungen' abrufen.
 
 Sie können auch die Befehlszeile verwenden, um die Serviceberechtigungsnachweise abzurufen:

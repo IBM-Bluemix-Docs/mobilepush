@@ -241,7 +241,7 @@ Weitere Informationen zu einem Fehler finden Sie in der Dokumentation zu dem jew
 **Erläuterung**: Der {{site.data.keyword.mobilepushshort}}-Service wurde für diese Anwendung inaktiviert. Dies kann aus abrechnungstechnischen Gründen geschehen oder die App wurde vom Administrator inaktiviert.
 
 
-**Benutzeraktion**: Zum Überprüfen des Servicestatus, zum Abrufen von Fehlerbehebungsinformationen oder für Informationen zum Anfordern von Hilfe ziehen Sie die Themen zur Fehlerbehebung in der Bluemix-Dokumentation zurate.
+**Benutzeraktion**: Zum Überprüfen des Servicestatus, zum Abrufen von Fehlerbehebungsinformationen oder für Informationen zum Anfordern von Hilfe ziehen Sie die Themen zur Fehlerbehebung in der IBM Cloud-Dokumentation zurate.
 
 
 

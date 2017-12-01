@@ -26,7 +26,7 @@ Stellen Sie sicher, dass die Anweisungen im Abschnitt [Berechtigungsnachweise de
 
 Führen Sie die folgenden Schritte aus, um FCM-Berechtigungsnachweise für Android-Anwendungen und Google Chrome Apps & Erweiterungen zu konfigurieren:
 
-1. Öffnen Sie Ihren Bluemix-Katalog und klicken Sie anschließend auf die von Ihnen erstellte Serviceinstanz von {{site.data.keyword.mobilepushfull}}. 
+1. Öffnen Sie Ihren IBM Cloud-Katalog und klicken Sie anschließend auf die von Ihnen erstellte Serviceinstanz von {{site.data.keyword.mobilepushfull}}. 
 2. Klicken Sie auf **Verwalten** > **Konfigurieren**. 
 3. Wählen Sie eine der folgenden Optionen aus: 
 	- Android: Wählen Sie **Mobile** aus und aktualisieren Sie die Registerkarte für GCM/FCM-Push-Berechtigungsnachweise mit Absender-ID/Projektnummer und API-Schlüssel. 

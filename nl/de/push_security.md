@@ -28,7 +28,7 @@ Die geheimen Schlüssel `appSecret` und `clientSecret` werden jeder Serviceinsta
 ## appSecret 
 {: #push-api-rest-secret}
 
-Beim Binden einer Anwendung an {{site.data.keyword.mobilepushshort}} generiert der Service den eindeutigen Schlüssel 'appSecret' und übergibt diesen mit dem Antwortheader. Wenn Sie die REST-API von IBM {{site.data.keyword.mobilepushshort}} for Bluemix verwenden, finden Sie in der Referenz für die REST-API Informationen dazu, welche APIs geschützt werden müssen. Weitere Informationen finden Sie in der [Push-REST-API ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://mobile.{DomainName}/imfpush/){: new_window}.
+Beim Binden einer Anwendung an {{site.data.keyword.mobilepushshort}} generiert der Service den eindeutigen Schlüssel 'appSecret' und übergibt diesen mit dem Antwortheader. Wenn Sie die REST-API von IBM {{site.data.keyword.mobilepushshort}} for IBM Cloud verwenden, finden Sie in der Referenz für die REST-API Informationen dazu, welche APIs geschützt werden müssen. Weitere Informationen finden Sie in der [Push-REST-API ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://mobile.{DomainName}/imfpush/){: new_window}.
 
 Der Anforderungsheader muss 'appSecret' enthalten. Andernfalls gibt der Server den Fehlercode 401 ('Unauthorized Error') zurück. Beim Hinzufügen von {{site.data.keyword.mobilepushshort}} zu einer Anwendung wird eine spezifische App-ID erstellt. Sie erhalten als Teil der Antwort einen Header mit dem Namen 'appSecret', der für die Erstellung von Tags oder das Senden von Nachrichten verwendet wird. Diese Operation erfolgt über Services im Katalog oder in der Boilerplate.
 

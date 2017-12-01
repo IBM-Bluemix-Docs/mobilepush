@@ -20,7 +20,7 @@ Letzte Aktualisierung: 28. September 2017
 Mit dem IBM Service {{site.data.keyword.mobilepushshort}} können Sie Benachrichtigungen an mobile Geräte und Browser senden. Benachrichtigungen können zielgruppenspezifisch an alle Anwendungsbenutzer und an bestimmte Benutzergruppen und Geräte mithilfe von Tags gesendet werden. Für jede an den Service übermittelte Nachricht wird an die jeweilige Zielgruppe eine Benachrichtigung gesendet.
 
 
-Der {{site.data.keyword.mobilepushshort}}-Service ist als Teil von MobileFirst Services Starter Boilerplate oder in [Dedizierte Services](/docs/dedicated/index.html) von Bluemix verfügbar.  Sie können auch ein SDK (Software-Development-Kit) und [REST-APIs ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://mobile.{DomainName}/imfpush/){: new_window} verwenden, um Ihre Clientanwendungen weiter zu entwickeln.
+Der {{site.data.keyword.mobilepushshort}}-Service ist als Teil von MobileFirst Services Starter Boilerplate oder in [Dedizierte Services](/docs/dedicated/index.html) von IBM Cloud verfügbar.  Sie können auch ein SDK (Software-Development-Kit) und [REST-APIs ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://mobile.{DomainName}/imfpush/){: new_window} verwenden, um Ihre Clientanwendungen weiter zu entwickeln.
 
 
 Der {{site.data.keyword.mobilepushshort}}-Service ist auch [OpenWhisk](/docs/openwhisk/index.html)-fähig. OpenWhisk ist ein verteilter, ereignisgesteuerter Verarbeitungsservice, der auch als serverunabhängige Verarbeitung bezeichnet wird. Entwickler können sich mit diesem Service auf das Schreiben von Anwendungslogik konzentrieren und Aktionen erstellen, die bei Bedarf ausgeführt werden.
@@ -77,5 +77,5 @@ Weitere Informationen finden Sie auch auf der Seite [Blogs](http://push-notifica
 ## Beispielszenario 
 {: #push-scenario}
 
-Der {{site.data.keyword.mobilepushshort}}-Service wird anhand des Beispielszenarios der ACME-Bank erläutert. Die ACME-Bank ist gerade dabei, ihre traditionelle IT-Infrastruktur auf IBM Bluemix-Services zu verlagern und erstellt momentan eine mobile Back-End-Lösung für kunden- und mitarbeiterseitige Apps. Der {{site.data.keyword.mobilepushshort}}-Service wird verwendet, um Benachrichtigungen zu Bankgeschäften und anderen wichtigen Ereignisse und Terminen an die Kunden zu senden.
+Der {{site.data.keyword.mobilepushshort}}-Service wird anhand des Beispielszenarios der ACME-Bank erläutert. Die ACME-Bank ist gerade dabei, ihre traditionelle IT-Infrastruktur auf IBM Cloud-Services zu verlagern und erstellt momentan eine mobile Back-End-Lösung für kunden- und mitarbeiterseitige Apps. Der {{site.data.keyword.mobilepushshort}}-Service wird verwendet, um Benachrichtigungen zu Bankgeschäften und anderen wichtigen Ereignisse und Terminen an die Kunden zu senden.
 

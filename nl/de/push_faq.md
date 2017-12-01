@@ -36,7 +36,7 @@ lastupdated: "2017-06-27"
  
 	1. Sie verwenden die richtige Startmethode. 
 	1. Sie haben die Datei `manifest.json` in den Stammordner eingefügt.
-	1. Ihre Website wird gehostet. Erstellen Sie am besten einen `node.js`-Starter in Bluemix, um es auszuprobieren. Beispiel: https://<mysamplewebsite>.mybluemix.net/.	
+	1. Ihre Website wird gehostet. Erstellen Sie am besten einen `node.js`-Starter in IBM Cloud, um es auszuprobieren. Beispiel: https://<mysamplewebsite>.mybluemix.net/.	
 
 4. Wie können Web-Push-Konfigurationsfehler behoben werden?
 

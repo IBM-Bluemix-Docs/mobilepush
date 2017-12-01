@@ -24,7 +24,7 @@ In diesem Lernprogramm zur Einführung von {{site.data.keyword.mobilepushfull}} 
 ## Vorbemerkungen
 {: #prereqs}
 
-Sie benötigen ein [Bluemix-Konto](https://console.bluemix.net/registration/), eine Instanz des
+Sie benötigen ein [IBM Cloud-Konto](https://console.bluemix.net/registration/), eine Instanz des
 {{site.data.keyword.mobilepushshort}}-Service und die folgenden Tools und Voraussetzungen:
 
   * Android API 15+
