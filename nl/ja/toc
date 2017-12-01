@@ -4,6 +4,7 @@
 
 {: .toc subcollection="mobile-pushnotification" audience="service" href="/docs/services/mobilepush/index.html"}
 プッシュ通知
+
     {: .navgroup id="learn"}
     index.md
     c_overview_push.md
@@ -27,12 +28,12 @@
         [オンライン・カタログ・ストア](https://github.com/ibm-bluemix-mobile-services/mobiledashboard-storecatalog-backend)
 
     {: .topicgroup}
-    SDK        [Android SDK](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-android-push)
+    SDK        
+	    [Android SDK](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-android-push)
         [Cordova SDK](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-cordova-plugin-push)
         [iOS SDK](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-swift-push)	
 		[Web SDK](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-javascript-webpush)
-    {: .navgroup-end}
-    
+        
     {: .topicgroup}
     API リファレンス
         [API リファレンス (Android)](https://www.javadoc.io/doc/com.ibm.mobilefirstplatform.clientsdk.android/push/3.6.1)
@@ -48,6 +49,7 @@
         push_step_4_nf_interactive.md
         push_step_4_nf_rich.md
         push_step_4_nf_adv.md
+    {: .navgroup-end}
 
     {: .navgroup id="help"}
     push_restapi.md
