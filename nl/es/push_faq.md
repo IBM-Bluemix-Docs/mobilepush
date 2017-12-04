@@ -37,7 +37,7 @@ APNs para Apple o FCM para Google. El proveedor de notificación del servicio pu
  
 	1. Utilizar el método de inicio adecuado. 
 	1. Incluir el archivo `manifest.json` en la carpeta raíz.
-	1. Alojar su sitio web. Preferiblemente, cree un iniciador `node.js` en Bluemix para probarlo. Por ejemplo: https://<mysamplewebsite>.mybluemix.net/.	
+	1. Alojar su sitio web. Preferiblemente, cree un iniciador `node.js` en IBM Cloud para probarlo. Por ejemplo: https://<mysamplewebsite>.mybluemix.net/.	
 
 4. ¿Cómo se resuelven los errores de configuración web de un envío Web?
 

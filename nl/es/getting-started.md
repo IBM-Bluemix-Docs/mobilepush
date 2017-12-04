@@ -24,7 +24,7 @@ En esta guía de aprendizaje de iniciación de {{site.data.keyword.mobilepushful
 ## Antes de empezar
 {: #prereqs}
 
-Necesitará un [cuenta de Bluemix](https://console.bluemix.net/registration/), una instancia del servicio {{site.data.keyword.mobilepushshort}} y las siguientes herramientas y requisitos:
+Necesitará un [cuenta de IBM Cloud](https://console.bluemix.net/registration/), una instancia del servicio {{site.data.keyword.mobilepushshort}} y las siguientes herramientas y requisitos:
 
   * API de Android 15+
   * Android 4.0.3+

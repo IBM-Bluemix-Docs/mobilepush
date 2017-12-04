@@ -242,7 +242,7 @@ Para obtener información adicional sobre un error, busque el código de error r
 **Explicación**: Se ha inhabilitado el servicio de {{site.data.keyword.mobilepushshort}} para esta aplicación. Esto puede ser debido a la facturación o que el administrador ha inhabilitado la app.
 
 
-**Respuesta del usuario**: Consulte los temas Resolución de problemas de la documentación de Bluemix para comprobar el estado del servicio, revisar la información sobre cómo solucionar problemas y obtener ayuda.
+**Respuesta del usuario**: Consulte los temas Resolución de problemas de la documentación de IBM Cloud para comprobar el estado del servicio, revisar la información sobre cómo solucionar problemas y obtener ayuda.
 
 
 

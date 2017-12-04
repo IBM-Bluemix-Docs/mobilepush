@@ -28,7 +28,7 @@ Las API de {{site.data.keyword.mobilepushshort}} se protegen mediante dos tipos 
 ## appSecret 
 {: #push-api-rest-secret}
 
-Cuando una aplicación se enlaza a las {{site.data.keyword.mobilepushshort}}, el servicio generará un appSecret (una clave exclusiva) y la pasa en la cabecera de respuesta. Si está utilizando IBM {{site.data.keyword.mobilepushshort}} para la API REST de Bluemix, utilice la referencia de la API REST para obtener información sobre qué API se deben proteger. Para obtener información, consulte la [API REST de Push ![icono de enlace externo](../../icons/launch-glyph.svg "icono de enlace externo")](https://mobile.{DomainName}/imfpush/){: new_window}.
+Cuando una aplicación se enlaza a las {{site.data.keyword.mobilepushshort}}, el servicio generará un appSecret (una clave exclusiva) y la pasa en la cabecera de respuesta. Si está utilizando IBM {{site.data.keyword.mobilepushshort}} para la API REST de IBM Cloud, utilice la referencia de la API REST para obtener información sobre qué API se deben proteger. Para obtener información, consulte la [API REST de Push ![icono de enlace externo](../../icons/launch-glyph.svg "icono de enlace externo")](https://mobile.{DomainName}/imfpush/){: new_window}.
 
 La cabecera de la solicitud debe contener el appSecret. Si no, el servidor devuelve un código 401 Unauthorized Error. Cuando se añade la {{site.data.keyword.mobilepushshort}} a una aplicación, se creará una AppID específica. Como parte de la respuesta, obtiene una cabecera denominada appSecret que se utiliza para crear etiquetas o para enviar mensajes. La operación sucede a través de servicios del catálogo o del contenedor modelo.
 

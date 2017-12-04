@@ -61,7 +61,7 @@ Una vez que haya obtenido las credenciales de FCM y que haya generado el archivo
 ## Para iOS
 {: #push_step_1_ios}
 
-Para dispositivos y aplicaciones iOS, el servicio de notificaciones push de Apple (APNs) permite a los desarrolladores de aplicaciones enviar notificaciones remotas desde la instancia del servicio {{site.data.keyword.mobilepushshort}} de Bluemix (el proveedor) a dispositivos y aplicaciones de iOS. Los mensajes se envían a una aplicación de destino del dispositivo. 
+Para dispositivos y aplicaciones iOS, el servicio de notificaciones push de Apple (APNs) permite a los desarrolladores de aplicaciones enviar notificaciones remotas desde la instancia del servicio {{site.data.keyword.mobilepushshort}} de IBM Cloud (el proveedor) a dispositivos y aplicaciones de iOS. Los mensajes se envían a una aplicación de destino del dispositivo. 
 
 Debe obtener y configurar las credenciales de APNs. Los certificados de APNs se gestionan de forma segura mediante el servicio {{site.data.keyword.mobilepushshort}} y se utilizan para conectarse al servidor APNs como proveedor.
 
@@ -96,7 +96,7 @@ Puede utilizar APNs de dos maneras:
 * La modalidad de pruebas durante el desarrollo y la prueba.
 * La modalidad de producción al distribuir aplicaciones mediante App Store (u otros mecanismos de distribución de empresa).
 
-Debe obtener certificados independientes para los entornos de desarrollo y de distribución. Los certificados están asociados con un ID de App para la app que es el destinatario de las notificaciones remotas. Para la producción, puede crear un máximo de dos certificados. Bluemix utiliza los certificados para establecer una conexión SSL con APNs.
+Debe obtener certificados independientes para los entornos de desarrollo y de distribución. Los certificados están asociados con un ID de App para la app que es el destinatario de las notificaciones remotas. Para la producción, puede crear un máximo de dos certificados. IBM Cloud utiliza los certificados para establecer una conexión SSL con APNs.
 
 <!-- Create a development and distribution SSL certificate. -->
 

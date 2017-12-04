@@ -86,7 +86,7 @@ Utilice las siguientes API para permitir que los dispositivos recuperen etiqueta
 ## Utilización de notificaciones basadas en etiquetas
 {: #using_tags}
 
-Las notificaciones basadas en etiquetas son mensajes que están pensados para todos los dispositivos suscritos a una etiqueta determinada. Cada dispositivo se puede suscribir a cualquier número de etiquetas. En este tema se describe cómo enviar notificaciones basadas en etiquetas. Las suscripciones las mantiene la instancia de Bluemix del servicio {{site.data.keyword.mobilepushshort}}. Cuando se suprime una etiqueta, también se suprime toda la información asociada a dicha etiqueta, incluidos los suscriptores y los dispositivos. No es necesaria ninguna anulación de la suscripción automática para esta etiqueta porque ya no existe y no es necesaria ninguna acción desde el lado del cliente.
+Las notificaciones basadas en etiquetas son mensajes que están pensados para todos los dispositivos suscritos a una etiqueta determinada. Cada dispositivo se puede suscribir a cualquier número de etiquetas. En este tema se describe cómo enviar notificaciones basadas en etiquetas. Las suscripciones las mantiene la instancia de IBM Cloud del servicio {{site.data.keyword.mobilepushshort}}. Cuando se suprime una etiqueta, también se suprime toda la información asociada a dicha etiqueta, incluidos los suscriptores y los dispositivos. No es necesaria ninguna anulación de la suscripción automática para esta etiqueta porque ya no existe y no es necesaria ninguna acción desde el lado del cliente.
 
 Cree etiquetas en la pantalla **Etiquetas**. Para obtener más información sobre cómo crear etiquetas, consulte [Creación de etiquetas](t_manage_tags.html).
 

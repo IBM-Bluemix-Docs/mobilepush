@@ -26,7 +26,7 @@ Asegúrese de haber leído el apartado [Obtener las credenciales del proveedor d
 
 Para configurar las credenciales de FCM para aplicaciones Android y apps y extensiones de Google Chrome, lleve a cabo los pasos siguientes:
 
-1. Abra el catálogo de Bluemix y pulse la instancia del servicio {{site.data.keyword.mobilepushfull}} que ha creado. 
+1. Abra el catálogo de IBM Cloud y pulse la instancia del servicio {{site.data.keyword.mobilepushfull}} que ha creado. 
 2. Pulse **Gestionar** &gt; **Configurar**. 
 3. Seleccione una de las opciones siguientes: 
 	- Para Android: Seleccione **Móvil** y, a continuación, actualice el separador Credenciales de push de GCM/FCM con el ID de remitente/número de proyecto y la clave de API. 

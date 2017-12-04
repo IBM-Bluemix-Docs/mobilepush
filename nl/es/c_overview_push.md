@@ -20,7 +20,7 @@ copyright:
 IBM {{site.data.keyword.mobilepushshort}} es un servicio que puede utilizar para enviar notificaciones a dispositivos móviles y navegadores. Las notificaciones se pueden destinar a todos los usuarios de la aplicación o a un conjunto específico de usuarios y dispositivos mediante etiquetas. Para cada mensaje que se envía al servicio, los usuarios de destino reciben una notificación.
 
 
-Puede utilizar el servicio {{site.data.keyword.mobilepushshort}} como parte del contenedor modelo de iniciador de servicios MobileFirst o bien como [servicios dedicados](/docs/dedicated/index.html) de Bluemix.  También puede utilizar un SDK (kit de desarrollo de software) y [API REST ![icono de enlace externo](../../icons/launch-glyph.svg "icono de enlace externo")](https://mobile.{DomainName}/imfpush/){: new_window} para desarrollar más las aplicaciones de cliente.
+Puede utilizar el servicio {{site.data.keyword.mobilepushshort}} como parte del contenedor modelo de iniciador de servicios MobileFirst o bien como [servicios dedicados](/docs/dedicated/index.html) de IBM Cloud.  También puede utilizar un SDK (kit de desarrollo de software) y [API REST ![icono de enlace externo](../../icons/launch-glyph.svg "icono de enlace externo")](https://mobile.{DomainName}/imfpush/){: new_window} para desarrollar más las aplicaciones de cliente.
 
 
 El servicio {{site.data.keyword.mobilepushshort}} también se habilita para [OpenWhisk](/docs/openwhisk/index.html). OpenWhisk es un servicio de cálculo distribuido y controlado por sucesos que también se conoce como computación sin servidor. Gracias a esto, los desarrolladores pueden centrarse en escribir la lógica de aplicación y crear acciones ejecutadas bajo demanda.
@@ -77,5 +77,5 @@ También puede encontrar más información en la página del [Blog](http://push-
 ## Caso de ejemplo 
 {: #push-scenario}
 
-El servicio {{site.data.keyword.mobilepushshort}} se explica en el caso de ejemplo de ACME Bank. ACME Bank está en fase de mover su infraestructura de TI heredada a servicios de IBM Bluemix y actualmente se está creando un proceso de fondo móvil para sus apps para clientes y empleados. Utilizan el servicio {{site.data.keyword.mobilepushshort}} para enviar a sus clientes notificaciones de transacciones bancarias y otros sucesos importantes, así como recordatorios.
+El servicio {{site.data.keyword.mobilepushshort}} se explica en el caso de ejemplo de ACME Bank. ACME Bank está en fase de mover su infraestructura de TI heredada a servicios de IBM Cloud y actualmente se está creando un proceso de fondo móvil para sus apps para clientes y empleados. Utilizan el servicio {{site.data.keyword.mobilepushshort}} para enviar a sus clientes notificaciones de transacciones bancarias y otros sucesos importantes, así como recordatorios.
 
