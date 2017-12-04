@@ -89,7 +89,7 @@ Utilisez l'API suivante pour permettre à vos appareils d'extraire des balises, 
 ## Utilisation de notifications basées sur les balises
 {: #using_tags}
 
-Les messages de notifications basées sur les balises sont envoyés à tous les appareils abonnés à une balise particulière. Chaque appareil peut s'abonner à un nombre illimité de balises. Cette rubrique explique comment envoyer des notifications basées sur des balises. Les abonnements sont gérés par l'instance de service Bluemix {{site.data.keyword.mobilepushshort}}. Quand une balise est supprimée, toutes les informations qui lui sont associées, y compris ses abonnés et appareils, sont supprimées. Aucun désabonnement automatique n'est requis pour cette balise car elle n'existe plus et aucune action supplémentaire n'est requise depuis le côté client.
+Les messages de notifications basées sur les balises sont envoyés à tous les appareils abonnés à une balise particulière. Chaque appareil peut s'abonner à un nombre illimité de balises. Cette rubrique explique comment envoyer des notifications basées sur des balises. Les abonnements sont gérés par l'instance de service IBM Cloud {{site.data.keyword.mobilepushshort}}. Quand une balise est supprimée, toutes les informations qui lui sont associées, y compris ses abonnés et appareils, sont supprimées. Aucun désabonnement automatique n'est requis pour cette balise car elle n'existe plus et aucune action supplémentaire n'est requise depuis le côté client.
 
 Créez des balises sur l'écran **Tag**. Pour plus d'informations sur la création de balises,
 voir [Création de balises](t_manage_tags.html).

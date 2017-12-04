@@ -61,7 +61,7 @@ Une fois que vous avez obtenu vos données d'identification FCM et généré le 
 ## Pour iOS
 {: #push_step_1_ios}
 
-Pour les appareils et applications iOS, le service APN (Apple Push Notification) permet aux développeurs d'application d'envoyer des notifications à distance depuis une instance de service {{site.data.keyword.mobilepushshort}} sur Bluemix (le fournisseur) vers des appareils et applications iOS. Les messages sont envoyés à une application cible sur l'appareil. 
+Pour les appareils et applications iOS, le service APN (Apple Push Notification) permet aux développeurs d'application d'envoyer des notifications à distance depuis une instance de service {{site.data.keyword.mobilepushshort}} sur IBM Cloud (le fournisseur) vers des appareils et applications iOS. Les messages sont envoyés à une application cible sur l'appareil. 
 
 Vous devez vous procurer et configurer vos données d'identification APN. Les certificats APNS sont gérés de façon sécurisée par le service {{site.data.keyword.mobilepushshort}} et utilisés pour la connexion au serveur APNS en tant que fournisseur.
 
@@ -96,7 +96,7 @@ Vous pouvez utiliser APNS dans deux modes :
 * Mode bac à sable pour le développement et le test.
 * Mode production lors de la distribution des applications via l'App Store (ou d'autres mécanismes de distribution d'entreprise).
 
-Vous devez vous procurer des certificats distincts pour vos environnements de développement et de distribution. Les certificats sont associés à un ID d'application pour l'application qui est le destinataire des notifications distantes. Pour la production, vous pouvez créer jusqu'à deux certificats. Bluemix utilise les certificats afin d'établir une connexion SSL à APNS.
+Vous devez vous procurer des certificats distincts pour vos environnements de développement et de distribution. Les certificats sont associés à un ID d'application pour l'application qui est le destinataire des notifications distantes. Pour la production, vous pouvez créer jusqu'à deux certificats. IBM Cloud utilise les certificats afin d'établir une connexion SSL à APNS.
 
 <!-- Create a development and distribution SSL certificate. -->
 

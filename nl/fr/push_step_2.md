@@ -26,7 +26,7 @@ Vérifiez que vous avez exécuté la procédure [Obtention des données d'identi
 
 Pour configurer les données d'identification FCM pour les applications Android et les applications et extensions Google, procédez comme suit :
 
-1. Ouvrez votre catalogue Bluemix, puis cliquez sur l'instance de service {{site.data.keyword.mobilepushfull}} que vous avez créée. 
+1. Ouvrez votre catalogue IBM Cloud, puis cliquez sur l'instance de service {{site.data.keyword.mobilepushfull}} que vous avez créée. 
 2. Cliquez sur **Gérer ** > **Configurer**. 
 3. Sélectionnez l'une des options suivantes : 
 	- Pour Android : sélectionnez **Mobile**, puis mettez à jour les données d'identification Push GCM/FCM avec l'ID d'émetteur/Numéro de projet et la clé d'API. 

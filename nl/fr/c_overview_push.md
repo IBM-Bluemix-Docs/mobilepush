@@ -20,7 +20,7 @@ Dernière mise à jour : 28 septembre 2017
 IBM {{site.data.keyword.mobilepushshort}} est un service que vous pouvez utiliser pour envoyer des notifications à des appareils mobiles et à des navigateurs. Les notifications peuvent être ciblées vers tous les utilisateurs d'application ou vers un ensemble spécifique d'utilisateurs et d'appareils à l'aide de balises. Le public visé reçoit une notification pour chaque message que vous soumettez au service.
 
 
-Vous pouvez utiliser le service {{site.data.keyword.mobilepushshort}} dans le cadre d'un conteneur boilerplate de MobileFirst Services Starter ou dans le cadre de Bluemix [Dedicated Services](/docs/dedicated/index.html).  Vous pouvez également utiliser un SDK (kit de développement de logiciels) et des [API REST ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://mobile.{DomainName}/imfpush/){: new_window} pour affiner plus encore le développement de vos applications client.
+Vous pouvez utiliser le service {{site.data.keyword.mobilepushshort}} dans le cadre d'un conteneur boilerplate de MobileFirst Services Starter ou dans le cadre de IBM Cloud [Dedicated Services](/docs/dedicated/index.html).  Vous pouvez également utiliser un SDK (kit de développement de logiciels) et des [API REST ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://mobile.{DomainName}/imfpush/){: new_window} pour affiner plus encore le développement de vos applications client.
 
 
 Le service {{site.data.keyword.mobilepushshort}} est également activé pour [OpenWhisk](/docs/openwhisk/index.html). est un service de traitement distribué et géré par événements, également dénommé plateforme informatique sans serveur. Ceci permet aux développeurs de se concentrer sur l'écriture de la logique d'application et de créer des actions qui sont exécutées à la demande.
@@ -77,6 +77,6 @@ Vous pouvez trouver des informations supplémentaires sur la page du [blogue](ht
 ## Exemple de scénario 
 {: #push-scenario}
 
-Le service {{site.data.keyword.mobilepushshort}} est décrit à l'aide de l'exemple de scénario de la banque ACME. La banque ACME est en phase de migration de son architecture informatique existante vers des services IBM Bluemix et construit actuellement un service back end mobile
+Le service {{site.data.keyword.mobilepushshort}} est décrit à l'aide de l'exemple de scénario de la banque ACME. La banque ACME est en phase de migration de son architecture informatique existante vers des services IBM Cloud et construit actuellement un service back end mobile
 pour les applications servant leurs clients et employés. Ils utilisent le service {{site.data.keyword.mobilepushshort}} pour envoyer des notifications à leurs clients sur leurs transactions bancaires, leur signaler des événements importants, et leur envoyer des rappels.
 

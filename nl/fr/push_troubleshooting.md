@@ -257,7 +257,7 @@ par l'administrateur.
 
 
 **Réponse de l'utilisateur **: accédez aux rubriques de Traitement des incidents dans la documentation
-Bluemix pour vérifier le statut du service, consultez les informations de traitement des incidents ou les informations sur l'obtention
+IBM Cloud pour vérifier le statut du service, consultez les informations de traitement des incidents ou les informations sur l'obtention
 d'une assistance.
 
 

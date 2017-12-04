@@ -36,7 +36,7 @@ lastupdated: "2017-06-27"
  
 	1. Utiliser la méthode de lancement correcte. 
 	1. Inclure le fichier `manifest.json` dans le dossier racine.
-	1. Héberger votre site Web. De préférence, créez un module de démarrage `node.js` dans Bluemix pour vous exercer. Par exemple : https://<mysamplewebsite>.mybluemix.net/.	
+	1. Héberger votre site Web. De préférence, créez un module de démarrage `node.js` dans IBM Cloud pour vous exercer. Par exemple : https://<mysamplewebsite>.mybluemix.net/.	
 
 4. Comment résoudre les erreurs de configuration Web push ?
 

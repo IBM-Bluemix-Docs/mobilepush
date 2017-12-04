@@ -28,8 +28,8 @@ Avec l'API REST Push, les applications serveur de back end et les clients peuven
 
 Pour obtenir l'URL de base pour l'API REST, procédez comme suit :
 
-1. Créez une application de back end dans la section Conteneurs boilerplate du catalogue Bluemix®, en choisissant MobileFirst Services Starter, ce qui a pour effet de lier le service {{site.data.keyword.mobilepushshort}} à l'application. Vous pouvez aussi créer une instance de service de Push et la laisser non liée. 
-1. Dans la page principale du catalogue Bluemix, accédez à la zone **Applications** et sélectionnez votre application.
+1. Créez une application de back end dans la section Conteneurs boilerplate du catalogue IBM Cloud®, en choisissant MobileFirst Services Starter, ce qui a pour effet de lier le service {{site.data.keyword.mobilepushshort}} à l'application. Vous pouvez aussi créer une instance de service de Push et la laisser non liée. 
+1. Dans la page principale du catalogue IBM Cloud, accédez à la zone **Applications** et sélectionnez votre application.
 3. Cliquez sur **OPTIONS POUR APPLICATION MOBILE**. Les valeurs de route et d'identificateur global unique de l'application sont affichées au début de la page des détails de votre application. L'écran Afficher les données d'identification affiche des informations sur la valeur confidentielle AppSecret. Vous pouvez obtenir la valeur confidentielle d'application depuis les options pour application mobile ainsi que la valeur confidentielle de client pour certaines des interfaces API.
 
 Vous pouvez aussi utiliser la ligne de commande pour obtenir les données d'identification pour le service :
