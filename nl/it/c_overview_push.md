@@ -20,7 +20,7 @@ Ultimo aggiornamento: 28 settembre 2017
 IBM {{site.data.keyword.mobilepushshort}} è un servizio che puoi utilizzare per inviare notifiche a dispositivi mobili e browser. Le notifiche possono essere destinate a tutti gli utenti dell'applicazione oppure a uno specifico insieme di utenti e dispositivi facendo uso delle tag. Per ogni messaggio che invii al servizio, i destinatari previsti ricevono una notifica.
 
 
-Puoi scegliere di utilizzare il servizio {{site.data.keyword.mobilepushshort}} come parte del contenitore tipo MobileFirst Services Starter o come [Servizi dedicati](/docs/dedicated/index.html) Bluemix.  Puoi anche utilizzare un SDK (software development kit) e delle [API REST![icona link esterno](../../icons/launch-glyph.svg "icona link esterno")](https://mobile.{DomainName}/imfpush/){: new_window} per sviluppare ulteriormente le tue applicazioni client.
+Puoi scegliere di utilizzare il servizio {{site.data.keyword.mobilepushshort}} come parte del contenitore tipo MobileFirst Services Starter o come [Servizi dedicati](/docs/dedicated/index.html) IBM Cloud.  Puoi anche utilizzare un SDK (software development kit) e delle [API REST![icona link esterno](../../icons/launch-glyph.svg "icona link esterno")](https://mobile.{DomainName}/imfpush/){: new_window} per sviluppare ulteriormente le tue applicazioni client.
 
 
 Il servizio {{site.data.keyword.mobilepushshort}} è abilitato anche per [OpenWhisk](/docs/openwhisk/index.html). OpenWhisk è un servizio di calcolo distribuito guidato dagli eventi conosciuto anche come elaborazione senza server. Questo consente agli sviluppatori di concentrarsi sulla scrittura della logica dell'applicazione e sul creare azioni eseguite su richiesta.

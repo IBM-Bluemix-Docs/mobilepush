@@ -252,7 +252,7 @@ seguenti condizioni:
 potrebbe essere stata disabilitata dall'amministratore.
 
 
-**Risposta utente**: consulta gli argomenti relativi alla Risoluzione dei problemi nella documentazione Bluemix per controllare lo stato del servizio, per esaminare le informazioni sulla risoluzione dei problemi o per informazioni sulla richiesta di assistenza.
+**Risposta utente**: consulta gli argomenti relativi alla Risoluzione dei problemi nella documentazione IBM Cloud per controllare lo stato del servizio, per esaminare le informazioni sulla risoluzione dei problemi o per informazioni sulla richiesta di assistenza.
 
 
 

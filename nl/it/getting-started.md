@@ -24,7 +24,7 @@ In questa esercitazione introduttiva {{site.data.keyword.mobilepushfull}}, illus
 ## Prima di cominciare
 {: #prereqs}
 
-Avrai bisogno di un [account Bluemix](https://console.bluemix.net/registration/), un'istanza del servizio
+Avrai bisogno di un [account IBM Cloud](https://console.bluemix.net/registration/), un'istanza del servizio
 {{site.data.keyword.mobilepushshort}} e i seguenti strumenti e requisiti:
 
   * Android API 15+

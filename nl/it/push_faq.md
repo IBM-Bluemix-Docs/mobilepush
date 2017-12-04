@@ -36,7 +36,7 @@ lastupdated: "2017-06-27"
  
 	1. Stai utilizzando il metodo di avvio corretto. 
 	1. Includi il file `manifest.json` nella cartella root.
-	1. Ospiti il tuo sito web. Hai preferibilmente creato uno starter `node.js` in Bluemix per provarlo. Ad esempio: https://<mysamplewebsite>.mybluemix.net/.	
+	1. Ospiti il tuo sito web. Hai preferibilmente creato uno starter `node.js` in IBM Cloud per provarlo. Ad esempio: https://<mysamplewebsite>.mybluemix.net/.	
 
 4. Come posso risolvere gli errori di configurazione web del push web?
 

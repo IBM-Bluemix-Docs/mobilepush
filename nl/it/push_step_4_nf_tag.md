@@ -94,7 +94,7 @@ Utilizza la seguente API per consentire ai tuoi dispositivi di richiamare tag, s
 ## Utilizzo delle notifiche basate sulle tag
 {: #using_tags}
 
-Le notifiche basate sulle tag sono messaggi destinati a tutti i dispositivi sottoscritti a una particolare tag. Ciascun dispositivo può essere sottoscritto a un qualsiasi numero di tag. Questo argomento descrive come inviare notifiche basate sulle tag. Le sottoscrizioni vengono gestite dall'istanza Bluemix del servizio {{site.data.keyword.mobilepushshort}}. Quando viene eliminata una tag, vengono eliminate anche tutte le informazioni associate con tale tag, inclusi i relativi sottoscrittori e dispositivi. Non è necessario un annullamento della sottoscrizione automatico per questa tag poiché non esiste più e non sono richieste ulteriori azioni dal lato client.
+Le notifiche basate sulle tag sono messaggi destinati a tutti i dispositivi sottoscritti a una particolare tag. Ciascun dispositivo può essere sottoscritto a un qualsiasi numero di tag. Questo argomento descrive come inviare notifiche basate sulle tag. Le sottoscrizioni vengono gestite dall'istanza IBM Cloud del servizio {{site.data.keyword.mobilepushshort}}. Quando viene eliminata una tag, vengono eliminate anche tutte le informazioni associate con tale tag, inclusi i relativi sottoscrittori e dispositivi. Non è necessario un annullamento della sottoscrizione automatico per questa tag poiché non esiste più e non sono richieste ulteriori azioni dal lato client.
 
 Crea le tag sulla schermata **Tag**. Per informazioni su come creare le tag, vedi [Creazione di tag](t_manage_tags.html).
 

@@ -61,7 +61,7 @@ Una volta che hai ottenuto le tue credenziali FCM e generato il file `google-ser
 ## Per iOS
 {: #push_step_1_ios}
 
-Per le applicazioni e i dispositivi iOS, il servizio APNS (Apple Push Notification Service) consente agli sviluppatori dell'applicazione di inviare notifiche remote dall'istanza del servizio {{site.data.keyword.mobilepushshort}} su Bluemix (il provider) alle applicazioni e ai dispositivi iOS. I messaggi sono inviati a un'applicazione di destinazione sul dispositivo. 
+Per le applicazioni e i dispositivi iOS, il servizio APNS (Apple Push Notification Service) consente agli sviluppatori dell'applicazione di inviare notifiche remote dall'istanza del servizio {{site.data.keyword.mobilepushshort}} su IBM Cloud (il provider) alle applicazioni e ai dispositivi iOS. I messaggi sono inviati a un'applicazione di destinazione sul dispositivo. 
 
 Devi ottenere e configurare le tue credenziali APNS. I certificati APNS sono gestiti in modo sicuro dal servizio {{site.data.keyword.mobilepushshort}} e utilizzati per stabilire una connessione al server APNs come un provider.
 
@@ -102,7 +102,7 @@ Puoi utilizzare le APNs in due modi:
 Devi ottenere dei certificati separati per gli ambienti di sviluppo e
                     distribuzione. I certificati sono associati a un ID applicazione per l'applicazione
                     destinataria delle notifiche remote. per la produzione, è possibile creare fino a
-                    due certificati. Bluemix utilizza i certificati per stabilire una connessione SSL
+                    due certificati. IBM Cloud utilizza i certificati per stabilire una connessione SSL
                     con APNS.
 
 <!-- Create a development and distribution SSL certificate. -->
