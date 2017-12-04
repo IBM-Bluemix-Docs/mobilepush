@@ -36,7 +36,7 @@ lastupdated: "2017-06-27"
  
 	1. 正しい start メソッドを使用する。 
 	1. ルート・フォルダーに `manifest.json` ファイルを組み込む。
-	1. Web サイトをホストする。Bluemix で `node.js` スターターを作成してそれを試すことをお勧めします。例: https://<mysamplewebsite>.mybluemix.net/。	
+	1. Web サイトをホストする。IBM Cloud で `node.js` スターターを作成してそれを試すことをお勧めします。例: https://<mysamplewebsite>.mybluemix.net/。	
 
 4. Web プッシュ Web 構成エラーの解決方法はありますか?
 

@@ -24,7 +24,7 @@ lastupdated: "2017-05-31"
 ## 始めに
 {: #prereqs}
 
-[Bluemix アカウント](https://console.bluemix.net/registration/)、{{site.data.keyword.mobilepushshort}} サービスのインスタンス、および以下のツールおよび要件が必要です。
+[IBM Cloud アカウント](https://console.bluemix.net/registration/)、{{site.data.keyword.mobilepushshort}} サービスのインスタンス、および以下のツールおよび要件が必要です。
 
   * Android API 15+
   * Android 4.0.3+

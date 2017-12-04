@@ -26,7 +26,7 @@ copyright:
 
 Android アプリケーション、Google Chrome のアプリケーションおよび拡張機能用の FCM 資格情報を構成するために、以下のステップを実行します。
 
-1. Bluemix カタログを開き、作成した {{site.data.keyword.mobilepushfull}} サービス・インスタンスをクリックします。 
+1. IBM CLoud カタログを開き、作成した {{site.data.keyword.mobilepushfull}} サービス・インスタンスをクリックします。 
 2. **「管理」** > **「構成」**をクリックします。 
 3. 次のいずれかのオプションを選択します。 
 	- Android の場合: **「モバイル」**を選択し、「GCM/FCM プッシュ資格情報」タブの内容を送信側 ID/プロジェクト番号、および API キーで更新します。 

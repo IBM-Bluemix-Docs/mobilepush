@@ -28,7 +28,7 @@ copyright:
 ## appSecret 
 {: #push-api-rest-secret}
 
-アプリケーションが {{site.data.keyword.mobilepushshort}} にバインドされると、サービスは appSecret (固有キー) を生成し、それを応答ヘッダーで渡します。IBM {{site.data.keyword.mobilepushshort}} for Bluemix Rest API を使用している場合は、REST API リファレンスを使用して、保護する必要のある API に関する情報を取得してください。詳しくは、[Push REST API ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://mobile.{DomainName}/imfpush/){: new_window}を参照してください。
+アプリケーションが {{site.data.keyword.mobilepushshort}} にバインドされると、サービスは appSecret (固有キー) を生成し、それを応答ヘッダーで渡します。IBM {{site.data.keyword.mobilepushshort}} for IBM Cloud Rest API を使用している場合は、REST API リファレンスを使用して、保護する必要のある API に関する情報を取得してください。詳しくは、[Push REST API ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://mobile.{DomainName}/imfpush/){: new_window}を参照してください。
 
 要求ヘッダーには appSecret が含まれている必要があります。含まれていない場合、サーバーは 401 無許可エラー・コードを返します。{{site.data.keyword.mobilepushshort}} がアプリケーションに追加されると、特定の AppID が作成されます。応答の一部として、タグの作成やメッセージの送信に使用される appSecret というヘッダーを取得します。操作は、カタログまたはボイラープレートのサービスを介して行われます。
 
