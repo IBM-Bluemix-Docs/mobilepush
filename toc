@@ -24,8 +24,8 @@ Push Notifications
         [Android](https://github.com/ibm-bluemix-mobile-services/bms-samples-android-hellopush/)
         [Cordova](https://github.com/ibm-bluemix-mobile-services/bms-samples-cordova-hellopush)
         [iOS](https://github.com/ibm-bluemix-mobile-services/bms-samples-swift-hellopush)
-		[HTTPS endpoint SMS](https://github.com/ibm-bluemix-push-notifications/bms-push-sms-sample)
-		[HTTPS endpoint email](https://github.com/ibm-bluemix-push-notifications/bms-push-email-sample)
+        [BluePic](https://github.com/IBM/BluePic)
+        [Online Catalog Store](https://github.com/ibm-bluemix-mobile-services/mobiledashboard-storecatalog-backend)
 	
     {: .topicgroup}
     [Swift App with Push and Analytics](https://console.bluemix.net/docs/tutorials/ios-mobile-push-analytics.html#ios-mobile-application-with-push-and-analytics)
