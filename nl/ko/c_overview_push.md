@@ -20,7 +20,7 @@ copyright:
 IBM {{site.data.keyword.mobilepushshort}}는 모바일 디바이스와 브라우저에 알림을 전송하는 데 사용할 수 있는 서비스입니다. 알림은 모든 애플리케이션 사용자와 태그를 사용하는 특정 디바이스 및 사용자 세트를 대상으로 할 수 있습니다. 서비스에 제출하는 모든 메시지의 경우, 대상이 되는 청취자는 알림을 수신합니다. 
 
 
-{{site.data.keyword.mobilepushshort}} 서비스를 MobileFirst Services Starter 표준 유형의 일부 또는 Bluemix [데디케이티드 서비스](/docs/dedicated/index.html)로서 사용하도록 선택할 수 있습니다. 또한 SDK(Software Development Kit) 및 [REST API![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://mobile.{DomainName}/imfpush/){: new_window}를 사용하여 클라이언트 애플리케이션을 추가로 개발할 수 있습니다. 
+{{site.data.keyword.mobilepushshort}} 서비스를 MobileFirst Services Starter 표준 유형의 일부 또는 IBM Cloud [데디케이티드 서비스](/docs/dedicated/index.html)로서 사용하도록 선택할 수 있습니다. 또한 SDK(Software Development Kit) 및 [REST API![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://mobile.{DomainName}/imfpush/){: new_window}를 사용하여 클라이언트 애플리케이션을 추가로 개발할 수 있습니다. 
 
 
 {{site.data.keyword.mobilepushshort}} 서비스도 [OpenWhisk](/docs/openwhisk/index.html)에 사용할 수 있습니다. OpenWhisk는 서버 없는 컴퓨팅으로도 알려져 있는 분산된, 이벤트 중심 컴퓨팅 서비스입니다. 이는 개발자들이 애플리케이션 로직 작성에 초점을 맞추고 요청 시 실행되는 조치를 작성할 수 있도록 합니다. 
@@ -77,5 +77,5 @@ Push Notifications 서비스 [블로그](http://push-notification-service.myblue
 ## 샘플 시나리오 
 {: #push-scenario}
 
-ACME 은행의 샘플 시나리오를 사용해서 {{site.data.keyword.mobilepushshort}} 서비스를 설명합니다. ACME 은행은 그들의 레거시 IT 인프라를 IBM Bluemix 서비스로 이동하게 하는 단계에 있으며 그들의 고객 및 직원이 접하고 있는 앱에 대한 모바일 백엔드를 현재 빌드하고 있습니다. {{site.data.keyword.mobilepushshort}} 서비스를 사용하여 뱅킹 트랜잭션 및 기타 중요한 이벤트와 리마인더에 대한 알림을 그들의 고객에게 전송하고 있습니다. 
+ACME 은행의 샘플 시나리오를 사용해서 {{site.data.keyword.mobilepushshort}} 서비스를 설명합니다. ACME 은행은 그들의 레거시 IT 인프라를 IBM Cloud 서비스로 이동하게 하는 단계에 있으며 그들의 고객 및 직원이 접하고 있는 앱에 대한 모바일 백엔드를 현재 빌드하고 있습니다. {{site.data.keyword.mobilepushshort}} 서비스를 사용하여 뱅킹 트랜잭션 및 기타 중요한 이벤트와 리마인더에 대한 알림을 그들의 고객에게 전송하고 있습니다. 
 

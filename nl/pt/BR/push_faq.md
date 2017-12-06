@@ -37,7 +37,7 @@ por sua vez, restringiria tentativas subsequentes de enviar a notificação a es
  
 	1. Você usa o método de início correto. 
 	1. Inclua o arquivo `manifest.json` na pasta raiz.
-	1. Host do seu website. Crie, de preferência, um iniciador `node.js` no Bluemix para experimentá-lo. Por exemplo: https:// < mysamplewebsite> .mybluemix.net/.	
+	1. Host do seu website. Crie, de preferência, um iniciador `node.js` no IBM Cloud para experimentá-lo. Por exemplo: https:// < mysamplewebsite> .mybluemix.net/.	
 
 4. Como resolver erros de configuração da web de push da Web?
 

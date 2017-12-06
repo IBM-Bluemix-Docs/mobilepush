@@ -111,7 +111,7 @@ notificações baseada em tag
 {: #using_tags}
 
 Notificações baseadas em tag são mensagens que se destinam a todos os dispositivos inscritos em uma tag específica. Cada dispositivo pode ser inscrito em qualquer número de tags. Este
-tópico descreve como enviar notificações baseadas em tag. As assinaturas são mantidas pela instância do Bluemix do serviço {{site.data.keyword.mobilepushshort}}. Quando uma tag é excluída, todas as informações associadas a essa tag, incluindo seus assinantes e dispositivos, são excluídas. Nenhum cancelamento de
+tópico descreve como enviar notificações baseadas em tag. As assinaturas são mantidas pela instância do IBM Cloud do serviço {{site.data.keyword.mobilepushshort}}. Quando uma tag é excluída, todas as informações associadas a essa tag, incluindo seus assinantes e dispositivos, são excluídas. Nenhum cancelamento de
 assinatura automático é necessário para essa tag, uma vez que ela não existe mais e
 nenhuma ação adicional é necessária no lado do cliente.
 

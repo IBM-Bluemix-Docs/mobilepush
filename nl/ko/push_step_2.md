@@ -26,7 +26,7 @@ copyright:
 
 Android 애플리케이션 및 Google Chrome 앱 & 확장 프로그램에 대한 FCM 신임 정보를 구성하려면 다음 단계를 완료하십시오. 
 
-1. Bluemix 카탈로그를 열고 작성한 {{site.data.keyword.mobilepushfull}} 서비스 인스턴스를 클릭하십시오.  
+1. IBM Cloud 카탈로그를 열고 작성한 {{site.data.keyword.mobilepushfull}} 서비스 인스턴스를 클릭하십시오.  
 2. **관리** > **구성**을 클릭하십시오. 
 3. 다음 옵션 중에서 선택하십시오.  
 	- Android의 경우: **모바일**을 선택한 다음 GCM/FCM 푸시 신임 정보 탭을 발신인 ID/프로젝트 번호 및 API 키로 업데이트하십시오.  

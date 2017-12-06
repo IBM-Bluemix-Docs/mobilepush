@@ -277,7 +277,7 @@ desativado para este aplicativo. O motivo pode ser o faturamento, ou o app pode 
 administrador.
 
 
-**Resposta do usuário**: consulte os tópicos de Resolução de problemas no Bluemix Docs
+**Resposta do usuário**: consulte os tópicos de Resolução de problemas no IBM Cloud Docs
 para verificar o status do serviço, revisar informações de resolução de problemas ou para acessar informações sobre como obter
 ajuda.
 

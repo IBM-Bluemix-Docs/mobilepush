@@ -21,7 +21,7 @@ O IBM {{site.data.keyword.mobilepushshort}} é um serviço que pode ser usado pa
 do aplicativo ou para um conjunto específico de usuários e dispositivos usando tags. Para cada mensagem enviada para o serviço, o público desejado recebe uma notificação.
 
 
-É possível optar por usar o serviço {{site.data.keyword.mobilepushshort}} como uma parte do Modelo do MobileFirst Services Starter ou como [Serviços dedicados](/docs/dedicated/index.html) do Bluemix.  Também é possível usar um SDK (kit de desenvolvimento de software) e [APIs de REST ![Ícone de link externo](../../icons/launch-glyph.svg "External link icon")](https://mobile.{DomainName}/imfpush/){: new_window} para desenvolver adicionalmente seus aplicativos clientes.
+É possível optar por usar o serviço {{site.data.keyword.mobilepushshort}} como uma parte do Modelo do MobileFirst Services Starter ou como [Serviços dedicados](/docs/dedicated/index.html) do IBM Cloud.  Também é possível usar um SDK (kit de desenvolvimento de software) e [APIs de REST ![Ícone de link externo](../../icons/launch-glyph.svg "External link icon")](https://mobile.{DomainName}/imfpush/){: new_window} para desenvolver adicionalmente seus aplicativos clientes.
 
 
 O serviço {{site.data.keyword.mobilepushshort}} também é ativado para o [OpenWhisk](/docs/openwhisk/index.html). O OpenWhisk é um serviço de cálculo distribuído, acionado por evento, conhecido como computação sem servidor, como alternativa. Isso permite que os desenvolvedores se concentrem na composição de lógica do aplicativo e criem ações que sejam executadas sob demanda.
@@ -91,5 +91,5 @@ Também é possível localizar mais informações na página [Blog](http://push-
 ## Cenário de Amostra 
 {: #push-scenario}
 
-O serviço {{site.data.keyword.mobilepushshort}} é explicado usando o cenário de amostra do ACME Bank. O ACME Bank está na fase de ter a infraestrutura de TI anterior movida para os serviços do IBM Bluemix e está construindo atualmente um backend móvel para seus apps voltados para os clientes e funcionários. Eles estão usando o serviço {{site.data.keyword.mobilepushshort}} para enviar notificação para seus clientes em transações bancárias e outros eventos e lembretes importantes.
+O serviço {{site.data.keyword.mobilepushshort}} é explicado usando o cenário de amostra do ACME Bank. O ACME Bank está na fase de ter a infraestrutura de TI anterior movida para os serviços do IBM Cloud e está construindo atualmente um backend móvel para seus apps voltados para os clientes e funcionários. Eles estão usando o serviço {{site.data.keyword.mobilepushshort}} para enviar notificação para seus clientes em transações bancárias e outros eventos e lembretes importantes.
 

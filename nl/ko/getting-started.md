@@ -24,7 +24,7 @@ lastupdated: "2017-05-31"
 ## 시작하기 전에
 {: #prereqs}
 
-[Bluemix 계정](https://console.bluemix.net/registration/), {{site.data.keyword.mobilepushshort}} 서비스의 인스턴스 및 다음과 같은 도구와 요구사항이 필요합니다. 
+[IBM Cloud 계정](https://console.bluemix.net/registration/), {{site.data.keyword.mobilepushshort}} 서비스의 인스턴스 및 다음과 같은 도구와 요구사항이 필요합니다. 
 
   * Android API 15+
   * Android 4.0.3+

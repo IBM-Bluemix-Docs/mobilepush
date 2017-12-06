@@ -28,7 +28,7 @@ copyright:
 ## appSecret 
 {: #push-api-rest-secret}
 
-애플리케이션이 {{site.data.keyword.mobilepushshort}}에 바인드되는 경우 서비스에서 appSecret(고유 키)을 생성하여 응답 헤더를 통해 전달합니다. IBM {{site.data.keyword.mobilepushshort}} for Bluemix Rest API를 사용 중인 경우 보호해야 하는 API에 대한 정보를 얻으려면 REST API 참조를 사용하십시오. 자세한 정보는 [Push REST API![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://mobile.{DomainName}/imfpush/){: new_window}를 참조하십시오. 
+애플리케이션이 {{site.data.keyword.mobilepushshort}}에 바인드되는 경우 서비스에서 appSecret(고유 키)을 생성하여 응답 헤더를 통해 전달합니다. IBM {{site.data.keyword.mobilepushshort}} for IBM Cloud Rest API를 사용 중인 경우 보호해야 하는 API에 대한 정보를 얻으려면 REST API 참조를 사용하십시오. 자세한 정보는 [Push REST API![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://mobile.{DomainName}/imfpush/){: new_window}를 참조하십시오. 
 
 요청 헤더에 appSecret이 포함되어야 합니다. 그렇지 않으면 서버가 401 권한 없음 오류 코드를 리턴합니다. {{site.data.keyword.mobilepushshort}}가 애플리케이션에 추가되면 특정 AppID가 작성됩니다. 응답 과정에서 태그를 작성하거나 메시지를 전송하는 데 사용되는 appSecret 헤더를 받습니다. 카탈로그 또는 표준 유형의 서비스를 통해 오퍼레이션이 발생합니다.
 

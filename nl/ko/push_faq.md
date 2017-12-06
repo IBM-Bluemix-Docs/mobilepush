@@ -36,7 +36,7 @@ lastupdated: "2017-06-27"
  
 	1. 올바른 시작 메소드를 사용합니다.  
 	1. 루트 폴더에 `manifest.json` 파일을 포함하십시오. 
-	1. 웹 사이트를 호스팅하십시오. 되도록이면 `node.js` 스타터를 Bluemix에서 작성해서 시험하십시오. 예: https://<mysamplewebsite>.mybluemix.net/.	
+	1. 웹 사이트를 호스팅하십시오. 되도록이면 `node.js` 스타터를 IBM Cloud 에서 작성해서 시험하십시오. 예: https://<mysamplewebsite>.mybluemix.net/.	
 
 4. 웹 푸시 웹 구성 오류를 어떻게 해결할 수 있습니까?
 

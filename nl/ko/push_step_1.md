@@ -61,7 +61,7 @@ FCM 신임 정보를 획득하고 `google-services.json` 파일을 생성한 후
 ## iOS의 경우
 {: #push_step_1_ios}
 
-iOS 디바이스 및 애플리케이션의 경우, 애플리케이션 개발자는 APNs(Apple Push Notification Service)로 Bluemix의 {{site.data.keyword.mobilepushshort}} 서비스 인스턴스(제공자)에서 iOS 디바이스 및 애플리케이션으로 원격 알림을 전송할 수 있습니다. 디바이스의 대상 애플리케이션으로 메시지가 전송됩니다.  
+iOS 디바이스 및 애플리케이션의 경우, 애플리케이션 개발자는 APNs(Apple Push Notification Service)로 IBM Cloud의 {{site.data.keyword.mobilepushshort}} 서비스 인스턴스(제공자)에서 iOS 디바이스 및 애플리케이션으로 원격 알림을 전송할 수 있습니다. 디바이스의 대상 애플리케이션으로 메시지가 전송됩니다.  
 
 APNs 신임 정보를 획득해서 구성해야 합니다. {{site.data.keyword.mobilepushshort}} 서비스에서 APNs 인증서를 안전하게 관리하며 제공자로 APNs 서버에 연결하는 데 이 인증서를 사용합니다. 
 
@@ -96,7 +96,7 @@ APNs 인증서를 획득하려면 먼저 인증서 서명 요청(CSR)을 작성�
 * 개발 및 테스트를 위한 샌드박스 모드에서
 * 앱 저장소(또는 다른 엔터프라이즈 배포 메커니즘)를 통해 애플리케이션을 배포할 때 프로덕션 모드에서
 
-개발 및 배포 환경을 위한 별도의 인증서를 획득해야 합니다. 인증서는 원격 알림의 수신인인 앱의 App ID와 연관되어 있습니다. 프로덕션의 경우 최대 2개의 인증서를 작성할 수 있습니다. Bluemix는 인증서를 사용하여 APNs와의 SSL 연결을 설정합니다. 
+개발 및 배포 환경을 위한 별도의 인증서를 획득해야 합니다. 인증서는 원격 알림의 수신인인 앱의 App ID와 연관되어 있습니다. 프로덕션의 경우 최대 2개의 인증서를 작성할 수 있습니다. IBM Cloud는 인증서를 사용하여 APNs와의 SSL 연결을 설정합니다. 
 
 <!-- Create a development and distribution SSL certificate. -->
 

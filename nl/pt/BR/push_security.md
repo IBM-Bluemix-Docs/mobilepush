@@ -29,7 +29,7 @@ O `appSecret` e o `clientSecret` são alocados para todas as instâncias de serv
 {: #push-api-rest-secret}
 
 Quando um aplicativo é ligado ao {{site.data.keyword.mobilepushshort}}, o serviço gera um appSecret (uma chave exclusiva) e passa-o no cabeçalho de resposta. Se
-você estiver usando a API de REST do IBM {{site.data.keyword.mobilepushshort}} for Bluemix, use a referência da API de REST para obter informações sobre quais
+você estiver usando a API de REST do IBM {{site.data.keyword.mobilepushshort}} for IBM Cloud, use a referência da API de REST para obter informações sobre quais
 APIs você precisa assegurar. Para obter informações, veja a [API de REST Push ![Ícone de link externo](../../icons/launch-glyph.svg "External link icon")](https://mobile.{DomainName}/imfpush/){: new_window}.
 
 O cabeçalho da solicitação deve conter o appSecret. Caso contrário, o servidor retornará um código de erro 401 Desautorizado. Quando o {{site.data.keyword.mobilepushshort}} é incluído em um aplicativo, um AppID específico é criado. Como parte da resposta, você obtém um cabeçalho chamado appSecret que é usado para criar tags ou enviar
