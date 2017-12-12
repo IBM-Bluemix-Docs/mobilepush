@@ -28,8 +28,8 @@ copyright:
 
 若要取得 REST API 的基本 URL，請完成下列步驟：
 
-1. 選擇 MobileFirst Services Starter，以在 Bluemix® 型錄的「樣板」區段中建立後端應用程式。這會將 {{site.data.keyword.mobilepushshort}} 服務連結至應用程式。您也可以建立 Push 的服務實例，並將它保留為未連結。 
-1. 在 Bluemix 型錄的主頁面中，移至**應用程式**區域，然後選取您的應用程式。
+1. 選擇 MobileFirst Services Starter，以在 IBM Cloud® 型錄的「樣板」區段中建立後端應用程式。這會將 {{site.data.keyword.mobilepushshort}} 服務連結至應用程式。您也可以建立 Push 的服務實例，並將它保留為未連結。 
+1. 在 IBM Cloud 型錄的主頁面中，移至**應用程式**區域，然後選取您的應用程式。
 3. 按一下**行動選項**。路徑及應用程式 GUID 值會顯示在應用程式的詳細資料頁面開頭。「顯示認證」畫面會顯示 AppSecret 的相關資訊。您可以從「行動選項」取得應用程式密碼，也可以取得部分 API 的用戶端密碼。
 
 您也可以使用下列指令行來取得服務認證：

@@ -26,7 +26,7 @@ copyright:
 
 若要配置 Android 應用程式及 Google Chrome Apps & Extensions 的 FCM 認證，請完成下列步驟：
 
-1. 開啟 Bluemix 型錄，然後按一下您已建立的 {{site.data.keyword.mobilepushfull}} 服務實例。 
+1. 開啟 IBM Cloud 型錄，然後按一下您已建立的 {{site.data.keyword.mobilepushfull}} 服務實例。 
 2. 按一下**管理** > **配置**。 
 3. 選擇下列一個選項： 
 	- 若為 Android：選取**行動**，然後使用「寄件者 ID」/「專案號碼」和「API 金鑰」更新「GCM/FCM 推送認證」標籤。 

@@ -36,7 +36,7 @@ lastupdated: "2017-06-27"
  
 	1. 使用正确的启动方法。 
 	1. 将 `manifest.json` 文件包含在根文件夹中。
-	1. 托管 Web 站点。最好在 Bluemix 中创建 `node.js` 入门模板以试用。例如：https://<mysamplewebsite>.mybluemix.net/。	
+	1. 托管 Web 站点。最好在 IBM Cloud 中创建 `node.js` 入门模板以试用。例如：https://<mysamplewebsite>.mybluemix.net/。	
 
 4. 如何解决 Web 推送 Web 配置错误？
 

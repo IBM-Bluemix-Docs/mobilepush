@@ -19,13 +19,13 @@ years: 2015, 2017
 
 {:shortdesc}
 
-{{site.data.keyword.mobilepushshort}} 在“移动”类别中作为 Bluemix 目录服务提供，使您能够发送和管理移动和 Web 推送通知。推送通知是一种警报，指示移动设备或浏览器上有更改或更新。
+{{site.data.keyword.mobilepushshort}} 在“移动”类别中作为 IBM Cloud 目录服务提供，使您能够发送和管理移动和 Web 推送通知。推送通知是一种警报，指示移动设备或浏览器上有更改或更新。
 
 Push Notifications 是企业之间或针对各种受众普遍接受的通信渠道。可以将这些通知作为屏幕上的条幅警报传递，或者传递到设备的锁定屏幕上，从而提供可快速、轻松访问的信息更新。  
 
 基本入门步骤：
 
-1. [创建 Bluemix 服务实例](/docs/services/mobilepush/push_step_prereq.html)
+1. [创建 IBM Cloud 服务实例](/docs/services/mobilepush/push_step_prereq.html)
 1. [获取通知提供程序凭证](/docs/services/mobilepush/push_step_1.html)
 1. [配置服务实例](/docs/services/mobilepush/push_step_2.html)
 1. [设置 Push 服务客户机 SDK](/docs/services/mobilepush/push_step_3.html)

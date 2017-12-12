@@ -28,7 +28,7 @@ years: 2015, 2017
 ## appSecret 
 {: #push-api-rest-secret}
 
-應用程式連結至 {{site.data.keyword.mobilepushshort}} 時，服務會產生 appSecret（唯一金鑰）並透過回應標頭進行傳遞。如果您使用的是 IBM {{site.data.keyword.mobilepushshort}} for Bluemix Rest API，請使用 REST API 參考資料來取得所需保護之 API 的資訊。如需資訊，請參閱 [Push REST API ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://mobile.{DomainName}/imfpush/){: new_window}。
+應用程式連結至 {{site.data.keyword.mobilepushshort}} 時，服務會產生 appSecret（唯一金鑰）並透過回應標頭進行傳遞。如果您使用的是 IBM {{site.data.keyword.mobilepushshort}} for IBM Cloud Rest API，請使用 REST API 參考資料來取得所需保護之 API 的資訊。如需資訊，請參閱 [Push REST API ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://mobile.{DomainName}/imfpush/){: new_window}。
 
 要求標頭必須包含 appSecret。如果沒有，則伺服器會傳回「401 未獲授權」的錯誤碼。將 {{site.data.keyword.mobilepushshort}} 新增至應用程式時，會建立特定的 AppID。在回應中有一個稱為 appSecret 的標頭，它用來建立標籤或傳送訊息。作業是透過型錄或樣板中的服務進行。
 

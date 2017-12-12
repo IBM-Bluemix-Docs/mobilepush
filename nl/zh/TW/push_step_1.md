@@ -61,7 +61,7 @@ API 金鑰會安全地儲存並供 {{site.data.keyword.mobilepushshort}} 服務�
 ## iOS
 {: #push_step_1_ios}
 
-對於 iOS 裝置及應用程式，Apple Push Notification Service (APNs) 容許應用程式開發人員將遠端通知從 Bluemix（提供者）上的 {{site.data.keyword.mobilepushshort}} 服務實例傳送給 iOS 裝置及應用程式。訊息會傳送至裝置上的目標應用程式。 
+對於 iOS 裝置及應用程式，Apple Push Notification Service (APNs) 容許應用程式開發人員將遠端通知從 IBM Cloud（提供者）上的 {{site.data.keyword.mobilepushshort}} 服務實例傳送給 iOS 裝置及應用程式。訊息會傳送至裝置上的目標應用程式。 
 
 您需要取得並配置 APNs 認證。APNs 憑證是透過 {{site.data.keyword.mobilepushshort}} 服務安全地進行管理，並且用來以提供者身分連接至 APNs 伺服器。
 
@@ -96,7 +96,7 @@ API 金鑰會安全地儲存並供 {{site.data.keyword.mobilepushshort}} 服務�
 * 沙盤推演模式，用於進行開發及測試。
 * 正式作業模式，在透過「應用程式市集」（或其他企業配送機制）配送應用程式時使用。
 
-您必須取得開發及配送環境的個別憑證。憑證是與接收遠端通知之應用程式的「應用程式 ID」相關聯。對於正式作業，您最多可以建立兩個憑證。Bluemix 使用憑證來建立與 APNs 的 SSL 連線。
+您必須取得開發及配送環境的個別憑證。憑證是與接收遠端通知之應用程式的「應用程式 ID」相關聯。對於正式作業，您最多可以建立兩個憑證。IBM Cloud 使用憑證來建立與 APNs 的 SSL 連線。
 
 <!-- Create a development and distribution SSL certificate. -->
 

@@ -24,7 +24,7 @@ lastupdated: "2017-05-31"
 ## 开始之前
 {: #prereqs}
 
-您将需要 [Bluemix 帐户](https://console.bluemix.net/registration/)、{{site.data.keyword.mobilepushshort}} 服务实例以及下列工具和需求：
+您将需要 [IBM Cloud 帐户](https://console.bluemix.net/registration/)、{{site.data.keyword.mobilepushshort}} 服务实例以及下列工具和需求：
 
   * Android API 15+
   * Android 4.0.3+

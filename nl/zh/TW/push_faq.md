@@ -36,7 +36,7 @@ lastupdated: "2017-06-27"
  
 	1. 您使用正確的啟動方法。 
 	1. 在根資料夾中包含 `manifest.json` 檔案。
-	1. 管理您的網站。最好是在 Bluemix 中建立 `node.js` 入門範本進行試用。例如：`https://<mysamplewebsite>.mybluemix.net/`。	
+	1. 管理您的網站。最好是在 IBM Cloud 中建立 `node.js` 入門範本進行試用。例如：`https://<mysamplewebsite>.mybluemix.net/`。	
 
 4. 我如何解決 Web Push 的 Web 配置錯誤？
 

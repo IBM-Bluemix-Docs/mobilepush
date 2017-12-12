@@ -26,7 +26,7 @@ copyright:
 
 要为 Android 应用程序和 Google Chrome Apps & Extensions 配置 FCM 凭证，请完成以下步骤：
 
-1. 打开 Bluemix“目录”，然后单击已创建的 {{site.data.keyword.mobilepushfull}} 服务实例。 
+1. 打开 IBM Cloud“目录”，然后单击已创建的 {{site.data.keyword.mobilepushfull}} 服务实例。 
 2. 单击**管理** > **配置**。 
 3. 选择以下任一选项： 
 	- 对于 Android：选择**移动**，然后使用“发送方标识/项目号”和“API 密钥”更新“GCM/FCM 推送凭证”选项卡。 

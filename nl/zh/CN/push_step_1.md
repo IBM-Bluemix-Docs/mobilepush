@@ -63,7 +63,7 @@ API 密钥以安全方式存储，并由 {{site.data.keyword.mobilepushshort}} �
 ## 对于 iOS
 {: #push_step_1_ios}
 
-对于 iOS 设备和应用程序，通过 Apple 推送通知服务 (APNs)，应用程序开发者可以将远程通知从 Bluemix 上的 {{site.data.keyword.mobilepushshort}} 服务实例（提供程序）发送到 iOS 设备和应用程序。消息会发送到设备上的目标应用程序。 
+对于 iOS 设备和应用程序，通过 Apple 推送通知服务 (APNs)，应用程序开发者可以将远程通知从 IBM Cloud 上的 {{site.data.keyword.mobilepushshort}} 服务实例（提供程序）发送到 iOS 设备和应用程序。消息会发送到设备上的目标应用程序。 
 
 您需要获取并配置 APNs 凭证。APNs 证书由 {{site.data.keyword.mobilepushshort}} 服务安全管理，在连接到 APNs 服务器（提供者）时需要使用该证书。
 
@@ -98,7 +98,7 @@ API 密钥以安全方式存储，并由 {{site.data.keyword.mobilepushshort}} �
 * 用于开发和测试的沙箱模式。
 * 在 App Store（或其他企业分发机制）中分发应用程序时的生产模式。
 
-必须分别针对开发环境和分发环境获取证书。证书与接收远程通知的应用程序的应用程序标识相关联。对于生产方式，最多可创建两个证书。Bluemix 使用证书与 APNs 建立 SSL 连接。
+必须分别针对开发环境和分发环境获取证书。证书与接收远程通知的应用程序的应用程序标识相关联。对于生产方式，最多可创建两个证书。IBM Cloud 使用证书与 APNs 建立 SSL 连接。
 
 <!-- Create a development and distribution SSL certificate. -->
 

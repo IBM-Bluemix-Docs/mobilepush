@@ -20,7 +20,7 @@ copyright:
 IBM {{site.data.keyword.mobilepushshort}} 是一项服务，您可以使用该服务将通知发送到移动设备和浏览器。通知可以针对所有应用程序用户，也可以针对一组使用标记的特定用户和设备。对于您提交给该服务的每条消息，目标受众都会收到一个通知。
 
 
-可以选择将 {{site.data.keyword.mobilepushshort}} 服务用作 MobileFirst Services Starter 样板的一部分或用作 Bluemix [专用服务](/docs/dedicated/index.html)。您还可以使用 SDK（软件开发包）和 [REST API ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://mobile.{DomainName}/imfpush/){: new_window} 来进一步开发您的客户机应用程序。
+可以选择将 {{site.data.keyword.mobilepushshort}} 服务用作 MobileFirst Services Starter 样板的一部分或用作 IBM Cloud [专用服务](/docs/dedicated/index.html)。您还可以使用 SDK（软件开发包）和 [REST API ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://mobile.{DomainName}/imfpush/){: new_window} 来进一步开发您的客户机应用程序。
 
 
 {{site.data.keyword.mobilepushshort}} 服务还支持 [OpenWhisk](/docs/openwhisk/index.html)。OpenWhisk 是一种分布式事件驱动型计算服务，也称为无服务器计算。这将支持开发者专注于编写应用程序逻辑，以及创建按需执行的操作。
@@ -77,5 +77,5 @@ IBM {{site.data.keyword.mobilepushshort}} 是一项服务，您可以使用该�
 ## 样本场景 
 {: #push-scenario}
 
-使用 ACME Bank 的样本场景对 {{site.data.keyword.mobilepushshort}} 服务进行了说明。ACME Bank 处于将其原有 IT 基础架构移至 IBM Bluemix 服务的阶段，并且目前正在针对面向客户和员工的应用程序构建移动后端。这些应用程序将使用 {{site.data.keyword.mobilepushshort}} 服务向其客户发送有关银行交易以及其他重要事件和提醒的通知。
+使用 ACME Bank 的样本场景对 {{site.data.keyword.mobilepushshort}} 服务进行了说明。ACME Bank 处于将其原有 IT 基础架构移至 IBM Cloud 服务的阶段，并且目前正在针对面向客户和员工的应用程序构建移动后端。这些应用程序将使用 {{site.data.keyword.mobilepushshort}} 服务向其客户发送有关银行交易以及其他重要事件和提醒的通知。
 

@@ -28,7 +28,7 @@ copyright:
 ## appSecret 
 {: #push-api-rest-secret}
 
-应用程序绑定到 {{site.data.keyword.mobilepushshort}} 后，该服务会生成一个 appSecret（唯一密钥），并会在响应头中传递该密钥。如果是使用 IBM {{site.data.keyword.mobilepushshort}} for Bluemix Rest API，请参阅 REST API 参考来获取有关需要保护哪些 API 的信息。有关更多信息，请参阅 [Push REST API ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://mobile.{DomainName}/imfpush/){: new_window}。
+应用程序绑定到 {{site.data.keyword.mobilepushshort}} 后，该服务会生成一个 appSecret（唯一密钥），并会在响应头中传递该密钥。如果是使用 IBM {{site.data.keyword.mobilepushshort}} for IBM Cloud Rest API，请参阅 REST API 参考来获取有关需要保护哪些 API 的信息。有关更多信息，请参阅 [Push REST API ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://mobile.{DomainName}/imfpush/){: new_window}。
 
 请求头必须包含 appSecret。如果不包含，服务器会返回“401 未授权”错误代码。将 {{site.data.keyword.mobilepushshort}} 添加到应用程序时，会创建特定的 AppID。作为响应的一部分，您会获取名为 appSecret 的头，其用于创建标记或发送消息。通过目录或样板中的服务，可执行该操作。
 
