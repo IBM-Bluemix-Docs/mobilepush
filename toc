@@ -52,6 +52,7 @@ Push Notifications
         push_step_4_nf_interactive.md
         push_step_4_nf_rich.md
         push_step_4_nf_adv.md
+    {: .navgroup-end}		
 
     {: .navgroup id="help"}
    	push_monitoring.md	
