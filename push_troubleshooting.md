@@ -47,7 +47,7 @@ This topic guides you in identifying and resolving the likely error scenarios yo
 ### Server Busy: The server is currently unable to handle the request. Try again later.
 {: #troubleshooting_notification_server_busy}
 
-**Explanation**: sers may notice the error while accessing the reports in the Monitoring page. This is an expected behavior when the number of messages sent is very high in the past 90 days.
+**Explanation**: Users may notice the error while accessing the reports in the Monitoring page. This is an expected behavior when the number of messages sent is very high in the past 90 days.
  
 **User response**: messageId based reports can be accessed through REST APIs. Refer "getMessageReport" in [REST API docs]( https://console.bluemix.net/apidocs/800-push-notifications?&language=shell_curl#getmessagereport) .
 
