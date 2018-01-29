@@ -6,9 +6,9 @@
 Push Notifications
 
     {: .navgroup id="learn"}
-    index.md
     c_overview_push.md
-
+    index.md
+    
     {: .topicgroup}
     Basic steps
 		push_step_prereq.md
@@ -52,14 +52,24 @@ Push Notifications
         push_step_4_nf_interactive.md
         push_step_4_nf_rich.md
         push_step_4_nf_adv.md
-    {: .navgroup-end}		
+        push_monitoring.md	
+        push_security.md	
+        push_webhook.md
+    {: .navgroup-end}
 
     {: .navgroup id="help"}
-   	push_monitoring.md	
-    push_security.md	
-    push_webhook.md
-    push_troubleshooting.md
+	push_troubleshooting.md
     push_faq.md	
+	
+	{: .topicgroup}
+    Developer community
+	    [StackOverflow](https://stackoverflow.com/questions/tagged/bluemix-mobile-services)
+        [IBM developerWorks](https://developer.ibm.com/answers/topics/bluemix-mobile-services/)
+		
+	{: .topicgroup}
+	Videos
+	    [Sending Push Notifications on Android](https://www.youtube.com/watch?v=AgqUPC7f_cs)
+        [Sending Push Notifications on iOS](https://www.youtube.com/watch?v=OBjTruF0Ci0)	
     {: .navgroup-end}
 
     
