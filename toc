@@ -17,6 +17,16 @@ Push Notifications
         push_step_3.md
         push_step_4.md	
     {: .navgroup-end}
+
+    {: .navgroup id="howto"}
+    {: .topicgroup}
+    Enable notifications 
+        push_step_4_nf_tag.md
+        push_step_4_nf_user.md
+        push_step_4_nf_interactive.md
+        push_step_4_nf_rich.md
+        push_step_4_nf_adv.md
+    {: .navgroup-end}
     
     {: .navgroup id="reference"}
     {: .topicgroup}
@@ -44,16 +54,6 @@ Push Notifications
         [REST API Reference](https://console.bluemix.net/apidocs/800-push-notifications?&language=shell_curl#introduction)
     {: .navgroup-end}
     
-    {: .navgroup id="howto"}
-    {: .topicgroup}
-    Enable notifications 
-        push_step_4_nf_tag.md
-        push_step_4_nf_user.md
-        push_step_4_nf_interactive.md
-        push_step_4_nf_rich.md
-        push_step_4_nf_adv.md
-    {: .navgroup-end}		
-
     {: .navgroup id="help"}
    	push_monitoring.md	
     push_security.md	
