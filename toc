@@ -30,6 +30,11 @@ Push Notifications
         push_security.md	
         push_webhook.md
     {: .navgroup-end}
+	
+    {: .navgroup id="help"}
+    push_troubleshooting.md
+    push_faq.md	
+    {: .navgroup-end}
     
     {: .navgroup id="reference"}
     {: .topicgroup}
@@ -57,10 +62,7 @@ Push Notifications
         [REST API Reference](https://console.bluemix.net/apidocs/800-push-notifications?&language=shell_curl#introduction)
     {: .navgroup-end}
     
-    {: .navgroup id="help"}
-    push_troubleshooting.md
-    push_faq.md	
-    {: .navgroup-end}
+
 
     
 
