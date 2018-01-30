@@ -26,6 +26,9 @@ Push Notifications
         push_step_4_nf_interactive.md
         push_step_4_nf_rich.md
         push_step_4_nf_adv.md
+        push_monitoring.md	
+        push_security.md	
+        push_webhook.md
     {: .navgroup-end}
     
     {: .navgroup id="reference"}
@@ -55,9 +58,6 @@ Push Notifications
     {: .navgroup-end}
     
     {: .navgroup id="help"}
-   	push_monitoring.md	
-    push_security.md	
-    push_webhook.md
     push_troubleshooting.md
     push_faq.md	
     {: .navgroup-end}
