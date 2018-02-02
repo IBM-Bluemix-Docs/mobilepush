@@ -12,7 +12,7 @@ copyright:
 
 # Step 5: Sending a notification
 {: #push_step_4}
-Last updated: 03 August 2017
+Last updated: 27 June 2017
 {: .last-updated}
 
 
@@ -50,6 +50,7 @@ The following optional customization options are supported:
 - Priority: Specifies the options for assigning delivery priority to messages. 
 	- A priority `high` or `max` will result in heads-up notification.
 	- A priority `low` or `default` will not open network connections on a sleeping device. 
+	- A priority `min` will be a silent notification.
 - Visibility: You can choose to set the notification visibility option to either `public` or `private`. 
 	- The `private` option restricts public viewing and you can choose to enable it if your device is secure with a pin or pattern, and the notification setting is set to **Hide sensitive notification content**. When the visibility is set as `private`, a `redact` field must be mentioned. Only the content specified in the `redact` field will show up on a secure locked screen on the device. 
 	- The `public` option would render the notifications to be freely read.
@@ -74,20 +75,6 @@ You can customize the {{site.data.keyword.mobilepushshort}} settings for sending
 - **Additional payload**: Specifies the custom payload values for your notifications.
 
 You can also choose to enable [interactive notifications](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-swift-push/tree/Doc#interactive-notifications) and [rich media notifications](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-swift-push/tree/Doc#enabling-rich-media-notifications).
-
-<!---
-## Messages sent to HTTP/HTTPS
-{: #push_step_4_http}
-
-A sample message sent to HTTP/HTTPS would be having the following structure:
-
-```
-{“alert”:“ACME Banks",“payload”:“{\“nid\“:\“Rg1OtTjV\“}”,“properties”: "deviceId": "ACMEBanksDeviceId"}
-```
-	{: codeblock}
-
-The HTTP endpoint will need to parse the message and deliver it to device. 
---->
 
 ## Monitoring for delivered notifications 
 {: #push_step_4_monitor}

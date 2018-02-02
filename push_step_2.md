@@ -12,7 +12,7 @@ copyright:
 
 # Step 3: Configure a service instance 
 {: #push_step_2}
-Last updated: 21 July 2017
+Last updated: 27 June 2017
 {: .last-updated}
 
 Ensure that you have gone through [Obtain your notification credentials](push_step_1.html).
@@ -36,6 +36,16 @@ To configure FCM credentials for Android applications and Google Chrome Apps & E
 Your next step is to [set up the Push service client SDK's](push_step_3.html).
 
 
+## For Cordova applications 
+{: #push_step_2_b}
+
+
+Cordova is a platform for building hybrid applications with JavaScript, CSS, and HTML. The {{site.data.keyword.mobilepushshort}} service supports development of Cordova-based iOS and Android applications.
+
+To enable Cordova applications for receiving push notifications to your devices, go through [Push Notifications Cordova Plugin Push SDK](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-cordova-plugin-push/tree/Doc#ios-app).
+
+
+
 ## For iOS applications and Safari browser 
 {: #enable-push-ios-notifications}
 
@@ -44,7 +54,7 @@ To use the {{site.data.keyword.mobilepushshort}} service to send notifications, 
 
 **Note**: After the `.cer` file is in your key chain access, export it to your computer to create a `.p12` certificate.
 
-For more information about using the APNs, see [iOS Developer Library: Local and Push Notification Programming Guide ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html#//apple_ref/doc/uid/TP40008194-CH8-SW1){: new_window}.
+For more information about using the APNs, see [iOS Developer Library: Local and Push Notification Programming Guide ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://developer.apple.com/library/ios/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/Chapters/ProvisioningDevelopment.html#//apple_ref/doc/uid/TP40008194-CH104-SW4){: new_window}.
 
 To set up APNs on the Push Notification services console, complete the steps:
 
@@ -79,20 +89,3 @@ After you have set up the service for iOS applications, you need to [Set up Push
 3. Configure the FCM/GCM API key and the URL of your website that will be registered to receive push notifications.
 4. Click **Save**.
 5. After you have set up the service, you need to [Set up Push service client SDK's](push_step_3.html).
-
-<!---
-## For HTTP/HTTPS endpoint
-{: #push_step2_https}
-
-To configure the {{site.data.keyword.mobilepushfull}, complete the following steps:
-
-1. On the Push Notifications console, select **Configure**.
-1. Select the **HTTP** tab.
-1. Provide a valid HTTP URL for the website you are configuring.
-1. Choose an authentication type. You can either configure HTTP without any authentication, or choose to configure using Basic Authentication or Digest based authentication.
-2. Click **Save**.
-
-![WebPush Configurations](images/HTTP_endpoint.jpg)
-
-Once you have configured a service instance, go through the [Step 4: Set up service client SDK's](push_step_3.html).
---->
