@@ -74,7 +74,7 @@ After setting up the Web SDK, your next step is to [Send a notification](push_st
 ## For HTTP/HTTPS endpoint
 {: #push_step3_https}
 
-HTTP endpoint registrations need to be done using [REST API](https://console-regional.stage1.ng.bluemix.net/apidocs/800-push-notifications). The API reference provide information on individual APIs. The following APIs have specific significance in HTTP:
+HTTP endpoint registrations need to be done using [REST API](https://console.bluemix.net/apidocs/800-push-notifications). The API reference provide information on individual APIs. The following APIs have specific significance in HTTP:
 
 - POST on "/devices" to register a device using HTTP. The token is optional in case of HTTP. The JSON properties need to contain information on the device. The httpPath can be optionally provided so that it can be appended to the call that Push Notification service will make to invoke endpoint.
 - POST on "/messages" to send messages to HTTP endpoint. The messages can be sent targeting the HTTP platform. Additional payload can be included to send data specific to HTTP endpoints.

@@ -89,7 +89,7 @@ lastupdated: "2017-09-28"
 	- Open: The number of devices where notification was opened.
 	- Invalid: The number of devices on which the token in invalid.
 
-	For more information, see the GET messages report in [IBM Push Notifications ReST API](https://console-regional.stage1.ng.bluemix.net/apidocs/800).	
+	For more information, see the GET messages report in [IBM Push Notifications ReST API](https://console.bluemix.net/apidocs/800-push-notifications).	
 
 14. Does push notification monitor the push notification delivery up to the end user device? For both Android and iOS?
 
