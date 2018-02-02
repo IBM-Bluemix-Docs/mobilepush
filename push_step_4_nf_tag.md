@@ -17,7 +17,7 @@ Last updated: 13 July 2017
 
 Tag-based notifications are messages targeted to all devices that are subscribed to a particular tag. Tags-based notifications allow segmentation of notifications based on subject areas or topics. Notification recipients can choose to receive notifications only if it is about a subject or topic that is of interest. Therefore, tags-based notification provides a means to segment recipients. This feature enables the ability to define tags and then send and receive messages by tags. A message is targeted to only the client application instances (on mobile, browser or as an app or extensions) that are subscribed to the tag. You must first create tags for the application, set up the tag subscriptions and then initiate the tag-based notifications. To send a tag-based notification that uses the REST API, ensure that the "tagNames" are provided when posting to the message resource.
 
-You can define tags and then send and receive messages using tags. You must first create the tags for the application, create subscriptions and then initiate the tag-based notifications. To send a Tag-based notification using the [REST API](https://console.bluemix.net/apidocs/800-push-notifications){: new_window}, ensure that the "tagNames" are provided when posting to the message resource.
+You can define tags and then send and receive messages using tags. You must first create the tags for the application, create subscriptions and then initiate the tag-based notifications. To send a Tag-based notification using the [REST API](https://mobile.{DomainName}/imfpush/){: new_window}, ensure that the "tagNames" are provided when posting to the message resource.
 
 
 ## Managing tags

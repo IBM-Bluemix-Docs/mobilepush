@@ -22,7 +22,7 @@ Interactive notifications enable users to respond to a notification without open
 ## Sending interactive notifications
 {: #send_interactive_notifications}
 
-Interactive notification can be sent by using the Push Notifications console or by using the [REST API documentation](https://console.bluemix.net/apidocs/800-push-notifications).
+Interactive notification can be sent by using the Push Notifications console or by using the [REST API documentation](push_restapi.html).
 
 
 From the {{site.data.keyword.mobilepushshort}} console: 

@@ -89,7 +89,7 @@ lastupdated: "2017-09-28"
 	- Open: The number of devices where notification was opened.
 	- Invalid: The number of devices on which the token in invalid.
 
-	For more information, see the GET messages report in [IBM Push Notifications ReST API](https://console.bluemix.net/apidocs/800-push-notifications).	
+	For more information, see the GET messages report in [IBM Push Notifications ReST API](https://mobile.{DomainName}/imfpush/).	
 
 14. Does push notification monitor the push notification delivery up to the end user device? For both Android and iOS?
 
@@ -101,7 +101,7 @@ lastupdated: "2017-09-28"
 
 16. I am sending notification by tags, but have a long list of tags that might be difficult to add manually. 
 	
-	You can use REST APIs to automate the tag additions. See [POST bulk messages](https://console-regional.stage1.ng.bluemix.net/apidocs/800).
+	You can use REST APIs to automate the tag additions. See [POST bulk messages](https://mobile.{DomainName}/imfpush/).
 
 17. How can I filter the push notification delivery by information stored in the user's mobile device?
 

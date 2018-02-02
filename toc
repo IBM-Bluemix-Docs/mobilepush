@@ -59,7 +59,7 @@ Push Notifications
     API reference
         [API Reference for Android](https://www.javadoc.io/doc/com.ibm.mobilefirstplatform.clientsdk.android/push/3.6.1)
         [API Reference for iOS](http://ibm-bluemix-mobile-services.github.io/API-docs/client-SDK/BMSPush/Swift/index.html)
-        [REST API Reference](https://console.bluemix.net/apidocs/800-push-notifications)
+        [REST API Reference](https://mobile.ng.bluemix.net/imfpush/)
     {: .navgroup-end}
     
 

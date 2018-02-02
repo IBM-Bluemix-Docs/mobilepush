@@ -18,11 +18,11 @@ Last updated: 30 October 2017
 
 The IBM {{site.data.keyword.mobilepushshort}} service now extends capabilities to monitor the push performance by generating graphs from your user data. You can use the utility to list all the sent push notifications, or to list all the registered devices and to analyze information on a daily, weekly, or monthly basis.
 
-To generate reports for all your the sent notifications, use the Push Messages GET report method in [REST APIs](https://console.bluemix.net/apidocs/800-push-notifications){: new_window}. 
+To generate reports for all your the sent notifications, use the Push Messages GET report method in [REST APIs](https://mobile.{DomainName}/imfpush/#!/messages/get_apps_applicationId_messages_report){: new_window}. 
 	![Sent notifications report](images/monitoring_messages.jpg)
 
 
-To generate reports for all your registered devices, use the Push Device Registrations GET report method in [REST APIs](https://console.bluemix.net/apidocs/800-push-notifications){: new_window}.
+To generate reports for all your registered devices, use the Push Device Registrations GET report method in [REST APIs](https://mobile.{DomainName}/imfpush/#!/devices/get_apps_applicationId_devices_report){: new_window}.
 	![Registered devices report](images/monitoring_devices.jpg)
 
 

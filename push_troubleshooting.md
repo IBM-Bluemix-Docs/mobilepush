@@ -161,7 +161,7 @@ To obtain additional information about an error, search the docs for the related
 **Explanation**: The JSON body of the request has parameters that are not understood by the {{site.data.keyword.mobilepushshort}} server.
 
 
-**User response**: Verify that the JSON body in the request follows the format of the request that is expected by the {{site.data.keyword.mobilepushshort}} server. For more information, see [REST APIs ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.bluemix.net/apidocs/800-push-notifications){: new_window}.
+**User response**: Verify that the JSON body in the request follows the format of the request that is expected by the {{site.data.keyword.mobilepushshort}} server. For more information, see [REST APIs ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://mobile.{DomainName}/imfpush/){: new_window}.
 
 
 
@@ -171,7 +171,7 @@ To obtain additional information about an error, search the docs for the related
 **Explanation**: The request URL has a query string with unrecognized parameters. For example, if the request for deleting the subscription has parameters other than deviceId and tagName, this error might occur.
 
 
-**User response**:  Verify that the JSON body in the request follows the format of the request that is expected by the {{site.data.keyword.mobilepushshort}} server. For more information, see [REST APIs ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.bluemix.net/apidocs/800-push-notifications){: new_window}.
+**User response**:  Verify that the JSON body in the request follows the format of the request that is expected by the {{site.data.keyword.mobilepushshort}} server. For more information, see [REST APIs ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://mobile.{DomainName}/imfpush/){: new_window}.
 
 
 
@@ -181,7 +181,7 @@ To obtain additional information about an error, search the docs for the related
 **Explanation**: The request URL has a query string with missing required parameters. For example, the deviceId and tagName parameters might be missing from the request for deleting the subscription.
 
 
-**User response**:  Verify that the JSON body in the request follows the format of the request that is expected by the {{site.data.keyword.mobilepushshort}} server. For more information, see [REST APIs ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.bluemix.net/apidocs/800-push-notifications){: new_window}.
+**User response**:  Verify that the JSON body in the request follows the format of the request that is expected by the {{site.data.keyword.mobilepushshort}} server. For more information, see [REST APIs ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://mobile.{DomainName}/imfpush/){: new_window}.
 
 
 
