@@ -33,7 +33,17 @@ Push Notifications
 	
     {: .navgroup id="help"}
     push_troubleshooting.md
-    push_faq.md	
+    push_faq.md
+	
+    {: .topicgroup}
+    Developer community
+	    [StackOverflow](https://stackoverflow.com/questions/tagged/bluemix-mobile-services)
+        [IBM developerWorks](https://developer.ibm.com/answers/topics/bluemix-mobile-services/)
+		
+    {: .topicgroup}
+    Videos
+	    [Sending Push Notifications on Android](https://www.youtube.com/watch?v=AgqUPC7f_cs)
+        [Sending Push Notifications on iOS](https://www.youtube.com/watch?v=OBjTruF0Ci0)
     {: .navgroup-end}
     
     {: .navgroup id="reference"}
