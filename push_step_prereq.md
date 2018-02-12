@@ -21,7 +21,7 @@ You need to create an [IBM Cloud account](https://console.bluemix.net/registrati
 To create a Push Notifications service from the Catalog, complete the following steps:
 
 1. In the IBM Cloud Catalog, click **Mobile** > **Push Notifications**.
-2. Provide a Service name and a Credential name. 
+2. Provide a Service name. 
 3. Click **Create**. 
 
 You can choose to create either a bound service or an unbound service. Bound services are connected to other IBM Cloud apps, while unbound apps are standalone and not connected to other apps. Push Notifications service apps are unbound by default.
