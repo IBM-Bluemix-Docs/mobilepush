@@ -31,7 +31,7 @@ Use the {{site.data.keyword.mobilepushshort}} console to create and delete tags 
 
 Tag-based notifications are messages targeted to all devices subscribed to a particular tag. Each device can subscribe to any number of tags. 
 
-1. On the {{site.data.keyword.mobilepushshort}} console, select the **Tags** tab.
+1. On the {{site.data.keyword.mobilepushshort}} console, select the **Manage Tags** tab.
 1. Click the + **Create Tag** button.   
    1. In the **Name** field, enter the name of the tag. For example, "coupons".
    1. In the **Description** field, enter a tag description.
