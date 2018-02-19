@@ -43,11 +43,11 @@ You would also need to generate the `google-services.json` file. Complete the fo
 
 3. Select **ADD APP** or **Add Firebase to your Android app** icon from the General tab on the Your apps pane.
     
-4. In Add Firebase to your Android app window, add **com.ibm.mobilefirstplatform.clientsdk.android.push** as the Package Name. The App nickname field is optional. Click **ADD APP**. 
+4. In Add Firebase to your Android app window, first add **com.ibm.mobilefirstplatform.clientsdk.android.push**  as the Package Name. The App nickname field is optional. Click **REGISTER APP**. 
     
 	![Adding Firebase to your Android window](images/FCM_1.jpg)
 
-5. Include the package name of your application, by entering the package name in Add Firebase to your Android app window. The App nickname field is optional. Click **REGISTER APP**. 
+5. Now, include the package name of your application, by entering the package name in Add Firebase to your Android app window. The App nickname field is optional. Click **REGISTER APP**.  Below is an example -
 
 	![Adding the package name of your application](images/FCM_settings_4.jpg)
 
