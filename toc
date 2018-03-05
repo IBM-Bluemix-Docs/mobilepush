@@ -6,9 +6,9 @@
 Push Notifications
 
     {: .navgroup id="learn"}
-    index.md
     c_overview_push.md
-
+    index.md
+    
     {: .topicgroup}
     Basic steps
 		push_step_prereq.md
@@ -17,10 +17,10 @@ Push Notifications
         push_step_3.md
         push_step_4.md	
     {: .navgroup-end}
-
+    
     {: .navgroup id="howto"}
     {: .topicgroup}
-    Enable notifications 
+    Enable notification options
         push_step_4_nf_tag.md
         push_step_4_nf_user.md
         push_step_4_nf_interactive.md
@@ -29,24 +29,26 @@ Push Notifications
         push_monitoring.md	
         push_security.md	
         push_webhook.md
+        push_message_status.md
+        push_template_message.md
     {: .navgroup-end}
-	
+
     {: .navgroup id="help"}
-    push_troubleshooting.md
-    push_faq.md
+	push_troubleshooting.md
+    push_faq.md	
 	
-    {: .topicgroup}
+	{: .topicgroup}
     Developer community
 	    [StackOverflow](https://stackoverflow.com/questions/tagged/bluemix-mobile-services)
         [IBM developerWorks](https://developer.ibm.com/answers/topics/bluemix-mobile-services/)
 		
-    {: .topicgroup}
-    Videos
+	{: .topicgroup}
+	Videos
 	    [Sending Push Notifications on Android](https://www.youtube.com/watch?v=AgqUPC7f_cs)
-        [Sending Push Notifications on iOS](https://www.youtube.com/watch?v=OBjTruF0Ci0)
+        [Sending Push Notifications on iOS](https://www.youtube.com/watch?v=OBjTruF0Ci0)	
     {: .navgroup-end}
-    
-    {: .navgroup id="reference"}
+	
+	{: .navgroup id="reference"}
     {: .topicgroup}
     Sample apps
         [Android](https://github.com/ibm-bluemix-mobile-services/bms-samples-android-hellopush/)
@@ -67,12 +69,12 @@ Push Notifications
    	
     {: .topicgroup}
     API reference
-        [API Reference for Android](https://www.javadoc.io/doc/com.ibm.mobilefirstplatform.clientsdk.android/push/3.6.1)
-        [API Reference for iOS](http://ibm-bluemix-mobile-services.github.io/API-docs/client-SDK/BMSPush/Swift/index.html)
-        [REST API Reference](https://mobile.ng.bluemix.net/imfpush/)
-    {: .navgroup-end}
-    
+        app_api.md
 
+    {: .topicgroup}
+    Release notes
+        release-notes.md		
+    {: .navgroup-end}
 
     
 
