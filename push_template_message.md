@@ -66,7 +66,13 @@ Your custom notfication message will be sent by fetching the variable data -
 
 ![message example](images/message_template_example.jpg)
 
-**Note**: The feature is enabled only for users who have opted the `Advanced Plan`. Select **Plan** in the {{site.data.keyword.mobilepushshort}} service console to [upgrade](https://console-tok02-red.cdn.s-bluemix.net/docs/account/change-plan.html#changing) .
+Note: The feature is enabled only for users who have opted the `Advanced Plan`. Select **Plan** in the {{site.data.keyword.mobilepushshort}} service console to [upgrade](https://console-tok02-red.cdn.s-bluemix.net/docs/account/change-plan.html#changing) .
+
+**Limitations:**
+
+ - Currently, this feature is not supported on Safari
+
+ - Variables in the notification template may not work if an app is force quit on iOS. The limitation is not in control of SDK but comes from iOS.
 
 
 
