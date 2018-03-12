@@ -71,7 +71,6 @@ Note: The feature is enabled only for users who have opted the `Advanced Plan`. 
 **Limitations:**
 
  - Currently, this feature is not supported on Safari
-
  - Variables in the notification template may not work if an app is force quit on iOS. The limitation is not in control of SDK but comes from iOS.
 
 
