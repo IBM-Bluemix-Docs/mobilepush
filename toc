@@ -68,7 +68,7 @@ Push Notifications
 		[Web SDK](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-javascript-webpush)
    	
     {: .topicgroup}
-    API reference
+    APIs
         app_api.md
 
     {: .topicgroup}
