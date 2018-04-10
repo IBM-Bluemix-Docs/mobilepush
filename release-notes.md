@@ -20,4 +20,3 @@ The following new features and changes to the service are available. These chang
 - **Parameterize Notifications**
 
     You can parameterize and send custom notifications by creating variables and calling them in your notification templates.
-
