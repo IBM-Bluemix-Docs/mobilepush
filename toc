@@ -36,8 +36,7 @@ Push Notifications
 
     {: .navgroup id="help"}
     upgrading.md	
-    relatedlinks.md
-
+    
     {: .topicgroup} 
     Troubleshooting and FAQs
         push_troubleshooting.md
