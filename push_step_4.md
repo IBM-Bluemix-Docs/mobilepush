@@ -44,7 +44,7 @@ You can further customize the {{site.data.keyword.mobilepushshort}} settings for
 
 The following optional customization options are supported:
 
-- Collapse Key:  Collapse keys are attached to notifications. If multiple notifications arrive sequentially with the same collapse key when the device is offline, they are collapsed. When a device comes online, it receives notifications from the FCM/GCM server, and displays only the latest notification bearing the same collapse key. If the collapse key is not set, both the new and old messages are stored for the future delivery.
+- Collapse Key:  Collapse keys are attached to notifications. If multiple notifications arrive sequentially with the same collapse key when the device is offline, they are collapsed. When a device comes online, it receives notifications from the FCM server, and displays only the latest notification bearing the same collapse key. If the collapse key is not set, both the new and old messages are stored for the future delivery.
 - Sound: Indicates a sound clip to be played on the receipt of a notification. Supports default or the name of a sound resource that is	 bundled in the app.
 - Icon: Specify the name of the icon to display for the notification. Ensure that you have packaged the icon in the `res/drawable` folder, with the client application.
 - Priority: Specifies the options for assigning delivery priority to messages. 
@@ -54,9 +54,9 @@ The following optional customization options are supported:
 - Visibility: You can choose to set the notification visibility option to either `public` or `private`. 
 	- The `private` option restricts public viewing and you can choose to enable it if your device is secure with a pin or pattern, and the notification setting is set to **Hide sensitive notification content**. When the visibility is set as `private`, a `redact` field must be mentioned. Only the content specified in the `redact` field will show up on a secure locked screen on the device. 
 	- The `public` option would render the notifications to be freely read.
-- Time to live: This value is set in seconds. If this parameter is not specified, the FCM/GCM server stores the message for four weeks and will try to deliver. The validity expires after four weeks. The possible value range is from 0 to 2,419,200 seconds.
+- Time to live: This value is set in seconds. If this parameter is not specified, the FCM server stores the message for four weeks and will try to deliver. The validity expires after four weeks. The possible value range is from 0 to 2,419,200 seconds.
 - Delay when idle: You can set this to either of the following values:
-	- `True` instructs the FCM/GCM server not to deliver the notification if the device is idle. 
+	- `True` instructs the FCM server not to deliver the notification if the device is idle. 
 	- `False` ensures notification delivery even if the device is idle.
 - Sync: By setting this option to `true`, notifications across all your registered devices are in sync. If the user with a username has multiple devices with the same application installed, reading the notification on one device ensures deletion of notifications in the other devices. You need to ensure that you are registered with {{site.data.keyword.mobilepushshort}} service with userId for this option to work.
 - Additional payload: Specifies the custom payload values for your notifications.

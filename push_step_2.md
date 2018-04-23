@@ -29,7 +29,7 @@ To configure FCM credentials for Android applications and Google Chrome Apps & E
 1. Open your IBM Cloud catalog and then click the {{site.data.keyword.mobilepushfull}} service instance you have created. 
 2. Click **Manage** > **Configure**. 
 3. Choose either of the following options: 
-	- For Android: Select **Mobile** and then update the GCM/FCM Push Credentials tab with the Sender ID/Project number and API Key. 
+	- For Android: Select **Mobile** and then update the FCM Push Credentials tab with the Sender ID/Project number and API Key. 
 	- For Google Chrome Apps & Extensions: Select **Web** and then update the Chrome Apps and Extensions tab with the Sender ID/Project number and API Key. 
 4. Click **Save**. The Push Notifications service is now configured.
 
@@ -86,6 +86,6 @@ After you have set up the service for iOS applications, you need to [Set up Push
 1. On the Push Notifications console, select **Configure**.
 2. Select the Web tab.
 	![WebPush Configurations](images/webpush_configure.jpg)
-3. Configure the FCM/GCM API key and the URL of your website that will be registered to receive push notifications.
+3. Configure the FCM API key and the URL of your website that will be registered to receive push notifications.
 4. Click **Save**.
 5. After you have set up the service, you need to [Set up Push service client SDK's](push_step_3.html).

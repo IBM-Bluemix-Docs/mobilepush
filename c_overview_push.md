@@ -57,12 +57,12 @@ The {{site.data.keyword.mobilepushshort}} service manages all information relate
 ### Gateways
 {: #gateways}
 
-Platform specific Push Notifications cloud services such as FCM/GCM or Apple Push Notification Service (APNs) that is used by IBM {{site.data.keyword.mobilepushshort}} service to dispatch notifications to the mobile and browser applications.
+Platform specific Push Notifications cloud services such as FCM or Apple Push Notification Service (APNs) that is used by IBM {{site.data.keyword.mobilepushshort}} service to dispatch notifications to the mobile and browser applications.
 
 ## Message size
 {: #push-message-size}
 
-The {{site.data.keyword.mobilepushshort}} message payload size is dependent on the constraints laid out by the Gateways (FCM/GCM, APNs) and client platforms. 
+The {{site.data.keyword.mobilepushshort}} message payload size is dependent on the constraints laid out by the Gateways (FCM, APNs) and client platforms. 
 
 - For iOS and Safari: For iOS 8 and later, the maximum size allowed is 4 kilobytes. APNs does not send notifications that exceed this limit.
 - For Android, Firefox browser, Chrome browser, and Chrome Apps & Extensions: There is a limitation of 4 kilobytes as the maximum allowed message payload size.

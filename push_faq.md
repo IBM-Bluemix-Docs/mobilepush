@@ -28,7 +28,7 @@ lastupdated: "2017-09-28"
 
 2. Why do I get "Notification is not working for WEB_Chrome.", when attempting to initialize the Web Push SDK?
 
-	You might have changed your FCM/GCM credentials for Web push SDK and the message delivery might fail for the Chrome browser. Ensure that you invoke "bmsPush.unRegisterDevice" to avoid failure.
+	You might have changed your FCM credentials for Web push SDK and the message delivery might fail for the Chrome browser. Ensure that you invoke "bmsPush.unRegisterDevice" to avoid failure.
 
 3. I get the message "Service workers aren't supported in this browser" when attempting to initialize the SDK for Web Push. What might be the problem? 
 
@@ -52,7 +52,7 @@ lastupdated: "2017-09-28"
 
 7. What are the limits for Push Notifications, in terms of payload size?
 
-	The {{site.data.keyword.mobilepushshort}} message payload size is dependent on the constraints laid out by the Gateways (FCM/GCM, APNs) and client platforms. 
+	The {{site.data.keyword.mobilepushshort}} message payload size is dependent on the constraints laid out by the Gateways (FCM, APNs) and client platforms. 
 
 	For iOS 8 and later, the maximum size allowed is 4 kilobytes. Note that APNs does not send notifications that exceeds this limit. For Android, Firefox browser, Chrome browser, and Chrome Apps & Extensions, there is a limitation of 4 kilobytes as the maximum allowed message payload size.	
 
