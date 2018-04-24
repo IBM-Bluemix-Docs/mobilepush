@@ -56,9 +56,7 @@ You would also need to generate the `google-services.json` file. Complete the fo
 
 Once you have obtained your FCM credentials and have generated the `google-services.json` file, the next step is to [Create a service instance](push_step_2.html).
 
-**Note_old**: FCM is the new version of Google Cloud Messaging (GCM). Ensure that you use FCM credentials for new apps. Existing apps would continue to function with GCM configurations.
-
-**Note_modified**: Google has deprecated GCM and has integrated Cloud Messaging with Firebase. You will have to migrate your GCM client apps on Android to FCM.
+**Note**: Google has deprecated GCM and has integrated Cloud Messaging with Firebase. You will have to migrate your GCM client apps on Android to FCM.
 
 ## For iOS
 {: #push_step_1_ios}
