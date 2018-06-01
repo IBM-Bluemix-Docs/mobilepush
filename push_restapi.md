@@ -15,7 +15,7 @@ copyright:
 Last updated: 22 May 2017
 {: .last-updated}
 
-You can use a REST (Representational State Transfer) API (application program interface) for {{site.data.keyword.mobilepushshort}}. You can also use the SDK and [Push API ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://mobile.{DomainName}/imfpush/){: new_window} to further develop your client applications.
+You can use a REST (Representational State Transfer) API (application program interface) for {{site.data.keyword.mobilepushshort}}. You can also use the SDK and [Push API ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://imfpush.{DomainName}/imfpush/){: new_window} to further develop your client applications.
 
 With the Push REST API, backend server applications and clients can access {{site.data.keyword.mobilepushshort}} functions.
 
@@ -43,7 +43,7 @@ You can also use the command line to get the service credentials:
 ## Accept language header
 {: #push-api-rest-accept}
 
-The "Accept-Language" header specifies which language to use for the error messages that are output by [Push REST API ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://mobile.{DomainName}/imfpush/){: new_window}. The following languages are supported for error messages: Chinese (Simplified), Chinese, (Traditional), English (US), German, French, Italian, Japanese, Korean, Portuguese, and Spanish.
+The "Accept-Language" header specifies which language to use for the error messages that are output by [Push REST API ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://imfpush.{DomainName}/imfpush/){: new_window}. The following languages are supported for error messages: Chinese (Simplified), Chinese, (Traditional), English (US), German, French, Italian, Japanese, Korean, Portuguese, and Spanish.
 
 
 ## Push REST API filters

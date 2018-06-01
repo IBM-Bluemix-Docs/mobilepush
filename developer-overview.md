@@ -49,4 +49,4 @@ For more information about working with Mobile Developer Cloud services and {{si
 
 -   Fast track your mobile app development. Pick up a Starter kit from [here](https://console.bluemix.net/developer/mobile/dashboard). Download the code. Run the App!
 
--	You can use the [Swagger UI](https://mobile.{DomainName}/imfpush/) to quickly review REST API documentation.
+-	You can use the [Swagger UI](https://imfpush.{DomainName}/imfpush/) to quickly review REST API documentation.
