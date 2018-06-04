@@ -24,6 +24,7 @@ copyright:
 
 您可以使用 Push 主控台或使用 [REST API 文件](push_restapi.html)來傳送互動式通知。
 
+
 從 {{site.data.keyword.mobilepushshort}} 主控台，請執行下列動作： 
 
 1. 在通知標籤上，按一下**傳送通知**。 

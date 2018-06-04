@@ -12,10 +12,10 @@ copyright:
 
 # 服務問題疑難排解
 {: #errors}
-前次更新：2017 年 6 月 19 日
+前次更新：2017 年 7 月 13 日
 {: .last-updated}
 
-本主題會引導您識別及解決在使用 Push Notifications 服務時可能發生的可能錯誤情境。
+本主題會引導您識別及解決在使用 Push Notifications Service 時可能發生的可能錯誤情境。
 
 ## 解決常見推送通知問題
 {: #troubleshooting_notification_errors}
@@ -44,15 +44,23 @@ copyright:
 **使用者回應**：建議您切換為支援服務工作程式的瀏覽器。支援的瀏覽器版本為 Firefox 第 49 版或更新版本，以及 Chrome 第 53 版（64 位元）或更新版本。
 
 
+### 伺服器忙碌：伺服器目前無法處理要求。請稍後再重試。
+{: #troubleshooting_notification_server_busy}
+
+**說明**：使用者可能會在「監視」頁面存取報告時注意到錯誤。這是當過去 90 天內傳送的訊息數目很高時的預期行為。
+ 
+**使用者回應**：可以透過 REST API 存取以 messageId 為基礎的報告。請參閱 [REST API 文件]( https://console.bluemix.net/apidocs/800-push-notifications?&language=shell_curl#getmessagereport)中的 "getMessageReport"。
+
+
 ### SecurityError：作業不安全
 {: #troubleshooting_notification_insecure}
 
-**說明**：在 Firefox 中啟用 Web 主控台時，您可能會看到錯誤。在 Push Notifications 服務中的 Web 推送支援需要以 `https` 通訊協定，而非 `http` 通訊協定進行網站存取。
+**說明**：在 Firefox 中啟用 Web 主控台時，您可能會看到錯誤。在 Push Notification Service 中的 Web 推送支援需要以 `https` 通訊協定，而非 `http` 通訊協定進行網站存取。
 
 **使用者回應**：建議您從瀏覽器嘗試使用 `https` 連接至網站。
 
 
-## 解決 Web 推送配置錯誤
+## 解析 Web 推送配置錯誤
 {: #troubleshooting_configuration_errors}
 
 您可以瀏覽 `BMSPushSDK.js` 檔案，以診斷 Web 推送配置相關錯誤。此檔案包含失敗資訊。 
@@ -86,7 +94,7 @@ function showStatus(response) {
 - 案例 `clientSecret` 無效，將在 statusCode 上設定 401 回應。`response.reponse` 元件將包含錯誤說明。
 
 
-## 解決 Push Notifications 服務錯誤訊息
+## 解決 Push Notifications Service 錯誤訊息
 {: #troubleshooting_service_errors}
 
 傳回下列 {{site.data.keyword.mobilepushshort}} 錯誤訊息，以回應 REST API 要求。
@@ -95,9 +103,10 @@ function showStatus(response) {
 ```
 	{
 		"message": "Missing APNs credentials",
-		"docUrl": "https://www.ng.bluemix.net/docs/troubleshoot/errors/mobilepush/index.html#FPWSE0003E",
-		"code":   "FPWSE0003E"
-	}
+     "docUrl": "https://www.ng.bluemix.net/docs/troubleshoot/errors/mobilepush/index.html#FPWSE0003E",
+     "code":   "FPWSE0003E"
+
+}
 ```
 		    {: codeblock}
 
@@ -122,9 +131,9 @@ function showStatus(response) {
 ### FPWSE0003E
 {: #error_fpwse0003e}
 
-**說明**：{{site.data.keyword.mobilepushshort}} 服務的必要配置未完成。在配置之前，請嘗試取得 Apple Push Notification Service (APNs) 認證。
+**說明**：{{site.data.keyword.mobilepushshort}} Service 的必要配置未完成。在配置之前，請嘗試取得 Apple Push Notification Service (APNs) 認證。
 
-**使用者回應**：請確定已使用 APNs 的有效安全憑證配置 {{site.data.keyword.mobilepushshort}} 服務。如需相關資訊，請參閱[取得通知提供者認證 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](push_step_1.html){: new_window}。
+**使用者回應**：請確定已使用 APNs 的有效安全憑證配置 {{site.data.keyword.mobilepushshort}} Service。如需相關資訊，請參閱[取得通知提供者認證 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](push_step_1.html){: new_window}。
 
 
 ### FPWSE0004E
@@ -153,7 +162,7 @@ function showStatus(response) {
 **說明**：要求的 JSON 主體具有 {{site.data.keyword.mobilepushshort}} 伺服器不瞭解的參數。
 
 
-**使用者回應**：請確認要求中的 JSON 主體遵循 {{site.data.keyword.mobilepushshort}} 伺服器所預期要求的格式。如需相關資訊，請參閱 [REST API ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://mobile.{DomainName}/imfpush/){: new_window}。
+**使用者回應**：請確認要求中的 JSON 主體遵循 {{site.data.keyword.mobilepushshort}} 伺服器所預期要求的格式。如需相關資訊，請參閱 [REST API ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://imfpush.{DomainName}/imfpush/){: new_window}。
 
 
 
@@ -163,7 +172,7 @@ function showStatus(response) {
 **說明**：要求 URL 的查詢字串含有無法辨識的參數。例如，如果刪除訂閱的要求中含有 deviceId 及 tagName 以外的參數，則可能發生此錯誤。
 
 
-**使用者回應**：請確認要求中的 JSON 主體遵循 {{site.data.keyword.mobilepushshort}} 伺服器所預期要求的格式。如需相關資訊，請參閱 [REST API ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://mobile.{DomainName}/imfpush/){: new_window}。
+**使用者回應**：請確認要求中的 JSON 主體遵循 {{site.data.keyword.mobilepushshort}} 伺服器所預期要求的格式。如需相關資訊，請參閱 [REST API ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://imfpush.{DomainName}/imfpush/){: new_window}。
 
 
 
@@ -173,7 +182,7 @@ function showStatus(response) {
 **說明**：要求 URL 的查詢字串遺漏必要的參數。例如，刪除訂閱的要求中遺漏 deviceId 及 tagName 參數。
 
 
-**使用者回應**：請確認要求中的 JSON 主體遵循 {{site.data.keyword.mobilepushshort}} 伺服器所預期要求的格式。如需相關資訊，請參閱 [REST API ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://mobile.{DomainName}/imfpush/){: new_window}。
+**使用者回應**：請確認要求中的 JSON 主體遵循 {{site.data.keyword.mobilepushshort}} 伺服器所預期要求的格式。如需相關資訊，請參閱 [REST API ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://imfpush.{DomainName}/imfpush/){: new_window}。
 
 
 
@@ -193,7 +202,7 @@ function showStatus(response) {
 
 - {{site.data.keyword.mobilepushshort}} 使用的某個內部子系統未回應。
 - 導致錯誤狀況的要求可能不是由 {{site.data.keyword.mobilepushshort}} 處理。
-- {{site.data.keyword.mobilepushshort}} 服務需要管理者的注意。
+- {{site.data.keyword.mobilepushshort}} Service 需要管理者的注意。
 
 **使用者回應**：請重試要求。如果問題持續發生，請聯絡 IBM 軟體支援中心。
 
@@ -238,7 +247,7 @@ function showStatus(response) {
 ### FPWSE1007E 
 {: #error_fpwse1007e}
 
-**說明**：此應用程式的 {{site.data.keyword.mobilepushshort}} 服務已停用。這可能是因為管理者已停用計費或應用程式。
+**說明**：此應用程式的 {{site.data.keyword.mobilepushshort}} Service 已停用。這可能是因為管理者已停用計費或應用程式。
 
 
 **使用者回應**：請參閱「IBM Cloud 文件」中的「疑難排解」主題，以檢查服務狀態、檢閱疑難排解資訊或取得協助的相關資訊。

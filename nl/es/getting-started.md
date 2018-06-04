@@ -24,7 +24,7 @@ En esta guía de aprendizaje de iniciación de {{site.data.keyword.mobilepushful
 ## Antes de empezar
 {: #prereqs}
 
-Necesitará un [cuenta de IBM Cloud](https://console.bluemix.net/registration/), una instancia del servicio {{site.data.keyword.mobilepushshort}} y las siguientes herramientas y requisitos:
+Necesitará una [cuenta de IBM Cloud](https://console.bluemix.net/registration/), una instancia del servicio {{site.data.keyword.mobilepushshort}} y las siguientes herramientas y requisitos:
 
   * API de Android 15+
   * Android 4.0.3+
@@ -46,7 +46,7 @@ Necesitará un [cuenta de IBM Cloud](https://console.bluemix.net/registration/),
 3. Añada las credenciales FCM a la instancia {{site.data.keyword.mobilepushshort}}:
   1. En la consola Firebase, vaya a **Configuración &gt; Configuración del proyecto &gt; Cloud Messaging** y copie la clave del servidor y el ID de remitente.
   2. En la consola {{site.data.keyword.Bluemix_notm}}, abra el panel de control de la instancia de servicio.
-  3. Pulse **Gestionar &gt; Configurar**.
+  3. Pulse **Gestionar > Configurar**.
   4. Especifique el ID de remitente y la clave de servidor en el campo **Credenciales de push de GCM/FCM**.
 
 ## Paso 2: Habilite la app de Android para enviar notificaciones push

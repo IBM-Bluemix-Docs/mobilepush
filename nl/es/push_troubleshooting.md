@@ -12,7 +12,7 @@ copyright:
 
 # Resolución de problemas de servicio
 {: #errors}
-Última actualización: 19 de junio de 2017
+Última actualización: 13 de julio de 2017
 {: .last-updated}
 
 Este tema le guía por el proceso de identificación y resolución de casos probables de errores con los que se puede encontrar cuando utilice el servicio de notificaciones push.
@@ -42,6 +42,14 @@ Este tema le guía por el proceso de identificación y resolución de casos prob
 **Explicación**: El SDK incluido como parte de `BMSPushSDK.js` que utiliza el trabajador de servicio no está disponible. 
 
 **Respuesta del usuario**: Se recomienda cambiar a un navegador que admita el trabajador de servicio. Las versiones admitidas de los navegadores son Firefox versión 49 o posteriores y Chrome versión 53 (64 bits) o posteriores.
+
+
+### Servidor ocupado: El servidor no puede manejar la solicitud. Inténtelo más tarde.
+{: #troubleshooting_notification_server_busy}
+
+**Explicación**: Los usuarios pueden darse cuenta del error al acceder a los informes en la página Supervisión. Es un comportamiento esperado cuando el número de mensajes enviados es muy alto durante los últimos 90 días.
+ 
+**Respuesta del usuario**: Se puede acceder a los informes basados en el messageId a través de las API REST. Consulte "getMessageReport" en los [Documentos de la API REST]( https://console.bluemix.net/apidocs/800-push-notifications?&language=shell_curl#getmessagereport).
 
 
 ### SecurityError: La operación no es segura
@@ -153,7 +161,7 @@ Para obtener información adicional sobre un error, busque el código de error r
 **Explicación**: El cuerpo de JSON de la solicitud tiene parámetros que el servidor de {{site.data.keyword.mobilepushshort}} no conoce.
 
 
-**Respuesta del usuario**: Verifique que el cuerpo de JSON en la solicitud sigue el formato de la solicitud que espera el servidor {{site.data.keyword.mobilepushshort}}. Para obtener más información, consulte las [API REST ![icono de enlace externo](../../icons/launch-glyph.svg "icono de enlace externo")](https://mobile.{DomainName}/imfpush/){: new_window}.
+**Respuesta del usuario**: Verifique que el cuerpo de JSON en la solicitud sigue el formato de la solicitud que espera el servidor {{site.data.keyword.mobilepushshort}}. Para obtener más información, consulte las [API REST ![icono de enlace externo](../../icons/launch-glyph.svg "icono de enlace externo")](https://imfpush.{DomainName}/imfpush/){: new_window}.
 
 
 
@@ -163,7 +171,7 @@ Para obtener información adicional sobre un error, busque el código de error r
 **Explicación**: El URL de solicitud tiene una serie de consulta que tiene parámetros no reconocidos. Por ejemplo, si la solicitud para suprimir la suscripción tiene parámetros distintos de deviceId y de tagName, se puede producir este error.
 
 
-**Respuesta del usuario**: Verifique que el cuerpo de JSON en la solicitud sigue el formato de la solicitud que espera el servidor {{site.data.keyword.mobilepushshort}}. Para obtener más información, consulte las [API REST ![icono de enlace externo](../../icons/launch-glyph.svg "icono de enlace externo")](https://mobile.{DomainName}/imfpush/){: new_window}.
+**Respuesta del usuario**: Verifique que el cuerpo de JSON en la solicitud sigue el formato de la solicitud que espera el servidor {{site.data.keyword.mobilepushshort}}. Para obtener más información, consulte las [API REST ![icono de enlace externo](../../icons/launch-glyph.svg "icono de enlace externo")](https://imfpush.{DomainName}/imfpush/){: new_window}.
 
 
 
@@ -173,7 +181,7 @@ Para obtener información adicional sobre un error, busque el código de error r
 **Explicación**: El URL de solicitud tiene una serie de consulta que tiene parámetros que faltan necesarios. Por ejemplo, los parámetros deviceId y tagName no se han incluido con la solicitud para suprimir la suscripción.
 
 
-**Respuesta del usuario**: Verifique que el cuerpo de JSON en la solicitud sigue el formato de la solicitud que espera el servidor {{site.data.keyword.mobilepushshort}}. Para obtener más información, consulte las [API REST ![icono de enlace externo](../../icons/launch-glyph.svg "icono de enlace externo")](https://mobile.{DomainName}/imfpush/){: new_window}.
+**Respuesta del usuario**: Verifique que el cuerpo de JSON en la solicitud sigue el formato de la solicitud que espera el servidor {{site.data.keyword.mobilepushshort}}. Para obtener más información, consulte las [API REST ![icono de enlace externo](../../icons/launch-glyph.svg "icono de enlace externo")](https://imfpush.{DomainName}/imfpush/){: new_window}.
 
 
 
@@ -193,8 +201,7 @@ Para obtener información adicional sobre un error, busque el código de error r
 
 - Un subsistema interno que {{site.data.keyword.mobilepushshort}} utiliza no responde.
 - La solicitud ha producido una condición de error que quizás no pueda manejar {{site.data.keyword.mobilepushshort}}.
-- El servicio {{site.data.keyword.mobilepushshort}}
-                        requiere atención por parte del administrador.
+- El servicio {{site.data.keyword.mobilepushshort}} requiere atención por parte del administrador.
 
 **Respuesta del usuario**: Vuelva a intentar la solicitud. Si el problema persiste, póngase en contacto con el soporte de software de IBM.
 

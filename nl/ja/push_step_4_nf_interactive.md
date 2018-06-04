@@ -15,7 +15,7 @@ copyright:
 最終更新日: 2017 年 5 月 22 日
 {: .last-updated}
 
-対話式通知により、ユーザーはアプリケーションを開かずに通知に応答することができます。対話式通知が到着すると、デバイスは通知メッセージとともにアクション・ボタンを表示します。 
+対話式通知により、ユーザーはアプリケーションを開かずに通知に応答することができます。 対話式通知が到着すると、デバイスは通知メッセージとともにアクション・ボタンを表示します。 
 
 **注:** バージョン 8 より前の iOS デバイスでは、対話式通知はサポートされていません。 
 
@@ -23,6 +23,7 @@ copyright:
 {: #send_interactive_notifications}
 
 Push Notifications Push コンソールを使用するか、[REST API 資料](push_restapi.html)を使用することによって、対話式通知を送信できます。
+
 
 {{site.data.keyword.mobilepushshort}} コンソールから以下を実行します。 
 
@@ -41,4 +42,4 @@ Push Notifications Push コンソールを使用するか、[REST API 資料](pu
 ## iOS のサイレント通知の処理
 {: #send_silent_notifications_for_ios}
 
-サイレント通知は、デバイス画面には表示されず、アプリケーションによってバックグラウンドで受信されます。詳しくは、[iOS デバイスでのサイレント通知](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-swift-push/tree/Doc#silent-notification)に関する資料を参照してください。
+サイレント通知は、デバイス画面には表示されず、アプリケーションによってバックグラウンドで受信されます。 詳しくは、[iOS デバイスでのサイレント通知](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-swift-push/tree/Doc#silent-notification)に関する資料を参照してください。

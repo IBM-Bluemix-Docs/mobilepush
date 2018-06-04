@@ -20,7 +20,7 @@ Letzte Aktualisierung: 28. September 2017
 Mit dem IBM Service {{site.data.keyword.mobilepushshort}} können Sie Benachrichtigungen an mobile Geräte und Browser senden. Benachrichtigungen können zielgruppenspezifisch an alle Anwendungsbenutzer und an bestimmte Benutzergruppen und Geräte mithilfe von Tags gesendet werden. Für jede an den Service übermittelte Nachricht wird an die jeweilige Zielgruppe eine Benachrichtigung gesendet.
 
 
-Der {{site.data.keyword.mobilepushshort}}-Service ist als Teil von MobileFirst Services Starter Boilerplate oder in [Dedizierte Services](/docs/dedicated/index.html) von IBM Cloud verfügbar.  Sie können auch ein SDK (Software-Development-Kit) und [REST-APIs ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://mobile.{DomainName}/imfpush/){: new_window} verwenden, um Ihre Clientanwendungen weiter zu entwickeln.
+Der {{site.data.keyword.mobilepushshort}}-Service ist als Teil von MobileFirst Services Starter Boilerplate oder in [Dedizierte Services](/docs/dedicated/index.html) von IBM Cloud verfügbar. Sie können auch ein SDK (Software-Development-Kit) und [REST-APIs ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://imfpush.{DomainName}/imfpush/){: new_window} verwenden, um Ihre Clientanwendungen weiter zu entwickeln.
 
 
 Der {{site.data.keyword.mobilepushshort}}-Service ist auch [OpenWhisk](/docs/openwhisk/index.html)-fähig. OpenWhisk ist ein verteilter, ereignisgesteuerter Verarbeitungsservice, der auch als serverunabhängige Verarbeitung bezeichnet wird. Entwickler können sich mit diesem Service auf das Schreiben von Anwendungslogik konzentrieren und Aktionen erstellen, die bei Bedarf ausgeführt werden.
@@ -57,12 +57,12 @@ Der {{site.data.keyword.mobilepushshort}}-Service ist für die Verwaltung aller 
 ### Gateways
 {: #gateways}
 
-Plattformspezifische Cloud-Services für Push-Benachrichtigungen wie FCM/GCM oder Apple Push Notification Service (APNs), die vom IBM {{site.data.keyword.mobilepushshort}}-Service verwendet werden, um Benachrichtigungen an mobile und Browseranwendungen zu verteilen.
+Plattformspezifische Cloud-Services für Push-Benachrichtigungen wie FCM oder Apple Push Notification Service (APNs), die vom IBM {{site.data.keyword.mobilepushshort}}-Service verwendet werden, um Benachrichtigungen an mobile und Browseranwendungen zu verteilen.
 
 ## Nachrichtengröße
 {: #push-message-size}
 
-Die Größe der {{site.data.keyword.mobilepushshort}}-Nachrichtennutzdaten hängt von den Einschränkungen ab, die durch die Gateways (FCM/GCM, APNs) und Clientplattformen festgelegt sind. 
+Die Größe der {{site.data.keyword.mobilepushshort}}-Nachrichtennutzdaten hängt von den Einschränkungen ab, die durch die Gateways (FCM, APNs) und Clientplattformen festgelegt sind. 
 
 - iOS und Safari: Ab iOS 8 beträgt die zulässige maximale Größe 4 Kilobyte. APNs sendet keine Benachrichtigungen, die dieses Limit überschreiten.
 - Android, Firefox-Browser, Chrome-Browser und Chrome-Apps & Erweiterungen: Es gibt eine Einschränkung von 4 Kilobyte als maximal zulässige Nachrichtennutzdatengröße.

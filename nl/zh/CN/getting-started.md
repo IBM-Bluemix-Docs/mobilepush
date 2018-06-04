@@ -39,7 +39,7 @@ lastupdated: "2017-05-31"
 
 2. 创建 FCM 应用程序，并添加 Android 应用程序的程序包名：
   1. 在 [Firebase 控制台](https://console.firebase.google.com){: new_window}中，单击**添加项目**，提供项目名称，然后单击**创建项目**。
-  2. 单击**添加 Firebase 至您的 Android 应用程序**，输入应用程序的程序包名，然后单击**注册应用程序**。可以通过单击**继续 > 完成**跳过接下来的两个提示。 
+  2. 单击**将 Firebase 添加到您的 Android 应用**，输入应用程序的程序包名，然后单击**注册应用程序**。可以通过单击**继续 > 完成**跳过接下来的两个提示。 
 
 3. 将 FCM 凭证添加到 {{site.data.keyword.mobilepushshort}} 实例：
   1. 在 Firebase 控制台中，转至**设置 > 项目设置 > 云消息传递**，并复制“服务器密钥”和“发送方标识”。
@@ -140,6 +140,8 @@ push.initialize(getApplicationContext(), "appGUID", "clientSecret");
 ```
 {: codeblock}
 ... 其中，`<bluemixRegionSuffix>` 是托管应用程序的位置。可以使用以下任一值：
+
+
   * BMSClient.REGION_US_SOUTH
   * BMSClient.REGION_UK
   * BMSClient.REGION_SYDNEY
@@ -159,9 +161,9 @@ appGUID 是推送应用程序 GUID 值，clientSecret 是推送客户机私钥�
 		public void onSuccess(String response) {
 		//Handle successful device registration here
  }
- @Override
-    public void onFailure(MFPPushException ex) {
-         //Handle failure in device registration here
+ @Override	
+ public void onFailure(MFPPushException ex) {
+ //Handle failure in device registration here
  }
  });
  ```

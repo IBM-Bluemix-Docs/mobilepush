@@ -31,7 +31,7 @@ Los webhooks son devoluciones de llamada definidas por el usuario que desencaden
 **Nota**: Las asignaciones de notificación se realizan por lotes. Una asignación de mensaje puede tener varios sucesos de webhook, que pueden incluir tanto fallos como éxitos. 
 Los sucesos de webhook podrían tener el mismo messageID que el del mensaje asignado. 
 
-Para obtener más información sobre webhooks, consulte [API REST de notificaciones Push de IBM ![icono de enlace externo](../../icons/launch-glyph.svg "icono de enlace externo")](https://console-regional.stage1.ng.bluemix.net/apidocs/800){: new_window}.
+Para obtener más información sobre webhooks, consulte [API REST de notificaciones Push de IBM ![icono de enlace externo](../../icons/launch-glyph.svg "icono de enlace externo")](https://console.bluemix.net/apidocs/800-push-notifications){: new_window}.
 
 ## Recepción de alertas sobre sucesos de webhook
 {: #webhook_alert_event}

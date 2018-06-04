@@ -15,7 +15,7 @@ copyright:
 Letzte Aktualisierung: 22. Mai 2017
 {: .last-updated}
 
-Sie können eine REST-API (REST = Representational State Transfer; API = Application Program Interface) für Push-Benachrichtigungen verwenden. Sie können auch das SDK und die [Push-API ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://mobile.{DomainName}/imfpush/){: new_window} verwenden, um Ihre Clientanwendungen weiter zu entwickeln.
+Sie können eine REST-API (REST = Representational State Transfer; API = Application Program Interface) für Push-Benachrichtigungen verwenden. Sie können auch das SDK und die [Push-API ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://imfpush.{DomainName}/imfpush/){: new_window} verwenden, um Ihre Clientanwendungen weiter zu entwickeln.
 
 Mit der Push-REST-API können Back-End-Serveranwendungen und -Clients auf Funktionen für Push-Benachrichtigungen zugreifen.
 
@@ -44,7 +44,7 @@ Sie können auch die Befehlszeile verwenden, um die Serviceberechtigungsnachweis
 ## Sprachenheader akzeptieren
 {: #push-api-rest-accept}
 
-Der Header für das Akzeptieren der Sprache ("Accept-Language") gibt an, welche Sprache für die Fehlernachrichten verwendet werden soll, die die Ausgabe der [Push-REST-API ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://mobile.{DomainName}/imfpush/){: new_window} bilden. Folgende Sprachen werden für die Fehlernachrichten unterstützt: vereinfachtes Chinesisch, traditionelles Chinesisch, Englisch (US), Deutsch, Französisch, Italienisch, Japanisch, Koreanisch, Portugiesisch und Spanisch.
+Der Header für das Akzeptieren der Sprache ("Accept-Language") gibt an, welche Sprache für die Fehlernachrichten verwendet werden soll, die die Ausgabe der [Push-REST-API ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://imfpush.{DomainName}/imfpush/){: new_window} bilden. Folgende Sprachen werden für die Fehlernachrichten unterstützt: vereinfachtes Chinesisch, traditionelles Chinesisch, Englisch (US), Deutsch, Französisch, Italienisch, Japanisch, Koreanisch, Portugiesisch und Spanisch.
 
 
 ## Filter für Push-REST-APIs

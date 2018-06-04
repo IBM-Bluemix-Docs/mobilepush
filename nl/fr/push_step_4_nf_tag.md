@@ -12,13 +12,13 @@ copyright:
 
 # Notifications basées sur les balises
 {: #tag_based_notifications}
-Dernière mise à jour : 30 juin 2017
+Dernière mise à jour : 13 juillet 2017
 {: .last-updated}
 
 Les messages de notifications basées sur les balises sont envoyés à tous les appareils abonnés à une balise particulière. Elles permettent la segmentation des notifications en fonction de domaines ou de rubriques. Les destinataires des notifications peuvent choisir de ne recevoir les notifications que si elles concernent un sujet ou une rubrique qui les intéresse. Par conséquent, les notifications en fonction d'une balise constituent un moyen de segmenter les destinataires. Cette fonction permet de définir des balises, puis d'envoyer et de recevoir des messages en fonction des balises. Un message n'est ciblé que vers les instances d'application client (sur un appareil mobile, un navigateur ou une extension) qui sont abonnées à la balise. Vous devez d'abord créer des balises pour l'application, configurer les abonnements aux balises puis initier les notifications basées sur une balise. Pour envoyer une notification basée sur une balise qui utilise l'API REST, vérifiez que les éléments "tagNames" sont fournis lors de l'envoi à la ressource de message.
 
 Vous pouvez définir des balises, puis envoyer et recevoir des messages en fonction des balises. Vous devez d'abord créer les balises pour l'application, créer des abonnements, puis initier les
-notifications en fonction d'une balise. Pour envoyer une notification basée sur les balises à l'aide de l'[API REST](https://mobile.{DomainName}/imfpush/){: new_window}, vérifiez que les éléments "tagNames" sont fournis lors de l'envoi à la ressource de message.
+notifications en fonction d'une balise. Pour envoyer une notification basée sur les balises à l'aide de l'[API REST](https://imfpush.{DomainName}/imfpush/){: new_window}, vérifiez que les éléments "tagNames" sont fournis lors de l'envoi à la ressource de message.
 
 
 ## Gestion des balises
@@ -33,7 +33,7 @@ Utilisez la console {{site.data.keyword.mobilepushshort}} afin de créer et de s
 Les notifications basées sur les balises sont des messages qui sont ciblés vers tous les appareils abonnés à une balise
 particulière. Chaque appareil peut s'abonner à un nombre illimité de balises. 
 
-1. Sur la console {{site.data.keyword.mobilepushshort}}, sélectionnez l'onglet **Balises**.
+1. Sur la console {{site.data.keyword.mobilepushshort}}, sélectionnez l'onglet **Gérer les balises**.
 1. Cliquez sur le bouton + **Créer une balise**.   
    1. Dans la zone **Nom**, entrez le nom de la balise. Exemple : "coupons".
    1. Dans la zone **Description**, entrez la description de la balise.

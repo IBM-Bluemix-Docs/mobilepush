@@ -25,7 +25,7 @@ Las notificaciones push son un canal de comunicación entre empresas o para un a
 
 Los pasos básicos para comenzar:
 
-1. [Crear una instancia de servicio de IBM Cloud](/docs/services/mobilepush/push_step_prereq.html)
+1. [Cree una instancia de servicio de IBM Cloud](/docs/services/mobilepush/push_step_prereq.html)
 1. [Obtener las credenciales del proveedor de notificaciones](/docs/services/mobilepush/push_step_1.html)
 1. [Configurar la instancia de servicio](/docs/services/mobilepush/push_step_2.html)
 1. [Configurar el SDK del cliente de servicio de Push](/docs/services/mobilepush/push_step_3.html)

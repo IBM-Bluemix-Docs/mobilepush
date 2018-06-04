@@ -12,7 +12,7 @@ copyright:
 
 # Identification et résolution des problèmes de service
 {: #errors}
-Dernière mise à jour : 19 juin 2017
+Dernière mise à jour : 13 juillet 2017
 {: .last-updated}
 
 Cette rubrique vous aide à identifier et à résoudre les scénarios d'erreur que vous pouvez rencontrer lors de l'utilisation du service Push Notifications.
@@ -44,6 +44,14 @@ navigateur. Cela demanderait des autorisations pour activer les notifications Pu
 
 **Réponse utilisateur **: Il est recommandé d'adopter un navigateur prenant en charge l'agent de service. Les versions de navigateur prises en
 charge sont Firefox version 49 (ou ultérieure) et Chrome (64 bits) version 53 (ou ultérieure).
+
+
+### Serveur occupé - Le serveur ne peut actuellement pas traiter la demande. Réessayez ultérieurement.
+{: #troubleshooting_notification_server_busy}
+
+**Explication** : les utilisateurs peuvent remarquer l'erreur lorsqu'ils accèdent aux rapports dans la page Surveillance. Il s'agit d'un comportement attendu lorsque le nombre de messages envoyés au cours des 90 derniers jours est très élevé.
+ 
+**Réponse utilisateur** : les rapports basés sur un ID de message sont accessibles via les API REST. Veuillez vous reporter à "getMessageReport" dans [les documentations de l'API REST]( https://console.bluemix.net/apidocs/800-push-notifications?&language=shell_curl#getmessagereport) .
 
 
 ### SecurityError : L'opération n'est pas sécurisée
@@ -163,7 +171,7 @@ de notifications Push Apple (APNS) avant qu'elles ne soient configurées.
 **Explication **: le corps JSON de la demande comporte des paramètres que ne comprend pas le serveur {{site.data.keyword.mobilepushshort}}.
 
 
-**Réponse de l'utilisateur **: vérifiez que le corps JSON dans la demande respecte le format de demande attendu par le serveur {{site.data.keyword.mobilepushshort}}. Pour plus d'informations, voir [API REST ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://mobile.{DomainName}/imfpush/){: new_window}.
+**Réponse de l'utilisateur **: vérifiez que le corps JSON dans la demande respecte le format de demande attendu par le serveur {{site.data.keyword.mobilepushshort}}. Pour plus d'informations, voir [API REST ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://imfpush.{DomainName}/imfpush/){: new_window}.
 
 
 
@@ -173,7 +181,7 @@ de notifications Push Apple (APNS) avant qu'elles ne soient configurées.
 **Explication **: l'URL de la demande comporte une chaîne de requête avec des paramètres non reconnus. Par exemple, si la demande de suppression de l'abonnement comporte des paramètres autres que deviceId et tagName, cette erreur peut se produire.
 
 
-**Réponse de l'utilisateur **: vérifiez que le corps JSON dans la demande respecte le format de demande attendu par le serveur {{site.data.keyword.mobilepushshort}}. Pour plus d'informations, voir [API REST ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://mobile.{DomainName}/imfpush/){: new_window}.
+**Réponse de l'utilisateur **: vérifiez que le corps JSON dans la demande respecte le format de demande attendu par le serveur {{site.data.keyword.mobilepushshort}}. Pour plus d'informations, voir [API REST ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://imfpush.{DomainName}/imfpush/){: new_window}.
 
 
 
@@ -183,7 +191,7 @@ de notifications Push Apple (APNS) avant qu'elles ne soient configurées.
 **Explication **: l'URL de la demande comporte une chaîne de requête avec des paramètres requis manquants. Par exemple, les paramètres deviceId et tagName peuvent être absents de la demande de suppression de l'abonnement.
 
 
-**Réponse de l'utilisateur **: vérifiez que le corps JSON dans la demande respecte le format de demande attendu par le serveur {{site.data.keyword.mobilepushshort}}. Pour plus d'informations, voir [API REST ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://mobile.{DomainName}/imfpush/){: new_window}.
+**Réponse de l'utilisateur **: vérifiez que le corps JSON dans la demande respecte le format de demande attendu par le serveur {{site.data.keyword.mobilepushshort}}. Pour plus d'informations, voir [API REST ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://imfpush.{DomainName}/imfpush/){: new_window}.
 
 
 
@@ -256,9 +264,7 @@ est peut-être dû à la facturation, ou l'application a peut-être été désac
 par l'administrateur.
 
 
-**Réponse de l'utilisateur **: accédez aux rubriques de Traitement des incidents dans la documentation
-IBM Cloud pour vérifier le statut du service, consultez les informations de traitement des incidents ou les informations sur l'obtention
-d'une assistance.
+**Réponse de l'utilisateur **: accédez aux rubriques Traitement des incidents de la documentation IBM Cloud pour vérifier le statut du service et pour consulter les informations relatives au traitement des incidents et à l'obtention d'une assistance.
 
 
 

@@ -12,7 +12,7 @@ copyright:
 
 # Notifications Rich Media (média enrichi)
 {: #interactive-notifications}
-Dernière mise à jour : 22 mai 2017
+Dernière mise à jour : 13 juillet 2017
 {: .last-updated}
 
 
@@ -27,5 +27,6 @@ service de notification**.
 ```
 BMSPushRichPushNotificationOptions.didReceive(request, withContentHandler: contentHandler)
 ```
-	
+	{: codeblock}	
+
 Pour envoyer une {{site.data.keyword.mobilepushshort}} Rich Media depuis la console Push, prenez soin de renseigner les zones message, titre, sous-titre, et attachmentURL (URL de pièce jointe).

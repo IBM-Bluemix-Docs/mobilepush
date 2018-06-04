@@ -24,6 +24,7 @@ copyright:
 
 使用 Push Notifications 控制台或使用 [REST API 文档](push_restapi.html)可发送交互式通知。
 
+
 从 {{site.data.keyword.mobilepushshort}} 控制台： 
 
 1. 在“通知”选项卡上，单击**发送通知**。 

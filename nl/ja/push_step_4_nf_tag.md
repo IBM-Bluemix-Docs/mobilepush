@@ -12,29 +12,28 @@ copyright:
 
 # タグ・ベースの通知
 {: #tag_based_notifications}
-最終更新日: 2017 年 6 月 30 日
+最終更新日: 2017 年 7 月 13 日
 {: .last-updated}
 
-タグ・ベースの通知は、特定のタグにサブスクライブしているすべてのデバイスをターゲットとするメッセージです。タグ・ベースの通知では、サブジェクト・エリアまたはトピックに基づいて通知を分割できます。通知の受信側は、関心のあるサブジェクトまたはトピックに関するものであった場合にのみ通知を受信するように選択できます。そのため、タグ・ベースの通知は、受信側を分割する手段を提供します。この機能により、タグを定義した後、タグ別にメッセージの送受信を行うことが可能になります。メッセージは、タグにサブスクライブしている (モバイル上、ブラウザー上、あるいはアプリケーションまたはエクステンションとしての) クライアント・アプリケーション・インスタンスのみをターゲットにします。まず、アプリケーションのタグを作成し、タグ・サブスクリプションをセットアップしてから、タグ・ベースの通知を開始する必要があります。REST API を使用するタグ・ベースの通知を送信する場合は、メッセージ・リソースに投稿する際に「tagNames」が指定されていることを確認してください。
+タグ・ベースの通知は、特定のタグにサブスクライブしているすべてのデバイスをターゲットとするメッセージです。 タグ・ベースの通知では、サブジェクト・エリアまたはトピックに基づいて通知を分割できます。 通知の受信側は、関心のあるサブジェクトまたはトピックに関するものであった場合にのみ通知を受信するように選択できます。 そのため、タグ・ベースの通知は、受信側を分割する手段を提供します。 この機能により、タグを定義した後、タグ別にメッセージの送受信を行うことが可能になります。 メッセージは、タグにサブスクライブしている (モバイル上、ブラウザー上、あるいはアプリケーションまたはエクステンションとしての) クライアント・アプリケーション・インスタンスのみをターゲットにします。 まず、アプリケーションのタグを作成し、タグ・サブスクリプションをセットアップしてから、タグ・ベースの通知を開始する必要があります。 REST API を使用するタグ・ベースの通知を送信する場合は、メッセージ・リソースに投稿する際に「tagNames」が指定されていることを確認してください。
 
-タグを定義して、タグを使用したメッセージの送受信を行うことが可能です。
-最初にアプリケーションのタグを作成し、サブスクリプションを作成し、次にタグ・ベースの通知を開始する必要があります。[REST API](https://mobile.{DomainName}/imfpush/){: new_window} を使用してタグ・ベースの通知を送信する場合には、メッセージ・リソースにポストする際に「tagNames」が指定されていることを確認してください。
+タグを定義して、タグを使用したメッセージの送受信を行うことが可能です。 最初にアプリケーションのタグを作成し、サブスクリプションを作成し、次にタグ・ベースの通知を開始する必要があります。 [REST API](https://imfpush.{DomainName}/imfpush/){: new_window} を使用してタグ・ベースの通知を送信する場合には、メッセージ・リソースにポストする際に「tagNames」が指定されていることを確認してください。
 
 
 ## タグの管理
 {: #manage_tags}
 
-{{site.data.keyword.mobilepushshort}} コンソールを使用して、アプリケーション向けのタグを作成および削除し、タグ・ベースの通知を開始します。タグ・ベースの通知は、タグにサブスクライブしているデバイスが受け取ります。
+{{site.data.keyword.mobilepushshort}} コンソールを使用して、アプリケーション向けのタグを作成および削除し、タグ・ベースの通知を開始します。 タグ・ベースの通知は、タグにサブスクライブしているデバイスが受け取ります。
 
 
 ### タグの作成
 {: #create_tags}
 
-タグ・ベースの通知は、特定のタグにサブスクライブしているすべてのデバイスをターゲットとするメッセージです。各デバイスは、任意の数のタグにサブスクライブできます。 
+タグ・ベースの通知は、特定のタグにサブスクライブしているすべてのデバイスをターゲットとするメッセージです。 各デバイスは、任意の数のタグにサブスクライブできます。 
 
-1. {{site.data.keyword.mobilepushshort}} コンソールで、**「タグ」**タブを選択します。
+1. {{site.data.keyword.mobilepushshort}} コンソールで、**「タグの管理」**タブを選択します。
 1. **「+ タグを作成 (+ Create Tag)」**ボタンをクリックします。   
-   1. **「名前」**フィールドで、タグの名前を入力します。例えば、「クーポン」と入力します。
+   1. **「名前」**フィールドで、タグの名前を入力します。 例えば、「クーポン」と入力します。
    1. **「説明」**フィールドで、タグの説明を入力します。
    1. **「保存」**をクリックします。
 
@@ -47,7 +46,7 @@ copyright:
 1. **「タグ」**タブで、削除するタグを選択し**「削除」**アイコンをクリックします。
 1. **「OK」**をクリックします。
 
-タグが削除されると、そのタグに関連付けられている情報 (サブスクライバーやデバイスなど) が削除されます。タグが存在しなくなることから、自動アンサブスクライブは不要です。クライアント・サイドではそれ以上のアクションは不要です。
+タグが削除されると、そのタグに関連付けられている情報 (サブスクライバーやデバイスなど) が削除されます。 タグが存在しなくなることから、自動アンサブスクライブは不要です。 クライアント・サイドではそれ以上のアクションは不要です。
 
 ### タグの説明の編集
 {: #edit_tags}
@@ -59,7 +58,7 @@ copyright:
 ## タグの取得
 {: #get_tags}
 
-タグは、ユーザーの関心に基づいてターゲットを絞った通知をユーザーに送信する手段となります。この点は、すべてのアプリケーションに送信される一般ブロードキャストと異なります。タグの作成および管理は、{{site.data.keyword.mobilepushshort}} コンソールの「タグ」タブを使用するか、REST API を使用して実行できます。コード・スニペットを使用して、モバイル・アプリケーションのタグ・サブスクリプションを管理および照会できます。コード・スニペットを使用して、サブスクリプションの取得、タグへのサブスクライブ、タグからのアンサブスクライブ、または使用可能なタグのリストの取得を行うことができます。以下のコード・スニペットをモバイル・アプリケーションにコピーしてください。
+タグは、ユーザーの関心に基づいてターゲットを絞った通知をユーザーに送信する手段となります。この点は、すべてのアプリケーションに送信される一般ブロードキャストと異なります。 タグの作成および管理は、{{site.data.keyword.mobilepushshort}} コンソールの「タグ」タブを使用するか、REST API を使用して実行できます。 コード・スニペットを使用して、モバイル・アプリケーションのタグ・サブスクリプションを管理および照会できます。 コード・スニペットを使用して、サブスクリプションの取得、タグへのサブスクライブ、タグからのアンサブスクライブ、または使用可能なタグのリストの取得を行うことができます。 以下のコード・スニペットをモバイル・アプリケーションにコピーしてください。
 
 
 - Android の場合、[Android での Push Notification によるタグの取得](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-cordova-plugin-push/tree/Doc#ios-app)に関する資料で `getTags` API および `getSubscriptions` API を参照してください。
@@ -76,20 +75,20 @@ copyright:
 
 タグの取得、タグへのサブスクライブ、サブスクリプションの取得、タグからのアンサブスクライブをデバイスが行えるようにするには、以下の API を使用します。
 
-- Android の場合、API `getTags`、`subscribe`、`getSubscriptions`、および `unsubscribeFromTags` を使用します。[Push Notifications による Android でのタグのサブスクライブ](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-android-push/tree/Doc#push-notification-service-tags)に関する資料を参照してください。
+- Android の場合、API `getTags`、`subscribe`、`getSubscriptions`、および `unsubscribeFromTags` を使用します。 [Push Notifications による Android でのタグのサブスクライブ](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-android-push/tree/Doc#push-notification-service-tags)に関する資料を参照してください。
 
-- Cordova の場合、API `retrieveAvailableTags()`、`subscribe()`、`retrieveSubscriptions()`、および `unsubscribe()` を使用します。[Push Notifications による Cordova でのタグのサブスクライブ](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-cordova-plugin-push/tree/Doc#push-notification-service-tags)に関する資料を参照してください。
+- Cordova の場合、API `retrieveAvailableTags()`、`subscribe()`、`retrieveSubscriptions()`、および `unsubscribe()` を使用します。 [Push Notifications による Cordova でのタグのサブスクライブ](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-cordova-plugin-push/tree/Doc#push-notification-service-tags)に関する資料を参照してください。
 
-- iOS の場合、API `retrieveAvailableTagsWithCompletionHandler`、`subscribeToTags`、`retrieveSubscriptionsWithCompletionHandler`、および `unsubscribeFromTags` を使用します。[Push Notifications による Swift でのタグのサブスクライブ](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-swift-push/tree/Doc#push-notification-service-tags)に関する資料を参照してください。
+- iOS の場合、API `retrieveAvailableTagsWithCompletionHandler`、`subscribeToTags`、`retrieveSubscriptionsWithCompletionHandler`、および `unsubscribeFromTags` を使用します。 [Push Notifications による Swift でのタグのサブスクライブ](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-swift-push/tree/Doc#push-notification-service-tags)に関する資料を参照してください。
 
-- Web ブラウザーの場合、API `retrieveAvailableTags()`、`subscribe()`、`retrieveSubscriptions()`、および `unSubscribe()` を使用します。[Push Notifications による Web ブラウザーでのタグのサブスクライブ](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-javascript-webpush/blob/Doc/README.md#push-notification-service-tags)に関する資料を参照してください。
+- Web ブラウザーの場合、API `retrieveAvailableTags()`、`subscribe()`、`retrieveSubscriptions()`、および `unSubscribe()` を使用します。 [Push Notifications による Web ブラウザーでのタグのサブスクライブ](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-javascript-webpush/blob/Doc/README.md#push-notification-service-tags)に関する資料を参照してください。
 
 ## タグ・ベースの通知の使用
 {: #using_tags}
 
-タグ・ベースの通知は、特定のタグにサブスクライブしているすべてのデバイスをターゲットとするメッセージです。各デバイスは、任意の数のタグにサブスクライブできます。このトピックでは、タグ・ベースの通知の送信方法を説明します。サブスクリプションは、{{site.data.keyword.mobilepushshort}}サービス IBM Cloud インスタンスによって維持されます。タグが削除されると、そのタグに関連付けられているすべての情報 (サブスクライバーやデバイスを含む) が削除されます。このタグはもはや存在せず、クライアント・サイドから必要な追加アクションはないので、このタグの自動アンサブスクライブは必要ありません。
+タグ・ベースの通知は、特定のタグにサブスクライブしているすべてのデバイスをターゲットとするメッセージです。 各デバイスは、任意の数のタグにサブスクライブできます。 このトピックでは、タグ・ベースの通知の送信方法を説明します。 サブスクリプションは、{{site.data.keyword.mobilepushshort}} サービス IBM Cloud インスタンスによって維持されます。タグが削除されると、そのタグに関連付けられているすべての情報 (サブスクライバーやデバイスを含む) が削除されます。 このタグはもはや存在せず、クライアント・サイドから必要な追加アクションはないので、このタグの自動アンサブスクライブは必要ありません。
 
-**「タグ」**画面でタグを作成します。タグの作成方法については、[「タグの作成」](t_manage_tags.html)を参照してください。
+**「タグ」**画面でタグを作成します。 タグの作成方法については、[「タグの作成」](t_manage_tags.html)を参照してください。
 
 1. **Push Notification** コンソールで、**「通知の送信」**をクリックします。
 1. **「送信先 (Send To)」**ドロップダウン・リストで、**「タグ指定によるデバイス  (Device by Tag)」**オプションを選択します。

@@ -23,7 +23,7 @@ copyright:
 
 Firebase Cloud Messaging (FCM) 是用來將推送通知遞送至 Android 裝置、Google Chrome 瀏覽器及 Chrome Apps & Extensions 的閘道。若要在主控台上設定 {{site.data.keyword.mobilepushshort}} 服務，您需要取得 FCM 認證（寄件者 ID 及 API 金鑰）。 
 
-API 金鑰會安全地儲存並供 {{site.data.keyword.mobilepushshort}} 服務用來連接至 FCM 伺服器，而適用於 Google Chrome 及 Mozilla Firefox 的 Android SDK 及 JS SDK 在用戶端上使用「寄件者 ID」（專案號碼）。 
+API 金鑰會安全地儲存並供 {{site.data.keyword.mobilepushshort}} Service 用來連接至 FCM 伺服器，而適用於 Google Chrome 及 Mozilla Firefox 的 Android SDK 及 JS SDK 在用戶端上使用「傳送端 ID」（專案號碼）。 
 
 若要設定 FCM 並取得認證，請完成下列步驟：
 
@@ -43,11 +43,11 @@ API 金鑰會安全地儲存並供 {{site.data.keyword.mobilepushshort}} 服務�
 
 3. 從應用程式窗格的「一般」標籤中，選取**新增應用程式**或**將 Firebase 新增至 Android 應用程式**圖示。
     
-4. 在「將 Firebase 新增至 Android 應用程式」視窗中，新增 **com.ibm.mobilefirstplatform.clientsdk.android.push** 作為「套件名稱」。應用程式暱稱欄位是選用性的。按一下**新增應用程式**。 
+4. 在「將 Firebase 新增至 Android 應用程式」視窗中，先新增 **com.ibm.mobilefirstplatform.clientsdk.android.push** 作為「套件名稱」。應用程式暱稱欄位是選用性的。按一下**註冊應用程式**。 
     
 	![「將 Firebase 新增至 Android 應用程式」視窗](images/FCM_1.jpg)
 
-5. 在「將 Firebase 新增至 Android 應用程式」視窗中輸入套件名稱，以包含應用程式的套件名稱。應用程式暱稱欄位是選用性的。按一下**註冊應用程式**。 
+5. 現在，在「將 Firebase 新增至 Android 應用程式」視窗中輸入套件名稱，以包含應用程式的套件名稱。應用程式暱稱欄位是選用性的。按一下**註冊應用程式**。以下是範例：
 
 	![新增應用程式的套件名稱](images/FCM_settings_4.jpg)
 
@@ -56,20 +56,20 @@ API 金鑰會安全地儲存並供 {{site.data.keyword.mobilepushshort}} 服務�
 
 取得 FCM 認證並產生 `google-services.json` 檔案之後，下一步是要[建立服務實例](push_step_2.html)。
 
-**附註**：FCM 是新版本的 Google Cloud Messaging (GCM)。請確定將 FCM 認證用於新的應用程式。現有應用程式將繼續使用 GCM 配置運作。
+**附註**：Google 已淘汰 GCM，並且已和 Firebase 整合 Cloud Messaging。您必須將 Android 上的 GCM 用戶端應用程式移轉至 FCM。
 
 ## iOS
 {: #push_step_1_ios}
 
 對於 iOS 裝置及應用程式，Apple Push Notification Service (APNs) 容許應用程式開發人員將遠端通知從 IBM Cloud（提供者）上的 {{site.data.keyword.mobilepushshort}} 服務實例傳送給 iOS 裝置及應用程式。訊息會傳送至裝置上的目標應用程式。 
 
-您需要取得並配置 APNs 認證。APNs 憑證是透過 {{site.data.keyword.mobilepushshort}} 服務安全地進行管理，並且用來以提供者身分連接至 APNs 伺服器。
+您需要取得並配置 APNs 認證。APNs 憑證是透過 {{site.data.keyword.mobilepushshort}} Service 安全地進行管理，並且用來以提供者身分連接至 APNs 伺服器。
 
 
 ### 登錄應用程式 ID
 {: #push_step_1_ios_2}
 
-「應用程式 ID」（軟體組 ID）是可識別特定應用程式的唯一 ID。每一個應用程式都需要「應用程式 ID」。{{site.data.keyword.mobilepushshort}} 服務這類服務會配置成「應用程式 ID」。
+「應用程式 ID」（軟體組 ID）是可識別特定應用程式的唯一 ID。每一個應用程式都需要「應用程式 ID」。{{site.data.keyword.mobilepushshort}} Service 這類服務會配置成「應用程式 ID」。
 
 請確定您有一個 [Apple Developers ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://developer.apple.com/){: new_window} 帳戶。這是必要項目。
 
@@ -116,33 +116,33 @@ API 金鑰會安全地儲存並供 {{site.data.keyword.mobilepushshort}} 服務�
 	
 	![下載憑證](images/push_certificate_download.jpg)	
 	
-6. 從功能表，選取 **Keychain Access > Certificate Assistant > Request a Certificate From a Certificate Authority…** 
-7. 在 **Certificate Information** 中，輸入與 App Developer 帳戶及通用名稱相關聯的電子郵件位址。請提供有意義的名稱，協助您識別它是用於開發（沙盤推演）還是配送（正式作業）的憑證；例如，_sandbox-apns-certificate_ 或 _production-apns-certificate_。
-8. 選取 **Save to disk**，以將 `.certSigningRequest` 檔案下載至您的桌面，然後按一下 **Continue**。
-9. 在 **Save As** 功能表選項中，命名 `.certSigningRequest` 檔案，然後按一下 **Save**。
-10. 按一下 **Done**。您現在有 CSR。
-11. 回到 **About Creating a Certificate Siging Request (CSR)** 視窗，然後按一下 **Continue**。 
-12. 從 **Generate** 畫面中，按一下 **Choose File ...**，然後選取您儲存在桌面上的 CSR 檔案。然後按一下 **Generate**。
+6. 從功能表中，選取**金鑰鏈存取 > 憑證助理 > 從憑證管理中心要求憑證...** 
+7. 在**憑證資訊**中，輸入與「應用程式開發人員」帳戶及通用名稱相關聯的電子郵件位址。請提供有意義的名稱，協助您識別它是用於開發（沙盤推演）還是配送（正式作業）的憑證；例如，_sandbox-apns-certificate_ 或 _production-apns-certificate_。
+8. 選取**儲存至磁碟**，以將 `.certSigningRequest` 檔案下載至您的桌面，然後按一下**繼續**。
+9. 在**另存新檔**功能表選項中，命名 `.certSigningRequest` 檔案，然後按一下**儲存**。
+10. 按一下**完成**。您現在有 CSR。
+11. 回到**關於建立憑證簽署要求 (CSR)** 視窗，然後按一下**繼續**。 
+12. 從**產生**畫面中，按一下**選擇檔案...**，然後選取您儲存在桌面上的 CSR 檔案。然後按一下 **Generate**。
 
 	![產生憑證](images/generate_certificate.jpg)
-13. 您的憑證備妥之後，請按一下 **Done**。
+13. 您的憑證備妥之後，請按一下**完成**。
 14. 在 **Push Notifications** 畫面上，按一下 **Download** 以下載您的憑證，然後按一下 **Done**。 
 	
 	![下載憑證](images/certificate_download.jpg)
 
-15. 在 Mac 上，移至 **Keychain Access > My Certificates**，然後尋找新安裝的憑證。按兩下憑證，以將它安裝至 Keychain Access。
+15. 在 Mac 上，移至**金鑰鏈存取 > 我的憑證**，然後尋找新安裝的憑證。按兩下憑證，以將它安裝至「金鑰鏈存取」。
 16. 選取憑證及私密金鑰，然後選取 **Export**，以將憑證轉換為個人資訊交換格式（`.p12` 格式）。
 
 
 	![匯出憑證及金鑰](images/keychain_export_key.jpg)
-17. 在 **Save As** 欄位中，提供有意義的憑證名稱（例如，`sandbox_apns.p12_certifcate` 或 `production_apns.p12`），然後按一下 **Save**。
+17. 在**另存新檔**欄位中，提供有意義的憑證名稱（例如，`sandbox_apns.p12_certifcate` 或 `production_apns.p12`），然後按一下 **Save**。
 
 	
 	![匯出憑證及金鑰](images/certificate_p12v2.jpg)
-18. 在 **Enter a password** 欄位中，輸入密碼以保護匯出的項目，然後按一下 **OK**。您可以使用此密碼，在 Push Notifications 服務主控台上配置 APNs 設定。
+18. 在**輸入密碼**欄位中，輸入密碼以保護匯出的項目，然後按一下**確定**。您可以使用此密碼，在 Push Notifications 服務主控台上配置 APNs 設定。
 	
 	![匯出憑證及金鑰](images/export_p12.jpg)
-19. **Key Access.app** 會提示您從 **Keychain** 畫面匯出金鑰。請輸入您的管理密碼，以便 Mac 容許您的系統匯出這些項目，然後選取 **Always Allow** 選項。`.p12` 憑證會在桌面上產生。
+19. **Key Access.app** 會提示您從**金鑰鏈**畫面匯出金鑰。請輸入您的管理密碼，以便 Mac 容許您的系統匯出這些項目，然後選取**一律容許**選項。`.p12` 憑證會在桌面上產生。
 
 
 ### 建立開發佈建設定檔
@@ -158,7 +158,7 @@ API 金鑰會安全地儲存並供 {{site.data.keyword.mobilepushshort}} 服務�
 2. 移至 [Mac Developer Library ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://developer.apple.com/library/mac/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingProfiles/MaintainingProfiles.html#//apple_ref/doc/uid/TP40012582-CH30-SW62site){: new_window}，捲動至 **Creating Development Provisioning Profiles** 區段，並遵循指示以建立開發設定檔。
 **附註**：配置開發佈建設定檔時，請選取下列選項：
 	* **iOS 應用程式開發**
-	* **iOS 及 watchOS 應用程式**
+	* **對於 iOS 及 watchOS 應用程式**
 
 
 ### 建立市集配送佈建設定檔

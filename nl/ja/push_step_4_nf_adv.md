@@ -23,34 +23,35 @@ iOS のバッジ、音声、および追加の JSON ペイロードを構成し�
 
 1. {{site.data.keyword.mobilepushshort}} コンソールで、**「通知」**タブに移動します。
 2. **「オプション・フィールド」**セクションに移動して、{{site.data.keyword.mobilepushshort}}機能を構成します。 
-	- **音声ファイル (Sound File)** - モバイル・アプリの音声ファイルを指定するストリングを入力します。ペイロードで、使用する音声ファイルのストリング名を指定します。
-	- **iOS バッジ (iOS Badge)** - iOS デバイスにアプリ・アイコンのバッジとして表示する数。このプロパティーがないと、バッジは変更されません。バッジを削除するには、このプロパティーの値を 0 に設定します。
+	- **音声ファイル (Sound File)** - モバイル・アプリの音声ファイルを指定するストリングを入力します。 ペイロードで、使用する音声ファイルのストリング名を指定します。
+	- **iOS バッジ (iOS Badge)** - iOS デバイスにアプリ・アイコンのバッジとして表示する数。 このプロパティーがないと、バッジは変更されません。 バッジを削除するには、このプロパティーの値を 0 に設定します。
 3. 次のいずれかのオプションを選択します。	
 	- Android の場合
 
- 	Android アプリケーションの `res/raw` ディレクトリーに音声ファイルを追加します。通知の送信中に、{{site.data.keyword.mobilepushshort}} の音声フィールドに音声ファイル名を追加します。
+ 	Android アプリケーションの `res/raw` ディレクトリーに音声ファイルを追加します。 通知の送信中に、{{site.data.keyword.mobilepushshort}} の音声フィールドに音声ファイル名を追加します。
 
 	```
 	"settings":{
      "gcm":{
      "sound":"tt.wav",
   }
- }  
-	```	{: codeblock}	
+		}  
+	```	
+	{: codeblock}	
 	
 	- iOS の場合
 
 	```
 	"settings": {
 	     "apns" : {
-      "badge": 10,
+	      "badge": 10,
       "sound": "tt.wav",
   }
-}
+	}
 	``` 
 		{: codeblock}
 		
-**追加のペイロード** - このペイロードは、任意のキーと値のペアにすることができますが、{{site.data.keyword.mobilepushshort}}で送信する JSON オブジェクトでなければなりません。 
+**追加のペイロード** - このペイロードは、任意のキーと値のペアにすることができますが、{{site.data.keyword.mobilepushshort}}で送信する JSON オブジェクトでなければなりません。
 
 ```
 {"key":"value", "key2":"value2"}
@@ -60,7 +61,7 @@ iOS のバッジ、音声、および追加の JSON ペイロードを構成し�
 ## Android 通知の保留 
 {: #hold-notifications-android}
 
-アプリケーションがバックグラウンドになる場合に、アプリケーションに送信された通知を{{site.data.keyword.mobilepushshort}}に保留させたいことがあります。通知を保留するには、{{site.data.keyword.mobilepushshort}}を処理しているアクティビティーの onPause() メソッドで hold() メソッドを呼び出します。
+アプリケーションがバックグラウンドになる場合に、アプリケーションに送信された通知を{{site.data.keyword.mobilepushshort}}に保留させたいことがあります。 通知を保留するには、{{site.data.keyword.mobilepushshort}}を処理しているアクティビティーの onPause() メソッドで hold() メソッドを呼び出します。
 
 ```
 @Override

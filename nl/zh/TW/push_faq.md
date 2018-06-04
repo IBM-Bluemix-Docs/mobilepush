@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2017
-lastupdated: "2017-06-27"
+lastupdated: "2017-09-28"
 
 ---
 {:new_window: target="_blank"}
@@ -28,7 +28,7 @@ lastupdated: "2017-06-27"
 
 2. 我在試圖起始設定 Web Push SDK 時，為什麼會看到 "Notification is not working for WEB_Chrome."？
 
-	您可能已變更 Web Push SDK 的 FCM/GCM 認證，Chrome 瀏覽器的訊息遞送可能會失敗。請確定您呼叫 "bmsPush.unRegisterDevice" 以避免發生失敗
+	您可能已變更 Web Push SDK 的 FCM 認證，Chrome 瀏覽器的訊息遞送可能會失敗。請確定您呼叫 "bmsPush.unRegisterDevice" 以避免發生失敗
 
 3. 我在試圖起始設定 Web Push 的 SDK 時收到訊息 "Service workers aren't supported in this browser"。問題可能是什麼？ 
 
@@ -52,7 +52,7 @@ lastupdated: "2017-06-27"
 
 7. Push Notifications 在有效負載大小方面的限制為何？
 
-	{{site.data.keyword.mobilepushshort}} 訊息有效負載大小取決於「閘道」（FCM/GCM、APNs）及用戶端平台所配置的限制。 
+	{{site.data.keyword.mobilepushshort}} 訊息有效負載大小取決於「閘道」（FCM、APNs）及用戶端平台所配置的限制。 
 
 	若為 iOS 8 以及更新版本，接受的大小上限為 4 KB。請注意，APNs 不會傳送超過此限制的通知。若為 Android、Firefox 瀏覽器、Chrome 瀏覽器及 Chrome Apps & Extensions，容許的訊息有效負載大小上限為 4 KB。	
 
@@ -89,7 +89,7 @@ lastupdated: "2017-06-27"
 	- 開啟：已開啟通知的裝置數。
 	- 無效：記號無效的裝置數。
 
-	如需相關資訊，請參閱 [IBM Push Notifications ReST API](https://mobile.ng.bluemix.net/imfpush/) 中的 GET 訊息報告。	
+	如需相關資訊，請參閱 [IBM Push Notifications ReST API](https://imfpush.{DomainName}/imfpush/) 中的 GET 訊息報告。	
 
 14. 推送通知會監視一直到使用者裝置的推送通知遞送嗎？同時針對 Android 和 iOS？
 
@@ -101,7 +101,7 @@ lastupdated: "2017-06-27"
 
 16. 我要依標籤傳送通知，但標籤的清單很長，可能難以手動新增。 
 	
-	您可以使用 REST API 來自動新增標籤。請參閱 [POST 大量訊息](https://mobile.ng.bluemix.net/imfpush/)。
+	您可以使用 REST API 來自動新增標籤。請參閱 [POST 大量訊息](https://imfpush.{DomainName}/imfpush/)。
 
 17. 如何依使用者行動裝置中儲存的資訊來過濾推送通知遞送？
 

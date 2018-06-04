@@ -1,7 +1,7 @@
 ---
 
 copyright:
-years: 2015, 2017
+ years: 2015, 2017
 
 ---
 
@@ -12,7 +12,7 @@ years: 2015, 2017
 
 # Notificações baseadas em tag
 {: #tag_based_notifications}
-Última atualização: 30 de junho de 2017
+Última atualização: 13 de julho de 2017
 {: .last-updated}
 
 Notificações baseadas em tag são mensagens que se destinam a todos os dispositivos inscritos em uma tag específica. As notificações baseadas em identificação
@@ -22,10 +22,12 @@ identificação fornece um meio de segmentar destinatários. Esse recurso ativa
 a capacidade de definir identificações e, em seguida, de enviar e receber mensagens por identificações. Uma mensagem é destinada somente para instâncias do aplicativo
 cliente (no dispositivo móvel, navegador ou como um app ou extensões) que estão inscritas para a identificação. Deve-se primeiramente criar tags para o aplicativo, configurar as assinaturas da tag e, em seguida, iniciar as notificações baseadas em tag. Para enviar uma notificação baseada em tag que usa a API REST, assegure-se de que os "tagNames" sejam fornecidos ao postar no recurso de mensagem.
 
-É possível definir tags e depois enviar e receber mensagens usando tags. Crie primeiro as tags para o aplicativo, crie assinaturas e, em seguida, inicie as notificações baseadas em tag. Para enviar uma
+É possível
+definir tags e depois enviar e receber mensagens usando
+  tags. Crie primeiro as tags para o aplicativo, crie assinaturas e, em seguida, inicie as notificações baseadas em tag. Para enviar uma
 notificação baseada em tag usando a
 [API
-REST](https://mobile.{DomainName}/imfpush/){: new_window}, assegure-se de que os "tagNames" sejam fornecidos ao
+REST](https://imfpush.{DomainName}/imfpush/){: new_window}, assegure-se de que os "tagNames" sejam fornecidos ao
 postar no recurso de mensagem.
 
 
@@ -42,7 +44,7 @@ baseada em tag é recebida nos dispositivos inscritos nas tags.
 Notificações baseadas em tag são mensagens que se destinam a todos os dispositivos inscritos em uma tag específica. Cada dispositivo pode se inscrever em
 qualquer número de tags. 
 
-1. No console do {{site.data.keyword.mobilepushshort}}, selecione a guia **Tags**.
+1. No console do {{site.data.keyword.mobilepushshort}}, selecione a guia **Gerenciar tags**.
 1. Clique no botão + **Criar tag**.   
    1. No campo **Nome**, insira o nome da tag. Por exemplo, "coupons".
    1. No campo **Descrição**, insira uma descrição de tag.
@@ -106,14 +108,12 @@ Use a API a seguir para permitir que seus dispositivos recuperem tags, assinem u
 
 - Para navegadores da web, use as APIs `retrieveAvailableTags()`, `subscribe()`, `retrieveSubscriptions()` e `unSubscribe()`. Veja [Assinar tags de Notificações push para navegadores da web](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-javascript-webpush/blob/Doc/README.md#push-notification-service-tags).
 
-## Usando
-notificações baseada em tag
+## Usando notificações baseada em tag
 {: #using_tags}
 
 Notificações baseadas em tag são mensagens que se destinam a todos os dispositivos inscritos em uma tag específica. Cada dispositivo pode ser inscrito em qualquer número de tags. Este
-tópico descreve como enviar notificações baseadas em tag. As assinaturas são mantidas pela instância do IBM Cloud do serviço {{site.data.keyword.mobilepushshort}}. Quando uma tag é excluída, todas as informações associadas a essa tag, incluindo seus assinantes e dispositivos, são excluídas. Nenhum cancelamento de
-assinatura automático é necessário para essa tag, uma vez que ela não existe mais e
-nenhuma ação adicional é necessária no lado do cliente.
+tópico descreve como enviar notificações baseadas em tag. As assinaturas são mantidas pela instância do IBM Cloud do serviço {{site.data.keyword.mobilepushshort}}. Quando uma tag é excluída, todas as informações associadas a essa tag, incluindo seus assinantes e dispositivos, são excluídas. Nenhum cancelamento de assinatura automático é necessário para essa tag, uma vez que ela
+não existe mais e nenhuma ação adicional é necessária no lado do cliente.
 
 Crie tags na tela **Tag**. Para obter informações sobre como
 criar tags, consulte

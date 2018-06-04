@@ -12,7 +12,7 @@ copyright:
 
 # Notificaciones Rich Media
 {: #interactive-notifications}
-Última actualización: 22 de mayo de 2017
+Última actualización: 13 de julio de 2017
 {: .last-updated}
 
 
@@ -25,5 +25,6 @@ Para configurar la aplicación de modo que reciba push completo en iOS 10, siga 
 ```
 BMSPushRichPushNotificationOptions.didReceive(request, withContentHandler: contentHandler)
 ```
-	
+	{: codeblock}	
+
 Para enviar Rich Media {{site.data.keyword.mobilepushshort}} desde la consola de push, asegúrese de especificar los campos de mensaje, título, subtítulo y attachmentURL.

@@ -23,7 +23,8 @@ Configurez un badge, un son et un contenu JSON supplémentaire iOS.
 
 1. Sur la console {{site.data.keyword.mobilepushshort}}, accédez à l'onglet **Notifications**.
 2. Accédez à la section des zones facultatives pour configurer les fonctions {{site.data.keyword.mobilepushshort}}. 
-	- **Fichier son** - Entrez une chaîne pour pointer vers le fichier son dans votre application mobile. Dans le contenu, spécifiez le nom de chaîne du fichier son à utiliser.
+	- **Fichier son** - Entrez une chaîne qui désigne le fichier son dans votre application mobile. Dans le contenu, spécifiez le nom de
+chaîne du fichier son à utiliser.
 	- **Badge iOS** - Pour les appareils iOS, numéro à afficher comme badge de l'icône d'application. Si cette propriété manque, le badge n'est pas changé. Pour supprimer le badge, associez cette propriété à la valeur 0.
 3. Sélectionnez l'une des options suivantes :	
 	- Sur Android
@@ -36,7 +37,8 @@ Configurez un badge, un son et un contenu JSON supplémentaire iOS.
      "sound":"tt.wav",
 	  }
 		}  
-	```	{: codeblock}	
+	```	
+	{: codeblock}	
 	
 	- Sur iOS
 

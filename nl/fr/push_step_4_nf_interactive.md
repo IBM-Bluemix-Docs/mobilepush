@@ -25,6 +25,7 @@ les boutons d'action avec le message de notification.
 
 Une notification interactive peut être envoyée via la console Push Notifications ou en vous reportant à la documentation d'[API REST](push_restapi.html).
 
+
 Depuis la console {{site.data.keyword.mobilepushshort}} : 
 
 1. Sous l'onglet Notification, cliquez sur **Envoyer une notification**. 

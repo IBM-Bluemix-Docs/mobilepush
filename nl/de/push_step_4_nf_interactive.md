@@ -24,6 +24,7 @@ Interaktive Benachrichtigungen ermöglichen den Benutzern das Beantworten einer 
 
 Interaktive Benachrichtigungen können über die Push Notifications-Konsole oder mithilfe der REST-API (siehe [REST-API-Dokumentation](push_restapi.html)) gesendet werden.
 
+
 Gehen Sie in der {{site.data.keyword.mobilepushshort}}-Konsole wie folgt vor: 
 
 1. Klicken Sie auf der Registerkarte 'Benachrichtigungen' auf **Benachrichtigung senden**. 

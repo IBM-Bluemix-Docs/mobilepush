@@ -45,18 +45,19 @@ Puede personalizar aún más los valores de {{site.data.keyword.mobilepushshort}
 
 Se admiten las siguientes opciones de personalización opcionales:
 
-- Contraer clave: las claves contraídas se adjuntan a las notificaciones. Si llegan varias notificaciones de forma secuencial con la misma clave contraída cuando el dispositivo está desconectado, estas se contraerán. Cuando el dispositivo vuelva a conectarse, recibirá las notificaciones del servidor FCM/GCM y mostrará solo la última notificación transportada con la misma clave contraída. Si no se establece esta clave contraída, se almacenarán los mensajes nuevos y antiguos para entregarlos más adelante.
+- Contraer clave: las claves contraídas se adjuntan a las notificaciones. Si llegan varias notificaciones de forma secuencial con la misma clave contraída cuando el dispositivo está desconectado, estas se contraerán. Cuando el dispositivo vuelva a conectarse, recibirá las notificaciones del servidor FCM y mostrará solo la última notificación transportada con la misma clave contraída. Si no se establece esta clave contraída, se almacenarán los mensajes nuevos y antiguos para entregarlos más adelante.
 - Sonido: indica un fragmento de sonido que se reproducirá al recibir una notificación. Da soporte a la opción predeterminada o al nombre de un recurso de sonido incorporado en la app.
 - Icono: Especifique el nombre del icono que se mostrará para la notificación. Asegúrese de que haya empaquetado el icono en la carpeta `res/drawable` con la aplicación cliente.
 - Prioridad: especifica las opciones para asignar la prioridad de entrega a los mensajes. 
 	- Para las prioridades `high` o `max` se emitirá una notificación de aviso.
 	- Para las prioridades `low` o `default` no se abrirán las conexiones de red en un dispositivo en suspensión. 
+	- Para las prioridades `min` se emitirá una notificación silenciosa.
 - Visibilidad: puede optar por definir la opción de visibilidad de notificación en `public` o `private`. 
 	- La opción `private` limita la visualización pública y puede habilitarla si el dispositivo está protegido mediante pin o un patrón y si el valor de notificación está establecido en **Ocultar contenido confidencial de notificación**. Cuando la visibilidad está establecida en `private`, debe mencionarse algún campo de `redacción`. Solo se mostrará el contenido especificado en el campo de `redacción` en la pantalla segura bloqueada del dispositivo. 
 	- La opción `public` entregará notificaciones que se puedan leer libremente.
-- Tiempo de duración: este valor se establece en segundos. Si no se especifica este parámetro, el servidor FCM/GCM almacenará el mensaje cuatro semanas e intentará entregarlo. La validez caduca transcurridas cuatro semanas. El intervalo de valores posible es de 0 a 2.419.200 segundos.
+- Tiempo de duración: este valor se establece en segundos. Si no se especifica este parámetro, el servidor FCM almacenará el mensaje cuatro semanas e intentará entregarlo. La validez caduca transcurridas cuatro semanas. El intervalo de valores posible es de 0 a 2.419.200 segundos.
 - Retrasar cuando esté desocupado: puede establecerlo en uno de los valores siguientes:
-	- `True`, el servidor FCM/GCM no entregará la notificación cuando el dispositivo esté desocupado. 
+	- `True`, el servidor FCM no entregará la notificación cuando el dispositivo esté desocupado. 
 	- `False`, garantiza que se entregan notificaciones aunque el dispositivo esté desocupado.
 - Sinc: si esta opción se establece en `true`, se sincronizan las notificaciones de todos los dispositivos registrados. Si un usuario dispone de varios dispositivos con la misma aplicación instalada, al leer la notificación en un dispositivo se suprimirán las notificaciones del resto de los dispositivos. Debe asegurarse que está registrado al servicio {{site.data.keyword.mobilepushshort}} con userId para que esta opción funcione.
 - Carga útil adicional: permite especificar valores personalizados de carga útil para las notificaciones.

@@ -1,7 +1,7 @@
 ---
 
 copyright:
- years: 2015, 2017
+years: 2015, 2017
 
 ---
 
@@ -12,7 +12,7 @@ copyright:
 {:pre: .pre}
 {:tip: .tip}
 
-# 開始使用指導教學
+# 入門指導教學
 {: #gettingstartedtemplate}
 前次更新：2017 年 9 月 8 日
 {: .last-updated}

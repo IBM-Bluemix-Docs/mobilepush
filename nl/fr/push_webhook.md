@@ -32,7 +32,7 @@ le service {{site.data.keyword.mobilepushshort}}, vous pouvez vous enregistrer p
 **Remarque ** : les transmissions de notifications sont effectuées par lots. Une transmission de message peut avoir plusieurs événements webhook, lesquels peuvent inclure à la fois des réussites et des échecs. 
 Les événements webhook porteraient le même messageID que le message transmis. 
 
-Pour plus d'informations sur les webhooks, reportez-vous au document [API REST IBM de notifications Push ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://console-regional.stage1.ng.bluemix.net/apidocs/800){: new_window}.
+Pour plus d'informations sur les webhooks, reportez-vous au document [API REST IBM de notifications Push ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://console.bluemix.net/apidocs/800-push-notifications){: new_window}.
 
 ## Réception d'alertes sur les événements webhook
 {: #webhook_alert_event}
@@ -70,7 +70,7 @@ Les abonnés peuvent choisir de recevoir des alertes sur les événements webhoo
 	```
 		{: codeblock}
 
-- Annulation de l'enregistrement d'un appareil
+- Désenregistrement d'un appareil
 	```
 		{ type: 'onDeviceUnregister',
 		entity:

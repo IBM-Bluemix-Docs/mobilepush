@@ -12,7 +12,7 @@ copyright:
 
 # 服务问题故障诊断
 {: #errors}
-上次更新时间：2017 年 6 月 19 日
+上次更新时间：2017 年 7 月 13 日
 {: .last-updated}
 
 本主题将指导您识别并解决在使用 Push Notifications 服务时可能会遇到的错误场景。
@@ -39,15 +39,23 @@ copyright:
 ### 在此浏览器中不支持服务工作程序
 {: #troubleshooting_notification_service_workers}
 
-**解释**：使用服务工作程序作为 `BMSPushSDK.js` 一部分包含的 SDK 不可用。 
+**说明**：使用服务工作程序作为 `BMSPushSDK.js` 一部分包含的 SDK 不可用。 
 
 **用户响应**：建议您切换至支持服务工作程序的浏览器。受支持的浏览器版本为 Firefox V49 或更高版本，以及 Chrome V53（64 位元）或更高版本。
+
+
+### 服务器繁忙：服务器当前无法处理请求。请稍候重试。
+{: #troubleshooting_notification_server_busy}
+
+**说明**：在访问“监视”页面中的报告时，用户可能会注意到此错误。如果过去 90 天内发送的消息量非常高时，这是预期行为。
+ 
+**用户响应**：可通过 REST API 访问基于 messageId 的报告。请参阅 [REST API 文档]( https://console.bluemix.net/apidocs/800-push-notifications?&language=shell_curl#getmessagereport)中的“getMessageReport”。
 
 
 ### SecurityError：操作不安全
 {: #troubleshooting_notification_insecure}
 
-**解释**：当您在 Firefox 中启用 Web 控制台时，您可能会看到错误。Push Notifications 服务中的 Web 推送支持需要使用 `https` 协议而非 `http` 访问 Web 站点。
+**说明**：当您在 Firefox 中启用 Web 控制台时，您可能会看到错误。Push Notification 服务中的 Web 推送支持需要使用 `https` 协议而非 `http` 访问 Web 站点。
 
 **用户响应**：建议您尝试从浏览器使用 `https` 连接到 Web 站点。
 
@@ -154,7 +162,7 @@ function showStatus(response) {
 **说明**：请求的 JSON 主体具有 {{site.data.keyword.mobilepushshort}} 服务器无法识别的参数。
 
 
-**用户响应**：请验证请求中的 JSON 主体是否遵循 {{site.data.keyword.mobilepushshort}} 服务器所预期的请求格式。有关的更多信息，请参阅 [REST API ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://mobile.{DomainName}/imfpush/){: new_window}。
+**用户响应**：请验证请求中的 JSON 主体是否遵循 {{site.data.keyword.mobilepushshort}} 服务器所预期的请求格式。有关的更多信息，请参阅 [REST API ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://imfpush.{DomainName}/imfpush/){: new_window}。
 
 
 
@@ -164,7 +172,7 @@ function showStatus(response) {
 **说明**：请求 URL 中的查询字符串具有无法识别的参数。例如，如果预订删除请求具有 deviceId 和 tagName 以外的参数，那么可能会发生此错误。
 
 
-**用户响应**：请验证请求中的 JSON 主体是否遵循 {{site.data.keyword.mobilepushshort}} 服务器所预期的请求格式。有关的更多信息，请参阅 [REST API ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://mobile.{DomainName}/imfpush/){: new_window}。
+**用户响应**：请验证请求中的 JSON 主体是否遵循 {{site.data.keyword.mobilepushshort}} 服务器所预期的请求格式。有关的更多信息，请参阅 [REST API ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://imfpush.{DomainName}/imfpush/){: new_window}。
 
 
 
@@ -174,7 +182,7 @@ function showStatus(response) {
 **说明**：请求 URL 中的查询字符串缺少必需参数。例如，预订删除请求中可能缺少 deviceId 和 tagName 参数。
 
 
-**用户响应**：请验证请求中的 JSON 主体是否遵循 {{site.data.keyword.mobilepushshort}} 服务器所预期的请求格式。有关的更多信息，请参阅 [REST API ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://mobile.{DomainName}/imfpush/){: new_window}。
+**用户响应**：请验证请求中的 JSON 主体是否遵循 {{site.data.keyword.mobilepushshort}} 服务器所预期的请求格式。有关的更多信息，请参阅 [REST API ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://imfpush.{DomainName}/imfpush/){: new_window}。
 
 
 
@@ -231,7 +239,7 @@ function showStatus(response) {
 ### FPWSE0025E
 {: #error_fpwse0025e}
 
-**解释**：服务器当前无法处理请求。
+**说明**：服务器当前无法处理请求。
 
 **用户响应**：请稍后重新提交请求。
 
@@ -242,7 +250,7 @@ function showStatus(response) {
 **说明**：已对此应用程序禁用 {{site.data.keyword.mobilepushshort}} 服务。这可能是由于计费问题，也可能是管理员已禁用该应用程序。
 
 
-**用户响应**：请参阅 IBM Cloud 文档中的故障诊断主题，以检查服务状态，查看故障诊断信息或了解有关获取帮助的信息。
+**用户响应**：请参阅“IBM Cloud 文档”中的“故障诊断”主题，以检查服务状态，查看故障诊断信息或了解有关获取帮助的信息。
 
 
 

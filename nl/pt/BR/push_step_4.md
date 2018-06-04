@@ -1,7 +1,7 @@
 ---
 
 copyright:
-years: 2015, 2017
+ years: 2015, 2017
 
 ---
 
@@ -20,12 +20,18 @@ Depois de ter desenvolvido seus aplicativos, será possível enviar notificaçõ
 
 Para enviar notificações push básicas, conclua as etapas a seguir:
 
-1. Selecione **Enviar notificações** e componha uma mensagem escolhendo uma opção **Enviar para**. As opções suportadas são **Dispositivo por tag**, **ID do dispositivo**, **ID do usuário**, **Dispositivos Android**, **Dispositivos iOS**, **Notificações da web** e **Todos os dispositivos**.
+1. Selecione **Enviar notificações** e componha uma mensagem
+escolhendo uma opção **Enviar para**. As opções suportadas são
+**Dispositivo por tag**, **ID do dispositivo**,
+**ID do usuário**, **Dispositivos Android**,
+**Dispositivos iOS**, **Notificações da web** e
+**Todos os dispositivos**.
 **Nota**: ao selecionar a opção **Todos os dispositivos**, todos os dispositivos inscritos para {{site.data.keyword.mobilepushshort}} receberão notificações.
 	
 	![Tela de notificações](images/tag_notification.jpg)
 
-2. No campo **Mensagem**, componha sua mensagem. Escolha a configurar das definições opcionais conforme necessário.
+2. No campo **Mensagem**, componha sua mensagem. Escolha a
+configurar das definições opcionais conforme necessário.
 3. Clique em **Enviar**.
 3. Verifique se seus dispositivos ou navegador receberam a notificação.
 
@@ -45,18 +51,19 @@ A captura de tela a seguir mostra uma notificação push no plano de fundo para 
 
 As opções de customização opcionais a seguir são suportadas:
 
-- Chave de redução: as chaves de redução são anexadas às notificações. Se diversas notificações chegarem sequencialmente com a mesma chave de redução quando o dispositivo estiver off-line, elas serão reduzidas. Quando um dispositivo fica on-line, ele recebe notificações a partir do servidor FCM/GCM e exibe somente a notificação mais recente que comporta a mesma chave de redução. Se a chave de redução não estiver configurada, as mensagens novas e antigas serão armazenadas para entrega futura.
+- Chave de redução: as chaves de redução são anexadas às notificações. Se diversas notificações chegarem sequencialmente com a mesma chave de redução quando o dispositivo estiver off-line, elas serão reduzidas. Quando um dispositivo fica on-line, ele recebe notificações do servidor FCM e exibe somente a notificação mais recente que comporta a mesma chave de redução. Se a chave de redução não estiver configurada, as mensagens novas e antigas serão armazenadas para entrega futura.
 - Som: indica que um clique de som seja reproduzido no recebimento de uma notificação. Suporta o padrão ou o nome de um recurso de som empacotado no app.
 - Ícone: especifique o nome do ícone a ser exibido para a notificação. Assegure-se de ter empacotado o ícone na pasta `res/drawable` com o aplicativo cliente.
 - Prioridade: especifica as opções para designar prioridade de entrega às mensagens. 
 	- Uma prioridade `high` ou `max` resultará em notificação heads-up.
 	- Uma prioridade `low` ou `default` não abrirá conexões de rede em um dispositivo inativo. 
+	- Uma prioridade `min` será uma notificação silenciosa.
 - Visibilidade: é possível optar por configurar a opção de visibilidade de notificação como `public` ou `private`. 
 	- A opção `private` restringe a visualização pública, e é possível optar por ativá-la se seu dispositivo é protegido com pin ou um padrão e a configuração de notificação está configurada como **Ocultar conteúdo de notificação confidencial**. Quando a visibilidade for configurada como `private`, um campo `redact` deverá ser mencionado. Somente o conteúdo especificado no campo `redact` será exibido em uma tela bloqueada segura no dispositivo. 
 	- A opção `public` renderiza as notificações para serem lidas livremente.
-- Time to live: esse valor é configurado em segundos. Se esse parâmetro não for especificado, o servidor FCM/GCM armazenará a mensagem por quatro semanas e tentará entregar. A validade expira após quatro semanas. A faixa de valores possíveis vai de 0 a 2.419.200 segundos.
+- Time to live: esse valor é configurado em segundos. Se esse parâmetro não for especificado, o servidor FCM armazenará a mensagem por quatro semanas e tentará entregar. A validade expira após quatro semanas. A faixa de valores possíveis vai de 0 a 2.419.200 segundos.
 - Atrasar quando inativo: isso pode ser configurado para um dos valores a seguir:
-	- `True` instrui o servidor FCM/GCM para não entregar a notificação se o dispositivo estiver inativo. 
+	- `True` instrui o servidor FCM a não entregar a notificação se o dispositivo estiver inativo. 
 	- `False` assegura a entrega de notificação mesmo se o dispositivo estiver inativo.
 - Sincronizar: a configuração dessa opção como `true` sincroniza as notificações entre todos os dispositivos registrados. Se o usuário com um nome de usuário tiver diversos dispositivos com o mesmo aplicativo instalado, a leitura da notificação em um dispositivo assegura a exclusão das notificações nos outros dispositivos. É preciso assegurar-se de estar registrado no serviço {{site.data.keyword.mobilepushshort}} com userId para que essa opção funcione.
 - Carga útil adicional: especifica os valores de carga útil customizados para suas notificações.

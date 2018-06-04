@@ -30,7 +30,7 @@ Webhook 是使用者定義的回呼，它們是由例如登錄裝置或訂閱標
 
 **附註：**通知分派會以批次處理。訊息分派可以有多個 Webhook 事件，事件可能同時包含失敗和成功。Webhook 事件的 messageID 會與分派訊息的相同。 
 
-如需 Webhook 的相關資訊，請參閱 [IBM Push Notifications REST API ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://console-regional.stage1.ng.bluemix.net/apidocs/800){: new_window}。
+如需 Webhook 的相關資訊，請參閱 [IBM Push Notifications REST API ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://console.bluemix.net/apidocs/800-push-notifications){: new_window}。
 
 ## 接收 Webhook 事件警示
 {: #webhook_alert_event}
@@ -57,7 +57,7 @@ Webhook 是使用者定義的回呼，它們是由例如登錄裝置或訂閱標
 	```
 		{
 		  "type": 'onDeviceUpdate',
-		  entity : 
+		  entity :
 			{
 		    "deviceId" : 'device1',
 		    "userId" : 'user1',

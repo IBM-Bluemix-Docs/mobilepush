@@ -5,12 +5,12 @@ copyright:
 
 ---
 
-# iOS のアクション可能通知の使用可能化
+# Enabling actionable notifications for iOS
 {: #enable-actionable-notifications-ios}
 
-従来のプッシュ通知とは異なり、アクション可能通知は、通知アラートを受け取る際にアプリを開くことなく選択を行うようにユーザーにプロンプトを出します。アクション可能プッシュ通知をアプリケーションで使用可能にするには、以下の指示に従います。
+Unlike traditional push notifications, actionable notifications prompt users to make a selection upon receipt of the notification alert without opening the app. Use the following instructions to enable actionable push notifications in your application.
 
-1. ユーザー応答アクションを作成します。
+1. Create a user response action.
 
 	Objective-C
 
@@ -43,7 +43,7 @@ copyright:
 	declineAction.activationMode = UIUserNotificationActivationMode.Background
 	```
 
-2. 通知カテゴリーを作成し、アクションを設定します。**UIUserNotificationActionContextDefault** または **UIUserNotificationActionContextMinimal** が有効なコンテキストです。
+2. Create the notification category and set an action. **UIUserNotificationActionContextDefault** or **UIUserNotificationActionContextMinimal** are valid contexts.
 
 	Objective-C
 
@@ -63,7 +63,7 @@ copyright:
 	pushCategory.setActions([acceptAction, declineAction], forContext: UIUserNotificationActionContext.Default)
 	```
 
-1. 通知設定を作成し、前のステップで作成したカテゴリーを割り当てます。
+1. Create the notification setting and assign the categories from the previous step.
 
 	Objective-C
 
@@ -79,7 +79,7 @@ copyright:
 	let categories = NSSet(array:[pushCategory]);
 	```
 
-1. ローカル通知またはリモート通知を作成し、その通知にカテゴリーの ID を割り当てます。
+1. Create the local or remote notification and assign it the identity of the category.
 
 	Objective-C
 

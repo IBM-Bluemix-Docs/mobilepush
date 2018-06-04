@@ -41,15 +41,15 @@ API 密钥以安全方式存储，并由 {{site.data.keyword.mobilepushshort}} �
     
 	![Firebase 项目设置](images/FCM_settings_6.jpg)
 
-3. 在“您的应用程序”窗格的“常规”选项卡中选择**添加应用程序**或**添加 Firebase 至您的 Android 应用程序**图标。
+3. 在“您的应用程序”窗格的“常规”选项卡中选择**添加应用程序**或**将 Firebase 添加到您的 Android 应用**图标。
     
-4. 在“添加 Firebase 至您的 Android 应用程序”窗口中，添加 **com.ibm.mobilefirstplatform.clientsdk.android.push** 作为程序包名。“应用程序昵称”字段为可选字段。单击**添加应用程序**。
+4. 在“将 Firebase 添加到您的 Android 应用”窗口中，首先添加 **com.ibm.mobilefirstplatform.clientsdk.android.push** 作为程序包名。“应用程序昵称”字段为可选字段。单击**注册应用程序**。
  
     
-	![添加 Firebase 至您的 Android 应用程序](images/FCM_1.jpg)
+	![将 Firebase 添加到您的 Android 应用](images/FCM_1.jpg)
 
-5. 通过在“添加 Firebase 至您的 Android 应用程序”窗口中，输入应用程序的程序包名。“应用程序昵称”字段为可选字段。单击**注册应用程序**。
- 
+5. 现在，通过在“将 Firebase 添加到您的 Android 应用”窗口中，输入应用程序的程序包名，包含应用程序的程序包名。“应用程序昵称”字段为可选字段。单击**注册应用程序**。
+下面是示例 -
 
 	![添加应用程序的程序包名](images/FCM_settings_4.jpg)
 
@@ -58,12 +58,12 @@ API 密钥以安全方式存储，并由 {{site.data.keyword.mobilepushshort}} �
 
 一旦获取了 FCM 凭证并生成了 `google-services.json` 文件，下一步是[创建服务实例](push_step_2.html)。
 
-**注**：FCM 是 Google 云消息传递 (GCM) 的新版本。请确保将 FCM 凭证用于新应用程序。现有应用程序将继续以 GCM 配置运作。
+**注**：Google 已弃用 GCM，并且已将“云消息传递”与 Firebase 集成。您必须将 Android 上的 GCM 客户机应用程序迁移到 FCM。
 
 ## 对于 iOS
 {: #push_step_1_ios}
 
-对于 iOS 设备和应用程序，通过 Apple 推送通知服务 (APNs)，应用程序开发者可以将远程通知从 IBM Cloud 上的 {{site.data.keyword.mobilepushshort}} 服务实例（提供程序）发送到 iOS 设备和应用程序。消息会发送到设备上的目标应用程序。 
+对于 iOS 设备和应用程序，通过 Apple 推送通知服务 (APNs)，应用程序开发者可以将远程通知从 IBM Cloud 上的 {{site.data.keyword.mobilepushshort}} 服务实例（提供者）发送到 iOS 设备和应用程序。消息会发送到设备上的目标应用程序。 
 
 您需要获取并配置 APNs 凭证。APNs 证书由 {{site.data.keyword.mobilepushshort}} 服务安全管理，在连接到 APNs 服务器（提供者）时需要使用该证书。
 
@@ -71,7 +71,7 @@ API 密钥以安全方式存储，并由 {{site.data.keyword.mobilepushshort}} �
 ### 注册应用程序标识
 {: #push_step_1_ios_2}
 
-应用程序标识（捆绑标识）是用于识别特定应用程序的唯一标识。每个应用程序都需要应用程序标识。像 {{site.data.keyword.mobilepushshort}} 服务这类的服务都是配置给应用程序标识的。
+应用程序标识（捆绑标识）是用于标识特定应用程序的唯一标识。每个应用程序都需要应用程序标识。像 {{site.data.keyword.mobilepushshort}} 服务这类的服务都是配置给应用程序标识的。
 
 请确保您具有 [Apple Developer ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://developer.apple.com/){: new_window} 帐户。这是必备的先决条件。
 

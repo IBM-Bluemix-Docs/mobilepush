@@ -20,7 +20,7 @@ Dernière mise à jour : 28 septembre 2017
 IBM {{site.data.keyword.mobilepushshort}} est un service que vous pouvez utiliser pour envoyer des notifications à des appareils mobiles et à des navigateurs. Les notifications peuvent être ciblées vers tous les utilisateurs d'application ou vers un ensemble spécifique d'utilisateurs et d'appareils à l'aide de balises. Le public visé reçoit une notification pour chaque message que vous soumettez au service.
 
 
-Vous pouvez utiliser le service {{site.data.keyword.mobilepushshort}} dans le cadre d'un conteneur boilerplate de MobileFirst Services Starter ou dans le cadre de IBM Cloud [Dedicated Services](/docs/dedicated/index.html).  Vous pouvez également utiliser un SDK (kit de développement de logiciels) et des [API REST ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://mobile.{DomainName}/imfpush/){: new_window} pour affiner plus encore le développement de vos applications client.
+Vous pouvez utiliser le service {{site.data.keyword.mobilepushshort}} dans le cadre d'un conteneur boilerplate de MobileFirst Services Starter ou dans le cadre des services IBM Cloud [Dedicated](/docs/dedicated/index.html). Vous pouvez également utiliser un SDK (kit de développement de logiciels) et des [API REST ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://imfpush.{DomainName}/imfpush/){: new_window} pour affiner plus encore le développement de vos applications client.
 
 
 Le service {{site.data.keyword.mobilepushshort}} est également activé pour [OpenWhisk](/docs/openwhisk/index.html). est un service de traitement distribué et géré par événements, également dénommé plateforme informatique sans serveur. Ceci permet aux développeurs de se concentrer sur l'écriture de la logique d'application et de créer des actions qui sont exécutées à la demande.
@@ -57,12 +57,12 @@ Le service {{site.data.keyword.mobilepushshort}} gère les informations relative
 ### Passerelles
 {: #gateways}
 
-Il s'agit de services de cloud de notifications push spécifiques aux plateformes, comme FCM/GCM ou APNS (Apple Push Notification service), qui sont utilisés par le service IBM {{site.data.keyword.mobilepushshort}} pour envoyer des notifications aux applications mobiles et aux applications de navigateur.
+Services de cloud Push Notifications spécifiques aux plateformes, comme FCM ou APNs (Apple Push Notification service), utilisés par le service IBM {{site.data.keyword.mobilepushshort}} pour envoyer des notifications aux applications mobiles et aux applications de navigateur.
 
 ## Taille de message
 {: #push-message-size}
 
-La taille d'un message de type {{site.data.keyword.mobilepushshort}} dépend des contraintes imposées par les passerelles (FCM/GCM, APNS) et les plateformes client. 
+La taille d'un message de type {{site.data.keyword.mobilepushshort}} dépend des contraintes imposées par les passerelles (FCM, APNS) et les plateformes client. 
 
 - Pour iOS et Safari : pour iOS 8 et ultérieur, la taille maximale autorisée est de 4 kilooctets. Le service APNs n'envoie pas de notifications qui dépassent cette limite.
 - Pour Android, le navigateur Firefox ou Chrome, et les applications et extensions Chrome : la taille maximale du contenu de message est limitée à 4 kilooctets.

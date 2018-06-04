@@ -1,7 +1,7 @@
 ---
 
 copyright:
-years: 2015, 2017
+ years: 2015, 2017
 
 ---
 
@@ -23,6 +23,7 @@ As notificações interativas permitem que os usuários respondam a uma notifica
 {: #send_interactive_notifications}
 
 A notificação interativa pode ser enviada usando o console de Notificações push ou usando a [documentação da API de REST](push_restapi.html).
+
 
 No console de {{site.data.keyword.mobilepushshort}}: 
 

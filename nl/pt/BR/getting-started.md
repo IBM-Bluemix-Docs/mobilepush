@@ -24,8 +24,8 @@ Neste tutorial de introdução do {{site.data.keyword.mobilepushfull}}, passamos
 ## Antes de começar
 {: #prereqs}
 
-Serão necessárias uma [conta do IBM Cloud](https://console.bluemix.net/registration/), uma instância do
-serviço {{site.data.keyword.mobilepushshort}} e as ferramentas e requisitos a seguir:
+Você precisará de uma [Conta do IBM Cloud](https://console.bluemix.net/registration/), de uma instância do
+serviço {{site.data.keyword.mobilepushshort}} e das ferramentas e dos requisitos a seguir:
 
   * API do Android 15 +
   * Android 4.0.3+

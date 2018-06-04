@@ -1,7 +1,7 @@
 ---
 
 copyright:
-years: 2015, 2017
+ years: 2015, 2017
 
 ---
 
@@ -15,7 +15,7 @@ years: 2015, 2017
 Última atualização: 22 de maio de 2017
 {: .last-updated}
 
-É possível usar uma API (interface de programação de aplicativos) REST (Representational State Transfer) para {{site.data.keyword.mobilepushshort}}. Também é possível usar o SDK e a [API de Push ![Ícone de link externo](../../icons/launch-glyph.svg "External link icon")](https://mobile.{DomainName}/imfpush/){: new_window} para desenvolver adicionalmente seus aplicativos clientes.
+É possível usar uma API (interface de programação de aplicativos) REST (Representational State Transfer) para {{site.data.keyword.mobilepushshort}}. Também é possível usar o SDK e a [API de Push ![Ícone de link externo](../../icons/launch-glyph.svg "External link icon")](https://imfpush.{DomainName}/imfpush/){: new_window} para desenvolver adicionalmente seus aplicativos clientes.
 
 Com a API REST de Push, aplicativos do servidor de backend e clientes podem acessar funções {{site.data.keyword.mobilepushshort}}.
 
@@ -28,8 +28,8 @@ Com a API REST de Push, aplicativos do servidor de backend e clientes podem aces
 
 Para obter a URL base para a API REST, conclua as etapas:
 
-1. Crie um aplicativo backend no catálogo do IBM Cloud® da seção Modelos escolhendo o MobileFirst Services Starter. Isso liga o serviço {{site.data.keyword.mobilepushshort}} ao aplicativo. Também é possível criar uma instância de serviço de Push e deixá-la sem limites. 
-1. Na página principal do Catálogo do IBM Cloud, acesse a área **Aplicativos** e, em seguida, selecione seu app.
+1. Crie um aplicativo backend na seção Modelos do catálogo do IBM Cloud® escolhendo o MobileFirst Services Starter. Isso liga o serviço {{site.data.keyword.mobilepushshort}} ao aplicativo. Também é possível criar uma instância de serviço de Push e deixá-la sem limites. 
+1. Na página principal do IBM Cloud Catalog, acesse a área **Aplicativos** e, em seguida, selecione seu app.
 3. Clique em **OPÇÕES MÓVEIS**. Os valores de rota e GUID do app são exibidos no início da página de detalhes do app. A tela Mostrar credenciais mostra informações sobre o AppSecret. É possível obter o segredo do aplicativo em Opções móveis e também o segredo do cliente para algumas das APIs.
 
 Também é possível usar a linha de comandos para obter as credenciais de serviço:
@@ -44,7 +44,7 @@ Também é possível usar a linha de comandos para obter as credenciais de servi
 ## Aceitar cabeçalho do idioma
 {: #push-api-rest-accept}
 
-O cabeçalho "Accept-Language" especifica qual idioma usar para as mensagens de erro que são produzidas pela [API de REST Push ![Ícone de link externo](../../icons/launch-glyph.svg "External link icon")](https://mobile.{DomainName}/imfpush/){: new_window}. Os idiomas a seguir são suportados para as mensagens de erro: chinês (simplificado), chinês (tradicional), inglês (EUA), alemão, francês, italiano, japonês, coreano, português e espanhol.
+O cabeçalho "Accept-Language" especifica qual idioma usar para as mensagens de erro que são produzidas pela [API de REST Push ![Ícone de link externo](../../icons/launch-glyph.svg "External link icon")](https://imfpush.{DomainName}/imfpush/){: new_window}. Os idiomas a seguir são suportados para as mensagens de erro: chinês (simplificado), chinês (tradicional), inglês (EUA), alemão, francês, italiano, japonês, coreano, português e espanhol.
 
 
 ## Filtros de API REST de Push

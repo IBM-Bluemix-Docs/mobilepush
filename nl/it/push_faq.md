@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2017
-lastupdated: "2017-06-27"
+lastupdated: "2017-09-28"
 
 ---
 {:new_window: target="_blank"}
@@ -28,7 +28,7 @@ lastupdated: "2017-06-27"
 
 2. Perché ricevo "La notifica non funziona per WEB_Chrome.", quando provo ad inizializzare l'SDK di push web?
 
-	Potresti aver modificato le tue credenziali FCM/GCM per l'SDK di push web e la ricezione dei messaggi potrebbe non riuscire per il browser Chrome. Assicurati di richiamare "bmsPush.unRegisterDevice" per evitare errori.
+	Potresti aver modificato le tue credenziali FCM per l'SDK di push web e la ricezione dei messaggi potrebbe non riuscire per il browser Chrome. Assicurati di richiamare "bmsPush.unRegisterDevice" per evitare errori.
 
 3. Ricevo il messaggio "I nodi di lavoro del servizio non sono supportati in questo browser" quando provo ad inizializzare l'SDK per il push web. Quale potrebbe essere il problema? 
 
@@ -52,7 +52,7 @@ lastupdated: "2017-06-27"
 
 7. Quali sono i limiti per le notifiche push, in termini di dimensione del payload?
 
-	La dimensione del payload del messaggio di {{site.data.keyword.mobilepushshort}} dipende dai vincoli disposti dai gateway (FCM/GCM, APNs) e dalle piattaforme client. 
+	La dimensione del payload del messaggio di {{site.data.keyword.mobilepushshort}} dipende dai vincoli disposti dai gateway (FCM, APNs) e dalle piattaforme client. 
 
 	Per iOS 8 e successivi, la dimensione massima consentita è 4 kilobyte. Tieni presente che le APNs non inviano notifiche che superano questo limite. Per Android, i browser Firefox e Chrome e le estensioni e applicazioni Chrome, esiste una limitazione di 4 kilobyte come massimo consentito per la dimensione del payload del messaggio.	
 
@@ -89,7 +89,7 @@ lastupdated: "2017-06-27"
 	- Aperto: il numero di dispositivi in cui la notifica è stata aperta.
 	- Non valido: il numero di dispositivi in cui il token non è valido.
 
-	Per ulteriori informazioni, vedi il report dei messaggi GET in [IBM Push Notifications REST API](https://mobile.ng.bluemix.net/imfpush/).	
+	Per ulteriori informazioni, vedi il report dei messaggi GET in [IBM Push Notifications REST API](https://imfpush.{DomainName}/imfpush/).	
 
 14. La notifica push monitora la consegna al dispositivo dell'utente finale? Sia per Android che per iOS?
 
@@ -101,7 +101,7 @@ lastupdated: "2017-06-27"
 
 16. Sto inviando la notifica per tag, ma ho un elenco molto lungo di tag che potrebbe essere difficile aggiungere manualmente. 
 	
-	Puoi utilizzare le API REST per automatizzare l'aggiunta di tag. Consulta [POST bulk messages](https://mobile.ng.bluemix.net/imfpush/).
+	Puoi utilizzare le API REST per automatizzare l'aggiunta di tag. Consulta [POST bulk messages](https://imfpush.{DomainName}/imfpush/).
 
 17. Come posso filtrare la consegna delle notifiche push per le informazioni archiviate nel dispositivo mobile dell'utente?
 

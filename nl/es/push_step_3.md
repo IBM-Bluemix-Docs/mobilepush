@@ -32,7 +32,7 @@ Lleve a cabo los pasos del [SDK de Android de notificaciones push](https://githu
 
     ![Añadir el archivo json al directorio raíz de la aplicación](images/FCM_7.jpg)
 
-2. En la ventana Añadir Firebase a la app de Android, pulse **Continuar** y, a continuación, **Finalizar**. 
+2. En la ventana Añadir Firebase a la app Android, pulse **Continuar** y, a continuación, **Finalizar**. 
 3. Cree y ejecute la aplicación. Una vez que se cree correctamente, aparecerá el mensaje `Creación Gradle finalizada`.
 4. Incluya el SDK de push del cliente con Gradle.
 	1. Configure el archivo [Gradle](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-android-push/tree/Doc#configure-gradle). 

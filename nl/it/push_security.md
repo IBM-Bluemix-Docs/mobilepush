@@ -14,21 +14,21 @@ copyright:
 
 # Sicurezza in Push Notifications 
 {: #overview-push}
-Ultimo aggiornamento: 27 giugno 2017
+Ultimo aggiornamento: 13 luglio 2017
 {: .last-updated}
 
 
-Le API {{site.data.keyword.mobilepushshort}} sono protette da due tipi di segreti: 
+Le API {{site.data.keyword.mobilepushshort}} sono protette da due tipi di segreti:
 
 - **appSecret**: l'`appSecret` protegge le API normalmente richiamate dalle applicazioni di backend, come l'API per inviare {{site.data.keyword.mobilepushshort}} e l'API per configurare le impostazioni.
 - **clientSecret**:  il `clientSecret` protegge le API normalmente richiamate dalle applicazioni client mobili. C'è solo una API correlata alla registrazione di un dispositivo con un ID utente associato che richiede questo `clientSecret`. Nessuna delle altre API richiamate dai client mobili richiede il `clientSecret`. 
 
-L'`appSecret` e il `clientSecret` vengono assegnati a ogni istanza del servizio al momento del bind di un'applicazione al servizio {{site.data.keyword.mobilepushshort}}. Fai riferimento alla documentazione [API REST ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://mobile.{DomainName}/imfpush/) per informazioni su come i segreti vengono trasmessi e a quale API.
+L'`appSecret` e il `clientSecret` vengono assegnati a ogni istanza del servizio al momento del bind di un'applicazione al servizio {{site.data.keyword.mobilepushshort}}. Fai riferimento alla documentazione [API REST ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://imfpush.{DomainName}/imfpush/) per informazioni su come i segreti vengono trasmessi e a quale API.
 
 ## appSecret 
 {: #push-api-rest-secret}
 
-Quando un'applicazione esegue il bind a {{site.data.keyword.mobilepushshort}}, il servizio genera una appSecret (una chiave univoca) e la passa nell'intestazione di risposta. Se stai utilizzando IBM {{site.data.keyword.mobilepushshort}} per la API Rest IBM Cloud, utilizza la guida di riferimento alle API REST per ottenere informazioni su quali API devi proteggere. Per informazioni, vedi [API REST Push ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://mobile.{DomainName}/imfpush/){: new_window}.
+Quando un'applicazione esegue il bind a {{site.data.keyword.mobilepushshort}}, il servizio genera una appSecret (una chiave univoca) e la passa nell'intestazione di risposta. Se stai utilizzando IBM {{site.data.keyword.mobilepushshort}} per la API Rest IBM Cloud, utilizza la guida di riferimento alle API REST per ottenere informazioni su quali API devi proteggere. Per informazioni, vedi [API REST Push ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://imfpush.{DomainName}/imfpush/){: new_window}.
 
 L'intestazione di richiesta deve contenere l'appSecret. In caso contrario, il server restituisce un codice di errore
                 401 Non autorizzato. Quando {{site.data.keyword.mobilepushshort}} viene aggiunto a un'applicazione, viene creato uno specifico AppID. Come parte della risposta, ottieni un'intestazione denominata appSecret che viene utilizzata per la creazione di tag o l'invio di messaggi. L'operazione viene eseguita tramite i servizi nel catalogo o
@@ -36,7 +36,7 @@ L'intestazione di richiesta deve contenere l'appSecret. In caso contrario, il se
 
 Per ottenere il valore appSecret:
 
-1. Fai clic sul * nome-applicazione* associato al servizio push.
+1. Fai clic sul *nome-applicazione* associato al servizio push.
 2. Fai clic sul link **Visualizza credenziali** per visualizzare
                         l'appSecret (AppID).
 

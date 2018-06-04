@@ -164,7 +164,7 @@ Dabei gilt Folgendes: `<bluemixRegionSuffix>` gibt den Standort an, an dem die A
  //Erfolgreiche Geräteregistrierung hier verarbeiten
  }
  @Override
-    public void onFailure(MFPPushException ex) {
+	    public void onFailure(MFPPushException ex) {
  //Nicht erfolgreiche Geräteregistrierung hier verarbeiten
  }
  });

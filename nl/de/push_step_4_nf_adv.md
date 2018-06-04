@@ -24,8 +24,7 @@ Konfigurieren Sie ein iOS Badge, eine Audiodatei und zusätzliche JSON-Nutzdaten
 1. Navigieren Sie in der {{site.data.keyword.mobilepushshort}}-Konsole zur Registerkarte **Benachrichtigungen**.
 2. Konfigurieren Sie im Abschnitt **Optionale Felder** die folgenden Komponenten für Push-Benachrichtigungen. 
 	- **Sound File** (Audiodatei) - Geben Sie eine Zeichenfolge ein, die auf die Audiodatei in Ihrer mobilen App verweist. Geben Sie den Zeichenfolgenamen der zu verwendenden Audiodatei in den Nutzdaten an.
-	- **iOS Badge**: Für iOS-Geräte die Nummer, die als Badge für das App-Symbol angezeigt werden soll. Wenn diese Eigenschaft fehlt, wird das Badge nicht geändert. Um das Badge zu entfernen,
-legen Sie für diese Eigenschaft den Wert 0 fest.
+	- **iOS Badge**: Für iOS-Geräte die Nummer, die als Badge für das App-Symbol angezeigt werden soll. Wenn diese Eigenschaft fehlt, wird das Badge nicht geändert. Um das Badge zu entfernen, legen Sie für diese Eigenschaft den Wert 0 fest.
 3. Wählen Sie eine der folgenden Optionen aus:	
 	- Unter Android
 
@@ -37,7 +36,8 @@ legen Sie für diese Eigenschaft den Wert 0 fest.
      "sound":"tt.wav",
 	  }
 		}  
-	```	{: codeblock}	
+	```	
+	{: codeblock}	
 	
 	- Unter iOS
 

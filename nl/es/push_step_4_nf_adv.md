@@ -34,9 +34,10 @@ Configure un identificador y un sonido de iOS, y carga útil adicional de JSON.
 	"settings": {
      "gcm" : {
      "sound":"tt.wav",
-	  }
+		}
 		}  
-	```	{: codeblock}	
+	```	
+	{: codeblock}	
 	
 	- En iOS
 

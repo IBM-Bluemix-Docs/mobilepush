@@ -12,7 +12,7 @@ copyright:
 
 # Rich Media-Benachrichtigungen
 {: #interactive-notifications}
-Letzte Aktualisierung: 22. Mai 2017
+Letzte Aktualisierung: 13. Juli 2017
 {: .last-updated}
 
 
@@ -25,5 +25,6 @@ Führen Sie die folgenden Schritte aus, um Ihre Anwendungen unter iOS 10 für de
 ```
 BMSPushRichPushNotificationOptions.didReceive(request, withContentHandler: contentHandler)
 ```
-	
+	{: codeblock}	
+
 Geben Sie zum Senden einer Rich Media-Push-Benachrichtigung über die Push-Konsole unbedingt Daten in die Felder für Nachricht, Titel, Untertitel und attachmentURL ein.

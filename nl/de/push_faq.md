@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2017
-lastupdated: "2017-06-27"
+lastupdated: "2017-09-28"
 
 ---
 {:new_window: target="_blank"}
@@ -28,7 +28,7 @@ lastupdated: "2017-06-27"
 
 2. Warum wird die Nachricht angezeigt, dass Benachrichtigungen für WEB_Chrome nicht funktionieren, wenn das Web-Push-SDK initialisiert wird?
 
-	Wenn Ihre FCM/GCM-Berechtigungsnachweise für das Web-Push-SDK geändert werden, kann die Nachrichtenübermittlung für den Chrome-Browser fehlschlagen. Stellen Sie sicher, dass Sie 'bmsPush.unRegisterDevice' aufrufen, um ein Fehlschlagen zu vermeiden.
+	Wenn Ihre FCM-Berechtigungsnachweise für das Web-Push-SDK geändert werden, kann die Nachrichtenübermittlung für den Chrome-Browser fehlschlagen. Stellen Sie sicher, dass Sie 'bmsPush.unRegisterDevice' aufrufen, um ein Fehlschlagen zu vermeiden.
 
 3. Bei der Initialisierung des Web-Push-SDK wird die Nachricht angezeigt, dass in diesem Browser keine Servicebearbeiter unterstützt werden. Was könnte das Problem sein? 
 
@@ -52,7 +52,7 @@ lastupdated: "2017-06-27"
 
 7. Welche Grenzwerte gelten für Push Notifications in Bezug auf die Nutzdatengröße?
 
-	Die Größe der {{site.data.keyword.mobilepushshort}}-Nachrichtennutzdaten hängt von den Einschränkungen ab, die durch die Gateways (FCM/GCM, APNs) und Clientplattformen festgelegt sind. 
+	Die Größe der {{site.data.keyword.mobilepushshort}}-Nachrichtennutzdaten hängt von den Einschränkungen ab, die durch die Gateways (FCM, APNs) und Clientplattformen festgelegt sind. 
 
 	Ab iOS 8 beträgt die zulässige maximale Größe 4 Kilobyte. Beachten Sie, dass APNs keine Benachrichtigungen sendet, die dieses Limit überschreiten. Bei Android, Firefox-Browser, Chrome-Browser und Chrome Apps & Erweiterungen gibt es eine Einschränkung von 4 Kilobyte als maximal zulässige Nachrichtennutzdatengröße.	
 
@@ -89,7 +89,7 @@ lastupdated: "2017-06-27"
 	- OPEN: Die Anzahl der Geräte, auf denen Benachrichtigungen geöffnet wurden.
 	- INVALID: Die Anzahl der Geräte, auf denen das Token ungültig ist.
 
-	Weitere Informationen finden Sie im Bericht zu GET-Nachrichten in [IBM Push Notifications: REST-API](https://mobile.ng.bluemix.net/imfpush/).	
+	Weitere Informationen finden Sie im Bericht zu GET-Nachrichten in [IBM Push Notifications: REST-API](https://imfpush.{DomainName}/imfpush/).	
 
 14. Überwacht Push Notifications die Zustellung von Push-Benachrichtigungen bis zum Gerät des Endbenutzers? Gilt dies für Android und für iOS?
 
@@ -101,7 +101,7 @@ lastupdated: "2017-06-27"
 
 16. Ich sende Benachrichtigungen nach Tags, habe aber eine lange Liste mit Tags, und das manuelle Hinzufügen dieser Tags könnte schwierig sein. 
 	
-	Sie können REST-APIs verwenden, um das Hinzufügen von Tag zu automatisieren. Siehe [POST-Massennachrichten](https://mobile.ng.bluemix.net/imfpush/).
+	Sie können REST-APIs verwenden, um das Hinzufügen von Tag zu automatisieren. Siehe [POST-Massennachrichten](https://mobile.{DomainName}/imfpush/).
 
 17. Wie kann die Zustellung von Push-Benachrichtigungen nach Informationen gefiltert werden, die im Mobilgerät des Benutzers gespeichert sind?
 

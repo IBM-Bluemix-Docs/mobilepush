@@ -12,12 +12,12 @@ copyright:
 
 # Tagbasierte Benachrichtigungen
 {: #tag_based_notifications}
-Letzte Aktualisierung: 30. Juni 2017
+Letzte Aktualisierung: 13. Juli 2017
 {: .last-updated}
 
 Tagbasierte Benachrichtigungen sind Benachrichtigungen, die alle diejenigen Geräte zum Ziel haben, die einen bestimmten Tag subskribiert haben. Tagbasierte Benachrichtigungen ermöglichen die Segmentierung von Benachrichtigungen auf der Basis von Subjektbereichen oder Themen. Benachrichtigungsempfänger können wählen, dass sie Benachrichtigungen nur empfangen, wenn deren Inhalt ein Thema hat, das von Interesse ist. Daher bieten tagbasierte Benachrichtigungen die Möglichkeit, Empfänger zu segmentieren. Diese Funktion ermöglicht es, dass Tags definiert werden und anschließend Nachrichten geordnet nach Tags gesendet und empfangen werden. Eine Nachricht wird zielgruppenspezifisch nur an die Instanzen einer Clientanwendung (in Mobilgeräten, Browsern oder als App oder Erweiterungen) gesendet, die den Tag subskribiert haben. Sie müssen zunächst Tags für die Anwendung erstellen, die Tagsubskriptionen einrichten und anschließend die tagbasierten Benachrichtigungen starten. Zum Senden einer tagbasierten Benachrichtigung mithilfe der REST-API müssen Sie sicherstellen, dass während der Übergabe an die Ressource der Nachricht die Tagnamen ('tagNames') angegeben werden.
 
-Sie können Tags definieren und anschließend mithilfe der Tags Nachrichten senden und empfangen. Sie müssen zuerst die Tags für die Anwendung erstellen, die Subskriptionen erstellen und anschließend die tagbasierten Benachrichtigungen starten. Zum Senden einer tagbasierten Benachrichtigung mithilfe der [REST-API](https://mobile.{DomainName}/imfpush/){: new_window} müssen Sie sicherstellen, dass bei der Übergabe an die Nachrichtenressource die Tagnamen ('tagNames') angegeben werden.
+Sie können Tags definieren und anschließend mithilfe der Tags Nachrichten senden und empfangen. Sie müssen zuerst die Tags für die Anwendung erstellen, die Subskriptionen erstellen und anschließend die tagbasierten Benachrichtigungen starten. Zum Senden einer tagbasierten Benachrichtigung mithilfe der [REST-API](https://imfpush.{DomainName}/imfpush/){: new_window} müssen Sie sicherstellen, dass bei der Übergabe an die Nachrichtenressource die Tagnamen ('tagNames') angegeben werden.
 
 
 ## Tags verwalten
@@ -29,9 +29,10 @@ Verwenden Sie die {{site.data.keyword.mobilepushshort}}-Konsole, um Tags für Ih
 ### Tags erstellen
 {: #create_tags}
 
-Tagbasierte Benachrichtigungen sind Benachrichtigungen, die all diejenigen Geräte als Ziel haben, die einen bestimmten Tag subskribiert haben. Jedes Gerät kann beliebig viele Tags subskribieren. 
+Tagbasierte Benachrichtigungen sind Benachrichtigungen, die all diejenigen Geräte als Ziel haben, die einen
+bestimmten Tag subskribiert haben. Jedes Gerät kann beliebig viele Tags subskribieren. 
 
-1. Wählen Sie in der {{site.data.keyword.mobilepushshort}}-Konsole die Registerkarte **Tags** aus.
+1. Wählen Sie in der {{site.data.keyword.mobilepushshort}}-Konsole die Registerkarte **Tags verwalten** aus.
 1. Klicken Sie auf die Schaltfläche **Tag erstellen**.   
    1. Geben Sie in das Feld **Name** den Namen für den Tag ein. Beispiel: "Coupons".
    1. Geben Sie in das Feld **Beschreibung** eine Beschreibung für den Tag ein.
@@ -88,7 +89,8 @@ Verwenden Sie die folgende API, um Ihren Geräten das Abrufen von Tags, das Subs
 
 Tagbasierte Benachrichtigungen sind Benachrichtigungen, die alle diejenigen Geräte zum Ziel haben, die einen bestimmten Tag subskribiert haben. Jedes Gerät kann beliebig viele Tags subskribieren. Dieses Thema beschreibt, wie tagbasierte Benachrichtigungen gesendet werden. Subskriptionen werden von der IBM Cloud-Instanz des {{site.data.keyword.mobilepushshort}}-Service verwaltet. Wenn ein Tag gelöscht wird, werden alle diesem Tag zugeordneten Informationen (einschließlich Subskribenten und Geräte) gelöscht. Für diesen Tag ist keine automatische Aufhebung der Subskription erforderlich, da er nicht mehr vorhanden ist und daher clientseitig keine weiteren Aktionen nötig sind.
 
-Erstellen Sie Tags in der Anzeige **Tag**. Informationen zum Erstellen von Tags finden Sie in [Tags erstellen](t_manage_tags.html).
+Erstellen Sie Tags in der Anzeige **Tag**. Informationen zum Erstellen von Tags finden Sie
+in [Tags erstellen](t_manage_tags.html).
 
 1. Klicken Sie in der **Push Notifications**-Konsole auf **Benachrichtigungen senden**.
 1. Wählen Sie in der Dropdown-Liste **Senden an** die Option **Gerät nach Tag** aus.

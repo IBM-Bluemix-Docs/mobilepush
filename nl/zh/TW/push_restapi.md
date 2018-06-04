@@ -15,7 +15,7 @@ copyright:
 前次更新：2017 年 5 月 22 日
 {: .last-updated}
 
-您可以對 {{site.data.keyword.mobilepushshort}} 使用 REST（具象狀態傳輸）API（應用程式介面）。您也可以使用 SDK（軟體開發套件）及 [Push API ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://mobile.{DomainName}/imfpush/){: new_window}，進一步開發用戶端應用程式。
+您可以對 {{site.data.keyword.mobilepushshort}} 使用 REST（具象狀態傳輸）API（應用程式介面）。您也可以使用 SDK（軟體開發套件）及 [Push API ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://imfpush.{DomainName}/imfpush/){: new_window}，進一步開發用戶端應用程式。
 
 運用 Push REST API，後端伺服器應用程式及用戶端可以存取 {{site.data.keyword.mobilepushshort}} 功能。
 
@@ -28,7 +28,7 @@ copyright:
 
 若要取得 REST API 的基本 URL，請完成下列步驟：
 
-1. 選擇 MobileFirst Services Starter，以在 IBM Cloud® 型錄的「樣板」區段中建立後端應用程式。這會將 {{site.data.keyword.mobilepushshort}} 服務連結至應用程式。您也可以建立 Push 的服務實例，並將它保留為未連結。 
+1. 選擇 MobileFirst Services Starter，以在 IBM Cloud® 型錄的「樣板」區段中建立後端應用程式。這會將 {{site.data.keyword.mobilepushshort}} Service 連結至應用程式。您也可以建立 Push 的服務實例，並將它保留為無界限。 
 1. 在 IBM Cloud 型錄的主頁面中，移至**應用程式**區域，然後選取您的應用程式。
 3. 按一下**行動選項**。路徑及應用程式 GUID 值會顯示在應用程式的詳細資料頁面開頭。「顯示認證」畫面會顯示 AppSecret 的相關資訊。您可以從「行動選項」取得應用程式密碼，也可以取得部分 API 的用戶端密碼。
 
@@ -44,7 +44,7 @@ copyright:
 ## Accept-Language（接受語言）標頭
 {: #push-api-rest-accept}
 
-"Accept-Language" 標頭指定要用於 [Push REST API ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://mobile.{DomainName}/imfpush/){: new_window} 所輸出之錯誤訊息的語言。以下是錯誤訊息支援的語言：簡體中文、繁體中文、美式英文、德文、法文、義大利文、日文、韓文、葡萄牙文及西班牙文。
+"Accept-Language" 標頭指定要用於 [Push REST API ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://imfpush.{DomainName}/imfpush/){: new_window} 所輸出之錯誤訊息的語言。以下是錯誤訊息支援的語言：簡體中文、繁體中文、美式英文、德文、法文、義大利文、日文、韓文、葡萄牙文及西班牙文。
 
 
 ## Push REST API 過濾器
@@ -87,7 +87,7 @@ copyright:
 - 如果使用 ==，則值必須是完全相符的字串。
 
 
-## Push Notifications 服務回應碼
+## Push Notifications Service 程式碼
 {: #push-api-response-codes}
 
 狀態：405 不接受方法 - 預期適當的方法。

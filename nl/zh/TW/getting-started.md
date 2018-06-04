@@ -13,10 +13,10 @@ lastupdated: "2017-05-31"
 {:pre: .pre}
 {:tip: .tip}
 
-# 開始使用指導教學
+# 入門指導教學
 {: #getting-started-with-push}
 
-在此 {{site.data.keyword.mobilepushfull}} 開始使用指導教學中，我們會完成讓 Android 應用程式能接收推送通知以及傳送基本推送通知給裝置的程序。
+在此 {{site.data.keyword.mobilepushfull}} 入門指導教學中，我們會完成讓 Android 應用程式能接收推送通知以及傳送基本推送通知給裝置的程序。
 {:shortdesc}
 
 <div id="prerequisites"></div>
@@ -142,6 +142,8 @@ push.initialize(getApplicationContext(), "appGUID", "clientSecret");
 ```
 {: codeblock}
 ... 其中 `<bluemixRegionSuffix>` 是管理應用程式的位置。您可以使用下列任何值：
+
+
 
   * BMSClient.REGION_US_SOUTH
   * BMSClient.REGION_UK

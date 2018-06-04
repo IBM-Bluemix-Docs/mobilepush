@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2017
-lastupdated: "2017-06-27"
+lastupdated: "2017-09-28"
 
 ---
 {:new_window: target="_blank"}
@@ -27,11 +27,11 @@ APNs para Apple o FCM para Google. El proveedor de notificación del servicio pu
 	Asegúrese de obtener una clave de API de servidor válida y un ID de remitente para continuar. Consulte [Obtener las credenciales del proveedor de notificaciones](push_step_1.html).
 
 
-2. ¿Por qué obtengo el mensaje "La notificación no funciona para WEB_Chrome."al intentar inicializar SDK web de push?
+2. ¿Por qué obtengo el mensaje "La notificación no funciona para WEB_Chrome." al intentar inicializar el SDK de push web?
 
-	Es posible que haya cambiado las credenciales de FCM/GCM del SDK web de push y no pueda realizar la entrega del mensaje en el navegador Chrome. Asegúrese de invocar "bmsPush.unRegisterDevice" para evitar anomalías.
+	Es posible que haya cambiado las credenciales de FCM del SDK de push web y no pueda realizar la entrega del mensaje en el navegador Chrome. Asegúrese de invocar "bmsPush.unRegisterDevice" para evitar anomalías.
 
-3. Obtengo el mensaje "No se admiten trabajadores de servicio en este navegador" al intentar inicializar el SDK web de push. ¿Cuál puede ser el problema? 
+3. Obtengo el mensaje "No se admiten trabajadores de servicio en este navegador" al intentar inicializar el SDK de push web. ¿Cuál puede ser el problema? 
 
 	Siga los pasos mencionados en [Paso 3: Configurar el SDK del cliente de servicio Push](push_step_3.html).	Asegúrese también de:
  
@@ -49,11 +49,11 @@ APNs para Apple o FCM para Google. El proveedor de notificación del servicio pu
 
 6. ¿El ID messageID es único para una aplicación? ¿Cuál es su tamaño?
 
-	El ID messageID es único para la aplicación y está limitado a ocho caracteres, que pueden ser alfanuméricos.
+	El ID messageID es único para la aplicación y está limitado a ocho caracteres. Puede ser alfanumérico.
 
 7. ¿Cuáles son los límites para las notificaciones Push en términos de tamaño de carga útil?
 
-	El tamaño de carga útil de los mensajes de {{site.data.keyword.mobilepushshort}} depende de las restricciones diseñadas por las pasarelas (FCM/GCM, APNs) y las plataformas cliente. 
+	El tamaño de carga útil de los mensajes de {{site.data.keyword.mobilepushshort}} depende de las restricciones diseñadas por las pasarelas (FCM, APNs) y las plataformas cliente. 
 
 	Para iOS 8 y versiones posteriores, el tamaño máximo permitido es de 4 kilobytes. Tenga en cuenta que los APNs no envían notificaciones que superen este límite. Para Android, el navegador Firefox, el navegador Chrome y apps y extensiones de Chrome existe una limitación de 4 kilobytes como tamaño máximo de carga útil del mensaje permitido.	
 
@@ -90,7 +90,7 @@ APNs para Apple o FCM para Google. El proveedor de notificación del servicio pu
 	- Abierto: El número de dispositivos en el que se ha abierto la notificación.
 	- No válido: El número de dispositivos en los que la señal no es válida.
 
-	Para obtener más información, consulte el informe de mensajes GET en la [API REST de IBM Push Notifications](https://mobile.ng.bluemix.net/imfpush/).	
+	Para obtener más información, consulte el informe de mensajes GET en la [API REST de IBM Push Notifications](https://imfpush.{DomainName}/imfpush/).	
 
 14. ¿Las notificaciones push supervisan la entrega de notificaciones hasta el dispositivo del usuario final? ¿Están disponibles tanta para Android como para iOS?
 
@@ -102,7 +102,7 @@ APNs para Apple o FCM para Google. El proveedor de notificación del servicio pu
 
 16. Envío notificaciones por etiquetas, pero tengo una lista larga de etiquetas que pueden ser difíciles de añadir manualmente. 
 	
-	Puede utilizar las API REST para automatizar las adiciones de etiquetas. Consulte [mensajes POST masivos](https://mobile.ng.bluemix.net/imfpush/).
+	Puede utilizar las API REST para automatizar las adiciones de etiquetas. Consulte [mensajes POST masivos](https://imfpush.{DomainName}/imfpush/).
 
 17. ¿Cómo se pueden filtrar la entrega de notificaciones Push por información almacenada en el dispositivo móvil del usuario?
 

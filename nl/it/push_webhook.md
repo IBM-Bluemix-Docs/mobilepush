@@ -1,7 +1,7 @@
 ---
 
 copyright:
-years: 2015, 2017
+ years: 2015, 2017
 
 ---
 
@@ -31,7 +31,7 @@ I webhook sono dei callback definiti dall'utente che vengono attivati da un even
 **Nota**: gli invii delle notifiche vengono effettuati in batch. L'invio di un messaggio può avere più eventi webhook, che possono includere sia errori che esiti positivi. 
 Gli eventi webhook hanno lo stesso messageID del messaggio inviato. 
 
-Per ulteriori informazioni sui webhook, vedi [IBM Push Notifications REST API ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://console-regional.stage1.ng.bluemix.net/apidocs/800){: new_window}.
+Per ulteriori informazioni sui webhook, vedi [IBM Push Notifications REST API ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://console.bluemix.net/apidocs/800-push-notifications){: new_window}.
 
 ## Ricezione di avvisi sugli eventi webhook
 {: #webhook_alert_event}

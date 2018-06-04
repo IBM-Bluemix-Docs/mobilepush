@@ -1,7 +1,7 @@
 ---
 
 copyright:
-years: 2015, 2017
+ years: 2015, 2017
 
 ---
 
@@ -12,7 +12,7 @@ years: 2015, 2017
 
 # Risoluzione dei problemi del servizio
 {: #errors}
-Ultimo aggiornamento: 19 giugno 2017
+Ultimo aggiornamento: 13 luglio 2017
 {: .last-updated}
 
 Questo argomento ti guida nell'identificazione e nella risoluzione dei possibili scenari di errore che potrebbero verificarsi durante l'utilizzo del servizio Push Notifications.
@@ -42,6 +42,14 @@ Questo argomento ti guida nell'identificazione e nella risoluzione dei possibili
 **Spiegazione**: l'SDK che era stato incluso come parte di `BMSPushSDK.js` mediante il worker del servizio non è disponibile. 
 
 **Risposta utente**: si consiglia di passare a un browser che supporti il worker del servizio. Le versioni supportate dei browser sono Firefox versione 49 o successive e Chrome versione 53 (64 bit) o successive.
+
+
+### Server occupato: il server non è attualmente in grado di gestire la richiesta. Riprovare successivamente.
+{: #troubleshooting_notification_server_busy}
+
+**Spiegazione**: gli utenti possono riscontrare l'errore mentre accedono ai report nella pagina di monitoraggio. Questo è un comportamento previsto quando il numero di messaggi inviati è molto grande negli ultimi 90 giorni.
+ 
+**Risposta utente**: è possibile accedere al messageId basato sui report tramite le API REST. Fai riferimento a "getMessageReport" in [REST API docs]( https://console.bluemix.net/apidocs/800-push-notifications?&language=shell_curl#getmessagereport) .
 
 
 ### SecurityError: l'operazione non è sicura
@@ -157,7 +165,7 @@ Per ottenere ulteriori informazioni su un errore, cerca il relativo codice di er
 **Spiegazione**: il corpo JSON della richiesta contiene dei parametri non riconosciuti dal server {{site.data.keyword.mobilepushshort}}.
 
 
-**Risposta utente**: verifica che il corpo JSON nella richiesta rispetti il formato della richiesta previsto dal server {{site.data.keyword.mobilepushshort}}. Per ulteriori informazioni, vedi [API REST![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://mobile.{DomainName}/imfpush/){: new_window}.
+**Risposta utente**: verifica che il corpo JSON nella richiesta rispetti il formato della richiesta previsto dal server {{site.data.keyword.mobilepushshort}}. Per ulteriori informazioni, vedi [API REST![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://imfpush.{DomainName}/imfpush/){: new_window}.
 
 
 
@@ -167,7 +175,7 @@ Per ottenere ulteriori informazioni su un errore, cerca il relativo codice di er
 **Spiegazione**: l'URL della richiesta ha una stringa di query con parametri non riconosciuti. Ad esempio, se la richiesta di eliminazione della sottoscrizione ha parametri diversi da deviceId e tagName, si potrebbe verificare questo errore.
 
 
-**Risposta utente**: verifica che il corpo JSON nella richiesta rispetti il formato della richiesta previsto dal server {{site.data.keyword.mobilepushshort}}. Per ulteriori informazioni, vedi [API REST![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://mobile.{DomainName}/imfpush/){: new_window}.
+**Risposta utente**: verifica che il corpo JSON nella richiesta rispetti il formato della richiesta previsto dal server {{site.data.keyword.mobilepushshort}}. Per ulteriori informazioni, vedi [API REST![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://imfpush.{DomainName}/imfpush/){: new_window}.
 
 
 
@@ -177,7 +185,7 @@ Per ottenere ulteriori informazioni su un errore, cerca il relativo codice di er
 **Spiegazione **: l'URL della richiesta ha una stringa di query in cui mancano dei parametri richiesti. Ad esempio, i parametri deviceId e tagName potrebbero non essere presenti nella richiesta di eliminazione della sottoscrizione.
 
 
-**Risposta utente**: verifica che il corpo JSON nella richiesta rispetti il formato della richiesta previsto dal server {{site.data.keyword.mobilepushshort}}. Per ulteriori informazioni, vedi [API REST![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://mobile.{DomainName}/imfpush/){: new_window}.
+**Risposta utente**: verifica che il corpo JSON nella richiesta rispetti il formato della richiesta previsto dal server {{site.data.keyword.mobilepushshort}}. Per ulteriori informazioni, vedi [API REST![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://imfpush.{DomainName}/imfpush/){: new_window}.
 
 
 

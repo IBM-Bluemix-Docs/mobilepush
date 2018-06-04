@@ -1,7 +1,7 @@
 ---
 
 copyright:
-years: 2015, 2017
+ years: 2015, 2017
 
 ---
 
@@ -12,7 +12,7 @@ years: 2015, 2017
 
 # Notifiche basate sulle tag
 {: #tag_based_notifications}
-Ultimo aggiornamento: 30 giugno 2017
+Ultimo aggiornamento: 13 luglio 2017
 {: .last-updated}
 
 Le notifiche basate sulle tag sono messaggi destinati a tutti i dispositivi sottoscritti a una particolare tag. Le notifiche basate sulle tag
@@ -24,7 +24,7 @@ Le notifiche basate sulle tag sono messaggi destinati a tutti i dispositivi sott
                         base alle tag. Un messaggio viene indirizzato solo alle istanze dell'applicazione client (mobili, browser o come un'applicazione o estensioni) sottoscritte a una tag. Devi prima creare le tag per l'applicazione, impostare le sottoscrizioni di tag e iniziare quindi le notifiche basate sulle tag. Per inviare una notifica basata sulle tag che utilizza la API REST, assicurati che i "tagName" siano forniti all'inserimento nella risorsa messaggi.
 
 Puoi definire le tag e quindi utilizzarle per
-                        inviare e ricevere messaggi. Devi prima creare le tag per l'applicazione, creare le sottoscrizioni di tag e iniziare quindi le notifiche basate sulle tag. Per inviare una notifica basata sulle tag utilizzando la [API REST](https://mobile.{DomainName}/imfpush/){: new_window}, assicurati che i "tagName" siano forniti durante l'inserimento nella risorsa messaggi.
+                        inviare e ricevere messaggi. Devi prima creare le tag per l'applicazione, creare le sottoscrizioni di tag e iniziare quindi le notifiche basate sulle tag. Per inviare una notifica basata sulle tag utilizzando la [API REST](https://imfpush.{DomainName}/imfpush/){: new_window}, assicurati che i "tagName" siano forniti durante l'inserimento nella risorsa messaggi.
 
 
 ## Gestione delle tag
@@ -38,19 +38,19 @@ Utilizza la console {{site.data.keyword.mobilepushshort}} per creare ed eliminar
 
 Le notifiche basate sulle tag sono messaggi destinati a tutti i dispositivi sottoscritti a una particolare tag. Ciascun dispositivo può sottoscrivere qualsiasi numero di tag. 
 
-1. Nella console {{site.data.keyword.mobilepushshort}} **Tags**.
-1. Fai clic sul pulsante + **Crea tag**.   
-   1. Nel campo **Nome**, immetti il nome della tag. Ad esempio, "coupons".
-   1. Nel campo **Descrizione**, immetti una descrizione della tag.
+1. Nella console {{site.data.keyword.mobilepushshort}}, seleziona la scheda **Manage Tags**.
+1. Fai clic sul pulsante + **Create Tag**.   
+   1. Nel campo **Name**, immetti il nome della tag. Ad esempio, "coupons".
+   1. Nel campo **Description**, immetti una descrizione della tag.
    1. Fai clic su **Save**.
 
-1. Nell'area **Frammenti di codice**, seleziona la piattaforma per la tua applicazione mobile.
+1. Nell'area **Code Snippets**, seleziona la piattaforma per la tua applicazione mobile.
 1. Modifica i frammenti di codice per gestire gli errori e copiali quindi per ogni tag nella tua applicazione mobile.
 
 ### Eliminazione di tag
 {: #delete_tags}
 
-1. Dalla scheda **Tag**, seleziona la tag che vuoi eliminare e fai clic sull'icona **Elimina**.
+1. Dalla scheda **Tag**, seleziona la tag che vuoi eliminare e fai clic sull'icona **Delete**.
 1. Fai clic su **OK**.
 
 Quando viene eliminata una tag, vengono eliminate anche le informazioni associate con tale tag, inclusi i relativi sottoscrittori e dispositivi. L'annullamento della sottoscrizione automatico non è obbligatorio, poiché la tag non esiste più. Non è richiesta alcuna ulteriore azione dal lato client.
@@ -59,7 +59,7 @@ Quando viene eliminata una tag, vengono eliminate anche le informazioni associat
 {: #edit_tags}
 
 1. Dalla scheda **Tag**, seleziona la tag che vuoi modificare.
-1. Fai clic sull'icona **Modifica**.
+1. Fai clic sull'icona **Edit**.
 1. Modifica la descrizione della tag e fai quindi clic sul pulsante **Salva**.
 
 ## Ottieni le tag

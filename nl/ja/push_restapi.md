@@ -15,7 +15,7 @@ copyright:
 最終更新日: 2017 年 5 月 22 日
 {: .last-updated}
 
-{{site.data.keyword.mobilepushshort}}には REST (Representational State Transfer) API (アプリケーション・プログラム・インターフェース) を使用できます。また、SDK と [Push API ![アイコン・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://mobile.{DomainName}/imfpush/){: new_window} を使用して、クライアント・アプリケーションをさらに開発することもできます。
+{{site.data.keyword.mobilepushshort}}には REST (Representational State Transfer) API (アプリケーション・プログラム・インターフェース) を使用できます。 また、SDK と [Push API ![アイコン・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://imfpush.{DomainName}/imfpush/){: new_window} を使用して、クライアント・アプリケーションをさらに開発することもできます。
 
 バックエンド・サーバー・アプリケーションとクライアントは、Push REST API を使用して、{{site.data.keyword.mobilepushshort}}機能にアクセスできます。
 
@@ -28,9 +28,9 @@ copyright:
 
 REST API のベース URL を取得するには、以下の手順を実行します。
 
-1. MobileFirst Services Starter を選択することで、IBM Cloud® カタログの Boilerplates セクションでバックエンド・アプリケーションを作成します。これにより、{{site.data.keyword.mobilepushshort}}サービスがアプリケーションにバインドされます。Push のサービス・インスタンスを作成してアンバインドのままにすることもできます。 
-1. IBM Cloud カタログのメインページで、**「アプリケーション」**エリアに移動し、アプリを選択します。
-3. **「モバイル・オプション」**をクリックします。アプリの詳細ページの最初に、経路およびアプリ GUID の値が表示されます。「資格情報の表示」画面に、AppSecret に関する情報が表示されます。「モバイル・オプション」のアプリケーション秘密鍵や、いくつかの API のクライアント秘密鍵も取得できます。
+1. MobileFirst Services Starter を選択して、IBM Cloud® カタログの Boilerplates セクションでバックエンド・アプリケーションを作成します。これにより、{{site.data.keyword.mobilepushshort}}サービスがアプリケーションにバインドされます。 Push のサービス・インスタンスを作成してアンバインドのままにすることもできます。 
+1. IBM Cloud カタログのメインページで**「アプリケーション」**エリアに移動し、アプリケーションを選択します。
+3. **「モバイル・オプション」**をクリックします。 アプリの詳細ページの最初に、経路およびアプリ GUID の値が表示されます。 「資格情報の表示」画面に、AppSecret に関する情報が表示されます。 「モバイル・オプション」のアプリケーション秘密鍵や、いくつかの API のクライアント秘密鍵も取得できます。
 
 また、以下のようにコマンド・ラインを使用してサービス資格情報を取得することも可能です。
 
@@ -43,13 +43,13 @@ REST API のベース URL を取得するには、以下の手順を実行しま
 ## Accept-Language ヘッダー
 {: #push-api-rest-accept}
 
-「Accept-Language」ヘッダーは、[Push REST API ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://mobile.{DomainName}/imfpush/){: new_window}によって出力されるエラー・メッセージに使用する言語を指定します。エラー・メッセージでサポートされる言語は、中国語 (簡体字)、中国語 (繁体字)、英語 (米国)、ドイツ語、フランス語、イタリア語、日本語、韓国語、ポルトガル語、およびスペイン語です。
+「Accept-Language」ヘッダーは、[Push REST API ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://imfpush.{DomainName}/imfpush/){: new_window}によって出力されるエラー・メッセージに使用する言語を指定します。 エラー・メッセージでサポートされる言語は、中国語 (簡体字)、中国語 (繁体字)、英語 (米国)、ドイツ語、フランス語、イタリア語、日本語、韓国語、ポルトガル語、およびスペイン語です。
 
 
 ## Push REST API のフィルター
 {: #push-api-rest-filters}
 
-フィルターは、{{site.data.keyword.mobilepushshort}}の GET API から返されるデータを制限する検索条件を定義します。フィルタリングする GET 操作の結果に対してフィルターを適用します。フィルターは、結果に含まれる項目の数を制限します。例えば、フィルターを使用して、名前が「test」で始まるタグを検索できます。 
+フィルターは、{{site.data.keyword.mobilepushshort}}の GET API から返されるデータを制限する検索条件を定義します。 フィルタリングする GET 操作の結果に対してフィルターを適用します。 フィルターは、結果に含まれる項目の数を制限します。 例えば、フィルターを使用して、名前が「test」で始まるタグを検索できます。 
 
 フィルターは、以下の構文で生成できます。
 
@@ -65,12 +65,12 @@ REST API のベース URL を取得するには、以下の手順を実行しま
 
 - AND ロジックの場合、照会で複数のフィルターを使用します。
 - OR ロジックの場合、フィルター式内でコンマ (,) を使用します。
-- AND と OR の両方のロジックの場合、単一の照会で AND ロジックと OR ロジックの両方を含めることができます。各フィルターが個別に評価されてから、AND 式で結合されます。
+- AND と OR の両方のロジックの場合、単一の照会で AND ロジックと OR ロジックの両方を含めることができます。 各フィルターが個別に評価されてから、AND 式で結合されます。
 
 デバイス GET API では、以下の組み合わせがサポートされます。
 - name は platform フィールドです。
 - platform 以外の場合、operator は == または =@ にすることができます。
-- platform の場合、operator は == でなければなりません。operator として =@ が使用された場合、値はサブストリングになることがあります。
+- platform の場合、operator は == でなければなりません。 operator として =@ が使用された場合、値はサブストリングになることがあります。
 - == が使用された場合、値は完全一致ストリングでなければなりません。
 
 サブスクリプション GET API では、以下の組み合わせがサポートされます。
@@ -78,7 +78,7 @@ REST API のベース URL を取得するには、以下の手順を実行しま
 - name は、tagName または deviceId のいずれかのフィールドにすることができます。
 - platform 以外の場合、operator は == または =@ にすることができます。
 - platform の場合、operator は == でなければなりません。
-- operator として =@ が使用された場合、値はサブストリングになることがあります。operator として == が使用された場合、値は完全一致ストリングでなければなりません。
+- operator として =@ が使用された場合、値はサブストリングになることがあります。 operator として == が使用された場合、値は完全一致ストリングでなければなりません。
 - タグ GET API では、以下の組み合わせがサポートされます。
 - name は、name または description のいずれかのフィールドにすることができます。
 - operator として =@ が使用された場合、値はサブストリングになることがあります。

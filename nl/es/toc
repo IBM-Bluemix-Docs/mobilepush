@@ -1,4 +1,4 @@
-<!-- Markdown Navigation -->
+	<!-- Markdown Navigation -->
 {: navgroup: .navgroup}
 {: topicgroup: .topicgroup}
 
@@ -6,58 +6,56 @@
 Notificaciones push
 
     {: .navgroup id="learn"}
-    index.md
     c_overview_push.md
-
+    index.md
+    developer-overview.md	
+    
     {: .topicgroup}
     Pasos básicos
-		push_step_prereq.md
+        push_step_prereq.md
         push_step_1.md
         push_step_2.md
         push_step_3.md
         push_step_4.md	
     {: .navgroup-end}
     
-    {: .navgroup id="reference"}
-    {: .topicgroup}
-    Apps de ejemplo
-        [Android](https://github.com/ibm-bluemix-mobile-services/bms-samples-android-hellopush/)
-        [Cordova](https://github.com/ibm-bluemix-mobile-services/bms-samples-cordova-hellopush)
-        [iOS](https://github.com/ibm-bluemix-mobile-services/bms-samples-swift-hellopush)
-	[BluePic](https://github.com/IBM/BluePic)
-        [Catálogo en línea de la tienda](https://github.com/ibm-bluemix-mobile-services/mobiledashboard-storecatalog-backend)
-
-    {: .topicgroup}
-    SDK
-        [SDK de Android](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-android-push)
-        [SDK de Cordova](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-cordova-plugin-push)
-        [SDK de iOS](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-swift-push)	
-		[SDK web](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-javascript-webpush)
-    {: .navgroup-end}
-    
-    {: .topicgroup}
-    Referencia de la API
-        [Referencia de la API para Android](https://www.javadoc.io/doc/com.ibm.mobilefirstplatform.clientsdk.android/push/3.6.1)
-        [Referencia de la API para iOS](http://ibm-bluemix-mobile-services.github.io/API-docs/client-SDK/BMSPush/Swift/index.html)
-        [Referencia de la API REST](https://mobile.ng.bluemix.net/imfpush/)
-    {: .navgroup-end}
-    
     {: .navgroup id="howto"}
     {: .topicgroup}
-    Habilitar notificaciones 
+    Habilitar opciones de notificación
+        push_security.md
         push_step_4_nf_tag.md
         push_step_4_nf_user.md
         push_step_4_nf_interactive.md
         push_step_4_nf_rich.md
         push_step_4_nf_adv.md
+        push_monitoring.md	
+        push_message_status.md
+        push_template_message.md
+        push_webhook.md
+    {: .navgroup-end}
 
     {: .navgroup id="help"}
-    push_restapi.md
-    push_monitoring.md	
-    push_security.md	
-    push_webhook.md
-    push_troubleshooting.md
-    push_faq.md	
+    upgrading.md
+    relatedlinks.md	
+    
+    {: .topicgroup} 
+    Resolución de problemas y preguntas más frecuentes
+        push_troubleshooting.md
+        push_faq.md	
+        support.md
+    {: .navgroup-end}
+	
+    {: .navgroup id="reference"}
+    release-notes.md
+    app_api.md	
+    sample-apps.md
+    install-sdk.md
+	
+    {: .topicgroup}
+    Guías de aprendizaje
+        [App Swift con Push y Analytics](https://console.bluemix.net/docs/tutorials/ios-mobile-push-analytics.html#ios-mobile-application-with-push-and-analytics)
+        [App Android con Push y Analytics](https://console.bluemix.net/docs/tutorials/android-mobile-push-analytics.html#android-native-mobile-application-with-push-and-analytics)	
+        [App híbrida con Push y Analytics](https://console.bluemix.net/docs/tutorials/hybrid-mobile-push-analytics.html#hybrid-mobile-application-with-push-and-analytics)		
     {: .navgroup-end}
 
     

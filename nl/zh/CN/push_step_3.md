@@ -32,7 +32,7 @@ copyright:
 
     ![将 JSON 文件添加到应用程序的根目录](images/FCM_7.jpg)
 
-2. 在“添加 Firebase 至您的 Android 应用程序”窗口中，单击**继续**然后单击**完成**。 
+2. 在“将 Firebase 添加到您的 Android 应用”窗口中，单击**继续**然后单击**完成**。 
 3. 构建并运行应用程序。成功构建后，将显示 `Gradle build finished` 消息。
 4. 使用 Gradle 包含客户机推送 SDK。
 	1. 配置 [Gradle](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-android-push/tree/Doc#configure-gradle) 文件。 

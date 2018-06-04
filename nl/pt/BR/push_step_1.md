@@ -45,11 +45,11 @@ a seguir:
 
 3. Selecione o ícone **INCLUIR APP** ou **Incluir o Firebase em seu app Android** na guia Geral na área de janela Seus apps.
     
-4. Na janela Incluir Firebase no seu app Android, inclua **com.ibm.mobilefirstplatform.clientsdk.android.push** como o Nome do pacote. O campo de apelido App é opcional. Clique em **INCLUIR APP**. 
+4. Na janela Incluir o Firebase em seu app Android, inclua primeiramente **com.ibm.mobilefirstplatform.clientsdk.android.push** como o Nome do pacote. O campo de apelido App é opcional. Clique em **REGISTER APP**. 
     
 	![Janela Incluindo o Firebase em seu Android](images/FCM_1.jpg)
 
-5. Inclua o nome do pacote do seu aplicativo inserindo o nome do pacote na janela Incluir Firebase no seu app Android. O campo de apelido App é opcional. Clique em **REGISTER APP**. 
+5. Agora, inclua o nome do pacote do seu aplicativo inserindo-o na janela Incluir o Firebase em seu app Android. O campo de apelido App é opcional. Clique em **REGISTER APP**.  Abaixo está um exemplo-
 
 	![Incluindo o nome do pacote de seu aplicativo](images/FCM_settings_4.jpg)
 
@@ -58,12 +58,12 @@ a seguir:
 
 Depois de obter suas credenciais FCM e gerar o arquivo `google-services.json`, a próxima etapa será [Criar uma instância de serviço](push_step_2.html).
 
-**Nota**: FCM é a nova versão do Google Cloud Messaging (GCM). Assegure-se de usar as credenciais do FCM para novos apps. Apps existentes continuarão a funcionar com configurações do GCM.
+**Nota**: o Google descontinuou o GCM e integrou o Cloud Messaging ao Firebase. É necessário migrar seus apps clientes do GCM no Android para o FCM.
 
 ## Para iOS
 {: #push_step_1_ios}
 
-Para dispositivos e aplicativos iOS, o Apple Push Notification Service (APNs) permite que os desenvolvedores de aplicativos enviem notificações remotas da instância do serviço {{site.data.keyword.mobilepushshort}} no IBM Cloud (o provedor) para dispositivos e aplicativos iOS. Mensagens são enviadas para um aplicativo de
+Para dispositivos e aplicativos iOS, o Apple Push Notification Service (APNs) permite que os desenvolvedores de aplicativos enviem notificações remotas da instância de serviço do {{site.data.keyword.mobilepushshort}} no IBM Cloud (o provedor) para dispositivos e aplicativos iOS. Mensagens são enviadas para um aplicativo de
 destino no dispositivo. 
 
 É necessário obter e configurar suas credenciais do APNs. Os certificados do APNs são gerenciados com segurança pelo serviço {{site.data.keyword.mobilepushshort}} e usados para se conectar ao servidor APNs como um provedor.
@@ -107,8 +107,7 @@ seu público e chave privada, é armazenado no Keychain Access.
 seus ambientes de desenvolvimento e distribuição. Os certificados são
 associados a um ID de app para o app que é o destinatário das
 notificações remotas. Para produção, é possível criar até dois
-certificados. O IBM Cloud usa os certificados para estabelecer uma
-conexão SSL com APNs.
+certificados. O IBM Cloud usa os certificados para estabelecer uma conexão SSL com o APNs.
 
 <!-- Create a development and distribution SSL certificate. -->
 

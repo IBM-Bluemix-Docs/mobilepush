@@ -1,7 +1,7 @@
 ---
 
 copyright:
-years: 2015, 2017
+ years: 2015, 2017
 
 ---
 
@@ -12,7 +12,7 @@ years: 2015, 2017
 
 # Resolução de problemas de serviço
 {: #errors}
-Última atualização: 19 de junho de 2017
+Última atualização: 13 de julho de 2017
 {: .last-updated}
 
 Este tópico orienta na identificação e resolução dos prováveis cenários de erro que você pode encontrar ao usar o Push Notifications service.
@@ -48,6 +48,14 @@ solicitaria permissões para ativar Notificações push.
 **Explicação**: o SDK que foi incluído como uma parte de `BMSPushSDK.js` usando o trabalhador de serviço não está disponível. 
 
 **Resposta do usuário**: é recomendável alternar para um navegador que suporte o trabalhador de serviço. As versões suportadas dos navegadores são o Firefox versão 49 ou mais recente e o Chrome versão 53 (64 bits) ou mais recente.
+
+
+### Servidor ocupado: no momento, o servidor não é capaz de manipular a solicitação. Tente novamente mais tarde.
+{: #troubleshooting_notification_server_busy}
+
+**Explicação**: os usuários podem observar o erro ao acessar os relatórios na página Monitoramento. Esse é um comportamento esperado quando o número de mensagens enviadas é muito alto nos últimos 90 dias.
+ 
+**Resposta do usuário**: relatórios baseados em messageId podem ser acessados por meio de APIs de REST. Consulte "getMessageReport" em [API REST docs]( https://console.bluemix.net/apidocs/800-push-notifications?&language=shell_curl#getmessagereport) .
 
 
 ### SecurityError: a operação é insegura
@@ -174,7 +182,7 @@ ausente ou não é válido e, em seguida, forneça as informações necessárias
 
 
 **Resposta do usuário**: verifique se o corpo de JSON na solicitação segue o
-formato da solicitação que é esperado pelo servidor {{site.data.keyword.mobilepushshort}}. Para obter mais informações, veja [APIs de REST ![Ícone de link externo](../../icons/launch-glyph.svg "External link icon")](https://mobile.{DomainName}/imfpush/){: new_window}.
+formato da solicitação que é esperado pelo servidor {{site.data.keyword.mobilepushshort}}. Para obter mais informações, veja [APIs de REST ![Ícone de link externo](../../icons/launch-glyph.svg "External link icon")](https://imfpush.{DomainName}/imfpush/){: new_window}.
 
 
 
@@ -186,7 +194,7 @@ não reconhecidos. Por exemplo, se a solicitação para excluir a assinatura tiv
 
 
 **Resposta do usuário**: verifique se o corpo de JSON na solicitação segue o formato
-da solicitação que é esperado pelo servidor {{site.data.keyword.mobilepushshort}}. Para obter mais informações, veja [APIs de REST ![Ícone de link externo](../../icons/launch-glyph.svg "External link icon")](https://mobile.{DomainName}/imfpush/){: new_window}.
+da solicitação que é esperado pelo servidor {{site.data.keyword.mobilepushshort}}. Para obter mais informações, veja [APIs de REST ![Ícone de link externo](../../icons/launch-glyph.svg "External link icon")](https://imfpush.{DomainName}/imfpush/){: new_window}.
 
 
 
@@ -198,7 +206,7 @@ ausentes. Por exemplo, os parâmetros deviceId e tagName podem estar ausentes na
 
 
 **Resposta do usuário**: verifique se o corpo de JSON na solicitação segue o formato
-da solicitação que é esperado pelo servidor {{site.data.keyword.mobilepushshort}}. Para obter mais informações, veja [APIs de REST ![Ícone de link externo](../../icons/launch-glyph.svg "External link icon")](https://mobile.{DomainName}/imfpush/){: new_window}.
+da solicitação que é esperado pelo servidor {{site.data.keyword.mobilepushshort}}. Para obter mais informações, veja [APIs de REST ![Ícone de link externo](../../icons/launch-glyph.svg "External link icon")](https://imfpush.{DomainName}/imfpush/){: new_window}.
 
 
 
@@ -277,9 +285,7 @@ desativado para este aplicativo. O motivo pode ser o faturamento, ou o app pode 
 administrador.
 
 
-**Resposta do usuário**: consulte os tópicos de Resolução de problemas no IBM Cloud Docs
-para verificar o status do serviço, revisar informações de resolução de problemas ou para acessar informações sobre como obter
-ajuda.
+**Resposta do usuário**: veja os tópicos de Resolução de problemas no IBM Cloud Docs para verificar o status do serviço, revisar informações de resolução de problemas ou para obter informações sobre como obter ajuda.
 
 
 

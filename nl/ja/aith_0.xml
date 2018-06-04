@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with AI Text Handler 1.0.0 -->
+<ExtractedAITHs>
+<ExtractedAITH file="/images/overview.ai">
+<text>Push Notifications API
+を使用した登録/サブスクライブ</text>
+<text>APNs</text>
+<text>通知の
+ディスパッチ</text>
+<text>通知ゲートウェイ</text>
+<text>FCM</text>
+<text>Web</text>
+<text>iOS</text>
+<text>Android</text>
+<text></text>
+<text>バックエンド・アプリ</text>
+<text>Push
+Notifications
+サービス</text>
+<text></text>
+<text>IBM Cloud</text>
+<text>通知の構成
+および送信</text>
+<text>通知の
+配信</text>
+<text>モバイル・デバイス、Web ブラウザー、および
+Chrome のアプリおよび拡張機能</text>
+</ExtractedAITH>
+<ExtractedAITH file="/images/push_notification_lifecycle.ai">
+<text>SDK</text>
+<text>ステップ 2
+
+
+APNS/FCM から
+資格情報を
+入手する</text>
+<text>1 - SDK を初期化する
+
+2 - 通知サービスを
+    登録する</text>
+<text></text>
+<text>ステップ 1
+
+
+IBM Cloud サービス・
+インスタンスを
+作成する</text>
+<text>モバイル・デバイス、
+Web ブラウザー、
+Chrome のアプリおよび拡張機能</text>
+<text>ステップ 4
+
+
+プッシュ・サービス・
+クライアント SDK を
+セットアップする</text>
+<text>ステップ 3
+
+
+サービス・
+インスタンス
+を構成する</text>
+<text>Push Notifications コンソール</text>
+<text></text>
+<text>ステップ 5
+
+
+通知を
+送信する</text>
+</ExtractedAITH>
+<ExtractedAITH file="/images/push_workflow.ai">
+<text>サンドボックス / 実動</text>
+<text></text>
+<text>資格情報の
+構成</text>
+<text>サービスのインスタンスを
+作成します</text>
+<text>プッシュ通知
+の送信</text>
+<text>通知を受信
+するように
+モバイル・アプリケーション
+を構成する</text>
+<text>
+
+
+APNS または GCM</text>
+<text>サービスのインスタンスを作成し、
+それを IBM Cloud アプリケーション、IBM Push
+Notifications にバインドする</text>
+<text></text>
+<text>
+基本的なプッシュ通知のセットアップのワークフロー</text>
+<text></text>
+</ExtractedAITH>
+</ExtractedAITHs>

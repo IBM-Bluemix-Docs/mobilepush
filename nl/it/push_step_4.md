@@ -1,7 +1,7 @@
 ---
 
 copyright:
-years: 2015, 2017
+ years: 2015, 2017
 
 ---
 
@@ -45,18 +45,19 @@ Puoi anche personalizzare le impostazioni di {{site.data.keyword.mobilepushshort
 
 Sono supportate le seguenti opzioni di personalizzazione facoltative:
 
-- Chiave di compressione:  le chiavi di compressione solo allegate alle notifiche. Se più notifiche arrivano in sequenza con la stessa chiave di compressione quando il dispositivo è offline, esse vengono compresse. Quando un dispositivo va online, riceve le notifiche dal server FCM/GCM e visualizza solo l'ultima notifica rilevando la stessa chiave di compressione. Se la chiave di compressione non viene inviata, sia il nuovo che il vecchio messaggio vengono archiviati per una consegna successiva.
+- Chiave di compressione:  le chiavi di compressione solo allegate alle notifiche. Se più notifiche arrivano in sequenza con la stessa chiave di compressione quando il dispositivo è offline, esse vengono compresse. Quando un dispositivo va online, riceve le notifiche dal server FCM e visualizza solo l'ultima notifica rilevando la stessa chiave di compressione. Se la chiave di compressione non viene inviata, sia il nuovo che il vecchio messaggio vengono archiviati per una consegna successiva.
 - Audio: indica un file audio da riprodurre alla ricezione di una notifica. Supporta il valore predefinito o il nome di una risorsa audio integrata nell'applicazione.
 - Icona: specifica il nome dell'icona da visualizzare per la notifica. Assicurati di aver fornito l'icona nella cartella `res/drawable`, insieme all'applicazione client.
 - Priorità: specifica le opzioni per l'assegnazione della priorità di consegna dei messaggi. 
 	- Una priorità `high` o `max` creerà una notifica di avviso.
 	- Una priorità `low` o `default` non aprirà le connessioni di rete in un dispositivo silenzioso. 
+	- Una priorità `min` sarà una notifica silenziosa.
 - Visibilità: puoi scegliere di impostare l'opzione di visibilità della notifica su `public` o `private`. 
 	- L'opzione `private` limita la visualizzazione pubblica e puoi scegliere di abilitarla se il tuo dispositivo è protetto da un pattern o un pin e l'impostazione di notifica è impostata su **Hide sensitive notification content**. Quando la visibilità è impostata su `private`, è necessario menzionare un campo `redact`. Solo il contenuto specificato nel campo `redact` sarà visualizzato nella schermata di blocco sicura nel dispositivo. 
 	- L'opzione `public` renderà possibile leggere le notifiche liberamente.
-- TTL (Time to live): questo valore è impostato in secondi. Se questo parametro non viene specificato, il server FCM/GCM archivia il messaggio per quattro settimane e tenterà di consegnarlo. La validità scade dopo quattro settimane. L'intervallo di valori possibile è compreso tra 0 e 2,419,200 secondi.
+- TTL (Time to live): questo valore è impostato in secondi. Se questo parametro non viene specificato, il server FCM archivia il messaggio per quattro settimane e tenterà di consegnarlo. La validità scade dopo quattro settimane. L'intervallo di valori possibile è compreso tra 0 e 2,419,200 secondi.
 - Ritarda quando inattivo: puoi impostare questa proprietà su uno dei seguenti valori:
-	- `True` indica al server FCM/GCM di non consegnare la notifica se il dispositivo è inattivo. 
+	- `True` indica al server FCM di non consegnare la notifica se il dispositivo è inattivo. 
 	- `False` assicura di consegnare la notifica anche se il dispositivo è inattivo.
 - Sincronizzazione: impostando questa opzione su `true`, le notifiche vengono sincronizzate in tutti i tuoi dispositivi registrati. Se l'utente con un nome utente dispone di più dispositivi con la stessa applicazione installata, la lettura della notifica su un dispositivo assicura l'eliminazione delle notifiche negli altri dispositivi. Devi assicurarti di essere registrato con il servizio {{site.data.keyword.mobilepushshort}} con l'ID utente per questa opzione perché funzioni.
 - Payload addizionale: specifica i valori di payload personalizzati per le tue notifiche.

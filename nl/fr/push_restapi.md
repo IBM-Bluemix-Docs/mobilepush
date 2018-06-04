@@ -15,7 +15,7 @@ copyright:
 Dernière mise à jour : 22 mai 2017
 {: .last-updated}
 
-Vous pouvez utiliser une interface de programmation d'application REST (Representational State Transfer) pour {{site.data.keyword.mobilepushshort}}. Vous pouvez également utiliser le SDK et l'[API Push ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://mobile.{DomainName}/imfpush/){: new_window} pour affiner plus encore le développement de vos applications client.
+Vous pouvez utiliser une interface de programmation d'application REST (Representational State Transfer) pour {{site.data.keyword.mobilepushshort}}. Vous pouvez également utiliser le SDK et l'[API Push ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://imfpush.{DomainName}/imfpush/){: new_window} pour affiner plus encore le développement de vos applications client.
 
 Avec l'API REST Push, les applications serveur de back end et les clients peuvent accéder à des fonctions {{site.data.keyword.mobilepushshort}}.
 
@@ -30,7 +30,8 @@ Pour obtenir l'URL de base pour l'API REST, procédez comme suit :
 
 1. Créez une application de back end dans la section Conteneurs boilerplate du catalogue IBM Cloud®, en choisissant MobileFirst Services Starter, ce qui a pour effet de lier le service {{site.data.keyword.mobilepushshort}} à l'application. Vous pouvez aussi créer une instance de service de Push et la laisser non liée. 
 1. Dans la page principale du catalogue IBM Cloud, accédez à la zone **Applications** et sélectionnez votre application.
-3. Cliquez sur **OPTIONS POUR APPLICATION MOBILE**. Les valeurs de route et d'identificateur global unique de l'application sont affichées au début de la page des détails de votre application. L'écran Afficher les données d'identification affiche des informations sur la valeur confidentielle AppSecret. Vous pouvez obtenir la valeur confidentielle d'application depuis les options pour application mobile ainsi que la valeur confidentielle de client pour certaines des interfaces API.
+3. Cliquez sur **OPTIONS POUR APPLICATION MOBILE**. Les valeurs de route et d'identificateur global unique de l'application sont affichées au début de la page des détails de votre application. L'écran Afficher les données d'identification affiche des informations sur la valeur confidentielle de l'application.
+Vous pouvez obtenir la valeur confidentielle d'application depuis les options pour application mobile ainsi que la valeur confidentielle de client pour certaines des interfaces API.
 
 Vous pouvez aussi utiliser la ligne de commande pour obtenir les données d'identification pour le service :
 
@@ -44,7 +45,7 @@ Vous pouvez aussi utiliser la ligne de commande pour obtenir les données d'iden
 ## En-tête Accept-Language
 {: #push-api-rest-accept}
 
-L'en-tête "Accept-Language" spécifie la langue à utiliser pour les messages d'erreur générés par  l'[API REST Push ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://mobile.{DomainName}/imfpush/){: new_window}. Les langues suivantes sont prises en charge pour les messages d'erreur : chinois (simplifié), chinois (traditionnel), anglais (Etats-Unis), allemand, français, italien, japonais, coréen, portugais et espagnol.
+L'en-tête "Accept-Language" spécifie la langue à utiliser pour les messages d'erreur générés par  l'[API REST Push ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://imfpush.{DomainName}/imfpush/){: new_window}. Les langues suivantes sont prises en charge pour les messages d'erreur : chinois (simplifié), chinois (traditionnel), anglais (Etats-Unis), allemand, français, italien, japonais, coréen, portugais et espagnol.
 
 
 ## Filtres des API REST Push

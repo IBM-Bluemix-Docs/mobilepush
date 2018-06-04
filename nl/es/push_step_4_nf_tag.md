@@ -12,12 +12,12 @@ copyright:
 
 # Notificaciones basadas en etiquetas
 {: #tag_based_notifications}
-Última actualización: 30 de junio de 2017
+Última actualización: 13 de julio de 2017
 {: .last-updated}
 
 Las notificaciones basadas en etiquetas son mensajes que están pensados para todos los dispositivos suscritos a una etiqueta determinada. Las notificaciones basadas en código permiten la segmentación de notificaciones en función de los temas o de las áreas de temas. Los destinatarios de la notificación pueden elegir recibir notificaciones sólo si es sobre un asunto o tema de su interés. Por lo tanto, la notificación basada en etiquetas proporciona un medio de segmentar destinatarios. Esta característica habilita la función de definir etiquetas y, a continuación, enviar y recibir mensajes por etiquetas. Un mensaje sólo se ha dirigido a las instancias de aplicación cliente (en móvil, navegador o como una app o extensión) que están suscritas a la etiqueta. Primero debe crear las etiquetas para la aplicación, configurar las suscripciones de etiquetas y, a continuación, iniciar las notificaciones basadas en etiquetas. Para enviar una notificación basada en etiquetas que utiliza la API REST, asegúrese de que los "tagNames" se proporcionen al publicarse en el recurso de mensajes.
 
-Puede definir etiquetas y, a continuación, enviar y recibir mensajes mediante etiquetas. Primero debe crear las etiquetas para la aplicación, crear suscripciones y, a continuación, iniciar las notificaciones basadas en etiquetas. Para enviar una notificación basada en código utilizando la [API REST](https://mobile.{DomainName}/imfpush/){: new_window}, asegúrese de que se proporcionen los "tagNames" al publicar en el recurso de mensajes.
+Puede definir etiquetas y, a continuación, enviar y recibir mensajes mediante etiquetas. Primero debe crear las etiquetas para la aplicación, crear suscripciones y, a continuación, iniciar las notificaciones basadas en etiquetas. Para enviar una notificación basada en código utilizando la [API REST](https://imfpush.{DomainName}/imfpush/){: new_window}, asegúrese de que se proporcionen los "tagNames" al publicar en el recurso de mensajes.
 
 
 ## Gestión de etiquetas
@@ -31,7 +31,7 @@ Utilice la consola de {{site.data.keyword.mobilepushshort}} para crear y suprimi
 
 Las notificaciones basadas en etiquetas son mensajes que están pensados para todos los dispositivos suscritos a una etiqueta determinada. Cada dispositivo se puede suscribir a cualquier número de etiquetas. 
 
-1. En la consola {{site.data.keyword.mobilepushshort}}, seleccione el separador **Etiquetas**.
+1. En la consola {{site.data.keyword.mobilepushshort}}, seleccione el separador **Gestionar etiquetas**.
 1. Pulse el botón **Crear etiqueta** +.   
    1. En el campo **Nombre**, especifique el nombre de la etiqueta. Por ejemplo, "cupones".
    1. En el campo **Descripción**, especifique una descripción de las etiquetas.

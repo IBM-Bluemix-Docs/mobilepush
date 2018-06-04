@@ -27,10 +27,10 @@ La chiave API è archiviata in modo protetto e utilizzata dal servizio {{site.da
 
 Per configurare FCM e ottenere le tue credenziali, completa le seguenti istruzioni:
 
-1. Visita il sito [Firebase Console ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://console.firebase.google.com/?pli=1){: new_window}. È obbligatorio un account utente Google. 
-2. Seleziona **Add project**. 
-3. Nella finestra Create a project, fornisci un nome progetto, scegli una regione/paese e fai clic su **Create project**.
-3. Nel pannello di navigazione, seleziona **Settings** > **Project settings**.
+1. Visita il sito [Console Firebase ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://console.firebase.google.com/?pli=1){: new_window}. È obbligatorio un account utente Google. 
+2. Seleziona **Aggiungi progetto**. 
+3. Nella finestra Crea un progetto, fornisci un nome progetto, scegli una regione/paese e fai clic su **Crea progetto**.
+3. Nel pannello di navigazione, seleziona **Impostazioni** > **Impostazioni progetto**.
 4. Scegli la scheda Cloud Messaging per ottenere le tue credenziali del progetto - la chiave API server e un ID mittente. Tieni presente che la chiave server elencata in FCM è uguale alla chiave API server.
    
 	![Ottenimento delle credenziali per FCM](images/FCM_settings_2.jpg)
@@ -43,11 +43,11 @@ Potresti anche aver bisogno di generare il file `google-services.json`. Completa
 
 3. Seleziona **AGGIUNGI APPLICAZIONE** o l'icona **Aggiungi Firebase alla tua applicazione Android** dalla scheda Generale nel pannello Tue applicazioni.
     
-4. Nella finestra Aggiungi Firebase alla tua applicazione Android, aggiungi **com.ibm.mobilefirstplatform.clientsdk.android.push** come nome pacchetto. Il campo Nome alternativo applicazione è facoltativo. Fai clic su **AGGIUNGI APPLICAZIONE**. 
+4. Nella finestra Aggiungi Firebase alla tua applicazione Android, aggiungi prima **com.ibm.mobilefirstplatform.clientsdk.android.push** come nome pacchetto. Il campo Nome alternativo applicazione è facoltativo. Fai clic su **REGISTRA APPLICAZIONE**. 
     
 	![Aggiunta di Firebase alla tua finestra Android](images/FCM_1.jpg)
 
-5. Includi il nome pacchetto della tua applicazione immettendolo nella finestra Aggiungi Firebase alla tua applicazione Android. Il campo Nome alternativo applicazione è facoltativo. Fai clic su **REGISTRA APPLICAZIONE**. 
+5. Ora, includi il nome pacchetto della tua applicazione immettendolo nella finestra Aggiungi Firebase alla tua applicazione Android. Il campo Nome alternativo applicazione è facoltativo. Fai clic su **REGISTRA APPLICAZIONE**.  Il seguente è un esempio -
 
 	![Aggiunta del nome del pacchetto alla tua applicazione](images/FCM_settings_4.jpg)
 
@@ -56,7 +56,7 @@ Potresti anche aver bisogno di generare il file `google-services.json`. Completa
 
 Una volta che hai ottenuto le tue credenziali FCM e generato il file `google-services.json`, il passo successivo è [Crea un'istanza del servizio](push_step_2.html).
 
-**Nota**: FCM è la nuova versione di GCM (Google Cloud Messaging). Assicurati di utilizzare le credenziali FCM per le nuove applicazioni. Le applicazioni esistenti continueranno a funzionare con le configurazioni GCM.
+**Nota**: Google ha dichiarato obsoleto GCM e ha integrato Cloud Messaging con Firebase. Dovrai migrare le tue applicazioni client GCM su Android a FCM.
 
 ## Per iOS
 {: #push_step_1_ios}
@@ -102,8 +102,7 @@ Puoi utilizzare le APNs in due modi:
 Devi ottenere dei certificati separati per gli ambienti di sviluppo e
                     distribuzione. I certificati sono associati a un ID applicazione per l'applicazione
                     destinataria delle notifiche remote. per la produzione, è possibile creare fino a
-                    due certificati. IBM Cloud utilizza i certificati per stabilire una connessione SSL
-                    con APNS.
+                    due certificati. IBM Cloud utilizza i certificati per stabilire una connessione SSL con APNS.
 
 <!-- Create a development and distribution SSL certificate. -->
 

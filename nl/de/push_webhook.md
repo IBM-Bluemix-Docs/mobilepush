@@ -31,7 +31,7 @@ Webhooks sind benutzerdefinierte Callbacks, die durch ein Ereignis ausgelöst we
 **Anmerkung**: Das Versenden von Benachrichtigungen erfolgt in Stapeln. Dieselbe Nachrichtenversendung kann mehrere Webhook-Ereignisse umfassen, wobei es sich sowohl um fehlgeschlagene als auch um erfolgreiche handeln kann. 
 Die Webhook-Ereignisse haben dieselbe Nachrichten-ID (messageID) wie die versandte Nachricht. 
 
-Weitere Informationen zu Webhooks finden Sie in der [IBM Push Notifications-REST-API ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://console-regional.stage1.ng.bluemix.net/apidocs/800){: new_window}.
+Weitere Informationen zu Webhooks finden Sie in der [IBM Push Notifications-REST-API ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://console.bluemix.net/apidocs/800-push-notifications){: new_window}.
 
 ## Alerts für Webhookereignisse empfangen
 {: #webhook_alert_event}
@@ -136,7 +136,7 @@ Subskribenten können festlegen, dass sie Alerts für Webhookereignisse als JSON
 	```
 		{: codeblock}
 
-- Fehlgeschlagene Benachrichtigung
+- Benachrichtigung fehlgeschlagen
 	```
 		{ type: 'onNotificationFailure',
 		entity:

@@ -20,7 +20,7 @@ Ultimo aggiornamento: 28 settembre 2017
 IBM {{site.data.keyword.mobilepushshort}} è un servizio che puoi utilizzare per inviare notifiche a dispositivi mobili e browser. Le notifiche possono essere destinate a tutti gli utenti dell'applicazione oppure a uno specifico insieme di utenti e dispositivi facendo uso delle tag. Per ogni messaggio che invii al servizio, i destinatari previsti ricevono una notifica.
 
 
-Puoi scegliere di utilizzare il servizio {{site.data.keyword.mobilepushshort}} come parte del contenitore tipo MobileFirst Services Starter o come [Servizi dedicati](/docs/dedicated/index.html) IBM Cloud.  Puoi anche utilizzare un SDK (software development kit) e delle [API REST![icona link esterno](../../icons/launch-glyph.svg "icona link esterno")](https://mobile.{DomainName}/imfpush/){: new_window} per sviluppare ulteriormente le tue applicazioni client.
+Puoi scegliere di utilizzare il servizio {{site.data.keyword.mobilepushshort}} come parte del contenitore tipo MobileFirst Services Starter o come [Servizi dedicati](/docs/dedicated/index.html) IBM Cloud.  Puoi anche utilizzare un SDK (software development kit) e delle [API REST![icona link esterno](../../icons/launch-glyph.svg "icona link esterno")](https://imfpush.{DomainName}/imfpush/){: new_window} per sviluppare ulteriormente le tue applicazioni client.
 
 
 Il servizio {{site.data.keyword.mobilepushshort}} è abilitato anche per [OpenWhisk](/docs/openwhisk/index.html). OpenWhisk è un servizio di calcolo distribuito guidato dagli eventi conosciuto anche come elaborazione senza server. Questo consente agli sviluppatori di concentrarsi sulla scrittura della logica dell'applicazione e sul creare azioni eseguite su richiesta.
@@ -57,12 +57,12 @@ Il servizio {{site.data.keyword.mobilepushshort}} gestisce tutte le informazioni
 ### Gateway
 {: #gateways}
 
-Servizi cloud specifici per piattaforme quali FCM/GCM o APNS (Apple Push Notification Service) utilizzati dal servizio {{site.data.keyword.mobilepushshort}} IBM per inviare notifiche alle applicazioni mobili e browser.
+Servizi cloud specifici per piattaforme quali FCM o APNS (Apple Push Notification Service) utilizzati dal servizio {{site.data.keyword.mobilepushshort}} IBM per inviare notifiche alle applicazioni mobili e browser.
 
 ## Dimensione messaggio
 {: #push-message-size}
 
-La dimensione del payload del messaggio di {{site.data.keyword.mobilepushshort}} dipende dai vincoli disposti dai gateway (FCM/GCM, APNs) e dalle piattaforme client. 
+La dimensione del payload del messaggio di {{site.data.keyword.mobilepushshort}} dipende dai vincoli disposti dai gateway (FCM, APNs) e dalle piattaforme client. 
 
 - Per iOS e Safari: per iOS 8 e successivi, la dimensione massima consentita è 4 kilobyte. Le APNs non inviano notifiche che superano questo limite.
 - Per Android, i browser Firefox e Chrome e le estensioni e applicazioni Chrome: esiste una limitazione di 4 kilobyte come massimo consentito per la dimensione del payload del messaggio.
@@ -77,5 +77,5 @@ Puoi inoltre trovare ulteriori informazioni sul servizio Push Notifications alla
 ## Scenario di esempio 
 {: #push-scenario}
 
-Il servizio {{site.data.keyword.mobilepushshort}} viene illustrato utilizzando lo scenario di esempio della banca ACME. La banca ACME è nella fase di spostare la propria infrastruttura IT legacy ai servizi IBM e al momento sta creando un backend mobile per i propri clienti e le proprie applicazioni dei dipendenti. Utilizzano il servizio {{site.data.keyword.mobilepushshort}} per inviare una notifica ai propri clienti sulle transazioni bancarie e su altri eventi e promemoria importanti.
+Il servizio {{site.data.keyword.mobilepushshort}} viene illustrato utilizzando lo scenario di esempio della banca ACME. La banca ACME è nella fase di spostare la propria infrastruttura IT legacy ai servizi IBM Cloud e al momento sta creando un backend mobile per i propri clienti e le proprie applicazioni dei dipendenti. Utilizzano il servizio {{site.data.keyword.mobilepushshort}} per inviare una notifica ai propri clienti sulle transazioni bancarie e su altri eventi e promemoria importanti.
 

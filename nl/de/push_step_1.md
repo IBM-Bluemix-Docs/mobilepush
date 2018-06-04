@@ -43,11 +43,11 @@ Darüber hinaus müssen Sie die Datei `google-services.json` generieren. Führen
 
 3. Wählen Sie auf der Registerkarte 'Allgemein' im Fenster mit Ihren Apps das Symbol **ADD APP** oder **Add Firebase to your Android app** aus.
     
-4. Fügen Sie im Fenster 'Add Firebase to your Android app' **com.ibm.mobilefirstplatform.clientsdk.android.push** als Paketnamen hinzu. Das Feld 'App nickname' ist optional. Klicken Sie auf **ADD APP**. 
+4. Fügen Sie im Fenster 'Firebase zur Android-App hinzufügen' zuerst **com.ibm.mobilefirstplatform.clientsdk.android.push** als Paketnamen hinzu. Das Feld 'App-Kurzname' ist optional. Klicken Sie auf **REGISTER APP**. 
     
-	![Fenster 'Add Firebase to your Android app'](images/FCM_1.jpg)
+	![Fenster 'Firebase zur Android-App hinzufügen'](images/FCM_1.jpg)
 
-5. Geben Sie den Paketnamen Ihrer Anwendung an, indem Sie ihn im Fenster 'Add Firebase to your Android app' eingeben. Das Feld 'App nickname' ist optional. Klicken Sie auf **REGISTER APP**. 
+5. Geben Sie nun den Paketnamen Ihrer Anwendung an, indem Sie ihn im Fenster 'Firebase zur Android-App hinzufügen' eingeben. Das Feld 'App-Kurzname' ist optional. Klicken Sie auf **REGISTER APP**.  Ein Beispiel ist nachfolgend dargestellt.
 
 	![Paketnamen Ihrer Anwendung hinzufügen](images/FCM_settings_4.jpg)
 
@@ -56,12 +56,12 @@ Darüber hinaus müssen Sie die Datei `google-services.json` generieren. Führen
 
 Nachdem Sie die FCM-Berechtigungsnachweise abgerufen und die Datei `google-services.json` generiert haben, müssen Sie als nächsten Schritt eine [Serviceinstanz erstellen](push_step_2.html).
 
-**Hinweis**: FCM ist die neue Version von Google Cloud Messaging (GCM). Achten Sie darauf, für neue Apps FCM-Berechtigungsnachweise zu verwenden. Vorhandene Apps können mit GCM-Konfigurationen weiterhin betrieben werden.
+**Hinweis**: GCM wird von Google nicht weiter unterstützt und Cloud Messaging wurde in Firebase integriert. Sie müssen Ihre GCM-Client-Apps unter Android in FCM migrieren.
 
 ## Für iOS
 {: #push_step_1_ios}
 
-Apple Push Notification Service (APNs) ermöglicht Anwendungsentwicklern das Senden ferner Benachrichtigungen aus der IBM CLoud-Instanz des {{site.data.keyword.mobilepushshort}}-Service (d. h. dem Provider) an iOS-Geräte und -Anwendungen. Die Nachrichten werden an eine Zielanwendung auf dem Gerät gesendet. 
+Apple Push Notification Service (APNs) ermöglicht Anwendungsentwicklern das Senden ferner Benachrichtigungen aus der IBM Cloud-Instanz des {{site.data.keyword.mobilepushshort}}-Service (d. h. dem Provider) an iOS-Geräte und -Anwendungen. Die Nachrichten werden an eine Zielanwendung auf dem Gerät gesendet. 
 
 Sie müssen die APNs-Berechtigungsnachweisee abrufen und konfigurieren. Die APNs-Zertifikate werden vom {{site.data.keyword.mobilepushshort}}-Service sicher verwaltet und zum Herstellen einer Verbindung zum APNs-Server als Provider verwendet.
 

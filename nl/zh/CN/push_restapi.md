@@ -15,7 +15,7 @@ copyright:
 上次更新时间：2017 年 5 月 22 日
 {: .last-updated}
 
-您可以将 REST（具象状态传输）API（应用程序编程接口）用于 {{site.data.keyword.mobilepushshort}}。您还可以使用 SDK 和 [Push API ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://mobile.{DomainName}/imfpush/){: new_window} 来进一步开发您的客户机应用程序。
+您可以将 REST（具象状态传输）API（应用程序编程接口）用于 {{site.data.keyword.mobilepushshort}}。您还可以使用 SDK 和 [Push API ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://imfpush.{DomainName}/imfpush/){: new_window} 来进一步开发您的客户机应用程序。
 
 通过 Push REST API，后端服务器应用程序和客户机可以访问 {{site.data.keyword.mobilepushshort}} 功能。
 
@@ -44,7 +44,7 @@ copyright:
 ## 接受语言头
 {: #push-api-rest-accept}
 
-“Accept-Language”头指定要将哪种语言用于 [Push REST API ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://mobile.{DomainName}/imfpush/){: new_window} 输出的错误消息。支持的错误消息语言如下：简体中文、繁体中文、英语（美国）、德语、法语、意大利语、日语、韩语、葡萄牙语和西班牙语。
+“Accept-Language”头指定要将哪种语言用于 [Push REST API ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://imfpush.{DomainName}/imfpush/){: new_window} 输出的错误消息。支持的错误消息语言如下：简体中文、繁体中文、英语（美国）、德语、法语、意大利语、日语、韩语、葡萄牙语和西班牙语。
 
 
 ## Push REST API 过滤器

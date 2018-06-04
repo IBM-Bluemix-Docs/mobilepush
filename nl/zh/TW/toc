@@ -1,4 +1,4 @@
-<!-- Markdown Navigation -->
+	<!-- Markdown Navigation -->
 {: navgroup: .navgroup}
 {: topicgroup: .topicgroup}
 
@@ -6,58 +6,56 @@
 Push Notifications
 
     {: .navgroup id="learn"}
-    index.md
     c_overview_push.md
-
+    index.md
+    developer-overview.md	
+    
     {: .topicgroup}
     基本步驟
-		push_step_prereq.md
+        push_step_prereq.md
         push_step_1.md
         push_step_2.md
         push_step_3.md
         push_step_4.md	
     {: .navgroup-end}
     
-    {: .navgroup id="reference"}
-    {: .topicgroup}
-    範例應用程式
-        [Android](https://github.com/ibm-bluemix-mobile-services/bms-samples-android-hellopush/)
-        [Cordova](https://github.com/ibm-bluemix-mobile-services/bms-samples-cordova-hellopush)
-        [iOS](https://github.com/ibm-bluemix-mobile-services/bms-samples-swift-hellopush)
-	[BluePic](https://github.com/IBM/BluePic)
-        [Online Catalog Store](https://github.com/ibm-bluemix-mobile-services/mobiledashboard-storecatalog-backend)
-
-    {: .topicgroup}
-    SDK
-        [Android SDK](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-android-push)
-        [Cordova SDK](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-cordova-plugin-push)
-        [iOS SDK](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-swift-push)	
-		[Web SDK](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-javascript-webpush)
-    {: .navgroup-end}
-    
-    {: .topicgroup}
-    API 參考資料
-        [Android 的 API 參考資料](https://www.javadoc.io/doc/com.ibm.mobilefirstplatform.clientsdk.android/push/3.6.1)
-        [iOS 的 API 參考資料](http://ibm-bluemix-mobile-services.github.io/API-docs/client-SDK/BMSPush/Swift/index.html)
-        [REST API 參考資料](https://mobile.ng.bluemix.net/imfpush/)
-    {: .navgroup-end}
-    
     {: .navgroup id="howto"}
     {: .topicgroup}
-    啟用通知
+    啟用通知選項
+        push_security.md
         push_step_4_nf_tag.md
         push_step_4_nf_user.md
         push_step_4_nf_interactive.md
         push_step_4_nf_rich.md
         push_step_4_nf_adv.md
+        push_monitoring.md	
+        push_message_status.md
+        push_template_message.md
+        push_webhook.md
+    {: .navgroup-end}
 
     {: .navgroup id="help"}
-    push_restapi.md
-    push_monitoring.md	
-    push_security.md	
-    push_webhook.md
-    push_troubleshooting.md
-    push_faq.md	
+    upgrading.md
+    relatedlinks.md	
+    
+    {: .topicgroup} 
+    疑難排解及常見問題
+        push_troubleshooting.md
+        push_faq.md	
+        support.md
+    {: .navgroup-end}
+	
+    {: .navgroup id="reference"}
+    release-notes.md
+    app_api.md	
+    sample-apps.md
+    install-sdk.md
+	
+    {: .topicgroup}
+    指導教學
+        [Swift 應用程式與 Push and Analytics](https://console.bluemix.net/docs/tutorials/ios-mobile-push-analytics.html#ios-mobile-application-with-push-and-analytics)
+        [Android 應用程式與 Push and Analytics](https://console.bluemix.net/docs/tutorials/android-mobile-push-analytics.html#android-native-mobile-application-with-push-and-analytics)	
+        [混合式應用程式與 Push and Analytics](https://console.bluemix.net/docs/tutorials/hybrid-mobile-push-analytics.html#hybrid-mobile-application-with-push-and-analytics)		
     {: .navgroup-end}
 
     

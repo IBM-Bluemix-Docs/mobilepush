@@ -1,7 +1,7 @@
 ---
 
 copyright:
-years: 2015, 2017
+ years: 2015, 2017
 
 ---
 
@@ -40,7 +40,8 @@ Configura un badge, l'audio e del payload JSON aggiuntivo iOS.
      "sound":"tt.wav",
 	  }
 		}  
-	```	{: codeblock}	
+	```	
+	{: codeblock}	
 	
 	- Su iOS
 

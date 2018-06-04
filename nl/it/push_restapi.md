@@ -1,7 +1,7 @@
 ---
 
 copyright:
-years: 2015, 2017
+ years: 2015, 2017
 
 ---
 
@@ -15,7 +15,7 @@ years: 2015, 2017
 Ultimo aggiornamento: 22 maggio 2017
 {: .last-updated}
 
-Puoi utilizzare una API (application program interface) REST (Representational State Transfer) per {{site.data.keyword.mobilepushshort}}. Puoi anche utilizzare l'SDK e l'[API Push ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://mobile.{DomainName}/imfpush/){: new_window} per sviluppare ulteriormente le tue applicazioni client.
+Puoi utilizzare una API (application program interface) REST (Representational State Transfer) per {{site.data.keyword.mobilepushshort}}. Puoi anche utilizzare l'SDK e l'[API Push ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://imfpush.{DomainName}/imfpush/){: new_window} per sviluppare ulteriormente le tue applicazioni client.
 
 Con la API REST Push, i client e le applicazioni server di backend possono accedere alle funzioni {{site.data.keyword.mobilepushshort}}.
 
@@ -44,7 +44,7 @@ Puoi inoltre utilizzare la riga di comando per ottenere le credenziali del servi
 ## Intestazione Accept-Language
 {: #push-api-rest-accept}
 
-L'intestazione "Accept-Language" specifica quale lingua utilizzare per i messaggi di errore generati in output dalla [API REST Push ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://mobile.{DomainName}/imfpush/){: new_window}. Per i messaggi di errore sono supportate le
+L'intestazione "Accept-Language" specifica quale lingua utilizzare per i messaggi di errore generati in output dalla [API REST Push ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://imfpush.{DomainName}/imfpush/){: new_window}. Per i messaggi di errore sono supportate le
                 seguenti lingue: cinese (semplificato), cinese, (tradizionale), inglese (US), tedesco, francese,
                 italiano, giapponese, coreano, portoghese e spagnolo.
 

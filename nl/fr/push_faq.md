@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2017
-lastupdated: "2017-06-27"
+lastupdated: "2017-09-28"
 
 ---
 {:new_window: target="_blank"}
@@ -11,7 +11,7 @@ lastupdated: "2017-06-27"
 {:codeblock:.codeblock}
 
 
-# Foire aux questions  
+# Foire aux questions 
 {: #faq}
 
 
@@ -28,7 +28,7 @@ lastupdated: "2017-06-27"
 
 2. Pourquoi reçois-je le message "La notification ne fonctionne pas pour WEB_Chrome." lors de la tentative d'initialisation du SDK Web Push ?
 
-	Il se peut que vous ayez changé vos données d'identification FCM/GCM pour le SDK Web push et que la remise du message échoue pour le navigateur Chrome. Prenez soin d'appeler "bmsPush.unRegisterDevice" pour éviter un échec.
+	Il se peut que vous ayez changé vos données d'identification FCM pour le SDK Web push et que la remise du message échoue pour le navigateur Chrome. Prenez soin d'appeler "bmsPush.unRegisterDevice" pour éviter un échec.
 
 3. Je reçois le message "Les agents de service ne sont pas pris en charge dans ce navigateur" lors de la tentative d'initialisation du SDK pour Web Push. Quel peut être le problème ? 
 
@@ -53,7 +53,7 @@ lastupdated: "2017-06-27"
 
 7. Quelles sont les limites pour les notifications Push en termes de taille du contenu ?
 
-	La taille d'un message de type {{site.data.keyword.mobilepushshort}} dépend des contraintes imposées par les passerelles (FCM/GCM, APNS) et les plateformes client. 
+	La taille d'un message de type {{site.data.keyword.mobilepushshort}} dépend des contraintes imposées par les passerelles (FCM, APNS) et les plateformes client. 
 
 	Pour iOS 8 et ultérieur, la taille maximale autorisée est de 4 kilooctets. Notez que les APN n'envoient pas de notifications qui dépassent cette limite. Pour Android, le navigateur Firefox, le navigateur Chrome et les applications et extensions Chrome, la taille maximale du contenu de message est limitée à 4 kilooctets.	
 
@@ -90,7 +90,7 @@ lastupdated: "2017-06-27"
 	- Ouvert : nombre d'appareils sur lesquels la notification a été ouverte.
 	- Non valide : nombre d'appareils sur lesquels le jeton n'est pas valide.
 
-	Pour plus d'informations, consultez le rapport de messages GET dans l'[API ReST d'IBM Push Notifications](https://mobile.ng.bluemix.net/imfpush/).	
+	Pour plus d'informations, consultez le rapport de messages GET dans l'[API ReST d'IBM Push Notifications](https://imfpush.{DomainName}/imfpush/).	
 
 14. La notification push suit-elle la remise de la notification push jusqu'à l'appareil de l'utilisateur final ? Pour Android et aussi pour iOS ?
 
@@ -102,7 +102,7 @@ lastupdated: "2017-06-27"
 
 16. J'envoie des notifications d'après des balises, mais leur liste est longue et il peut être difficile de les ajouter manuellement. 
 	
-	Vous pouvez utiliser les API REST pour automatiser l'ajout de balises. Voir [Messages POST en bloc](https://mobile.ng.bluemix.net/imfpush/).
+	Vous pouvez utiliser les API REST pour automatiser l'ajout de balises. Voir [Messages POST en bloc](https://imfpush.{DomainName}/imfpush/).
 
 17. Comment filtrer la remise de notification push d'après les informations stockées sur l'appareil mobile de l'utilisateur ?
 

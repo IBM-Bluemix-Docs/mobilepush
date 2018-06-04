@@ -1,7 +1,7 @@
 ---
 
 copyright:
-years: 2015, 2017
+ years: 2015, 2017
 
 ---
 
@@ -41,7 +41,8 @@ configure o valor dessa propriedade para 0.
      "sound":"tt.wav",
 	  }
 		}  
-	```	{	
+	```	
+	{: codeblock}	
 	
 	- No iOS
 

@@ -14,7 +14,7 @@ copyright:
 
 # Sicherheit bei Push Notifications 
 {: #overview-push}
-Letzte Aktualisierung: 27. Juni 2017
+Letzte Aktualisierung: 13. Juli 2017
 {: .last-updated}
 
 
@@ -23,12 +23,12 @@ Die {{site.data.keyword.mobilepushshort}}-APIs sind durch zwei geheime Schlüsse
 - **appSecret**: Der geheime Schlüssel `appSecret` schützt APIs, die normalerweise von Back-End-Anwendungen wie der API zum Senden von Push-Benachrichtigungen oder der API zum Konfigurieren von Einstellungen aufgerufen werden.
 - **clientSecret**: Der geheime Schlüssel `clientSecret` schützt APIs, die normalerweise von mobilen Clientanwendungen aufgerufen werden. Es gibt im Zusammenhang mit der Registrierung von Geräten nur eine API mit zugeordneter Benutzer-ID, die diesen geheimen Clientschlüssel (`clientSecret`) erfordert. Keine der anderen APIs, die von mobilen Clients aufgerufen werden, erfordert den geheimen Clientschlüssel (`clientSecret`). 
 
-Die geheimen Schlüssel `appSecret` und `clientSecret` werden jeder Serviceinstanz beim Binden einer Anwendung mit dem {{site.data.keyword.mobilepushshort}}-Service zugeordnet. Weitere Informationen dazu, auf welche Weise und für welche APIs die geheimen Schlüssel übergeben werden sollen, finden Sie in der Dokumentation für [REST-APIs ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://mobile.{DomainName}/imfpush/).
+Die geheimen Schlüssel `appSecret` und `clientSecret` werden jeder Serviceinstanz beim Binden einer Anwendung mit dem {{site.data.keyword.mobilepushshort}}-Service zugeordnet. Weitere Informationen dazu, auf welche Weise und für welche APIs die geheimen Schlüssel übergeben werden sollen, finden Sie in der Dokumentation für [REST-APIs ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://imfpush.{DomainName}/imfpush/).
 
 ## appSecret 
 {: #push-api-rest-secret}
 
-Beim Binden einer Anwendung an {{site.data.keyword.mobilepushshort}} generiert der Service den eindeutigen Schlüssel 'appSecret' und übergibt diesen mit dem Antwortheader. Wenn Sie die REST-API von IBM {{site.data.keyword.mobilepushshort}} for IBM Cloud verwenden, finden Sie in der Referenz für die REST-API Informationen dazu, welche APIs geschützt werden müssen. Weitere Informationen finden Sie in der [Push-REST-API ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://mobile.{DomainName}/imfpush/){: new_window}.
+Beim Binden einer Anwendung an {{site.data.keyword.mobilepushshort}} generiert der Service den eindeutigen Schlüssel 'appSecret' und übergibt diesen mit dem Antwortheader. Wenn Sie die REST-API von IBM {{site.data.keyword.mobilepushshort}} for IBM Cloud verwenden, finden Sie in der Referenz für die REST-API Informationen dazu, welche APIs geschützt werden müssen. Weitere Informationen finden Sie in der [Push-REST-API ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://imfpush.{DomainName}/imfpush/){: new_window}.
 
 Der Anforderungsheader muss 'appSecret' enthalten. Andernfalls gibt der Server den Fehlercode 401 ('Unauthorized Error') zurück. Beim Hinzufügen von {{site.data.keyword.mobilepushshort}} zu einer Anwendung wird eine spezifische App-ID erstellt. Sie erhalten als Teil der Antwort einen Header mit dem Namen 'appSecret', der für die Erstellung von Tags oder das Senden von Nachrichten verwendet wird. Diese Operation erfolgt über Services im Katalog oder in der Boilerplate.
 

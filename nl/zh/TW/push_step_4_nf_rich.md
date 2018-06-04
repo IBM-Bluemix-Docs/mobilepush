@@ -12,7 +12,7 @@ copyright:
 
 # 複合式多媒體通知
 {: #interactive-notifications}
-前次更新：2017 年 5 月 22 日
+前次更新：2017 年 7 月 13 日
 {: .last-updated}
 
 
@@ -25,5 +25,6 @@ copyright:
 ```
 BMSPushRichPushNotificationOptions.didReceive(request, withContentHandler: contentHandler)
 ```
-	
+	{: codeblock}	
+
 若要從 Push 主控台傳送「複合式多媒體」{{site.data.keyword.mobilepushshort}}，請確定您已指定訊息、標題、子標題，及 attachmentURL 欄位。

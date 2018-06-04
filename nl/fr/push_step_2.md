@@ -29,7 +29,7 @@ Pour configurer les données d'identification FCM pour les applications Android 
 1. Ouvrez votre catalogue IBM Cloud, puis cliquez sur l'instance de service {{site.data.keyword.mobilepushfull}} que vous avez créée. 
 2. Cliquez sur **Gérer ** > **Configurer**. 
 3. Sélectionnez l'une des options suivantes : 
-	- Pour Android : sélectionnez **Mobile**, puis mettez à jour les données d'identification Push GCM/FCM avec l'ID d'émetteur/Numéro de projet et la clé d'API. 
+	- Pour Android : sélectionnez **Mobile**, puis mettez à jour les données d'identification Push FCM avec l'ID d'émetteur/Numéro de projet et la clé d'API. 
 	- Pour applications et extensions Google Chrome : sélectionnez **Web**, puis mettez à jour l'onglet Applications et extensions Chrome avec l'ID d'émetteur/Numéro de projet et la clé d'API. 
 4. Cliquez sur **Sauvegarder**. Le service Push Notifications est à présent configuré.
 
@@ -54,7 +54,7 @@ Pour utiliser le service {{site.data.keyword.mobilepushshort}} pour envoyer des 
 
 **Remarque** : une fois le fichier `.cer` dans votre accès à la chaîne de certificats, exportez-le sur votre ordinateur pour créer un certificat `.p12`.
 
-Pour plus d'information sur l'utilisation du service APNS, reportez-vous au manuel [iOS Developer Library: Local and Push Notification Programming Guide ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://developer.apple.com/library/ios/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/Chapters/ProvisioningDevelopment.html#//apple_ref/doc/uid/TP40008194-CH104-SW4){: new_window}.
+Pour plus d'information sur l'utilisation du service APNS, reportez-vous au manuel [iOS Developer Library: Local and Push Notification Programming Guide ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html#//apple_ref/doc/uid/TP40008194-CH8-SW1){: new_window}.
 
 Pour configurer des APN sur la console des services Push Notification, procédez comme suit :
 
@@ -86,6 +86,6 @@ Après avoir configuré le service pour les applications iOS, vous devez [config
 1. Dans la console Notifications Push, sélectionnez **Configurer**.
 2. Sélectionnez l'onglet Web.
 	![Configurations WebPush](images/webpush_configure.jpg)
-3. Configurez la clé d'API FCM/GCM et l'URL de votre site Web qui sera enregistré pour recevoir les notifications push.
+3. Configurez la clé d'API FCM et l'URL de votre site Web qui sera enregistrée pour recevoir les notifications push.
 4. Cliquez sur **Sauvegarder**.
 5. Une fois que vous avez configuré le service, vous devez configurer le [SDK du client du service Push](push_step_3.html).

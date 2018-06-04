@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2017
-lastupdated: "2017-06-27"
+lastupdated: "2017-09-28"
 
 ---
 {:new_window: target="_blank"}
@@ -28,7 +28,7 @@ lastupdated: "2017-06-27"
 
 2. 尝试初始化 Web 推送 SDK 时，为什么会收到消息称“通知对 WEB_Chrome 无效”？
 
-	您可能更改了用于 Web 推送 SDK 的 FCM/GCM 凭证，因此对于 Chrome 浏览器，消息传递可能会失败。请确保调用“bmsPush.unRegisterDevice”以避免失败。
+	您可能更改了用于 Web 推送 SDK 的 FCM 凭证，因此对于 Chrome 浏览器，消息传递可能会失败。请确保调用“bmsPush.unRegisterDevice”以避免失败。
 
 3. 尝试初始化 Web 推送 SDK 时，收到消息“此浏览器中不支持服务工作程序”。问题可能出在哪里？ 
 
@@ -52,7 +52,7 @@ lastupdated: "2017-06-27"
 
 7. Push Notifications 在有效内容大小方面有哪些限制？
 
-	{{site.data.keyword.mobilepushshort}} 消息有效内容大小取决于网关（FCM/GCM、APNs）和客户机平台规定的约束。 
+	{{site.data.keyword.mobilepushshort}} 消息有效内容大小取决于网关（FCM、APNs）和客户机平台规定的约束。 
 
 	对于 iOS 8 和更高版本，允许的最大大小为 4 KB。请注意，APNs 不会发送超过此限制的通知。对于 Android、Firefox 浏览器、Chrome 浏览器和 Chrome Apps & Extensions，允许的消息有效内容最大大小限制为 4 KB。	
 
@@ -64,11 +64,11 @@ lastupdated: "2017-06-27"
 
 	不支持此功能。	
 
-10. Push Notifications 服务有哪些可用的定价套餐？
+10. Push Notifications 服务有哪些可用的价格套餐？
 
 	基本套餐：使用此套餐的价格是 1.00 美元/百万数字消息。使用基本套餐，可以向唯一的设备、浏览器、端点或基于 Webhook 的事件发送推送通知。 
 
-	Lite 套餐：这是免费套餐，每个月可以免费使用 10 万条数字消息。但是，Lite 套餐服务在处于不活动状态 30 天后会被删除。	
+	轻量套餐：这是免费套餐，每个月可以免费使用 10 万条数字消息。但是，轻量套餐服务在处于不活动状态 30 天后会被删除。	
 
 11. 在哪里能找到诸如教程或新增内容之类的更多信息？
 
@@ -89,7 +89,7 @@ lastupdated: "2017-06-27"
 	- 已打开：已打开通知的设备数。
 	- 无效：令牌在其中无效的设备数。
 
-	有关更多信息，请参阅 [IBM Push Notifications REST API](https://mobile.ng.bluemix.net/imfpush/) 中的“通过 GET 操作获取消息报告”。	
+	有关更多信息，请参阅 [IBM Push Notifications REST API](https://imfpush.{DomainName}/imfpush/) 中的“通过 GET 操作获取消息报告”。	
 
 14. 推送通知会监视推送通知传递至最终用户设备吗？对于 Android 和 iOS 都是这样吗？
 
@@ -101,7 +101,7 @@ lastupdated: "2017-06-27"
 
 16. 我要通过标记发送通知，但标记列表太长，手动添加可能很麻烦。 
 	
-	可以使用 REST API 来自动添加标记。请参阅[通过 POST 操作发布批量消息](https://mobile.ng.bluemix.net/imfpush/)。
+	可以使用 REST API 来自动添加标记。请参阅[通过 POST 操作发布批量消息](https://imfpush.{DomainName}/imfpush/)。
 
 17. 我该如何按用户移动设备中存储的消息来过滤推送通知传递？
 

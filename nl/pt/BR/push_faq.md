@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2017
-lastupdated: "2017-06-27"
+lastupdated: "2017-09-28"
 
 ---
 {:new_window: target="_blank"}
@@ -19,8 +19,7 @@ lastupdated: "2017-06-27"
 	
 	Para registros de dispositivo, navegador, Apps Chrome e Extensões, o serviço Push Notifications mantém uma referência exclusiva para tokens emitidos por meio de provedores de notificação - APNs para Apple ou FCM para Google. Os tokens podem ser invalidados pelo provedor de notificação de serviço por vários motivos. 
 
-	Um exemplo é durante a desinstalação de um app no dispositivo. Nesse cenário, quando a entrega de uma notificação for tentada com base na resposta dos provedores de que o dispositivo está invalidado, o serviço {{site.data.keyword.mobilepushshort}} removerá os registros do dispositivo ou do navegador da web. Isso,
-por sua vez, restringiria tentativas subsequentes de enviar a notificação a esses dispositivos invalidados. 
+	Um exemplo é durante a desinstalação de um app no dispositivo. Nesse cenário, quando a entrega de uma notificação for tentada com base na resposta dos provedores de que o dispositivo está invalidado, o serviço {{site.data.keyword.mobilepushshort}} removerá os registros do dispositivo ou do navegador da web. Isso, por sua vez, restringiria tentativas subsequentes de enviar a notificação a esses dispositivos invalidados. 
 
 	Você também poderá ter o problema se tiver removido o registro de um dispositivo.
 
@@ -29,7 +28,7 @@ por sua vez, restringiria tentativas subsequentes de enviar a notificação a es
 
 2. Por que recebo "A notificação não está funcionando para WEB_Chrome."ao tentar inicializar o Web Push SDK?.
 
-	É possível que você tenha mudado suas credenciais do FCM/GCM do Web Push SDK e a entrega da mensagem possa falhar para o navegador Chrome. Assegure-se de chamar "bmsPush.unRegisterDevice" para evitar falha.
+	Você pode ter mudado suas credenciais do FCM para SDK de push da web e a entrega da mensagem poderá falhar para o navegador Chrome. Assegure-se de chamar "bmsPush.unRegisterDevice" para evitar falha.
 
 3. Eu recebo a mensagem "Trabalhadores de serviço não são suportados neste navegador" ao tentar inicializar o SDK for Web Push. O que pode ser o problema? 
 
@@ -37,7 +36,7 @@ por sua vez, restringiria tentativas subsequentes de enviar a notificação a es
  
 	1. Você usa o método de início correto. 
 	1. Inclua o arquivo `manifest.json` na pasta raiz.
-	1. Host do seu website. Crie, de preferência, um iniciador `node.js` no IBM Cloud para experimentá-lo. Por exemplo: https:// < mysamplewebsite> .mybluemix.net/.	
+	1. Host do seu website. De preferência, crie um iniciador `node.js` no IBM Cloud para experimentá-lo. Por exemplo: https:// < mysamplewebsite> .mybluemix.net/.	
 
 4. Como resolver erros de configuração da web de push da Web?
 
@@ -53,8 +52,7 @@ por sua vez, restringiria tentativas subsequentes de enviar a notificação a es
 
 7. Quais são os limites para Notificações push, em termos de tamanho de carga útil?
 
-	O tamanho da carga útil da mensagem de {{site.data.keyword.mobilepushshort}} depende das restrições estabelecidas pelos Gateways (FCM/GCM, APNs) e
-pelas plataformas do cliente. 
+	O tamanho da carga útil da mensagem do {{site.data.keyword.mobilepushshort}} depende das restrições estabelecidas pelos Gateways (FCM, APNs) e plataformas do cliente. 
 
 	Para o iOS 8 e mais recente, o tamanho máximo permitido é de 4 kilobytes. Observe que o APNs não envia notificações que excedam esse limite. Para o Android, o navegador Firefox, o navegador Chrome e os Apps Chrome e Extensões, há uma limitação de 4 kilobytes como o tamanho máximo permitido de carga útil da mensagem.	
 
@@ -91,7 +89,7 @@ pelas plataformas do cliente.
 	- Aberta: o número de dispositivos no quais a notificação foi aberta.
 	- Inválida: o número de dispositivos nos quais o token é inválido.
 
-	Para obter mais informações, veja o relatório de mensagens GET em [API de REST do IBM Push Notifications](https://mobile.ng.bluemix.net/imfpush/).	
+	Para obter mais informações, veja o relatório de mensagens GET em [API de REST do IBM Push Notifications](https://imfpush.{DomainName}/imfpush/).	
 
 14. A notificação push monitora a entrega de notificação push até o dispositivo do usuário final? Para ambos Android e iOS?
 
@@ -103,7 +101,7 @@ pelas plataformas do cliente.
 
 16. Estou enviando uma notificação por tags, mas tenho uma longa lista de tags que podem ser difíceis de incluir manualmente. 
 	
-	É possível usar as APIs de REST para automatizar as adições de tags. Consulte [POST mensagens em massa](https://mobile.ng.bluemix.net/imfpush/).
+	É possível usar as APIs de REST para automatizar as adições de tags. Consulte [POST mensagens em massa](https://imfpush.{DomainName}/imfpush/).
 
 17. Como posso filtrar a entrega de notificação push por informações armazenadas no dispositivo móvel do usuário?
 

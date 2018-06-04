@@ -84,7 +84,7 @@ Im Unterschied zu konventionellen Push-Benachrichtigungen werden Benutzer bei um
 	Objective-C
 
 	```
-	//For Objective-C
+	//Für Objective-C
 
 	[[UIApplication sharedApplication] registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:(UIUserNotificationTypeSound | UIUserNotificationTypeAlert | UIUserNotificationTypeBadge) categories:categories]];
 

@@ -43,11 +43,11 @@ Vous devez également générer le fichier `google-services.json`. Exécutez les
 
 3. Sélectionnez l'icône **ADD APP** ou **Add Firebase to your Android app** dans l'onglet General du panneau Your apps.
     
-4. Dans la fenêtre Add Firebase to your Android app, ajoutez **com.ibm.mobilefirstplatform.clientsdk.android.push** en tant que nom du package. La zone App nickname est facultative. Cliquez sur **Ajouter une application**. 
+4. Dans la fenêtre Add Firebase to your Android app, ajoutez d'abord **com.ibm.mobilefirstplatform.clientsdk.android.push** en tant que nom du package. La zone App nickname est facultative. Cliquez sur **REGISTER APP**. 
     
 	![Fenêtre Adding Firebase to your Android](images/FCM_1.jpg)
 
-5. Incluez le nom de package de votre application en l'entrant dans la fenêtre Add Firebase to your Android app. La zone App nickname est facultative. Cliquez sur **REGISTER APP**. 
+5. Incluez maintenant le nom de package de votre application en l'entrant dans la fenêtre Add Firebase to your Android app. La zone App nickname est facultative. Cliquez sur **REGISTER APP**.  Un exemple est fourni ci-dessous -
 
 	![Ajout du nom de package de votre application](images/FCM_settings_4.jpg)
 
@@ -56,7 +56,7 @@ Vous devez également générer le fichier `google-services.json`. Exécutez les
 
 Une fois que vous avez obtenu vos données d'identification FCM et généré le fichier `google-services.json`, l'étape suivante consiste à [Créer une instance push](push_step_2.html).
 
-**Remarque **: FCM est la nouvelle version de Google Cloud Messaging (GCM). Prenez soin d'utiliser des données d'identification FCM pour les nouvelles applications. Les appli existantes continueraient à fonctionner avec les configurations GCM.
+**Remarque** : Google a déprécié GCM et a intégré Firebase Cloud Messaging (FCM). Vous devrez faire migrer vos applications client GCM sur Android vers FCM.
 
 ## Pour iOS
 {: #push_step_1_ios}
@@ -96,7 +96,7 @@ Vous pouvez utiliser APNS dans deux modes :
 * Mode bac à sable pour le développement et le test.
 * Mode production lors de la distribution des applications via l'App Store (ou d'autres mécanismes de distribution d'entreprise).
 
-Vous devez vous procurer des certificats distincts pour vos environnements de développement et de distribution. Les certificats sont associés à un ID d'application pour l'application qui est le destinataire des notifications distantes. Pour la production, vous pouvez créer jusqu'à deux certificats. IBM Cloud utilise les certificats afin d'établir une connexion SSL à APNS.
+Vous devez vous procurer des certificats distincts pour vos environnements de développement et de distribution. Les certificats sont associés à un ID d'application pour l'application qui est le destinataire des notifications distantes. Pour la production, vous pouvez créer jusqu'à deux certificats. IBM Cloud utilise les certificats afin d'établir une connexion SSL au service APNs.
 
 <!-- Create a development and distribution SSL certificate. -->
 
@@ -167,9 +167,9 @@ Utilisez le profil de mise à disposition dans un magasin afin de soumettre votr
 1. Accédez au portail [Apple Developer ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://developer.apple.com){: new_window}, cliquez sur **Member Center**, puis sélectionnez **Certificates, Identifiers & Profiles**.
 2. Cliquez deux fois sur le profil de mise à disposition téléchargé afin de l'installer dans Xcode.
 
-Après l'obtention des données d'identification, l'étape suivante consiste à [Configurer une instance de service](push_step_2.html). 
+Après l'obtention des données d'identification, l'étape suivante consiste à [Configurer une instance de service](push_step_2.html).
 
-## Pour les navigateurs Wen et les applications et extensions Chrome
+## Pour les navigateurs Web et les applications et extensions Chrome
 {: #configure-credential-for-browsers}
 
 Le service IBM {{site.data.keyword.mobilepushshort}} étend les capacités d'envoi de notifications à votre application et également aux Applications et extensions Chrome.

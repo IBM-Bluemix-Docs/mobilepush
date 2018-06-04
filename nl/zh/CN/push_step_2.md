@@ -29,7 +29,7 @@ copyright:
 1. 打开 IBM Cloud“目录”，然后单击已创建的 {{site.data.keyword.mobilepushfull}} 服务实例。 
 2. 单击**管理** > **配置**。 
 3. 选择以下任一选项： 
-	- 对于 Android：选择**移动**，然后使用“发送方标识/项目号”和“API 密钥”更新“GCM/FCM 推送凭证”选项卡。 
+	- 对于 Android：选择**移动**，然后使用“发送方标识/项目号”和“API 密钥”更新“FCM 推送凭证”选项卡。 
 	- 对于 Google Chrome Apps & Extensions：选择 **Web**，然后使用“发送方标识/项目号”和“API 密钥”更新 Chrome Apps and Extensions 选项卡。 
 4. 单击**保存**。现在，Push Notifications 服务已配置。
 
@@ -54,7 +54,7 @@ Cordova 是一种平台，用于通过 JavaScript、CSS 和 HTML 构建混合应
 
 **注**：当 `.cer` 文件出现在钥匙串访问中之后，请将其导出到您的计算机，以创建 `.p12` 证书。
 
-有关使用 APNs 的更多信息，请参阅 [iOS Developer Library: Local and Push Notification Programming Guide ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://developer.apple.com/library/ios/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/Chapters/ProvisioningDevelopment.html#//apple_ref/doc/uid/TP40008194-CH104-SW4){: new_window}。
+有关使用 APNs 的更多信息，请参阅 [iOS Developer Library: Local and Push Notification Programming Guide ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html#//apple_ref/doc/uid/TP40008194-CH8-SW1){: new_window}。
 
 要在 Push Notifications 服务控制台上设置 APNs，请完成以下步骤：
 
@@ -86,6 +86,6 @@ Cordova 是一种平台，用于通过 JavaScript、CSS 和 HTML 构建混合应
 1. 在 Push Notifications 控制台上，选择**配置**。
 2. 选择 Web 选项卡。
 ![WebPush 配置](images/webpush_configure.jpg)
-3. 配置 FCM/GCM API 密钥和将注册以接收推送通知的 Web 站点的 URL。
+3. 配置 FCM API 密钥和将注册以接收推送通知的 Web 站点的 URL。
 4. 单击**保存**。
 5. 设置了服务后，需要[设置 Push 服务客户机 SDK](push_step_3.html)。

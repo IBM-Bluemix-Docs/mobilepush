@@ -1,7 +1,7 @@
 ---
 
 copyright:
- years: 2015, 2017
+years: 2015, 2017
 
 ---
 
@@ -19,7 +19,7 @@ Letzte Aktualisierung: 08. September 2017
 
 {:shortdesc}
 
-{{site.data.keyword.mobilepushshort}} ist als IBM Cloud Catalog-Service in der Kategorie 'Mobile' verfügbar und ermöglicht das Senden und Verwalten von Push-Benachrichtigungen im Web und für mobile Endgeräte. Eine Push-Benachrichtigung ist ein Alert, der auf eine Änderung oder Aktualisierung auf einem mobilen Gerät oder einem Browser hinweist.
+{{site.data.keyword.mobilepushshort}} ist als IBM Cloud-Katalogservice in der Kategorie 'Mobile' verfügbar und ermöglicht das Senden und Verwalten von Push-Benachrichtigungen im Web und für mobile Endgeräte. Eine Push-Benachrichtigung ist ein Alert, der auf eine Änderung oder Aktualisierung auf einem mobilen Gerät oder einem Browser hinweist.
 
 Push-Benachrichtigungen sind ein allgemein akzeptierter Kommunikationskanal für Unternehmen oder große Zielgruppen. Sie können als Banneralerts auf einem Bildschirm angezeigt oder an den Sperrbildschirm eines Geräts gesendet werden und stellen somit schnelle und leicht zugängliche Informationsupdates bereit.  
 

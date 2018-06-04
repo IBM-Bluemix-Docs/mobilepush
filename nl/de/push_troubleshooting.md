@@ -12,7 +12,7 @@ copyright:
 
 # Fehlerbehebung für Probleme beim Service ausführen
 {: #errors}
-Letzte Aktualisierung: 19. Juni 2017
+Letzte Aktualisierung: 13. Juli 2017
 {: .last-updated}
 
 Dieser Abschnitt enthält eine Anleitung zum Identifizieren und Beheben häufig auftretender Fehlerszenarios, die bei der Verwendung des Push Notifications-Service auftreten können.
@@ -42,6 +42,14 @@ Dieser Abschnitt enthält eine Anleitung zum Identifizieren und Beheben häufig 
 **Erläuterung**: Das als Teil von `BMSPushSDK.js` eingeschlossene SDK, das den Servicebearbeiter verwendet, ist nicht verfügbar. 
 
 **Benutzeraktion**: Es wird empfohlen, einen Browser zu verwenden, der den Servicebearbeiter unterstützt. Die unterstützten Browserversionen sind Firefox ab Version 49 und Chrome ab Version 53 (64-Bit).
+
+
+### Server ausgelastet: Der Server kann die Anforderung momentan nicht verarbeiten. Wiederholen Sie den Vorgang zu einem späteren Zeitpunkt.
+{: #troubleshooting_notification_server_busy}
+
+**Erläuterung**: Der Fehler kann beim Zugriff auf die Berichte auf der Überwachungsseite auftreten. Hierbei handelt es sich um das erwartete Verhalten, wenn die Anzahl der in den letzten 90 Tagen gesendeten Nachrichten sehr hoch ist.
+ 
+**Benutzeraktion**: Zugriff auf Berichte, die auf der Nachrichten-ID basieren, besteht über REST-APIs. Eine Beschreibung hierzu finden Sie in den Informationen zu "getMessageReport" in der [REST-API-Dokumentation]( https://console.bluemix.net/apidocs/800-push-notifications?&language=shell_curl#getmessagereport).
 
 
 ### SecurityError: The operation is insecure
@@ -153,7 +161,7 @@ Weitere Informationen zu einem Fehler finden Sie in der Dokumentation zu dem jew
 **Erläuterung**: Der JSON-Hauptteil der Anforderung weist Parameter auf, die vom {{site.data.keyword.mobilepushshort}}-Server nicht interpretiert werden können.
 
 
-**Benutzeraktion**: Stellen Sie sicher, dass für den JSON-Hauptteil in der Anforderung das Format der Anforderung beachtet wird, das der {{site.data.keyword.mobilepushshort}}-Server erwartet. Weitere Informationen finden Sie im Abschnitt [REST-APIs ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://mobile.{DomainName}/imfpush/){: new_window}.
+**Benutzeraktion**: Stellen Sie sicher, dass für den JSON-Hauptteil in der Anforderung das Format der Anforderung beachtet wird, das der {{site.data.keyword.mobilepushshort}}-Server erwartet. Weitere Informationen finden Sie im Abschnitt [REST-APIs ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://imfpush.{DomainName}/imfpush/){: new_window}.
 
 
 
@@ -163,7 +171,7 @@ Weitere Informationen zu einem Fehler finden Sie in der Dokumentation zu dem jew
 **Erläuterung**: Die Anforderungs-URL weist eine Abfragezeichenfolge mit nicht erkannten Parametern auf. Beispiel: Wenn die Anforderung zum Löschen der Subskription andere Parameter als deviceId und tagName aufweist, kann es zu diesem Fehler kommen.
 
 
-**Benutzeraktion**: Stellen Sie sicher, dass für den JSON-Hauptteil in der Anforderung das Format der Anforderung beachtet wird, das der {{site.data.keyword.mobilepushshort}}-Server erwartet. Weitere Informationen finden Sie im Abschnitt [REST-APIs ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://mobile.{DomainName}/imfpush/){: new_window}.
+**Benutzeraktion**: Stellen Sie sicher, dass für den JSON-Hauptteil in der Anforderung das Format der Anforderung beachtet wird, das der {{site.data.keyword.mobilepushshort}}-Server erwartet. Weitere Informationen finden Sie im Abschnitt [REST-APIs ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://imfpush.{DomainName}/imfpush/){: new_window}.
 
 
 
@@ -173,7 +181,7 @@ Weitere Informationen zu einem Fehler finden Sie in der Dokumentation zu dem jew
 **Erläuterung**: Die Anforderungs-URL weist eine Abfragezeichenfolge mit fehlenden erforderlichen Parametern auf. Beispiel: Möglicherweise fehlen die Parameter deviceId und tagName in der Anforderung zum Löschen der Subskription.
 
 
-**Benutzeraktion**: Stellen Sie sicher, dass für den JSON-Hauptteil in der Anforderung das Format der Anforderung beachtet wird, das der {{site.data.keyword.mobilepushshort}}-Server erwartet. Weitere Informationen finden Sie im Abschnitt [REST-APIs ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://mobile.{DomainName}/imfpush/){: new_window}.
+**Benutzeraktion**: Stellen Sie sicher, dass für den JSON-Hauptteil in der Anforderung das Format der Anforderung beachtet wird, das der {{site.data.keyword.mobilepushshort}}-Server erwartet. Weitere Informationen finden Sie im Abschnitt [REST-APIs ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://imfpush.{DomainName}/imfpush/){: new_window}.
 
 
 
@@ -241,7 +249,7 @@ Weitere Informationen zu einem Fehler finden Sie in der Dokumentation zu dem jew
 **Erläuterung**: Der {{site.data.keyword.mobilepushshort}}-Service wurde für diese Anwendung inaktiviert. Dies kann aus abrechnungstechnischen Gründen geschehen oder die App wurde vom Administrator inaktiviert.
 
 
-**Benutzeraktion**: Zum Überprüfen des Servicestatus, zum Abrufen von Fehlerbehebungsinformationen oder für Informationen zum Anfordern von Hilfe ziehen Sie die Themen zur Fehlerbehebung in der IBM Cloud-Dokumentation zurate.
+**Benutzeraktion**: Zum Überprüfen des Servicestatus, zum Abrufen von Fehlerbehebungsinformationen oder für Informationen zum Anfordern von Hilfe lesen Sie die Themen zur Fehlerbehebung in der IBM Cloud-Dokumentation.
 
 
 

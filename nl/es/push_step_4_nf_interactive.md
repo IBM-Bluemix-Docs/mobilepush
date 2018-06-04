@@ -24,6 +24,7 @@ Las notificaciones interactivas permiten a los usuarios responder a notificacion
 
 La notificación interactiva puede enviarse mediante la consola de notificaciones push o mediante la [Documentación de la API REST](push_restapi.html).
 
+
 Desde la consola de {{site.data.keyword.mobilepushshort}}: 
 
 1. En el separador de notificaciones, pulse **Enviar notificación**. 

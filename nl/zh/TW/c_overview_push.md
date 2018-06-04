@@ -20,7 +20,7 @@ copyright:
 IBM {{site.data.keyword.mobilepushshort}} 是您可以用來傳送通知至行動裝置及瀏覽器的一種服務。通知可以使用標籤，以所有應用程式使用者或一組特定使用者及裝置為目標。對於您提交給服務的每一則訊息，預期的對象都會收到通知。
 
 
-您可以選擇使用 {{site.data.keyword.mobilepushshort}} 服務作為 MobileFirst Services 入門範本樣板的一部分，或是作為 IBM Cloud [專用服務](/docs/dedicated/index.html)。您也可以使用 SDK（軟體開發套件）及 [REST API ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://mobile.{DomainName}/imfpush/){: new_window}，以進一步開發用戶端應用程式。
+您可以選擇使用 {{site.data.keyword.mobilepushshort}} 服務作為 MobileFirst Services 入門範本樣板的一部分，或是作為 IBM Cloud [專用服務](/docs/dedicated/index.html)。您也可以使用 SDK（軟體開發套件）及 [REST API ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://imfpush.{DomainName}/imfpush/){: new_window}，以進一步開發用戶端應用程式。
 
 
 也已針對 [OpenWhisk](/docs/openwhisk/index.html) 啟用 {{site.data.keyword.mobilepushshort}} 服務。OpenWhisk 是分散式、事件驅動的運算服務，也稱為無伺服器運算。這可讓開發人員專注於撰寫應用程式邏輯，且建立視需要執行的動作。
@@ -57,12 +57,12 @@ IBM {{site.data.keyword.mobilepushshort}} 是您可以用來傳送通知至行�
 ### 閘道
 {: #gateways}
 
-IBM {{site.data.keyword.mobilepushshort}} 服務使用平台專用 Push Notifications 雲端服務（例如 FCM/GCM 或 Apple Push Notification Service (APNs)）將通知分派給行動及瀏覽器應用程式。
+IBM {{site.data.keyword.mobilepushshort}} 服務使用平台專用 Push Notifications 雲端服務（例如 FCM 或 Apple Push Notification Service (APNs)）將通知分派給行動及瀏覽器應用程式。
 
 ## 訊息大小
 {: #push-message-size}
 
-{{site.data.keyword.mobilepushshort}} 訊息有效負載大小取決於「閘道」（FCM/GCM、APNs）及用戶端平台所配置的限制。 
+{{site.data.keyword.mobilepushshort}} 訊息有效負載大小取決於「閘道」（FCM、APNs）及用戶端平台所配置的限制。 
 
 - 若為 iOS 及 Safari：若為 iOS 8 以及更新版本，接受的大小上限為 4 KB。APNs 不會傳送超過此限制的通知。
 - 若為 Android、Firefox 瀏覽器、Chrome 瀏覽器及 Chrome Apps & Extensions：容許的訊息有效負載大小上限為 4 KB。
@@ -77,5 +77,5 @@ IBM {{site.data.keyword.mobilepushshort}} 服務使用平台專用 Push Notifica
 ## 範例情境 
 {: #push-scenario}
 
-我們使用 ACME Bank 的範例情境來解釋 {{site.data.keyword.mobilepushshort}} 服務。ACME Bank 正在將其舊 IT 基礎架構移至 IBM Cloud   服務，且目前正在為與客戶及員工互動的應用程式建置行動後端。他們使用 {{site.data.keyword.mobilepushshort}} 服務來傳送有關銀行交易及其他重要事件和提醒的通知給客戶。
+我們使用 ACME Bank 的範例情境來解釋 {{site.data.keyword.mobilepushshort}} 服務。ACME Bank 正在將其舊 IT 基礎架構移至 IBM Cloud 服務，且目前正在為與客戶及員工互動的應用程式建置行動後端。他們使用 {{site.data.keyword.mobilepushshort}} 服務來傳送有關銀行交易及其他重要事件和提醒的通知給客戶。
 

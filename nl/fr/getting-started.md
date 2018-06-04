@@ -25,7 +25,7 @@ Ce tutoriel d'initiation à {{site.data.keyword.mobilepushfull}} vous guide dans
 {: #prereqs}
 
 Vous aurez besoin d'un [compte IBM Cloud](https://console.bluemix.net/registration/), d'une instance du service
-{{site.data.keyword.mobilepushshort}}, et des outils et prérequis suivants :
+{{site.data.keyword.mobilepushshort}} et des outils et prérequis suivants :
 
   * API Android 15+
   * Android 4.0.3+

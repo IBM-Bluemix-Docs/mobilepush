@@ -43,11 +43,11 @@ También necesitaría generar el archivo `google-services.json`. Complete los pa
 
 3. Seleccione **AÑADIR APP** o el icono **Añadir Firebase a la app de Android** en el separador General del panel Sus apps.
     
-4. En la ventana Añadir Firebase a la app Android, añada **com.ibm.mobilefirstplatform.clientsdk.android.push** como Nombre de paquete. El campo Apodo de app es opcional. Pulse **AÑADIR APP**. 
+4. En la ventana Añadir Firebase a la app Android, añada en primer lugar **com.ibm.mobilefirstplatform.clientsdk.android.push** como Nombre de paquete. El campo Apodo de app es opcional. Pulse **REGISTRAR APP**. 
     
 	![Añadir Firebase a la ventana de Android](images/FCM_1.jpg)
 
-5. Incluya el nombre de paquete de la aplicación, especificando el nombre de paquete en la ventana Añadir Firebase a la app Android. El campo Apodo de app es opcional. Pulse **REGISTRAR APP**. 
+5. Ahora, incluya el nombre de paquete de la aplicación, especificando el nombre de paquete en la ventana Añadir Firebase a la app Android. El campo Apodo de app es opcional. Pulse **REGISTRAR APP**.  A continuación se muestra un ejemplo -
 
 	![Añadir el nombre de paquete de la aplicación](images/FCM_settings_4.jpg)
 
@@ -56,7 +56,7 @@ También necesitaría generar el archivo `google-services.json`. Complete los pa
 
 Una vez que haya obtenido las credenciales de FCM y que haya generado el archivo `google-services.json`, el siguiente paso es [Crear una instancia de servicio](push_step_2.html).
 
-**Nota**: FCM es la nueva versión de Google Cloud Messaging (GCM). Asegúrese de que utiliza las credenciales de FCM para nuevas apps. Las apps existentes seguirán funcionando con las configuraciones de GCM.
+**Nota**: Google ha dejado en desuso GCM y ha integrado Cloud Messaging con Firebase. Tendrá que migrar sus apps cliente GCM de Android a FCM.
 
 ## Para iOS
 {: #push_step_1_ios}
@@ -93,7 +93,7 @@ Para poder obtener un certificado de APNs, debe generar en primer lugar una soli
 
 Puede utilizar APNs de dos maneras: 
 
-* La modalidad de pruebas durante el desarrollo y la prueba.
+* La modalidad de recinto de seguridad (sandbox) durante el desarrollo y pruebas.
 * La modalidad de producción al distribuir aplicaciones mediante App Store (u otros mecanismos de distribución de empresa).
 
 Debe obtener certificados independientes para los entornos de desarrollo y de distribución. Los certificados están asociados con un ID de App para la app que es el destinatario de las notificaciones remotas. Para la producción, puede crear un máximo de dos certificados. IBM Cloud utiliza los certificados para establecer una conexión SSL con APNs.
@@ -117,7 +117,7 @@ Debe obtener certificados independientes para los entornos de desarrollo y de di
 	![Descargar certificado](images/push_certificate_download.jpg)	
 	
 6. En el menú, seleccione **Acceso de cadena de claves > Asistente de certificado > Solicitud de un certificado a partir de una entidad emisora de certificados…** 
-7. En **Información del certificado**, especifique la dirección de correo electrónico asociada con la cuenta de Desarrollador de apps y un nombre común. Otorgue un nombre significativo que le ayude a identificar si es un certificado para desarrollo (pruebas) o distribución (producción); por ejemplo, _sandbox-apns-certificate_ o _production-apns-certificate_.
+7. En **Información del certificado**, especifique la dirección de correo electrónico asociada con la cuenta de Desarrollador de apps y un nombre común. Otorgue un nombre significativo que le ayude a identificar si es un certificado para desarrollo (recinto de seguridad) o distribución (producción); por ejemplo, _sandbox-apns-certificate_ o _production-apns-certificate_.
 8. Seleccione **Guardado en disco** para descargar el archivo `.certSigningRequest` en su escritorio y, a continuación, pulse **Continuar**.
 9. En la opción de menú **Guardar como**, asigne `.certSigningRequest` al archivo y pulse **Guardar**.
 10. Pulse **Hecho**. Ahora tiene un CSR.

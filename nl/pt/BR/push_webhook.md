@@ -1,7 +1,7 @@
 ---
 
 copyright:
-years: 2015, 2017
+ years: 2015, 2017
 
 ---
 
@@ -41,7 +41,7 @@ assinatura de uma tag.
 múltiplos eventos webhooks, que podem incluir falhas e sucesso. 
 Os eventos webhook têm o mesmo messageID que a mensagem despachada. 
 
-Para obter mais informações sobre webhooks, veja a [API de REST de notificações push da IBM ![Ícone de link externo](../../icons/launch-glyph.svg "External link icon")](https://console-regional.stage1.ng.bluemix.net/apidocs/800){: new_window}.
+Para obter mais informações sobre webhooks, veja a [API de REST de notificações push da IBM ![Ícone de link externo](../../icons/launch-glyph.svg "External link icon")](https://console.bluemix.net/apidocs/800-push-notifications){: new_window}.
 
 ## Recebendo alertas em eventos webhook
 {: #webhook_alert_event}

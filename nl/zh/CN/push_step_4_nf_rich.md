@@ -12,7 +12,7 @@ copyright:
 
 # 富媒体通知
 {: #interactive-notifications}
-上次更新时间：2017 年 5 月 22 日
+上次更新时间：2017 年 7 月 13 日
 {: .last-updated}
 
 
@@ -25,5 +25,6 @@ copyright:
 ```
 BMSPushRichPushNotificationOptions.didReceive(request, withContentHandler: contentHandler)
 ```
-	
+	{: codeblock}	
+
 要从 Push 控制台发送富媒体 {{site.data.keyword.mobilepushshort}}，请确保指定“消息”、“标题”、“子标题”和“附件 URL”字段。

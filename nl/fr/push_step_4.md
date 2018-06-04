@@ -44,18 +44,19 @@ Vous pouvez personnaliser les paramètres de type {{site.data.keyword.mobilepush
 
 Les options de personnalisation facultatives suivantes sont prises en charge :
 
-- Clé de réduction : des clés de réduction sont attachées aux notifications. Si plusieurs notifications arrivent séquentiellement avec la même touche de réduction quand l'appareil est hors ligne, elles sont réduites. Quand un appareil passe en ligne, il reçoit des notifications du serveur FCM/GCM et n'affiche que la dernière notification portant la même touche de réduction. Si aucune touche de réduction n'est définie, les nouveaux et les anciens messages sont stockés pour leur distribution future.
+- Clé de réduction : des clés de réduction sont attachées aux notifications. Si plusieurs notifications arrivent séquentiellement avec la même clé de réduction quand l'appareil est hors ligne, elles sont réduites. Quand un appareil passe en ligne, il reçoit des notifications du serveur FCM et n'affiche que la dernière notification portant la même clé de réduction. Si aucune clé de réduction n'est définie, les nouveaux et les anciens messages sont stockés pour une distribution future.
 - Son : indique le clip audio à exécuter à réception d'une notification. Prend en charge le fichier par défaut ou utilise le nom de la ressource audio intégré dans l'application.
 - Icône : spécifie le nom de l'icône à afficher pour la notification. Assurez-vous de bien avoir placé l'icône dans le dossier `res/drawable`, avec l'application client.
 - Priorité : spécifie les options d'affectation de la priorité de distribution aux messages. 
 	- Une priorité `élevée` ou `maximale` débouche sur une notification avec alerte.
 	- Une priorité `faible` ou `par défaut` n'ouvre pas de connexions réseau sur un appareil en sommeil. 
+	- Une priorité `min` sera une notification silencieuse.
 - Visibilité : vous pouvez choisir de définir l'option de visibilité de notification sur `public` ou `privé`. 
 	- L'option `privé` limite l'affichage public ; vous pouvez choisir de l'activer si votre appareil est sécurisé avec un code ou un numéro confidentiel et que le paramètre de notification sélectionné permet de masquer le contenu sensible de la notification. Quand la visibilité est configurée sur `privé`, une zone d'occultation doit être mentionnée. Seul le contenu spécifié dans cette zone apparaîtra sur un écran verrouillé sécurisé sur l'appareil. 
 	- L'option `public` permet une lecture libre des notifications.
-- Durée de vie : cette valeur est définie en secondes. Si ce paramètre n'est pas spécifié, le serveur FCM/GCM stocke le message pendant quatre semaines et tente de le distribuer. La validité expire après quatre semaines. La plage des valeurs possibles va de 0 à 2419200 secondes.
+- Durée de vie : cette valeur est définie en secondes. Si ce paramètre n'est pas spécifié, le serveur FCM stocke le message pendant quatre semaines et tente de le distribuer. La validité expire après quatre semaines. La plage des valeurs possibles va de 0 à 2419200 secondes.
 - Délai si inactif : vous pouvez lui attribuer l'une des valeurs suivantes :
-	- `True` indique au serveur FCM/GCM de ne pas remettre la notification si l'appareil est en veille. 
+	- `True` indique au serveur FCM de ne pas remettre la notification si l'appareil est en veille. 
 	- `False` indique de remettre la notification même si l'appareil est en veille.
 - Sync : quand cette option est définie à `true`, les notifications figurant sur tous vos appareils enregistrés sont synchronisées. Si l'utilisateur identifié par un nom d'utilisateur qui lui est propre dispose de plusieurs appareils avec la même application installée, la lecture de la notification sur un appareil garantit une suppression des notifications sur les autres appareils. Vous devez vérifier que vous êtes enregistré auprès du service {{site.data.keyword.mobilepushshort}} avec le bon ID utilisateur pour que cette option fonctionne.
 - Contenu supplémentaire : spécifie les valeurs de contenu personnalisées pour vos notifications.

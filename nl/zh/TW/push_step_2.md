@@ -29,7 +29,7 @@ copyright:
 1. 開啟 IBM Cloud 型錄，然後按一下您已建立的 {{site.data.keyword.mobilepushfull}} 服務實例。 
 2. 按一下**管理** > **配置**。 
 3. 選擇下列一個選項： 
-	- 若為 Android：選取**行動**，然後使用「寄件者 ID」/「專案號碼」和「API 金鑰」更新「GCM/FCM 推送認證」標籤。 
+	- 若為 Android：選取**行動**，然後使用「寄件者 ID」/「專案號碼」和「API 金鑰」更新「FCM 推送認證」標籤。 
 	- 若為 Google Chrome Apps & Extensions：選取 **Web**，然後使用「寄件者 ID」/「專案號碼」和「API 金鑰」更新 Chrome Apps and Extensions 標籤。 
 4. 按一下**儲存**。Push Notifications 服務現在已完成配置。
 
@@ -40,7 +40,7 @@ copyright:
 {: #push_step_2_b}
 
 
-Cordova 是一個平台，可使用 JavaScript、CSS 及 HTML 來建置混合式應用程式。{{site.data.keyword.mobilepushshort}} 服務支援開發 Cordova 型 iOS 及 Android 應用程式。
+Cordova 是一個平台，可使用 JavaScript、CSS 及 HTML 來建置混合式應用程式。{{site.data.keyword.mobilepushshort}} Service 支援開發 Cordova 型 iOS 及 Android 應用程式。
 
 若要啟用 Cordova 應用程式來接收傳送至您裝置的推送通知，請完成 [Push Notifications Cordova 外掛程式 Push SDK](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-cordova-plugin-push/tree/Doc#ios-app)。
 
@@ -54,18 +54,19 @@ Cordova 是一個平台，可使用 JavaScript、CSS 及 HTML 來建置混合式
 
 **附註**：`.cer` 檔案位於您的金鑰鏈存取之後，請將它匯出至您的電腦，以建立 `.p12` 憑證。
 
-如需有關使用 APNs 的相關資訊，請參閱 [iOS Developer Library: Local and Push Notification Programming Guide ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://developer.apple.com/library/ios/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/Chapters/ProvisioningDevelopment.html#//apple_ref/doc/uid/TP40008194-CH104-SW4){: new_window}。
+如需有關使用 APNs 的相關資訊，請參閱 [iOS Developer Library: Local and Push Notification Programming Guide ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html#//apple_ref/doc/uid/TP40008194-CH8-SW1){: new_window}。
 
 若要在 Push Notification 服務主控台上設定 APNs，請完成以下步驟：
 
 1. 在 Push Notification 服務主控台上，選取**配置**。
-2. 選擇**行動**選項，以更新 **APNs Push 認證**表單中的資訊。
+2. 選擇 **Mobile** 選項，以更新 **APNs Push 認證**表單中的資訊。
 3. 選擇下列一個選項：
 	- 對於**行動**選項
 		1. 適當地選取**沙盤推演**（開發）或**正式作業**（配送），然後上傳您建立的 `p.12` 憑證。
 		  ![設定 Push Notifications 主控台](images/wizard.jpg)
 
 		1. 在**密碼**欄位中，輸入與 `.p12` 憑證檔案相關聯的密碼，然後按一下**儲存**。
+
 	- 對於 **Web** 選項
 		- 在 Safari Push 區段中，使用必要的資訊更新表單。 
 		- **網站名稱**：這是您在通知中心提供的名稱。
@@ -86,6 +87,6 @@ Cordova 是一個平台，可使用 JavaScript、CSS 及 HTML 來建置混合式
 1. 在 Push Notifications 主控台上，選取**配置**。
 2. 選取 Web 標籤。
 	![WebPush 配置](images/webpush_configure.jpg)
-3. 配置 FCM/GCM API 金鑰，以及將登錄以接收推送通知的網站 URL。
+3. 配置 FCM API 金鑰，以及將登錄以接收推送通知的網站 URL。
 4. 按一下**儲存**。
 5. 設定服務之後，您需要[設定推送服務用戶端 SDK](push_step_3.html)。

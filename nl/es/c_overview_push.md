@@ -20,7 +20,7 @@ copyright:
 IBM {{site.data.keyword.mobilepushshort}} es un servicio que puede utilizar para enviar notificaciones a dispositivos móviles y navegadores. Las notificaciones se pueden destinar a todos los usuarios de la aplicación o a un conjunto específico de usuarios y dispositivos mediante etiquetas. Para cada mensaje que se envía al servicio, los usuarios de destino reciben una notificación.
 
 
-Puede utilizar el servicio {{site.data.keyword.mobilepushshort}} como parte del contenedor modelo de iniciador de servicios MobileFirst o bien como [servicios dedicados](/docs/dedicated/index.html) de IBM Cloud.  También puede utilizar un SDK (kit de desarrollo de software) y [API REST ![icono de enlace externo](../../icons/launch-glyph.svg "icono de enlace externo")](https://mobile.{DomainName}/imfpush/){: new_window} para desarrollar más las aplicaciones de cliente.
+Puede utilizar el servicio {{site.data.keyword.mobilepushshort}} como parte del contenedor modelo de iniciador de servicios MobileFirst o bien como [servicios dedicados](/docs/dedicated/index.html) de IBM Cloud.  También puede utilizar un SDK (kit de desarrollo de software) y [API REST ![icono de enlace externo](../../icons/launch-glyph.svg "icono de enlace externo")](https://imfpush.{DomainName}/imfpush/){: new_window} para desarrollar más las aplicaciones de cliente.
 
 
 El servicio {{site.data.keyword.mobilepushshort}} también se habilita para [OpenWhisk](/docs/openwhisk/index.html). OpenWhisk es un servicio de cálculo distribuido y controlado por sucesos que también se conoce como computación sin servidor. Gracias a esto, los desarrolladores pueden centrarse en escribir la lógica de aplicación y crear acciones ejecutadas bajo demanda.
@@ -57,12 +57,12 @@ El servicio {{site.data.keyword.mobilepushshort}} gestiona toda la información 
 ### Pasarelas
 {: #gateways}
 
-Los servicios de nube específicos de plataformas para las notificaciones push, como FCM/GCM o Apple Push Notification Service (APNs), que utilizan el servicio IBM {{site.data.keyword.mobilepushshort}} para asignar notificaciones a las aplicaciones móviles y de navegador.
+Los servicios de nube específicos de plataformas para las notificaciones push, como FCM o Apple Push Notification Service (APNs), que utilizan el servicio IBM {{site.data.keyword.mobilepushshort}} para asignar notificaciones a las aplicaciones móviles y de navegador.
 
 ## Tamaño de mensaje
 {: #push-message-size}
 
-El tamaño de carga útil de los mensajes de {{site.data.keyword.mobilepushshort}} depende de las restricciones diseñadas por las pasarelas (FCM/GCM, APNs) y las plataformas cliente. 
+El tamaño de carga útil de los mensajes de {{site.data.keyword.mobilepushshort}} depende de las restricciones diseñadas por las pasarelas (FCM, APNs) y las plataformas cliente. 
 
 - Para iOS y Safari: Para iOS 8 y versiones posteriores, el tamaño máximo permitido es de 4 kilobytes. Los APNs no envían las notificaciones que superan este límite.
 - Para Android, el navegador Firefox, el navegador Chrome y apps y extensiones de Chrome: existe una limitación de 4 kilobytes como tamaño máximo de carga útil del mensaje permitido.

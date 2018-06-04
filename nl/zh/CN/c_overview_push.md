@@ -20,7 +20,7 @@ copyright:
 IBM {{site.data.keyword.mobilepushshort}} 是一项服务，您可以使用该服务将通知发送到移动设备和浏览器。通知可以针对所有应用程序用户，也可以针对一组使用标记的特定用户和设备。对于您提交给该服务的每条消息，目标受众都会收到一个通知。
 
 
-可以选择将 {{site.data.keyword.mobilepushshort}} 服务用作 MobileFirst Services Starter 样板的一部分或用作 IBM Cloud [专用服务](/docs/dedicated/index.html)。您还可以使用 SDK（软件开发包）和 [REST API ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://mobile.{DomainName}/imfpush/){: new_window} 来进一步开发您的客户机应用程序。
+可以选择将 {{site.data.keyword.mobilepushshort}} 服务用作 MobileFirst Services Starter 样板的一部分或用作 IBM Cloud [专用服务](/docs/dedicated/index.html)。您还可以使用 SDK（软件开发包）和 [REST API ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://imfpush.{DomainName}/imfpush/){: new_window} 来进一步开发您的客户机应用程序。
 
 
 {{site.data.keyword.mobilepushshort}} 服务还支持 [OpenWhisk](/docs/openwhisk/index.html)。OpenWhisk 是一种分布式事件驱动型计算服务，也称为无服务器计算。这将支持开发者专注于编写应用程序逻辑，以及创建按需执行的操作。
@@ -57,12 +57,12 @@ IBM {{site.data.keyword.mobilepushshort}} 是一项服务，您可以使用该�
 ### 网关
 {: #gateways}
 
-平台特定的 Push Notifications 云服务（例如，IBM {{site.data.keyword.mobilepushshort}} 服务使用的 FCM/GCM 或 Apple 推送通知服务 (APNs)）将通知分派给移动和浏览器应用程序。
+特定于平台的 Push Notifications 云服务（例如，IBM {{site.data.keyword.mobilepushshort}} 服务使用的 FCM 或 Apple 推送通知服务 (APNs)）将通知分派给移动和浏览器应用程序。
 
 ## 消息大小
 {: #push-message-size}
 
-{{site.data.keyword.mobilepushshort}} 消息有效内容大小取决于网关（FCM/GCM、APNs）和客户机平台规定的约束。 
+{{site.data.keyword.mobilepushshort}} 消息有效内容大小取决于网关（FCM、APNs）和客户机平台规定的约束。 
 
 - 对于 iOS 和 Safari：对于 iOS 8 和更高版本，允许的最大大小为 4 KB。APNs 不会发送超过此限制的通知。
 - 对于 Android、Firefox 浏览器、Chrome 浏览器和 Chrome Apps & Extensions：允许的消息有效内容最大大小限制为 4 KB。
