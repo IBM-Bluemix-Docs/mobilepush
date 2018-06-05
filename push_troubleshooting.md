@@ -60,6 +60,32 @@ This topic guides you in identifying and resolving the likely error scenarios yo
 **User response**: It is recommended that you try connecting to the website using `https`, from the browser.
 
 
+### The HyperText Transfer Protocol (HTTP) 301 Moved Permanently redirect status while accessing the service
+{: #http_301_redirect}
+
+**Explanation**: This error might occur if you are accessing the service using the `http` protocol. Push Notification service requires the website to be accessed with the `https` protocol.
+
+**User response**: We recommend you to access the service and the Swagger API through the `https` protocol, rather than `http`.
+
+
+### You don't have permission to add the instance to any resource group in this account
+{: #permission_issue}
+
+**Explanation**:  IBM Push Notifications service is now a Resource Controller (RC) based service. Instances should be created using a RC. You may notice the below error if a default resource group not in your account.
+
+![Permission issue](images/RC_error.png)
+
+**User response**:  The admin must create a resource group for the user before creating an instance.
+
+
+### A POST request returns a GET request for the same call
+{: #Postman_issue}
+
+**Explanation**: If a postman receives a 301 or 302 response code for a POST request, it automatically redirects to the GET request for the same call. The Push notifications service requires the website to be accessed with the `https` protocol, rather than `http`.
+
+**User response**: It is recommended that you try connecting to the website using `https`, from the browser.
+
+
 ## Resolving web push configuration errors
 {: #troubleshooting_configuration_errors}
 

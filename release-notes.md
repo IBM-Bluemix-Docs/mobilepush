@@ -11,7 +11,7 @@ lastupdated: "2017-11-27"
 # Release notes
 The following new features and changes to the service are available. These changes do not break existing code:
 
-## 1st March 2018
+## March 2018
 
 - **Track the message delivery status**
 
@@ -20,3 +20,9 @@ The following new features and changes to the service are available. These chang
 - **Parameterize Notifications**
 
     You can parameterize and send custom notifications by creating variables and calling them in your notification templates.
+	
+## May 2018
+
+- **Resource Controller (RC) based service**
+
+    IBM Push Notifications service is now a RC based service. Service instances should be created using a Resource controller.
