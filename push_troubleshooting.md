@@ -32,7 +32,7 @@ This topic guides you in identifying and resolving the likely error scenarios yo
 ### You don't have permission to add the instance to any resource group in this account
 {: #permission_issue}
 
-**Explanation**:  IBM Push Notifications service is now a Resource Controller (RC) based service. Instances should be created using a RC. You may notice the below error if a default resource group not in your account.
+**Explanation**:  IBM Push Notifications service is now a Resource Controller (RC) based service. Instances should be created using a RC. You may notice the below error if a default resource group is not in your account.
 
 ![Permission issue](images/RC_error.png)
 
