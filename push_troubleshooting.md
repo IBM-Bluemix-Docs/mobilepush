@@ -21,14 +21,6 @@ This topic guides you in identifying and resolving the likely error scenarios yo
 {: #troubleshooting_notification_errors}
 
 
-### The HyperText Transfer Protocol (HTTP) 301 Moved Permanently redirect status while accessing the service
-{: #http_301_redirect}
-
-**Explanation**: This error might occur if you are accessing the service using the `http` protocol. Push Notification service requires the website to be accessed with the `https` protocol.
-
-**User response**: We recommend you to access the service and the Swagger API through the `https` protocol, rather than `http`.
-
-
 ### You don't have permission to add the instance to any resource group in this account
 {: #permission_issue}
 
@@ -37,6 +29,14 @@ This topic guides you in identifying and resolving the likely error scenarios yo
 ![Permission issue](images/RC_error.png)
 
 **User response**:  The admin must create a resource group for the user before creating an instance.
+
+
+### The HyperText Transfer Protocol (HTTP) 301 Moved Permanently redirect status while accessing the service
+{: #http_301_redirect}
+
+**Explanation**: This error might occur if you are accessing the service using the `http` protocol. Push Notification service requires the website to be accessed with the `https` protocol.
+
+**User response**: We recommend you to access the service and the Swagger API through the `https` protocol, rather than `http`.
 
 
 ### A POST request returns a GET request for the same call
