@@ -50,6 +50,7 @@ Push Notifications
     app_api.md	
     sample-apps.md
     install-sdk.md
+    push_activity_tracker.md
 	
     {: .topicgroup}
     Tutorials
