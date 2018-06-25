@@ -19,7 +19,7 @@ Last updated: 22 June 2018
 
 The {{site.data.keyword.cloudaccesstrailfull}} service monitors a user's interaction with the IBM Cloud services. You can search and analyze how your users and applications interact with IBM Cloud services.
 
-Your Cloud Administrators, Security and Developers can -
+Cloud Administrators, Security and Developers can -
 
 - **Gain insights into your environment to monitor and investigate security breaches**
     
@@ -38,7 +38,7 @@ Your Cloud Administrators, Security and Developers can -
     {{site.data.keyword.cloudaccesstrailshort}} automatically captures your IBM Cloud events.	
 
 
-For example, you can use the {{site.data.keyword.cloudaccesstrailshort}} activity logs to identify the following information:
+**For example**, you can use the {{site.data.keyword.cloudaccesstrailshort}} activity logs to identify the following information:
 
 - The users who made API calls to cloud services.
 - The source IP address from where the API calls were made.
@@ -103,4 +103,4 @@ The following table lists the {{site.data.keyword.cloudaccesstrailshort}} events
 </table>
 
 
-For more information about working with {{site.data.keyword.cloudaccesstrailshort}}, refer the documentation [here](https://console.bluemix.net/docs/services/cloud-activity-tracker/activity_tracker_ov.html#activity_tracker_ov){: new_window}.
+For more information about working with {{site.data.keyword.cloudaccesstrailshort}}, refer the [documentation here](https://console.bluemix.net/docs/services/cloud-activity-tracker/activity_tracker_ov.html#activity_tracker_ov){: new_window}.
