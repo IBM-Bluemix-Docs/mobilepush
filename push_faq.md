@@ -58,7 +58,7 @@ lastupdated: "2017-09-28"
 
 8. Are the notifications that are sent stored in BMS servers?
 
-	Yes, the notifications are stored for a period of seven days. It is recommended that you do not send any confidential messages as notifications.
+	Yes, the notifications are stored for a period of ninety days. It is recommended that you do not send any confidential messages as notifications.
 
 9. Can I send notification to devices in Doze mode?
 

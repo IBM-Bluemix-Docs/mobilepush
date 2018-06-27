@@ -38,7 +38,7 @@ Cloud Administrators, Security and Developers can -
     {{site.data.keyword.cloudaccesstrailshort}} automatically captures your IBM Cloud events.	
 
 
-**For example**, you can use the {{site.data.keyword.cloudaccesstrailshort}} activity logs to identify the following information:
+The {{site.data.keyword.cloudaccesstrailshort}} activity logs can be used to identify the following information:
 
 - The users who made API calls to cloud services.
 - The source IP address from where the API calls were made.
@@ -49,21 +49,12 @@ Cloud Administrators, Security and Developers can -
 {: #actions}
 
 The following table lists the {{site.data.keyword.cloudaccesstrailshort}} events for {{site.data.keyword.mobilepushshort}}
-
 <table>
   <caption>Table 1. List of actions that genererate an event</caption>
   <tr>
     <th>Action</th>
 	  <th>Description</th>
   <tr>
-  <tr>
-    <td>app.create</td>
-	  <td> Creation of an Application </td>
-  </tr>
-  <tr>
-    <td>app.delete</td>
-	  <td>Deletion of an Application</td>
-  </tr>
   <tr>
     <td>app.update</td>
 	  <td>Updates to the Application</td>
