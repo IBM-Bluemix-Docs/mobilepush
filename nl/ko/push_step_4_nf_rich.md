@@ -12,7 +12,7 @@ copyright:
 
 # 리치 미디어 알림
 {: #interactive-notifications}
-마지막 업데이트 날짜: 2017년 5월 22일
+마지막 업데이트 날짜: 2017년 7월 13일
 {: .last-updated}
 
 
@@ -25,5 +25,6 @@ iOS 10에서 리치 푸시를 받을 애플리케이션을 설정하려면 다�
 ```
 BMSPushRichPushNotificationOptions.didReceive(request, withContentHandler: contentHandler)
 ```
-	
+	{: codeblock}	
+
 푸시 콘솔에서 리치 미디어 {{site.data.keyword.mobilepushshort}}를 보내려면 메시지, 제목, 부제목 및 attachmentURL 필드를 반드시 지정하십시오.

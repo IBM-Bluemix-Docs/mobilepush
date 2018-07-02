@@ -24,7 +24,8 @@ lastupdated: "2017-05-31"
 ## 시작하기 전에
 {: #prereqs}
 
-[IBM Cloud 계정](https://console.bluemix.net/registration/), {{site.data.keyword.mobilepushshort}} 서비스의 인스턴스 및 다음과 같은 도구와 요구사항이 필요합니다. 
+[IBM Cloud 계정](https://console.bluemix.net/registration/), {{site.data.keyword.mobilepushshort}} 서비스의
+인스턴스 및 다음 도구와 요구사항이 필요합니다. 
 
   * Android API 15+
   * Android 4.0.3+
@@ -38,22 +39,22 @@ lastupdated: "2017-05-31"
 
 1. 샘플 `AndroidManifest.xml` 파일에서 패키지 이름을 복사하십시오.
 
-2. FCM 앱을 작성하고 Android 앱의 패키지 이름을 추가하십시오. 
+2. FCM 앱을 작성하고 Android 앱의 패키지 이름을 추가하십시오.
   1. [Firebase 콘솔](https://console.firebase.google.com){: new_window}에서 **프로젝트 추가**를 클릭해서
   프로젝트 이름을 제공하고 **프로젝트 작성**을 클릭하십시오.
-  2. **Android 앱에 Firebase 추가**를 클릭해서 패키지 이름을 입력하고 **앱 등록**을 클릭하십시오. **계속 > 완료**를 클릭하여 다음 두 개의 프롬프트를 건너뛸 수 있습니다.  
+  2. **Android 앱에 Firebase 추가**를 클릭해서 패키지 이름을 입력하고 **앱 등록**을 클릭하십시오. **계속 > 완료**를 클릭하여 다음 두 개의 프롬프트를 건너뛸 수 있습니다. 
 
-3. FCM 신임 정보를 {{site.data.keyword.mobilepushshort}} 인스턴스에 추가하십시오. 
+3. FCM 신임 정보를 {{site.data.keyword.mobilepushshort}} 인스턴스에 추가하십시오.
   1. Firebase 콘솔에서 **설정 > 프로젝트 설정 > 클라우드 메시징**으로 이동해서 서버 키 및 발신인 ID를 복사하십시오.
-  2. {{site.data.keyword.Bluemix_notm}} 콘솔에서 사용자의 서비스 인스턴스에 대한 대시보드를 여십시오. 
+  2. {{site.data.keyword.Bluemix_notm}} 콘솔에서 사용자의 서비스 인스턴스에 대한 대시보드를 여십시오.
   3. **관리 > 구성**을 클릭하십시오.
-  4. **GCM/FCM 푸시 신임 정보** 필드에 발신인 ID 및 서버 키를 입력하십시오. 
+  4. **GCM/FCM 푸시 신임 정보** 필드에 발신인 ID 및 서버 키를 입력하십시오.
 
 ## 2단계: Android 앱을 푸시 알림 전송에 사용
 
-1. 프로젝트 레벨 `build.gradle` 및 모듈 레벨 `build.gradle` 파일을 구성하십시오. 
+1. 프로젝트 레벨 `build.gradle` 및 모듈 레벨 `build.gradle` 파일을 구성하십시오.
 
-  * SDK 종속 항목을 프로젝트 레벨 `build.gradle` 파일에 추가하십시오. 
+  * SDK 종속 항목을 프로젝트 레벨 `build.gradle` 파일에 추가하십시오.
   
   ```
   dependencies {
@@ -68,7 +69,7 @@ lastupdated: "2017-05-31"
   ```
   {: codeblock}
 
-  * 다음 종속 항목을 모듈 레벨 `build.gradle` 파일에 추가하십시오. 
+  * 다음 종속 항목을 모듈 레벨 `build.gradle` 파일에 추가하십시오.
   
   ```
   dependencies {
@@ -78,14 +79,14 @@ lastupdated: "2017-05-31"
   ```
   {: codeblock}
   
-  * Google 플레이 서비스 종속 항목을 종속 항목 이후의 모듈 레벨 `build.gradle` 파일의 끝에 추가하십시오. 
+  * Google 플레이 서비스 종속 항목을 종속 항목 이후의 모듈 레벨 `build.gradle` 파일의 끝에 추가하십시오.
   
   ```
   apply plugin: 'com.google.gms.google-services'
   ```
   {: codeblock}
   
-  * 앱의 `AndroidManifest.xml` 파일에 다음 권한을 추가하십시오. 
+  * 앱의 `AndroidManifest.xml` 파일에 다음 권한을 추가하십시오.
   
   ```
   <uses-permission android:name="android.permission.INTERNET"/>
@@ -93,12 +94,12 @@ lastupdated: "2017-05-31"
 <uses-permission android:name="android.permission.USE_CREDENTIALS" />
 <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
-```
+  ```
   {: codeblock}
   
-  * 활동에 대한 알림 의도 설정을 추가하십시오.  
+  * 활동에 대한 알림 의도 설정을 추가하십시오. 
   
-  사용자가 알림 영역에서 수신한 알림을 클릭할 때 이 설정을 통해 앱이 시작됩니다. `<yourAndroidPackageName>`을 사용자의 앱에 사용된 앱 패키지 이름으로 대체하십시오. 
+  사용자가 알림 영역에서 수신한 알림을 클릭할 때 이 설정을 통해 앱이 시작됩니다. `<yourAndroidPackageName>`을 사용자의 앱에 사용된 앱 패키지 이름으로 대체하십시오.
   
   ```
   <intent-filter>
@@ -113,7 +114,7 @@ lastupdated: "2017-05-31"
   ```
   <service android:name="com.ibm.mobilefirstplatform.clientsdk.android.push.api.MFPPushIntentService"
     	android:exported="true" >
-    	<intent-filter>
+  <intent-filter>
      <action android:name="com.google.firebase.MESSAGING_EVENT" />
   </intent-filter>
   </service>
@@ -130,7 +131,7 @@ lastupdated: "2017-05-31"
 
 3. 코어 SDK 및 푸시 SDK를 초기화하십시오. 
 
-초기화 코드를 배치하는 공통 위치는 Android 앱에서 기본 활동의 onCreate() 메소드입니다. 
+초기화 코드를 배치하는 공통 위치는 Android 앱에서 기본 활동의 onCreate() 메소드입니다.
 
 ```
 // Initialize the SDK
@@ -153,18 +154,18 @@ appGUID는 푸시 앱 GUID 값이며 clientSecret은 푸시 클라이언트 시�
 
 1. 앱을 실행하십시오.
 
-2. MFPPush.register() API를 사용하여 사용자 기반 알림을 사용할 수 있도록 디바이스를 등록하십시오. 
+2. MFPPush.register() API를 사용하여 사용자 기반 알림을 사용할 수 있도록 디바이스를 등록하십시오.
 
 ```
 //Register the device to Push Notifications service instance
  push.registerDeviceWithUserId("userId",new MFPPushResponseListener<String>() {
  @Override
 		public void onSuccess(String response) {
-		//Handle successful device registration here
+ //Handle successful device registration here
  }
  @Override
-	    public void onFailure(MFPPushException ex) {
-	    //Handle failure in device registration here
+    public void onFailure(MFPPushException ex) {
+ //Handle failure in device registration here
  }
  });
  ```
@@ -176,8 +177,8 @@ appGUID는 푸시 앱 GUID 값이며 clientSecret은 푸시 클라이언트 시�
  
  ## 4단계: 기본 푸시 알림 전송
  
- 1. {{site.data.keyword.Bluemix_notm}} 콘솔에서 사용자의 서비스 인스턴스에 대한 대시보드로 이동하십시오. 
+ 1. {{site.data.keyword.Bluemix_notm}} 콘솔에서 사용자의 서비스 인스턴스에 대한 대시보드로 이동하십시오.
  2. **관리 > 알림 전송**을 클릭하십시오.
  3. **받는 사람** 메뉴에서 Android 디바이스를 선택하십시오.
- 4. 메시지를 입력하고 **전송**을 클릭하십시오.  
+ 4. 메시지를 입력하고 **전송**을 클릭하십시오. 
  
