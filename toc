@@ -32,6 +32,12 @@ Push Notifications
         push_message_status.md
         push_template_message.md
         push_webhook.md
+	
+    {: .topicgroup}
+    Tutorials
+        [Swift App with Push and Analytics](https://console.bluemix.net/docs/tutorials/ios-mobile-push-analytics.html#ios-mobile-application-with-push-and-analytics)
+        [Android App with Push and Analytics](https://console.bluemix.net/docs/tutorials/android-mobile-push-analytics.html#android-native-mobile-application-with-push-and-analytics)	
+        [Hybrid App with Push and Analytics](https://console.bluemix.net/docs/tutorials/hybrid-mobile-push-analytics.html#hybrid-mobile-application-with-push-and-analytics)			
     {: .navgroup-end}
 
     {: .navgroup id="help"}
@@ -47,16 +53,13 @@ Push Notifications
 	
     {: .navgroup id="reference"}
     release-notes.md
-    app_api.md	
     sample-apps.md
-    install-sdk.md
     push_activity_tracker.md
 	
     {: .topicgroup}
-    Tutorials
-        [Swift App with Push and Analytics](https://console.bluemix.net/docs/tutorials/ios-mobile-push-analytics.html#ios-mobile-application-with-push-and-analytics)
-        [Android App with Push and Analytics](https://console.bluemix.net/docs/tutorials/android-mobile-push-analytics.html#android-native-mobile-application-with-push-and-analytics)	
-        [Hybrid App with Push and Analytics](https://console.bluemix.net/docs/tutorials/hybrid-mobile-push-analytics.html#hybrid-mobile-application-with-push-and-analytics)		
+    APIs and SDKs
+        app_api.md
+        install-sdk.md	
     {: .navgroup-end}
 
     
