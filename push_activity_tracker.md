@@ -56,39 +56,39 @@ The following table lists the {{site.data.keyword.cloudaccesstrailshort}} events
 	  <th>Description</th>
   <tr>
   <tr>
-    <td>app.update</td>
+    <td>imfpush.app.update</td>
 	  <td>Updates to the Application</td>
   </tr>
   <tr>
-    <td>app.conf.delete</td>
+    <td>imfpush.app-conf.delete</td>
 	  <td>Application configuration deletion</td>
   </tr>
   <tr>
-    <td>app.conf.update</td>
+    <td>imfpush.app-conf.update</td>
 	  <td>Application configuration update</td>
   </tr>
   <tr>
-    <td>tag.create</td>
+    <td>imfpush.app-tag.create</td>
 	  <td>Tag creation</td>
   </tr>
   <tr>
-    <td>tag.delete</td>
+    <td>imfpush.app-tag.delete</td>
 	  <td>Tag deletion</td>
   </tr>
   <tr>
-    <td>tag.update</td>
+    <td>imfpush.app-tag.update</td>
 	  <td>Tag update</td>
   </tr>  
   <tr>
-    <td>webhook.create</td>
+    <td>imfpush.app-webhook.create</td>
 	  <td>Webhook creation</td>
   </tr> 
   <tr>
-    <td>webhook.delete</td>
+    <td>imfpush.app-webhook.delete</td>
 	  <td>Webhook deletion</td>
   </tr>   
   <tr>
-    <td>webhook.update</td>
+    <td>imfpush.app-webhook.update</td>
 	  <td>Webhook update</td>
   </tr>   
 </table>

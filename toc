@@ -37,7 +37,9 @@ Push Notifications
     Tutorials
         [Swift App with Push and Analytics](https://console.bluemix.net/docs/tutorials/ios-mobile-push-analytics.html#ios-mobile-application-with-push-and-analytics)
         [Android App with Push and Analytics](https://console.bluemix.net/docs/tutorials/android-mobile-push-analytics.html#android-native-mobile-application-with-push-and-analytics)	
-        [Hybrid App with Push and Analytics](https://console.bluemix.net/docs/tutorials/hybrid-mobile-push-analytics.html#hybrid-mobile-application-with-push-and-analytics)			
+        [Hybrid App with Push and Analytics](https://console.bluemix.net/docs/tutorials/hybrid-mobile-push-analytics.html#hybrid-mobile-application-with-push-and-analytics)	
+
+    push_iam.md		
     {: .navgroup-end}
 
     {: .navgroup id="help"}
