@@ -95,3 +95,6 @@ The following table lists the {{site.data.keyword.cloudaccesstrailshort}} events
 
 
 For more information about working with {{site.data.keyword.cloudaccesstrailshort}}, refer the [documentation here](https://console.bluemix.net/docs/services/cloud-activity-tracker/activity_tracker_ov.html#activity_tracker_ov){: new_window}.
+
+**Note:**
+ - Currently, the Activity Tracker Events are available only on `IBM Cloud - US South Region`.
