@@ -25,7 +25,6 @@ lastupdated: "2017-09-28"
 
 	Ensure that you obtain a valid Server API Key and Sender ID to continue. See [Obtain your notification provider credentials](push_step_1.html).
 
-
 2. Why do I get "Notification is not working for WEB_Chrome.", when attempting to initialize the Web Push SDK?
 
 	You might have changed your FCM credentials for Web push SDK and the message delivery might fail for the Chrome browser. Ensure that you invoke "bmsPush.unRegisterDevice" to avoid failure.
@@ -111,9 +110,13 @@ lastupdated: "2017-09-28"
 
 	This feature is not supported.
 
-19.  Can I create a segment for new app user or users that have not accessed the mobile app for sometime?
+19. Can I create a segment for new app user or users that have not accessed the mobile app for sometime?
 
 	This should be handled in the context of application development.
+	
+20. Can I register/update mobile devices at bulk using the REST APIs?
+
+	As per the design, registering/updating a device is called from the mobile applications using SDK. Bulk registrations/updates through REST APIs is not supported.  If many device registrations / updates are called simultaneously using REST APIs, it may take a long time or may fail.	
 
 
 	
