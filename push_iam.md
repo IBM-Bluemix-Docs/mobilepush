@@ -103,130 +103,31 @@ Every user who accesses the {{site.data.keyword.mobilepushshort}} service in you
 
 The actions are customized and defined by the {{site.data.keyword.Bluemix_notm}} service as operations that are allowed to be performed in the service. The actions are then mapped to IAM user roles. Some of the actions taken you can track with the {{site.data.keyword.cloudaccesstrailshort}} service. In the following table, the actions and required permissions for {{site.data.keyword.mobilepushshort}} are mapped.
 
-<table>
-  <tr>
-    <th>Action</th>
-    <th>Explanation</th>
-    <th>Required role</th>
-  </tr>
-  <tr>
-    <td><code> GET /imfpush/v1/apps/{applicationId}/settings/* </code></td>
-    <td>Get app settings</td>
-    <td>Manager, Writer, Reader</td>
-  </tr>
-  <tr>
-    <td><code>DELETE /imfpush/v1/apps/{applicationId}/settings/* </code></td>
-    <td>Delete app settings</td>
-    <td>Manager</td>
-  </tr>
-  <tr>
-    <td><code>PUT /imfpush/v1/apps/{applicationId}/settings/* </code></td>
-    <td>Update app settings</td>
-    <td>Manager</td>
-  </tr>
-  <tr>
-    <td><code>GET /imfpush/v1/apps/{applicationId}/devices/* </code></td>
-    <td>Get devices </td>
-    <td>Manager, Reader, Writer</td>
-  </tr>
-  <tr>
-    <td><code>POST /imfpush/v1/apps/{applicationId}/devices </code></td>
-    <td>Register device</td>
-    <td>Manager, Writer</td>
-  </tr>
-  <tr>
-    <td><code>PUT /imfpush/v1/apps/{applicationId}/devices/{deviceId} </code></td>
-    <td>Update device</td>
-    <td>Manager, Writer</td>
-  </tr>
-  <tr>
-    <td><code>DELETE /imfpush/v1/apps/{applicationId}/devices/{deviceId} </code></td>
-    <td>Delete device</td>
-    <td>Manager</td>
-  </tr>
-  <tr>
-    <td><code>POST /imfpush/v1/apps/{applicationId}/messages </code></td>
-    <td>Send messages</td>
-    <td>Manager, Writer</td>
-  </tr>
-  <tr>
-    <td><code>POST /imfpush/v1/apps/{applicationId}/messages/bulk </code></td>
-    <td>Send bulk messages</td>
-    <td>Manager, Writer</td>
-  </tr>
-  <tr>
-    <td><code>DELETE /imfpush/v1/apps/{applicationId}/messages/{messageId} </code></td>
-    <td>Delete a message</td>
-    <td>Manager</td>
-  </tr>
-  <tr>
-    <td><code>GET /imfpush/v1/apps/{applicationId}/messages/* </code></td>
-    <td>Get messages</td>
-    <td>Manager, Reader, Writer</td>
-  </tr>
-  <tr>
-    <td><code>PUT /imfpush/v1/apps/{applicationId}/messages/{messageId}/deliverystatus </code></td>
-    <td>Update message delivery status</td>
-    <td>Manager, Writer</td>
-  </tr>  
-  <tr>
-    <td><code>POST /imfpush/v1/apps/{applicationId}/tags </code></td>
-    <td>Create tags</td>
-    <td>Manager, Writer</td>
-  </tr>  
-  <tr>
-    <td><code>PUT /imfpush/v1/apps/{applicationId}/tags/{tagName} </code></td>
-    <td>Update tag</td>
-    <td>Manager, Writer</td>
-  </tr>  
-  <tr>
-    <td><code>DELETE /imfpush/v1/apps/{applicationId}/tags/{tagName} </code></td>
-    <td>Delete tag</td>
-    <td>Manager</td>
-  </tr>  
-  <tr>
-    <td><code>GET /imfpush/v1/apps/{applicationId}/tags/* </code></td>
-    <td>Get tags</td>
-    <td>Manager, Reader, Writer</td>
-  </tr>  
-  <tr>
-    <td><code>POST /imfpush/v1/apps/{applicationId}/subscriptions </code></td>
-    <td>Create subscriptions</td>
-    <td>Manager, Writer</td>
-  </tr>  
-  <tr>
-    <td><code>DELETE /imfpush/v1/apps/{applicationId}/subscriptions </code></td>
-    <td>Delete subscriptions</td>
-    <td>Manager</td>
-  </tr>  
-  <tr>
-    <td><code>GET /imfpush/v1/apps/{applicationId}/subscriptions </code></td>
-    <td>Get Subscriptions</td>
-    <td>Manager, Reader, Writer</td>
-  </tr>    
-  <tr>
-    <td><code>POST /imfpush/v1/apps/{applicationId}/webhooks </code></td>
-    <td>Create webhook</td>
-    <td>Manager, Writer</td>
-  </tr>  
-  <tr>
-    <td><code>PUT /imfpush/v1/apps/{applicationId}/webhooks/{webhookName} </code></td>
-    <td>Update webhook</td>
-    <td>Manager, Writer</td>
-  </tr>  
-  <tr>
-    <td><code> DELETE /imfpush/v1/apps/{applicationId}/webhooks/{webhookName} </code></td>
-    <td>Delete webhook</td>
-    <td>Manager</td>
-  </tr>  
-  <tr>
-    <td><code>GET /imfpush/v1/apps/{applicationId}/webhooks/* </code></td>
-    <td>Get webhook</td>
-    <td>Manager, Reader, Writer</td>
-  </tr>    
-</table>
+|Action |Explanation |Required role |
+|----------------------------------------------------|------------------|------------------------------|
+|`GET /imfpush/v1/apps/{applicationId}/settings/*` |Get app settings |Manager, Writer, Reader|
+|`DELETE /imfpush/v1/apps/{applicationId}/settings/* |Delete app settings |Manager|
+|`PUT /imfpush/v1/apps/{applicationId}/settings/*` |Update app settings |Manager|
+|`GET /imfpush/v1/apps/{applicationId}/devices/* ` |Get devices |Manager, Writer, Reader|
+|`POST /imfpush/v1/apps/{applicationId}/devices` |Register device |Manager, Writer|
+|`PUT /imfpush/v1/apps/{applicationId}/devices/{deviceId}` |Update device |Manager, Writer|
+|`DELETE /imfpush/v1/apps/{applicationId}/devices/{deviceId}` |Delete device |Manager|
+|`POST /imfpush/v1/apps/{applicationId}/messages` |Send messages |Manager, Writer|
+|`POST /imfpush/v1/apps/{applicationId}/messages/bulk` |Send bulk messages |Manager, Writer|
+|`DELETE /imfpush/v1/apps/{applicationId}/messages/{messageId}` |Delete a message |Manager|
+|`GET /imfpush/v1/apps/{applicationId}/messages/*` |Get messages |Manager, Reader, Writer|
+|`PUT /imfpush/v1/apps/{applicationId}/messages/{messageId}/deliverystatus` |Update message delivery status|Manager, Writer|
+|`POST /imfpush/v1/apps/{applicationId}/tags` |Create tags |Manager, Writer|
+|`PUT /imfpush/v1/apps/{applicationId}/tags/{tagName}` |Update tag   |Manager, Writer|
+|`DELETE /imfpush/v1/apps/{applicationId}/tags/{tagName}` |Delete tag   |Manager|
+|`GET /imfpush/v1/apps/{applicationId}/tags/*` |Get tags |Manager, Reader, Writer|
+|`POST /imfpush/v1/apps/{applicationId}/subscriptions` |Create subscriptions |Manager, Writer|
+|`DELETE /imfpush/v1/apps/{applicationId}/subscriptions` |Delete subscriptions |Manager|
+|`GET /imfpush/v1/apps/{applicationId}/subscriptions` |Get Subscriptions |Manager, Reader, Writer|
+|`POST /imfpush/v1/apps/{applicationId}/webhooks` |Create webhook |Manager, Writer|
+|`PUT /imfpush/v1/apps/{applicationId}/webhooks/{webhookName}` |Update webhook |Manager, Writer|
+|`DELETE /imfpush/v1/apps/{applicationId}/webhooks/{webhookName}` |Delete webhook |Manager|
+|`GET /imfpush/v1/apps/{applicationId}/webhooks/*` |Get webhook |Manager, Reader, Writer|-|
 
 
-
-
-
+**Note:** The App secret will not be generated for the new instances, you should use the [API key instead](/docs/iam/login_fedid.html).
