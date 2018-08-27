@@ -31,7 +31,7 @@ Webhooks are user-defined callbacks that are triggered by an event, such as regi
 **Note**: Notification dispatches are done in batches. A message dispatch can have multiple webhook events, that might include both failures and success. 
 The webhook events would have the same messageID as that of the dispatched message. 
 
-For more information on webhooks, see the [IBM Push Notifications REST API ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.bluemix.net/apidocs/imfpush){: new_window}.
+For more information on webhooks, see the [IBM Push Notifications REST API ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.bluemix.net/apidocs/push-notifications){: new_window}.
 
 ## Receiving alerts on webhook events
 {: #webhook_alert_event}

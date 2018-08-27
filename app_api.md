@@ -10,7 +10,7 @@ lastupdated: "12 February 2018"
 
 #APIs for Push Notification
 
- - API [Documentation](https://console.bluemix.net/apidocs/imfpush)
+ - API [Documentation](https://console.bluemix.net/apidocs/push-notifications)
  - API Reference for [iOS](http://ibm-bluemix-mobile-services.github.io/API-docs/client-SDK/BMSPush/Swift/index.html)
  - API Reference for [Android](https://www.javadoc.io/doc/com.ibm.mobilefirstplatform.clientsdk.android/push/3.6.1)
  - [REST API](https://imfpush.{DomainName}/imfpush/) 
