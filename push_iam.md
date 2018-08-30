@@ -103,7 +103,7 @@ Every user who accesses the {{site.data.keyword.mobilepushshort}} service in you
 
 The actions are customized and defined by the {{site.data.keyword.Bluemix_notm}} service as operations that are allowed to be performed in the service. The actions are then mapped to IAM user roles. Some of the actions taken you can track with the {{site.data.keyword.cloudaccesstrailshort}} service. In the following table, the actions and required permissions for {{site.data.keyword.mobilepushshort}} are mapped.
 
-**Note:** The App secret is not be generated for the new instances as the {{site.data.keyword.mobilepushshort}} service has adopted IAM, you must use the [API keys instead](/docs/iam/apikeys.html).
+**Note:** As the {{site.data.keyword.mobilepushshort}} service has adopted IAM, the App secret will not be generated for the new instances. You must use the [API keys instead](/docs/iam/apikeys.html).
 
 |Action |Explanation |Required role |
 |----------------------------------------------------|------------------|------------------------------|
