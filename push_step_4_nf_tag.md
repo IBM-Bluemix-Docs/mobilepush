@@ -90,9 +90,9 @@ Tag-based notifications are messages targeted to all devices that are subscribed
 
 Create tags on the **Tag** screen. For information about how to create tags, see [Creating tags](t_manage_tags.html).
 
-1. From the **Push Notification** console, click **Send Notifications**.
+1. From the **Push Notification** console, click **Messages**.
 1. Select the **Device by Tag** option in the **Send To** drop-down list.
 1. Search for the tags that want to use and select them.
-![Notifications Screen](images/tag_notification.jpg)
+![Notifications Screen](images/tag_notification_new2.jpg)
 1. In the **Message Text** field, enter text that would be sent as a notification to the subscribed audience.
 1. Click **Send**.

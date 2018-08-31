@@ -20,10 +20,11 @@ After you have developed your applications, you can send basic push notification
 
 To send basic push notifications, complete the following steps:
 
-1. Select **Send Notifications**, and compose a message by choosing a **Send to** option. The supported options are **Device by Tag**, **Device Id**, **User Id**, **Android devices**, **iOS devices**, **Web Notifications**, and **All Devices**.
+1. Select **Messages**, and compose a message by choosing a **Send to** option. The supported options are **Device by Tag**, **Device Id**, **User Id**, **Android devices**, **iOS devices**, **Web Notifications**, **Chrome Apps and Extensions**, **Chrome Browser**, **Firefox**, **Safari** and **All Devices**.
+
 **Note**: When you select the **All Devices** option, all devices subscribed to {{site.data.keyword.mobilepushshort}} will receive notifications.
 	
-	![Notifications screen](images/tag_notification.jpg)
+	![Notifications screen](images/tag_notification_new.jpg)
 
 2. In the **Message** field, compose your message. Choose to configure the optional settings as required.
 3. Click **Send**.
