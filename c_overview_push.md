@@ -23,7 +23,7 @@ IBM {{site.data.keyword.mobilepushshort}} is a service with which you can use to
 You can choose to use the {{site.data.keyword.mobilepushshort}} service either as a part of MobileFirst Services Starter Boilerplate or as IBM Cloud [Dedicated Services](/docs/dedicated/index.html).  You can also use an SDK (software development kit) and [REST APIs ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://imfpush.{DomainName}/imfpush/){: new_window} to further develop your client applications.
 
 
-The {{site.data.keyword.mobilepushshort}} service is also enabled for [OpenWhisk](/docs/openwhisk/index.html). OpenWhisk is a distributed, event-driven compute service that is alternatively known as serverless computing. This allows developers to focus on writing application logic, and create actions that are executed on demand.
+The {{site.data.keyword.mobilepushshort}} service is also enabled for [IBM Cloud Functions](/docs/openwhisk/index.html). IBM Cloud Functions is a distributed, event-driven compute service that is alternatively known as serverless computing. This allows developers to focus on writing application logic, and create actions that are executed on demand.
 
 
 ## Service processes
