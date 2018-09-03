@@ -18,10 +18,11 @@ Last updated: 13 July 2017
 {: .last-updated}
 
 
-The {{site.data.keyword.mobilepushshort}} APIs are secured by two types of secrets:
+The {{site.data.keyword.mobilepushshort}} APIs are secured by -
 
 - **appSecret**: The `appSecret` protects APIs that are typically invoked by back end applications - such as the API to send {{site.data.keyword.mobilepushshort}} and the API to configure settings.
 - **clientSecret**:  The `clientSecret` protects APIs that are typically invoked by mobile client applications. There is only one API related to registration of a device with an associated UserId that requires this `clientSecret`. None of the other APIs invoked from mobile clients require the `clientSecret`. 
+- **API Keys**: Application programming interface keys (API keys) are available through Cloud IAM for you to use to authenticate by using API or CLI as a user or service ID. These API keys are provided through Cloud IAM and therefore cannot be used generally to authenticate with IBMid outside of IBM Cloud. 
 
 The `appSecret` and `clientSecret` are allocated to every service instance at the time of binding an application with {{site.data.keyword.mobilepushshort}} service. Refer to the [REST APIs ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://imfpush.{DomainName}/imfpush/) documentation for information on how the secrets are to be passed and for what APIs.
 
@@ -64,5 +65,10 @@ By default, client secret verification is enforced only in new apps. Both existi
 Ensure that the `clientSecret` is kept confidential and never hard-coded into the mobile app. There are various application initialization patterns that can be used to pull in the `clientSecret` dynamically during the applications runtime. The sequence diagram outlines on such possible pattern.
 ![Enable_Push](images/init_client_secret.jpg) 
 
+## API keys for user authentication
+{: #push-api-key}
 
+An API key is a unique code that is passed in to an API to identify the calling application or user. API keys are used to track and control how the API is being used, for example to prevent malicious use or abuse of the API. The API key often acts as both a unique identifier and a secret token for authentication, and generally has a set of access rights specific to the identity associated with it.
+
+Refer [here](/docs/iam/apikeys.html) for more details on managing and working with API keys.
 
