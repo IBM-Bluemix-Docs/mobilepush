@@ -30,19 +30,16 @@ To send basic push notifications, complete the following steps:
 3. Verify that your devices or browser has received the notification.
 
 The following screen shot shows an alert box handling a push notification in the foreground on a Android device.
-    
-    ![Foreground push notification on Android](images/Android_Screenshot.jpg)
+![Foreground push notification on Android](images/Android_Screenshot.jpg)
 
 The following following screen shot shows a push notification in the background for Android.
-
-    ![Background push notification on Android](images/background.jpg)
+![Background push notification on Android](images/background.jpg)
 
 ## Optional Android settings 
 {: #push_step_4_Android}
 
 You can further customize the {{site.data.keyword.mobilepushshort}} settings for sending notifications to Android devices. 
-
-    ![Android custom settings](images/android_custom_settings.jpg)
+![Android custom settings](images/android_custom_settings.jpg)
 
 The following optional customization options are supported:
 
