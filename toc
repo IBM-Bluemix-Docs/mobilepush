@@ -57,6 +57,7 @@ Push Notifications
     release-notes.md
     sample-apps.md
     push_activity_tracker.md
+    push-compliance.md
 	
     {: .topicgroup}
     APIs and SDKs
