@@ -1,8 +1,8 @@
-	<!-- Markdown Navigation -->
+<!-- Markdown Navigation -->
 {: navgroup: .navgroup}
 {: topicgroup: .topicgroup}
 
-{: .toc subcollection="mobile-pushnotification" audience="service" href="/docs/services/mobilepush/index.html"}
+{: .toc subcollection="mobile-pushnotification" audience="service" arm="358" href="/docs/services/mobilepush/index.html" path="services/mobilepush"}
 Notificações push
 
     {: .navgroup id="learn"}
