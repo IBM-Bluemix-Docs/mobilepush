@@ -12,4 +12,4 @@ lastupdated: "12 February 2018"
 
  - API-Referenz für [iOS](http://ibm-bluemix-mobile-services.github.io/API-docs/client-SDK/BMSPush/Swift/index.html)
  - API-Referenz für [Android](https://www.javadoc.io/doc/com.ibm.mobilefirstplatform.clientsdk.android/push/3.6.1)
- - [REST-API](https://imfpush.{DomainName}/imfpush/) 
+ - [REST-API](https://imfpush.ng.bluemix.net/imfpush/) 

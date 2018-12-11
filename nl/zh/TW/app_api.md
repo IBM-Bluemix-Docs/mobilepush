@@ -12,4 +12,4 @@ lastupdated: "12 February 2018"
 
  - [iOS](http://ibm-bluemix-mobile-services.github.io/API-docs/client-SDK/BMSPush/Swift/index.html) 的 API 參考資料
  - [Android](https://www.javadoc.io/doc/com.ibm.mobilefirstplatform.clientsdk.android/push/3.6.1) 的 API 參考資料
- - [REST API](https://imfpush.{DomainName}/imfpush/) 
+ - [REST API](https://imfpush.ng.bluemix.net/imfpush/) 
