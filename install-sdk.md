@@ -1,7 +1,8 @@
 ---
 
 copyright:
- years: 2018
+  years: 2018, 2019
+lastupdated: "18 February 2019"
 
 ---
 
@@ -12,8 +13,6 @@ copyright:
 
 # SDKs for Push Notification
 {: #install-sdk}
-Last updated: 18 January 2018
-{: .last-updated}
 
 The Push Notification Client SDKs are available for Android, Cordova, iOS and Web. Below are the links to install platform specific SDKs.
 

@@ -1,7 +1,8 @@
-----
+---
 
 copyright:
- years: 2015, 2017
+  years: 2015, 2017, 2018, 2019
+lastupdated: "18 February 2019"
 
 ---
 
@@ -14,13 +15,11 @@ copyright:
 
 # About Push Notifications 
 {: #overview-push}
-Last updated: 28 September 2017
-{: .last-updated}
 
 IBM {{site.data.keyword.mobilepushshort}} is a service with which you can use to send notifications to mobile devices and browsers. Notifications can be targeted to all application users or to a specific set of users and devices using tags. For every message that you submit to the service, the intended audience receives a notification.
 
 
-You can choose to use the {{site.data.keyword.mobilepushshort}} service either as a part of MobileFirst Services Starter Boilerplate or as IBM Cloud [Dedicated Services](/docs/dedicated/index.html).  You can also use an SDK (software development kit) and [REST APIs ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://imfpush.{DomainName}/imfpush/){: new_window} to further develop your client applications.
+You can choose to use the {{site.data.keyword.mobilepushshort}} service either as a part of MobileFirst Services Starter Boilerplate or as IBM Cloud [Dedicated Services](/docs/dedicated/index.html). You can also use an SDK (software development kit) and [REST APIs ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://imfpush.ng.bluemix.net/imfpush/){: new_window} to further develop your client applications.
 
 
 The {{site.data.keyword.mobilepushshort}} service is also enabled for [IBM Cloud Functions](/docs/openwhisk/index.html). IBM Cloud Functions is a distributed, event-driven compute service that is alternatively known as serverless computing. This allows developers to focus on writing application logic, and create actions that are executed on demand.

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2017
-lastupdated: "12 February 2018"
+  years: 2015, 2017, 2018, 2019
+lastupdated: "18 February 2019"
 
 ---
 
@@ -10,7 +10,7 @@ lastupdated: "12 February 2018"
 
 #APIs for Push Notification
 
- - API [Documentation](https://console.bluemix.net/apidocs/push-notifications)
+ - API [Documentation](https://cloud.ibm.com/apidocs/push-notifications)
  - API Reference for [iOS](http://ibm-bluemix-mobile-services.github.io/API-docs/client-SDK/BMSPush/Swift/index.html)
- - API Reference for [Android](https://www.javadoc.io/doc/com.ibm.mobilefirstplatform.clientsdk.android/push/3.6.1)
+ - API Reference for [Android](https://www.javadoc.io/doc/com.ibm.mobilefirstplatform.clientsdk.android/push/3.7.4)
  - [REST API](https://imfpush.ng.bluemix.net/imfpush/) 

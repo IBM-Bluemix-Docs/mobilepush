@@ -2,7 +2,7 @@
 {: navgroup: .navgroup}
 {: topicgroup: .topicgroup}
 
-{: .toc subcollection="mobile-pushnotification" audience="service" arm="358" href="/docs/services/mobilepush/index.html" path="services/mobilepush"}
+{: .toc subcollection="mobile-pushnotification" service-name="Push Notifications" audience="service" arm="358" href="/docs/services/mobilepush/index.html" path="services/mobilepush"}
 Push Notifications
 
     {: .navgroup id="learn"}
@@ -22,7 +22,7 @@ Push Notifications
     {: .navgroup id="howto"}
     {: .topicgroup}
     Enable notification options
-        push_security.md
+	    push_security.md
         push_step_4_nf_tag.md
         push_step_4_nf_user.md
         push_step_4_nf_interactive.md
@@ -35,9 +35,9 @@ Push Notifications
 	
     {: .topicgroup}
     Tutorials
-        [Swift App with Push and Analytics](https://console.bluemix.net/docs/tutorials/ios-mobile-push-analytics.html#ios-mobile-application-with-push-and-analytics)
-        [Android App with Push and Analytics](https://console.bluemix.net/docs/tutorials/android-mobile-push-analytics.html#android-native-mobile-application-with-push-and-analytics)	
-        [Hybrid App with Push and Analytics](https://console.bluemix.net/docs/tutorials/hybrid-mobile-push-analytics.html#hybrid-mobile-application-with-push-and-analytics)	
+        [Swift App with Push and Analytics](https://cloud.ibm.com/docs/tutorials/ios-mobile-push-analytics.html#ios-mobile-application-with-push-and-analytics)
+        [Android App with Push and Analytics](https://cloud.ibm.com/docs/tutorials/android-mobile-push-analytics.html#android-native-mobile-application-with-push-and-analytics)	
+        [Hybrid App with Push and Analytics](https://cloud.ibm.com/docs/tutorials/hybrid-mobile-push-analytics.html#hybrid-mobile-application-with-push-and-analytics)	
 
     push_iam.md
     push_openwisk.md	
@@ -65,8 +65,3 @@ Push Notifications
         app_api.md
         install-sdk.md	
     {: .navgroup-end}
-
-    
-
-        
-    

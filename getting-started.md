@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2017
-lastupdated: "2017-05-31"
+  years: 2015, 2017, 2018, 2019
+lastupdated: "2019-02-18"
 
 ---
 
@@ -24,7 +24,7 @@ In this {{site.data.keyword.mobilepushfull}} getting started tutorial, we walk t
 ## Before you begin
 {: #prereqs}
 
-You'll need a [IBM Cloud account](https://console.bluemix.net/registration/), an instance of the 
+You'll need a [IBM Cloud account](https://cloud.ibm.com/registration/), an instance of the 
 {{site.data.keyword.mobilepushshort}} service, and the following tools and requirements:
 
   * Android API 15+

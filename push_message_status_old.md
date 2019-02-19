@@ -1,7 +1,8 @@
 ---
 
 copyright:
- years: 2015, 2017
+  years: 2015, 2017, 2019
+lastupdated: "17 February 2019"
 
 ---
 
@@ -12,9 +13,6 @@ copyright:
 
 # Message notification delivery status
 {: #tag_based_notifications}
-Last updated: 21 August 2017
-{: .last-updated}
-
 
 With the {{site.data.keyword.mobilepushshort}} service, you can view the status of every notification that has been submitted to the service. 
 

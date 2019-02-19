@@ -1,7 +1,8 @@
 ---
 
 copyright:
- years: 2018
+  years: 2018, 2019
+lastupdated: "18 February 2019"
 
 ---
 
@@ -12,8 +13,7 @@ copyright:
 
 # Sample Apps
 {: #sample-apps}
-Last updated: 18 January 2018
-{: .last-updated}
+
 
 To get you started quickly!
 

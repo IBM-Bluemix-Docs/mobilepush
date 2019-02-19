@@ -1,7 +1,8 @@
 ---
 
 copyright:
- years: 2015, 2017
+  years: 2015, 2017, 2019
+lastupdated: "18 February 2019"
 
 ---
 
@@ -11,8 +12,6 @@ copyright:
 {:codeblock:.codeblock}
 
 #Enabling advanced push notifications
-Last updated: 01 June 2017
-{: .last-updated}
 
 Configure an iOS badge, sound, additional JSON payload, actionable notifications, and holding notifications.
 

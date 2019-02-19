@@ -1,14 +1,16 @@
 ---
 
 copyright:
-  years: 2015, 2017
-lastupdated: "2017-11-27"
+  years: 2015, 2017, 2018, 2019
+lastupdated: "18 February 2019"
 
 ---
 
-{:new_wind{:new_window: target="_blank"}
+{:new_window: target="_blank"}
+{:shortdesc: .shortdesc}
 
 # Release notes
+
 The following new features and changes to the service are available. These changes do not break existing code:
 
 

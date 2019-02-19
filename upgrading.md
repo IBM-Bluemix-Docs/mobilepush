@@ -1,7 +1,8 @@
-----
+---
 
 copyright:
- years: 2015, 2017
+  years: 2015, 2017, 2018, 2019
+lastupdated: "18 February 2019"
 
 ---
 
@@ -12,11 +13,9 @@ copyright:
 {:pre: .pre}
 {:tip: .tip}
 
-{: #upgrade-push}
-Last updated: 20 March 2018
-{: .last-updated}
 
 # Upgrading your plan
+{: #upgrade-push}
 
 The {{site.data.keyword.mobilepushshort}} service offers three plans that provide different levels of resources and capabilities to suit your needs.
 {: shortdesc}
@@ -30,7 +29,7 @@ The {{site.data.keyword.mobilepushshort}} service offers three plans that provid
 
 |                |Lite                           |Basic                        |Advanced                      |
 |----------------|-------------------------------|-----------------------------|------------------------------|
-|**Features**    |100,000 digital messages per month; 50 addressable devices |First 1 million digital messages and 10000 addressable devices free            | Charged per Instance </br> Includes 100 million digital messages and 1 million addressable devices<br/> Advanced Capabilities<br/> - [Parameterize messages](https://console.bluemix.net/docs/services/mobilepush/push_template_message.html)<br/> - [End to End message lifecycle tracking](https://console.bluemix.net/docs/services/mobilepush/push_message_status.html)<br/>|
+|**Features**    |100,000 digital messages per month; 50 addressable devices |First 1 million digital messages and 10000 addressable devices free            | Charged per Instance </br> Includes 100 million digital messages and 1 million addressable devices<br/> Advanced Capabilities<br/> - [Parameterize messages](/docs/services/mobilepush/push_template_message.html)<br/> - [End to End message lifecycle tracking](/docs/services/mobilepush/push_message_status.html)<br/>|
 |**Pricing**     |Free|- $1.00 / Ten Thousand Addressable Devices <br/> - $1.00 / Million Digital Messages <br /> |- $100.00 / Instance <br/> - $0.50 / Million Digital Messages <br/> - $0.50 / Million Addressable Devices <br/> |-|
 
 
@@ -43,4 +42,4 @@ To upgrade your plan, complete these steps:
 1.  Click **Plan** from the navigation pane.
    From here, you can see your current plan and other available plan options, and make changes.
 
-For information about calculating costs, see the [{{site.data.keyword.Bluemix_notm}} Pricing Calculator ![External link icon](../../icons/launch-glyph.svg "External link icon")](../../icons/launch-glyph.svg "External link icon")](https://console.bluemix.net/pricing/platform/mobile){: new_window}.
+For information about calculating costs, see the [{{site.data.keyword.Bluemix_notm}} Pricing Calculator ![External link icon](../../icons/launch-glyph.svg "External link icon")](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/pricing/platform/mobile){: new_window}.

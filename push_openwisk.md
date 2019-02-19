@@ -1,7 +1,8 @@
 ---
 
 copyright:
-  years:  2018, 2019
+  years: 2015, 2017, 2019
+lastupdated: "18 February 2019"
 
 ---
 
@@ -17,9 +18,6 @@ copyright:
 
 # IBM Cloud Functions integration
 {: #cloud-functions-integration}
-Last updated: 24 January 2019
-{: .last-updated}
-
 
 The {{site.data.keyword.mobilepushshort}} package in IBM Cloud functions provides a set of actions for interacting  with IBM {{site.data.keyword.mobilepushshort}}. These actions allow you to send a message or create, update, or delete a webhook. 
 {: shortdesc}

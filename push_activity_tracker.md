@@ -1,21 +1,20 @@
-----
+---
 
 copyright:
- years: 2015, 2017
+  years: 2015, 2017, 2019
+lastupdated: "18 February 2019"
 
 ---
 
 {:new_window: target="_blank"}
 {:shortdesc: .shortdesc}
-{:screen:.screen}
-{:codeblock:.codeblock}
+{:screen: .screen}
+{:codeblock: .codeblock}
 {:pre: .pre}
 {:tip: .tip}
 
 # Activity Tracker Events
 {: #push_activity_tracker}
-Last updated: 22 June 2018
-{: .last-updated}
 
 The {{site.data.keyword.cloudaccesstrailfull}} service monitors a user's interaction with the IBM Cloud services. You can search and analyze how your users and applications interact with IBM Cloud services.
 
@@ -94,7 +93,7 @@ The following table lists the {{site.data.keyword.cloudaccesstrailshort}} events
 </table>
 
 
-For more information about working with {{site.data.keyword.cloudaccesstrailshort}}, refer the [documentation here](https://console.bluemix.net/docs/services/cloud-activity-tracker/activity_tracker_ov.html#activity_tracker_ov){: new_window}.
+For more information about working with {{site.data.keyword.cloudaccesstrailshort}}, refer the [documentation here](https://cloud.ibm.com/docs/services/cloud-activity-tracker/activity_tracker_ov.html#activity_tracker_ov){: new_window}.
 
 **Note:**
  - Currently, the Activity Tracker Events are available only on `IBM Cloud - US South Region`.

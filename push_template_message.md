@@ -1,7 +1,8 @@
 ---
 
 copyright:
- years: 2015, 2017
+  years: 2015, 2017, 2019
+lastupdated: "18 February 2019"
 
 ---
 
@@ -12,8 +13,6 @@ copyright:
 
 # Parameterize Notifications
 {: #template_based_notifications}
-Last updated: 21 August 2017
-{: .last-updated}
 
 You can parameterize and send custom notifications by creating variables and calling them in your notification templates.
 
@@ -72,9 +71,4 @@ Note: The feature is enabled only for users who have opted the `Advanced Plan`. 
 
  - Currently, this feature is not supported on Safari
  - Variables in the notification template may not work if an app is force quit on iOS. The limitation is not in control of SDK but comes from iOS.
-
-
-
-
-
 

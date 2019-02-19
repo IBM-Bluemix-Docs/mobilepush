@@ -1,8 +1,8 @@
-
 ---
 
 copyright:
- years: 2015, 2017
+  years: 2015, 2017, 2019
+lastupdated: "18 February 2019"
 
 ---
 
@@ -13,10 +13,8 @@ copyright:
 
 # Step 2: Obtain your notification provider credentials
 {: #push_step_1}
-Last updated: 27 June 2017
-{: .last-updated}
 
-To set up {{site.data.keyword.mobilepushshort}} service, you need to obtain the required  credentials from your push notification provider. 
+To set up {{site.data.keyword.mobilepushshort}} service, you need to obtain the required credentials from your push notification provider. 
 
 ## For Android
 {: #push_step_1_android}
@@ -43,7 +41,7 @@ You would also need to generate the `google-services.json` file. Complete the fo
 
 3. Select **ADD APP** or **Add Firebase to your Android app** icon from the General tab on the Your apps pane.
     
-4. In Add Firebase to your Android app window, first add **com.ibm.mobilefirstplatform.clientsdk.android.push**  as the Package Name. The App nickname field is optional. Click **REGISTER APP**. 
+4. In Add Firebase to your Android app window, first add **com.ibm.mobilefirstplatform.clientsdk.android.push** as the Package Name. The App nickname field is optional. Click **REGISTER APP**. 
     
 	![Adding Firebase to your Android window](images/FCM_1.jpg)
 
@@ -53,8 +51,7 @@ You would also need to generate the `google-services.json` file. Complete the fo
 
 6. The `google-services.json` file is generated. 
 
-
-Once you have obtained your FCM credentials and have generated the `google-services.json` file, the next step is to [Create a service instance](push_step_2.html).
+Once you have obtained your FCM credentials and have generated the `google-services.json` file, the next step is to [Create a service instance](/docs/services/mobilepush/push_step_2.html).
 
 **Note**: Google has deprecated GCM and has integrated Cloud Messaging with Firebase. You will have to migrate your GCM client apps on Android to FCM.
 
@@ -153,7 +150,7 @@ Ensure that you have registered an App ID, enabled it for {{site.data.keyword.mo
 Create a development provisioning profile, as follows:
 
 1. Go to the [Apple Developer ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://developer.apple.com){: new_window} portal, click **Member Center**, and select **Certificates, Identifiers & Profiles**.
-2. Go to the [Mac Developer Library ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://developer.apple.com/library/mac/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingProfiles/MaintainingProfiles.html#//apple_ref/doc/uid/TP40012582-CH30-SW62site){: new_window} , scroll to the **Creating Development Provisioning Profiles** section, and follow the instructions to create a development profile.
+2. Go to the [Mac Developer Library ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://developer.apple.com/library/mac/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingProfiles/MaintainingProfiles.html#//apple_ref/doc/uid/TP40012582-CH30-SW62site){: new_window}, scroll to the **Creating Development Provisioning Profiles** section, and follow the instructions to create a development profile.
 **Note**: When you configure a development provision profile, select the following options:
 	* **iOS App Development**
 	* **For iOS and watchOS apps**
@@ -167,7 +164,7 @@ Use the store provisioning profile to submit your app for distribution to the Ap
 1. Go to the [Apple Developer ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://developer.apple.com){: new_window} portal, click **Member Center**, and select **Certificates, Identifiers & Profiles**.
 2. Double-click the downloaded provisioning profile to install it into Xcode.
 
-After obtaining the credentials, the next step is to [Configure a service instance](push_step_2.html).
+After obtaining the credentials, the next step is to [Configure a service instance](/docs/services/mobilepush/push_step_2.html).
 
 ## For web browsers and Chrome Apps & Extensions
 {: #configure-credential-for-browsers}
@@ -180,7 +177,7 @@ For example: `https://www.acmebanks.com`
 
 A {{site.data.keyword.mobilepushshort}} service instance supports only one domain name at a time. Hence, ensure that the same value is set for Chrome, Firefox and Safari. Chrome and Safari browsers require additional configuration for web push. You would need an FCM API key, as an FCM endpoint is used to deliver messages in Chrome. 
 
-To set up the service for Chrome, Firefox browsers, and Chrome Apps & Extensions,  see [Configure a service instance](push_step_2.html).
+To set up the service for Chrome, Firefox browsers, and Chrome Apps & Extensions, see [Configure a service instance](/docs/services/mobilepush/push_step_2.html).
 
 
 ### Configuring for Safari web push 
@@ -207,5 +204,5 @@ Ensure that you have an Apple Developer account. You need to register a Website 
 10. Choose the `.certSigningRequest` created on the disk when prompted in the wizard for generating the certificate. Ensure that you download the Website push certificate created in the `.cer` format.
 11. Open the Certificate in the KeyChain Access tool. Right-click and export as a p12 certificate. Note the password provided during the generation of the p12 certificate.
 
-After generating a certificate, the next step is to [Configure a service instance](push_step_2.html).
+After generating a certificate, the next step is to [Configure a service instance](/docs/services/mobilepush/push_step_2.html).
 

@@ -1,7 +1,8 @@
 ---
 
 copyright:
- years: 2015, 2017
+  years: 2015, 2017, 2019
+lastupdated: "18 February 2019"
 
 ---
 
@@ -12,8 +13,6 @@ copyright:
 
 # User-based notifications
 {: #user_based_notifications}
-Last updated: 22 May 2017
-{: .last-updated}
 
 User ID-based {{site.data.keyword.mobilepushshort}} are targeted at mobile app users with customized messages. With user-based notifications, you can choose to notify specific individuals based on their preferences.
 
@@ -22,7 +21,7 @@ User ID-based {{site.data.keyword.mobilepushshort}} are targeted at mobile app u
 
 To enable push notifications targeted by User ID, ensure that you register the device with a User ID field set.     
 
-The User ID can be any string that the application provides to the device registration API. Typically, a mobile application will first run an authentication cycle where the mobile app user is authenticated against an authentication service such as [{{site.data.keyword.amafull}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.ng.bluemix.net/docs/services/mobileaccess/index.html){: new_window}. On successful authentication, the authenticated user ID is then passed into the Push Device Registration API. 
+The User ID can be any string that the application provides to the device registration API. Typically, a mobile application will first run an authentication cycle where the mobile app user is authenticated against an authentication service such as {{site.data.keyword.amafull}}. On successful authentication, the authenticated user ID is then passed into the Push Device Registration API. 
 
 To register for userId-based notification, go through:
 

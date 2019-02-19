@@ -1,7 +1,8 @@
 ---
 
 copyright:
- years: 2015, 2017
+  years: 2015, 2017, 2019
+lastupdated: "18 February 2019"
 
 ---
 
@@ -12,9 +13,6 @@ copyright:
 
 # Receive alerts on webhook events
 {: #webhook_event_based_notifications}
-Last updated: 08 September 2017
-{: .last-updated}
-
 
 With the {{site.data.keyword.mobilepushshort}} service, you can choose to receive alerts on information that has changed. Changes to the enterprise information create events, for which you can be notified by registering them as webhook events. These webhook events triggers an alert. 
 
@@ -31,7 +29,7 @@ Webhooks are user-defined callbacks that are triggered by an event, such as regi
 **Note**: Notification dispatches are done in batches. A message dispatch can have multiple webhook events, that might include both failures and success. 
 The webhook events would have the same messageID as that of the dispatched message. 
 
-For more information on webhooks, see the [IBM Push Notifications REST API ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.bluemix.net/apidocs/push-notifications){: new_window}.
+For more information on webhooks, see the [IBM Push Notifications REST API ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/apidocs/push-notifications){: new_window}.
 
 ## Receiving alerts on webhook events
 {: #webhook_alert_event}

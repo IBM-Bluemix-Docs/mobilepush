@@ -1,7 +1,8 @@
 ---
 
 copyright:
- years: 2015, 2017
+  years: 2015, 2017, 2019
+lastupdated: "18 February 2019"
 
 ---
 
@@ -11,10 +12,7 @@ copyright:
 {:codeblock:.codeblock}
 
 # Message delivery status
-{: #tag_based_notifications}
-Last updated: 21 August 2017
-{: .last-updated}
-
+{: #message-delivery-status}
 
 With the {{site.data.keyword.mobilepushshort}} service, you can view the delivery status of every notification that has been submitted to the service. 
 
@@ -55,5 +53,4 @@ The {{site.data.keyword.mobilepushshort}} service **Messages** tab displays the 
 ![detailed status](images/detailed_message_delivery.png)
 
 **Note**: The feature is enabled only for users who have opted the `Advanced Plan`. Select **Plan** in the {{site.data.keyword.mobilepushshort}} service console to [upgrade](https://console-tok02-red.cdn.s-bluemix.net/docs/account/change-plan.html#changing)
-
 
