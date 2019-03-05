@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "18 February 2019"
+lastupdated: "05 March 2019"
 
 ---
 
@@ -37,3 +37,8 @@ Refer the 'README' document in the SDK for detailed information on installation 
 ## Web SDK
 
    Installing the [Web Client SDK](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-javascript-webpush)
+
+## React Native SDK
+
+   Installing the [React Native Client SDK](https://github.com/ibm-bluemix-mobile-services/bms-push-react-native)
+   
