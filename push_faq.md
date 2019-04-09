@@ -65,9 +65,11 @@ lastupdated: "2019-02-18"
 
 10. What are the different pricing plans available for the Push Notifications service?
 
-	Basic plan: This is available for $1.00 USD/Million Digital Message. With the basic plan, you can send push notifications to a unique device, browser, end- points or a webhook-based event. 
+	**Advanced plan**: This is available for $100.00 USD/Instance, $0.50 USD/Million Digital Messages, and $0.50 USD/Million Addressable Devices. With the advanced plan, you can send push notifications to 1 million addressable devices and 100 million digital messages. Advanced plan includes capabilities like Parameterize messages and End-to-End message lifecycle tracking.
 
-	Lite plan: This is a free plan that features a hundred thousand free digital messages per month. However, Lite plan services are deleted after 30 days of inactivity.	
+	**Basic plan**: This is available for $1.00 USD/Million Digital Message. With the basic plan, you can send push notifications to a unique device, browser, end- points or a webhook-based event. 
+
+	**Lite plan**: This is a free plan that features a hundred thousand free digital messages per month. However, Lite plan services are deleted after 30 days of inactivity.	
 
 11. Where can I find more information like tutorials or what's new?
 
