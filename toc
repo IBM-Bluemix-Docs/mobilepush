@@ -17,7 +17,13 @@ Push Notifications
         push_step_2.md
         push_step_3.md
         push_step_4.md	
-    {: .navgroup-end}
+
+	{: .topicgroup}
+    Tutorials
+        [Swift App with Push and Analytics](https://cloud.ibm.com/docs/tutorials/ios-mobile-push-analytics.html#ios-mobile-application-with-push-and-analytics)
+        [Android App with Push and Analytics](https://cloud.ibm.com/docs/tutorials/android-mobile-push-analytics.html#android-native-mobile-application-with-push-and-analytics)	
+        [Hybrid App with Push and Analytics](https://cloud.ibm.com/docs/tutorials/hybrid-mobile-push-analytics.html#hybrid-mobile-application-with-push-and-analytics)	
+	{: .navgroup-end}
     
     {: .navgroup id="howto"}
     {: .topicgroup}
@@ -32,12 +38,6 @@ Push Notifications
         push_message_status.md
         push_template_message.md
         push_webhook.md
-	
-    {: .topicgroup}
-    Tutorials
-        [Swift App with Push and Analytics](https://cloud.ibm.com/docs/tutorials/ios-mobile-push-analytics.html#ios-mobile-application-with-push-and-analytics)
-        [Android App with Push and Analytics](https://cloud.ibm.com/docs/tutorials/android-mobile-push-analytics.html#android-native-mobile-application-with-push-and-analytics)	
-        [Hybrid App with Push and Analytics](https://cloud.ibm.com/docs/tutorials/hybrid-mobile-push-analytics.html#hybrid-mobile-application-with-push-and-analytics)	
 
     push_iam.md
     push_openwisk.md	
