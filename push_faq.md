@@ -2,7 +2,11 @@
 
 copyright:
   years: 2015, 2017, 2019
-lastupdated: "2019-02-18"
+lastupdated: "28 May 2019"
+
+keywords: push notifications, notifications, faq, frequently asked questions
+
+subcollection: mobile-pushnotification
 
 ---
 {:new_window: target="_blank"}
@@ -23,7 +27,7 @@ lastupdated: "2019-02-18"
 
 	You might also get the problem if you have unregistered a device.
 
-	Ensure that you obtain a valid Server API Key and Sender ID to continue. See [Obtain your notification provider credentials](/docs/services/mobilepush/push_step_1.html).
+	Ensure that you obtain a valid Server API Key and Sender ID to continue. See [Obtain your notification provider credentials](https://cloud.ibm.com/docs/services/mobilepush?topic=mobile-pushnotification-push_step_1).
 
 2. Why do I get "Notification is not working for WEB_Chrome.", when attempting to initialize the Web Push SDK?
 
@@ -31,7 +35,7 @@ lastupdated: "2019-02-18"
 
 3. I get the message "Service workers aren't supported in this browser" when attempting to initialize the SDK for Web Push. What might be the problem? 
 
-	Follow the steps mentioned in [Step 3: Set up Push service client SDK's](/docs/services/mobilepush/push_step_3.html).	Also ensure that:
+	Follow the steps mentioned in [Step 3: Set up Push service client SDK's](https://cloud.ibm.com/docs/services/mobilepush?topic=mobile-pushnotification-push_step_3).	Also ensure that:
  
 	1. You use the right start method. 
 	1. Include the `manifest.json` file in the root folder.
@@ -39,7 +43,7 @@ lastupdated: "2019-02-18"
 
 4. How do I resolve Web push web configuration errors?
 
-	Web push errors from the `BMSPushSDK.js` contain information on the failure.  See [Troubleshooting](/docs/services/mobilepush/push_troubleshooting.html).	
+	Web push errors from the `BMSPushSDK.js` contain information on the failure.  See [Troubleshooting](https://cloud.ibm.com/docs/services/mobilepush?topic=mobile-pushnotification-errors).	
 
 5. Do notifications persist if the devices are offline?
 
@@ -90,7 +94,7 @@ lastupdated: "2019-02-18"
 	- Open: The number of devices where notification was opened.
 	- Invalid: The number of devices on which the token in invalid.
 
-	For more information, see the GET messages report in [IBM Push Notifications ReST API](https://imfpush.ng.bluemix.net/imfpush/).	
+	For more information, see the GET messages report in [IBM Push Notifications ReST API](https://eu-gb.imfpush.cloud.ibm.com/imfpush/).	
 
 14. Does push notification monitor the push notification delivery up to the end user device? For both Android and iOS?
 
@@ -102,7 +106,7 @@ lastupdated: "2019-02-18"
 
 16. I am sending notification by tags, but have a long list of tags that might be difficult to add manually. 
 	
-	You can use REST APIs to automate the tag additions. See [POST bulk messages](https://imfpush.ng.bluemix.net/imfpush/).
+	You can use REST APIs to automate the tag additions. See [POST bulk messages](https://eu-gb.imfpush.cloud.ibm.com/imfpush/).
 
 17. How can I filter the push notification delivery by information stored in the user's mobile device?
 

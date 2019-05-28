@@ -2,7 +2,11 @@
 
 copyright:
   years: 2015, 2017, 2019
-lastupdated: "18 February 2019"
+lastupdated: "28 May 2019"
+
+keywords: push notifications, notifications, monitoring notification
+
+subcollection: mobile-pushnotification
 
 ---
 
@@ -16,12 +20,15 @@ lastupdated: "18 February 2019"
 
 The IBM {{site.data.keyword.mobilepushshort}} service now extends capabilities to monitor the push performance by generating graphs from your user data. You can use the utility to list all the sent push notifications, or to list all the registered devices and to analyze information on a daily, weekly, or monthly basis.
 
-To generate reports for all your the sent notifications, use the Push Messages GET report method in [REST APIs](https://imfpush.ng.bluemix.net//imfpush/#!/messages/get_apps_applicationId_messages_report){: new_window}. 
-	![Sent notifications report](images/monitoring_messages.jpg)
+To generate reports for all your the sent notifications, use the Push Messages GET report method in [REST APIs](https://eu-gb.imfpush.cloud.ibm.com/imfpush/#!/messages/get_apps_applicationId_messages_report){: new_window}. 
+	![Sent notifications report - bar graph](images/monitoring_messages1.png)
+<br>&nbsp;</br>
+	![Sent notifications report - sector diagram](images/monitoring_messages2.png)
 
-
-To generate reports for all your registered devices, use the Push Device Registrations GET report method in [REST APIs](https://imfpush.ng.bluemix.net/imfpush/#!/devices/get_apps_applicationId_devices_report){: new_window}.
-	![Registered devices report](images/monitoring_devices.jpg)
+To generate reports for all your registered devices, use the Push Device Registrations GET report method in [REST APIs](https://eu-gb.imfpush.cloud.ibm.com/imfpush/#!/devices/get_apps_applicationId_devices_report){: new_window}.
+	![Registered devices report - line graph](images/monitoring_devices1.png)
+<br>&nbsp;</br>
+	![Registered devices report - pie graph](images/monitoring_devices2.png)
 
 
 For information on how to enable monitoring utility for your platform:

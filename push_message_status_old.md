@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2017, 2019
-lastupdated: "17 February 2019"
+lastupdated: "28 May 2019"
 
 ---
 
@@ -42,4 +42,4 @@ The {{site.data.keyword.mobilepushshort}} service Messages tab displays the noti
 
 At any given point of time, the service only displays status of only the latest 10 messages that is available within a period of 90 days.
 
-**Note**: The feature is enabled only for users who have opted the `Advanced Pricing Plan`. Select **Plan** in the {{site.data.keyword.mobilepushshort}} service console to [upgrade](https://console-tok02-red.cdn.s-bluemix.net/docs/account/change-plan.html#changing)
+**Note**: The feature is enabled only for users who have opted the `Advanced Pricing Plan`. Select **Plan** in the {{site.data.keyword.mobilepushshort}} service console to [upgrade](https://cloud.ibm.com/docs/account?topic=account-changing)

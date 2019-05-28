@@ -2,7 +2,11 @@
 
 copyright:
   years: 2015, 2017, 2019
-lastupdated: "18 February 2019"
+lastupdated: "28 May 2019"
+
+keywords: push notifications, creating an ibm cloud service instance, ibm cloud service
+
+subcollection: mobile-pushnotification
 
 ---
 
@@ -30,7 +34,7 @@ You can use any of the following options to create a bound or unbound service:
 - By creating an unbound Push Notifications service directly from the Mobile catalog. You can later bind to an application or even choose to use it unbound. 
 - By using the [IBM Cloud Catalog ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/catalog/){: new_window}.
 
-Your next step is to [obtain notification provider credentials](/docs/services/mobilepush/push_step_1.html).
+Your next step is to [obtain notification provider credentials](https://cloud.ibm.com/docs/services/mobilepush?topic=mobile-pushnotification-push_step_1).
 
 
 

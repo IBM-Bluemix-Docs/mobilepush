@@ -2,7 +2,11 @@
 
 copyright:
   years: 2015, 2017, 2019
-lastupdated: "18 February 2019"
+lastupdated: "28 May 2019"
+
+keywords: push notifications, notifications, activity tracker events
+
+subcollection: mobile-pushnotification
 
 ---
 
@@ -93,7 +97,7 @@ The following table lists the {{site.data.keyword.cloudaccesstrailshort}} events
 </table>
 
 
-For more information about working with {{site.data.keyword.cloudaccesstrailshort}}, refer the [documentation here](https://cloud.ibm.com/docs/services/cloud-activity-tracker/activity_tracker_ov.html#activity_tracker_ov){: new_window}.
+For more information about working with {{site.data.keyword.cloudaccesstrailshort}}, refer the [documentation here](https://cloud.ibm.com/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-activity_tracker_ov#activity_tracker_ov){: new_window}.
 
 **Note:**
  - Currently, the Activity Tracker Events are available only on `IBM Cloud - US South Region`.

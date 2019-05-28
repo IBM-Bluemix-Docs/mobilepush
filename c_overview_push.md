@@ -2,7 +2,11 @@
 
 copyright:
   years: 2015, 2017, 2018, 2019
-lastupdated: "18 February 2019"
+lastupdated: "28 May 2019"
+
+keywords: push notifications, notifications, service credentials, service processes, push message size
+
+subcollection: mobile-pushnotification
 
 ---
 
@@ -18,17 +22,15 @@ lastupdated: "18 February 2019"
 
 IBM {{site.data.keyword.mobilepushshort}} is a service with which you can use to send notifications to mobile devices and browsers. Notifications can be targeted to all application users or to a specific set of users and devices using tags. For every message that you submit to the service, the intended audience receives a notification.
 
+You can choose to use the {{site.data.keyword.mobilepushshort}} service either as a part of MobileFirst Services Starter Boilerplate or as IBM Cloud [Dedicated Services](https://cloud.ibm.com/docs/dedicated?topic=dedicated-dedicated#dedicated). You can also use an SDK (software development kit) and [REST APIs ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://eu-gb.imfpush.cloud.ibm.com/imfpush/){: new_window} to further develop your client applications.
 
-You can choose to use the {{site.data.keyword.mobilepushshort}} service either as a part of MobileFirst Services Starter Boilerplate or as IBM Cloud [Dedicated Services](/docs/dedicated/index.html). You can also use an SDK (software development kit) and [REST APIs ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://imfpush.ng.bluemix.net/imfpush/){: new_window} to further develop your client applications.
-
-
-The {{site.data.keyword.mobilepushshort}} service is also enabled for [IBM Cloud Functions](/docs/openwhisk/index.html). IBM Cloud Functions is a distributed, event-driven compute service that is alternatively known as serverless computing. This allows developers to focus on writing application logic, and create actions that are executed on demand.
+The {{site.data.keyword.mobilepushshort}} service is also enabled for [IBM Cloud Functions](https://cloud.ibm.com/docs/openwhisk?topic=cloud-functions-getting_started#getting_started). IBM Cloud Functions is a distributed, event-driven compute service that is alternatively known as serverless computing. This allows developers to focus on writing application logic, and create actions that are executed on demand.
 
 
 ## Service processes
 {: #overview_push_process}
 
-Mobile, Web browser clients and Google Chrome Apps & Extensions can subscribe and register for the {{site.data.keyword.mobilepushshort}} service. On start-up, the client applications will register and subscribe themselves to the {{site.data.keyword.mobilepushshort}} service. The notifications are dispatched to the Apple Push Notification Service (APNs) or Firebase Cloud Messaging (FCM)server and then sent to registered mobile device, browser clients or Chrome Apps & Extensions.
+Mobile, Web browser clients and Google Chrome Apps & Extensions can subscribe and register for the {{site.data.keyword.mobilepushshort}} service. On start-up, the client applications will register and subscribe themselves to the {{site.data.keyword.mobilepushshort}} service. The notifications are dispatched to the Apple Push Notification Service (APNs) or Firebase Cloud Messaging (FCM) server and then sent to registered mobile device, browser clients or Chrome Apps & Extensions.
 
 ![Push Overview](images/overview.jpg)
 
@@ -77,4 +79,3 @@ You can also find more information at the Push Notifications service [Blog](http
 {: #push-scenario}
 
 The {{site.data.keyword.mobilepushshort}} service is explained using the sample scenario of the ACME Bank. The ACME Bank is in the phase of having their legacy IT infrastructure moved to IBM Cloud services and is currently building mobile back-end for their customer and employee facing apps. They are using {{site.data.keyword.mobilepushshort}} service to send notification to their customers on banking transactions and other important events and reminders.
-

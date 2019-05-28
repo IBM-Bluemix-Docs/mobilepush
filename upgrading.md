@@ -2,7 +2,11 @@
 
 copyright:
   years: 2015, 2017, 2018, 2019
-lastupdated: "18 February 2019"
+lastupdated: "28 May 2019"
+
+keywords: push notifications, notifications, upgrading plan, lite, basic, advanced
+
+subcollection: mobile-pushnotification
 
 ---
 
@@ -29,7 +33,7 @@ The {{site.data.keyword.mobilepushshort}} service offers three plans that provid
 
 |                |Lite                           |Basic                        |Advanced                      |
 |----------------|-------------------------------|-----------------------------|------------------------------|
-|**Features**    |100,000 digital messages per month; 50 addressable devices |First 1 million digital messages and 10000 addressable devices free            | Charged per Instance </br> Includes 100 million digital messages and 1 million addressable devices<br/> Advanced Capabilities<br/> - [Parameterize messages](/docs/services/mobilepush/push_template_message.html)<br/> - [End to End message lifecycle tracking](/docs/services/mobilepush/push_message_status.html)<br/>|
+|**Features**    |100,000 digital messages per month; 50 addressable devices |First 1 million digital messages and 10000 addressable devices free            | Charged per Instance </br> Includes 100 million digital messages and 1 million addressable devices<br/> Advanced Capabilities<br/> - [Parameterize messages](https://cloud.ibm.com/docs/services/mobilepush?topic=mobile-pushnotification-template_based_notifications)<br/> - [End to End message lifecycle tracking](https://cloud.ibm.com/docs/services/mobilepush?topic=mobile-pushnotification-message-delivery-status)<br/>|
 |**Pricing**     |Free|- $1.00 / Ten Thousand Addressable Devices <br/> - $1.00 / Million Digital Messages <br /> |- $100.00 / Instance <br/> - $0.50 / Million Digital Messages <br/> - $0.50 / Million Addressable Devices <br/> |-|
 
 

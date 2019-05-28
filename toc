@@ -2,12 +2,12 @@
 {: navgroup: .navgroup}
 {: topicgroup: .topicgroup}
 
-{: .toc subcollection="mobile-pushnotification" service-name="Push Notifications" audience="service" arm="358" href="/docs/services/mobilepush/index.html" path="services/mobilepush"}
+{: .toc subcollection="mobile-pushnotification" service-name="Push Notifications" audience="service" arm="358" href="/docs/services/mobilepush?topic=mobilepush-getting-started#getting-started" path="services/mobilepush"}
 Push Notifications
 
     {: .navgroup id="learn"}
+    getting-started.md
     c_overview_push.md
-    index.md
     developer-overview.md	
     
     {: .topicgroup}
@@ -20,9 +20,9 @@ Push Notifications
 
 	{: .topicgroup}
     Tutorials
-        [Swift App with Push and Analytics](https://cloud.ibm.com/docs/tutorials/ios-mobile-push-analytics.html#ios-mobile-application-with-push-and-analytics)
-        [Android App with Push and Analytics](https://cloud.ibm.com/docs/tutorials/android-mobile-push-analytics.html#android-native-mobile-application-with-push-and-analytics)	
-        [Hybrid App with Push and Analytics](https://cloud.ibm.com/docs/tutorials/hybrid-mobile-push-analytics.html#hybrid-mobile-application-with-push-and-analytics)	
+        [Swift App with Push and Analytics](https://cloud.ibm.com/docs/tutorials?topic=solution-tutorials-ios-mobile-push-analytics#ios-mobile-application-with-push-and-analytics)
+        [Android App with Push and Analytics](https://cloud.ibm.com/docs/tutorials?topic=solution-tutorials-android-mobile-push-analytics#android-native-mobile-application-with-push-and-analytics)	
+        [Hybrid App with Push and Analytics](https://cloud.ibm.com/docs/tutorials?topic=solution-tutorials-hybrid-mobile-push-analytics#hybrid-mobile-application-with-push-and-analytics)	
 	{: .navgroup-end}
     
     {: .navgroup id="howto"}
