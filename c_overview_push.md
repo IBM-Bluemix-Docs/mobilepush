@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2017, 2018, 2019
-lastupdated: "28 May 2019"
+lastupdated: "2019-05-30"
 
 keywords: push notifications, notifications, service credentials, service processes, push message size
 
@@ -32,7 +32,7 @@ The {{site.data.keyword.mobilepushshort}} service is also enabled for [IBM Cloud
 
 Mobile, Web browser clients and Google Chrome Apps & Extensions can subscribe and register for the {{site.data.keyword.mobilepushshort}} service. On start-up, the client applications will register and subscribe themselves to the {{site.data.keyword.mobilepushshort}} service. The notifications are dispatched to the Apple Push Notification Service (APNs) or Firebase Cloud Messaging (FCM) server and then sent to registered mobile device, browser clients or Chrome Apps & Extensions.
 
-![Push Overview](images/overview.jpg)
+![Push Overview](images/overview.jpg "Service processes flow for backend apps configuring and sending notifications through the Push notifications service")
 
 
 ### Mobile, browser applications and Chrome Apps & Extensions

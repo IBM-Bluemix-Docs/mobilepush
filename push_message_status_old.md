@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2017, 2019
-lastupdated: "28 May 2019"
+lastupdated: "2019-05-30"
 
 ---
 
@@ -26,18 +26,18 @@ A message that has been submitted might have the following status:
 
 The {{site.data.keyword.mobilepushshort}} service Messages tab displays the notification status.
 
-![notifications status](images/notification_status_new.png)
+![notifications status](images/notification_status_new.png "Messages page showing notification status")
 
 1. The **View** option displays delivery status of the notifications that are dispatched. You can view information based on the following aspects:
 
  - Category: All, Mobile, Web<!---and HTTP--->.
  - Message status: Sent, Seen, Open and Invalid. 
 
-![notifications status](images/message_delivery_status_new.png)
+![notifications status](images/message_delivery_status_new.png "Message status chart showing open, sent, seen, and invalid status breakdown")
 
 2. Click on **Options** to get **Detailed message delivery status**.  A detailed delivery status can be tracked by selecting either the `Device Id` or the `User Id` from the dropdown menu. A detailed status for a specific user or a device can be fetched.
 
-![detailed status](images/detailed_message_delivery.png)
+![detailed status](images/detailed_message_delivery.png "Detailed message delivery status options with User ID selected")
 
 
 At any given point of time, the service only displays status of only the latest 10 messages that is available within a period of 90 days.

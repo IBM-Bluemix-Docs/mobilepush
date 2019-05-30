@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2017, 2019
-lastupdated: "28 May 2019"
+  years: 2015, 2019
+lastupdated: "2019-05-30"
 
 keywords: push notifications, notifications, parameterize notification
 
@@ -63,13 +63,13 @@ Once the variables are defined, they can be called in your message template.
 
 2. In the **Message** field, compose your message.  Call the defined variables in the message template. Click **Send**.
 
-![message template](images/message_template.png)
+![message template](images/message_template.png "Message page showing a message template with Sent to field set to All devices, Message field with example message about a user's bank account balance, and Additional payload field with "key":"value" attribute added.)
 
 Your custom notfication message will be sent by fetching the variable data -
 
-![message example](images/message_template_example.jpg)
+![message example](images/message_template_example.jpg "Example notification based on the message template")
 
-Note: The feature is enabled only for users who have opted the `Advanced Plan`. Select **Plan** in the {{site.data.keyword.mobilepushshort}} service console to [upgrade](https://cloud.ibm.com/docs/account?topic=account-changing#changing) .
+Note: The feature is enabled only for users who have opted the `Advanced Plan`. Select **Plan** in the {{site.data.keyword.mobilepushshort}} service console to [upgrade](https://cloud.ibm.com/docs/account?topic=account-changing#changing).
 
 **Limitations:**
 

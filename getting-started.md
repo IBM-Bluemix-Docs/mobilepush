@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2017, 2018, 2019
-lastupdated: "28 May 2019"
+lastupdated: "2019-05-30"
 
 keywords: push notifications, ibm cloud catalog, push service client sdk, notification provider
 
@@ -35,6 +35,6 @@ The basic steps that will get you started:
 
 The following image gives you an overview of the Push Notifications service life cycle.
 
-![Push Overview](images/push_notification_lifecycle.jpg)
+![Push Overview](images/push_notification_lifecycle.jpg "Graphic outlining the basic steps from creating a service instance to sending notifications")
 
 

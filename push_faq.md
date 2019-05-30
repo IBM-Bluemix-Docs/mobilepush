@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2017, 2019
-lastupdated: "28 May 2019"
+lastupdated: "2019-05-30"
 
 keywords: push notifications, notifications, faq, frequently asked questions
 

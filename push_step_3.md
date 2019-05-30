@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2017, 2019
-lastupdated: "28 May 2019"
+lastupdated: "2019-05-30"
 
 keywords: push notifications, setup client sdk, android application, cordova application, iOS application, web browser
 
@@ -33,7 +33,7 @@ Complete the steps for [Push Notifications Android SDK](https://github.com/ibm-b
 
 1. Open the app in Android Studio. Copy the `google-services.json` file that you have created through [Step 2: Obtain your credentials](https://cloud.ibm.com/docs/services/mobilepush?topic=mobile-pushnotification-push_step_1) to your Android application module root directory. Note that the `google-service.json` file includes the added package names.
 
-    ![Adding the json file to the root directory of your application](images/FCM_7.jpg)
+    ![Adding the json file to the root directory of your application](images/FCM_7.jpg "Adding the json file to the root directory of your application")
 
 2. In Add Firebase to your Android app window, click **Continue** and then **Finish**. 
 3. Build and run your application. Upon a successfull build, the `Gradle build finished` message would appear.

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2017, 2019
-lastupdated: "28 May 2019"
+  years: 2015, 2019
+lastupdated: "2019-05-30"
 
 keywords: push notifications, notification, security, appsecret, api keys
 
@@ -65,7 +65,7 @@ The **Show Credentials** screen shows information about the AppSecret:
 By default, client secret verification is enforced only in new apps. Both existing and new apps are allowed to enable or disable the client secret verification using the verifyClientSecret REST API. It is recommended that you enforce client secret verification to avoid exposing devices to users who might know the applicationId and deviceId.
 
 Ensure that the `clientSecret` is kept confidential and never hard-coded into the mobile app. There are various application initialization patterns that can be used to pull in the `clientSecret` dynamically during the applications runtime. The sequence diagram outlines on such possible pattern.
-![Enable_Push](images/init_client_secret.jpg) 
+![Enable_Push](images/init_client_secret.jpg "Sequence diagram showing patterns for initialization for pulling in the clientSecret") 
 
 ## API keys for user authentication
 {: #push-api-key}
