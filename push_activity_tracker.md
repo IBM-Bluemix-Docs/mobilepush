@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2017, 2019
-lastupdated: "2019-05-30"
+lastupdated: "2019-05-31"
 
 keywords: push notifications, notifications, activity tracker events
 
@@ -16,29 +16,25 @@ subcollection: mobile-pushnotification
 {:codeblock: .codeblock}
 {:pre: .pre}
 {:tip: .tip}
+{:note: .note}
 
 # Activity Tracker Events
 {: #push_activity_tracker}
 
 The {{site.data.keyword.cloudaccesstrailfull}} service monitors a user's interaction with the IBM Cloud services. You can search and analyze how your users and applications interact with IBM Cloud services.
 
-Cloud Administrators, Security and Developers can -
+Cloud Administrators, Security and Developers can:
 
-- **Gain insights into your environment to monitor and investigate security breaches**
-    
-	Capture user and application interactions with your provisioned IBM Cloud resources. Investigate possible security breaches or unauthorized access.
-	
-- **Achieve your regulatory, compliance and record retention needs**
-
-    Store captured events as long as you require, safe guarded on cloud class economical storage solutions. Query your collected event data via API or export your cloud activity data.
-	
-- **Cloud transparency for your DevOps teams to debug and perform capacity planning**
-
-    Cloud activity events provide transparency into your IT operations on the IBM Cloud. Identify when and how your Cloud services are used to isolate and debug your applications. Query collected data over time to anticipate your cloud growth and seasonal needs.	
-	
-- **Simplify collection and improve your cloud security**
-
-    {{site.data.keyword.cloudaccesstrailshort}} automatically captures your IBM Cloud events.	
+<dl>
+	<dt>Gain insights into your environment to monitor and investigate security breaches</dt>
+	<dd>Capture user and application interactions with your provisioned IBM Cloud resources. Investigate possible security breaches or unauthorized access.</dd>
+	<dt>Achieve your regulatory, compliance and record retention needs</dt>
+	<dd>Store captured events as long as you require, safe guarded on cloud class economical storage solutions. Query your collected event data via API or export your cloud activity data.</dd>
+	<dt>Cloud transparency for your DevOps teams to debug and perform capacity planning</dt>
+	<dd>Cloud activity events provide transparency into your IT operations on the IBM Cloud. Identify when and how your Cloud services are used to isolate and debug your applications. Query collected data over time to anticipate your cloud growth and seasonal needs.</dd>
+	<dt>Simplify collection and improve your cloud security</dt>
+	<dd>{{site.data.keyword.cloudaccesstrailshort}} automatically captures your IBM Cloud events.</dd>
+</dl>
 
 
 The {{site.data.keyword.cloudaccesstrailshort}} activity logs can be used to identify the following information:
@@ -99,5 +95,6 @@ The following table lists the {{site.data.keyword.cloudaccesstrailshort}} events
 
 For more information about working with {{site.data.keyword.cloudaccesstrailshort}}, refer the [documentation here](https://cloud.ibm.com/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-activity_tracker_ov#activity_tracker_ov){: new_window}.
 
-**Note:**
- - Currently, the Activity Tracker Events are available only on `IBM Cloud - US South Region`.
+
+Currently, the Activity Tracker Events are available only on `IBM Cloud - US South Region`.
+{: note}

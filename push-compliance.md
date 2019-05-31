@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-05-30"
+lastupdated: "2019-05-31"
 
 keywords: push notifications, notifications, compliance, hipaa
 
@@ -16,6 +16,7 @@ subcollection: mobile-pushnotification
 {:codeblock:.codeblock}
 {:pre: .pre}
 {:tip: .tip}
+{:note: .note}
 
 # Compliance
 {: #compliance}
@@ -28,7 +29,7 @@ IBM Cloud {{site.data.keyword.mobilepushshort}} Service provides a trustworthy a
 
 IBM {{site.data.keyword.mobilepushshort}} Service meets the required IBM Controls that are commensurate with the Health Insurance Portability and Accountability Act of 1996 (HIPAA) Security and Privacy Rule requirements. The {{site.data.keyword.mobilepushshort}} Service stores the data in encrypted format at rest, and transmits the data encrypted.
 
-If you are part of regulatory industry like HIPAA and want to send sensitive information using the IBM Cloud {{site.data.keyword.mobilepushshort}}  Service you should not be using Post/message API, since the payload sent over third-party Push providers may not meet regulatory guidelines. Instead, you could follow the below steps where only messageId is sent over third-party Push providers, but the actual sensitive data is downloaded by the client application over a secure (https) transport.
+If you are part of regulatory industry like HIPAA and want to send sensitive information using the IBM Cloud {{site.data.keyword.mobilepushshort}}  Service you should not be using Post/message API, since the payload sent over third-party Push providers may not meet regulatory guidelines. Instead, you can use the following steps where only messageId is sent over third-party Push providers, but the actual sensitive data is downloaded by the client application over a secure (https) transport.
 
 1. Provision a new instance Advanced Plan or upgrade your existing instance to an Advanced Plan.
 2. Send a [silent notification](https://cloud.ibm.com/docs/services/mobilepush?topic=mobile-pushnotification-interactive-notifications#send_silent_notifications_for_ios) using the {{site.data.keyword.mobilepushshort}} Service.
@@ -37,4 +38,5 @@ If you are part of regulatory industry like HIPAA and want to send sensitive inf
 
 This helps in achieving transmission of sensitive text content over a secured channel using the IBM Cloud {{site.data.keyword.mobilepushshort}} Service.
 
-**Note**: IBM doesn't have Business Associate Agreements (BAA) relation with APNS/FCM.
+IBM doesn't have Business Associate Agreements (BAA) relation with APNS/FCM.
+{: note}

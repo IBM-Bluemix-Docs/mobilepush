@@ -2,7 +2,7 @@
 
 copyright:
   years:  2017, 2019
-lastupdated: "2019-05-30"
+lastupdated: "2019-05-31"
 
 keywords: push notifications, notifications, service access, manage, user roles
 
@@ -138,7 +138,7 @@ The actions are customized and defined by the {{site.data.keyword.Bluemix_notm}}
 
 Upon creating service creadentials, you may notice an apiKey is displayed instead of the appSecret.
 
-To use any REST APIs, you must generate the access token using the below curl command:
+To use any REST APIs, you must generate the access token using the following curl command:
 
 ### Parameters
 
@@ -164,7 +164,7 @@ To use any REST APIs, you must generate the access token using the below curl co
 }
 ```
 
-Upon generating the access token using the above curl command, you may now operate the Rest API’s by passing the ‘Bearer <value of access_token>’ in the Authorization header
+Upon generating the access token using the preceding curl command, you may now operate the Rest API’s by passing the ‘Bearer <value of access_token>’ in the Authorization header
 
 For example:
 

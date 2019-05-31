@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2017, 2019
-lastupdated: "2019-05-30"
+lastupdated: "2019-05-31"
 
 keywords: push notifications, notifications, faq, frequently asked questions
 
@@ -128,7 +128,7 @@ subcollection: mobile-pushnotification
 
     As the {{site.data.keyword.mobilepushshort}} service has adopted IAM, an apiKey is displayed instead of the appSecret when the user creates the service credentials.
 
-    To use any REST APIs, you must generate the access token using the below curl command:
+    To use any REST APIs, you must generate the access token using the following curl command:
 
     ```
     curl -k -X POST --header "Content-Type: application/x-www-form-urlencoded" --header "Accept: application/json" --data-urlencode "grant_type=urn:ibm:params:oauth:grant-type:apikey" --data-urlencode "apikey=G2c7oaUuOjul1RbmbjAeI7YwJSUCW_hmfif3GhLabYPE" "https://iam.bluemix.net/identity/token"
@@ -143,7 +143,7 @@ subcollection: mobile-pushnotification
     }
     ```
 
-    Upon generating the access token using the above curl command, you may now operate the Rest API’s by passing the ‘Bearer <value of access_token>’ in the Authorization header
+    Upon generating the access token using the preceding curl command, you may now operate the Rest API’s by passing the ‘Bearer <value of access_token>’ in the Authorization header
 
     For example:
 

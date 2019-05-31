@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-05-30"
+lastupdated: "2019-05-31"
 
 keywords: push notifications, application development, sdk
 
@@ -28,7 +28,7 @@ You can access the capabilities of the Push Notifications service via a HTTP Rep
 
 You can either use our SDK or the REST API to further develop your client applications.
 
-Access the below Push Notifications Functions from your backend server applications and the clients through Push Notifications REST APIs -
+Access the following Push Notifications Functions from your backend server applications and the clients through Push Notifications REST APIs -
 
  - Push Configuration
  - Device registrations
