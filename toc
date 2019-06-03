@@ -26,14 +26,18 @@ Push Notifications
 	{: .navgroup-end}
     
     {: .navgroup id="howto"}
+    push_security.md
+
     {: .topicgroup}
     Enable notification options
-	    push_security.md
         push_step_4_nf_tag.md
         push_step_4_nf_user.md
         push_step_4_nf_interactive.md
         push_step_4_nf_rich.md
-        push_step_4_nf_adv.md
+    	push_step_4_nf_adv.md
+
+    {: .topicgroup}
+    Monitoring notifications
         push_monitoring.md	
         push_message_status.md
         push_template_message.md
