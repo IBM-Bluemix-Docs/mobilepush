@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2017, 2018, 2019
-lastupdated: "2019-05-30"
+lastupdated: "2019-06-04"
 
 keywords: push notifications, notifications, service credentials, service processes, push message size
 
@@ -72,7 +72,7 @@ The {{site.data.keyword.mobilepushshort}} message payload size is dependent on t
 {: #push-blog}
 
 Sample applications are available for [Android](https://github.com/ibm-bluemix-mobile-services/bms-samples-android-hellopush/), [Cordova](https://github.com/ibm-bluemix-mobile-services/bms-samples-cordova-hellopush), and [iOS](https://github.com/ibm-bluemix-mobile-services/bms-samples-swift-hellopush).
-You can also find more information at the Push Notifications service [Blog](http://push-notification-service.mybluemix.net/) page.  
+You can also find more information at the Push Notifications service [videos](https://www.youtube.com/watch?v=1wO30GfiLaI&list=PLzJUGEaRNMfvX7-J6gqczEanWBPiOjEmA).  
 
 
 ## Sample scenario 

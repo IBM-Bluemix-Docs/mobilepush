@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2017, 2019
-lastupdated: "2019-05-31"
+lastupdated: "2019-06-04"
 
 keywords: push notifications, notifications, faq, frequently asked questions
 
@@ -77,7 +77,7 @@ subcollection: mobile-pushnotification
 
 11. Where can I find more information like tutorials or what's new?
 
-	Go through the Push Notifications service [blog](http://push-notification-service.mybluemix.net/).	
+	Go through the Push Notifications service [videos](https://www.youtube.com/watch?v=1wO30GfiLaI&list=PLzJUGEaRNMfvX7-J6gqczEanWBPiOjEmA).	
 
 12. Is there a difference between a notification and a message?
 
