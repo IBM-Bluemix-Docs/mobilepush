@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2017, 2018, 2019
-lastupdated: "2019-05-31"
+lastupdated: "2019-06-06"
 
 keywords: push notifications, notifications, upgrading plan, lite, basic, advanced
 
@@ -48,4 +48,4 @@ To upgrade your plan, complete these steps:
 1.  Click **Plan** from the navigation pane.
    From here, you can see your current plan and other available plan options, and make changes.
 
-For information about calculating costs, see the [{{site.data.keyword.Bluemix_notm}} Pricing Calculator ![External link icon](../../icons/launch-glyph.svg "External link icon")](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/pricing/platform/mobile){: new_window}.
+For information about calculating costs, see the [{{site.data.keyword.Bluemix_notm}} Pricing Calculator ![External link icon](../../icons/launch-glyph.svg "External link icon")](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/estimator){: new_window}.

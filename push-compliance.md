@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-05-31"
+lastupdated: "2019-06-06"
 
 keywords: push notifications, notifications, compliance, hipaa
 

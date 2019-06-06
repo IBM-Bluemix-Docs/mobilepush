@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2017, 2019
-lastupdated: "2019-06-04"
+lastupdated: "2019-06-06"
 
 keywords: push notifications, notifications, faq, frequently asked questions
 
@@ -39,7 +39,7 @@ subcollection: mobile-pushnotification
  
 	1. You use the right start method. 
 	1. Include the `manifest.json` file in the root folder.
-	1. Host your website. Preferably create a `node.js` starter in IBM Cloud to try it out. For example: https://<mysamplewebsite>.mybluemix.net/.	
+	1. Host your website. Preferably create a `node.js` starter in IBM Cloud to try it out. For example: https://<mysamplewebsite>.cloud.ibm.com/.	
 
 4. How do I resolve Web push web configuration errors?
 

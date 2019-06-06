@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2017, 2019
-lastupdated: "2019-05-31"
+lastupdated: "2019-06-06"
 
 keywords: push notifications, notification provider credentials
 
