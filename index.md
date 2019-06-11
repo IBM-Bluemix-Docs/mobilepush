@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2017, 2018, 2019
-lastupdated: "2019-06-06"
+lastupdated: "2019-06-11"
 
 keywords: push notifications, notifications, service credentials, service processes, push message size
 
@@ -18,7 +18,7 @@ subcollection: mobile-pushnotification
 {:tip: .tip}
 
 # About Push Notifications 
-{: #overview-push}
+{: #gettingstartedtemplate}
 
 IBM {{site.data.keyword.mobilepushshort}} is a service with which you can use to send notifications to mobile devices and browsers. Notifications can be targeted to all application users or to a specific set of users and devices using tags. For every message that you submit to the service, the intended audience receives a notification.
 

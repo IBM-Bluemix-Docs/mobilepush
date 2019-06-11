@@ -7,7 +7,7 @@ Push Notifications
 
     {: .navgroup id="learn"}
     getting-started.md
-    c_overview_push.md
+    index.md
     developer-overview.md	
     
     {: .topicgroup}

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2017, 2019
-lastupdated: "2019-06-06"
+lastupdated: "2019-06-11"
 
 keywords: push notifications, notification provider credentials
 
@@ -49,7 +49,7 @@ You would also need to generate the `google-services.json` file. Complete the fo
     
 	![Adding Firebase to your Android window](images/FCM_1.jpg "Add Firebase to your Android app screen on the Enter app details tab showing the package and app name fields")
 
-4. Now, include the package name of your application, by entering the package name in Add Firebase to your Android app window. The App nickname field is optional. Click **REGISTER APP**.  Below is an example -
+4. Now, include the package name of your application, by entering the package name in Add Firebase to your Android app window. The App nickname field is optional. Click **REGISTER APP**.  See the following example:
 
 	![Adding the package name of your application](images/FCM_settings_4.jpg "Add Firebase to your Andriod app screen on the Register app tab showing the package and app name fields")
 
@@ -57,7 +57,8 @@ You would also need to generate the `google-services.json` file. Complete the fo
 
 Once you have obtained your FCM credentials and have generated the `google-services.json` file, the next step is to [Create a service instance](https://cloud.ibm.com/docs/services/mobilepush?topic=mobile-pushnotification-push_step_2).
 
-**Note**: Google has deprecated GCM and has integrated Cloud Messaging with Firebase. You will have to migrate your GCM client apps on Android to FCM.
+Google has deprecated GCM and has integrated Cloud Messaging with Firebase. You will have to migrate your GCM client apps on Android to FCM.
+{: note}
 
 ## For iOS
 {: #push_step_1_ios}
@@ -72,15 +73,15 @@ You need to obtain and configure your APNs credentials. The APNs certificates ar
 
 The App ID (the bundle identifier) is a unique identifier that identifies a specific application. Each application requires an App ID. Services like the {{site.data.keyword.mobilepushshort}} service are configured to the App ID.
 
-Ensure that you have an [Apple Developers ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://developer.apple.com/){: new_window} account. This is a mandatory prerequisite.
+1. Ensure that you have an [Apple Developers ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://developer.apple.com/){: new_window} account. This is a mandatory prerequisite.
 
-1. Go to the [Apple Developer ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://developer.apple.com){: new_window} portal, click **Member Center**, and select **Certificates, Identifiers & Profiles**.
-2. Go to **Identifiers** > **App IDs section**.
-3. In the **Registering App IDs** page, provide the App name in the App ID Description Name field. For example: ACME Push Notifications.
-4. Provide a string for the App ID Prefix.  
-5. For the App ID Suffix, choose **Explicit App ID** and provide a Bundle ID value. It is recommended that you provide a reverse domain-name style string. For example: `com.ACME.push`.
-6. Select the **Push Notifications** check-box and click **Continue**.
-7. Go through your settings and click **Register** > **Done**.
+2. Go to the [Apple Developer ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://developer.apple.com){: new_window} portal, click **Member Center**, and select **Certificates, Identifiers & Profiles**.
+3. Go to **Identifiers** > **App IDs section**.
+4. In the **Registering App IDs** page, provide the App name in the App ID Description Name field. For example: ACME Push Notifications.
+5. Provide a string for the App ID Prefix.  
+6. For the App ID Suffix, choose **Explicit App ID** and provide a Bundle ID value. It is recommended that you provide a reverse domain-name style string. For example: `com.ACME.push`.
+7. Select the **Push Notifications** check-box and click **Continue**.
+8. Go through your settings and click **Register** > **Done**.
 
 Your App ID is now registered. 
 
