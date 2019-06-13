@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-06-06"
+lastupdated: "2019-06-11"
 
 keywords: push notifications, notifications, troubleshooting, service issues
 
@@ -132,7 +132,6 @@ Sample error response:
 ```
 	{
 		"message": "Missing APNs credentials",
-		"docUrl": "https://www.ng.bluemix.net/docs/troubleshoot/errors/mobilepush/index.html#FPWSE0003E",
 		"code":   "FPWSE0003E"
 	}
 ```

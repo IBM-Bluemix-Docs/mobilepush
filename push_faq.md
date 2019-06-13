@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2017, 2019
-lastupdated: "2019-06-11"
+lastupdated: "2019-06-13"
 
 keywords: push notifications, notifications, faq, frequently asked questions
 
@@ -151,7 +151,7 @@ As the {{site.data.keyword.mobilepushshort}} service has adopted IAM, an `apiKey
 To use any REST APIs, you must generate the access token using the following curl command:
 
 ```
-curl -k -X POST --header "Content-Type: application/x-www-form-urlencoded" --header "Accept: application/json" --data-urlencode "grant_type=urn:ibm:params:oauth:grant-type:apikey" --data-urlencode "apikey=G2c7oaUuOjul1RbmbjAeI7YwJSUCW_hmfif3GhLabYPE" "https://iam.bluemix.net/identity/token"
+curl -k -X POST --header "Content-Type: application/x-www-form-urlencoded" --header "Accept: application/json" --data-urlencode "grant_type=urn:ibm:params:oauth:grant-type:apikey" --data-urlencode "apikey=G2c7oaUuOjul1RbmbjAeI7YwJSUCW_hmfif3GhLabYPE" "https://iam.cloud.ibm.com/identity/token"
 ```
 
 ```
@@ -175,5 +175,5 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
    "message": { \ 
      "alert": "Notification alert message" \ 
    } \ 
-   }' 'https://imfpush.us-east.bluemix.net/imfpush/v1/apps/4809d407-85ff-4d11-ae4b-0fcdf8a833f1/messages'
+   }' 'https://us-east.imfpush.cloud.ibm.com/imfpush/v1/apps/4809d407-85ff-4d11-ae4b-0fcdf8a833f1/messages'
 ```	

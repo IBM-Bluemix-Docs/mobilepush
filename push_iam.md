@@ -2,7 +2,7 @@
 
 copyright:
   years:  2017, 2019
-lastupdated: "2019-06-06"
+lastupdated: "2019-06-13"
 
 keywords: push notifications, notifications, service access, manage, user roles
 
@@ -148,7 +148,7 @@ To use any REST APIs, you must generate the access token using the following cur
   --header "Accept: application/json" \
   --data-urlencode "grant_type=urn:ibm:params:oauth:grant-type:apikey" \
   --data-urlencode "apikey=G2c7oaUuOjul1RbmbjAeI7YwJSUCW_hmfif3GhLabYPE" \
-  "https://iam.bluemix.net/identity/token"
+  "https://iam.cloud.ibm.com/identity/token"
 ```
 
 ### Response
@@ -173,7 +173,7 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
    "message": { \ 
      "alert": "Notification alert message" \ 
    } \ 
- }' 'https://imfpush.us-east.bluemix.net/imfpush/v1/apps/4809d407-85ff-4d11-ae4b-0fcdf8a833f1/messages'
+ }' 'https://us-east.imfpush.cloud.ibm.com/imfpush/v1/apps/4809d407-85ff-4d11-ae4b-0fcdf8a833f1/messages'
 ```
 
 For more information about IAM, see [IAM Access](https://cloud.ibm.com/docs/iam?topic=iam-userroles).
