@@ -166,7 +166,7 @@ curl -k -X POST --header "Content-Type: application/x-www-form-urlencoded" --hea
 ```
 {: codeblock}
 
-Upon generating the access token using the preceding curl command, you may now operate the Rest API’s by passing the ‘Bearer <value of access_token>’ in the Authorization header
+Upon generating the access token using the preceding curl command, you may now operate the Rest API’s by passing the `Bearer <value of access_token>` in the Authorization header.
 
 For example:
 
