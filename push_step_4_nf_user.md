@@ -2,7 +2,11 @@
 
 copyright:
   years: 2015, 2017, 2019
-lastupdated: "18 February 2019"
+lastupdated: "2019-06-06"
+
+keywords: push notifications, notifications, user-based, register device with user ID, synchronize user login and logout
+
+subcollection: mobile-pushnotification
 
 ---
 
@@ -37,10 +41,10 @@ To register for userId-based notification, go through:
 The userId-based notifications are notification messages that are targeted to a specific user. Many devices can be registered with one user. The following steps  describes how to send user ID-based notifications.
 
 1. From the **Push Notification** console, select **Send Notifications** option.
-1. Select **UserId** in the **Send to** list of options.
-1. In the **User Id** field, search for the user Id that you want to use and then click the **+Add**.![Notifications Screen](images/user_notification.jpg)
-1. In the **Message** field, enter text that want to send in your notification.
-1. Click **Send**.
+2. Select **UserId** in the **Send to** list of options.
+3. In the **User Id** field, search for the user Id that you want to use and then click the **+Add**.![Notifications Screen](images/user_notification.jpg "Push Notification console showing the Add button for the User ID field")
+4. In the **Message** field, enter text that want to send in your notification.
+5. Click **Send**.
 
 
 ## Synchronizing user log-in and log out 

@@ -1,8 +1,12 @@
 ---
 
 copyright:
-  years: 2015, 2017, 2019
-lastupdated: "18 February 2019"
+  years: 2015, 2019
+lastupdated: "2019-06-11"
+
+keywords: push notifications, notifications, troubleshooting, service issues
+
+subcollection: mobile-pushnotification
 
 ---
 
@@ -22,9 +26,9 @@ This topic guides you in identifying and resolving the likely error scenarios yo
 ### You don't have permission to add the instance to any resource group in this account
 {: #permission_issue}
 
-**Explanation**:  IBM Push Notifications service is now a Resource Controller (RC) based service. Instances should be created using a RC. You may notice the below error if a default resource group is not in your account.
+**Explanation**:  IBM Push Notifications service is now a Resource Controller (RC) based service. Instances should be created using a RC. You may notice the following error if a default resource group is not in your account.
 
-![Permission issue](images/RC_error.png)
+![Permission issue](images/RC_error.png "Screenshot showing permission error")
 
 **User response**:  The admin must create a resource group for the user before creating an instance.
 
@@ -128,7 +132,6 @@ Sample error response:
 ```
 	{
 		"message": "Missing APNs credentials",
-		"docUrl": "https://www.ng.bluemix.net/docs/troubleshoot/errors/mobilepush/index.html#FPWSE0003E",
 		"code":   "FPWSE0003E"
 	}
 ```
@@ -157,7 +160,7 @@ To obtain additional information about an error, search the docs for the related
 
 **Explanation**: Prerequisite configuration for {{site.data.keyword.mobilepushshort}} service is not complete. You might be attempting to get Apple Push Notification service (APNs) credentials before they are configured.
 
-**User response**: Ensure that {{site.data.keyword.mobilepushshort}} service has been configured with valid security certificates for the APNs. For more information, see [Obtaining your notification provider credentials![External link icon](../../icons/launch-glyph.svg "External link icon")](/docs/services/mobilepush/push_step_1.html){: new_window}.
+**User response**: Ensure that {{site.data.keyword.mobilepushshort}} service has been configured with valid security certificates for the APNs. For more information, see [Obtaining your notification provider credentials![External link icon](../../icons/launch-glyph.svg "External link icon")](/docs/services/mobilepush?topic=mobile-pushnotification-push_step_1){: new_window}.
 
 
 ### FPWSE0004E
@@ -186,7 +189,7 @@ To obtain additional information about an error, search the docs for the related
 **Explanation**: The JSON body of the request has parameters that are not understood by the {{site.data.keyword.mobilepushshort}} server.
 
 
-**User response**: Verify that the JSON body in the request follows the format of the request that is expected by the {{site.data.keyword.mobilepushshort}} server. For more information, see [REST APIs ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://imfpush.ng.bluemix.net/imfpush/){: new_window}.
+**User response**: Verify that the JSON body in the request follows the format of the request that is expected by the {{site.data.keyword.mobilepushshort}} server. For more information, see [REST APIs ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://eu-gb.imfpush.cloud.ibm.com/imfpush/){: new_window}.
 
 
 
@@ -196,7 +199,7 @@ To obtain additional information about an error, search the docs for the related
 **Explanation**: The request URL has a query string with unrecognized parameters. For example, if the request for deleting the subscription has parameters other than deviceId and tagName, this error might occur.
 
 
-**User response**:  Verify that the JSON body in the request follows the format of the request that is expected by the {{site.data.keyword.mobilepushshort}} server. For more information, see [REST APIs ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://imfpush.ng.bluemix.net/imfpush/){: new_window}.
+**User response**:  Verify that the JSON body in the request follows the format of the request that is expected by the {{site.data.keyword.mobilepushshort}} server. For more information, see [REST APIs ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://eu-gb.imfpush.cloud.ibm.com/imfpush/){: new_window}.
 
 
 
@@ -206,7 +209,7 @@ To obtain additional information about an error, search the docs for the related
 **Explanation**: The request URL has a query string with missing required parameters. For example, the deviceId and tagName parameters might be missing from the request for deleting the subscription.
 
 
-**User response**:  Verify that the JSON body in the request follows the format of the request that is expected by the {{site.data.keyword.mobilepushshort}} server. For more information, see [REST APIs ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://imfpush.ng.bluemix.net/imfpush/){: new_window}.
+**User response**:  Verify that the JSON body in the request follows the format of the request that is expected by the {{site.data.keyword.mobilepushshort}} server. For more information, see [REST APIs ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://eu-gb.imfpush.cloud.ibm.com/imfpush/){: new_window}.
 
 
 

@@ -2,7 +2,11 @@
 
 copyright:
   years: 2015, 2017, 2018, 2019
-lastupdated: "18 February 2019"
+lastupdated: "2019-06-11"
+
+keywords: push notifications, notifications, service credentials, service processes, push message size
+
+subcollection: mobile-pushnotification
 
 ---
 
@@ -13,33 +17,65 @@ lastupdated: "18 February 2019"
 {:pre: .pre}
 {:tip: .tip}
 
-# Getting started tutorial
+# About Push Notifications 
 {: #gettingstartedtemplate}
 
-{{site.data.keyword.mobilepushshort}} is available as an IBM Cloud Catalog service in the Mobile category and enables you to send and manage mobile and web push notifications. A push notification is an alert indicating a change or update on a mobile device or browser.
-{:shortdesc}
+IBM {{site.data.keyword.mobilepushshort}} is a service with which you can use to send notifications to mobile devices and browsers. Notifications can be targeted to all application users or to a specific set of users and devices using tags. For every message that you submit to the service, the intended audience receives a notification.
 
-Push Notifications are an universally accepted communication channel across enterprises or for a wide spectrum of audience. You can deliver these notifications as an onscreen banner alert or to a device's locked screen, thus providing information updates that are quickly and easily accessible.  
+You can choose to use the {{site.data.keyword.mobilepushshort}} service either as a part of MobileFirst Services Starter Boilerplate or as IBM Cloud [Dedicated Services](https://cloud.ibm.com/docs/dedicated?topic=dedicated-dedicated#dedicated). You can also use an SDK (software development kit) and [REST APIs ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://eu-gb.imfpush.cloud.ibm.com/imfpush/){: new_window} to further develop your client applications.
 
-The basic steps that will get you started:
-
-1. [Create an IBM Cloud service instance](/docs/services/mobilepush/push_step_prereq.html)
-2. [Obtain your notification provider credentials](/docs/services/mobilepush/push_step_1.html)
-3. [Configure the service instance](/docs/services/mobilepush/push_step_2.html)
-4. [Setup Push service client SDK's](/docs/services/mobilepush/push_step_3.html)
-5. [Send a notification](/docs/services/mobilepush/push_step_4.html)
-
-The following image gives you an overview of the Push Notifications service life cycle.
-
-![Push Overview](images/push_notification_lifecycle.jpg)
+The {{site.data.keyword.mobilepushshort}} service is also enabled for [IBM Cloud Functions](https://cloud.ibm.com/docs/openwhisk?topic=cloud-functions-getting_started#getting_started). IBM Cloud Functions is a distributed, event-driven compute service that is alternatively known as serverless computing. This allows developers to focus on writing application logic, and create actions that are executed on demand.
 
 
-  
+## Service processes
+{: #overview_push_process}
+
+Mobile, Web browser clients and Google Chrome Apps & Extensions can subscribe and register for the {{site.data.keyword.mobilepushshort}} service. On start-up, the client applications will register and subscribe themselves to the {{site.data.keyword.mobilepushshort}} service. The notifications are dispatched to the Apple Push Notification Service (APNs) or Firebase Cloud Messaging (FCM) server and then sent to registered mobile device, browser clients or Chrome Apps & Extensions.
+
+![Push Overview](images/overview.jpg "Service processes flow for backend apps configuring and sending notifications through the Push notifications service")
 
 
+### Mobile, browser applications and Chrome Apps & Extensions
+{: #mobile-applications}
+
+On start-up, client applications register and subscribe themselves to the {{site.data.keyword.mobilepushshort}} service to receive notifications.
+
+### Back end applications
+{: #backend-applications}
+
+Back end applications can be either on premise, or in a public cloud. Back end applications will use the {{site.data.keyword.mobilepushshort}} service to send context-sensitive notifications to mobile, browser application and Chrome Apps & Extensions users. The back end applications are not required to maintain and manage mobile devices, browser agents and user information for sending push notifications. Instead, back end applications can use the {{site.data.keyword.mobilepushshort}} service which will manage and maintain them.
+
+### App backend owner
+{: #app-backend-owner}
+
+The App back-end owner creates the mobile back end application which bundles an instance of the {{site.data.keyword.mobilepushshort}} service. The App back end owner also configures and sets up the {{site.data.keyword.mobilepushshort}} service to suit the back end applications using the service along with mobile  and browser applications that are target for {{site.data.keyword.mobilepushshort}}.
+
+### Push Notifications service
+{: #push-notification-service}
+
+The {{site.data.keyword.mobilepushshort}} service manages all information related to mobile devices and web browser clients that are registered for notifications. The service keeps your applications transparent to the technology details of sending notifications to heterogeneous mobile and web browser platforms, handling all of this within.
+
+### Gateways
+{: #gateways}
+
+Platform specific Push Notifications cloud services such as FCM or Apple Push Notification Service (APNs) that is used by IBM {{site.data.keyword.mobilepushshort}} service to dispatch notifications to the mobile and browser applications.
+
+## Message size
+{: #push-message-size}
+
+The {{site.data.keyword.mobilepushshort}} message payload size is dependent on the constraints laid out by the Gateways (FCM, APNs) and client platforms. 
+
+- For iOS and Safari: For iOS 8 and later, the maximum size allowed is 4 kilobytes. APNs does not send notifications that exceed this limit.
+- For Android, Firefox browser, Chrome browser, and Chrome Apps & Extensions: There is a limitation of 4 kilobytes as the maximum allowed message payload size.
+
+## Samples
+{: #push-blog}
+
+Sample applications are available for [Android](https://github.com/ibm-bluemix-mobile-services/bms-samples-android-hellopush/), [Cordova](https://github.com/ibm-bluemix-mobile-services/bms-samples-cordova-hellopush), and [iOS](https://github.com/ibm-bluemix-mobile-services/bms-samples-swift-hellopush).
+You can also find more information at the Push Notifications service [videos](https://www.youtube.com/watch?v=1wO30GfiLaI&list=PLzJUGEaRNMfvX7-J6gqczEanWBPiOjEmA).  
 
 
+## Sample scenario 
+{: #push-scenario}
 
-
-
-
+The {{site.data.keyword.mobilepushshort}} service is explained using the sample scenario of the ACME Bank. The ACME Bank is in the phase of having their legacy IT infrastructure moved to IBM Cloud services and is currently building mobile back-end for their customer and employee facing apps. They are using {{site.data.keyword.mobilepushshort}} service to send notification to their customers on banking transactions and other important events and reminders.

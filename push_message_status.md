@@ -1,8 +1,12 @@
 ---
 
 copyright:
-  years: 2015, 2017, 2019
-lastupdated: "18 February 2019"
+  years: 2015, 2019
+lastupdated: "2019-06-06"
+
+keywords: push notifications, notifications, message delivery status
+
+subcollection: mobile-pushnotification
 
 ---
 
@@ -20,7 +24,7 @@ Once the message has been sent, you can track delivery information of a message 
 
 The {{site.data.keyword.mobilepushshort}} service **Messages** tab displays the notification status.
 
-![notifications status](images/notification_status_new.png)
+![notifications status](images/notification_status_new.png "Messages page showing notification status")
 
 1. **Message ID** -  A unique identifier to identify a message.
 
@@ -46,11 +50,11 @@ The {{site.data.keyword.mobilepushshort}} service **Messages** tab displays the 
  
  - Message status: Sent, Seen, Open and Invalid. 
 
-![notifications status](images/message_delivery_status_new.png)
+![notifications status](images/message_delivery_status_new.png "Message status chart showing open, sent, seen, and invalid status breakdown")
 
 6. **Options** - Gives a detailed status of a notification. Status can be tracked by selecting either the `Device Id` or the `User Id` from the dropdown menu. Getting user/device specific detailed status message may be helpful when you are tracking a failed message.
 
-![detailed status](images/detailed_message_delivery.png)
+![detailed status](images/detailed_message_delivery.png "Detailed message delivery status options with User ID selected")
 
-**Note**: The feature is enabled only for users who have opted the `Advanced Plan`. Select **Plan** in the {{site.data.keyword.mobilepushshort}} service console to [upgrade](https://console-tok02-red.cdn.s-bluemix.net/docs/account/change-plan.html#changing)
+**Note**: The feature is enabled only for users who have opted the `Advanced Plan`. Select **Plan** in the {{site.data.keyword.mobilepushshort}} service console to [upgrade](https://cloud.ibm.com/docs/account?topic=account-changing#changing)
 

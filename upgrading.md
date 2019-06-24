@@ -2,7 +2,11 @@
 
 copyright:
   years: 2015, 2017, 2018, 2019
-lastupdated: "18 February 2019"
+lastupdated: "2019-06-11"
+
+keywords: push notifications, notifications, upgrading plan, lite, basic, advanced
+
+subcollection: mobile-pushnotification
 
 ---
 
@@ -20,7 +24,8 @@ lastupdated: "18 February 2019"
 The {{site.data.keyword.mobilepushshort}} service offers three plans that provide different levels of resources and capabilities to suit your needs.
 {: shortdesc}
 
-**Pricing Plan:**
+## Pricing plan
+{: #pricing-plan}
 
 **Note:**
  - A push notification sent to a unique device/end point or a webhook event constitutes a digital message. 
@@ -29,17 +34,19 @@ The {{site.data.keyword.mobilepushshort}} service offers three plans that provid
 
 |                |Lite                           |Basic                        |Advanced                      |
 |----------------|-------------------------------|-----------------------------|------------------------------|
-|**Features**    |100,000 digital messages per month; 50 addressable devices |First 1 million digital messages and 10000 addressable devices free            | Charged per Instance </br> Includes 100 million digital messages and 1 million addressable devices<br/> Advanced Capabilities<br/> - [Parameterize messages](/docs/services/mobilepush/push_template_message.html)<br/> - [End to End message lifecycle tracking](/docs/services/mobilepush/push_message_status.html)<br/>|
+|**Features**    |100,000 digital messages per month; 50 addressable devices |First 1 million digital messages and 10000 addressable devices free            | Charged per Instance </br> Includes 100 million digital messages and 1 million addressable devices<br/> Advanced Capabilities<br/> - [Parameterize messages](/docs/services/mobilepush?topic=mobile-pushnotification-template_based_notifications)<br/> - [End to End message lifecycle tracking](/docs/services/mobilepush?topic=mobile-pushnotification-message-delivery-status)<br/>|
 |**Pricing**     |Free|- $1.00 / Ten Thousand Addressable Devices <br/> - $1.00 / Million Digital Messages <br /> |- $100.00 / Instance <br/> - $0.50 / Million Digital Messages <br/> - $0.50 / Million Addressable Devices <br/> |-|
+{:caption="Table 1. Service plans" caption-side="top"}
 
 
 ## Upgrading a service
+{: #upgrading-a-service}
 
 To upgrade your plan, complete these steps:
 
 1.  From the {{site.data.keyword.Bluemix_notm}} menu, select **Services** > **Dashboard**.
-1.  Select the service instance that you want to upgrade to open it.
-1.  Click **Plan** from the navigation pane.
+2.  Select the service instance that you want to upgrade to open it.
+3.  Click **Plan** from the navigation pane.
    From here, you can see your current plan and other available plan options, and make changes.
 
-For information about calculating costs, see the [{{site.data.keyword.Bluemix_notm}} Pricing Calculator ![External link icon](../../icons/launch-glyph.svg "External link icon")](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/pricing/platform/mobile){: new_window}.
+For information about calculating costs, see the [{{site.data.keyword.Bluemix_notm}} Pricing Calculator ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/estimator){: new_window}.

@@ -2,7 +2,11 @@
 
 copyright:
   years: 2015, 2017, 2019
-lastupdated: "18 February 2019"
+lastupdated: "2019-06-06"
+
+keywords: push notifications, notifications, configure sound, payload, ios badge, holding android notification
+
+subcollection: mobile-pushnotification
 
 ---
 
@@ -27,27 +31,27 @@ Configure an iOS badge, sound, and additional JSON payload.
 3. Choose either of the following options:	
 	- On Android
 
- 	Add your sound file in `res/raw` directory of your android application. While sending notification, add the sound file name in the sound field of {{site.data.keyword.mobilepushshort}}:
+     	Add your sound file in `res/raw` directory of your android application. While sending notification, add the sound file name in the sound field of {{site.data.keyword.mobilepushshort}}:
 
-	```
-	"settings":{
-     "gcm":{
-     "sound":"tt.wav",
-		}
-		}  
-	```	
-	{: codeblock}	
+    	```
+    	"settings":{
+         "gcm":{
+         "sound":"tt.wav",
+    		}
+    		}  
+    	```	
+    	{: codeblock}	
 	
 	- On iOS
 
-	```
-	"settings": {
-	     "apns" : {
-	      "badge": 10,
-	      "sound": "tt.wav",
-	  }
-	}
-	``` 
+    	```
+    	"settings": {
+    	     "apns" : {
+    	      "badge": 10,
+    	      "sound": "tt.wav",
+    	  }
+    	}
+    	``` 
 		{: codeblock}
 		
 **Additional Payload** - This payload can be any key-value pair and must be a JSON object that you want to send with the {{site.data.keyword.mobilepushshort}}.

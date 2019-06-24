@@ -2,7 +2,11 @@
 
 copyright:
   years:  2017, 2019
-lastupdated: "2019-02-18"
+lastupdated: "2019-06-13"
+
+keywords: push notifications, notifications, service access, manage, user roles
+
+subcollection: mobile-pushnotification
 
 ---
 
@@ -23,7 +27,7 @@ With {{site.data.keyword.mobilepushshort}} and {{site.data.keyword.Bluemix_notm}
 
 As an account owner, you can set policies within your account to create different levels of access for different users. For example, certain users can have **Read only** access to one instance, but **Write** access to another. You can decide who is allowed to create, update, and delete instances of {{site.data.keyword.mobilepushshort}}.
 
-**Note:** As the {{site.data.keyword.mobilepushshort}} service has adopted IAM, the App secret will not be generated for the new instances. You must use the [API keys instead](/docs/iam/apikeys.html).
+**Note:** As the {{site.data.keyword.mobilepushshort}} service has adopted IAM, the App secret will not be generated for the new instances. You must use the [API keys instead](https://cloud.ibm.com/docs/iam?topic=iam-manapikey).
 
 ## User roles
 {: #roles}
@@ -92,7 +96,7 @@ The following table details actions that are mapped to service access roles. Ser
   </tr>
 </table>
 
-For more information about assigning user roles in the UI, see [Managing IAM access](/docs/iam/mngiam.html#iammanidaccser).
+For more information about assigning user roles in the UI, see [Managing IAM access](https://cloud.ibm.com/docs/iam?topic=iam-iammanidaccser#iammanidaccser).
 
 
 ## {{site.data.keyword.mobilepushshort}} access policies
@@ -134,7 +138,7 @@ The actions are customized and defined by the {{site.data.keyword.Bluemix_notm}}
 
 Upon creating service creadentials, you may notice an apiKey is displayed instead of the appSecret.
 
-To use any REST APIs, you must generate the access token using the below curl command:
+To use any REST APIs, you must generate the access token using the following curl command:
 
 ### Parameters
 
@@ -144,7 +148,7 @@ To use any REST APIs, you must generate the access token using the below curl co
   --header "Accept: application/json" \
   --data-urlencode "grant_type=urn:ibm:params:oauth:grant-type:apikey" \
   --data-urlencode "apikey=G2c7oaUuOjul1RbmbjAeI7YwJSUCW_hmfif3GhLabYPE" \
-  "https://iam.bluemix.net/identity/token"
+  "https://iam.cloud.ibm.com/identity/token"
 ```
 
 ### Response
@@ -160,7 +164,7 @@ To use any REST APIs, you must generate the access token using the below curl co
 }
 ```
 
-Upon generating the access token using the above curl command, you may now operate the Rest API’s by passing the ‘Bearer <value of access_token>’ in the Authorization header
+Upon generating the access token using the preceding curl command, you may now operate the Rest API’s by passing the ‘Bearer <value of access_token>’ in the Authorization header
 
 For example:
 
@@ -169,7 +173,7 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
    "message": { \ 
      "alert": "Notification alert message" \ 
    } \ 
- }' 'https://imfpush.us-east.bluemix.net/imfpush/v1/apps/4809d407-85ff-4d11-ae4b-0fcdf8a833f1/messages'
+ }' 'https://us-east.imfpush.cloud.ibm.com/imfpush/v1/apps/4809d407-85ff-4d11-ae4b-0fcdf8a833f1/messages'
 ```
 
-For more information about IAM, see [IAM Access](/docs/iam/users_roles.html).
+For more information about IAM, see [IAM Access](https://cloud.ibm.com/docs/iam?topic=iam-userroles).

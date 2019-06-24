@@ -2,7 +2,11 @@
 
 copyright:
   years: 2015, 2017, 2019
-lastupdated: "18 February 2019"
+lastupdated: "2019-06-06"
+
+keywords: push notifications, notifications, sending a notification
+
+subcollection: mobile-pushnotification
 
 ---
 
@@ -21,7 +25,7 @@ To send basic push notifications, complete the following steps:
 1. Select **Messages**, and compose a message by choosing a **Send to** option. The supported options are **Device by Tag**, **Device Id**, **User Id**, **Android devices**, **iOS devices**, **Web Notifications**, **Chrome Apps and Extensions**, **Chrome Browser**, **Firefox**, **Safari** and **All Devices**.
 **Note**: When you select the **All Devices** option, all devices subscribed to {{site.data.keyword.mobilepushshort}} will receive notifications.
 	
-    ![Notifications screen](images/tag_notification.jpg)
+    ![Notifications screen](images/tag_notification.jpg "Send notifications screen showing Send to, Message, and Additional payload fields")
 
 2. In the **Message** field, compose your message. Choose to configure the optional settings as required.
 3. Click **Send**.
@@ -29,18 +33,18 @@ To send basic push notifications, complete the following steps:
 
 The following screen shot shows an alert box handling a push notification in the foreground on a Android device.
 
-![Foreground push notification on Android](images/Android_Screenshot.jpg)
+![Foreground push notification on Android](images/Android_Screenshot.jpg "Alert box with test notification")
 
 The following following screen shot shows a push notification in the background for Android.
 
-![Background push notification on Android](images/background.jpg)
+![Background push notification on Android](images/background.jpg "Push notification on an Android device")
 
 ## Optional Android settings 
 {: #push_step_4_Android}
 
 You can further customize the {{site.data.keyword.mobilepushshort}} settings for sending notifications to Android devices. 
 
-![Android custom settings](images/android_custom_settings.jpg)
+![Android custom settings](images/android_custom_settings.jpg "Push notifications custom settings page")
 
 The following optional customization options are supported:
 
