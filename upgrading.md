@@ -34,7 +34,7 @@ The {{site.data.keyword.mobilepushshort}} service offers three plans that provid
 
 |                |Lite                           |Basic                        |Advanced                      |
 |----------------|-------------------------------|-----------------------------|------------------------------|
-|**Features**    |100,000 digital messages per month; 50 addressable devices |First 1 million digital messages and 10000 addressable devices free            | Charged per Instance </br> Includes 100 million digital messages and 1 million addressable devices<br/> Advanced Capabilities<br/> - [Parameterize messages](https://cloud.ibm.com/docs/services/mobilepush?topic=mobile-pushnotification-template_based_notifications)<br/> - [End to End message lifecycle tracking](https://cloud.ibm.com/docs/services/mobilepush?topic=mobile-pushnotification-message-delivery-status)<br/>|
+|**Features**    |100,000 digital messages per month; 50 addressable devices |First 1 million digital messages and 10000 addressable devices free            | Charged per Instance </br> Includes 100 million digital messages and 1 million addressable devices<br/> Advanced Capabilities<br/> - [Parameterize messages](/docs/services/mobilepush?topic=mobile-pushnotification-template_based_notifications)<br/> - [End to End message lifecycle tracking](/docs/services/mobilepush?topic=mobile-pushnotification-message-delivery-status)<br/>|
 |**Pricing**     |Free|- $1.00 / Ten Thousand Addressable Devices <br/> - $1.00 / Million Digital Messages <br /> |- $100.00 / Instance <br/> - $0.50 / Million Digital Messages <br/> - $0.50 / Million Addressable Devices <br/> |-|
 {:caption="Table 1. Service plans" caption-side="top"}
 

@@ -160,7 +160,7 @@ To obtain additional information about an error, search the docs for the related
 
 **Explanation**: Prerequisite configuration for {{site.data.keyword.mobilepushshort}} service is not complete. You might be attempting to get Apple Push Notification service (APNs) credentials before they are configured.
 
-**User response**: Ensure that {{site.data.keyword.mobilepushshort}} service has been configured with valid security certificates for the APNs. For more information, see [Obtaining your notification provider credentials![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/docs/services/mobilepush?topic=mobile-pushnotification-push_step_1){: new_window}.
+**User response**: Ensure that {{site.data.keyword.mobilepushshort}} service has been configured with valid security certificates for the APNs. For more information, see [Obtaining your notification provider credentials![External link icon](../../icons/launch-glyph.svg "External link icon")](/docs/services/mobilepush?topic=mobile-pushnotification-push_step_1){: new_window}.
 
 
 ### FPWSE0004E

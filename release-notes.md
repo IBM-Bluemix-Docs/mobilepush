@@ -22,11 +22,11 @@ The following new features and changes to the service are available. These chang
 
 ### Managing access to Push Notifications through IBM Cloud Identity and Access Management (IAM)
 
-As an account owner, you can set policies within your account to create different levels of access for different users using [IAM](https://cloud.ibm.com/docs/services/mobilepush?topic=mobile-pushnotification-service-access-management).
+As an account owner, you can set policies within your account to create different levels of access for different users using [IAM](/docs/services/mobilepush?topic=mobile-pushnotification-service-access-management).
 
 ### Activity Tracker
 
-You can monitor a user's interaction with the Push Notifications service. You can search and analyze how your users and applications [interact with the service](https://cloud.ibm.com/docs/services/mobilepush?topic=mobile-pushnotification-push_activity_tracker).
+You can monitor a user's interaction with the Push Notifications service. You can search and analyze how your users and applications [interact with the service](/docs/services/mobilepush?topic=mobile-pushnotification-push_activity_tracker).
 
 
 ## May 2018

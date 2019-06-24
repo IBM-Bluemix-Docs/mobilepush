@@ -41,7 +41,7 @@ Access the following Push Notifications Functions from your backend server appli
 ## Using Software Development Kits
 {: #sdks}
 
-The Push Notifications Service supports Android, iOS, Cordova and Web SDKs for simplified application development. [Install and integrate](https://cloud.ibm.com/docs/services/mobilepush?topic=mobile-pushnotification-install-sdk) the SDK into your app. 
+The Push Notifications Service supports Android, iOS, Cordova and Web SDKs for simplified application development. [Install and integrate](/docs/services/mobilepush?topic=mobile-pushnotification-install-sdk) the SDK into your app. 
 
 All SDKs support authenticating by using either your service credentials or an authentication token.
 
@@ -50,7 +50,7 @@ All SDKs support authenticating by using either your service credentials or an a
 
 For more information about working with Mobile Developer Cloud services and {{site.data.keyword.Bluemix_notm}}, see the following:
 
--   For an introduction to working with Mobile services and {{site.data.keyword.Bluemix_notm}}, see [Getting started with Mobile apps on IBM Cloud](https://cloud.ibm.com/docs/services/mobile?topic=mobile-getting-started).
+-   For an introduction to working with Mobile services and {{site.data.keyword.Bluemix_notm}}, see [Getting started with Mobile apps on IBM Cloud](/docs/services/mobile?topic=mobile-getting-started).
 
 -   Fast track your mobile app development. Pick up a Starter kit from [here](https://cloud.ibm.com/developer/mobile/dashboard). Download the code. Run the App!
 

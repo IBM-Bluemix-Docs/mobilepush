@@ -27,11 +27,11 @@ Push Notifications are an universally accepted communication channel across ente
 
 The basic steps that will get you started:
 
-1. [Create an IBM Cloud service instance](https://cloud.ibm.com/docs/services/mobilepush?topic=mobile-pushnotification-push_step_1a)
-2. [Obtain your notification provider credentials](https://cloud.ibm.com/docs/services/mobilepush?topic=mobile-pushnotification-push_step_1)
-3. [Configure the service instance](https://cloud.ibm.com/docs/services/mobilepush?topic=mobile-pushnotification-push_step_2)
-4. [Setup Push service client SDK's](https://cloud.ibm.com/docs/services/mobilepush?topic=mobile-pushnotification-push_step_3)
-5. [Send a notification](https://cloud.ibm.com/docs/services/mobilepush?topic=mobile-pushnotification-push_step_4)
+1. [Create an IBM Cloud service instance](/docs/services/mobilepush?topic=mobile-pushnotification-push_step_1a)
+2. [Obtain your notification provider credentials](/docs/services/mobilepush?topic=mobile-pushnotification-push_step_1)
+3. [Configure the service instance](/docs/services/mobilepush?topic=mobile-pushnotification-push_step_2)
+4. [Setup Push service client SDK's](/docs/services/mobilepush?topic=mobile-pushnotification-push_step_3)
+5. [Send a notification](/docs/services/mobilepush?topic=mobile-pushnotification-push_step_4)
 
 The following image gives you an overview of the Push Notifications service life cycle.
 

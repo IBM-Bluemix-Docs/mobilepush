@@ -55,7 +55,7 @@ You would also need to generate the `google-services.json` file. Complete the fo
 
 5. The `google-services.json` file is generated. 
 
-Once you have obtained your FCM credentials and have generated the `google-services.json` file, the next step is to [Create a service instance](https://cloud.ibm.com/docs/services/mobilepush?topic=mobile-pushnotification-push_step_2).
+Once you have obtained your FCM credentials and have generated the `google-services.json` file, the next step is to [Create a service instance](/docs/services/mobilepush?topic=mobile-pushnotification-push_step_2).
 
 Google has deprecated GCM and has integrated Cloud Messaging with Firebase. You will have to migrate your GCM client apps on Android to FCM.
 {: note}
@@ -169,7 +169,7 @@ Use the store provisioning profile to submit your app for distribution to the Ap
 1. Go to the [Apple Developer ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://developer.apple.com){: new_window} portal, click **Member Center**, and select **Certificates, Identifiers & Profiles**.
 2. Double-click the downloaded provisioning profile to install it into Xcode.
 
-After obtaining the credentials, the next step is to [Configure a service instance](https://cloud.ibm.com/docs/services/mobilepush?topic=mobile-pushnotification-push_step_2).
+After obtaining the credentials, the next step is to [Configure a service instance](/docs/services/mobilepush?topic=mobile-pushnotification-push_step_2).
 
 ## For web browsers and Chrome Apps & Extensions
 {: #configure-credential-for-browsers}
@@ -182,7 +182,7 @@ For example: `https://www.acmebanks.com`
 
 A {{site.data.keyword.mobilepushshort}} service instance supports only one domain name at a time. Hence, ensure that the same value is set for Chrome, Firefox and Safari. Chrome and Safari browsers require additional configuration for web push. You would need an FCM API key, as an FCM endpoint is used to deliver messages in Chrome. 
 
-To set up the service for Chrome, Firefox browsers, and Chrome Apps & Extensions, see [Configure a service instance](https://cloud.ibm.com/docs/services/mobilepush?topic=mobile-pushnotification-push_step_2).
+To set up the service for Chrome, Firefox browsers, and Chrome Apps & Extensions, see [Configure a service instance](/docs/services/mobilepush?topic=mobile-pushnotification-push_step_2).
 
 
 ### Configuring for Safari web push 
@@ -209,4 +209,4 @@ Ensure that you have an Apple Developer account. You need to register a Website 
 10. Choose the `.certSigningRequest` created on the disk when prompted in the wizard for generating the certificate. Ensure that you download the Website push certificate created in the `.cer` format.
 11. Open the Certificate in the KeyChain Access tool. Right-click and export as a p12 certificate. Note the password provided during the generation of the p12 certificate.
 
-After generating a certificate, the next step is to [Configure a service instance](https://cloud.ibm.com/docs/services/mobilepush?topic=mobile-pushnotification-push_step_2).
+After generating a certificate, the next step is to [Configure a service instance](/docs/services/mobilepush?topic=mobile-pushnotification-push_step_2).

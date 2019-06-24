@@ -18,12 +18,12 @@ subcollection: mobile-pushnotification
 # Step 3: Configure a service instance 
 {: #push_step_2}
 
-Ensure that you have gone through [Obtain your notification credentials](https://cloud.ibm.com/docs/services/mobilepush?topic=mobile-pushnotification-push_step_1).
+Ensure that you have gone through [Obtain your notification credentials](/docs/services/mobilepush?topic=mobile-pushnotification-push_step_1).
 
 ## For Android and Chrome Apps & Extensions
 {: #push_step_2_Android}
 
-Ensure that you have gone through [Obtain your notification provider credentials](https://cloud.ibm.com/docs/services/mobilepush?topic=mobile-pushnotification-push_step_1) to setup the FCM project and obtain your credentials.
+Ensure that you have gone through [Obtain your notification provider credentials](/docs/services/mobilepush?topic=mobile-pushnotification-push_step_1) to setup the FCM project and obtain your credentials.
 
 To configure FCM credentials for Android applications and Google Chrome Apps & Extensions, complete the following steps:
 
@@ -34,7 +34,7 @@ To configure FCM credentials for Android applications and Google Chrome Apps & E
 	- For Google Chrome Apps & Extensions: Select **Web** and then update the Chrome Apps and Extensions tab with the Sender ID/Project number and API Key. 
 4. Click **Save**. The Push Notifications service is now configured.
 
-Your next step is to [set up the Push service client SDK's](https://cloud.ibm.com/docs/services/mobilepush?topic=mobile-pushnotification-push_step_3).
+Your next step is to [set up the Push service client SDK's](/docs/services/mobilepush?topic=mobile-pushnotification-push_step_3).
 
 
 ## For Cordova applications 
@@ -51,7 +51,7 @@ To enable Cordova applications for receiving push notifications to your devices,
 {: #enable-push-ios-notifications}
 
 
-To use the {{site.data.keyword.mobilepushshort}} service to send notifications, upload the `.p12` certificates that you had created in Step 1:[Obtain your notification provider credentials](https://cloud.ibm.com/docs/services/mobilepush?topic=mobile-pushnotification-push_step_1). This certificate contains the private key and SSL certificates that are required to build and publish your application. You can also use the REST API to upload an APNs certificate.
+To use the {{site.data.keyword.mobilepushshort}} service to send notifications, upload the `.p12` certificates that you had created in Step 1:[Obtain your notification provider credentials](/docs/services/mobilepush?topic=mobile-pushnotification-push_step_1). This certificate contains the private key and SSL certificates that are required to build and publish your application. You can also use the REST API to upload an APNs certificate.
 
 **Note**: After the `.cer` file is in your key chain access, export it to your computer to create a `.p12` certificate.
 
@@ -78,7 +78,7 @@ To set up APNs on the Push Notification services console, complete the steps:
 4. Click **Save**.	
 ![Push Notifications console](images/push_configure_safari.jpg "Web option page fields")	
 
-After you have set up the service for iOS applications, you need to [Set up Push service client SDK's](https://cloud.ibm.com/docs/services/mobilepush?topic=mobile-pushnotification-push_step_3).
+After you have set up the service for iOS applications, you need to [Set up Push service client SDK's](/docs/services/mobilepush?topic=mobile-pushnotification-push_step_3).
 
 
 ## For Chrome and Firefox browsers 
@@ -89,6 +89,6 @@ After you have set up the service for iOS applications, you need to [Set up Push
 	![WebPush Configurations](images/webpush_configure.jpg "Web Push Configuration window for definining FCM API Key and URL of your website")
 3. Configure the FCM API key and the URL of your website that will be registered to receive push notifications.
 4. Click **Save**.
-5. After you have set up the service, you need to [Set up Push service client SDK's](https://cloud.ibm.com/docs/services/mobilepush?topic=mobile-pushnotification-push_step_3).
+5. After you have set up the service, you need to [Set up Push service client SDK's](/docs/services/mobilepush?topic=mobile-pushnotification-push_step_3).
 
 
