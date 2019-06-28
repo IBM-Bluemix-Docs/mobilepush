@@ -1,7 +1,12 @@
 ---
 
 copyright:
- years: 2015, 2017
+  years: 2015, 2017, 2019
+lastupdated: "2019-06-06"
+
+keywords: push notifications, notifications, receive alerts, webhook events
+
+subcollection: mobile-pushnotification
 
 ---
 
@@ -12,9 +17,6 @@ copyright:
 
 # Web フック・イベントに関するアラートの受信
 {: #webhook_event_based_notifications}
-最終更新日; 2017 年 9 月 08 日
-{: .last-updated}
-
 
 {{site.data.keyword.mobilepushshort}} サービスを使用して、変更された情報に関するアラートを受け取ることを選択できます。 エンタープライズ情報に対する変更があると、イベントが作成されます。これらのイベントを Web フック・イベントとして登録することによって、通知を受け取ることができます。 これらの Web フック・イベントは、アラートをトリガーします。 
 
@@ -31,7 +33,7 @@ Web フックは、デバイスの登録やタグへのサブスクライブな�
 **注**: 通知のディスパッチはバッチ単位で行われます。 1 回のメッセージのディスパッチに複数の Web フック・イベントが含まれることがあります。また、これには失敗と成功の両方が含まれている可能性があります。 
 Web フック・イベントは、ディスパッチされたメッセージと同じ messageID を持ちます。 
 
-Web フックについて詳しくは、[IBM Push Notifications REST API ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://console.bluemix.net/apidocs/800-push-notifications){: new_window}を参照してください。
+Web フックについて詳しくは、[IBM Push Notifications REST API ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://cloud.ibm.com/apidocs/push-notifications){: new_window}を参照してください。
 
 ## Web フック・イベントに関するアラートの受信
 {: #webhook_alert_event}

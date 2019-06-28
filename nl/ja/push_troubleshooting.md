@@ -1,7 +1,12 @@
 ---
 
 copyright:
- years: 2015, 2017
+  years: 2015, 2019
+lastupdated: "2019-06-11"
+
+keywords: push notifications, notifications, troubleshooting, service issues
+
+subcollection: mobile-pushnotification
 
 ---
 
@@ -12,13 +17,37 @@ copyright:
 
 # サービス問題のトラブルシューティング
 {: #errors}
-最終更新日: 2017 年 7 月 13 日
-{: .last-updated}
 
 このトピックでは、プッシュ通知サービスの使用時に発生することがあるエラー・シナリオを識別し、解決する方法について説明します。
 
 ## 一般的なプッシュ通知の問題の解決
 {: #troubleshooting_notification_errors}
+
+### このアカウント内のリソース・グループにインスタンスを追加する権限がありません。
+{: #permission_issue}
+
+**説明**:  IBM Push Notifications サービスは、リソース・コントローラー (RC) ベースのサービスになりました。インスタンスは RC を使用して作成されます。デフォルトのリソース・グループがご使用のアカウント内にない場合は、以下のエラーが表示される場合があります。
+
+![許可の問題](images/RC_error.png "許可エラーを示すスクリーン・ショット")
+
+**ユーザー応答**:  管理者は、インスタンスの作成前にユーザーのリソース・グループを作成する必要があります。
+
+
+### サービスへのアクセス時の「HyperText Transfer Protocol (HTTP) 301 永続的に移動」のリダイレクト状況
+{: #http_301_redirect}
+
+**説明**: このエラーは、`http` プロトコルを使用してサービスにアクセス中に発生する可能性があります。Push Notification サービスでは、`https` プロトコルを使用して Web サイトにアクセスする必要があります。
+
+**ユーザー応答**: サービスと Swagger API にアクセスする際は、`http` ではなく `https` プロトコルを使用することをお勧めします。
+
+
+### POST 要求が同じ呼び出しの GET 要求を返す
+{: #Postman_issue}
+
+**説明**: postman は POST 要求に対する 301 または 302 の応答コードを受け取ると、自動的に同じ呼び出しの GET 要求にリダイレクトします。Push Notification サービスでは、`http` プロトコルではなく `https` プロトコルを使用して Web サイトにアクセスする必要があります。
+
+**ユーザー応答**: ブラウザーから `https` を使用して Web サイトへの接続を試行することをお勧めします。
+
 
 ### 内部サーバー・エラーが発生しました。 管理者に連絡してください。 (内部エラー・コード: PUSHD102E)
 {: #troubleshooting_notification_internal}
@@ -44,12 +73,12 @@ copyright:
 **ユーザー応答**: Service Worker をサポートするブラウザーに切り替えることをお勧めします。 サポートされるブラウザーのバージョンは、Firefox バージョン 49 以降と Chrome バージョン 53 (64 ビット) 以降です。
 
 
-### サーバー使用中: サーバーは現在要求を処理できません。後で再試行してください。
+### サーバー使用中: サーバーは現在要求を処理できません。 後で再試行してください。
 {: #troubleshooting_notification_server_busy}
 
-**説明**: 「モニタリング」ページでレポートにアクセスしている時に、ユーザーがエラーに気付くことがあります。これは、過去 90 日間に送信されたメッセージの数が非常に多いときに予期される動作です。
+**説明**: 「モニタリング」ページでレポートにアクセスしている時に、ユーザーがエラーに気付くことがあります。 これは、過去 90 日間に送信されたメッセージの数が非常に多いときに予期される動作です。
  
-**ユーザー応答**: REST API から、messageId ベースのレポートにアクセスできます。 [REST API 資料]( https://console.bluemix.net/apidocs/800-push-notifications?&language=shell_curl#getmessagereport)内の『getMessageReport』を参照してください。
+**ユーザー応答**: REST API から、messageId ベースのレポートにアクセスできます。 [REST API 資料](https://cloud.ibm.com/apidocs/push-notifications#api-documentation-for-push-notifications)内の『getMessageReport』を参照してください。
 
 
 ### SecurityError: この操作は安全ではありません
@@ -103,7 +132,6 @@ function showStatus(response) {
 ```
 	{
 		"message": "Missing APNs credentials",
-		"docUrl": "https://www.ng.bluemix.net/docs/troubleshoot/errors/mobilepush/index.html#FPWSE0003E",
 		"code":   "FPWSE0003E"
 	}
 ```
@@ -132,7 +160,7 @@ function showStatus(response) {
 
 **説明**: {{site.data.keyword.mobilepushshort}} サービスの前提条件となる構成が完了していません。 Apple Push Notification サービス (APNs) の資格情報をまだ構成していないのに取得しようとしている可能性があります。
 
-**ユーザー応答**: {{site.data.keyword.mobilepushshort}}  サービスが APNs 用の有効なセキュリティー証明書を使用して構成されているようにしてください。 詳しくは、[通知プロバイダー資格情報の取得![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](push_step_1.html){: new_window} を参照してください。
+**ユーザー応答**: {{site.data.keyword.mobilepushshort}}  サービスが APNs 用の有効なセキュリティー証明書を使用して構成されているようにしてください。 詳しくは、[通知プロバイダー資格情報の取得![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](/docs/services/mobilepush?topic=mobile-pushnotification-push_step_1){: new_window} を参照してください。
 
 
 ### FPWSE0004E
@@ -161,7 +189,7 @@ function showStatus(response) {
 **説明**: 要求の JSON 本体に、{{site.data.keyword.mobilepushshort}} サーバーが理解できないパラメーターが含まれています。
 
 
-**ユーザー応答**: 要求内の JSON 本体が、{{site.data.keyword.mobilepushshort}} サーバーで予想されている要求の形式に従っていることを確認してください。 詳細情報については、[REST API ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://imfpush.{DomainName}/imfpush/){: new_window}を参照してください。
+**ユーザー応答**: 要求内の JSON 本体が、{{site.data.keyword.mobilepushshort}} サーバーで予想されている要求の形式に従っていることを確認してください。 詳細情報については、[REST API ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://eu-gb.imfpush.cloud.ibm.com/imfpush/){: new_window}を参照してください。
 
 
 
@@ -171,7 +199,7 @@ function showStatus(response) {
 **説明**: 要求 URL に、認識されないパラメーターが含まれる照会ストリングがあります。 例えば、サブスクリプションを削除する要求に deviceId と tagName 以外のパラメーターが含まれている場合に、このエラーが発生する可能性があります。
 
 
-**ユーザー応答**: 要求内の JSON 本体が、{{site.data.keyword.mobilepushshort}} サーバーで予想されている要求の形式に従っていることを確認してください。 詳細情報については、[REST API ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://imfpush.{DomainName}/imfpush/){: new_window}を参照してください。
+**ユーザー応答**: 要求内の JSON 本体が、{{site.data.keyword.mobilepushshort}} サーバーで予想されている要求の形式に従っていることを確認してください。 詳細情報については、[REST API ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://eu-gb.imfpush.cloud.ibm.com/imfpush/){: new_window}を参照してください。
 
 
 
@@ -181,7 +209,7 @@ function showStatus(response) {
 **説明**: 要求 URL に、必須パラメーターが欠落している照会ストリングがあります。 例えば、サブスクリプションを削除する要求から deviceId パラメーターや tagName パラメーターが欠落していることが考えられます。
 
 
-**ユーザー応答**: 要求内の JSON 本体が、{{site.data.keyword.mobilepushshort}} サーバーで予想されている要求の形式に従っていることを確認してください。 詳細情報については、[REST API ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://imfpush.{DomainName}/imfpush/){: new_window}を参照してください。
+**ユーザー応答**: 要求内の JSON 本体が、{{site.data.keyword.mobilepushshort}} サーバーで予想されている要求の形式に従っていることを確認してください。 詳細情報については、[REST API ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://eu-gb.imfpush.cloud.ibm.com/imfpush/){: new_window}を参照してください。
 
 
 

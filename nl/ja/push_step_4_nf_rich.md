@@ -1,7 +1,12 @@
 ---
 
 copyright:
- years: 2015, 2017
+  years: 2015, 2017, 2019
+lastupdated: "2019-06-06"
+
+keywords: push notifications, notifications, rich media notification
+
+subcollection: mobile-pushnotification
 
 ---
 
@@ -11,10 +16,7 @@ copyright:
 {:codeblock:.codeblock}
 
 # リッチ・メディア通知
-{: #interactive-notifications}
-最終更新日: 2017 年 7 月 13 日
-{: .last-updated}
-
+{: #rich-media-notifications}
 
 iOS 10 以降でリッチ・メディアの {{site.data.keyword.mobilepushshort}} を有効にできます。 プッシュ通知は、音声、ビデオ、GIF、およびイメージとともに送信できます。 
 

@@ -1,7 +1,12 @@
 ---
 
 copyright:
- years: 2015, 2017
+  years: 2015, 2019
+lastupdated: "2019-06-06"
+
+keywords: push notifications, notifications, parameterize notification
+
+subcollection: mobile-pushnotification
 
 ---
 
@@ -12,8 +17,6 @@ copyright:
 
 # 通知のパラメーター化
 {: #template_based_notifications}
-最終更新日: 2017 年 8 月 21 日
-{: .last-updated}
 
 変数を作成してそれらを通知テンプレートで呼び出すことにより、カスタム通知をパラメーター化して送信することができます。
 
@@ -58,25 +61,19 @@ copyright:
 
 2. **「送信先 (Send to)」**オプションを選択してメッセージを作成します。
 
-2. **「メッセージ」**フィールドで、メッセージを作成します。メッセージ・テンプレートで定義されている変数を呼び出します。**「送信」**をクリックします。
+3. **「メッセージ」**フィールドで、メッセージを作成します。  メッセージ・テンプレートで定義されている変数を呼び出します。 **「送信」**をクリックします。
 
-![メッセージ・テンプレート](images/message_template.png)
+![メッセージ・テンプレート](images/message_template.png "「送信先」フィールドが「すべてのデバイス」に設定されており、ユーザーの銀行口座の残高についてのメッセージ例を示す「メッセージ」フィールドと "key":"value" 属性が追加されている「追加ペイロード」フィールドを含むメッセージ・テンプレートを示す「メッセージ」ページ。")
 
 以下のように、変数データを取り出すことにより、カスタム通知メッセージが送信されます。
 
-![メッセージ例](images/message_template_example.jpg)
+![メッセージ例](images/message_template_example.jpg "メッセージ・テンプレートを基準にした通知例")
 
-注: この機能は、「アドバンスト・プラン (`Advanced Plan`)」を選択したユーザーに対してのみ有効になります。[アップグレード](https://console-tok02-red.cdn.s-bluemix.net/docs/account/change-plan.html#changing)するには、{{site.data.keyword.mobilepushshort}} サービス・コンソールで**「プラン」**を選択してください。
+注: この機能は、「アドバンスト・プラン (`Advanced Plan`)」を選択したユーザーに対してのみ有効になります。 [アップグレード](https://cloud.ibm.com/docs/account?topic=account-changing#changing)するには、{{site.data.keyword.mobilepushshort}} サービス・コンソールで**「プラン」**を選択してください。
 
-**制限事項:**
+## 制限
+{: #limitations}
 
  - 現在、この機能は Safari ではサポートされていません。
- - アプリケーションが iOS で強制終了された場合、通知テンプレートの変数は機能しない可能性があります。この制限は、SDK の制御によるものではなく、iOS の制限になります。
-
-
-
-
-
-
-
+ - アプリケーションが iOS で強制終了された場合、通知テンプレートの変数は機能しない可能性があります。 この制限は、SDK の制御によるものではなく、iOS の制限になります。
 

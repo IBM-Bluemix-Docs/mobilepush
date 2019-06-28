@@ -1,7 +1,12 @@
 ---
 
 copyright:
- years: 2015, 2017
+  years: 2015, 2017, 2019
+lastupdated: "2019-06-06"
+
+keywords: push notifications, notifications, configure sound, payload, ios badge, holding android notification
+
+subcollection: mobile-pushnotification
 
 ---
 
@@ -11,8 +16,6 @@ copyright:
 {:codeblock:.codeblock}
 
 #拡張プッシュ通知の使用可能化
-最終更新日: 2017 年 6 月 1 日
-{: .last-updated}
 
 iOS バッジ、音声、追加の JSON ペイロード、アクション可能通知、および保留通知を構成します。
 
@@ -28,27 +31,27 @@ iOS のバッジ、音声、および追加の JSON ペイロードを構成し�
 3. 次のいずれかのオプションを選択します。	
 	- Android の場合
 
- 	Android アプリケーションの `res/raw` ディレクトリーに音声ファイルを追加します。 通知の送信中に、{{site.data.keyword.mobilepushshort}} の音声フィールドに音声ファイル名を追加します。
+     	Android アプリケーションの `res/raw` ディレクトリーに音声ファイルを追加します。 通知の送信中に、{{site.data.keyword.mobilepushshort}} の音声フィールドに音声ファイル名を追加します。
 
-	```
-	"settings":{
-     "gcm":{
-     "sound":"tt.wav",
-  }
-		}  
-	```	
-	{: codeblock}	
+    	```
+    	"settings":{
+         "gcm":{
+         "sound":"tt.wav",
+    		}
+    		}  
+    	```	
+    	{: codeblock}	
 	
 	- iOS の場合
 
-	```
-	"settings": {
-	     "apns" : {
-	      "badge": 10,
-      "sound": "tt.wav",
-  }
-	}
-	``` 
+    	```
+    	"settings": {
+    	     "apns" : {
+    	      "badge": 10,
+    	      "sound": "tt.wav",
+    	  }
+    	}
+    	``` 
 		{: codeblock}
 		
 **追加のペイロード** - このペイロードは、任意のキーと値のペアにすることができますが、{{site.data.keyword.mobilepushshort}}で送信する JSON オブジェクトでなければなりません。

@@ -63,7 +63,7 @@ Once the variables are defined, they can be called in your message template.
 
 3. In the **Message** field, compose your message.  Call the defined variables in the message template. Click **Send**.
 
-![message template](images/message_template.png "Message page showing a message template with Sent to field set to All devices, Message field with example message about a user's bank account balance, and Additional payload field with "key":"value" attribute added.)
+![message template](images/message_template.png "Message page showing a message template with Sent to field set to All devices, Message field with example message about a user's bank account balance, and Additional payload field with "key":"value" attribute added.")
 
 Your custom notfication message will be sent by fetching the variable data -
 

@@ -1,7 +1,12 @@
 ---
 
 copyright:
- years: 2015, 2017
+  years: 2015, 2017, 2019
+lastupdated: "2019-06-06"
+
+keywords: push notifications, notifications, user-based, register device with user ID, synchronize user login and logout
+
+subcollection: mobile-pushnotification
 
 ---
 
@@ -12,8 +17,6 @@ copyright:
 
 # ユーザー・ベースの通知
 {: #user_based_notifications}
-最終更新日: 2017 年 5 月 22 日
-{: .last-updated}
 
 ユーザー ID ベースの{{site.data.keyword.mobilepushshort}}は、カスタマイズしたメッセージを使用し、モバイル・アプリ・ユーザーをターゲットとします。 ユーザー・ベースの通知では、通知設定に基づいて特定の個人に通知するように選択できます。
 
@@ -22,7 +25,7 @@ copyright:
 
 ユーザー ID によってターゲット指定されるプッシュ通知を有効にするには、必ず、「ユーザー ID」フィールドを設定した状態でデバイスを登録してください。     
 
-ユーザー ID には、アプリケーションがデバイス登録 API に提供する任意のストリングが可能です。 通常、モバイル・アプリケーションはまず、[{{site.data.keyword.amafull}} ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://console.ng.bluemix.net/docs/services/mobileaccess/index.html){: new_window}などの認証サービスに対してモバイル・アプリ・ユーザーを認証する認証サイクルを実行します。 認証に成功すると、認証済みユーザー ID がプッシュ・デバイス登録 API に渡されます。 
+ユーザー ID には、アプリケーションがデバイス登録 API に提供する任意のストリングが可能です。 通常、モバイル・アプリケーションはまず、{{site.data.keyword.amafull}} などの認証サービスに対してモバイル・アプリ・ユーザーを認証する認証サイクルを実行します。 認証に成功すると、認証済みユーザー ID がプッシュ・デバイス登録 API に渡されます。 
 
 ユーザー ID ベースの通知のための登録を行うには、以下を参照してください。
 
@@ -38,10 +41,10 @@ copyright:
 userId ベースの通知は、特定のユーザーをターゲットとする通知メッセージです。 1 つのユーザーで複数のデバイスを登録できます。 以下の手順では、ユーザー ID ベースの通知の送信方法を説明します。
 
 1. **Push Notification** コンソールで、**「通知の送信」**オプションを選択します。
-1. **「送信先 (Send to)」**リストのオプションで**「UserId」**を選択します。
-1. **「ユーザー ID」**フィールドで、使用するユーザー ID を検索し、**「+ 追加 (+Add)」**をクリックします。![「通知」画面](images/user_notification.jpg)
-1. **「メッセージ」**フィールドに、通知で送信するテキストを入力します。
-1. **「送信」**をクリックします。
+2. **「送信先 (Send to)」**リストのオプションで**「UserId」**を選択します。
+3. **「ユーザー ID」**フィールドで、使用するユーザー ID を検索し、**「+ 追加 (+Add)」**をクリックします。![通知画面](images/user_notification.jpg "「ユーザー ID」フィールドに「追加」ボタンを表示する Push Notification コンソール")
+4. **「メッセージ」**フィールドに、通知で送信するテキストを入力します。
+5. **「送信」**をクリックします。
 
 
 ## ユーザーのログインおよびログアウトの同期化 

@@ -1,7 +1,12 @@
 ---
 
 copyright:
- years: 2015, 2017
+  years: 2015, 2017, 2019
+lastupdated: "2019-06-06"
+
+keywords: push notifications, notifications, interactive notification, silent notification
+
+subcollection: mobile-pushnotification
 
 ---
 
@@ -12,8 +17,6 @@ copyright:
 
 # 対話式通知とサイレント通知  
 {: #interactive-notifications}
-最終更新日: 2017 年 5 月 22 日
-{: .last-updated}
 
 対話式通知により、ユーザーはアプリケーションを開かずに通知に応答することができます。 対話式通知が到着すると、デバイスは通知メッセージとともにアクション・ボタンを表示します。 
 
@@ -22,7 +25,7 @@ copyright:
 ## 対話式通知の送信
 {: #send_interactive_notifications}
 
-Push Notifications Push コンソールを使用するか、[REST API 資料](push_restapi.html)を使用することによって、対話式通知を送信できます。
+Push Notifications Push コンソールを使用するか、[REST API 資料](https://cloud.ibm.com/apidocs/push-notifications)を使用することによって、対話式通知を送信できます。
 
 
 {{site.data.keyword.mobilepushshort}} コンソールから以下を実行します。 
