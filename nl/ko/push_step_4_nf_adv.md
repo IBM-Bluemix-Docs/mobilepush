@@ -1,7 +1,12 @@
 ---
 
 copyright:
- years: 2015, 2017
+  years: 2015, 2017, 2019
+lastupdated: "2019-06-06"
+
+keywords: push notifications, notifications, configure sound, payload, ios badge, holding android notification
+
+subcollection: mobile-pushnotification
 
 ---
 
@@ -11,8 +16,6 @@ copyright:
 {:codeblock:.codeblock}
 
 #고급 푸시 알림 사용
-마지막 업데이트 날짜: 2017년 6월 01일
-{: .last-updated}
 
 iOS 배지, 사운드, 추가 JSON 페이로드, 조치 가능 알림, 보류 알림을 구성합니다.
 
@@ -28,27 +31,27 @@ iOS 배지, 사운드 및 추가적인 JSON 페이로드를 구성합니다.
 3. 다음 옵션 중에서 선택하십시오.	
 	- Android의 경우
 
- 	Android 애플리케이션의 `res/raw` 디렉토리에 사운드 파일을 추가하십시오. 알림을 전송하는 동안 {{site.data.keyword.mobilepushshort}}의 사운드 필드에 사운드 파일 이름을 추가하십시오.
+     	Android 애플리케이션의 `res/raw` 디렉토리에 사운드 파일을 추가하십시오. 알림을 전송하는 동안 {{site.data.keyword.mobilepushshort}}의 사운드 필드에 사운드 파일 이름을 추가하십시오.
 
-	```
-	"settings":{
-     "gcm":{
-     "sound":"tt.wav",
+    	```
+    	"settings":{
+         "gcm":{
+         "sound":"tt.wav",
 		}
-		}  
-	```	
-	{: codeblock}	
+    		}  
+    	```	
+    	{: codeblock}	
 	
 	- iOS의 경우
 
-	```
-	"settings": {
-	     "apns" : {
-	      "badge": 10,
+    	```
+    	"settings": {
+    	     "apns" : {
+    	      "badge": 10,
 	      "sound": "tt.wav",
 	  }
-	}
-	``` 
+    	}
+    	``` 
 		{: codeblock}
 		
 **추가 페이로드** - 이 페이로드는 키-값 쌍이며 {{site.data.keyword.mobilepushshort}}를 사용하여 전송하려는 JSON 오브젝트여야 합니다.

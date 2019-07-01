@@ -1,7 +1,12 @@
 ---
 
 copyright:
- years: 2015, 2017
+  years: 2015, 2019
+lastupdated: "2019-06-11"
+
+keywords: push notifications, notifications, troubleshooting, service issues
+
+subcollection: mobile-pushnotification
 
 ---
 
@@ -12,13 +17,37 @@ copyright:
 
 # 서비스 문제 문제점 해결
 {: #errors}
-마지막 업데이트 날짜: 2017년 7월 13일
-{: .last-updated}
 
 이 주제에서는 Push Notifications 서비스를 사용할 때 발생할 수 있는 가능한 오류 시나리오를 식별하고 해결할 수 있도록 안내합니다.
 
 ## 공통 푸시 알림 문제 해결
 {: #troubleshooting_notification_errors}
+
+### 이 계정의 리소스 그룹에 인스턴스를 추가할 수 있는 권한이 없습니다.
+{: #permission_issue}
+
+**설명**:  IBM Push Notifications 서비스는 이제 리소스 제어기(RC) 기반 서비스입니다. 인스턴스가 RC를 사용하여 작성되어야 합니다. 기본 리소스 그룹이 계정에 없으면 다음 오류가 발생합니다.
+
+![권한 문제](images/RC_error.png "권한 오류를 표시하는 스크린샷")
+
+**사용자 응답**: 관리자가 인스턴스를 작성하기 전에 사용자에 대한 리소스 그룹을 작성해야 합니다.
+
+
+### 하이퍼텍스트 전송 프로토콜(HTTP) 301이 서비스에 액세스하는 동안 경로 재지정 상태로 영구 이동되었습니다. 
+{: #http_301_redirect}
+
+**설명**: `http` 프로토콜을 사용하여 서비스에 액세스하는 경우 이 오류가 발생할 수 있습니다. Push Notification 서비스의 경우, 웹 사이트가 `https` 프로토콜로 액세스되어야 합니다.
+
+**사용자 응답**: `http`가 아니라 `https`를 통해 서비스 및 Swagger API에 액세스하도록 권장합니다.
+
+
+### POST 요청이 동일한 호출에 대해 GET 요청을 리턴함
+{: #Postman_issue}
+
+**설명**: Postman이 POST 요청에 대해 301 또는 302 응답 코드를 수신하면 자동으로 동일한 호출에 대한 GET 요청으로 경로 재지정합니다. Push Notifications 서비스의 경우, `http`가 아니라 `https` 프로토콜로 웹 사이트에 액세스해야 합니다.
+
+**사용자 응답**: 브라우저에서 `https`를 사용하여 웹 사이트에 연결하는 것이 좋습니다.
+
 
 ### 내부 서버 오류가 발생했습니다. 관리자에게 문의하십시오. (내부 오류 코드: PUSHD102E)
 {: #troubleshooting_notification_internal}
@@ -44,12 +73,12 @@ copyright:
 **사용자 응답**: 서비스 작업자를 지원하는 브라우저로 전환하는 것이 좋습니다. 지원되는 브라우저 버전은 Firefox 버전 49 이상 및 Chrome 버전 53(64비트) 이상입니다.
 
 
-### 서버 사용 중: 서버가 현재 요청을 처리할 수 없습니다. 나중에 다시 시도하십시오. 
+### 서버 사용 중: 서버가 현재 요청을 처리할 수 없습니다. 나중에 다시 시도하십시오.
 {: #troubleshooting_notification_server_busy}
 
-**설명**: 사용자가 모니터링 페이지에서 보고서에 액세스하면서 이 오류를 발견할 수 있습니다. 이는 지난 90일 동안 전송된 메시지가 매우 많은 경우 예상되는 작동입니다. 
+**설명**: 사용자가 모니터링 페이지에서 보고서에 액세스하면서 이 오류를 발견할 수 있습니다. 이는 지난 90일 동안 전송된 메시지가 매우 많은 경우 예상되는 작동입니다.
  
-**사용자 응답**: REST API를 통해 messageId 기반 보고서에 액세스할 수 있습니다. [REST API 문서]( https://console.bluemix.net/apidocs/800-push-notifications?&language=shell_curl#getmessagereport)에서 "getMessageReport"를 참조하십시오. 
+**사용자 응답**: REST API를 통해 messageId 기반 보고서에 액세스할 수 있습니다. [REST API 문서](https://cloud.ibm.com/apidocs/push-notifications#api-documentation-for-push-notifications)에서 "getMessageReport"를 참조하십시오.
 
 
 ### SecurityError: 작업이 안전하지 않음
@@ -104,7 +133,6 @@ REST API 요청에 대한 응답으로 리턴됩니다.
 ```
 	{
 		"message": "Missing APNs credentials",
-		"docUrl": "https://www.ng.bluemix.net/docs/troubleshoot/errors/mobilepush/index.html#FPWSE0003E",
 		"code":   "FPWSE0003E"
 	}
 ```
@@ -133,7 +161,7 @@ REST API 요청에 대한 응답으로 리턴됩니다.
 
 **설명**: {{site.data.keyword.mobilepushshort}} 서비스에 대한 전제조건 구성이 완료되지 않았습니다. Apple Push Notification 서비스(APNs) 신임 정보가 구성되기 전에 해당 신임 정보를 가져오려고 했을 수 있습니다.
 
-**사용자 응답**: {{site.data.keyword.mobilepushshort}} 서비스가 APNs에 대한 올바른 보안 인증서를 사용하여 구성되었는지 확인하십시오. 자세한 정보는 [알림 제공자 신임 정보 획득 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](push_step_1.html){: new_window}을 참조하십시오.
+**사용자 응답**: {{site.data.keyword.mobilepushshort}} 서비스가 APNs에 대한 올바른 보안 인증서를 사용하여 구성되었는지 확인하십시오. 자세한 정보는 [알림 제공자 신임 정보 획득 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](/docs/services/mobilepush?topic=mobile-pushnotification-push_step_1){: new_window}을 참조하십시오.
 
 
 ### FPWSE0004E
@@ -162,7 +190,7 @@ REST API 요청에 대한 응답으로 리턴됩니다.
 **설명**: 요청의 JSON 본문에 {{site.data.keyword.mobilepushshort}} 서버에서 이해할 수 없는 매개변수가 있습니다.
 
 
-**사용자 응답**: 요청의 JSON 본문이 {{site.data.keyword.mobilepushshort}} 서버에서 예상하는 요청의 형식을 따르는지 확인하십시오. 자세한 정보는 [REST API ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://mobile.{DomainName}/imfpush/){: new_window}를 참조하십시오.
+**사용자 응답**: 요청의 JSON 본문이 {{site.data.keyword.mobilepushshort}} 서버에서 예상하는 요청의 형식을 따르는지 확인하십시오. 자세한 정보는 [REST API ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://eu-gb.imfpush.cloud.ibm.com/imfpush/){: new_window}를 참조하십시오.
 
 
 
@@ -172,7 +200,7 @@ REST API 요청에 대한 응답으로 리턴됩니다.
 **설명**: 요청 URL에 인식되지 않는 매개변수가 포함된 조회 문자열이 있습니다. 예를 들어, 구독을 삭제하기 위한 요청에 deviceId 및 tagName 이외의 매개변수가 있는 경우 이 오류가 발생할 수 있습니다.
 
 
-**사용자 응답**: 요청의 JSON 본문이 {{site.data.keyword.mobilepushshort}} 서버에서 예상하는 요청의 형식을 따르는지 확인하십시오. 자세한 정보는 [REST API ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://mobile.{DomainName}/imfpush/){: new_window}를 참조하십시오.
+**사용자 응답**: 요청의 JSON 본문이 {{site.data.keyword.mobilepushshort}} 서버에서 예상하는 요청의 형식을 따르는지 확인하십시오. 자세한 정보는 [REST API ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://eu-gb.imfpush.cloud.ibm.com/imfpush/){: new_window}를 참조하십시오.
 
 
 
@@ -182,7 +210,7 @@ REST API 요청에 대한 응답으로 리턴됩니다.
 **설명**: 요청 URL에 필수 매개변수가 누락된 조회 문자열이 있습니다. 예를 들어, 구독을 삭제하기 위한 요청에서 deviceId 및 tagName 매개변수가 누락되었을 수 있습니다.
 
 
-**사용자 응답**: 요청의 JSON 본문이 {{site.data.keyword.mobilepushshort}} 서버에서 예상하는 요청의 형식을 따르는지 확인하십시오. 자세한 정보는 [REST API ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://mobile.{DomainName}/imfpush/){: new_window}를 참조하십시오.
+**사용자 응답**: 요청의 JSON 본문이 {{site.data.keyword.mobilepushshort}} 서버에서 예상하는 요청의 형식을 따르는지 확인하십시오. 자세한 정보는 [REST API ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://eu-gb.imfpush.cloud.ibm.com/imfpush/){: new_window}를 참조하십시오.
 
 
 
@@ -250,7 +278,7 @@ REST API 요청에 대한 응답으로 리턴됩니다.
 **설명**: {{site.data.keyword.mobilepushshort}} 서비스가 이 애플리케이션에 대해 사용되지 않도록 설정되었습니다. 요금 청구 관련 문제이거나 관리자가 앱을 사용하지 않음으로 설정했을 수 있습니다.
 
 
-**사용자 응답**: IBM Cloud 문서의 문제점 해결 주제를 참조하여 서비스 상태를 확인하고, 문제점 해결 정보 또는 도움을 받는 방법에 대한 정보를 검토하십시오. 
+**사용자 응답**: IBM Cloud 문서의 문제점 해결 주제를 참조하여 서비스 상태를 확인하고, 문제점 해결 정보 또는 도움을 받는 방법에 대한 정보를 검토하십시오.
 
 
 

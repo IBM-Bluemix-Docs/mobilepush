@@ -1,7 +1,12 @@
 ---
 
 copyright:
- years: 2015, 2017
+  years: 2015, 2017, 2019
+lastupdated: "2019-06-06"
+
+keywords: push notifications, notifications, interactive notification, silent notification
+
+subcollection: mobile-pushnotification
 
 ---
 
@@ -12,8 +17,6 @@ copyright:
 
 # 대화식 및 자동 알림  
 {: #interactive-notifications}
-마지막 업데이트 날짜: 2017년 5월 22일
-{: .last-updated}
 
 대화식 알림을 사용하면 애플리케이션을 열지 않고 알림에 응답할 수 있습니다. 대화식 알림이 도착하면 디바이스에 알림 메시지와 함께 조치 단추가 표시됩니다. 
 
@@ -22,7 +25,7 @@ copyright:
 ## 대화식 알림 전송
 {: #send_interactive_notifications}
 
-Push Notifications 콘솔을 사용하거나 [REST API 문서](push_restapi.html)를 사용하여 대화식 알림을 전송할 수 있습니다.
+Push Notifications 콘솔을 사용하거나 [REST API 문서](https://cloud.ibm.com/apidocs/push-notifications)를 사용하여 대화식 알림을 전송할 수 있습니다.
 
 
 {{site.data.keyword.mobilepushshort}} 콘솔에서 다음을 수행하십시오. 

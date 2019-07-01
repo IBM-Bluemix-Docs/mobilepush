@@ -1,7 +1,12 @@
 ---
 
 copyright:
- years: 2015, 2017
+  years: 2015, 2017, 2019
+lastupdated: "2019-06-06"
+
+keywords: push notifications, notifications, sending a notification
+
+subcollection: mobile-pushnotification
 
 ---
 
@@ -12,18 +17,15 @@ copyright:
 
 # 5단계: 알림 전송
 {: #push_step_4}
-마지막 업데이트 날짜: 2017년 6월 27일
-{: .last-updated}
-
 
 애플리케이션을 개발한 후에는 기본 푸시 알림을 전송할 수 있습니다.
 
 기본 푸시 알림을 전송하려면 다음 단계를 완료하십시오.
 
-1. **알림 전송**을 선택하고 **받는 사람** 옵션을 선택하여 메시지를 작성하십시오. 지원되는 옵션은 **태그별 디바이스**, **디바이스 ID**, **사용자 ID**, **Android 디바이스**, **iOS 디바이스**, **웹 알림** 및 **모든 디바이스**입니다.
+1. **메시지**를 선택하고 **받는 사람** 옵션을 선택하여 메시지를 작성하십시오. 지원되는 옵션은 **태그별 디바이스**, **디바이스 ID**, **사용자 ID**, **Android 디바이스**, **iOS 디바이스**, **웹 알림**, **Chrome 앱 및 확장기능**, **Chrome 브라우저**, **Firefox**, **Safari** 및 **모든 디바이스**입니다.
 **참고**: **모든 디바이스** 옵션을 선택하는 경우 {{site.data.keyword.mobilepushshort}}를 구독하는 모든 디바이스가 알림을 수신합니다.
 	
-	![알림 화면](images/tag_notification.jpg)
+    ![알림 화면](images/tag_notification.jpg "받는 사람, 메시지 및 추가 페이로드 필드를 표시하는 알림 전송 화면")
 
 2. **메시지** 필드에 메시지를 작성하십시오. 필요에 따라 선택적 옵션을 구성하도록 선택하십시오.
 3. **전송**을 클릭하십시오.
@@ -31,17 +33,19 @@ copyright:
 
 다음 스크린샷은 Android 디바이스의 포그라운드에서 푸시
 알림을 처리하는 경보 상자를 표시합니다.
-	![Android에서 포그라운드 푸시 알림](images/Android_Screenshot.jpg)
+
+![Android의 포그라운드 푸시 알림](images/Android_Screenshot.jpg "테스트 알림이 있는 경보 상자")
 
 다음 스크린샷은 Android의 백그라운드에 있는 푸시 알림을 보여줍니다.
-	![Android에서 백그라운드 푸시 알림](images/background.jpg)
+
+![Android의 백그라운드 푸시 알림](images/background.jpg "Android 디바이스의 푸시 알림")
 
 ## 선택적 Android 설정 
 {: #push_step_4_Android}
 
 Android 디바이스에 알림을 전송하기 위해 {{site.data.keyword.mobilepushshort}} 설정을 추가로 사용자 정의할 수 있습니다. 
 
-![Android 사용자 정의 설정](images/android_custom_settings.jpg)
+![Android 사용자 정의 설정](images/android_custom_settings.jpg "푸시 알림 사용자 정의 설정 페이지")
 
 다음과 같은 선택적 사용자 정의 옵션이 지원됩니다.
 
@@ -51,13 +55,13 @@ Android 디바이스에 알림을 전송하기 위해 {{site.data.keyword.mobile
 - 우선순위: 메시지에 전달 우선순위를 지정하기 위한 옵션을 지정합니다. 
 	- 우선순위 `high` 또는 `max`는 heads-up 알림이 됩니다.
 	- 우선순위 `low` 또는 `default`는 휴면 디바이스에서 네트워크 연결을 열지 않습니다. 
-	- 우선순위 `min`은 자동 알림입니다. 
+	- 우선순위 `min`은 자동 알림입니다.
 - 가시성: 알림 가시성 옵션을 `public` 또는 `private`로 설정하도록 선택할 수 있습니다. 
 	- `private` 옵션은 공용 보기를 제한하며, 사용자는 디바이스가 핀 또는 패턴으로 보호되고 알림 설정이 **민감한 알림 컨텐츠 숨기기**로 설정된 경우에 이를 사용하도록 선택할 수 있습니다. 가시성이 `private`로 설정되면 `redact` 필드가 언급되어야 합니다. `redact` 필드에 지정된 컨텐츠만 디바이스의 보안 잠금 화면에 나타납니다. 
 	- `public` 옵션은 알림을 누구나 읽을 수 있도록 렌더링합니다.
 - 유효 기간: 이 값은 초 단위로 설정됩니다. 이 매개변수가 지정되지 않은 경우 FCM 서버는 메시지를 4주 동안 저장하며 이를 전달하려 시도합니다. 4주 후에 유효성이 만료됩니다. 가능한 값 범위는 0 - 2,419,200초입니다.
 - 유휴 시 지연: 다음 값 중에서 설정할 수 있습니다.
-	- `True`는 디바이스가 유휴 상태인 경우 알림을 전달하지 않도록 FCM 서버에 지시합니다.  
+	- `True`는 디바이스가 유휴 상태인 경우 알림을 전달하지 않도록 FCM 서버에 지시합니다. 
 	- `False`는 디바이스가 유휴 상태인 경우에도 알림 전달을 보장합니다.
 - 동기화: 이 옵션을 `true`로 설정하면 등록된 모든 디바이스 간에 알림이 동기화됩니다. 하나의 사용자 이름을 갖는 사용자에게 동일한 애플리케이션이 설치된 여러 개의 디바이스가 있는 경우, 하나의 디바이스에서 알림을 읽으면 나머지 디바이스에서 해당 알림이 삭제됩니다. 사용자 ID를 사용하여 {{site.data.keyword.mobilepushshort}} 서비스에 등록한 경우에만 이 옵션이 작동합니다.
 - 추가 페이로드: 알림에 대한 사용자 정의 페이로드 값을 지정합니다.

@@ -1,7 +1,12 @@
 ---
 
 copyright:
- years: 2015, 2017
+  years: 2015, 2017, 2019
+lastupdated: "2019-06-06"
+
+keywords: push notifications, notifications, service instance, cordova application
+
+subcollection: mobile-pushnotification
 
 ---
 
@@ -12,28 +17,24 @@ copyright:
 
 # 3단계: 서비스 인스턴스 구성 
 {: #push_step_2}
-마지막 업데이트 날짜: 2017년 6월 27일
-{: .last-updated}
 
-[알림 신임 정보 획득](push_step_1.html)을 수행했는지 확인하십시오.
-
+[알림 신임 정보 획득](/docs/services/mobilepush?topic=mobile-pushnotification-push_step_1)을 수행했는지 확인하십시오.
 
 ## Android 및 Chrome 앱 & 확장 프로그램의 경우
 {: #push_step_2_Android}
 
-
-[알림 제공자 신임 정보 획득](push_step_1.html)을 수행하여 FCM 프로젝트를 설정하고 신임 정보를 가져왔는지 확인하십시오.
+[알림 제공자 신임 정보 획득](/docs/services/mobilepush?topic=mobile-pushnotification-push_step_1)을 수행하여 FCM 프로젝트를 설정하고 신임 정보를 가져왔는지 확인하십시오.
 
 Android 애플리케이션 및 Google Chrome 앱 & 확장 프로그램에 대한 FCM 신임 정보를 구성하려면 다음 단계를 완료하십시오.
 
-1. IBM Cloud 카탈로그를 연 후 작성한 {{site.data.keyword.mobilepushfull}} 서비스 인스턴스를 클릭하십시오.  
+1. IBM Cloud 카탈로그를 연 후 작성한 {{site.data.keyword.mobilepushfull}} 서비스 인스턴스를 클릭하십시오. 
 2. **관리** > **구성**을 클릭하십시오. 
 3. 다음 옵션 중에서 선택하십시오. 
-	- Android의 경우: **모바일**을 선택한 다음 FCM 푸시 신임 정보 탭을 발신인 ID/프로젝트 번호 및 API 키로 업데이트하십시오.  
+	- Android의 경우: **모바일**을 선택한 다음 FCM 푸시 신임 정보 탭을 발신인 ID/프로젝트 번호 및 API 키로 업데이트하십시오. 
 	- Google Chrome 앱 & 확장 프로그램의 경우: **웹**을 선택한 다음 Chrome 앱 및 확장 프로그램 탭을 발신인 ID/프로젝트 번호 및 API 키로 업데이트하십시오. 
 4. **저장**을 클릭하십시오. Push Notifications 서비스가 이제 구성됩니다.
 
-다음 단계는 [푸시 서비스 클라이언트 SDK 설정](push_step_3.html)입니다.
+다음 단계는 [푸시 서비스 클라이언트 SDK 설정](/docs/services/mobilepush?topic=mobile-pushnotification-push_step_3)입니다.
 
 
 ## Cordova 애플리케이션의 경우 
@@ -50,7 +51,7 @@ Cordova는 JavaScript, CSS 및 HTML을 사용하여 하이브리드 애플리케
 {: #enable-push-ios-notifications}
 
 
-알림을 전송하기 위해 {{site.data.keyword.mobilepushshort}} 서비스를 사용하려면 1단계: [알림 제공자 신임 정보 획득](push_step_1.html)에서 작성한 `.p12` 인증서를 업로드하십시오. 이 인증서에는 애플리케이션 빌드와 공개에 필요한 개인 키와 SSL 인증서가 포함되어 있습니다. REST API를 사용하여 APNs 인증서를 업로드할 수도 있습니다.
+알림을 전송하기 위해 {{site.data.keyword.mobilepushshort}} 서비스를 사용하려면 1단계: [알림 제공자 신임 정보 획득](/docs/services/mobilepush?topic=mobile-pushnotification-push_step_1)에서 작성한 `.p12` 인증서를 업로드하십시오. 이 인증서에는 애플리케이션 빌드와 공개에 필요한 개인 키와 SSL 인증서가 포함되어 있습니다. REST API를 사용하여 APNs 인증서를 업로드할 수도 있습니다.
 
 **참고**: `.cer` 파일이 키 체인 액세스에 있으면 이를 컴퓨터로 내보내서 `.p12` 인증서를 작성하십시오.
 
@@ -63,7 +64,7 @@ Push Notification 서비스 콘솔에서 APNs를 설정하려면 다음 단계�
 3. 다음 옵션 중에서 선택하십시오.
 	- **모바일** 옵션의 경우
 		1. **샌드박스**(개발) 또는 **프로덕션**(배포)을 알맞게 선택한 후에 작성한 `p.12` 인증서를 업로드하십시오.
-    ![푸시 알림 콘솔 설정](images/wizard.jpg)
+		  ![푸시 알림 콘솔 설정](images/wizard.jpg "모바일 탭 및 APN 푸시 인증 정보를 표시하는, 탐색 구성 옵션이 선택된 푸시 알림 콘솔")
 
 		1. **비밀번호** 필드에서 `.p12` 인증서 파일과 연관된 비밀번호를 입력하고 **저장**을 클릭하십시오.
 	- **웹** 옵션의 경우
@@ -75,9 +76,9 @@ Push Notification 서비스 콘솔에서 APNs를 설정하려면 다음 단계�
 		- **URL 형식 문자열**: 알림을 클릭할 때 분석할 URL입니다. 예: ["https://www.acmebanks.com"]. 이 URL은 http 또는 https 체계를 사용해야 합니다.
 		  -**Safari 웹 푸시 인증서**: .p12 인증서를 업로드하고 비밀번호를 제공하십시오.
 4. **저장**을 클릭하십시오.	
-![Push Notifications 콘솔](images/push_configure_safari.jpg)	
+![푸시 알림 콘솔](images/push_configure_safari.jpg "웹 옵션 페이지 필드")	
 
-iOS 애플리케이션에 대한 서비스를 설정한 후에 [푸시 서비스 클라이언트 SDK를 설정](push_step_3.html)해야 합니다.
+iOS 애플리케이션에 대한 서비스를 설정한 후에 [푸시 서비스 클라이언트 SDK를 설정](/docs/services/mobilepush?topic=mobile-pushnotification-push_step_3)해야 합니다.
 
 
 ## Chrome 및 Firefox 브라우저의 경우 
@@ -85,7 +86,9 @@ iOS 애플리케이션에 대한 서비스를 설정한 후에 [푸시 서비스
 
 1. Push Notifications 콘솔에서 **구성**을 선택하십시오.
 2. 웹 탭을 선택하십시오.
-	![WebPush 구성](images/webpush_configure.jpg)
-3. 푸시 알림을 수신하도록 등록할 웹 사이트의 URL과 FCM API 키를 구성하십시오. 
+	![웹 푸시 구성](images/webpush_configure.jpg "웹 사이트의 FCM API 키 및 URL을 정의하기 위한 웹 푸시 구성 창")
+3. 푸시 알림을 수신하도록 등록할 웹 사이트의 URL과 FCM API 키를 구성하십시오.
 4. **저장**을 클릭하십시오.
-5. 서비스를 설정한 후에 [푸시 서비스 클라이언트 SDK를 설정](push_step_3.html)해야 합니다.
+5. 서비스를 설정한 후에 [푸시 서비스 클라이언트 SDK를 설정](/docs/services/mobilepush?topic=mobile-pushnotification-push_step_3)해야 합니다.
+
+

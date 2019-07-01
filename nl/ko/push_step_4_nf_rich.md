@@ -1,7 +1,12 @@
 ---
 
 copyright:
- years: 2015, 2017
+  years: 2015, 2017, 2019
+lastupdated: "2019-06-06"
+
+keywords: push notifications, notifications, rich media notification
+
+subcollection: mobile-pushnotification
 
 ---
 
@@ -11,10 +16,7 @@ copyright:
 {:codeblock:.codeblock}
 
 # 리치 미디어 알림
-{: #interactive-notifications}
-마지막 업데이트 날짜: 2017년 7월 13일
-{: .last-updated}
-
+{: #rich-media-notifications}
 
 iOS 10 이상에서는 리치 미디어 {{site.data.keyword.mobilepushshort}}를 사용할 수 있습니다. 오디오, 동영상, GIF 및 이미지가 포함된 푸시 알림을 보낼 수 있습니다. 
 
