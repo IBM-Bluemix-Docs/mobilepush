@@ -1,7 +1,12 @@
 ---
 
 copyright:
- years: 2015, 2017
+  years: 2015, 2017, 2019
+lastupdated: "2019-06-06"
+
+keywords: push notifications, notifications, receive alerts, webhook events
+
+subcollection: mobile-pushnotification
 
 ---
 
@@ -12,9 +17,6 @@ copyright:
 
 # Receber alertas em eventos de webhook
 {: #webhook_event_based_notifications}
-Última atualização: 8 de setembro de 2017
-{: .last-updated}
-
 
 Com o serviço {{site.data.keyword.mobilepushshort}}, é possível optar por receber alertas
 sobre informações que foram mudadas. As mudanças nas informações corporativas criam eventos, para os quais é
@@ -41,7 +43,7 @@ assinatura de uma tag.
 múltiplos eventos webhooks, que podem incluir falhas e sucesso. 
 Os eventos webhook têm o mesmo messageID que a mensagem despachada. 
 
-Para obter mais informações sobre webhooks, veja a [API de REST de notificações push da IBM ![Ícone de link externo](../../icons/launch-glyph.svg "External link icon")](https://console.bluemix.net/apidocs/800-push-notifications){: new_window}.
+Para obter mais informações sobre webhooks, veja a [API de REST de notificações push da IBM ![Ícone de link externo](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/apidocs/push-notifications){: new_window}.
 
 ## Recebendo alertas em eventos webhook
 {: #webhook_alert_event}

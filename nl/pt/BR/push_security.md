@@ -1,7 +1,12 @@
-----
+---
 
 copyright:
- years: 2015, 2017
+  years: 2015, 2019
+lastupdated: "2019-06-06"
+
+keywords: push notifications, notification, security, appsecret, api keys
+
+subcollection: mobile-pushnotification
 
 ---
 
@@ -13,22 +18,20 @@ copyright:
 {:tip: .tip}
 
 # Segurança nas Notificações push 
-{: #overview-push}
-Última atualização: 13 de julho de 2017
-{: .last-updated}
+{: #security-in-push-notifications}
 
-
-As APIs do {{site.data.keyword.mobilepushshort}} são protegidas por dois tipos de segredos:
+As APIs do {{site.data.keyword.mobilepushshort}} são protegidas por -
 
 - **appSecret**: o `appSecret` protege as APIs que são geralmente chamadas por aplicativos backend - como a API para enviar o {{site.data.keyword.mobilepushshort}} e a API para configurar definições.
 - **clientSecret**: o `clientSecret` protege as APIs que são geralmente chamadas por aplicativos cliente móveis. Existe somente uma API relacionada para registro de um dispositivo com um ID de usuário associado que requer este `clientSecret`. Nenhuma das outras APIs chamadas de clientes móveis requer o `clientSecret`. 
+- **Chaves de API**: chaves de interface de programação de aplicativo (chaves de API) estão disponíveis por meio do Cloud IAM para que você use para autenticar usando a API ou a CLI como um ID de usuário ou de serviço. Essas chaves API são fornecidas por meio do Cloud IAM e, portanto, não podem ser usadas geralmente para autenticar com o IBMid fora do IBM Cloud. 
 
-O `appSecret` e o `clientSecret` são alocados para todas as instâncias de serviço no momento da ligação de um aplicativo ao serviço {{site.data.keyword.mobilepushshort}}. Consulte a documentação das [APIs de REST ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://imfpush.{DomainName}/imfpush/) para obter informações sobre como os segredos devem ser passados e para quais APIs.
+O `appSecret` e o `clientSecret` são alocados para todas as instâncias de serviço no momento da ligação de um aplicativo ao serviço {{site.data.keyword.mobilepushshort}}. Consulte a documentação das [APIs de REST ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://eu-gb.imfpush.cloud.ibm.com/imfpush/) para obter informações sobre como os segredos devem ser passados e para quais APIs.
 
 ## appSecret 
 {: #push-api-rest-secret}
 
-Quando um aplicativo é ligado ao {{site.data.keyword.mobilepushshort}}, o serviço gera um appSecret (uma chave exclusiva) e passa-o no cabeçalho de resposta. Se você estiver usando a API de REST do IBM {{site.data.keyword.mobilepushshort}} for IBM Cloud, use a referência de API de REST para obter informações sobre as APIs que precisam ser asseguradas. Para obter informações, veja a [API de REST Push ![Ícone de link externo](../../icons/launch-glyph.svg "External link icon")](https://imfpush.{DomainName}/imfpush/){: new_window}.
+Quando um aplicativo é ligado ao {{site.data.keyword.mobilepushshort}}, o serviço gera um appSecret (uma chave exclusiva) e passa-o no cabeçalho de resposta. Se você estiver usando a API de REST do IBM {{site.data.keyword.mobilepushshort}} for IBM Cloud, use a referência de API de REST para obter informações sobre as APIs que precisam ser asseguradas. Para obter informações, veja a [API de REST Push ![Ícone de link externo](../../icons/launch-glyph.svg "External link icon")](https://eu-gb.imfpush.cloud.ibm.com/imfpush/){: new_window}.
 
 O cabeçalho da solicitação deve conter o appSecret. Caso contrário, o servidor retornará um código de erro 401 Desautorizado. Quando o {{site.data.keyword.mobilepushshort}} é incluído em um aplicativo, um AppID específico é criado. Como parte da resposta, você obtém um cabeçalho chamado appSecret que é usado para criar tags ou enviar
 mensagens. A operação acontece por meio de serviços no catálogo ou do modelo.
@@ -47,8 +50,8 @@ A tela **Mostrar credenciais** mostra informações sobre o AppSecret:
      "label": "imfpush_Dev",
      "plan": "Basic",
      "credentials": {
-       "url": "http://imfpush.ng.bluemix.net/imfpush/v1/apps/b615b280-b37e-4042-8815-38a758f234e2",
-       "admin_url": "//mobile.ng.bluemix.net/imfpushdashboard/?appGuid=b615b280-b37e-4042-8815-38a758f234e2",
+       "url": "http://https://eu-gb.imfpush.cloud.ibm.com/imfpush/v1/apps/b615b280-b37e-4042-8815-38a758f234e2",
+       "admin_url": "//mobile.cloud.ibm.com/imfpushdashboard/?appGuid=b615b280-b37e-4042-8815-38a758f234e2",
        "appSecret": "8dac71a5-2219-42b3-a9f3-dbb828ba1f04",
        }
      }
@@ -69,7 +72,12 @@ usando a API de REST verifyClientSecret. Recomenda-se que você impinja a verifi
 expor dispositivos para usuários que possam conhecer o ID do aplicativo e o ID do dispositivo.
 
 Assegure-se de que o `clientSecret` seja mantido confidencial e nunca seja codificado permanentemente no app móvel. Há vários padrões de inicialização de aplicativo que podem ser usados para puxar o `clientSecret` dinamicamente durante o tempo de execução dos aplicativos. O diagrama de sequência é descrito nesse possível padrão.
-![Enable_Push](images/init_client_secret.jpg) 
+![Enable_Push](images/init_client_secret.jpg "Diagrama de sequência mostrando padrões para inicialização para puxar o clientSecret") 
 
+## Chaves API para autenticação do usuário
+{: #push-api-key}
 
+Uma chave API é um código exclusivo que é transmitido a uma API para identificar o aplicativo ou usuário de chamada. As chaves API são usadas para rastrear e controlar como a API está sendo usada, por exemplo, para evitar uso malicioso ou abuso da API. A chave API muitas vezes age como um identificador exclusivo e um token secreto para autenticação e geralmente tem um conjunto de direitos de acesso específicos para a identidade associada a ele.
+
+Consulte [aqui](https://cloud.ibm.com/docs/iam?topic=iam-manapikey) para obter mais detalhes sobre como gerenciar e trabalhar com chaves de API.
 

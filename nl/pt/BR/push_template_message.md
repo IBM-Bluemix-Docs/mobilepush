@@ -1,7 +1,12 @@
 ---
 
 copyright:
- years: 2015, 2017
+  years: 2015, 2019
+lastupdated: "2019-06-06"
+
+keywords: push notifications, notifications, parameterize notification
+
+subcollection: mobile-pushnotification
 
 ---
 
@@ -12,12 +17,10 @@ copyright:
 
 # Parametrizar notificações
 {: #template_based_notifications}
-Última atualização: 21 de agosto de 2017
-{: .last-updated}
 
 É possível parametrizar e enviar notificações customizadas criando variáveis e chamando-as em seus modelos de notificação.
 
-Seu modelo de notificação pode-
+Seu modelo de notificação pode -
 
  - Combinar elementos estáticos e dinâmicos em suas notificações
  - Personalizar notificações para cada destinatário, incluindo variáveis
@@ -27,27 +30,27 @@ Passar variáveis como objetos JSON em seu código do aplicativo durante a inici
 
     
    ```
-    MFPPushNotificationOptions opções = MFPPushNotificationOptions novo ();
+    MFPPushNotificationOptions options = new MFPPushNotificationOptions();
 
     JSONObject tempValue = new JSONObject();
         try {
-        
-		TempValue.put ("username", userName);
-        
-        TempValue.put (,amount "amountSpent");
+
+		tempValue.put("username",userName);
+
+        tempValue.put("amountSpent",amount);
 		
-        TempValue.put ("de" ,currency);
+        tempValue.put("currency",currency);
 		
-        TempValue.put (,balance "avilableBalance");
-        
-		} Catch (JSONException e) {
+        tempValue.put("avilableBalance",balance);
+
+		} catch (JSONException e) {
             e.printStackTrace();
         }
-        options.setPushVariables(tempValue); 
-	   
-	   Push = MFPPush.getInstance ();
+        options.setPushVariables(tempValue);
+	
+	   push = MFPPush.getInstance();
 
-       Push.initialize( getApplicationContext (), appGuid, clientSecret, opções);
+       push.initialize(getApplicationContext(),appGuid,clientSecret,options);
    ```
 {: codeblock}
 
@@ -58,25 +61,19 @@ Quando as variáveis estiverem definidas, elas poderão ser chamadas em seu mode
 
 2. Componha uma mensagem escolhendo uma opção **Enviar para**.
 
-2. No campo **Mensagem**, componha sua mensagem.  Chame as variáveis definidas no modelo de mensagem. Clique em **Enviar**.
+3. No campo **Mensagem**, componha sua mensagem.  Chame as variáveis definidas no modelo de mensagem. Clique em **Enviar**.
 
-![message template](images/message_template.png)
+![modelo de mensagem](images/message_template.png "Página de mensagem mostrando um modelo de mensagem com o campo Enviar para configurado como Todos os dispositivos, campo de Mensagem com mensagem de exemplo sobre um saldo de conta de banco de um usuário e campo de Carga útil adicional com o atributo "key":"value" incluído.")
 
 Sua mensagem de notificação customizada será enviada buscando os dados variáveis -
 
-![message example](images/message_template_example.jpg)
+![exemplo de mensagem](images/message_template_example.jpg "Notificação de exemplo com base no modelo de mensagem")
 
-Nota: o recurso é ativado apenas para usuários que optaram pelo `Advanced Plan`. Selecione **Planejar** no console do serviço {{site.data.keyword.mobilepushshort}} para [fazer upgrade](https://console-tok02-red.cdn.s-bluemix.net/docs/account/change-plan.html#changing).
+Nota: o recurso é ativado apenas para usuários que optaram pelo `Advanced Plan`. Selecione **Planejar** no console do serviço {{site.data.keyword.mobilepushshort}} para [fazer upgrade](https://cloud.ibm.com/docs/account?topic=account-changing#changing).
 
-**Limitações:**
+## Limitações
+{: #limitations}
 
  - Atualmente, esse recurso não é suportado no Safari
  - As variáveis no modelo de notificação poderão não funcionar se um app for forçado a encerrar no iOS. A limitação não está no controle de SDK, mas vem do iOS.
-
-
-
-
-
-
-
 

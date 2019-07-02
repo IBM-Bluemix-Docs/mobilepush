@@ -1,7 +1,12 @@
 ---
 
 copyright:
- years: 2015, 2017
+  years: 2015, 2017, 2019
+lastupdated: "2019-06-06"
+
+keywords: push notifications, notifications, user-based, register device with user ID, synchronize user login and logout
+
+subcollection: mobile-pushnotification
 
 ---
 
@@ -12,8 +17,6 @@ copyright:
 
 # As notificações baseadas no usuário
 {: #user_based_notifications}
-Última atualização: 22 de maio de 2017
-{: .last-updated}
 
 {{site.data.keyword.mobilepushshort}} baseado no ID do usuário destina-se a usuários do app móvel com mensagens customizadas. Com
 notificações baseadas no usuário, é possível escolher notificar indivíduos
@@ -25,7 +28,7 @@ específicos com base em suas preferências.
 Para ativar notificações push destinadas por ID do usuário, assegure-se de registrar
 o dispositivo com um campo ID do usuário configurado.     
 
-O ID do usuário pode ser qualquer sequência que o aplicativo forneça para o API de registro de dispositivo. Normalmente, um aplicativo móvel primeiro executará um ciclo de autenticação no qual o usuário do app móvel é autenticado junto a um serviço de autenticação, tal como o [{{site.data.keyword.amafull}} ![Ícone de link externo](../../icons/launch-glyph.svg "External link icon")](https://console.ng.bluemix.net/docs/services/mobileaccess/index.html){: new_window}. Na autenticação bem-sucedida, o ID de usuário autenticado então é passado para a API de
+O ID do usuário pode ser qualquer sequência que o aplicativo forneça para o API de registro de dispositivo. Geralmente, um aplicativo móvel executará primeiro um ciclo de autenticação no qual o usuário do app móvel seja autenticado em um serviço de autenticação como o {{site.data.keyword.amafull}}. Na autenticação bem-sucedida, o ID de usuário autenticado então é passado para a API de
 registro de dispositivo push. 
 
 Para se registrar para notificação baseada em userId, passe por:
@@ -44,11 +47,10 @@ um usuário específico. Muitos dispositivos podem ser
 registrados com um usuário. As etapas a seguir descrevem como enviar notificações baseadas em ID do usuário.
 
 1. No console de **Notificação push**, selecione a opção **Enviar notificações**.
-1. Selecione **UserId** na lista de opções **Enviar para**.
-1. No campo **ID do usuário**, procure o ID do usuário que deseja usar e, em seguida, clique em
-**+Incluir**.![Tela de notificações](images/user_notification.jpg)
-1. No campo **Mensagem**, insira o texto que você deseja enviar em sua notificação.
-1. Clique em **Enviar**.
+2. Selecione **UserId** na lista de opções **Enviar para**.
+3. No campo **ID do usuário**, procure o ID do usuário que você deseja usar e, em seguida, clique em **+Incluir**.![Tela Notificações](images/user_notification.jpg "Console de Notificação de push mostrando o botão Incluir para o campo de ID do usuário")
+4. No campo **Mensagem**, insira o texto que você deseja enviar em sua notificação.
+5. Clique em **Enviar**.
 
 
 ## Sincronizando o login e o logout do usuário 

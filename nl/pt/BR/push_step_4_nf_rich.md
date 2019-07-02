@@ -1,7 +1,12 @@
 ---
 
 copyright:
- years: 2015, 2017
+  years: 2015, 2017, 2019
+lastupdated: "2019-06-06"
+
+keywords: push notifications, notifications, rich media notification
+
+subcollection: mobile-pushnotification
 
 ---
 
@@ -11,10 +16,7 @@ copyright:
 {:codeblock:.codeblock}
 
 # Notificações do rich media
-{: #interactive-notifications}
-Última atualização: 13 de julho de 2017
-{: .last-updated}
-
+{: #rich-media-notifications}
 
 É possível ativar o Rich Media {{site.data.keyword.mobilepushshort}} no iOS 10 e mais recente. As notificações push podem ser enviadas com Áudio, Vídeo, GIFs e imagens. 
 

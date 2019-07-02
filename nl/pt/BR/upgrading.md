@@ -1,7 +1,12 @@
-----
+---
 
 copyright:
- years: 2015, 2017
+  years: 2015, 2017, 2018, 2019
+lastupdated: "2019-06-11"
+
+keywords: push notifications, notifications, upgrading plan, lite, basic, advanced
+
+subcollection: mobile-pushnotification
 
 ---
 
@@ -12,16 +17,15 @@ copyright:
 {:pre: .pre}
 {:tip: .tip}
 
-{: #upgrade-push}
-Última atualização: 20 de março de 2018
-{: .last-updated}
 
 # Atualizando seu plano
+{: #upgrade-push}
 
 O serviço do {{site.data.keyword.mobilepushshort}} oferece três planos que fornecem diferentes níveis de recursos e de capacidades para atender às suas necessidades.
 {: shortdesc}
 
-**Plano:**
+## Plano de precificação
+{: #pricing-plan}
 
 **Nota:**
  - Uma notificação push enviada para um dispositivo/terminal exclusivo ou um evento webhook constitui uma mensagem digital. 
@@ -30,17 +34,19 @@ O serviço do {{site.data.keyword.mobilepushshort}} oferece três planos que for
 
 |                |Lite                           |Básico                        |Avançado                      |
 |----------------|-------------------------------|-----------------------------|------------------------------|
-|**Recursos**    |100.000 mensagens digitais por mês; 50 dispositivos endereçáveis |Primeiro um milhão de mensagens digitais e 10 mil dispositivos endereçáveis grátis            | Acusado por instância </br> Inclui 100 milhões de mensagens digitais e 1 milhão de dispositivos endereçáveis<br/> Recursos Avançados<br/> - [Parametrizar mensagens](https://console.bluemix.net/docs/services/mobilepush/push_template_message.html)<br/> - [Rastreamento do ciclo de vida da mensagem de ponta a ponto](https://console.bluemix.net/docs/services/mobilepush/push_message_status.html)<br/>|
-|**Precificação**     |Livre|- US$ 1,00 / Dez mil dispositivos endereçáveis <br/> - US$ 1,00 / Milhões de mensagens digitais <br /> |- US$ 100,00 / Instância <br/> - US$ 0,50 / Milhões de mensagens digitais <br/> - US$ 0,50 / Milhões de Dispositivos Endereçáveis <br/> |-|
+|**Recursos**    |100.000 mensagens digitais por mês; 50 dispositivos endereçáveis |Primeiro um milhão de mensagens digitais e 10 mil dispositivos endereçáveis grátis            | Cobrado por Instância </br> Inclui 100 milhões de mensagens digitais e 1 milhão de dispositivos endereçáveis<br/> Capacidades avançadas<br/> - [Mensagens de parametrização](/docs/services/mobilepush?topic=mobile-pushnotification-template_based_notifications)<br/> - [Rastreamento de ciclo de vida de mensagem de ponta a ponta](/docs/services/mobilepush?topic=mobile-pushnotification-message-delivery-status)<br/>|
+|**Precificação**     |Livre|- US$ 1,00 / Dez mil dispositivos endereçáveis <br/> - US$ 1,00 / Milhões de mensagens digitais <br /> |- US$ 100,00 / Instância <br/> - US$ 0,50 / Milhões de mensagens digitais <br/> - US$ 0,50 / Milhões de dispositivos endereçáveis <br/> |-|
+{:caption="Tabela 1. Planos de serviço" caption-side="top"}
 
 
 ## Atualizando um serviço
+{: #upgrading-a-service}
 
 Para atualizar seu plano, conclua essas etapas:
 
 1.  No {{site.data.keyword.Bluemix_notm}} menu, selecione **Serviços** > **Painel**.
-1.  Selecione a instância de serviço que você deseja atualizar para abri-la.
-1.  Clique em **Planejar** na área de janela de navegação.
+2.  Selecione a instância de serviço que você deseja atualizar para abri-la.
+3.  Clique em **Planejar** na área de janela de navegação.
    Aqui é possível ver seu plano atual e outras opções de plano disponíveis e fazer mudanças.
 
-Para obter informações sobre como calcular os custos, consulte a [{{site.data.keyword.Bluemix_notm}} Calculadora de preços ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](../../icons/launch-glyph.svg "Ícone de link externo")] (https://console.bluemix.net/pricing/platform/mobile){: new_window}.
+Para obter informações sobre o cálculo de custos, consulte a [Calculadora de precificação do {{site.data.keyword.Bluemix_notm}} ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://cloud.ibm.com/estimator){: new_window}.

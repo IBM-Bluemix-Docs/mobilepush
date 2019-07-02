@@ -1,7 +1,12 @@
 ---
 
 copyright:
- years: 2015, 2017
+  years: 2015, 2019
+lastupdated: "2019-06-11"
+
+keywords: push notifications, notifications, troubleshooting, service issues
+
+subcollection: mobile-pushnotification
 
 ---
 
@@ -12,13 +17,37 @@ copyright:
 
 # Resolução de problemas de serviço
 {: #errors}
-Última atualização: 13 de julho de 2017
-{: .last-updated}
 
 Este tópico orienta na identificação e resolução dos prováveis cenários de erro que você pode encontrar ao usar o Push Notifications service.
 
 ## Resolvendo problemas comuns de notificação push
 {: #troubleshooting_notification_errors}
+
+### Você não tem permissão para incluir a instância em nenhum grupo de recursos nesta conta
+{: #permission_issue}
+
+**Explicação**: o serviço do IBM Push Notifications é agora um serviço baseado no Resource Controller (RC). Instâncias devem ser criadas usando um RC. Você poderá notar o erro a seguir se um grupo de recursos padrão não estiver em sua conta.
+
+![Erro de permissão](images/RC_error.png "Captura de tela mostrando erro de permissão")
+
+**Resposta do usuário**: o administrador deve criar um grupo de recursos para o usuário antes de criar uma instância.
+
+
+### O Protocolo de Transporte de Hipertexto (HTTP) 301 se moveu permanentemente para o status redirecionar ao acessar o serviço
+{: #http_301_redirect}
+
+**Explicação**: esse erro poderá ocorrer se você estiver acessando o serviço usando o protocolo `http`. O serviço de Notificação de push requer que o website seja acessado com o protocolo `https`.
+
+**Resposta do usuário**: recomendamos que você acesse o serviço e a API do Swagger por meio do protocolo `https`, em vez de `http`.
+
+
+### Uma solicitação de POST retorna uma solicitação GET para a mesma chamada
+{: #Postman_issue}
+
+**Explicação**: se um carteiro receber um código de resposta 301 ou 302 para uma solicitação de POST, ele redirecionará automaticamente para a solicitação GET para a mesma chamada. O serviço de Notificações de push requer que o website seja acessado com o protocolo `https`, em vez de `http`.
+
+**Resposta do usuário**: recomenda-se tentar a conexão ao website usando `https` no navegador.
+
 
 ### Ocorreu um erro do servidor interno. Contate o administrador. (Código de erro interno: PUSHD102E)
 {: #troubleshooting_notification_internal}
@@ -55,7 +84,7 @@ solicitaria permissões para ativar Notificações push.
 
 **Explicação**: os usuários podem observar o erro ao acessar os relatórios na página Monitoramento. Esse é um comportamento esperado quando o número de mensagens enviadas é muito alto nos últimos 90 dias.
  
-**Resposta do usuário**: relatórios baseados em messageId podem ser acessados por meio de APIs de REST. Consulte "getMessageReport" em [API REST docs]( https://console.bluemix.net/apidocs/800-push-notifications?&language=shell_curl#getmessagereport) .
+**Resposta do usuário**: relatórios baseados em messageId podem ser acessados por meio de APIs de REST. Consulte "getMessageReport" em [API REST docs](https://cloud.ibm.com/apidocs/push-notifications#api-documentation-for-push-notifications) .
 
 
 ### SecurityError: a operação é insegura
@@ -109,8 +138,7 @@ Resposta de erro de amostra:
 ```
 	{
 		"message": "Missing APNs credentials",
-     "docUrl": "https://www.ng.bluemix.net/docs/troubleshoot/errors/mobilepush/index.html#FPWSE0003E",
-     "code":   "FPWSE0003E"
+		"code":   "FPWSE0003E"
 	}
 ```
 		    {: codeblock}
@@ -146,7 +174,7 @@ configuradas.
 
 **Resposta do usuário**: assegure-se de que o serviço
 {{site.data.keyword.mobilepushshort}}
-tenha sido configurado com certificados de segurança válidos para APNs. Para obter mais informações, veja [Obtendo suas credenciais de provedor de notificação![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](push_step_1.html){: new_window}.
+tenha sido configurado com certificados de segurança válidos para APNs. Para obter mais informações, veja [Obtendo suas credenciais de provedor de notificação![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](/docs/services/mobilepush?topic=mobile-pushnotification-push_step_1){: new_window}.
 
 
 ### FPWSE0004E
@@ -182,7 +210,7 @@ ausente ou não é válido e, em seguida, forneça as informações necessárias
 
 
 **Resposta do usuário**: verifique se o corpo de JSON na solicitação segue o
-formato da solicitação que é esperado pelo servidor {{site.data.keyword.mobilepushshort}}. Para obter mais informações, veja [APIs de REST ![Ícone de link externo](../../icons/launch-glyph.svg "External link icon")](https://imfpush.{DomainName}/imfpush/){: new_window}.
+formato da solicitação que é esperado pelo servidor {{site.data.keyword.mobilepushshort}}. Para obter mais informações, veja [APIs de REST ![Ícone de link externo](../../icons/launch-glyph.svg "External link icon")](https://eu-gb.imfpush.cloud.ibm.com/imfpush/){: new_window}.
 
 
 
@@ -194,7 +222,7 @@ não reconhecidos. Por exemplo, se a solicitação para excluir a assinatura tiv
 
 
 **Resposta do usuário**: verifique se o corpo de JSON na solicitação segue o formato
-da solicitação que é esperado pelo servidor {{site.data.keyword.mobilepushshort}}. Para obter mais informações, veja [APIs de REST ![Ícone de link externo](../../icons/launch-glyph.svg "External link icon")](https://imfpush.{DomainName}/imfpush/){: new_window}.
+da solicitação que é esperado pelo servidor {{site.data.keyword.mobilepushshort}}. Para obter mais informações, veja [APIs de REST ![Ícone de link externo](../../icons/launch-glyph.svg "External link icon")](https://eu-gb.imfpush.cloud.ibm.com/imfpush/){: new_window}.
 
 
 
@@ -206,7 +234,7 @@ ausentes. Por exemplo, os parâmetros deviceId e tagName podem estar ausentes na
 
 
 **Resposta do usuário**: verifique se o corpo de JSON na solicitação segue o formato
-da solicitação que é esperado pelo servidor {{site.data.keyword.mobilepushshort}}. Para obter mais informações, veja [APIs de REST ![Ícone de link externo](../../icons/launch-glyph.svg "External link icon")](https://imfpush.{DomainName}/imfpush/){: new_window}.
+da solicitação que é esperado pelo servidor {{site.data.keyword.mobilepushshort}}. Para obter mais informações, veja [APIs de REST ![Ícone de link externo](../../icons/launch-glyph.svg "External link icon")](https://eu-gb.imfpush.cloud.ibm.com/imfpush/){: new_window}.
 
 
 

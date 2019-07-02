@@ -1,7 +1,12 @@
 ---
 
 copyright:
- years: 2015, 2017
+  years: 2015, 2019
+lastupdated: "2019-06-06"
+
+keywords: push notifications, notifications, monitoring notification
+
+subcollection: mobile-pushnotification
 
 ---
 
@@ -12,20 +17,20 @@ copyright:
 
 # Notificações do Monitor 
 {: #push_monitoring}
-Última atualização: 30 de outubro de 2017
-{: .last-updated}
-
 
 Agora, o serviço IBM {{site.data.keyword.mobilepushshort}} estende os recursos para monitorar o
 desempenho de push gerando gráficos de seus dados do usuário. É possível usar o utilitário para listar todas as notificações push enviadas ou para listar todos os
 dispositivos registrados e analisar informações em uma base diária, semanal ou mensal.
 
-Para gerar relatórios para todas as notificações enviadas, utilize o método de relatório GET de Mensagem push nas [APIs de REST](https://imfpush.{DomainName}/imfpush/#!/messages/get_apps_applicationId_messages_report){: new_window}. 
-	![Relatório Enviar notificações](images/monitoring_messages.jpg)
+Para gerar relatórios para todas as notificações enviadas, utilize o método de relatório GET de Mensagem push nas [APIs de REST](https://eu-gb.imfpush.cloud.ibm.com/imfpush/#!/messages/get_apps_applicationId_messages_report){: new_window}. 
+	![Relatório de notificações enviado - gráfico de barras](images/monitoring_messages1.png "Gráfico de barras de notificações enviado com base em dados mensais")
+<br>&nbsp;</br>
+	![Relatório de notificações enviado - diagrama de setor](images/monitoring_messages2.png "Diagrama de setor de notificações enviado com base na plataforma")
 
-
-Para gerar relatórios para todos os dispositivos registrados, utilize o método de relatório GET de Registros de dispositivo push nas [APIs de REST](https://imfpush.{DomainName}/imfpush/#!/devices/get_apps_applicationId_devices_report){: new_window}.
-	![Relatório Dispositivos registrados](images/monitoring_devices.jpg)
+Para gerar relatórios para todos os dispositivos registrados, utilize o método de relatório GET de Registros de dispositivo push nas [APIs de REST](https://eu-gb.imfpush.cloud.ibm.com/imfpush/#!/devices/get_apps_applicationId_devices_report){: new_window}.
+	![Relatório de dispositivos registrados - gráfico de linhas](images/monitoring_devices1.png "Gráfico de linhas de dispositivos registrados")
+<br>&nbsp;</br>
+	![Relatório de dispositivos registrados - gráfico de pizza](images/monitoring_devices2.png "Gráfico de pizza de dispositivos registrados com base na plataforma")
 
 
 Para obter informações sobre como ativar o utilitário de monitoramento de sua plataforma:
@@ -38,8 +43,4 @@ Nota:
 1. A guia de monitoramento do {{site.data.keyword.mobilepushshort}} não mostra dados de analítica.
 2. O relatório gerado usando as APIs de REST será armazenado em cache e o cache será mantido por trinta minutos.
 Além disso, os dados representados no gráfico serão gerados usando os dados em cache.
- 
-
-
-
  

@@ -1,8 +1,12 @@
 ---
 
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-02-15"
+  years: 2017, 2018, 2019
+lastupdated: "2019-06-06"
+
+keywords: push notifications, notifications, related links, videos
+
+subcollection: mobile-pushnotification
 
 ---
 

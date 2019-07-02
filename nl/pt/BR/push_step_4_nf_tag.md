@@ -1,7 +1,12 @@
 ---
 
 copyright:
- years: 2015, 2017
+  years: 2015, 2019
+lastupdated: "2019-06-06"
+
+keywords: push notifications, notifications, tag-based, creating tags, managing tags, get tag, subscribe tag
+
+subcollection: mobile-pushnotification
 
 ---
 
@@ -12,8 +17,6 @@ copyright:
 
 # Notificações baseadas em tag
 {: #tag_based_notifications}
-Última atualização: 13 de julho de 2017
-{: .last-updated}
 
 Notificações baseadas em tag são mensagens que se destinam a todos os dispositivos inscritos em uma tag específica. As notificações baseadas em identificação
 permitem a segmentação de notificações com base em áreas ou tópicos de assunto. Os destinatários da notificação podem optar por receber notificações somente se for
@@ -27,7 +30,7 @@ definir tags e depois enviar e receber mensagens usando
   tags. Crie primeiro as tags para o aplicativo, crie assinaturas e, em seguida, inicie as notificações baseadas em tag. Para enviar uma
 notificação baseada em tag usando a
 [API
-REST](https://imfpush.{DomainName}/imfpush/){: new_window}, assegure-se de que os "tagNames" sejam fornecidos ao
+REST](https://eu-gb.imfpush.cloud.ibm.com/imfpush/){: new_window}, assegure-se de que os "tagNames" sejam fornecidos ao
 postar no recurso de mensagem.
 
 
@@ -117,11 +120,12 @@ não existe mais e nenhuma ação adicional é necessária no lado do cliente.
 
 Crie tags na tela **Tag**. Para obter informações sobre como
 criar tags, consulte
-[Criando tags](t_manage_tags.html).
+[Criando tags](/docs/services/mobilepush?topic=mobile-pushnotification-tag_based_notifications#create_tags).
 
-1. No console de **Notificação push**, clique em **Enviar notificações**.
-1. Selecione a opção **Dispositivo por identificação** na lista suspensa **Enviar para**.
-1. Procure as tags que deseja usar e selecione-as.
-![Tela de notificações](images/tag_notification.jpg)
-1. No campo **Texto da mensagem**, insira o texto que seria enviado como uma notificação ao público inscrito.
-1. Clique em **Enviar**.
+1. No console de **Notificação de push**, clique em **Mensagens**.
+2. Selecione a opção **Dispositivo por identificação** na lista suspensa **Enviar para**.
+3. Procure as tags que você deseja usar e selecione-as.
+![Tela Notificações](images/tag_notification_new2.jpg "Console de Notificações de push com a opção de navegação de Mensagens selecionada, mostrando a página Enviar notificações. Enviar para campo configurado como Dispositivo por Tag.")
+4. No campo **Texto da mensagem**, insira o texto que seria enviado como uma notificação ao público inscrito.
+5. Clique em **Enviar**.
+

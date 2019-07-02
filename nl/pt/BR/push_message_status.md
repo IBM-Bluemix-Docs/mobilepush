@@ -1,7 +1,12 @@
 ---
 
 copyright:
- years: 2015, 2017
+  years: 2015, 2019
+lastupdated: "2019-06-06"
+
+keywords: push notifications, notifications, message delivery status
+
+subcollection: mobile-pushnotification
 
 ---
 
@@ -11,10 +16,7 @@ copyright:
 {:codeblock:.codeblock}
 
 # Status de entrega de mensagens
-{: #tag_based_notifications}
-Última atualização: 21 de agosto de 2017
-{: .last-updated}
-
+{: #message-delivery-status}
 
 Com o serviço {{site.data.keyword.mobilepushshort}}, é possível visualizar o status de entrega de cada notificação que foi enviada para o serviço. 
 
@@ -22,7 +24,7 @@ Depois que a mensagem é enviada, é possível rastrear informações de entrega
 
 A guia **Mensagens** do serviço {{site.data.keyword.mobilepushshort}} exibe o status de notificação.
 
-![notifications status](images/notification_status_new.png)
+![status de notificações](images/notification_status_new.png "Página de mensagens mostrando o status de notificação")
 
 1. **ID de mensagem** - um identificador exclusivo para identificar uma mensagem.
 
@@ -48,12 +50,11 @@ A guia **Mensagens** do serviço {{site.data.keyword.mobilepushshort}} exibe o s
  
  - Status da mensagem: Enviado, Visto, Aberto e Inválido. 
 
-![notifications status](images/message_delivery_status_new.png)
+![status de notificações](images/message_delivery_status_new.png "Gráfico de status de mensagem mostrando o detalhamento de status aberto, enviado, visto e inválido")
 
 6. **Opções** - Fornece um status detalhado de uma notificação. O status pode ser rastreado selecionando o `Device Id` ou o `User Id` no menu suspenso. Obter a mensagem de status detalhada específica do usuário/dispositivo pode ser útil quando você está rastreando uma mensagem com falha.
 
-![detailed status](images/detailed_message_delivery.png)
+![status detalhado](images/detailed_message_delivery.png "Opções de status de entrega de mensagem detalhada com ID do usuário selecionado")
 
-**Nota**: o recurso é ativado apenas para usuários que optaram pelo `Advanced Plan`. Selecione **Planejar** no console do serviço {{site.data.keyword.mobilepushshort}} para [fazer upgrade](https://console-tok02-red.cdn.s-bluemix.net/docs/account/change-plan.html#changing)
-
+**Nota**: o recurso é ativado apenas para usuários que optaram pelo `Advanced Plan`. Selecione **Planejar** no console do serviço {{site.data.keyword.mobilepushshort}} para [fazer upgrade](https://cloud.ibm.com/docs/account?topic=account-changing#changing)
 

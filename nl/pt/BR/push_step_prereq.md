@@ -1,8 +1,12 @@
-
 ---
 
 copyright:
- years: 2015, 2017
+  years: 2015, 2017, 2019
+lastupdated: "2019-06-06"
+
+keywords: push notifications, creating an ibm cloud service instance, ibm cloud service
+
+subcollection: mobile-pushnotification
 
 ---
 
@@ -12,11 +16,9 @@ copyright:
 {:codeblock:.codeblock}
 
 # Etapa 1: Criando uma instância de serviço do IBM Cloud {{site.data.keyword.mobilepushshort}}
-{: #push_step_1}
-Última atualização: 27 de junho de 2017
-{: .last-updated}
+{: #push_step_1a}
 
-É necessário criar uma [conta do IBM Cloud](https://console.bluemix.net/registration/).
+É necessário criar uma [conta do IBM Cloud](https://cloud.ibm.com/).
 
 Para criar um serviço Push Notifications por meio do Catálogo, conclua as etapas a seguir:
 
@@ -30,10 +32,9 @@ Para criar um serviço Push Notifications por meio do Catálogo, conclua as etap
 
 - Criando um aplicativo IBM Cloud usando o modelo MobileFirst Services Starter do catálogo. Isso cria um serviço Push Notifications ligado a um aplicativo backend do IBM Cloud.
 - Criando um serviço Push Notifications desvinculado diretamente do catálogo Mobile. É possível ligar posteriormente a um aplicativo ou até mesmo escolher usá-lo desvinculado. 
-- Usando o [IBM Cloud Catalog ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://console.ng.bluemix.net/catalog/){: new_window}.
+- Usando o [IBM Cloud Catalog ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://cloud.ibm.com/catalog/){: new_window}.
 
-
-Sua próxima etapa é [obter credenciais do provedor de notificações](push_step_1.html).
+Sua próxima etapa é [obter credenciais do provedor de notificações](/docs/services/mobilepush?topic=mobile-pushnotification-push_step_1).
 
 
 
