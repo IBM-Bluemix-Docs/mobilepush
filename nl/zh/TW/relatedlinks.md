@@ -1,8 +1,12 @@
 ---
 
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-02-15"
+  years: 2017, 2018, 2019
+lastupdated: "2019-06-06"
+
+keywords: push notifications, notifications, related links, videos
+
+subcollection: mobile-pushnotification
 
 ---
 
@@ -10,7 +14,7 @@ lastupdated: "2018-02-15"
 {:shortdesc: .shortdesc}
 
 
-# 影片
+# 視訊
 {: #videos}
 
 * <a href="https://www.youtube.com/watch?v=IA8RyAxqq4A" target="_blank"> Integrating Push Notification In iOS Application <img src="../../icons/launch-glyph.svg" alt="外部鏈結圖示"></a>

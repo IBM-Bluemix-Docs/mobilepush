@@ -1,7 +1,12 @@
 ---
 
 copyright:
- years: 2015, 2017
+  years: 2015, 2017, 2019
+lastupdated: "2019-06-06"
+
+keywords: push notifications, notifications, configure sound, payload, ios badge, holding android notification
+
+subcollection: mobile-pushnotification
 
 ---
 
@@ -11,8 +16,6 @@ copyright:
 {:codeblock:.codeblock}
 
 #啟用進階推送通知
-前次更新：2017 年 6 月 1 日
-{: .last-updated}
 
 配置 iOS 徽章、音效、其他 JSON 有效負載、可採取動作的通知，以及保存通知。
 
@@ -28,27 +31,27 @@ copyright:
 3. 選擇下列一個選項：	
 	- 在 Android 上
 
- 	在 Android 應用程式的 `res/raw` 目錄中，新增您的音效檔。傳送通知時，在 {{site.data.keyword.mobilepushshort}} 的音效欄位中新增音效檔名稱：
+     	在 Android 應用程式的 `res/raw` 目錄中，新增您的音效檔。傳送通知時，在 {{site.data.keyword.mobilepushshort}} 的音效欄位中新增音效檔名稱：
 
-	```
-	"settings":{
+    	```
+    	"settings":{
      "gcm":{
      "sound":"tt.wav",
   }
  }  
-	```	
-	{: codeblock}	
+    	```	
+    	{: codeblock}	
 	
 	- 在 iOS 上
 
-	```
-	"settings":{
+    	```
+    	"settings":{
      "apns" : {
       "badge": 10,
       "sound": "tt.wav",
   }
 }
-	``` 
+    	``` 
 		{: codeblock}
 		
 **其他有效負載** - 此有效負載可以是任意鍵值組，而且必須是您要與 {{site.data.keyword.mobilepushshort}} 一起傳送的 JSON 物件。

@@ -1,7 +1,12 @@
 ---
 
 copyright:
- years: 2015, 2017
+  years: 2015, 2019
+lastupdated: "2019-06-06"
+
+keywords: push notifications, notifications, monitoring notification
+
+subcollection: mobile-pushnotification
 
 ---
 
@@ -12,20 +17,20 @@ copyright:
 
 # Surveillance des notifications 
 {: #push_monitoring}
-Dernière mise à jour : 30 octobre 2017
-{: .last-updated}
-
 
 Le service IBM {{site.data.keyword.mobilepushshort}} étend désormais les capacités de surveillance des performances push en générant des graphiques depuis vos données utilisateur. Vous
 pouvez utiliser l'utilitaire pour répertorier toutes les notifications push envoyées ou pour répertorier tous les appareils enregistrés et analyser les informations sur une base quotidienne, hebdomadaire ou mensuelle.
 
-Pour générer des rapports pour toutes les notifications envoyés, utilisez la méthode du rapport Push Messages GET report dans les [API REST](https://imfpush.{DomainName}/imfpush/#!/messages/get_apps_applicationId_messages_report){: new_window}. 
-	![Rapport Notifications envoyées](images/monitoring_messages.jpg)
-
+Pour générer des rapports pour toutes les notifications envoyés, utilisez la méthode du rapport Push Messages GET report dans les [API REST](https://eu-gb.imfpush.cloud.ibm.com/imfpush/#!/messages/get_apps_applicationId_messages_report){: new_window}. 
+	![Rapport sur les notifications envoyées - diagramme à barres](images/monitoring_messages1.png "Diagramme à barres des notifications envoyées basé sur des données mensuelles")
+<br>&nbsp;</br>
+	![Rapport sur les notifications envoyées - diagramme sectoriel](images/monitoring_messages2.png "Diagramme sectoriel des notifications envoyées basé sur la plateforme")
 
 Pour générer des rapports pour tous les appareils enregistrés, utilisez la méthode du rapport Push Device Registrations GET dans les
-[API REST](https://imfpush.{DomainName}/imfpush/#!/devices/get_apps_applicationId_devices_report){: new_window}.
-	![Rapport Appareils enregistrés](images/monitoring_devices.jpg)
+[API REST](https://eu-gb.imfpush.cloud.ibm.com/imfpush/#!/devices/get_apps_applicationId_devices_report){: new_window}.
+	![Rapport sur les appareils enregistrés - diagramme linéaire](images/monitoring_devices1.png "Diagramme linéaire des appareils enregistrés")
+<br>&nbsp;</br>
+	![Rapport sur les appareils enregistrés - graphique circulaire](images/monitoring_devices2.png "Graphiques circulaires des appareils enregistrés basés sur la plateforme")
 
 
 Pour plus d'informations sur l'activation de l'utilitaire de surveillance pour votre plateforme, voir :
@@ -38,8 +43,4 @@ Remarque :
 1. L'onglet Surveillance de {{site.data.keyword.mobilepushshort}} n'affiche pas les données d'analyse.
 2. Le rapport généré à l'aide des API REST sera mis en cache et le cache sera conservé pendant trente minutes.
 De même, les données représentées dans le graphique seront générées à partir des données mises en cache.
- 
-
-
-
  

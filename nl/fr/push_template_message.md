@@ -1,7 +1,12 @@
 ---
 
 copyright:
- years: 2015, 2017
+  years: 2015, 2019
+lastupdated: "2019-06-06"
+
+keywords: push notifications, notifications, parameterize notification
+
+subcollection: mobile-pushnotification
 
 ---
 
@@ -12,8 +17,6 @@ copyright:
 
 # Paramétrer les notifications
 {: #template_based_notifications}
-Dernière mise à jour : 21 août 2017
-{: .last-updated}
 
 Vous pouvez paramétrer et envoyer des notifications personnalisées en créant des variables et en les appelant dans vos modèles de notifications.
 
@@ -58,25 +61,19 @@ Une fois que les variables sont définies, elles peuvent être appelées dans vo
 
 2. Composez un message en sélectionnant une option **Envoyer à**.
 
-2. Dans la zone **Message**, composez votre message. Appelez les variables définies dans le modèle de message. Cliquez sur **Envoyer**.
+3. Dans la zone **Message**, composez votre message.  Appelez les variables définies dans le modèle de message. Cliquez sur **Envoyer**.
 
-![modèle de message](images/message_template.png)
+![message template](images/message_template.png "Page Message qui affiche un modèle de message avec zone Envoyer à définie sur Tous les appareils, zone Message contenant un exemple de message relatif au solde de compte bancaire d'un utilisateur et zone Contenu supplémentaire avec attribut "key":"value" ajouté.")
 
 Votre message de notification personnalisé sera envoyé en extrayant les données des variables -
 
-![exemple de message](images/message_template_example.jpg)
+![exemple de message](images/message_template_example.jpg "Exemple de notification basée sur la modèle de message")
 
-Remarque : la fonction est uniquement activée pour les utilisateurs ayant opté pour le `plan avancé`. Sélectionnez **Plan** dans la console du service {{site.data.keyword.mobilepushshort}} pour effectuer une [mise à niveau](https://console-tok02-red.cdn.s-bluemix.net/docs/account/change-plan.html#changing).
+Remarque : la fonction est uniquement activée pour les utilisateurs ayant opté pour le `plan avancé`. Sélectionnez **Plan** dans la console du service {{site.data.keyword.mobilepushshort}} pour effectuer une [mise à niveau](https://cloud.ibm.com/docs/account?topic=account-changing#changing).
 
-**Limitations :**
+## Limitations
+{: #limitations}
 
  - A l'heure actuelle, cette fonction n'est pas prise en charge sur Safari
  - Les variables contenues dans le modèle de notification peuvent ne pas fonctionner en cas de fermeture forcée d'une application sur iOS. Cette limitation vient d'iOS et se trouve hors du contrôle du SDK.
-
-
-
-
-
-
-
 

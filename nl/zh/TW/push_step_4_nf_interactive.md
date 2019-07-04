@@ -1,7 +1,12 @@
 ---
 
 copyright:
- years: 2015, 2017
+  years: 2015, 2017, 2019
+lastupdated: "2019-06-06"
+
+keywords: push notifications, notifications, interactive notification, silent notification
+
+subcollection: mobile-pushnotification
 
 ---
 
@@ -12,8 +17,6 @@ copyright:
 
 # 互動式及無聲自動通知  
 {: #interactive-notifications}
-前次更新：2017 年 5 月 22 日
-{: .last-updated}
 
 互動式通知可讓使用者在不開啟應用程式的情況下，就可以回應通知。當互動式通知到達時，裝置會顯示動作按鈕以及通知訊息。 
 
@@ -22,7 +25,7 @@ copyright:
 ## 傳送互動式通知
 {: #send_interactive_notifications}
 
-您可以使用 Push 主控台或使用 [REST API 文件](push_restapi.html)來傳送互動式通知。
+您可以使用 Push 主控台或使用 [REST API 文件](https://cloud.ibm.com/apidocs/push-notifications)來傳送互動式通知。
 
 
 從 {{site.data.keyword.mobilepushshort}} 主控台，請執行下列動作： 

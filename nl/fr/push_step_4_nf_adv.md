@@ -1,7 +1,12 @@
 ---
 
 copyright:
- years: 2015, 2017
+  years: 2015, 2017, 2019
+lastupdated: "2019-06-06"
+
+keywords: push notifications, notifications, configure sound, payload, ios badge, holding android notification
+
+subcollection: mobile-pushnotification
 
 ---
 
@@ -11,8 +16,6 @@ copyright:
 {:codeblock:.codeblock}
 
 #Activation des notifications push avancées
-Dernière mise à jour : 1 juin 2017
-{: .last-updated}
 
 Configurez un badge iOS, un son, un contenu JSON supplémentaire, des notifications interactives et la conservation des notifications.
 
@@ -29,27 +32,27 @@ chaîne du fichier son à utiliser.
 3. Sélectionnez l'une des options suivantes :	
 	- Sur Android
 
- 	Ajoutez votre fichier son dans le répertoire `res/raw` de votre application Android. Lors de l'envoi de la notification, ajoutez le nom du fichier son dans la zone son de {{site.data.keyword.mobilepushshort}} :
+     	Ajoutez votre fichier son dans le répertoire `res/raw` de votre application Android. Lors de l'envoi de la notification, ajoutez le nom du fichier son dans la zone son de {{site.data.keyword.mobilepushshort}} :
 
-	```
-	"settings":{
-     "gcm" : {
-     "sound":"tt.wav",
+    	```
+    	"settings":{
+         "gcm" : {
+         "sound":"tt.wav",
 	  }
-		}  
-	```	
-	{: codeblock}	
+    		}  
+    	```	
+    	{: codeblock}	
 	
 	- Sur iOS
 
-	```
-	"settings": {
-	     "apns" : {
-	      "badge": 10,
+    	```
+    	"settings": {
+    	     "apns" : {
+    	      "badge": 10,
 	      "sound": "tt.wav",
 	  }
-	}
-	``` 
+    	}
+    	``` 
 		{: codeblock}
 		
 **Contenu supplémentaire** - Ce contenu peut être représenté par toute paire clé-valeur et doit être un objet JSON que vous voulez envoyer avec la notification de type {{site.data.keyword.mobilepushshort}}.

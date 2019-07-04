@@ -1,7 +1,12 @@
 ---
 
 copyright:
- years: 2015, 2017
+  years: 2015, 2017, 2019
+lastupdated: "2019-06-06"
+
+keywords: push notifications, notifications, sending a notification
+
+subcollection: mobile-pushnotification
 
 ---
 
@@ -12,35 +17,34 @@ copyright:
 
 # Etape 5 : Envoi d'une notification
 {: #push_step_4}
-Dernière mise à jour : 27 juin 2017
-{: .last-updated}
-
 
 Une fois que vous avez développé vos applications, vous pouvez envoyer des notifications push de base.
 
 Pour envoyer des notifications push de base, procédez comme suit :
 
-1. Sélectionnez **Envoyer des notifications** et rédigez un message en choisissant une option **Envoyer à**. Les options prises en charge sont **Appareil par étiquette**, **ID de l'appareil**, **ID utilisateur**, **Appareils Android**, **Appareils IOS**, **Notifications Web** et **Tous les appareils**.
+1. Sélectionnez **Messages**, puis rédigez un message en choisissant une option **Envoyer à**. Les options prises en charge sont **Appareil par étiquette**, **ID de l'appareil**, **ID utilisateur**, **Appareils Android**, **Appareils IOS**, **Notifications Web**, **Applications et extensions Chrome**, **Navigateur Chrome**, **Firefox**, **Safari** et **Tous les appareils**.
 **Remarque **: si vous sélectionnez l'option **Tous les appareils**, tous les appareils qui sont abonnés à des notifications de type {{site.data.keyword.mobilepushshort}} recevront les notifications.
 	
-	![Ecran Notifications](images/tag_notification.jpg)
+    ![Ecran Notifications](images/tag_notification.jpg "Ecran d'envoi de notifications affichant les zones Envoyer à, Message et Contenu supplémentaire")
 
 2. Dans la zone **Message**, composez votre message. Configurez les paramètres facultatifs, selon les besoins.
 3. Cliquez sur **Envoyer**.
 3. Vérifiez que vos appareils ou votre navigateur ont reçu la notification.
 
 La capture d'écran suivante présente une boîte d'alerte relative à une notification push s'exécutant au premier plan sur un appareil Android.
-	![Notification push au premier plan sur Android](images/Android_Screenshot.jpg)
+
+![Notification push en avant-plan sur Android](images/Android_Screenshot.jpg "Boîte d'alerte avec une notification test")
 
 La capture d'écran suivante présente une notification push qui s'exécute en arrière-plan sur un appareil Android.
-	![Notification push en arrière-plan sur Android](images/background.jpg)
+
+![Notification push en arrière-plan sur Android](images/background.jpg "Notification push sur appareil Android")
 
 ## Paramètres Android facultatifs 
 {: #push_step_4_Android}
 
 Vous pouvez personnaliser les paramètres de type {{site.data.keyword.mobilepushshort}} pour l'envoi de notifications vers des appareils Android. 
 
-![Paramètres Android personnalisés](images/android_custom_settings.jpg)
+![Paramètres Android personnalisés](images/android_custom_settings.jpg "Page des paramètres personnalisés de notifications push")
 
 Les options de personnalisation facultatives suivantes sont prises en charge :
 

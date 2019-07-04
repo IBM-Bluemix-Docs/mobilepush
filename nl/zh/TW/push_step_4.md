@@ -1,7 +1,12 @@
 ---
 
 copyright:
- years: 2015, 2017
+  years: 2015, 2017, 2019
+lastupdated: "2019-06-06"
+
+keywords: push notifications, notifications, sending a notification
+
+subcollection: mobile-pushnotification
 
 ---
 
@@ -12,18 +17,15 @@ copyright:
 
 # 步驟 5：傳送通知
 {: #push_step_4}
-前次更新：2017 年 6 月 27 日
-{: .last-updated}
-
 
 開發應用程式之後，您可以傳送基本推送通知。
 
 若要傳送基本推送通知，請完成下列步驟：
 
-1. 選取**傳送通知**，然後選擇**傳送至**選項來編寫訊息。支援的選項是**依標籤的裝置**、**裝置 ID**、**使用者 ID**、**Android 裝置**、**iOS 裝置**、**Web 通知**及**所有裝置**。
+1. 選取**訊息**，並透過選取**傳送至**選項來編寫訊息。支援的選項有**依標籤的裝置**、**裝置 ID**、**使用者 ID**、**Android 裝置**、**iOS 裝置**、**Web 通知**、**Chrome Apps and Extensions**、**Chrome 瀏覽器**、**Firefox**、**Safari** 和**所有裝置**。
 **附註**：當您選取**所有裝置**選項時，所有已訂閱 {{site.data.keyword.mobilepushshort}} 的裝置都會接收到通知。
 	
-	![通知畫面](images/tag_notification.jpg)
+    ![通知畫面](images/tag_notification.jpg "顯示「傳送至」、「訊息」以及「其他有效負載」欄位的「傳送通知」畫面")
 
 2. 在**訊息**欄位中，編寫訊息。視需要選擇配置選用設定。
 3. 按一下**傳送**。
@@ -32,18 +34,20 @@ copyright:
 下列擷取畫面顯示在 Android 裝置的前景中處理推送通知的警示框。
 
 
-	![Android 上的前景推送通知](images/Android_Screenshot.jpg)
+
+![Android 上的前景推送通知](images/Android_Screenshot.jpg "含測試通知的警示方框")
 
 下列擷取畫面顯示 Android 背景中的推送通知。
 	
-	![Android 上的背景推送通知](images/background.jpg)
+
+![Android 上的背景推送通知](images/background.jpg "Android 裝置上的推送通知")
 
 ## 選用性的 Android 設定 
 {: #push_step_4_Android}
 
 您可以進一步自訂 {{site.data.keyword.mobilepushshort}} 設定，以將通知傳送給 Android 裝置。 
 
-![Android 自訂設定](images/android_custom_settings.jpg)
+![Android 自訂設定](images/android_custom_settings.jpg "「推送通知自訂設定」頁面")
 
 支援下列選用自訂選項：
 
@@ -61,7 +65,7 @@ copyright:
 - 閒置時延遲：您可以將此參數設為下列其中一個值：
 	- `True` 指示 FCM 伺服器如果裝置在閒置中就不要遞送通知。 
 	- `False` 確定即使裝置閒置也會遞送通知。
-- 同步：透過將此選項設為 `true`，所有已登錄裝置的通知就會同步。如果具有使用者名稱的使用者有多個已安裝相同應用程式的裝置，則讀取某個裝置上的通知可確保刪除其他裝置中的通知。您需要確定已使用 userId 向 {{site.data.keyword.mobilepushshort}} 服務進行登錄，此選項才能運作。
+- 同步：透過將此選項設定為 `true`，將同步所有已登錄裝置的通知。如果具有使用者名稱的使用者有多個已安裝相同應用程式的裝置，則讀取某個裝置上的通知可確保刪除其他裝置中的通知。您需要確定已使用 userId 向 {{site.data.keyword.mobilepushshort}} 服務進行登錄，此選項才能運作。
 - 其他有效負載：指定通知的自訂有效負載值。
 - 可展開的通知：這讓客戶能選擇展開通知的相關資訊，而基本通知顯示時會將通知收合。支援下列選項：
 	- 大圖片通知：您可以選擇當通知展開時包含圖片。請務必提供圖片的標題文字和 URL。

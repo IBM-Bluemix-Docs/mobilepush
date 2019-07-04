@@ -1,7 +1,12 @@
 ---
 
 copyright:
- years: 2015, 2017
+  years: 2015, 2017, 2019
+lastupdated: "2019-06-06"
+
+keywords: push notifications, notifications, service instance, cordova application
+
+subcollection: mobile-pushnotification
 
 ---
 
@@ -12,17 +17,13 @@ copyright:
 
 # Etape 3 : Configuration d'une instance de service 
 {: #push_step_2}
-Dernière mise à jour : 27 juin 2017
-{: .last-updated}
 
-Vérifiez que vous avez exécuté la procédure [Obtention de vos données d'identification de notification](push_step_1.html).
-
+Vérifiez que vous avez exécuté la procédure [Obtention de vos données d'identification de notification](/docs/services/mobilepush?topic=mobile-pushnotification-push_step_1).
 
 ## Pour Android et applications et extensions Chrome
 {: #push_step_2_Android}
 
-
-Vérifiez que vous avez exécuté la procédure [Obtention des données d'identification de votre fournisseur d'identification](push_step_1.html) pour mettre en place le projet FCM et obtenir vos données d'identification.
+Vérifiez que vous avez exécuté la procédure [Obtention des données d'identification de votre fournisseur d'identification](/docs/services/mobilepush?topic=mobile-pushnotification-push_step_1) pour mettre en place le projet FCM et obtenir vos données d'identification.
 
 Pour configurer les données d'identification FCM pour les applications Android et les applications et extensions Google, procédez comme suit :
 
@@ -33,7 +34,7 @@ Pour configurer les données d'identification FCM pour les applications Android 
 	- Pour applications et extensions Google Chrome : sélectionnez **Web**, puis mettez à jour l'onglet Applications et extensions Chrome avec l'ID d'émetteur/Numéro de projet et la clé d'API. 
 4. Cliquez sur **Sauvegarder**. Le service Push Notifications est à présent configuré.
 
-L'étape suivante consiste à [configurer le SDK client du service Push](push_step_3.html).
+L'étape suivante consiste à [configurer le SDK client du service Push](/docs/services/mobilepush?topic=mobile-pushnotification-push_step_3).
 
 
 ## Pour applications Cordova 
@@ -50,7 +51,7 @@ Pour permettre aux applications Cordova de recevoir des notifications push sur v
 {: #enable-push-ios-notifications}
 
 
-Pour utiliser le service {{site.data.keyword.mobilepushshort}} pour envoyer des notifications, téléchargez les certificats `.p12` créés lors de l'étape 1 :[ Obtention des données d'identification de votre fournisseur de notification](push_step_1.html). Ce certificat contient la clé privée et les certificats SSL requis pour construire et publier votre application. Vous pouvez également utiliser l'API REST pour télécharger un certificat APNS.
+Pour utiliser le service {{site.data.keyword.mobilepushshort}} pour envoyer des notifications, téléchargez les certificats `.p12` créés lors de l'étape 1 :[ Obtention des données d'identification de votre fournisseur de notification](/docs/services/mobilepush?topic=mobile-pushnotification-push_step_1). Ce certificat contient la clé privée et les certificats SSL requis pour construire et publier votre application. Vous pouvez également utiliser l'API REST pour télécharger un certificat APNS.
 
 **Remarque** : une fois le fichier `.cer` dans votre accès à la chaîne de certificats, exportez-le sur votre ordinateur pour créer un certificat `.p12`.
 
@@ -62,8 +63,8 @@ Pour configurer des APN sur la console des services Push Notification, procédez
 2. Sélectionnez l'option **Mobile** pour mettre à jour les informations dans le formulaire **Données d'identification push APNS**.
 3. Sélectionnez l'une des options suivantes :
 	- Pour l'option **Mobile**
-		1. Sélectionnez **Bac à sable** (développement) ou **Production** (distribution) selon le cas et téléchargez le certificat `p.12` que vous avez créé.
-		  ![Configuration de la console de notifications push](images/wizard.jpg)
+		1. Sélectionnez **Bac à sable** (développement) ou  **Production** (distribution) selon le cas et téléchargez le certificat `p.12` que vous avez créé.
+		  ![Configuration de la console de notifications push](images/wizard.jpg "Console Push Notifications avec option de configuration Configurer sélectionnée qui affiche l'onglet Mobile et les données d'identification APN Push")
 
 		1. Dans la zone **Mot de passe**, entrez le mot de passe qui est associé au fichier de certificat `.p12`, puis cliquez sur **Sauvegarde**.
 	- Pour l'option **Web**
@@ -75,9 +76,9 @@ Pour configurer des APN sur la console des services Push Notification, procédez
 		- **Chaîne de format de l'URL **: URL à résoudre lors d'un clic sur la notification. Par exemple, ["https://www.acmebanks.com"]. L'URL doit utiliser le schéma http ou https.
 		-** Certificat push Web de Safari** : téléchargez le certificat .p12 et indiquez le mot de passe.
 4. Cliquez sur **Sauvegarder**.	
-![Console de notifications Push](images/push_configure_safari.jpg)	
+![Console de notifications push](images/push_configure_safari.jpg "Zones de la page des options Web")	
 
-Après avoir configuré le service pour les applications iOS, vous devez [configurer le SDK du client du service Push](push_step_3.html).
+Après avoir configuré le service pour les applications iOS, vous devez [configurer le SDK du client du service Push](/docs/services/mobilepush?topic=mobile-pushnotification-push_step_3).
 
 
 ## Pour les navigateurs Chrome et Firefox 
@@ -85,7 +86,9 @@ Après avoir configuré le service pour les applications iOS, vous devez [config
 
 1. Dans la console Notifications Push, sélectionnez **Configurer**.
 2. Sélectionnez l'onglet Web.
-	![Configurations WebPush](images/webpush_configure.jpg)
+	![Configurations push Web](images/webpush_configure.jpg "Fenêtre de configuration push Web pour la définition de la clé d'API FCM et de l'URL de votre site Web")
 3. Configurez la clé d'API FCM et l'URL de votre site Web qui sera enregistrée pour recevoir les notifications push.
 4. Cliquez sur **Sauvegarder**.
-5. Une fois que vous avez configuré le service, vous devez configurer le [SDK du client du service Push](push_step_3.html).
+5. Une fois que vous avez configuré le service, vous devez configurer le [SDK du client du service Push](/docs/services/mobilepush?topic=mobile-pushnotification-push_step_3).
+
+

@@ -1,7 +1,12 @@
 ---
 
 copyright:
- years: 2015, 2017
+  years: 2015, 2019
+lastupdated: "2019-06-06"
+
+keywords: push notifications, notifications, message delivery status
+
+subcollection: mobile-pushnotification
 
 ---
 
@@ -11,10 +16,7 @@ copyright:
 {:codeblock:.codeblock}
 
 # Etat de distribution des messages
-{: #tag_based_notifications}
-Dernière mise à jour : 21 août 2017
-{: .last-updated}
-
+{: #message-delivery-status}
 
 Avec la fonction {{site.data.keyword.mobilepushshort}}, vous pouvez afficher l'état de distribution de toutes les notifications soumises au service. 
 
@@ -22,7 +24,7 @@ Une fois le message envoyé, vous pouvez suivre les informations de distribution
 
 L'onglet **Messages** du service {{site.data.keyword.mobilepushshort}} affiche le statut de notification.
 
-![statut des notifications](images/notification_status_new.png)
+![statut des notifications](images/notification_status_new.png "Page des messages qui affiche le statut de notification")
 
 1. **ID du message** -  Identificateur unique servant à identifier un message.
 
@@ -48,12 +50,11 @@ L'onglet **Messages** du service {{site.data.keyword.mobilepushshort}} affiche l
  
  - Statut du message : Envoyés, Vus, Ouverts, Non valides. 
 
-![statut des notifications](images/message_delivery_status_new.png)
+![statut des notifications](images/message_delivery_status_new.png "Graphique des statuts des messages qui affiche la répartition des statuts ouvert, envoyé, vu et non valide")
 
 6. **Options** - Offre un état détaillé d'une notification. L'état peut être suivi en sélectionnant `ID de terminal` ou `ID utilisateur` dans le menu déroulant. Obtenir un message d'état détaillé spécifique à un utilisateur ou à un périphérique peut être utile lorsque vous effectuez le suivi d'un message d'échec.
 
-![état détaillé](images/detailed_message_delivery.png)
+![état détaillé](images/detailed_message_delivery.png "Options d'état détaillé de distribution des messages avec ID utilisateur sélectionné")
 
-**Remarque** : la fonction est uniquement activée pour les utilisateurs ayant opté pour le `plan avancé`. Sélectionnez **Plan** dans la console du service {{site.data.keyword.mobilepushshort}} pour effectuer une [mise à niveau](https://console-tok02-red.cdn.s-bluemix.net/docs/account/change-plan.html#changing)
-
+**Remarque** : la fonction est uniquement activée pour les utilisateurs ayant opté pour le `plan avancé`. Sélectionnez **Plan** dans la console du service {{site.data.keyword.mobilepushshort}} pour effectuer une [mise à niveau](https://cloud.ibm.com/docs/account?topic=account-changing#changing)
 

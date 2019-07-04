@@ -1,7 +1,12 @@
 ---
 
 copyright:
- years: 2015, 2017
+  years: 2015, 2019
+lastupdated: "2019-06-06"
+
+keywords: push notifications, notifications, tag-based, creating tags, managing tags, get tag, subscribe tag
+
+subcollection: mobile-pushnotification
 
 ---
 
@@ -12,12 +17,10 @@ copyright:
 
 # 標籤型通知
 {: #tag_based_notifications}
-前次更新：2017 年 7 月 13 日
-{: .last-updated}
 
 標籤型通知是指以所有訂閱特定標籤之裝置為目標的訊息。標籤型通知容許根據主旨區域或主題分段通知。只有在通知是所感興趣的主旨或主題時，通知收件者才能選擇接收通知。因此，標籤型通知提供一種方法來分段收件者。此特性會啟用定義標籤後根據標籤來傳送及接收訊息的能力。訊息只會以訂閱標籤的用戶端應用程式實例（在行動裝置或瀏覽器上，或者作為應用程式或延伸規格）為目標。您必須先建立應用程式的標籤，並設定標籤訂閱，然後起始標籤型通知。若要傳送使用 REST API 的標籤型通知，請確定在公佈至訊息資源時提供 "tagNames"。
 
-您可以定義標籤，然後使用標籤來傳送及接收訊息。您必須先建立應用程式的標籤、建立訂閱，然後起始標籤型通知。若要使用 [REST API](https://imfpush.{DomainName}/imfpush/){: new_window} 傳送標籤型通知，請確定在公佈至訊息資源時已提供 "tagName"。
+您可以定義標籤，然後使用標籤來傳送及接收訊息。您必須先建立應用程式的標籤、建立訂閱，然後起始標籤型通知。若要使用 [REST API](https://eu-gb.imfpush.cloud.ibm.com/imfpush/){: new_window} 傳送標籤型通知，請確定在公佈至訊息資源時已提供 "tagName"。
 
 
 ## 管理標籤
@@ -88,11 +91,12 @@ copyright:
 
 標籤型通知是指以所有訂閱特定標籤之裝置為目標的訊息。每一個裝置都可以訂閱任意數目的標籤。本主題說明如何傳送標籤型通知。訂閱透過 {{site.data.keyword.mobilepushshort}} Service IBM Cloud 實例進行維護。刪除標籤時，會刪除與該標籤相關聯的所有資訊（包括其訂閱者及裝置）。無需對此標籤進行自動取消訂閱，因為此標籤已不存在，因此也不需要從用戶端採取進一步的動作。
 
-在**標籤**畫面上建立標籤。如需如何建立標籤的相關資訊，請參閱[建立標籤](t_manage_tags.html)。
+在**標籤**畫面上建立標籤。如需如何建立標籤的相關資訊，請參閱[建立標籤](/docs/services/mobilepush?topic=mobile-pushnotification-tag_based_notifications#create_tags)。
 
-1. 從 **Push Notification** 主控台中，按一下**傳送通知**。
-1. 選取**傳送至**下拉清單中的**依標籤的裝置**選項。
-1. 搜尋您要使用的標籤，然後選取它們。
-![通知畫面](images/tag_notification.jpg)
-1. 在**訊息文字**欄位中，輸入將當作通知傳送給已訂閱讀者的文字。
-1. 按一下**傳送**。
+1. 從 **Push Notification** 主控台中，按一下**訊息**。
+2. 選取**傳送至**下拉清單中的**依標籤的裝置**選項。
+3. 搜尋想要使用的標籤，並將其選取。
+![通知畫面](images/tag_notification_new2.jpg "選取了「訊息」導覽選項的 Push Notifications 主控台，其中顯示「傳送通知」頁面。「傳送至」欄位設定為「依標籤的裝置」。")
+4. 在**訊息文字**欄位中，輸入將當作通知傳送給已訂閱讀者的文字。
+5. 按一下**傳送**。
+

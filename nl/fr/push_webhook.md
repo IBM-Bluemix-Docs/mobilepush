@@ -1,7 +1,12 @@
 ---
 
 copyright:
- years: 2015, 2017
+  years: 2015, 2017, 2019
+lastupdated: "2019-06-06"
+
+keywords: push notifications, notifications, receive alerts, webhook events
+
+subcollection: mobile-pushnotification
 
 ---
 
@@ -12,13 +17,10 @@ copyright:
 
 # Réception d'alertes sur événements webhook
 {: #webhook_event_based_notifications}
-Dernière mise à jour : 8 septembre 2017
-{: .last-updated}
-
 
 Avec le service {{site.data.keyword.mobilepushshort}}, vous pouvez opter de recevoir des alertes sur des informations qui ont été modifiées. Les modifications des informations de l'entreprise créent des événements pour lesquels vous pouvez être notifié en les enregistrant en tant qu'événements webhook. Ces événements webhook déclenchent une alerte. 
 
-Les webhooks sont des rappels définis par l'utilisateur qui sont déclenchés par un événement, tels que l'enregistrement d'un appareil ou l'abonnement à des balises. Sur
+Les webhooks sont des rappels définis par l'utilisateur qui sont déclenchés par un événement, tels que l'enregistrement d'un appareil ou l'abonnement à des étiquettes. Sur
 le service {{site.data.keyword.mobilepushshort}}, vous pouvez vous enregistrer pour les événements webhook suivants : 
 
 - **onDeviceRegister** : un événement webhook est déclenché pour les appareils enregistrés pour opérations push.
@@ -32,7 +34,7 @@ le service {{site.data.keyword.mobilepushshort}}, vous pouvez vous enregistrer p
 **Remarque ** : les transmissions de notifications sont effectuées par lots. Une transmission de message peut avoir plusieurs événements webhook, lesquels peuvent inclure à la fois des réussites et des échecs. 
 Les événements webhook porteraient le même messageID que le message transmis. 
 
-Pour plus d'informations sur les webhooks, reportez-vous au document [API REST IBM de notifications Push ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://console.bluemix.net/apidocs/800-push-notifications){: new_window}.
+Pour plus d'informations sur les webhooks, reportez-vous au document [API REST IBM de notifications Push ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://cloud.ibm.com/apidocs/push-notifications){: new_window}.
 
 ## Réception d'alertes sur les événements webhook
 {: #webhook_alert_event}
@@ -85,7 +87,7 @@ Les abonnés peuvent choisir de recevoir des alertes sur les événements webhoo
 	```
 		{: codeblock}
 
-- Abonnement à une balise
+- Abonnement à une étiquette
 	```
 		{ type: 'onSubscribe',
 		entity:
@@ -103,7 +105,7 @@ Les abonnés peuvent choisir de recevoir des alertes sur les événements webhoo
 	```
 		{: codeblock}
 
-- Désabonnement à une balise
+- Désabonnement à une étiquette
 	```
 		{ type: 'onUnsubscribe',
 		entity:

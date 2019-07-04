@@ -1,8 +1,12 @@
-
 ---
 
 copyright:
- years: 2015, 2017
+  years: 2015, 2017, 2019
+lastupdated: "2019-06-11"
+
+keywords: push notifications, notification provider credentials
+
+subcollection: mobile-pushnotification
 
 ---
 
@@ -13,8 +17,6 @@ copyright:
 
 # 步驟 2：取得通知提供者認證
 {: #push_step_1}
-前次更新：2017 年 6 月 27 日
-{: .last-updated}
 
 若要設定 {{site.data.keyword.mobilepushshort}} 服務，您需要從推送通知提供者取得需要的認證。 
 
@@ -23,40 +25,40 @@ copyright:
 
 Firebase Cloud Messaging (FCM) 是用來將推送通知遞送至 Android 裝置、Google Chrome 瀏覽器及 Chrome Apps & Extensions 的閘道。若要在主控台上設定 {{site.data.keyword.mobilepushshort}} 服務，您需要取得 FCM 認證（寄件者 ID 及 API 金鑰）。 
 
-API 金鑰會安全地儲存並供 {{site.data.keyword.mobilepushshort}} Service 用來連接至 FCM 伺服器，而適用於 Google Chrome 及 Mozilla Firefox 的 Android SDK 及 JS SDK 在用戶端上使用「傳送端 ID」（專案號碼）。 
+API 金鑰會安全地儲存並供 {{site.data.keyword.mobilepushshort}} Service 用來連接至 FCM 伺服器，而適用於 Google Chrome 及 Mozilla Firefox 的 Android SDK 及 JS SDK 在用戶端上使用「寄件者 ID」（專案號碼）。 
 
 若要設定 FCM 並取得認證，請完成下列步驟：
 
 1. 造訪 [Firebase 主控台 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://console.firebase.google.com/?pli=1){: new_window}。Google 使用者帳戶是必要的。 
 2. 選取**新增專案**。 
 3. 在「建立專案」視窗中，提供專案名稱、選擇國家/地區，然後按一下**建立專案**。
-3. 在導覽窗格中，按一下**設定** > **專案設定**。
-4. 選擇 Cloud Messaging 標籤，以取得專案認證 -「伺服器 API 金鑰」及「寄件者 ID」。請注意，FCM 中列出的伺服器金鑰與「伺服器 API 金鑰」相同。
+4. 在導覽窗格中，按一下**設定** > **專案設定**。
+5. 選擇 Cloud Messaging 標籤，以取得專案認證 -「伺服器 API 金鑰」及「寄件者 ID」。請注意，FCM 中列出的伺服器金鑰與「伺服器 API 金鑰」相同。
    
-	![取得 FCM 的認證](images/FCM_settings_2.jpg)
+	![取得 FCM 的認證](images/FCM_settings_2.jpg "選取了 Cloud Messaging 標籤的「設定」頁面，其中顯示專案認證")
 
 您也需要產生 `google-services.json` 檔案。請完成下列步驟：
 
 1. 在 Firebase 主控台中，按一下**專案設定**圖示。
     
-	![Firebase 專案設定](images/FCM_settings_6.jpg)
+	![Firebase 專案設定](images/FCM_settings_6.jpg "選取了「專案設定」選項的 Firebase 主控台")
 
-3. 從應用程式窗格的「一般」標籤中，選取**新增應用程式**或**將 Firebase 新增至 Android 應用程式**圖示。
+2. 從應用程式窗格的「一般」標籤中，選取**新增應用程式**或**將 Firebase 新增至 Android 應用程式**圖示。
     
-4. 在「將 Firebase 新增至 Android 應用程式」視窗中，先新增 **com.ibm.mobilefirstplatform.clientsdk.android.push** 作為「套件名稱」。應用程式暱稱欄位是選用性的。按一下**註冊應用程式**。 
+3. 在「將 Firebase 新增至 Android 應用程式」視窗中，先新增 **com.ibm.mobilefirstplatform.clientsdk.android.push** 作為「套件名稱」。應用程式暱稱欄位是選用性的。按一下**註冊應用程式**。 
     
-	![「將 Firebase 新增至 Android 應用程式」視窗](images/FCM_1.jpg)
+	![將 Firebase 新增到您的 Android 視窗](images/FCM_1.jpg "「輸入應用程式詳細資料」標籤上的「將 Firebase 新增到您的 Android 應用程式」畫面，其中顯示套件和應用程式名稱欄位")
 
-5. 現在，在「將 Firebase 新增至 Android 應用程式」視窗中輸入套件名稱，以包含應用程式的套件名稱。應用程式暱稱欄位是選用性的。按一下**註冊應用程式**。以下是範例：
+4. 現在，在「將 Firebase 新增至 Android 應用程式」視窗中輸入套件名稱，以包含應用程式的套件名稱。應用程式暱稱欄位是選用性的。按一下**註冊應用程式**。請參閱下列範例：
 
-	![新增應用程式的套件名稱](images/FCM_settings_4.jpg)
+	![新增應用程式的套件名稱](images/FCM_settings_4.jpg "「登錄應用程式」標籤上的「將 Firebase 新增到您的 Andriod 應用程式」畫面，其中顯示套件和應用程式名稱欄位")
 
-6. 會產生 `google-services.json` 檔案。 
+5. 會產生 `google-services.json` 檔案。 
 
+取得 FCM 認證並產生 `google-services.json` 檔案之後，下一步是要[建立服務實例](/docs/services/mobilepush?topic=mobile-pushnotification-push_step_2)。
 
-取得 FCM 認證並產生 `google-services.json` 檔案之後，下一步是要[建立服務實例](push_step_2.html)。
-
-**附註**：Google 已淘汰 GCM，並且已和 Firebase 整合 Cloud Messaging。您必須將 Android 上的 GCM 用戶端應用程式移轉至 FCM。
+Google 已淘汰 GCM，並且已將 Cloud Messaging 與 Firebase 整合。您必須將 Android 上的 GCM 用戶端應用程式移轉至 FCM。
+{: note}
 
 ## iOS
 {: #push_step_1_ios}
@@ -71,19 +73,19 @@ API 金鑰會安全地儲存並供 {{site.data.keyword.mobilepushshort}} Service
 
 「應用程式 ID」（軟體組 ID）是可識別特定應用程式的唯一 ID。每一個應用程式都需要「應用程式 ID」。{{site.data.keyword.mobilepushshort}} Service 這類服務會配置成「應用程式 ID」。
 
-請確定您有一個 [Apple Developers ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://developer.apple.com/){: new_window} 帳戶。這是必要項目。
+1. 請確定您有一個 [Apple Developers ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://developer.apple.com/){: new_window} 帳戶。這是必要項目。
 
 2. 移至 [Apple Developer ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://developer.apple.com){: new_window} 入口網站，按一下 **Member Center**，然後選取 **Certificates, Identifiers & Profiles**。
 3. 移至 **Identifiers** > **App IDs section**。
-3. 在 **Registering App IDs** 頁面的 App ID Description Name 欄位提供應用程式名稱。例如：ACME Push Notifications。
-4. 提供 App ID Prefix 的字串。  
-4. 針對 App ID Suffix，選擇 **Explicit App ID** 然後提供 Bundle ID 值。建議您提供反向網域名稱樣式的字串。例如：`com.ACME.push`。
-5. 選取 **Push Notifications** 勾選框，然後按一下 **Continue**。
-6. 檢查您的設定，然後按一下 **Register** > **Done**。
+4. 在 **Registering App IDs** 頁面的 App ID Description Name 欄位提供應用程式名稱。例如：ACME Push Notifications。
+5. 提供 App ID Prefix 的字串。  
+6. 針對 App ID Suffix，選擇 **Explicit App ID** 然後提供 Bundle ID 值。建議您提供反向網域名稱樣式的字串。例如：`com.ACME.push`。
+7. 選取 **Push Notifications** 勾選框，然後按一下 **Continue**。
+8. 檢查您的設定，然後按一下 **Register** > **Done**。
 
 您的應用程式 ID 現在已登錄。 
 
-   ![已登錄應用程式 ID](images/push_ios_register_appid.jpg)
+   ![已登錄的應用程式 ID](images/push_ios_register_appid.jpg "選取了應用程式 ID 導覽選項的 Apple 開發人員入口網站畫面，其中顯示應用程式 ID")
   
 
 ### 建立開發及配送 APNs SSL 憑證
@@ -107,42 +109,42 @@ API 金鑰會安全地儲存並供 {{site.data.keyword.mobilepushshort}} Service
 	-  在 Development SSL certificate 窗格，按一下 **Create Certificate..**。
 	-  在 Production SSL certificate 窗格，按一下 **Create Certificate..**。
 
-	![Push Notification SSL 憑證](images/certificate_createssl.jpg)
+	![推送通知 SSL 憑證](images/certificate_createssl.jpg "「編輯應用程式 ID」畫面，其中顯示已選取了 Push Notifications 選項、開發 SSL 憑證和正式作業 SSL 憑證選項")
 
 5. 顯示 **About Creating a Certificate Signing Request (CSR) screen** 畫面時，請在 Mac 上啟動 **Keychain Access** 應用程式，以建立「憑證簽署要求 (CSR)」。按一下 **Continue**。
 6. 針對 Upload CSR file 選項，按一下 **Choose File**，然後選取檔案 `CertificateSigningRequest.certSigningRequest`。 
 7. 按一下 **Continue**。
 8. 在 Download, Install and Backup 窗格，按一下 **Download**。便會下載 `aps_development.cer` 檔案。
 	
-	![下載憑證](images/push_certificate_download.jpg)	
+	![下載憑證](images/push_certificate_download.jpg "「安裝和備份」頁面，其中顯示已選取了「下載」按鈕")	
 	
-6. 從功能表中，選取**金鑰鏈存取 > 憑證助理 > 從憑證管理中心要求憑證...** 
-7. 在**憑證資訊**中，輸入與「應用程式開發人員」帳戶及通用名稱相關聯的電子郵件位址。請提供有意義的名稱，協助您識別它是用於開發（沙盤推演）還是配送（正式作業）的憑證；例如，_sandbox-apns-certificate_ 或 _production-apns-certificate_。
-8. 選取**儲存至磁碟**，以將 `.certSigningRequest` 檔案下載至您的桌面，然後按一下**繼續**。
-9. 在**另存新檔**功能表選項中，命名 `.certSigningRequest` 檔案，然後按一下**儲存**。
-10. 按一下**完成**。您現在有 CSR。
-11. 回到**關於建立憑證簽署要求 (CSR)** 視窗，然後按一下**繼續**。 
-12. 從**產生**畫面中，按一下**選擇檔案...**，然後選取您儲存在桌面上的 CSR 檔案。然後按一下 **Generate**。
+9. 從功能表中，選取**金鑰鏈存取 > 憑證助理 > 從憑證管理中心要求憑證...** 
+10. 在**憑證資訊**中，輸入與「應用程式開發人員」帳戶及通用名稱相關聯的電子郵件位址。請提供有意義的名稱，協助您識別它是用於開發（沙盤推演）還是配送（正式作業）的憑證；例如，_sandbox-apns-certificate_ 或 _production-apns-certificate_。
+11. 選取**儲存至磁碟**，以將 `.certSigningRequest` 檔案下載至您的桌面，然後按一下**繼續**。
+12. 在**另存新檔**功能表選項中，命名 `.certSigningRequest` 檔案，然後按一下**儲存**。
+13. 按一下**完成**。您現在有 CSR。
+14. 回到**關於建立憑證簽署要求 (CSR)** 視窗，然後按一下**繼續**。 
+15. 從**產生**畫面中，按一下**選擇檔案...**，然後選取您儲存在桌面上的 CSR 檔案。然後按一下 **Generate**。
 
-	![產生憑證](images/generate_certificate.jpg)
-13. 您的憑證備妥之後，請按一下**完成**。
-14. 在 **Push Notifications** 畫面上，按一下 **Download** 以下載您的憑證，然後按一下 **Done**。 
+	![產生憑證](images/generate_certificate.jpg "用於產生憑證的「憑證、ID 和設定檔」頁面，其中選取了「選擇檔案」選項")
+16. 您的憑證備妥之後，請按一下**完成**。
+17. 在 **Push Notifications** 畫面上，按一下 **Download** 以下載您的憑證，然後按一下 **Done**。 
 	
-	![下載憑證](images/certificate_download.jpg)
+	![下載憑證](images/certificate_download.jpg "「編輯應用程式 ID」畫面，其中顯示開發 SSL 憑證的「撤銷」和「下載」按鈕")
 
-15. 在 Mac 上，移至**金鑰鏈存取 > 我的憑證**，然後尋找新安裝的憑證。按兩下憑證，以將它安裝至「金鑰鏈存取」。
-16. 選取憑證及私密金鑰，然後選取 **Export**，以將憑證轉換為個人資訊交換格式（`.p12` 格式）。
+18. 在 Mac 上，移至**金鑰鏈存取 > 我的憑證**，然後尋找新安裝的憑證。按兩下憑證，以將它安裝至「金鑰鏈存取」。
+19. 選取憑證及私密金鑰，然後選取 **Export**，以將憑證轉換為個人資訊交換格式（`.p12` 格式）。
 
 
-	![匯出憑證及金鑰](images/keychain_export_key.jpg)
-17. 在**另存新檔**欄位中，提供有意義的憑證名稱（例如，`sandbox_apns.p12_certifcate` 或 `production_apns.p12`），然後按一下 **Save**。
+	![匯出憑證和金鑰](images/keychain_export_key.jpg "「我的憑證」頁面，其中顯示憑證上的按一下滑鼠右鍵選項及強調顯示的「匯出」功能表選項")
+20. 在**另存新檔**欄位中，提供有意義的憑證名稱（例如，`sandbox_apns.p12_certifcate` 或 `production_apns.p12`），然後按一下 **Save**。
 
 	
-	![匯出憑證及金鑰](images/certificate_p12v2.jpg)
-18. 在**輸入密碼**欄位中，輸入密碼以保護匯出的項目，然後按一下**確定**。您可以使用此密碼，在 Push Notifications 服務主控台上配置 APNs 設定。
+	![匯出憑證和金鑰](images/certificate_p12v2.jpg "「另存新檔」畫面，其中顯示「另存新檔」欄位的文字輸入")
+21. 在**輸入密碼**欄位中，輸入密碼以保護匯出的項目，然後按一下**確定**。您可以使用此密碼，在 Push Notifications 服務主控台上配置 APNs 設定。
 	
-	![匯出憑證及金鑰](images/export_p12.jpg)
-19. **Key Access.app** 會提示您從**金鑰鏈**畫面匯出金鑰。請輸入您的管理密碼，以便 Mac 容許您的系統匯出這些項目，然後選取**一律容許**選項。`.p12` 憑證會在桌面上產生。
+	![匯出憑證和金鑰](images/export_p12.jpg "密碼和驗證欄位，用於輸入密碼以保護匯出的項目")
+22. **Key Access.app** 會提示您從**金鑰鏈**畫面匯出金鑰。請輸入您的管理密碼，以便 Mac 容許您的系統匯出這些項目，然後選取**一律容許**選項。`.p12` 憑證會在桌面上產生。
 
 
 ### 建立開發佈建設定檔
@@ -169,7 +171,7 @@ API 金鑰會安全地儲存並供 {{site.data.keyword.mobilepushshort}} Service
 1. 移至 [Apple Developer ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://developer.apple.com){: new_window} 入口網站，按一下 **Member Center**，然後選取 **Certificates, Identifiers & Profiles**。
 2. 按兩下下載的佈建設定檔，以將它安裝至 Xcode。
 
-取得認證之後，下一步是要[配置服務實例](push_step_2.html)。
+取得認證之後，下一步是要[配置服務實例](/docs/services/mobilepush?topic=mobile-pushnotification-push_step_2)。
 
 ## Web 瀏覽器及 Chrome Apps & Extensions
 {: #configure-credential-for-browsers}
@@ -182,7 +184,7 @@ IBM {{site.data.keyword.mobilepushshort}} 服務已擴充功能，可將通知�
 
 {{site.data.keyword.mobilepushshort}} 服務實例一次僅支援一個網域名稱。因此，請確保針對 Chrome、Firefox 及 Safari 設定相同的值。Chrome 及 Safari 瀏覽器需要其他配置才能進行 Web 推送。您將需要 FCM API 金鑰用作 FCM 端點，用來在 Chrome 中遞送訊息。 
 
-若要針對 Chrome、Firefox 瀏覽器及 Chrome Apps & Extensions 設定服務，請參閱[配置服務實例](push_step_2.html)。
+若要針對 Chrome、Firefox 瀏覽器及 Chrome Apps & Extensions 設定服務，請參閱[配置服務實例](/docs/services/mobilepush?topic=mobile-pushnotification-push_step_2)。
 
 
 ### Safari Web 推送的配置 
@@ -197,8 +199,7 @@ Safari 上 {{site.data.keyword.mobilepushshort}} 服務的支援版本為 10.0�
 
 1. 在 Apple Developer Member Center 中，按一下 **Certificates, ID & Profiles**。 
 2. 依序按一下 **Identifiers** 及 **Website Push IDs**。
-3. 選取加號圖示來選擇建立新的項目。
-  ![Push Notifications 主控台](images/safari_1.jpg)
+3. 透過選取加號圖示來選取建立新項目。![Push Notifications 主控台](images/safari_1.jpg "顯示 Website Push IDs 導覽項目的 Apple 開發人員入口網站")
 
 4. 在 Register Website Push ID 畫面中，提供適當的 Website Push ID 說明及識別 ID。建議採用反向網域名稱格式，起始於 `web`。例如：`web.com.acmebanks`。
 5. 登錄 Website Push ID。您現在有了自己的 Website Push ID。 
@@ -209,5 +210,4 @@ Safari 上 {{site.data.keyword.mobilepushshort}} 服務的支援版本為 10.0�
 10. 選擇在精靈中被提示產生憑證時，在磁碟上建立的 `.certSigningRequest`。請確定您下載以 `. cer` 格式建立的網站推送憑證。
 11. 在 KeyChain Access 工具中開啟憑證。按一下滑鼠右鍵並匯出為 p12 憑證。請記下在產生 p12 憑證的期間所提供的密碼。
 
-產生憑證之後，下一步是要[配置服務實例](push_step_2.html)。
-
+產生憑證之後，下一步是要[配置服務實例](/docs/services/mobilepush?topic=mobile-pushnotification-push_step_2)。

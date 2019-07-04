@@ -1,7 +1,12 @@
 ---
 
 copyright:
- years: 2015, 2017
+  years: 2015, 2019
+lastupdated: "2019-06-06"
+
+keywords: push notifications, notifications, message delivery status
+
+subcollection: mobile-pushnotification
 
 ---
 
@@ -11,10 +16,7 @@ copyright:
 {:codeblock:.codeblock}
 
 # 訊息遞送狀態
-{: #tag_based_notifications}
-前次更新：2017 年 8 月 21 日
-{: .last-updated}
-
+{: #message-delivery-status}
 
 使用 {{site.data.keyword.mobilepushshort}} 服務，您可以檢視每個提交給服務之通知的遞送狀態。 
 
@@ -22,7 +24,7 @@ copyright:
 
 {{site.data.keyword.mobilepushshort}} 服務的**訊息**標籤會顯示通知狀態。
 
-![通知狀態](images/notification_status_new.png)
+![通知狀態](images/notification_status_new.png "顯示通知狀態的訊息頁面")
 
 1. **訊息 ID** - 識別訊息用的唯一 ID。
 
@@ -48,12 +50,11 @@ copyright:
  
  - 訊息狀態：已傳送、已看到、開啟、無效。 
 
-![通知狀態](images/message_delivery_status_new.png)
+![通知狀態](images/message_delivery_status_new.png "顯示已開啟、已傳送、已查看和無效狀態分解的訊息狀態圖表")
 
 6. **選項** - 提供通知的詳細狀態。狀態可以藉由從下拉功能表選取 `Device Id` 或 `User Id` 來加以追蹤。取得使用者/裝置特定的詳細狀態訊息可能有助於您追蹤失敗的訊息。
 
-![詳細狀態](images/detailed_message_delivery.png)
+![詳細狀態](images/detailed_message_delivery.png "已選取使用者 ID 的詳細訊息傳遞狀態選項")
 
-**附註**：特性只會針對已選擇 `Advanced Plan` 的使用者啟用。在 {{site.data.keyword.mobilepushshort}} 服務主控台中選取**方案**，以便[升級](https://console-tok02-red.cdn.s-bluemix.net/docs/account/change-plan.html#changing)。
-
+**附註**：特性只會針對已選擇 `Advanced Plan` 的使用者啟用。在 {{site.data.keyword.mobilepushshort}} 服務主控台中選取**方案**，以便[升級](https://cloud.ibm.com/docs/account?topic=account-changing#changing)。
 

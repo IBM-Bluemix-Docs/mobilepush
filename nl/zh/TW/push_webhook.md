@@ -1,7 +1,12 @@
 ---
 
 copyright:
- years: 2015, 2017
+  years: 2015, 2017, 2019
+lastupdated: "2019-06-06"
+
+keywords: push notifications, notifications, receive alerts, webhook events
+
+subcollection: mobile-pushnotification
 
 ---
 
@@ -12,9 +17,6 @@ copyright:
 
 # 接收 Webhook 事件警示
 {: #webhook_event_based_notifications}
-前次更新：2017 年 9 月 8 日
-{: .last-updated}
-
 
 使用 {{site.data.keyword.mobilepushshort}} 服務，您可以選擇接收關於已變更資訊的警示。企業資訊的變更會建立事件，您可以將事件登錄為 Webhook 事件，以收到其通知。這些 Webhook 事件會觸發警示。 
 
@@ -30,7 +32,7 @@ Webhook 是使用者定義的回呼，它們是由例如登錄裝置或訂閱標
 
 **附註：**通知分派會以批次處理。訊息分派可以有多個 Webhook 事件，事件可能同時包含失敗和成功。Webhook 事件的 messageID 會與分派訊息的相同。 
 
-如需 Webhook 的相關資訊，請參閱 [IBM Push Notifications REST API ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://console.bluemix.net/apidocs/800-push-notifications){: new_window}。
+如需 Webhook 的相關資訊，請參閱 [IBM Push Notifications REST API ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://cloud.ibm.com/apidocs/push-notifications){: new_window}。
 
 ## 接收 Webhook 事件警示
 {: #webhook_alert_event}
@@ -128,7 +130,7 @@ Webhook 是使用者定義的回呼，它們是由例如登錄裝置或訂閱標
 		[ 'device1',
 		'device2'],
 		platform: 'A',
-		msgStatus: 'SENT', `FAILED`, `SEEN`, `OPEN`
+		msgStatus: 'SENT', 'FAILED', 'SEEN', 'OPEN'
 		messageId: '55cb688' },
 		applicationId: 'app1',
 		eventTimeStamp: 1487524517353 }

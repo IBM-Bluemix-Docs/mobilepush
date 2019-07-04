@@ -1,7 +1,12 @@
 ---
 
 copyright:
- years: 2015, 2017
+  years: 2015, 2019
+lastupdated: "2019-06-11"
+
+keywords: push notifications, notifications, troubleshooting, service issues
+
+subcollection: mobile-pushnotification
 
 ---
 
@@ -12,20 +17,45 @@ copyright:
 
 # Identification et résolution des problèmes de service
 {: #errors}
-Dernière mise à jour : 13 juillet 2017
-{: .last-updated}
 
 Cette rubrique vous aide à identifier et à résoudre les scénarios d'erreur que vous pouvez rencontrer lors de l'utilisation du service Push Notifications.
 
 ## Résolution des incidents courants liés aux notifications push
 {: #troubleshooting_notification_errors}
 
+### Vous n'êtes pas autorisé à ajouter l'instance à un groupe de ressources dans ce compte
+{: #permission_issue}
+
+**Explication** :  le service IBM Push Notifications est un service désormais basé sur le contrôleur de ressources. Les instances de service doivent être créées en utilisant un contrôleur de ressources. Si votre compte ne contient pas de groupe de ressources par défaut, l'erreur suivante peut se produire.
+
+![Problème de droits](images/RC_error.png "Capture d'écran affichant une erreur relative aux droits")
+
+**Réponse de l'utilisateur** :  l'administrateur doit créer un groupe de ressources pour l'utilisateur avant de créer une instance.
+
+
+### Le protocole HTTP 301 Déplacé définitivement redirige le statut lors de l'accès au service
+{: #http_301_redirect}
+
+**Explication** : cette erreur peut se produire lorsque vous accédez au service via le protocole `http`. Le service Push Notification nécessite que l'accès au site Web s'effectue via le protocole `https`.
+
+**Réponse de l'utilisateur** : il est recommandé d'accéder au service et à l'API Swagger via le protocole `https` et non le protocole `http`.
+
+
+### Une requête POST renvoie une requête GET pour le même appel
+{: #Postman_issue}
+
+**Explication** : si Postman reçoit un code de réponse 301 ou 302 pour une requête POST, un réacheminement vers la requête GET est automatiquement effectué pour le même appel. Le service Push Notifications nécessite que l'accès au site Web s'effectue via le protocole `https` et non le protocole `http`.
+
+**Réponse utilisateur **: Il est recommandé d'essayer de vous connecter au site Web sous
+`https` depuis le navigateur.
+
+
 ### Une erreur serveur interne s'est produite. Veuillez contacter l'administrateur. (Code d'erreur interne : PUSHD102E)
 {: #troubleshooting_notification_internal}
 
 **Explication** : Cette erreur peut se produire si vous avez créé une instance push avant le mois de novembre 2015.  
 
-**Réponse de l'utilisateur **: pour résoudre ce problème, supprimez l'instance push et créez-en une nouvelle. Notez que lorsque vous supprimez l'instance push, vos balises ne sont pas conservées.
+**Réponse de l'utilisateur **: pour résoudre ce problème, supprimez l'instance push et créez-en une nouvelle. Notez que lorsque vous supprimez l'instance push, vos étiquettes ne sont pas conservées.
 
 
 ### UnauthorizedRegistration
@@ -51,7 +81,7 @@ charge sont Firefox version 49 (ou ultérieure) et Chrome (64 bits) version 53 (
 
 **Explication** : les utilisateurs peuvent remarquer l'erreur lorsqu'ils accèdent aux rapports dans la page Surveillance. Il s'agit d'un comportement attendu lorsque le nombre de messages envoyés au cours des 90 derniers jours est très élevé.
  
-**Réponse utilisateur** : les rapports basés sur un ID de message sont accessibles via les API REST. Veuillez vous reporter à "getMessageReport" dans [les documentations de l'API REST]( https://console.bluemix.net/apidocs/800-push-notifications?&language=shell_curl#getmessagereport) .
+**Réponse utilisateur** : les rapports basés sur un ID de message sont accessibles via les API REST. Veuillez vous reporter à "getMessageReport" dans [les documentations de l'API REST](https://cloud.ibm.com/apidocs/push-notifications#api-documentation-for-push-notifications) .
 
 
 ### SecurityError : L'opération n'est pas sécurisée
@@ -111,8 +141,7 @@ Exemple de réponse contenant une erreur :
 ```
 	{
 		"message": "Missing APNs credentials",
-     "docUrl": "https://www.ng.bluemix.net/docs/troubleshoot/errors/mobilepush/index.html#FPWSE0003E",
-     "code":   "FPWSE0003E"
+		"code":   "FPWSE0003E"
 	}
 ```
 		    {: codeblock}
@@ -122,7 +151,7 @@ Pour obtenir des informations supplémentaires sur une erreur, recherchez les do
 ### FPWSE0001E
 {: #error_fpwse0001e}
 
-**Explication **: la ressource que vous tentez d'interroger, par exemple une balise ou un abonnement,
+**Explication **: la ressource que vous tentez d'interroger, par exemple une étiquette ou un abonnement,
 n'est pas disponible sur le serveur.
 
 **Réponse de l'utilisateur **: créez la ressource signalée dans le message. Vous pouvez également fournir l'identifiant correct pour interroger la ressource.
@@ -142,7 +171,7 @@ n'est pas disponible sur le serveur.
 **Explication **: la configuration requise pour le service {{site.data.keyword.mobilepushshort}} est incomplète. Vous essayez peut-être d'obtenir les données d'identification du service
 de notifications Push Apple (APNS) avant qu'elles ne soient configurées.
 
-**Réponse de l'utilisateur **: vérifiez que le service {{site.data.keyword.mobilepushshort}} a été configuré avec des certificats de sécurité valides pour les APN. Pour plus d'informations, voir [Obtention des données d'identification de votre fournisseur de notification![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](push_step_1.html){: new_window}.
+**Réponse de l'utilisateur **: vérifiez que le service {{site.data.keyword.mobilepushshort}} a été configuré avec des certificats de sécurité valides pour les APN. Pour plus d'informations, voir [Obtention des données d'identification de votre fournisseur de notification![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](/docs/services/mobilepush?topic=mobile-pushnotification-push_step_1){: new_window}.
 
 
 ### FPWSE0004E
@@ -171,7 +200,7 @@ de notifications Push Apple (APNS) avant qu'elles ne soient configurées.
 **Explication **: le corps JSON de la demande comporte des paramètres que ne comprend pas le serveur {{site.data.keyword.mobilepushshort}}.
 
 
-**Réponse de l'utilisateur **: vérifiez que le corps JSON dans la demande respecte le format de demande attendu par le serveur {{site.data.keyword.mobilepushshort}}. Pour plus d'informations, voir [API REST ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://imfpush.{DomainName}/imfpush/){: new_window}.
+**Réponse de l'utilisateur **: vérifiez que le corps JSON dans la demande respecte le format de demande attendu par le serveur {{site.data.keyword.mobilepushshort}}. Pour plus d'informations, voir [API REST ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://eu-gb.imfpush.cloud.ibm.com/imfpush/){: new_window}.
 
 
 
@@ -181,7 +210,7 @@ de notifications Push Apple (APNS) avant qu'elles ne soient configurées.
 **Explication **: l'URL de la demande comporte une chaîne de requête avec des paramètres non reconnus. Par exemple, si la demande de suppression de l'abonnement comporte des paramètres autres que deviceId et tagName, cette erreur peut se produire.
 
 
-**Réponse de l'utilisateur **: vérifiez que le corps JSON dans la demande respecte le format de demande attendu par le serveur {{site.data.keyword.mobilepushshort}}. Pour plus d'informations, voir [API REST ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://imfpush.{DomainName}/imfpush/){: new_window}.
+**Réponse de l'utilisateur **: vérifiez que le corps JSON dans la demande respecte le format de demande attendu par le serveur {{site.data.keyword.mobilepushshort}}. Pour plus d'informations, voir [API REST ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://eu-gb.imfpush.cloud.ibm.com/imfpush/){: new_window}.
 
 
 
@@ -191,7 +220,7 @@ de notifications Push Apple (APNS) avant qu'elles ne soient configurées.
 **Explication **: l'URL de la demande comporte une chaîne de requête avec des paramètres requis manquants. Par exemple, les paramètres deviceId et tagName peuvent être absents de la demande de suppression de l'abonnement.
 
 
-**Réponse de l'utilisateur **: vérifiez que le corps JSON dans la demande respecte le format de demande attendu par le serveur {{site.data.keyword.mobilepushshort}}. Pour plus d'informations, voir [API REST ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://imfpush.{DomainName}/imfpush/){: new_window}.
+**Réponse de l'utilisateur **: vérifiez que le corps JSON dans la demande respecte le format de demande attendu par le serveur {{site.data.keyword.mobilepushshort}}. Pour plus d'informations, voir [API REST ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://eu-gb.imfpush.cloud.ibm.com/imfpush/){: new_window}.
 
 
 
@@ -221,17 +250,17 @@ de notifications Push Apple (APNS) avant qu'elles ne soient configurées.
 ### FPWSE0011E
 {: #error_fpwse0011e}
 
-**Explication **: l'abonnement à la balise existe déjà sur le serveur. C'est le cas, par
+**Explication **: l'abonnement à l'étiquette existe déjà sur le serveur. C'est le cas, par
 exemple, lorsque vous créez un abonnement qui existe déjà.
 
-**Réponse de l'utilisateur **: créez l'abonnement avec un nom de balise unique.
+**Réponse de l'utilisateur **: créez l'abonnement avec un nom d'étiquette unique.
 
 
 
 ### FPWSE0012E
 {: #error_fpwse0012e}
 
-**Explication **: l'abonnement à la balise n'existe pas sur le serveur. Cette erreur
+**Explication **: l'abonnement à l'étiquette n'existe pas sur le serveur. Cette erreur
 survient lorsqu'une demande d'extraction ou de suppression d'un abonnement qui n'existe pas est soumise.
 
 

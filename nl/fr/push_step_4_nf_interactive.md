@@ -1,7 +1,12 @@
 ---
 
 copyright:
- years: 2015, 2017
+  years: 2015, 2017, 2019
+lastupdated: "2019-06-06"
+
+keywords: push notifications, notifications, interactive notification, silent notification
+
+subcollection: mobile-pushnotification
 
 ---
 
@@ -12,8 +17,6 @@ copyright:
 
 # Notifications interactives et silencieuses  
 {: #interactive-notifications}
-Dernière mise à jour : 22 mai 2017
-{: .last-updated}
 
 Les notifications interactives permettent aux utilisateurs de répondre à une notification sans ouvrir l'application. Lorsqu'une notification interactive est reçue, l'appareil affiche
 les boutons d'action avec le message de notification. 
@@ -23,7 +26,7 @@ les boutons d'action avec le message de notification.
 ## Envoi de notifications interactives
 {: #send_interactive_notifications}
 
-Une notification interactive peut être envoyée via la console Push Notifications ou en vous reportant à la documentation d'[API REST](push_restapi.html).
+Une notification interactive peut être envoyée via la console Push Notifications ou en vous reportant à la documentation d'[API REST](https://cloud.ibm.com/apidocs/push-notifications).
 
 
 Depuis la console {{site.data.keyword.mobilepushshort}} : 

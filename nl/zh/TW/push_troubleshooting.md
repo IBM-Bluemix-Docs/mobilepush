@@ -1,7 +1,12 @@
 ---
 
 copyright:
- years: 2015, 2017
+  years: 2015, 2019
+lastupdated: "2019-06-11"
+
+keywords: push notifications, notifications, troubleshooting, service issues
+
+subcollection: mobile-pushnotification
 
 ---
 
@@ -12,13 +17,37 @@ copyright:
 
 # 服務問題疑難排解
 {: #errors}
-前次更新：2017 年 7 月 13 日
-{: .last-updated}
 
 本主題會引導您識別及解決在使用 Push Notifications Service 時可能發生的可能錯誤情境。
 
 ## 解決常見推送通知問題
 {: #troubleshooting_notification_errors}
+
+### 您沒有將實例新增到此帳戶中任何資源群組的許可權
+{: #permission_issue}
+
+**說明**：IBM Push Notifications 服務現在是以資源控制器 (RC) 為基礎的服務。應使用 RC 建立實例。如果您的帳戶中沒有 default 資源群組，您可能會注意到下列錯誤。
+
+![許可權問題](images/RC_error.png "顯示許可權錯誤的擷取畫面")
+
+**使用者回應**：管理在建立實例之前必須為使用者建立資源群組。
+
+
+### 存取服務時出現「超文本傳輸通訊協定 (HTTP) 301 已永久移動」重新導向狀態
+{: #http_301_redirect}
+
+**說明**：如果您使用 `http` 通訊協定存取服務，可能會出現此錯誤。Push Notification 服務要求使用 `https` 通訊協定存取網站。
+
+**使用者回應**：我們建議您透過 `https` 通訊協定而不是 `http` 通訊協定來存取服務和 Swagger API。
+
+
+### POST 要求針對相同呼叫傳回 GET 要求
+{: #Postman_issue}
+
+**說明**：如果 postman 接收到 POST 要求的 301 或 302 回應碼，將自動重新導向到相同呼叫的 GET 要求。Push Notifications 服務要求使用 `https` 通訊協定而非 `http` 來存取網站。
+
+**使用者回應**：建議您從瀏覽器嘗試使用 `https` 連接至網站。
+
 
 ### 發生內部伺服器錯誤。請與管理者聯絡。（內部錯誤碼：PUSHD102E）
 {: #troubleshooting_notification_internal}
@@ -49,7 +78,7 @@ copyright:
 
 **說明**：使用者可能會在「監視」頁面存取報告時注意到錯誤。這是當過去 90 天內傳送的訊息數目很高時的預期行為。
  
-**使用者回應**：可以透過 REST API 存取以 messageId 為基礎的報告。請參閱 [REST API 文件]( https://console.bluemix.net/apidocs/800-push-notifications?&language=shell_curl#getmessagereport)中的 "getMessageReport"。
+**使用者回應**：可以透過 REST API 存取以 messageId 為基礎的報告。請參閱 [REST API 文件](https://cloud.ibm.com/apidocs/push-notifications#api-documentation-for-push-notifications)中的 "getMessageReport"。
 
 
 ### SecurityError：作業不安全
@@ -103,10 +132,8 @@ function showStatus(response) {
 ```
 	{
 		"message": "Missing APNs credentials",
-     "docUrl": "https://www.ng.bluemix.net/docs/troubleshoot/errors/mobilepush/index.html#FPWSE0003E",
-     "code":   "FPWSE0003E"
-
-}
+		"code":   "FPWSE0003E"
+	}
 ```
 		    {: codeblock}
 
@@ -133,7 +160,7 @@ function showStatus(response) {
 
 **說明**：{{site.data.keyword.mobilepushshort}} Service 的必要配置未完成。在配置之前，請嘗試取得 Apple Push Notification Service (APNs) 認證。
 
-**使用者回應**：請確定已使用 APNs 的有效安全憑證配置 {{site.data.keyword.mobilepushshort}} Service。如需相關資訊，請參閱[取得通知提供者認證 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](push_step_1.html){: new_window}。
+**使用者回應**：請確定已使用 APNs 的有效安全憑證配置 {{site.data.keyword.mobilepushshort}} Service。如需相關資訊，請參閱[取得通知提供者認證 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](/docs/services/mobilepush?topic=mobile-pushnotification-push_step_1){: new_window}。
 
 
 ### FPWSE0004E
@@ -162,7 +189,7 @@ function showStatus(response) {
 **說明**：要求的 JSON 主體具有 {{site.data.keyword.mobilepushshort}} 伺服器不瞭解的參數。
 
 
-**使用者回應**：請確認要求中的 JSON 主體遵循 {{site.data.keyword.mobilepushshort}} 伺服器所預期要求的格式。如需相關資訊，請參閱 [REST API ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://imfpush.{DomainName}/imfpush/){: new_window}。
+**使用者回應**：請確認要求中的 JSON 主體遵循 {{site.data.keyword.mobilepushshort}} 伺服器所預期要求的格式。如需相關資訊，請參閱 [REST API ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://eu-gb.imfpush.cloud.ibm.com/imfpush/){: new_window}。
 
 
 
@@ -172,7 +199,7 @@ function showStatus(response) {
 **說明**：要求 URL 的查詢字串含有無法辨識的參數。例如，如果刪除訂閱的要求中含有 deviceId 及 tagName 以外的參數，則可能發生此錯誤。
 
 
-**使用者回應**：請確認要求中的 JSON 主體遵循 {{site.data.keyword.mobilepushshort}} 伺服器所預期要求的格式。如需相關資訊，請參閱 [REST API ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://imfpush.{DomainName}/imfpush/){: new_window}。
+**使用者回應**：請確認要求中的 JSON 主體遵循 {{site.data.keyword.mobilepushshort}} 伺服器所預期要求的格式。如需相關資訊，請參閱 [REST API ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://eu-gb.imfpush.cloud.ibm.com/imfpush/){: new_window}。
 
 
 
@@ -182,7 +209,7 @@ function showStatus(response) {
 **說明**：要求 URL 的查詢字串遺漏必要的參數。例如，刪除訂閱的要求中遺漏 deviceId 及 tagName 參數。
 
 
-**使用者回應**：請確認要求中的 JSON 主體遵循 {{site.data.keyword.mobilepushshort}} 伺服器所預期要求的格式。如需相關資訊，請參閱 [REST API ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://imfpush.{DomainName}/imfpush/){: new_window}。
+**使用者回應**：請確認要求中的 JSON 主體遵循 {{site.data.keyword.mobilepushshort}} 伺服器所預期要求的格式。如需相關資訊，請參閱 [REST API ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://eu-gb.imfpush.cloud.ibm.com/imfpush/){: new_window}。
 
 
 
