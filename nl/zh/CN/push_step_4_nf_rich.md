@@ -1,7 +1,12 @@
 ---
 
 copyright:
- years: 2015, 2017
+  years: 2015, 2017, 2019
+lastupdated: "2019-06-06"
+
+keywords: push notifications, notifications, rich media notification
+
+subcollection: mobile-pushnotification
 
 ---
 
@@ -11,10 +16,7 @@ copyright:
 {:codeblock:.codeblock}
 
 # 富媒体通知
-{: #interactive-notifications}
-上次更新时间：2017 年 7 月 13 日
-{: .last-updated}
-
+{: #rich-media-notifications}
 
 您可以在 iOS 10 及更高版本中启用富媒体 {{site.data.keyword.mobilepushshort}}。推送通知可随音频、视频、GIF 和图像一起发送。 
 

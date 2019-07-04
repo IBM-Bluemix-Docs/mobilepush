@@ -1,7 +1,12 @@
 ---
 
 copyright:
- years: 2015, 2017
+  years: 2015, 2017, 2019
+lastupdated: "2019-06-06"
+
+keywords: push notifications, notifications, receive alerts, webhook events
+
+subcollection: mobile-pushnotification
 
 ---
 
@@ -12,9 +17,6 @@ copyright:
 
 # 接收关于 Webhook 事件的警报
 {: #webhook_event_based_notifications}
-上次更新时间：2017 年 9 月 8 日
-{: .last-updated}
-
 
 使用 {{site.data.keyword.mobilepushshort}} 服务，您可以选择接收已更改信息的警报。企业信息的更改会创建事件，通过将它们注册为 Webhook 事件，您可以接收相关通知。这些 Webhook 事件可触发警报。 
 
@@ -31,7 +33,7 @@ Webhook 是用户定义的回调，可由事件触发，如注册设备或预订
 **注**：通知分派以批量处理。消息分派可以具有多个 Webhook 事件，其中可能包括失败和成功。
 Webhook 事件可以与已分派的消息具有相同的消息标识。 
 
-有关 Webhook 的更多信息，请参阅 [IBM Push Notifications REST API ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://console.bluemix.net/apidocs/800-push-notifications){: new_window}。
+有关 Webhook 的更多信息，请参阅 [IBM Push Notifications REST API ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://cloud.ibm.com/apidocs/push-notifications){: new_window}。
 
 ## 接收关于 Webhook 事件的警报
 {: #webhook_alert_event}

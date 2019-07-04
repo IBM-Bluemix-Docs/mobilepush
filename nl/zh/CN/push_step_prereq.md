@@ -1,8 +1,12 @@
-
 ---
 
 copyright:
- years: 2015, 2017
+  years: 2015, 2017, 2019
+lastupdated: "2019-06-06"
+
+keywords: push notifications, creating an ibm cloud service instance, ibm cloud service
+
+subcollection: mobile-pushnotification
 
 ---
 
@@ -12,11 +16,9 @@ copyright:
 {:codeblock:.codeblock}
 
 # 第 1 步：创建 IBM Cloud {{site.data.keyword.mobilepushshort}} 服务实例
-{: #push_step_1}
-上次更新时间：2017 年 6 月 27 日
-{: .last-updated}
+{: #push_step_1a}
 
-您需要创建 [IBM Cloud 帐户](https://console.bluemix.net/registration/)。
+您需要创建 [IBM Cloud 帐户](https://cloud.ibm.com/)。
 
 要通过“目录”创建 Push Notifications 服务，请完成以下步骤：
 
@@ -30,10 +32,9 @@ copyright:
 
 - 使用目录中的 MobileFirst Services Starter 样板创建 IBM Cloud 应用程序。这会创建绑定到 IBM Cloud 后端应用程序的 Push Notifications 服务。
 - 从“移动”目录直接创建未绑定的 Push Notifications 服务。您可以稍后绑定到应用程序或者选择使用未绑定的 Push Notifications 服务。 
-- 使用 [IBM Cloud“目录”![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://console.ng.bluemix.net/catalog/){: new_window}。
+- 使用 [IBM Cloud“目录”![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://cloud.ibm.com/catalog/){: new_window}。
 
-
-下一步是[获取通知提供程序凭证](push_step_1.html)。
+下一步是[获取通知提供程序凭证](/docs/services/mobilepush?topic=mobile-pushnotification-push_step_1)。
 
 
 

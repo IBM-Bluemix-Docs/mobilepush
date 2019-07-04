@@ -1,7 +1,12 @@
 ---
 
 copyright:
- years: 2015, 2017
+  years: 2015, 2019
+lastupdated: "2019-06-06"
+
+keywords: push notifications, notifications, tag-based, creating tags, managing tags, get tag, subscribe tag
+
+subcollection: mobile-pushnotification
 
 ---
 
@@ -12,12 +17,10 @@ copyright:
 
 # 基于标记的通知
 {: #tag_based_notifications}
-上次更新时间：2017 年 7 月 13 日
-{: .last-updated}
 
 基于标记的通知是针对预订了特定标记的所有设备的消息。基于标记的通知允许根据主题区域或主题对通知进行细分。通知接收方可以选择仅接收关于所关注主题的通知。因此，基于标记的通知提供了一种对接收方进行细分的方法。此功能可以定义标记，然后按标记发送和接收消息。消息的目标对象只包括已预订某标记的客户机应用程序实例（在移动、浏览器上或作为应用程序或扩展）。必须首先为应用程序创建标记，设置标记预订，然后再启动基于标记的通知。要使用 REST API 发送基于标记的通知，请确保发布到消息资源时提供了“tagNames”。
 
-您可以定义标记，然后使用标记发送和接收消息。必须首先为应用程序创建标记，创建预订，然后再启动基于标记的通知。要使用 [REST API](https://imfpush.{DomainName}/imfpush/){: new_window} 发送基于标记的通知，请确保发布到消息资源时提供了“tagName”。
+您可以定义标记，然后使用标记发送和接收消息。必须首先为应用程序创建标记，创建预订，然后再启动基于标记的通知。要使用 [REST API](https://eu-gb.imfpush.cloud.ibm.com/imfpush/){: new_window} 发送基于标记的通知，请确保发布到消息资源时提供了“tagName”。
 
 
 ## 管理标记
@@ -88,10 +91,12 @@ copyright:
 
 基于标记的通知是针对预订了特定标记的所有设备的消息。每个设备都可以预订任意数量的标记。本主题描述了如何发送基于标记的通知。预订通过 {{site.data.keyword.mobilepushshort}} 服务 IBM Cloud 实例进行维护。删除标记时，与该标记关联的所有信息（包括其订户和设备）都会一并删除。无需对此标记自动取消预订，因为此标记不再存在，因此也不需要从客户机端执行进一步的操作。
 
-在**标记**屏幕上创建标记。有关如何创建标记的信息，请参阅[创建标记](t_manage_tags.html)。
+在**标记**屏幕上创建标记。有关如何创建标记的信息，请参阅[创建标记](/docs/services/mobilepush?topic=mobile-pushnotification-tag_based_notifications#create_tags)。
 
-1. 在 **Push Notification** 控制台中，选择**发送通知**。
-1. 在**发送到**下拉列表中，选择**按标记列出设备**选项。
-1. 搜索要使用的标记并将其选中。![通知屏幕](images/tag_notification.jpg)
-1. 在**消息文本**字段中，输入将作为通知发送给订阅受众的文本。
-1. 单击**发送**。
+1. 从 **Push Notification** 控制台中，选单击**消息**。
+2. 在**发送至**下拉列表中，选择**按标记列出的设备**选项。
+3. 搜索想要使用的标记，并将其选中。
+![通知屏幕](images/tag_notification_new2.jpg "选择了“消息”导航选项的 Push Notifications 控制台，其中显示“发送通知”页面。“发送至”字段设置为“按标记列出的设备”。")
+4. 在**消息文本**字段中，输入将作为通知发送给订阅受众的文本。
+5. 单击**发送**。
+

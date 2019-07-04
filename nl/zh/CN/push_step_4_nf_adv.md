@@ -1,7 +1,12 @@
 ---
 
 copyright:
- years: 2015, 2017
+  years: 2015, 2017, 2019
+lastupdated: "2019-06-06"
+
+keywords: push notifications, notifications, configure sound, payload, ios badge, holding android notification
+
+subcollection: mobile-pushnotification
 
 ---
 
@@ -11,8 +16,6 @@ copyright:
 {:codeblock:.codeblock}
 
 #启用高级推送通知
-上次更新时间：2017 年 6 月 1 日
-{: .last-updated}
 
 配置 iOS 角标、声音、其他 JSON 有效内容、可操作通知和暂停通知。
 
@@ -28,27 +31,27 @@ copyright:
 3. 选择以下任一选项：	
 	- 在 Android 上
 
- 	将声音文件添加到 Android 应用程序的 `res/raw` 目录中。发送通知时，在 {{site.data.keyword.mobilepushshort}} 的声音字段中添加声音文件名：
+     	将声音文件添加到 Android 应用程序的 `res/raw` 目录中。发送通知时，在 {{site.data.keyword.mobilepushshort}} 的声音字段中添加声音文件名：
 
-	```
-	"settings":{
+    	```
+    	"settings":{
      "gcm":{
 	     "sound":"tt.wav",
 	  }
 	 }  
-	```	
-	{: codeblock}	
+    	```	
+    	{: codeblock}	
 	
 	- 在 iOS 上
 
-	```
-	"settings": {
+    	```
+    	"settings": {
 	     "apns" : {
 	      "badge": 10,
 	      "sound": "tt.wav",
 	  }
 	}
-	``` 
+    	``` 
 		{: codeblock}
 		
 **其他有效内容** - 此有效内容可以是任何键/值对，但必须为要与 {{site.data.keyword.mobilepushshort}} 一起发送的 JSON 对象。

@@ -1,7 +1,12 @@
 ---
 
 copyright:
- years: 2015, 2017
+  years: 2015, 2017, 2019
+lastupdated: "2019-06-06"
+
+keywords: push notifications, notifications, sending a notification
+
+subcollection: mobile-pushnotification
 
 ---
 
@@ -12,18 +17,15 @@ copyright:
 
 # 第 5 步：发送通知
 {: #push_step_4}
-上次更新时间：2017 年 6 月 27 日
-{: .last-updated}
-
 
 开发应用程序后，可以发送基本推送通知。
 
 要发送基本推送通知，请完成以下步骤：
 
-1. 选择**发送通知**，并通过选择**发送至**选项编辑消息。支持的选项有**按标记列出设备**、**设备标识**、**用户标识**、**Android 设备**、**iOS 设备**、**Web 通知**和**所有设备**。
+1. 选择**消息**，并通过选择**发送至**选项来编写消息。支持的选项有**按标记列出的设备**、**设备标识**、**用户标识**、**Android 设备**、**iOS 设备**、**Web 通知**、**Chrome 应用程序和扩展**、**Chrome 浏览器**、**Firefox**、**Safari** 和**所有设备**。
 **注**：选择**所有设备**选项时，预订了 {{site.data.keyword.mobilepushshort}} 的所有设备都会收到通知。
 	
-	![“通知”屏幕](images/tag_notification.jpg)
+    ![通知屏幕](images/tag_notification.jpg "显示“发送至”、“消息”以及“其他有效内容”字段的“发送通知”屏幕")
 
 2. 在**消息**字段中，编辑您的消息。根据需要，选择配置可选设置。
 3. 单击**发送**。
@@ -32,17 +34,20 @@ copyright:
 以下屏幕快照显示了在 Android 设备上前台处理推送通知的警报框。
 
 
-	![Android 上的前台推送通知](images/Android_Screenshot.jpg)
+
+![Android 上的前台推送通知](images/Android_Screenshot.jpg "带有测试通知的警报框")
+
 以下屏幕快照显示了 Android 后台的推送通知。
 
-	![Android 上的后台推送通知](images/background.jpg)
+
+![Android 上的后台推送通知](images/background.jpg "Android 设备上的推送通知")
+
 ## 可选 Android 设置 
 {: #push_step_4_Android}
 
 对于向 Android 设备发送通知的 {{site.data.keyword.mobilepushshort}} 设置，您可以进一步定制。 
 
-
-![Android 定制设置](images/android_custom_settings.jpg)
+![Android 定制设置](images/android_custom_settings.jpg "“推送通知定制设置”页面")
 
 支持以下可选的定制选项：
 

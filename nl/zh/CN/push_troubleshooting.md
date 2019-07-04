@@ -1,7 +1,12 @@
 ---
 
 copyright:
- years: 2015, 2017
+  years: 2015, 2019
+lastupdated: "2019-06-11"
+
+keywords: push notifications, notifications, troubleshooting, service issues
+
+subcollection: mobile-pushnotification
 
 ---
 
@@ -12,13 +17,37 @@ copyright:
 
 # 服务问题故障诊断
 {: #errors}
-上次更新时间：2017 年 7 月 13 日
-{: .last-updated}
 
 本主题将指导您识别并解决在使用 Push Notifications 服务时可能会遇到的错误场景。
 
 ## 解决常见推送通知问题
 {: #troubleshooting_notification_errors}
+
+### 您没有将实例添加到此帐户中任何资源组的许可权
+{: #permission_issue}
+
+**说明**：IBM Push Notifications 服务现在是基于资源控制器 (RC) 的服务。应使用 RC 创建实例。如果您的帐户中没有某个缺省资源组，您可能会注意到以下错误。
+
+![许可权问题](images/RC_error.png "显示许可权错误的屏幕快照")
+
+**用户响应**：管理员在创建实例之前必须为用户创建资源组。
+
+
+### 访问服务时出现“超文本传输协议 (HTTP) 301 已永久移走”重定向状态
+{: #http_301_redirect}
+
+**说明**：如果您使用 `http` 协议访问服务，可能会出现此错误。Push Notification 服务要求使用 `https` 协议访问 Web 站点。
+
+**用户响应**：我们建议您通过 `https` 协议而不是 `http` 协议来访问服务和 Swagger API。
+
+
+### POST 请求从同一调用中返回 GET 请求
+{: #Postman_issue}
+
+**说明**：如果 postman 接收到 POST 请求的 301 或 302 响应代码，将自动重定向到同一调用的 GET 请求。Push Notifications 服务要求使用 `https` 协议而非 `http` 来访问 Web 站点。
+
+**用户响应**：建议您尝试从浏览器使用 `https` 连接到 Web 站点。
+
 
 ### 发生内部服务器错误。请联系管理员。（内部错误代码：PUSHD102E）
 {: #troubleshooting_notification_internal}
@@ -33,7 +62,7 @@ copyright:
 
 **说明**：Chrome Web 推送不使用 Firebase 云消息传递 (FCM) 密钥。如果您从 GCM 迁移到 FCM 之后无法在 Chrome 上接收 Web 推送通知，这是因为 Web 站点先前配置为与 GCM 项目一起运作，而现在 FCM 中创建了新项目。所生成的识别浏览器的标记在 Chrome 浏览器中缓存。
 
-**用户响应**：您可以通过删除 cookie 并重置浏览器权限来解决此问题。这样将请求启用推送通知的权限。 
+**用户响应**：您可以通过删除 cookie 并重置浏览器许可权来解决此问题。这样将请求启用推送通知的许可权。 
 
 
 ### 在此浏览器中不支持服务工作程序
@@ -49,7 +78,7 @@ copyright:
 
 **说明**：在访问“监视”页面中的报告时，用户可能会注意到此错误。如果过去 90 天内发送的消息量非常高时，这是预期行为。
  
-**用户响应**：可通过 REST API 访问基于 messageId 的报告。请参阅 [REST API 文档]( https://console.bluemix.net/apidocs/800-push-notifications?&language=shell_curl#getmessagereport)中的“getMessageReport”。
+**用户响应**：可通过 REST API 访问基于 messageId 的报告。请参阅 [REST API 文档](https://cloud.ibm.com/apidocs/push-notifications#api-documentation-for-push-notifications)中的“getMessageReport”。
 
 
 ### SecurityError：操作不安全
@@ -103,10 +132,8 @@ function showStatus(response) {
 ```
 	{
 		"message": "Missing APNs credentials",
-     "docUrl": "https://www.ng.bluemix.net/docs/troubleshoot/errors/mobilepush/index.html#FPWSE0003E",
-     "code":   "FPWSE0003E"
-
-}
+		"code":   "FPWSE0003E"
+	}
 ```
 		    {: codeblock}
 
@@ -133,7 +160,7 @@ function showStatus(response) {
 
 **说明**：{{site.data.keyword.mobilepushshort}} 服务的必备配置不完整。可能是您在尝试获取 Apple 推送通知服务 (APNs) 凭证，但凭证尚未配置。
 
-**用户响应**：请确保已使用有效的 APNs 安全证书配置 {{site.data.keyword.mobilepushshort}}服务。有关更多信息，请参阅[获取通知提供程序凭证![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](push_step_1.html){: new_window}。
+**用户响应**：请确保已使用有效的 APNs 安全证书配置 {{site.data.keyword.mobilepushshort}}服务。有关更多信息，请参阅[获取通知提供程序凭证![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](/docs/services/mobilepush?topic=mobile-pushnotification-push_step_1){: new_window}。
 
 
 ### FPWSE0004E
@@ -162,7 +189,7 @@ function showStatus(response) {
 **说明**：请求的 JSON 主体具有 {{site.data.keyword.mobilepushshort}} 服务器无法识别的参数。
 
 
-**用户响应**：请验证请求中的 JSON 主体是否遵循 {{site.data.keyword.mobilepushshort}} 服务器所预期的请求格式。有关的更多信息，请参阅 [REST API ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://imfpush.{DomainName}/imfpush/){: new_window}。
+**用户响应**：请验证请求中的 JSON 主体是否遵循 {{site.data.keyword.mobilepushshort}} 服务器所预期的请求格式。有关的更多信息，请参阅 [REST API ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://eu-gb.imfpush.cloud.ibm.com/imfpush/){: new_window}。
 
 
 
@@ -172,7 +199,7 @@ function showStatus(response) {
 **说明**：请求 URL 中的查询字符串具有无法识别的参数。例如，如果预订删除请求具有 deviceId 和 tagName 以外的参数，那么可能会发生此错误。
 
 
-**用户响应**：请验证请求中的 JSON 主体是否遵循 {{site.data.keyword.mobilepushshort}} 服务器所预期的请求格式。有关的更多信息，请参阅 [REST API ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://imfpush.{DomainName}/imfpush/){: new_window}。
+**用户响应**：请验证请求中的 JSON 主体是否遵循 {{site.data.keyword.mobilepushshort}} 服务器所预期的请求格式。有关的更多信息，请参阅 [REST API ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://eu-gb.imfpush.cloud.ibm.com/imfpush/){: new_window}。
 
 
 
@@ -182,7 +209,7 @@ function showStatus(response) {
 **说明**：请求 URL 中的查询字符串缺少必需参数。例如，预订删除请求中可能缺少 deviceId 和 tagName 参数。
 
 
-**用户响应**：请验证请求中的 JSON 主体是否遵循 {{site.data.keyword.mobilepushshort}} 服务器所预期的请求格式。有关的更多信息，请参阅 [REST API ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://imfpush.{DomainName}/imfpush/){: new_window}。
+**用户响应**：请验证请求中的 JSON 主体是否遵循 {{site.data.keyword.mobilepushshort}} 服务器所预期的请求格式。有关的更多信息，请参阅 [REST API ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://eu-gb.imfpush.cloud.ibm.com/imfpush/){: new_window}。
 
 
 

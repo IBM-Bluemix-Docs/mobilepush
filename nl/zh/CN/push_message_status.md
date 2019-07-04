@@ -1,7 +1,12 @@
 ---
 
 copyright:
- years: 2015, 2017
+  years: 2015, 2019
+lastupdated: "2019-06-06"
+
+keywords: push notifications, notifications, message delivery status
+
+subcollection: mobile-pushnotification
 
 ---
 
@@ -11,10 +16,7 @@ copyright:
 {:codeblock:.codeblock}
 
 # 消息传递状态
-{: #tag_based_notifications}
-上次更新时间：2017 年 8 月 21 日
-{: .last-updated}
-
+{: #message-delivery-status}
 
 使用 {{site.data.keyword.mobilepushshort}} 服务，您可以查看已提交给服务的每个通知的传递状态。 
 
@@ -22,7 +24,7 @@ copyright:
 
 {{site.data.keyword.mobilepushshort}} 服务**消息**选项卡显示通知状态。
 
-![通知状态](images/notification_status_new.png)
+![通知状态](images/notification_status_new.png "显示通知状态的消息页面")
 
 1. **消息标识** - 用于标识消息的唯一标识。
 
@@ -48,12 +50,11 @@ copyright:
  
  - 消息状态：已发送、已查看、已打开和无效。 
 
-![通知状态](images/message_delivery_status_new.png)
+![通知状态](images/message_delivery_status_new.png "显示已打开、已发送、已查看和无效状态细目的消息状态图表")
 
 6. **选项** - 提供通知的详细状态。可通过从下拉菜单中选择`设备标识`或`用户标识`来跟踪状态。要跟踪失败消息时，获取特定于用户/设备的详细状态消息可能非常有用。
 
-![详细状态](images/detailed_message_delivery.png)
+![详细状态](images/detailed_message_delivery.png "已选择用户标识的详细消息传递状态选项")
 
-**注**：此功能仅对选择`高级套餐`的用户启用。在 {{site.data.keyword.mobilepushshort}} 服务控制台中选择**套餐**以进行[升级](https://console-tok02-red.cdn.s-bluemix.net/docs/account/change-plan.html#changing)
-
+**注**：此功能仅对选择`高级套餐`的用户启用。在 {{site.data.keyword.mobilepushshort}} 服务控制台中选择**套餐**以进行[升级](https://cloud.ibm.com/docs/account?topic=account-changing#changing)
 
