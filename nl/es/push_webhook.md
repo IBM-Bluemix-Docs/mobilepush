@@ -1,7 +1,12 @@
 ---
 
 copyright:
- years: 2015, 2017
+  years: 2015, 2017, 2019
+lastupdated: "2019-06-06"
+
+keywords: push notifications, notifications, receive alerts, webhook events
+
+subcollection: mobile-pushnotification
 
 ---
 
@@ -12,9 +17,6 @@ copyright:
 
 # Recepción de alertas sobre sucesos de webhook
 {: #webhook_event_based_notifications}
-Última actualización: 8 de septiembre de 2017
-{: .last-updated}
-
 
 Con el servicio de {{site.data.keyword.mobilepushshort}}, puede elegir recibir alertas sobre información que se ha modificado. Los cambios en la información de la empresa crean sucesos, de los que se le puede notificar registrándolos como sucesos de webhook. Estos sucesos de webhook desencadenan una alerta. 
 
@@ -31,7 +33,7 @@ Los webhooks son devoluciones de llamada definidas por el usuario que desencaden
 **Nota**: Las asignaciones de notificación se realizan por lotes. Una asignación de mensaje puede tener varios sucesos de webhook, que pueden incluir tanto fallos como éxitos. 
 Los sucesos de webhook podrían tener el mismo messageID que el del mensaje asignado. 
 
-Para obtener más información sobre webhooks, consulte [API REST de notificaciones Push de IBM ![icono de enlace externo](../../icons/launch-glyph.svg "icono de enlace externo")](https://console.bluemix.net/apidocs/800-push-notifications){: new_window}.
+Para obtener más información sobre webhooks, consulte [API REST de notificaciones Push de IBM ![icono de enlace externo](../../icons/launch-glyph.svg "icono de enlace externo")](https://cloud.ibm.com/apidocs/push-notifications){: new_window}.
 
 ## Recepción de alertas sobre sucesos de webhook
 {: #webhook_alert_event}

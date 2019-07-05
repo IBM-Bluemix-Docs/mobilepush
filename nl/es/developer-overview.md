@@ -1,21 +1,26 @@
 ---
 
 copyright:
- years: 2018
+  years: 2018, 2019
+lastupdated: "2019-06-06"
+
+keywords: push notifications, application development, sdk
+
+subcollection: mobile-pushnotification
 
 ---
 
 {:new_window: target="_blank"}
 {:shortdesc: .shortdesc}
-{:screen:.screen}
-{:codeblock:.codeblock}
+{:screen: .screen}
+{:codeblock: .codeblock}
+{:pre: .pre}
+{:tip: .tip}
 
 # Visión general para desarrolladores
 {: #developer-overview}
-Última actualización: 18 de enero de 2018
-{: .last-updated}
 
-Puede acceder a las prestaciones del servicio de Notificaciones push mediante API (interfaz de programa de aplicación) REST (Representational State Transfer) HTTP. Los SDK (Software Development kits) específicos de plataformas también se encuentran disponibles para simplificar el desarrollo de aplicaciones.
+Puede acceder a las prestaciones del servicio de Notificaciones push mediante API (interfaz de programa de aplicación) ReST (Representational State Transfer) HTTP. Los SDK (Software Development kits) específicos de plataformas también se encuentran disponibles para simplificar el desarrollo de aplicaciones.
 {: shortdesc}
 
 ## Programación con el servicio
@@ -23,7 +28,7 @@ Puede acceder a las prestaciones del servicio de Notificaciones push mediante AP
 
 También puede utilizar nuestra API REST o SDK para desarrollar más las aplicaciones cliente.
 
-Acceda a las siguientes funciones de Notificaciones push desde sus aplicaciones de servidor back-end y los clientes mediante las API REST de Notificaciones push -
+Acceda a las siguientes funciones de Notificaciones push desde sus aplicaciones de servidor back-end y los clientes mediante las API REST de Push Notifications -
 
  - Configuración de push
  - Registros de dispositivos
@@ -36,7 +41,7 @@ Acceda a las siguientes funciones de Notificaciones push desde sus aplicaciones 
 ## Utilización de Software Development Kits
 {: #sdks}
 
-El servicio de Notificaciones push admite Android, iOS, Cordova y SDK web para simplificar el desarrollo de aplicaciones. [Instalar e integrar](install-sdk.html) el SDK en su app. 
+El servicio de Notificaciones push admite Android, iOS, Cordova y SDK web para simplificar el desarrollo de aplicaciones. [Instalar e integrar](/docs/services/mobilepush?topic=mobile-pushnotification-install-sdk) el SDK en su app. 
 
 Todos los SDK dan soporte a la autenticación utilizando las credenciales de servicio o una señal de autenticación.
 
@@ -45,8 +50,9 @@ Todos los SDK dan soporte a la autenticación utilizando las credenciales de ser
 
 Para obtener más información sobre cómo trabajar con los servicios de Mobile Developer Cloud y {{site.data.keyword.Bluemix_notm}}, consulte lo siguiente:
 
--   Para obtener una introducción sobre cómo trabajar con los servicios de Mobile y {{site.data.keyword.Bluemix_notm}}, consulte [Iniciación a apps Mobile en IBM Cloud](/docs/services/mobile/index.html).
+-   Para obtener una introducción sobre cómo trabajar con los servicios de Mobile y {{site.data.keyword.Bluemix_notm}}, consulte [Iniciación a apps Mobile en IBM Cloud](/docs/services/mobile?topic=mobile-getting-started).
 
--   Rápido seguimiento del desarrollo de su app para móvil. Seleccione un kit de iniciación de [aquí](https://console.bluemix.net/developer/mobile/dashboard). Descargue el código. Ejecute la app.
+-   Rápido seguimiento del desarrollo de su app para móvil. Seleccione un kit de inicio de [aquí](https://cloud.ibm.com/developer/mobile/dashboard). Descargue el código. Ejecute la app.
 
--	Puede utilizar la [IU de Swagger](https://imfpush.{DomainName}/imfpush/) para revisar rápidamente la documentación de API REST.
+-	Puede utilizar la [IU de Swagger](https://eu-gb.imfpush.cloud.ibm.com/imfpush/) para revisar rápidamente la documentación de API REST.
+

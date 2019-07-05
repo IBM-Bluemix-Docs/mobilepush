@@ -1,7 +1,12 @@
 ---
 
 copyright:
- years: 2015, 2017
+  years: 2015, 2017, 2019
+lastupdated: "2019-06-06"
+
+keywords: push notifications, notifications, user-based, register device with user ID, synchronize user login and logout
+
+subcollection: mobile-pushnotification
 
 ---
 
@@ -12,8 +17,6 @@ copyright:
 
 # Notificaciones basadas en el usuario
 {: #user_based_notifications}
-Última actualización: 22 de mayo de 2017
-{: .last-updated}
 
 Las {{site.data.keyword.mobilepushshort}} basadas en ID de usuario están pensadas para los usuarios de apps móviles con mensajes personalizados. Con las notificaciones basadas en usuarios, puede elegir notificar a individuos específicos según sus preferencias.
 
@@ -22,7 +25,7 @@ Las {{site.data.keyword.mobilepushshort}} basadas en ID de usuario están pensad
 
 Para habilitar las notificaciones push destinadas por ID de usuario, asegúrese de registrar el dispositivo con un campo de ID de usuario definido.     
 
-El ID de usuario puede ser cualquier serie que proporcione la aplicación a la API de registro del dispositivo. Normalmente, las aplicaciones móviles primero ejecutan un ciclo de autenticación en el que el usuario de la app móvil se autentica en un servicio de autenticación, como por ejemplo [{{site.data.keyword.amafull}} ![icono de enlace externo](../../icons/launch-glyph.svg "icono de enlace externo")](https://console.ng.bluemix.net/docs/services/mobileaccess/index.html){: new_window}. Si la autenticación es correcta, el ID de usuario autenticado se pasa a la API de registro del dispositivo push. 
+El ID de usuario puede ser cualquier serie que proporcione la aplicación a la API de registro del dispositivo. Normalmente, las aplicaciones móviles primero ejecutan un ciclo de autenticación en el que el usuario de la app móvil se autentica en un servicio de autenticación, como por ejemplo {{site.data.keyword.amafull}}. Si la autenticación es correcta, el ID de usuario autenticado se pasa a la API de registro del dispositivo push. 
 
 Para registrarse para la notificación basada en userID, realice los pasos siguientes:
 
@@ -38,10 +41,11 @@ Para registrarse para la notificación basada en userID, realice los pasos sigui
 Las notificaciones basadas en userID son mensajes de notificación que están pensados para un usuario específico. Muchos dispositivos pueden registrarse con un usuario. Los pasos siguientes describen cómo enviar notificaciones basadas en el ID de usuario.
 
 1. En la consola **Notificación push**, seleccione la opción **Enviar notificaciones**.
-1. Seleccione **UserId** en la lista de opciones **Enviar a**.
-1. En el campo **ID de usuario**, busque el ID del usuario que desea utilizar y, a continuación, pulse **+Añadir**.![Pantalla de notificaciones](images/user_notification.jpg)
-1. En el campo **Mensaje**, escriba el texto que desea enviar en la notificación.
-1. Pulse **Enviar**.
+2. Seleccione **UserId** en la lista de opciones **Enviar a**.
+3. En el campo **ID de usuario**, busque el ID de usuario que desee utilizar y, a continuación, pulse
+**+Añadir**.![Pantalla Notificaciones](images/user_notification.jpg "Consola de notificaciones push que muestra el botón Añadir para el campo ID de usuario")
+4. En el campo **Mensaje**, escriba el texto que desea enviar en la notificación.
+5. Pulse **Enviar**.
 
 
 ## Sincronización del inicio y cierre de sesión de un usuario 

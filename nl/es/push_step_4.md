@@ -1,7 +1,12 @@
 ---
 
 copyright:
- years: 2015, 2017
+  years: 2015, 2017, 2019
+lastupdated: "2019-06-06"
+
+keywords: push notifications, notifications, sending a notification
+
+subcollection: mobile-pushnotification
 
 ---
 
@@ -12,18 +17,15 @@ copyright:
 
 # Paso 5: Enviar una notificación
 {: #push_step_4}
-Última actualización: 27 de junio de 2017
-{: .last-updated}
-
 
 Una vez que haya desarrollado sus aplicaciones, puede enviar notificaciones push básicas.
 
 Para enviar notificaciones push básicas, siga estos pasos:
 
-1. Seleccione **Enviar notificaciones** y para redactar un mensaje seleccione la opción **Enviar a**. Las opciones admitidas son **Dispositivo por etiqueta**, **ID de dispositivo**, **ID de usuario**, **Dispositivos Android**, **Dispositivos iOS**, **Notificaciones web** y **Todos los dispositivos**.
+1. Seleccione **Mensajes** y redacte un mensaje eligiendo una opción **Enviar a**. Las opciones admitidas son **Dispositivo por etiqueta**, **ID de dispositivo**, **ID de usuario**, **Dispositivos Android**, **Dispositivos iOS**, **Notificaciones web**, **Apps y extensiones de Chrome**, **Navegador Chrome**, **Firefox**, **Safari** y **Todos los dispositivos**.
 **Nota**: Cuando seleccione la opción **Todos los dispositivos**, todos los dispositivos suscritos a {{site.data.keyword.mobilepushshort}} recibirán notificaciones.
 	
-	![pantalla Notificaciones](images/tag_notification.jpg)
+    ![Pantalla Notificaciones](images/tag_notification.jpg "Pantalla Enviar notificaciones que muestra los campos Enviar a, Mensaje y Carga útil adicional")
 
 2. En el campo **Mensaje**, redacte el mensaje. Elija configurar los valores opcionales según sea necesario.
 3. Pulse **Enviar**.
@@ -31,17 +33,19 @@ Para enviar notificaciones push básicas, siga estos pasos:
 
 La captura de pantalla siguiente muestra un recuadro de alerta que maneja una notificación push
 en el primer plano en un dispositivo Android.
-	![Notificación push en primer plano en Android](images/Android_Screenshot.jpg)
+
+![Notificación push en primer plano en Android](images/Android_Screenshot.jpg "Recuadro de alerta con notificación de prueba")
 
 La captura de pantalla siguiente muestra una notificación push en segundo plano para Android.
-	![Notificación push en segundo plano en Android](images/background.jpg)
+
+![Notificación push en segundo plano en Android](images/background.jpg "Notificación push en un dispositivo Android")
 
 ## Valores opcionales de Android 
 {: #push_step_4_Android}
 
 Puede personalizar aún más los valores de {{site.data.keyword.mobilepushshort}} para el envío de notificaciones a dispositivos Android. 
 
-![Valores personalizados de Android](images/android_custom_settings.jpg)
+![Valores personalizados de Android](images/android_custom_settings.jpg "Página de valores personalizados de notificaciones push")
 
 Se admiten las siguientes opciones de personalización opcionales:
 

@@ -1,7 +1,12 @@
 ---
 
 copyright:
- years: 2015, 2017
+  years: 2015, 2019
+lastupdated: "2019-06-06"
+
+keywords: push notifications, notifications, tag-based, creating tags, managing tags, get tag, subscribe tag
+
+subcollection: mobile-pushnotification
 
 ---
 
@@ -12,12 +17,10 @@ copyright:
 
 # Notificaciones basadas en etiquetas
 {: #tag_based_notifications}
-Última actualización: 13 de julio de 2017
-{: .last-updated}
 
 Las notificaciones basadas en etiquetas son mensajes que están pensados para todos los dispositivos suscritos a una etiqueta determinada. Las notificaciones basadas en código permiten la segmentación de notificaciones en función de los temas o de las áreas de temas. Los destinatarios de la notificación pueden elegir recibir notificaciones sólo si es sobre un asunto o tema de su interés. Por lo tanto, la notificación basada en etiquetas proporciona un medio de segmentar destinatarios. Esta característica habilita la función de definir etiquetas y, a continuación, enviar y recibir mensajes por etiquetas. Un mensaje sólo se ha dirigido a las instancias de aplicación cliente (en móvil, navegador o como una app o extensión) que están suscritas a la etiqueta. Primero debe crear las etiquetas para la aplicación, configurar las suscripciones de etiquetas y, a continuación, iniciar las notificaciones basadas en etiquetas. Para enviar una notificación basada en etiquetas que utiliza la API REST, asegúrese de que los "tagNames" se proporcionen al publicarse en el recurso de mensajes.
 
-Puede definir etiquetas y, a continuación, enviar y recibir mensajes mediante etiquetas. Primero debe crear las etiquetas para la aplicación, crear suscripciones y, a continuación, iniciar las notificaciones basadas en etiquetas. Para enviar una notificación basada en código utilizando la [API REST](https://imfpush.{DomainName}/imfpush/){: new_window}, asegúrese de que se proporcionen los "tagNames" al publicar en el recurso de mensajes.
+Puede definir etiquetas y, a continuación, enviar y recibir mensajes mediante etiquetas. Primero debe crear las etiquetas para la aplicación, crear suscripciones y, a continuación, iniciar las notificaciones basadas en etiquetas. Para enviar una notificación basada en código utilizando la [API REST](https://eu-gb.imfpush.cloud.ibm.com/imfpush/){: new_window}, asegúrese de que se proporcionen los "tagNames" al publicar en el recurso de mensajes.
 
 
 ## Gestión de etiquetas
@@ -61,7 +64,7 @@ Cuando se suprime una etiqueta, también se suprime toda la información asociad
 Las etiquetas proporcionan una forma para enviar notificaciones de destino a usuarios en función de sus intereses, a diferencia de las difusiones generales que se envían a todas las aplicaciones. Puede crear y gestionar etiquetas con el separador Etiquetas en la consola de {{site.data.keyword.mobilepushshort}} o con las API REST. Puede utilizar fragmentos de código para gestionar y consultar las suscripciones de etiquetas para la aplicación móvil. Puede utilizar los fragmentos de código para obtener suscripciones, suscribirse a una etiqueta, anular la suscripción de una etiqueta u obtener una lista de las etiquetas disponibles. Copie estos fragmentos de código en su aplicación móvil.
 
 
-- Para Android, consulte las API `getTags` y `getSubscriptions` en  [Etiquetas de obtención de notificaciones push de Android](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-cordova-plugin-push/tree/Doc#ios-app).
+- Para Android, consulte las API `getTags` y `getSubscriptions` en [Etiquetas de obtención de notificaciones push de Android](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-cordova-plugin-push/tree/Doc#ios-app).
 
 - Para Cordova, consulte la API `retrieveAvailableTags()` API y `retrieveSubscriptions()` en [Etiquetas de obtención de notificaciones push en Cordova](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-cordova-plugin-push/tree/Doc#push-notification-service-tags).
 
@@ -88,11 +91,12 @@ Utilice las siguientes API para permitir que los dispositivos recuperen etiqueta
 
 Las notificaciones basadas en etiquetas son mensajes que están pensados para todos los dispositivos suscritos a una etiqueta determinada. Cada dispositivo se puede suscribir a cualquier número de etiquetas. En este tema se describe cómo enviar notificaciones basadas en etiquetas. Las suscripciones las mantiene la instancia de IBM Cloud del servicio {{site.data.keyword.mobilepushshort}}. Cuando se suprime una etiqueta, también se suprime toda la información asociada a dicha etiqueta, incluidos los suscriptores y los dispositivos. No es necesaria ninguna anulación de la suscripción automática para esta etiqueta porque ya no existe y no es necesaria ninguna acción desde el lado del cliente.
 
-Cree etiquetas en la pantalla **Etiquetas**. Para obtener más información sobre cómo crear etiquetas, consulte [Creación de etiquetas](t_manage_tags.html).
+Cree etiquetas en la pantalla **Etiquetas**. Para obtener más información sobre cómo crear etiquetas, consulte [Creación de etiquetas](/docs/services/mobilepush?topic=mobile-pushnotification-tag_based_notifications#create_tags).
 
-1. Desde la consola **Notificación Push**, pulse **Enviar notificaciones**.
-1. Seleccione la opción **Dispositivo por etiqueta** en la lista desplegable **Enviar a**.
-1. Busque las etiquetas que desee utilizar y selecciónelas.
-![Pantalla de notificaciones](images/tag_notification.jpg)
-1. En el campo **Texto del mensaje**, especifique texto que desee enviar como notificación a la audiencia suscrita.
-1. Pulse **Enviar**.
+1. Desde la consola **Notificación Push**, pulse **Mensajes**.
+2. Seleccione la opción **Dispositivo por etiqueta** en la lista desplegable **Enviar a**.
+3. Busque las etiquetas que desee utilizar y selecciónelas.
+![Pantalla Notificaciones](images/tag_notification_new2.jpg "Consola de Push Notifications con la opción de navegación Mensajes seleccionada que muestra la página Enviar notificaciones con el campo Enviar a establecido en Dispositivo por etiqueta.")
+4. En el campo **Texto del mensaje**, especifique texto que desee enviar como notificación a la audiencia suscrita.
+5. Pulse **Enviar**.
+

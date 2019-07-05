@@ -1,7 +1,12 @@
 ---
 
 copyright:
- years: 2015, 2017
+  years: 2015, 2017, 2019
+lastupdated: "2019-06-06"
+
+keywords: push notifications, notifications, configure sound, payload, ios badge, holding android notification
+
+subcollection: mobile-pushnotification
 
 ---
 
@@ -11,8 +16,6 @@ copyright:
 {:codeblock:.codeblock}
 
 #Habilitación de notificaciones push avanzadas
-Última actualización: 1 de junio de 2017
-{: .last-updated}
 
 Configure un identificador de iOS, un sonido, una carga útil de JSON adicional, notificaciones accionables y notificaciones retenidas.
 
@@ -28,27 +31,27 @@ Configure un identificador y un sonido de iOS, y carga útil adicional de JSON.
 3. Seleccione una de las opciones siguientes:	
 	- En Android
 
- 	Añada el archivo de sonido en el directorio `res/raw` de la aplicación android. Al enviar la notificación, añada el nombre del archivo de sonido en el campo de sonido de {{site.data.keyword.mobilepushshort}}:
+     	Añada el archivo de sonido en el directorio `res/raw` de la aplicación android. Al enviar la notificación, añada el nombre del archivo de sonido en el campo de sonido de {{site.data.keyword.mobilepushshort}}:
 
-	```
-	"settings": {
-     "gcm" : {
-     "sound":"tt.wav",
-		}
-		}  
-	```	
-	{: codeblock}	
+    	```
+    	"settings":{
+         "gcm":{
+         "sound":"tt.wav",
+    		}
+    		}  
+    	```	
+    	{: codeblock}	
 	
 	- En iOS
 
-	```
-	"settings": {
-	     "apns" : {
-	      "badge": 10,
-	      "sound": "tt.wav",
-	  }
-	}
-	``` 
+    	```
+    	"settings": {
+    	     "apns" : {
+    	      "badge": 10,
+    	      "sound": "tt.wav",
+    	  }
+    	}
+    	``` 
 		{: codeblock}
 		
 **Carga útil adicional**: Esta carga útil puede ser cualquier par de clave-valor y debe ser un objeto JSON que desee enviar con la {{site.data.keyword.mobilepushshort}}.

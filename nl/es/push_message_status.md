@@ -1,7 +1,12 @@
 ---
 
 copyright:
- years: 2015, 2017
+  years: 2015, 2019
+lastupdated: "2019-06-06"
+
+keywords: push notifications, notifications, message delivery status
+
+subcollection: mobile-pushnotification
 
 ---
 
@@ -11,10 +16,7 @@ copyright:
 {:codeblock:.codeblock}
 
 # Estado de entrega del mensaje
-{: #tag_based_notifications}
-Última actualización: 21 de agosto de 2017
-{: .last-updated}
-
+{: #message-delivery-status}
 
 Con el servicio de {{site.data.keyword.mobilepushshort}}, puede visualizar el estado de entrega de todas las notificaciones que se han enviado al servicio. 
 
@@ -22,7 +24,7 @@ Una vez enviado el mensaje, puede realizar un seguimiento de la información de 
 
 El separador **Mensajes** del servicio {{site.data.keyword.mobilepushshort}} muestra el estado de la notificación.
 
-![estado de las notificaciones](images/notification_status_new.png)
+![estado de notificaciones](images/notification_status_new.png "Página de mensajes que muestra el estado de notificación")
 
 1. **ID del mensaje**: Un único identificador para identificar un mensaje.
 
@@ -48,12 +50,11 @@ El separador **Mensajes** del servicio {{site.data.keyword.mobilepushshort}} mue
  
  - Estado del mensaje: Enviado, Visto, Abierto y No válido. 
 
-![estado de las notificaciones](images/message_delivery_status_new.png)
+![estado de notificaciones](images/message_delivery_status_new.png "Gráfico de estados de mensaje que muestra el desglose de los estados abierto, enviado, visto y no válido")
 
 6. **Opciones** - Ofrece estado detallado de una notificación. Se puede realizar el seguimiento del estado seleccionando el `ID de dispositivo` o el `ID de usuario` desde el menú desplegable. Puede resultar útil obtener el mensaje de estado detallado cuando realiza el seguimiento de un mensaje de error.
 
-![estado detallado](images/detailed_message_delivery.png)
+![estado detallado](images/detailed_message_delivery.png "Opciones de estado de entrega de mensaje detalladas con ID de usuario seleccionado")
 
-**Nota**: Solo se habilita la característica para los usuarios que han elegido el `plan Avanzado`. Seleccione **Plan** en la consola de servicio de {{site.data.keyword.mobilepushshort}} para [actualizar](https://console-tok02-red.cdn.s-bluemix.net/docs/account/change-plan.html#changing)
-
+**Nota**: Solo se habilita la característica para los usuarios que han elegido el `plan Avanzado`. Seleccione **Plan** en la consola de servicio de {{site.data.keyword.mobilepushshort}} para [actualizar](https://cloud.ibm.com/docs/account?topic=account-changing#changing)
 

@@ -1,7 +1,12 @@
 ---
 
 copyright:
- years: 2018
+  years: 2018, 2019
+lastupdated: "2019-06-06"
+
+keywords: push notifications, notifications, sample apps
+
+subcollection: mobile-pushnotification
 
 ---
 
@@ -12,8 +17,7 @@ copyright:
 
 # Apps de ejemplo
 {: #sample-apps}
-Última actualización: 18 de enero de 2018
-{: .last-updated}
+
 
 Para empezar rápidamente.
 
