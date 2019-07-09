@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2017, 2019
-lastupdated: "2019-06-13"
+lastupdated: "2019-07-09"
 
 keywords: push notifications, notifications, faq, frequently asked questions
 
@@ -177,3 +177,8 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
    } \ 
    }' 'https://us-east.imfpush.cloud.ibm.com/imfpush/v1/apps/4809d407-85ff-4d11-ae4b-0fcdf8a833f1/messages'
 ```	
+
+### What is the meaning of UNKNOWN status in the messageId based status (`GET /apps/{applicationId}/messages/{messageId}/status`)?
+{: #faq-unknown-status}	
+
+UNKNOWN status denotes an internal issue that occurred during the processing of the message. Push Notifications works with best effort delivery, as there are multiple network points including the Providers like FCM, and APNS.  To know more details on this message, it is important to check the deliverystatus (`GET /apps/{applicationId}/messages/{messageId}/deliverystatus`) and report (`GET /apps/{applicationId}/messages/{messageId}/report`) of the messageId. If the deliverystatus and report is also empty, then this particular message id should be retried. 
