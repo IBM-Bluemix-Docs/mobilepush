@@ -1,7 +1,12 @@
 ---
 
 copyright:
- years: 2015, 2017
+  years: 2015, 2017, 2019
+lastupdated: "2019-06-06"
+
+keywords: push notifications, notifications, receive alerts, webhook events
+
+subcollection: mobile-pushnotification
 
 ---
 
@@ -12,9 +17,6 @@ copyright:
 
 # Alerts für Webhookereignisse empfangen
 {: #webhook_event_based_notifications}
-Letzte Aktualisierung: 08. September 2017
-{: .last-updated}
-
 
 Mit dem {{site.data.keyword.mobilepushshort}}-Service können Sie sich für das Empfangen von Alerts zu Informationen, die sich geändert haben, entscheiden. Änderungen an Unternehmensinformationen erzeugen Ereignisse, zu denen Sie Benachrichtigungen erhalten können, indem Sie sie als Webhook-Ereignisse registrieren. Diese Webhook-Ereignisse lösen einen Alert aus. 
 
@@ -31,7 +33,7 @@ Webhooks sind benutzerdefinierte Callbacks, die durch ein Ereignis ausgelöst we
 **Anmerkung**: Das Versenden von Benachrichtigungen erfolgt in Stapeln. Dieselbe Nachrichtenversendung kann mehrere Webhook-Ereignisse umfassen, wobei es sich sowohl um fehlgeschlagene als auch um erfolgreiche handeln kann. 
 Die Webhook-Ereignisse haben dieselbe Nachrichten-ID (messageID) wie die versandte Nachricht. 
 
-Weitere Informationen zu Webhooks finden Sie in der [IBM Push Notifications-REST-API ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://console.bluemix.net/apidocs/800-push-notifications){: new_window}.
+Weitere Informationen zu Webhooks finden Sie in der [IBM Push Notifications-REST-API ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://cloud.ibm.com/apidocs/push-notifications){: new_window}.
 
 ## Alerts für Webhookereignisse empfangen
 {: #webhook_alert_event}

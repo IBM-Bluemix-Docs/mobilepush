@@ -1,7 +1,12 @@
 ---
 
 copyright:
- years: 2015, 2017
+  years: 2015, 2017, 2019
+lastupdated: "2019-06-06"
+
+keywords: push notifications, notifications, sending a notification
+
+subcollection: mobile-pushnotification
 
 ---
 
@@ -12,18 +17,15 @@ copyright:
 
 # Schritt 5: Benachrichtigung senden
 {: #push_step_4}
-Letzte Aktualisierung: 27. Juni 2017
-{: .last-updated}
-
 
 Nach dem Entwickeln Ihrer Anwendungen können Sie einfache Push-Benachrichtigungen senden.
 
 Führen Sie die folgenden Schritte aus, um einfache Push-Benachrichtigungen zu senden:
 
-1. Wählen Sie **Benachrichtigungen senden** aus und erstellen Sie eine Nachricht, indem Sie eine Option für **Senden an** auswählen. Die unterstützten Optionen sind **Gerät nach Tag**, **Geräte-ID**, **Benutzer-ID**, **Android-Geräte**, **iOS-Geräte**, **Webbenachrichtigungen** und **Alle Geräte**.
+1. Wählen Sie **Nachrichten** aus und erstellen Sie eine Nachricht, indem Sie eine Option für **Senden an** auswählen. Die unterstützten Optionen sind **Gerät nach Tag**, **Geräte-ID**, **Benutzer-ID**, **Android-Geräte**, **iOS-Geräte**, **Webbenachrichtigungen**, **Chrome-Apps und Erweiterungen**, **Chrome-Browser**, **Firefox**, **Safari** und **Alle Geräte**.
 **Hinweis**: Wenn Sie die Option **Alle Geräte** auswählen, erhalten alle Geräte, die Push-Benachrichtigungen subskribiert haben, Benachrichtigungen.
 	
-	![Anzeige 'Benachrichtigungen'](images/tag_notification.jpg)
+    ![Anzeige 'Benachrichtigungen'](images/tag_notification.jpg "Anzeige 'Benachrichtigungen senden' mit Nutzdatenfeldern 'Senden an', 'Nachricht' und 'Zusätzliche Nutzdaten'")
 
 2. Erstellen Sie Ihre Nachricht im Feld **Nachricht**. Treffen Sie Ihre Auswahl, um die optionalen Einstellungen wie erforderlich zu konfigurieren.
 3. Klicken Sie auf **Senden**.
@@ -31,17 +33,19 @@ Führen Sie die folgenden Schritte aus, um einfache Push-Benachrichtigungen zu s
 
 Der folgende Screenshot zeigt ein Alertfeld bei der Verarbeitung einer Push-Benachrichtigung
 im Vordergrund auf einem Android-Gerät.
-	![Push-Benachrichtigung im Vordergrund auf Android-Gerät](images/Android_Screenshot.jpg)
+
+![Push-Benachrichtigung im Vordergrund auf Android-Gerät](images/Android_Screenshot.jpg "Alertfeld mit Testbenachrichtigung")
 
 Der folgende Screenshot zeigt eine Push-Benachrichtigung im Hintergrund auf einem Android-Gerät.
-	![Push-Benachrichtigung im Hintergrund auf Android-Gerät](images/background.jpg)
+
+![Push-Benachrichtigung im Hintergrund auf Android-Gerät](images/background.jpg "Push-Benachrichtigung im Vordergrund auf Android-Gerät")
 
 ## Optionale Einstellungen für Android 
 {: #push_step_4_Android}
 
 Sie können die {{site.data.keyword.mobilepushshort}}-Einstellungen zum Senden von Benachrichtigung an Android-Geräte anpassen. 
 
-![Angepasste Android-Einstellungen](images/android_custom_settings.jpg)
+![Angepasste Android-Einstellungen](images/android_custom_settings.jpg "Push Notifications-Seite 'Angepasste Einstellungen'")
 
 Die folgenden optionalen Anpassungsoptionen werden unterstützt:
 

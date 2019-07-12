@@ -1,7 +1,12 @@
 ---
 
 copyright:
- years: 2015, 2017
+  years: 2015, 2017, 2019
+lastupdated: "2019-06-06"
+
+keywords: push notifications, notifications, interactive notification, silent notification
+
+subcollection: mobile-pushnotification
 
 ---
 
@@ -12,8 +17,6 @@ copyright:
 
 # Interaktive Benachrichtigungen und Hintergrundbenachrichtigungen  
 {: #interactive-notifications}
-Letzte Aktualisierung: 22. Mai 2017
-{: .last-updated}
 
 Interaktive Benachrichtigungen ermöglichen den Benutzern das Beantworten einer Benachrichtigung, ohne die Anwendung zu öffnen. Wenn eine interaktive Benachrichtigung eingeht, zeigt das Gerät die Aktionsschaltflächen zusammen mit der Benachrichtigung an. 
 
@@ -22,7 +25,7 @@ Interaktive Benachrichtigungen ermöglichen den Benutzern das Beantworten einer 
 ## Interaktive Benachrichtigungen senden
 {: #send_interactive_notifications}
 
-Interaktive Benachrichtigungen können über die Push Notifications-Konsole oder mithilfe der REST-API (siehe [REST-API-Dokumentation](push_restapi.html)) gesendet werden.
+Interaktive Benachrichtigungen können über die Push Notifications-Konsole oder mithilfe der REST-API (siehe [REST-API-Dokumentation](https://cloud.ibm.com/apidocs/push-notifications)) gesendet werden.
 
 
 Gehen Sie in der {{site.data.keyword.mobilepushshort}}-Konsole wie folgt vor: 

@@ -1,7 +1,12 @@
 ---
 
 copyright:
- years: 2015, 2017
+  years: 2015, 2019
+lastupdated: "2019-06-06"
+
+keywords: push notifications, notifications, parameterize notification
+
+subcollection: mobile-pushnotification
 
 ---
 
@@ -12,8 +17,6 @@ copyright:
 
 # Parametrisierte Benachrichtigungen
 {: #template_based_notifications}
-Letzte Aktualisierung: 21. August 2017
-{: .last-updated}
 
 Sie können Benachrichtigungen parametrisieren und angepasste Benachrichtigungen senden, indem Sie Variablen erstellen und diese in den Benachrichtigungsvorlagen aufrufen.
 
@@ -58,25 +61,19 @@ Nach der Definition der Variablen können diese in der Nachrichtenvorlage aufger
 
 2. Erstellen Sie eine Nachricht, indem Sie eine der Optionen für **Senden an** auswählen.
 
-2. Erstellen Sie Ihre Nachricht im Feld **Nachricht**.  Rufen Sie die definierten Variablen in der Nachrichtenvorlage auf. Klicken Sie auf **Senden**.
+3. Erstellen Sie Ihre Nachricht im Feld **Nachricht**.  Rufen Sie die definierten Variablen in der Nachrichtenvorlage auf. Klicken Sie auf **Senden**.
 
-![Nachrichtenvorlage](images/message_template.png)
+![message template](images/message_template.png "Seite 'Nachricht' mit einer Nachrichtenvorlage. Feld 'Senden an' ist auf 'Alle Geräte' gesetzt. Nachrichtenfeld enthält eine Beispielnachricht zum Bankkontostand eines Benutzers. Feld 'Zusätzliche Nutzdaten' mit hinzugefügtem Attribut "key":"value".")
 
 Die angepasste Benachrichtigung wird gesendet, indem die Variablendaten abgerufen werden.
 
-![Nachrichtenbeispiel](images/message_template_example.jpg)
+![Nachrichtenbeispiel](images/message_template_example.jpg "Beispielbenachrichtigung auf der Basis der Nachrichtenvorlage")
 
-Hinweis: Das Feature ist nur für Benutzer aktiviert, die den `Erweiterten Plan` ausgewählt haben. Wählen Sie **Plan** in der {{site.data.keyword.mobilepushshort}}-Servicekonsole aus, um ein [Upgrade](https://console-tok02-red.cdn.s-bluemix.net/docs/account/change-plan.html#changing) durchzuführen.
+Hinweis: Das Feature ist nur für Benutzer aktiviert, die den `Erweiterten Plan` ausgewählt haben. Wählen Sie **Plan** in der {{site.data.keyword.mobilepushshort}}-Servicekonsole aus, um ein [Upgrade](https://cloud.ibm.com/docs/account?topic=account-changing#changing) durchzuführen.
 
-**Einschränkungen:**
+## Einschränkungen
+{: #limitations}
 
  - Dieses Feature wird zum gegenwärtigen Zeitpunkt nicht für Safari unterstützt.
  - Variablen in der Benachrichtigungsvorlage können möglicherweise nicht korrekt verwendet werden, wenn unter iOS die Beendigung einer App erzwungen wird. Diese Einschränkung stammt aus iOS und kann vom SDK nicht beeinflusst werden.
-
-
-
-
-
-
-
 

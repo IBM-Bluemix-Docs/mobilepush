@@ -1,7 +1,12 @@
 ---
 
 copyright:
- years: 2015, 2017
+  years: 2015, 2017, 2019
+lastupdated: "2019-06-06"
+
+keywords: push notifications, notifications, user-based, register device with user ID, synchronize user login and logout
+
+subcollection: mobile-pushnotification
 
 ---
 
@@ -12,8 +17,6 @@ copyright:
 
 # Benutzerbasierte Benachrichtigungen
 {: #user_based_notifications}
-Letzte Aktualisierung: 22. Mai 2017
-{: .last-updated}
 
 Auf Benutzer-ID basierte {{site.data.keyword.mobilepushshort}} (Push-Benachrichtigungen) zielen mit angepassten Nachrichten auf Benutzer mobiler Apps ab. Bei benutzerbasierten Benachrichtigungen können Sie auswählen, dass bestimmte Personen auf Grundlage Ihrer Vorgaben benachrichtigt werden.
 
@@ -22,7 +25,7 @@ Auf Benutzer-ID basierte {{site.data.keyword.mobilepushshort}} (Push-Benachricht
 
 Um Push-Benachrichtigungen zu aktivieren, die auf einer Benutzer-ID basieren, müssen Sie sicherstellen, dass Sie das Gerät mit einer Benutzer-ID registrieren.     
 
-Die Benutzer-ID kann eine beliebige Zeichenfolge sein, die die Anwendung gegenüber der API für die Geräteregistrierung bereitstellt. Normalerweise führt eine mobile Anwendung zuerst einen Authentifizierungszyklus aus, in dessen Verlauf der Benutzer mobiler Apps bei einem Authentifizierungsservice wie [{{site.data.keyword.amafull}} ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://console.ng.bluemix.net/docs/services/mobileaccess/index.html){: new_window} authentifiziert wird. Nach der erfolgreichen Authentifizierung wird die ID des authentifizierten Benutzers dann an die API für Push-Geräteregistrierungen übergeben. 
+Die Benutzer-ID kann eine beliebige Zeichenfolge sein, die die Anwendung gegenüber der API für die Geräteregistrierung bereitstellt. Normalerweise führt eine mobile Anwendung zuerst einen Authentifizierungszyklus aus, in dessen Verlauf der Benutzer mobiler Apps bei einem Authentifizierungsservice wie {{site.data.keyword.amafull}} authentifiziert wird. Nach der erfolgreichen Authentifizierung wird die ID des authentifizierten Benutzers dann an die API für Push-Geräteregistrierungen übergeben. 
 
 Führen Sie die folgenden Schritte aus, um eine Registrierung für die auf Benutzer-IDs basierende Benachrichtigung durchzuführen:
 
@@ -38,10 +41,10 @@ Führen Sie die folgenden Schritte aus, um eine Registrierung für die auf Benut
 Die Benachrichtigungen, die auf einer Benutzer-ID basieren, sind Benachrichtigungsnachrichten, deren Ziel ein bestimmter Benutzer ist. Viele Geräte können mit einem einzigen Benutzer registriert werden. In den folgenden Schritten wird beschrieben, wie Benachrichtigungen auf Benutzer-ID-Basis gesendet werden.
 
 1. Wählen Sie in der **Push Notifications**-Konsole die Option **Benachrichtigung senden** aus.
-1. Wählen Sie die **Benutzer-ID** in der Liste der Optionen **Senden an** aus.
-1. Suchen Sie im Feld **Benutzer-ID** nach der Benutzer-ID, die Sie verwenden möchten, und klicken Sie anschließend auf **Hinzufügen**.![Notifications Screen](images/user_notification.jpg)
-1. Geben Sie im Feld **Nachricht** den Text ein, den Sie in Ihrer Benachrichtigung senden möchten.
-1. Klicken Sie auf **Senden**.
+2. Wählen Sie die **Benutzer-ID** in der Liste der Optionen **Senden an** aus.
+3. Suchen Sie im Feld **Benutzer-ID** nach der Benutzer-ID, die Sie verwenden möchten, und klicken Sie anschließend auf **Hinzufügen**.![Anzeige 'Benachrichtigungen'](images/user_notification.jpg "Push Notification-Konsole mit der Schaltfläche 'Hinzufügen' für das Feld 'Benutzer-ID'")
+4. Geben Sie im Feld **Nachricht** den Text ein, den Sie in Ihrer Benachrichtigung senden möchten.
+5. Klicken Sie auf **Senden**.
 
 
 ## Benutzeranmeldung/-abmeldung synchronisieren 

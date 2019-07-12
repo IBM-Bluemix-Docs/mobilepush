@@ -1,7 +1,12 @@
 ---
 
 copyright:
- years: 2015, 2017
+  years: 2015, 2019
+lastupdated: "2019-06-11"
+
+keywords: push notifications, notifications, troubleshooting, service issues
+
+subcollection: mobile-pushnotification
 
 ---
 
@@ -12,13 +17,37 @@ copyright:
 
 # Fehlerbehebung für Probleme beim Service ausführen
 {: #errors}
-Letzte Aktualisierung: 13. Juli 2017
-{: .last-updated}
 
 Dieser Abschnitt enthält eine Anleitung zum Identifizieren und Beheben häufig auftretender Fehlerszenarios, die bei der Verwendung des Push Notifications-Service auftreten können.
 
 ## Häufig auftretende Push Notification-Probleme beheben
 {: #troubleshooting_notification_errors}
+
+### Offenbar verfügen Sie nicht über die Berechtigung, die Instanz zu einer Ressourcengruppe in diesem Konto hinzuzufügen.
+{: #permission_issue}
+
+**Erläuterung**: Der IBM Push Notifications-Service ist jetzt ein Service auf Ressourcencontrollerbasis (RC). Instanzen müssen mit einem Ressourcencontroller erstellt werden. Möglicherweise wird der folgende Fehler angezeigt, wenn sich eine Standardressourcengruppe nicht in Ihrem Konto befindet.
+
+![Berechtigungsproblem](images/RC_error.png "Screenshot mit Berechtigungsfehler")
+
+**Benutzeraktion**: Der Administrator muss eine Ressourcengruppe für den Benutzer erstellen, bevor eine Instanz erstellt wird.
+
+
+### HTTP-Umleitungsstatus 301 'Moved Permanently' beim Zugriff auf den Service
+{: #http_301_redirect}
+
+**Erläuterung**: Dieser Fehler kann auftreten, wenn Sie mit dem `http`-Protokoll auf den Service zugreifen. Der Push-Benachrichtigungsservice setzt voraus, dass die Website über das `https`-Protokoll aufgerufen wird.
+
+**Benutzeraktion**: Es wird empfohlen, dass Sie über das `https`-Protokoll anstelle von `http` auf den Service und die Swagger-API zugreifen.
+
+
+### Eine POST-Anforderung gibt eine GET-Anforderung für denselben Aufruf zurück
+{: #Postman_issue}
+
+**Erläuterung**: Wenn eine Postman-Instanz einen Antwortcode 301 oder 302 für eine POST-Anforderung empfängt, leitet sie automatisch zur GET-Anforderung für denselben Aufruf um. Der Push-Benachrichtigungsservice setzt voraus, dass die Website über das `https`-Protokoll aufgerufen wird und nicht über das `http`-Protokoll.
+
+**Benutzeraktion**: Es wird empfohlen, beim Herstellen der Verbindung zu der Website das `https`-Protokoll im Browser anzugeben.
+
 
 ### Internal server error occurred. Please contact admin. (Internal error code: PUSHD102E)
 {: #troubleshooting_notification_internal}
@@ -49,7 +78,7 @@ Dieser Abschnitt enthält eine Anleitung zum Identifizieren und Beheben häufig 
 
 **Erläuterung**: Der Fehler kann beim Zugriff auf die Berichte auf der Überwachungsseite auftreten. Hierbei handelt es sich um das erwartete Verhalten, wenn die Anzahl der in den letzten 90 Tagen gesendeten Nachrichten sehr hoch ist.
  
-**Benutzeraktion**: Zugriff auf Berichte, die auf der Nachrichten-ID basieren, besteht über REST-APIs. Eine Beschreibung hierzu finden Sie in den Informationen zu "getMessageReport" in der [REST-API-Dokumentation]( https://console.bluemix.net/apidocs/800-push-notifications?&language=shell_curl#getmessagereport).
+**Benutzeraktion**: Zugriff auf Berichte, die auf der Nachrichten-ID basieren, besteht über REST-APIs. Eine Beschreibung hierzu finden Sie in den Informationen zu "getMessageReport" in der [REST-API-Dokumentation](https://cloud.ibm.com/apidocs/push-notifications#api-documentation-for-push-notifications).
 
 
 ### SecurityError: The operation is insecure
@@ -103,8 +132,7 @@ Beispiele für Fehlerantworten:
 ```
 	{
 		"message": "Missing APNs credentials",
-     "docUrl": "https://www.ng.bluemix.net/docs/troubleshoot/errors/mobilepush/index.html#FPWSE0003E",
-     "code":   "FPWSE0003E"
+		"code":   "FPWSE0003E"
 	}
 ```
 		    {: codeblock}
@@ -132,7 +160,7 @@ Weitere Informationen zu einem Fehler finden Sie in der Dokumentation zu dem jew
 
 **Erläuterung**: Die vorausgesetzte Konfiguration für den {{site.data.keyword.mobilepushshort}}-Service ist unvollständig. Sie versuchen möglicherweise, APNs-Berechtigungsnachweise abzurufen, bevor sie konfiguriert sind.
 
-**Benutzeraktion**: Stellen Sie sicher, dass der {{site.data.keyword.mobilepushshort}}-Service mit gültigen Sicherheitszertifikaten für APNs konfiguriert wurde. Weitere Informationen finden Sie in [Berechtigungsnachweise des Benachrichtigungsproviders abrufen![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](push_step_1.html){: new_window}.
+**Benutzeraktion**: Stellen Sie sicher, dass der {{site.data.keyword.mobilepushshort}}-Service mit gültigen Sicherheitszertifikaten für APNs konfiguriert wurde. Weitere Informationen finden Sie in [Berechtigungsnachweise des Benachrichtigungsproviders abrufen![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](/docs/services/mobilepush?topic=mobile-pushnotification-push_step_1){: new_window}.
 
 
 ### FPWSE0004E
@@ -161,7 +189,7 @@ Weitere Informationen zu einem Fehler finden Sie in der Dokumentation zu dem jew
 **Erläuterung**: Der JSON-Hauptteil der Anforderung weist Parameter auf, die vom {{site.data.keyword.mobilepushshort}}-Server nicht interpretiert werden können.
 
 
-**Benutzeraktion**: Stellen Sie sicher, dass für den JSON-Hauptteil in der Anforderung das Format der Anforderung beachtet wird, das der {{site.data.keyword.mobilepushshort}}-Server erwartet. Weitere Informationen finden Sie im Abschnitt [REST-APIs ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://imfpush.{DomainName}/imfpush/){: new_window}.
+**Benutzeraktion**: Stellen Sie sicher, dass für den JSON-Hauptteil in der Anforderung das Format der Anforderung beachtet wird, das der {{site.data.keyword.mobilepushshort}}-Server erwartet. Weitere Informationen finden Sie im Abschnitt [REST-APIs ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://eu-gb.imfpush.cloud.ibm.com/imfpush/){: new_window}.
 
 
 
@@ -171,7 +199,7 @@ Weitere Informationen zu einem Fehler finden Sie in der Dokumentation zu dem jew
 **Erläuterung**: Die Anforderungs-URL weist eine Abfragezeichenfolge mit nicht erkannten Parametern auf. Beispiel: Wenn die Anforderung zum Löschen der Subskription andere Parameter als deviceId und tagName aufweist, kann es zu diesem Fehler kommen.
 
 
-**Benutzeraktion**: Stellen Sie sicher, dass für den JSON-Hauptteil in der Anforderung das Format der Anforderung beachtet wird, das der {{site.data.keyword.mobilepushshort}}-Server erwartet. Weitere Informationen finden Sie im Abschnitt [REST-APIs ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://imfpush.{DomainName}/imfpush/){: new_window}.
+**Benutzeraktion**: Stellen Sie sicher, dass für den JSON-Hauptteil in der Anforderung das Format der Anforderung beachtet wird, das der {{site.data.keyword.mobilepushshort}}-Server erwartet. Weitere Informationen finden Sie im Abschnitt [REST-APIs ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://eu-gb.imfpush.cloud.ibm.com/imfpush/){: new_window}.
 
 
 
@@ -181,7 +209,7 @@ Weitere Informationen zu einem Fehler finden Sie in der Dokumentation zu dem jew
 **Erläuterung**: Die Anforderungs-URL weist eine Abfragezeichenfolge mit fehlenden erforderlichen Parametern auf. Beispiel: Möglicherweise fehlen die Parameter deviceId und tagName in der Anforderung zum Löschen der Subskription.
 
 
-**Benutzeraktion**: Stellen Sie sicher, dass für den JSON-Hauptteil in der Anforderung das Format der Anforderung beachtet wird, das der {{site.data.keyword.mobilepushshort}}-Server erwartet. Weitere Informationen finden Sie im Abschnitt [REST-APIs ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://imfpush.{DomainName}/imfpush/){: new_window}.
+**Benutzeraktion**: Stellen Sie sicher, dass für den JSON-Hauptteil in der Anforderung das Format der Anforderung beachtet wird, das der {{site.data.keyword.mobilepushshort}}-Server erwartet. Weitere Informationen finden Sie im Abschnitt [REST-APIs ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://eu-gb.imfpush.cloud.ibm.com/imfpush/){: new_window}.
 
 
 

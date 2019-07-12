@@ -1,7 +1,12 @@
 ---
 
 copyright:
- years: 2015, 2017
+  years: 2015, 2019
+lastupdated: "2019-06-06"
+
+keywords: push notifications, notifications, message delivery status
+
+subcollection: mobile-pushnotification
 
 ---
 
@@ -11,10 +16,7 @@ copyright:
 {:codeblock:.codeblock}
 
 # Nachrichtenübermittlungsstatus
-{: #tag_based_notifications}
-Letzte Aktualisierung: 21. August 2017
-{: .last-updated}
-
+{: #message-delivery-status}
 
 Mit dem {{site.data.keyword.mobilepushshort}}-Service können Sie den Übermittlungsstatus jeder Benachrichtigung anzeigen, die an den Service übergeben wurde. 
 
@@ -22,7 +24,7 @@ Nach dem Absenden einer Nachricht können Sie die Zustellinformationen der Nachr
 
 Auf der Registerkarte **Nachrichten** des {{site.data.keyword.mobilepushshort}}-Service wird der Benachrichtigungsstatus angezeigt.
 
-![Benachrichtigungsstatus](images/notification_status_new.png)
+![Benachrichtigungsstatus](images/notification_status_new.png "Seite 'Nachrichten' mit Benachrichtigungsstatus")
 
 1. **Nachrichten-ID** - Eindeutige ID zur Identifizierung einer Nachricht.
 
@@ -48,12 +50,11 @@ Auf der Registerkarte **Nachrichten** des {{site.data.keyword.mobilepushshort}}-
  
  - Nachrichtenstatus: Gesendet (SENT), Gesehen (SEEN), Geöffnet (OPEN) und Ungültig (INVALID). 
 
-![Benachrichtigungsstatus](images/message_delivery_status_new.png)
+![Benachrichtigungsstatus](images/message_delivery_status_new.png "Nachrichtenstatusdiagramm mit Aufgliederung nach Status OPEN, SENT, SEEN und INVALID")
 
 6. **Optionen** - Zeigt einen detaillierten Status einer Benachrichtigung an. Zur Verfolgung des Status kann entweder die `Geräte-ID` oder die `Benutzer-ID` im Dropdown-Menü ausgewählt werden. Eine detaillierte benutzer- oder gerätespezifische Statusnachricht kann bei der Verfolgung einer fehlgeschlagenen Nachricht nützlich sein.
 
-![Detaillierter Status](images/detailed_message_delivery.png)
+![Detaillierter Status](images/detailed_message_delivery.png "Optionen für 'Detaillierten Übermittlungsstatus von Nachrichten' mit ausgewählter Benutzer-ID")
 
-**Hinweis**: Das Feature ist nur für Benutzer aktiviert, die den `Erweiterten Plan` ausgewählt haben. Wählen Sie **Plan** in der {{site.data.keyword.mobilepushshort}}-Servicekonsole aus, um ein [Upgrade](https://console-tok02-red.cdn.s-bluemix.net/docs/account/change-plan.html#changing) durchzuführen.
-
+**Hinweis**: Das Feature ist nur für Benutzer aktiviert, die den `Erweiterten Plan` ausgewählt haben. Wählen Sie **Plan** in der {{site.data.keyword.mobilepushshort}}-Servicekonsole aus, um ein [Upgrade](https://cloud.ibm.com/docs/account?topic=account-changing#changing) durchzuführen.
 

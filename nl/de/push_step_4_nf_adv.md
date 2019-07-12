@@ -1,7 +1,12 @@
 ---
 
 copyright:
- years: 2015, 2017
+  years: 2015, 2017, 2019
+lastupdated: "2019-06-06"
+
+keywords: push notifications, notifications, configure sound, payload, ios badge, holding android notification
+
+subcollection: mobile-pushnotification
 
 ---
 
@@ -11,8 +16,6 @@ copyright:
 {:codeblock:.codeblock}
 
 #Erweiterte Push-Benachrichtigungen aktivieren
-Letzte Aktualisierung: 01. Juni 2017
-{: .last-updated}
 
 Konfigurieren Sie ein iOS Badge, zusätzliche JSON-Nutzdaten, umsetzbare Benachrichtigungen und Blockierungsnachrichten.
 
@@ -28,27 +31,27 @@ Konfigurieren Sie ein iOS Badge, eine Audiodatei und zusätzliche JSON-Nutzdaten
 3. Wählen Sie eine der folgenden Optionen aus:	
 	- Unter Android
 
- 	Fügen Sie die Audiodatei zum Verzeichnis `res/raw` der Android-Anwendung hinzu. Fügen Sie beim Senden einer Benachrichtigung den Namen der Audiodatei zum entsprechenden Feld für {{site.data.keyword.mobilepushshort}} hinzu:
+     	Fügen Sie die Audiodatei zum Verzeichnis `res/raw` der Android-Anwendung hinzu. Fügen Sie beim Senden einer Benachrichtigung den Namen der Audiodatei zum entsprechenden Feld für {{site.data.keyword.mobilepushshort}} hinzu:
 
-	```
-	"settings": {
+    	```
+    	"settings": {
      "gcm" : {
      "sound":"tt.wav",
 	  }
 		}  
-	```	
-	{: codeblock}	
+    	```	
+    	{: codeblock}	
 	
 	- Unter iOS
 
-	```
-	"settings": {
+    	```
+    	"settings": {
 	     "apns" : {
 	      "badge": 10,
 	      "sound": "tt.wav",
 	  }
 	}
-	``` 
+    	``` 
 		{: codeblock}
 		
 **Zusätzliche Nutzdaten** - Diese Nutzdaten können ein beliebiges Schlüssel/Wert-Paar sein; es muss sich jedoch um ein JSON-Objekt handeln, das Sie mit der Push-Benachrichtigung senden möchten.

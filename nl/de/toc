@@ -2,11 +2,11 @@
 {: navgroup: .navgroup}
 {: topicgroup: .topicgroup}
 
-{: .toc subcollection="mobile-pushnotification" audience="service" arm="358" href="/docs/services/mobilepush/index.html" path="services/mobilepush"}
+{: .toc subcollection="mobile-pushnotification" category="mobile" audience="service" arm="358" href="/docs/services/mobilepush?topic=mobilepush-getting-started#getting-started" path="services/mobilepush"}
 Push Notifications
 
     {: .navgroup id="learn"}
-    c_overview_push.md
+    getting-started.md
     index.md
     developer-overview.md	
     
@@ -17,21 +17,34 @@ Push Notifications
         push_step_2.md
         push_step_3.md
         push_step_4.md	
-    {: .navgroup-end}
+
+	{: .topicgroup}
+    Lernprogramme
+        [Swift-App mit Push und Analytics](https://cloud.ibm.com/docs/tutorials?topic=solution-tutorials-ios-mobile-push-analytics#ios-mobile-application-with-push-and-analytics)
+        [Android-App mit Push und Analytics](https://cloud.ibm.com/docs/tutorials?topic=solution-tutorials-android-mobile-push-analytics#android-native-mobile-application-with-push-and-analytics)	
+        [Hybrid-App mit Push und Analytics](https://cloud.ibm.com/docs/tutorials?topic=solution-tutorials-hybrid-mobile-push-analytics#hybrid-mobile-application-with-push-and-analytics)		
+	{: .navgroup-end}
     
     {: .navgroup id="howto"}
+    push_security.md
+
     {: .topicgroup}
     Benachrichtigungsoptionen aktivieren
-        push_security.md
         push_step_4_nf_tag.md
         push_step_4_nf_user.md
         push_step_4_nf_interactive.md
         push_step_4_nf_rich.md
-        push_step_4_nf_adv.md
+    	push_step_4_nf_adv.md
+
+    {: .topicgroup}
+    Benachrichtigungen überwachen
         push_monitoring.md	
         push_message_status.md
         push_template_message.md
         push_webhook.md
+
+    push_iam.md
+    push_openwisk.md	
     {: .navgroup-end}
 
     {: .navgroup id="help"}
@@ -47,18 +60,12 @@ Push Notifications
 	
     {: .navgroup id="reference"}
     release-notes.md
-    app_api.md	
     sample-apps.md
-    install-sdk.md
+    push_activity_tracker.md
+    push-compliance.md
 	
     {: .topicgroup}
-    Lernprogramme
-        [Swift-App mit Push und Analytics](https://console.bluemix.net/docs/tutorials/ios-mobile-push-analytics.html#ios-mobile-application-with-push-and-analytics)
-        [Android-App mit Push und Analytics](https://console.bluemix.net/docs/tutorials/android-mobile-push-analytics.html#android-native-mobile-application-with-push-and-analytics)	
-        [Hybrid-App mit Push und Analytics](https://console.bluemix.net/docs/tutorials/hybrid-mobile-push-analytics.html#hybrid-mobile-application-with-push-and-analytics)		
+    APIs und SDKs
+        app_api.md
+        install-sdk.md	
     {: .navgroup-end}
-
-    
-
-        
-    
