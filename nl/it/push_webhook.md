@@ -1,7 +1,12 @@
 ---
 
 copyright:
- years: 2015, 2017
+  years: 2015, 2017, 2019
+lastupdated: "2019-06-06"
+
+keywords: push notifications, notifications, receive alerts, webhook events
+
+subcollection: mobile-pushnotification
 
 ---
 
@@ -12,9 +17,6 @@ copyright:
 
 # Ricezione di avvisi sugli eventi webhook
 {: #webhook_event_based_notifications}
-Ultimo aggiornamento: 8 settembre 2017
-{: .last-updated}
-
 
 Con il servizio {{site.data.keyword.mobilepushshort}}, puoi scegliere di ricevere avvisi relativi alle modifiche apportate alle informazioni. Le modifiche alle informazioni aziendali creano degli eventi, per i quali puoi ricevere una notifica registrandoli come eventi webhook. Questi eventi webhook attivano un avviso. 
 
@@ -31,7 +33,7 @@ I webhook sono dei callback definiti dall'utente che vengono attivati da un even
 **Nota**: gli invii delle notifiche vengono effettuati in batch. L'invio di un messaggio può avere più eventi webhook, che possono includere sia errori che esiti positivi. 
 Gli eventi webhook hanno lo stesso messageID del messaggio inviato. 
 
-Per ulteriori informazioni sui webhook, vedi [IBM Push Notifications REST API ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://console.bluemix.net/apidocs/800-push-notifications){: new_window}.
+Per ulteriori informazioni sui webhook, vedi [IBM Push Notifications REST API ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://cloud.ibm.com/apidocs/push-notifications){: new_window}.
 
 ## Ricezione di avvisi sugli eventi webhook
 {: #webhook_alert_event}

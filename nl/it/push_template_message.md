@@ -1,7 +1,12 @@
 ---
 
 copyright:
- years: 2015, 2017
+  years: 2015, 2019
+lastupdated: "2019-06-06"
+
+keywords: push notifications, notifications, parameterize notification
+
+subcollection: mobile-pushnotification
 
 ---
 
@@ -12,8 +17,6 @@ copyright:
 
 # Imposta parametri notifiche
 {: #template_based_notifications}
-Ultimo aggiornamento: 21 agosto 2017
-{: .last-updated}
 
 Puoi impostare i parametri ed inviare notifiche personalizzate creando variabili e richiamandole nei tuoi template di notifica.
 
@@ -54,29 +57,23 @@ Passa le variabili come oggetti JSON nel tuo codice dell'applicazione durante l'
 
 Una volta che sono state definite le variabili, possono essere richiamate nel tuo template del messaggio.
 
-1. Nella console {{site.data.keyword.mobilepushshort}}, seleziona la scheda **Messages**. 
+1. Nella console {{site.data.keyword.mobilepushshort}}, seleziona la scheda **Messages**.
 
 2. Componi un messaggio scegliendo l'opzione **Send to**.
 
-2. Nel campo **Message**, componi il messaggio.  Richiama le variabili nel template del messaggio. Fai clic su **Send**.
+3. Nel campo **Message**, componi il messaggio.  Richiama le variabili nel template del messaggio. Fai clic su **Send**.
 
-![template messaggio](images/message_template.png)
+![message template](images/message_template.png "Pagina Message che mostra un modello di messaggio con Sent to field impostato su All devices, il campo Message con un messaggio di esempio del saldo del conto bancario di un utente e il campo Additional payload con l'attributo "key":"value" aggiunto.")
 
 Il tuo messaggio di notifica personalizzato sarà inviato recuperando i dati della variabile -
 
-![esempio messaggio](images/message_template_example.jpg)
+![esempio di messaggio](images/message_template_example.jpg "Notifica di esempio basata su modello di messaggio")
 
-Nota: la funzione è abilitata solo per gli utenti che hanno scelto il `Advanced Plan`. Seleziona **Plan** nella console del servizio {{site.data.keyword.mobilepushshort}} per l'[upgrade](https://console-tok02-red.cdn.s-bluemix.net/docs/account/change-plan.html#changing) .
+Nota: la funzione è abilitata solo per gli utenti che hanno scelto il `Advanced Plan`. Seleziona **Plan** nella console del servizio {{site.data.keyword.mobilepushshort}} per l'[upgrade](https://cloud.ibm.com/docs/account?topic=account-changing#changing) .
 
-**Limitazioni:**
+## Limitazioni
+{: #limitations}
 
  - Al momento, questa funzione non è supportata su Safari
  - Le variabili nel template di notifica non funzionano se è stata forzata l'uscita di un'applicazione su iOS. La limitazione non è sotto il controllo della SDK ma viene da iOS.
-
-
-
-
-
-
-
 

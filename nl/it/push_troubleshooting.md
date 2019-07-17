@@ -1,7 +1,12 @@
 ---
 
 copyright:
- years: 2015, 2017
+  years: 2015, 2019
+lastupdated: "2019-06-11"
+
+keywords: push notifications, notifications, troubleshooting, service issues
+
+subcollection: mobile-pushnotification
 
 ---
 
@@ -12,13 +17,37 @@ copyright:
 
 # Risoluzione dei problemi del servizio
 {: #errors}
-Ultimo aggiornamento: 13 luglio 2017
-{: .last-updated}
 
 Questo argomento ti guida nell'identificazione e nella risoluzione dei possibili scenari di errore che potrebbero verificarsi durante l'utilizzo del servizio Push Notifications.
 
 ## Risoluzione dei problemi comuni delle notifiche di push
 {: #troubleshooting_notification_errors}
+
+### Non disponi dell'autorizzazione per aggiungere l'istanza ad alcun gruppo di risorse nell'account
+{: #permission_issue}
+
+**Spiegazione**: il servizio IBM Push Notifications è ora un servizio basato sul controller delle risorse (RC). Le istanze dovrebbero essere create tramite un RC. Potresti notare il seguente errore se un gruppo di risorse predefinito non si trova nel tuo account.
+
+![Problema di autorizzazione](images/RC_error.png "Schermata che mostra l'errore di autorizzazione")
+
+**Risposta utente**:  l'amministratore deve creare un gruppo di risorse per l'utente prima di creare l'istanza.
+
+
+### Il codice di risposta HyperText Transfer Protocol (HTTP) 301 Moved Permanently reindirizza lo stato durante l'accesso al servizio
+{: #http_301_redirect}
+
+**Spiegazione**: questo errore potrebbe verificarsi se stai accedendo al servizio utilizzando il protocollo `http`. Il servizio Push Notification richiede che al sito web si acceda con il protocollo `https`.
+
+**Risposta utente**: ti consigliamo di accedere al servizio e all'API Swagger tramite il protocollo `https`, invece di `http`.
+
+
+### Una richiesta POST restituisce una richiesta GET per la stessa chiamata
+{: #Postman_issue}
+
+**Spiegazione**: se un Postman riceve un codice di risposta 301 o 302 per una richiesta POST, esegue il reindirizzamento automatico alla richiesta GET per la stessa chiamata. Il servizio Push notifications richiede che al sito web si acceda con il protocollo `https`, invece di `http`.
+
+**Risposta utente**: si consiglia di provare a connettersi al sito web utilizzando il protocollo `https` dal browser.
+
 
 ### Si è verificato un errore server interno. Per favore contatta l'amministratore. (Codice errore interno: PUSHD102E)
 {: #troubleshooting_notification_internal}
@@ -49,7 +78,7 @@ Questo argomento ti guida nell'identificazione e nella risoluzione dei possibili
 
 **Spiegazione**: gli utenti possono riscontrare l'errore mentre accedono ai report nella pagina di monitoraggio. Questo è un comportamento previsto quando il numero di messaggi inviati è molto grande negli ultimi 90 giorni.
  
-**Risposta utente**: è possibile accedere al messageId basato sui report tramite le API REST. Fai riferimento a "getMessageReport" in [REST API docs]( https://console.bluemix.net/apidocs/800-push-notifications?&language=shell_curl#getmessagereport) .
+**Risposta utente**: è possibile accedere al messageId basato sui report tramite le API REST. Fai riferimento a "getMessageReport" in [REST API docs](https://cloud.ibm.com/apidocs/push-notifications#api-documentation-for-push-notifications) .
 
 
 ### SecurityError: l'operazione non è sicura
@@ -103,8 +132,7 @@ Esempio di risposta di errore:
 ```
 	{
 		"message": "Missing APNs credentials",
-     "docUrl": "https://www.ng.bluemix.net/docs/troubleshoot/errors/mobilepush/index.html#FPWSE0003E",
-     "code":   "FPWSE0003E"
+		"code":   "FPWSE0003E"
 	}
 ```
 		    {: codeblock}
@@ -135,7 +163,7 @@ Per ottenere ulteriori informazioni su un errore, cerca il relativo codice di er
         di richiamare le credenziali del servizio APNS (Apple Push Notification Service) prima della loro
         configurazione.
 
-**Risposta utente**: assicurati che il servizio {{site.data.keyword.mobilepushshort}} sia stato configurato con certificati di sicurezza validi per APNs. Per ulteriori informazioni, vedi [Ottenimento delle tue credenziali del provider di notifica![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](push_step_1.html){: new_window}.
+**Risposta utente**: assicurati che il servizio {{site.data.keyword.mobilepushshort}} sia stato configurato con certificati di sicurezza validi per APNs. Per ulteriori informazioni, vedi [Ottenimento delle tue credenziali del provider di notifica![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](/docs/services/mobilepush?topic=mobile-pushnotification-push_step_1){: new_window}.
 
 
 ### FPWSE0004E
@@ -165,7 +193,7 @@ Per ottenere ulteriori informazioni su un errore, cerca il relativo codice di er
 **Spiegazione**: il corpo JSON della richiesta contiene dei parametri non riconosciuti dal server {{site.data.keyword.mobilepushshort}}.
 
 
-**Risposta utente**: verifica che il corpo JSON nella richiesta rispetti il formato della richiesta previsto dal server {{site.data.keyword.mobilepushshort}}. Per ulteriori informazioni, vedi [API REST![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://imfpush.{DomainName}/imfpush/){: new_window}.
+**Risposta utente**: verifica che il corpo JSON nella richiesta rispetti il formato della richiesta previsto dal server {{site.data.keyword.mobilepushshort}}. Per ulteriori informazioni, vedi [API REST![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://eu-gb.imfpush.cloud.ibm.com/imfpush/){: new_window}.
 
 
 
@@ -175,7 +203,7 @@ Per ottenere ulteriori informazioni su un errore, cerca il relativo codice di er
 **Spiegazione**: l'URL della richiesta ha una stringa di query con parametri non riconosciuti. Ad esempio, se la richiesta di eliminazione della sottoscrizione ha parametri diversi da deviceId e tagName, si potrebbe verificare questo errore.
 
 
-**Risposta utente**: verifica che il corpo JSON nella richiesta rispetti il formato della richiesta previsto dal server {{site.data.keyword.mobilepushshort}}. Per ulteriori informazioni, vedi [API REST![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://imfpush.{DomainName}/imfpush/){: new_window}.
+**Risposta utente**: verifica che il corpo JSON nella richiesta rispetti il formato della richiesta previsto dal server {{site.data.keyword.mobilepushshort}}. Per ulteriori informazioni, vedi [API REST![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://eu-gb.imfpush.cloud.ibm.com/imfpush/){: new_window}.
 
 
 
@@ -185,7 +213,7 @@ Per ottenere ulteriori informazioni su un errore, cerca il relativo codice di er
 **Spiegazione **: l'URL della richiesta ha una stringa di query in cui mancano dei parametri richiesti. Ad esempio, i parametri deviceId e tagName potrebbero non essere presenti nella richiesta di eliminazione della sottoscrizione.
 
 
-**Risposta utente**: verifica che il corpo JSON nella richiesta rispetti il formato della richiesta previsto dal server {{site.data.keyword.mobilepushshort}}. Per ulteriori informazioni, vedi [API REST![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://imfpush.{DomainName}/imfpush/){: new_window}.
+**Risposta utente**: verifica che il corpo JSON nella richiesta rispetti il formato della richiesta previsto dal server {{site.data.keyword.mobilepushshort}}. Per ulteriori informazioni, vedi [API REST![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://eu-gb.imfpush.cloud.ibm.com/imfpush/){: new_window}.
 
 
 

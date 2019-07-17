@@ -1,7 +1,12 @@
 ---
 
 copyright:
- years: 2015, 2017
+  years: 2015, 2017, 2019
+lastupdated: "2019-06-06"
+
+keywords: push notifications, notifications, sending a notification
+
+subcollection: mobile-pushnotification
 
 ---
 
@@ -12,18 +17,15 @@ copyright:
 
 # Passo 5: invio di una notifica
 {: #push_step_4}
-Ultimo aggiornamento: 27 giugno 2017
-{: .last-updated}
-
 
 Dopo che hai sviluppato le tue applicazioni, puoi inviare delle notifiche di push di base.
 
 Per inviare notifiche di push di base, completa la seguente procedura:
 
-1. Seleziona **Send Notifications** e componi un messaggio scegliendo l'opzione **Send to**. Le opzioni supportate sono **Device by Tag**, **Device Id**, **User Id**, **Android devices**, **iOS devices**, **Web Notifications** e **All Devices**.
+1. Seleziona **Messages** e componi un messaggio scegliendo l'opzione **Send to**. Le opzioni supportate sono **Device by Tag**, **Device Id**, **User Id**, **Android devices**, **iOS devices**, **Web Notifications**, **Chrome Apps and Extensions**, **Chrome Browser**, **Firefox**, **Safari** e **All Devices**.
 **Nota**: quando selezioni l'opzione **All Devices**, tutti i dispositivi sottoscritti a {{site.data.keyword.mobilepushshort}} riceveranno le notifiche.
 	
-	![Schermata notifiche](images/tag_notification.jpg)
+    ![Schermata Notifications](images/tag_notification.jpg "Schermata Send notifications che mostra i campi Send to, Message e Additional payload")
 
 2. Nel campo **Message**, componi il messaggio. Scegli di configurare le impostazioni facoltative come richiesto.
 3. Fai clic su **Send**.
@@ -31,17 +33,19 @@ Per inviare notifiche di push di base, completa la seguente procedura:
 
 Il seguente screenshot mostra una casella di avviso che gestisce una notifica push
 in primo piano su un dispositivo Android.
-	![Notifica push in primo piano su Android](images/Android_Screenshot.jpg)
+
+![Notifica push in primo piano su Android](images/Android_Screenshot.jpg "Casella Alert con notifica di testo")
 
 Il seguente screenshot mostra una notifica push in background per Android.
-	![Notifica push in background su Android](images/background.jpg)
+
+![Notifica push in background su Android](images/background.jpg "Notifica push su un dispositivo Android")
 
 ## Impostazioni Android facoltative 
 {: #push_step_4_Android}
 
 Puoi anche personalizzare le impostazioni di {{site.data.keyword.mobilepushshort}} per inviare le notifiche ai dispositivi Android. 
 
-![Impostazioni personalizzate Android](images/android_custom_settings.jpg)
+![Impostazioni personalizzate Android](images/android_custom_settings.jpg "Pagina Push notifications custom settings")
 
 Sono supportate le seguenti opzioni di personalizzazione facoltative:
 

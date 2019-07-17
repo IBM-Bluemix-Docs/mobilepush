@@ -1,7 +1,12 @@
 ---
 
 copyright:
- years: 2015, 2017
+  years: 2015, 2017, 2019
+lastupdated: "2019-06-06"
+
+keywords: push notifications, notifications, service instance, cordova application
+
+subcollection: mobile-pushnotification
 
 ---
 
@@ -12,17 +17,13 @@ copyright:
 
 # Passo 3: configura un'istanza del servizio 
 {: #push_step_2}
-Ultimo aggiornamento: 27 giugno 2017
-{: .last-updated}
 
-Assicurati di aver consultato [Ottieni le tue credenziali di notifica](push_step_1.html).
-
+Assicurati di aver consultato [Ottieni le tue credenziali di notifica](/docs/services/mobilepush?topic=mobile-pushnotification-push_step_1).
 
 ## Per le estensioni e applicazioni Chrome e Android
 {: #push_step_2_Android}
 
-
-Assicurati di aver consultato [Ottieni le tue credenziali del provider della notifica](push_step_1.html) per configurare il progetto FCM e ottenere le tue credenziali.
+Assicurati di aver consultato [Ottieni le tue credenziali del provider della notifica](/docs/services/mobilepush?topic=mobile-pushnotification-push_step_1) per configurare il progetto FCM e ottenere le tue credenziali.
 
 Per configurare le credenziali FCM per le applicazioni Android e per le estensioni e applicazioni Chrome, completa le seguenti istruzioni:
 
@@ -33,7 +34,7 @@ Per configurare le credenziali FCM per le applicazioni Android e per le estensio
 	- Per le estensioni e applicazioni Google Chrome: seleziona **Web** e quindi aggiorna la scheda delle estensioni e applicazioni Chrome con l'ID mittente/Numero progetto e la chiave API. 
 4. Fai clic su **Save**. Il servizio Push Notifications è ora configurato.
 
-Il tuo prossimo passo è di [configurare l'SDK client del servizio Push](push_step_3.html).
+Il tuo prossimo passo è di [configurare l'SDK client del servizio Push](/docs/services/mobilepush?topic=mobile-pushnotification-push_step_3).
 
 
 ## Per le applicazioni Cordova 
@@ -50,7 +51,7 @@ Per abilitare le applicazioni Cordova alla ricezione delle notifiche push per i 
 {: #enable-push-ios-notifications}
 
 
-Per utilizzare il servizio {{site.data.keyword.mobilepushshort}} per inviare notifiche, carica i certificati `.p12` che hai creato nel passo 1:[Ottieni le tue credenziali del provider della notifica](push_step_1.html). Questo certificato contiene la chiave privata e SSL richiesti per creare e pubblicare la tua applicazione. Puoi inoltre utilizzare l'API REST per caricare un certificato APNS.
+Per utilizzare il servizio {{site.data.keyword.mobilepushshort}} per inviare notifiche, carica i certificati `.p12` che hai creato nel passo 1:[Ottieni le tue credenziali del provider della notifica](/docs/services/mobilepush?topic=mobile-pushnotification-push_step_1). Questo certificato contiene la chiave privata e SSL richiesti per creare e pubblicare la tua applicazione. Puoi inoltre utilizzare l'API REST per caricare un certificato APNS.
 
 **Nota**: dopo che il file `.cer` è presente nel tuo accesso alla catena di chiavi, eseguine l'esportazione sul tuo computer per creare un certificato `.p12`.
 
@@ -63,7 +64,7 @@ Per configurare APNS sulla console dei servizi Push Notification, completa la pr
 3. Scegli una delle seguenti opzioni:
 	- Per l'opzione **Mobile**
 		1. Seleziona **Sandbox** (sviluppo) o **Production** (distribuzione) come appropriato e quindi carica il certificato `p.12` che hai creato.
-		  ![Configura la console di Push notifications](images/wizard.jpg)
+		  ![Configura la console Push Notifications](images/wizard.jpg "Console Push Notifications con l'opzione Configure navigation selezionata che mostra la scheda Mobile le credenziali di push APN")
 
 		1. Nel campo **Password**, immetti la password associata al file di certificato `.p12` e quindi fai clic su **Save**.
 	- Per l'opzione **Web**
@@ -75,9 +76,9 @@ Per configurare APNS sulla console dei servizi Push Notification, completa la pr
 		- **URL Format String**: l'URL da risolvere quando si fa clic sulla notifica. Ad esempio, ["https://www.acmebanks.com"]. Assicurati che l'URL utilizzi lo schema http o https.
 		-**Safari web push certificate**: carica il certificato .p12 e fornisci la password.
 4. Fai clic su **Save**.	
-![Console Push Notifications](images/push_configure_safari.jpg)	
+![Console Push Notifications](images/push_configure_safari.jpg "Campi della pagina dell'opzione web")	
 
-Dopo aver configurato il servizio per le applicazioni iOS, devi [Configurare l'SDK client del servizio Push](push_step_3.html).
+Dopo aver configurato il servizio per le applicazioni iOS, devi [Configurare l'SDK client del servizio Push](/docs/services/mobilepush?topic=mobile-pushnotification-push_step_3).
 
 
 ## Per i browser Chrome e Firefox 
@@ -85,7 +86,9 @@ Dopo aver configurato il servizio per le applicazioni iOS, devi [Configurare l'S
 
 1. Nella console di Push Notifications, seleziona **Configure**.
 2. Seleziona la scheda Web.
-	![Configurazioni WebPush](images/webpush_configure.jpg)
+	![Configurazioni WebPush](images/webpush_configure.jpg "Finestra Web Push Configuration per la definizione dell'URL e della chiave API FCM del tuo sito web")
 3. Configura la chiave API FCM e l'URL del tuo sito web che sarà registrato per ricevere le notifiche push.
 4. Fai clic su **Save**.
-5. Dopo aver configurato il servizio, devi [Configurare l'SDK client del servizio Push](push_step_3.html).
+5. Dopo aver configurato il servizio, devi [Configurare l'SDK client del servizio Push](/docs/services/mobilepush?topic=mobile-pushnotification-push_step_3).
+
+

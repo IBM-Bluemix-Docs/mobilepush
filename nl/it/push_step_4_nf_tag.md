@@ -1,7 +1,12 @@
 ---
 
 copyright:
- years: 2015, 2017
+  years: 2015, 2019
+lastupdated: "2019-06-06"
+
+keywords: push notifications, notifications, tag-based, creating tags, managing tags, get tag, subscribe tag
+
+subcollection: mobile-pushnotification
 
 ---
 
@@ -12,8 +17,6 @@ copyright:
 
 # Notifiche basate sulle tag
 {: #tag_based_notifications}
-Ultimo aggiornamento: 13 luglio 2017
-{: .last-updated}
 
 Le notifiche basate sulle tag sono messaggi destinati a tutti i dispositivi sottoscritti a una particolare tag. Le notifiche basate sulle tag
                         consentono la segmentazione di notifiche sulla base di argomenti o di aree
@@ -24,7 +27,7 @@ Le notifiche basate sulle tag sono messaggi destinati a tutti i dispositivi sott
                         base alle tag. Un messaggio viene indirizzato solo alle istanze dell'applicazione client (mobili, browser o come un'applicazione o estensioni) sottoscritte a una tag. Devi prima creare le tag per l'applicazione, impostare le sottoscrizioni di tag e iniziare quindi le notifiche basate sulle tag. Per inviare una notifica basata sulle tag che utilizza la API REST, assicurati che i "tagName" siano forniti all'inserimento nella risorsa messaggi.
 
 Puoi definire le tag e quindi utilizzarle per
-                        inviare e ricevere messaggi. Devi prima creare le tag per l'applicazione, creare le sottoscrizioni di tag e iniziare quindi le notifiche basate sulle tag. Per inviare una notifica basata sulle tag utilizzando la [API REST](https://imfpush.{DomainName}/imfpush/){: new_window}, assicurati che i "tagName" siano forniti durante l'inserimento nella risorsa messaggi.
+                        inviare e ricevere messaggi. Devi prima creare le tag per l'applicazione, creare le sottoscrizioni di tag e iniziare quindi le notifiche basate sulle tag. Per inviare una notifica basata sulle tag utilizzando la [API REST](https://eu-gb.imfpush.cloud.ibm.com/imfpush/){: new_window}, assicurati che i "tagName" siano forniti durante l'inserimento nella risorsa messaggi.
 
 
 ## Gestione delle tag
@@ -96,11 +99,12 @@ Utilizza la seguente API per consentire ai tuoi dispositivi di richiamare tag, s
 
 Le notifiche basate sulle tag sono messaggi destinati a tutti i dispositivi sottoscritti a una particolare tag. Ciascun dispositivo può essere sottoscritto a un qualsiasi numero di tag. Questo argomento descrive come inviare notifiche basate sulle tag. Le sottoscrizioni vengono gestite dall'istanza IBM Cloud del servizio {{site.data.keyword.mobilepushshort}}. Quando viene eliminata una tag, vengono eliminate anche tutte le informazioni associate con tale tag, inclusi i relativi sottoscrittori e dispositivi. Non è necessario un annullamento della sottoscrizione automatico per questa tag poiché non esiste più e non sono richieste ulteriori azioni dal lato client.
 
-Crea le tag sulla schermata **Tag**. Per informazioni su come creare le tag, vedi [Creazione di tag](t_manage_tags.html).
+Crea le tag sulla schermata **Tag**. Per informazioni su come creare le tag, vedi [Creazione di tag](/docs/services/mobilepush?topic=mobile-pushnotification-tag_based_notifications#create_tags).
 
-1. Dalla console **Push Notification**, fai clic su **Send Notifications**.
-1. Seleziona l'opzione **Device by Tag** nell'elenco a discesa **Send To**.
-1. Cerca le tag che vuoi utilizzare e selezionale.
-![Schermata notifiche](images/tag_notification.jpg)
-1. Nel campo **Message Text**, immetti il testo che deve essere inviato come notifica ai destinatari sottoscritti.
-1. Fai clic su **Send**.
+1. Dalla console **Push Notification**, fai clic su **Messages**.
+2. Seleziona l'opzione **Device by Tag** nell'elenco a discesa **Send To**.
+3. Cerca le tag che vuoi utilizzare e selezionale.
+![Schermata Notifications](images/tag_notification_new2.jpg "Console Push Notifications con l'opzione Messages navigation selezionata che mostra la pagina Send notifications. Send to field impostato su Device by Tag.")
+4. Nel campo **Message Text**, immetti il testo che deve essere inviato come notifica ai destinatari sottoscritti.
+5. Fai clic su **Send**.
+

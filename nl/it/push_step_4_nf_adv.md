@@ -1,7 +1,12 @@
 ---
 
 copyright:
- years: 2015, 2017
+  years: 2015, 2017, 2019
+lastupdated: "2019-06-06"
+
+keywords: push notifications, notifications, configure sound, payload, ios badge, holding android notification
+
+subcollection: mobile-pushnotification
 
 ---
 
@@ -11,8 +16,6 @@ copyright:
 {:codeblock:.codeblock}
 
 #Abilitazione delle notifiche di push avanzate
-Ultimo aggiornamento: 01 giugno 2017
-{: .last-updated}
 
 Configura un badge iOS, audio, payload JSON aggiuntivo, notifiche operative e notifiche messe in pausa.
 
@@ -32,27 +35,27 @@ Configura un badge, l'audio e del payload JSON aggiuntivo iOS.
 3. Scegli una delle seguenti opzioni:	
 	- Su Android
 
- 	Aggiungi il file audio nella directory `res/raw` della tua applicazione android. Mentre invii le notifiche aggiungi il nome del file audio nel campo audio di {{site.data.keyword.mobilepushshort}}:
+     	Aggiungi il file audio nella directory `res/raw` della tua applicazione android. Mentre invii le notifiche aggiungi il nome del file audio nel campo audio di {{site.data.keyword.mobilepushshort}}:
 
-	```
-	"settings": {
-     "gcm" : {
-     "sound":"tt.wav",
+    	```
+    	"settings": {
+         "gcm" : {
+         "sound":"tt.wav",
 	  }
-		}  
-	```	
-	{: codeblock}	
+    		}  
+    	```	
+    	{: codeblock}	
 	
 	- Su iOS
 
-	```
-	"settings": {
-	     "apns" : {
-	      "badge": 10,
+    	```
+    	"settings": {
+    	     "apns" : {
+    	      "badge": 10,
 	      "sound": "tt.wav",
 	  }
-	}
-	``` 
+    	}
+    	``` 
 		{: codeblock}
 		
 **Additional Payload** - This payload can be any key-value pair and must be a JSON object that you want to send with th**Additional Payload** - questo payload può essere qualsiasi coppia chiave-valore e deve essere un oggetto JSON che vuoi inviare con {{site.data.keyword.mobilepushshort}}.

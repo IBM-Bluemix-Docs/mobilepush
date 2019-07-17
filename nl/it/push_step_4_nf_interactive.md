@@ -1,7 +1,12 @@
 ---
 
 copyright:
- years: 2015, 2017
+  years: 2015, 2017, 2019
+lastupdated: "2019-06-06"
+
+keywords: push notifications, notifications, interactive notification, silent notification
+
+subcollection: mobile-pushnotification
 
 ---
 
@@ -12,8 +17,6 @@ copyright:
 
 # Notifiche interattive e automatiche  
 {: #interactive-notifications}
-Ultimo aggiornamento: 22 maggio 2017
-{: .last-updated}
 
 Le notifiche interattive consentono agli utenti di rispondere a una notifica senza aprire l'applicazione. Quando viene ricevuta una notifica, il dispositivo visualizza i pulsanti di azione insieme al messaggio di notifica. 
 
@@ -22,7 +25,7 @@ Le notifiche interattive consentono agli utenti di rispondere a una notifica sen
 ## Invio di notifiche interattive
 {: #send_interactive_notifications}
 
-La notifica interattiva può essere inviata utilizzando la console Push Notifications o utilizzando la [Documentazione API REST](push_restapi.html).
+La notifica interattiva può essere inviata utilizzando la console Push Notifications o utilizzando la [Documentazione API REST](https://cloud.ibm.com/apidocs/push-notifications).
 
 
 Dalla console {{site.data.keyword.mobilepushshort}}: 
