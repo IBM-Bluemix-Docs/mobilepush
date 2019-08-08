@@ -17,6 +17,23 @@ subcollection: mobile-pushnotification
 
 The following new features and changes to the service are available. These changes do not break existing code:
 
+## July 2019
+
+### Application Server Keys Support
+ 
+Application Server Keys are used to authenticate the application server. (This is defined by the VAPID spec.) This key is used to provide additional security to verify that the application server triggering the web push message is same as the one subscribed by the user.
+
+## February 2019
+
+### React Native
+
+React Native SDK released to support react native applications for IBM Cloud Push Notifications Service.
+
+## August 2018
+
+### PWA Support
+
+Progressive Web Application support introduced for Web push notifications.
 
 ## June 2018
 
@@ -27,7 +44,6 @@ As an account owner, you can set policies within your account to create differen
 ### Activity Tracker
 
 You can monitor a user's interaction with the Push Notifications service. You can search and analyze how your users and applications [interact with the service](/docs/services/mobilepush?topic=mobile-pushnotification-push_activity_tracker).
-
 
 ## May 2018
 
