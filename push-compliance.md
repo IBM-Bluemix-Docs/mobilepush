@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-06-24"
+lastupdated: "2019-09-05"
 
 keywords: push notifications, notifications, compliance, hipaa, iso, soc 2 type 1 certification, gdpr
 
@@ -31,7 +31,7 @@ IBM {{site.data.keyword.mobilepushshort}} Service meets the required IBM Control
 
 If you want to send HIPAA regulated information using the IBM Cloud {{site.data.keyword.mobilepushshort}} Service you should not be using Post/message API, since the payload sent over third-party Push providers may not meet regulatory guidelines. Instead, you can use the following steps where only messageId is sent over third-party Push providers, but the actual sensitive data is downloaded by the client application over a secure (https) transport.
 
-1. Provision a new instance Advanced Plan or upgrade your existing instance to an Advanced Plan.
+1. Provision a new instance.
 2. Send a [silent notification](/docs/services/mobilepush?topic=mobile-pushnotification-interactive-notifications#send_silent_notifications_for_ios) using the {{site.data.keyword.mobilepushshort}} Service.
 3. The {{site.data.keyword.mobilepushshort}} Service sends the notification using the push cloud providers like FCM, APNS. By the characteristics of the silent notification alert is not sent as part of the notification.
 4. Once the device receives notification with the ``message id`` / ``nid`` transmitted, application makes a call to the {{site.data.keyword.mobilepushshort}} Service to receive the notification alert using the ``GET /message/{messageId}``.
