@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2017, 2018, 2019
-lastupdated: "2019-06-11"
+lastupdated: "2019-09-10"
 
 keywords: push notifications, notifications, service credentials, service processes, push message size
 

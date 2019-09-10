@@ -20,18 +20,12 @@ subcollection: mobile-pushnotification
 
 
 To get you started quickly!
-
 {: shortdesc}
-
- - [Android Sample App](https://github.com/ibm-bluemix-mobile-services/bms-samples-android-hellopush/)
- 
- - [Cordova Sample App](https://github.com/ibm-bluemix-mobile-services/bms-samples-cordova-hellopush)
- 
- - [iOS Sample App](https://github.com/ibm-bluemix-mobile-services/bms-samples-swift-hellopush)
- 
- - [BluePic](https://github.com/IBM/BluePic)
- 
- - [Online Catalog Store](https://github.com/ibm-bluemix-mobile-services/mobiledashboard-storecatalog-backend)
+* [Android Sample App](https://github.com/ibm-bluemix-mobile-services/bms-samples-android-hellopush/)
+* [Cordova Sample App](https://github.com/ibm-bluemix-mobile-services/bms-samples-cordova-hellopush)
+* [iOS Sample App](https://github.com/ibm-bluemix-mobile-services/bms-samples-swift-hellopush)
+* [BluePic](https://github.com/IBM/BluePic)
+* [Online Catalog Store](https://github.com/ibm-bluemix-mobile-services/mobiledashboard-storecatalog-backend)
  
 
 

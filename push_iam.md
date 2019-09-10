@@ -36,12 +36,12 @@ The scope of an access policy is based on a user's assigned role.
 {: shortdesc}
 
 Policies enable access to be granted at different levels. Some of the options include:
-<ul><ul>
+<ul>
   <li>Access across all instances of the service in your account</li>
   <li>Access to an individual service instances in your account</li>
   <li>Access to a specific resource within an instance</li>
   <li>Access to all IAM-enabled services in your account</li>
-</ul></ul>
+</ul>
 
 Platform management roles enable users to perform tasks on service resources at the platform level. For example, roles can be assigned to determine who can create or delete IDs, create instances, and bind instances to apps. The following table details the actions as they correlate to platform management roles.
 

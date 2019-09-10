@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2017, 2019
-lastupdated: "2019-08-19"
+lastupdated: "2019-09-05"
 
 keywords: push notifications, notifications, activity tracker events
 
@@ -47,54 +47,73 @@ The {{site.data.keyword.cloudaccesstrailshort}} activity logs can be used to ide
 ## List of events
 {: #actions}
 
-The following table lists the {{site.data.keyword.cloudaccesstrailshort}} events for {{site.data.keyword.mobilepushshort}}
+The following table lists the {{site.data.keyword.cloudaccesstrailshort}} events for {{site.data.keyword.mobilepushshort}}:
+
 <table>
   <caption>Table 1. List of actions that genererate an event</caption>
   <tr>
     <th>Action</th>
-	  <th>Description</th>
+    <th>Description</th>
   <tr>
   <tr>
     <td>imfpush.app.update</td>
-	  <td>Updates to the Application</td>
+    <td>Updates to the Application</td>
   </tr>
   <tr>
     <td>imfpush.app-conf.delete</td>
-	  <td>Application configuration deletion</td>
+    <td>Application configuration deletion</td>
   </tr>
   <tr>
     <td>imfpush.app-conf.update</td>
-	  <td>Application configuration update</td>
+    <td>Application configuration update</td>
   </tr>
   <tr>
+    <td>imfpush.app-device.create</td>
+    <td>Device registration</td>
+  </tr>   
+  <tr>
+    <td>imfpush.app-device.delete</td>
+    <td>Device un-registration</td>
+  </tr>   
+  <tr>
     <td>imfpush.app-tag.create</td>
-	  <td>Tag creation</td>
+    <td>Tag creation</td>
   </tr>
   <tr>
     <td>imfpush.app-tag.delete</td>
-	  <td>Tag deletion</td>
+    <td>Tag deletion</td>
   </tr>
   <tr>
     <td>imfpush.app-tag.update</td>
-	  <td>Tag update</td>
+    <td>Tag update</td>
   </tr>  
   <tr>
+    <td>imfpush.app-subscription.create</td>
+    <td>Device subscription for a tag</td>
+  </tr>   
+  <tr>
+    <td>imfpush.app-subscription.delete</td>
+    <td>Device un-subscription for a tag</td>
+  </tr>   
+  <tr>
+    <td>imfpush.app-message.create</td>
+    <td>Send message</td>
+  </tr>   
+  <tr>
     <td>imfpush.app-webhook.create</td>
-	  <td>Webhook creation</td>
+    <td>Webhook creation</td>
   </tr> 
   <tr>
     <td>imfpush.app-webhook.delete</td>
-	  <td>Webhook deletion</td>
+    <td>Webhook deletion</td>
   </tr>   
   <tr>
     <td>imfpush.app-webhook.update</td>
-	  <td>Webhook update</td>
-  </tr>   
+    <td>Webhook update</td>
+  </tr>
 </table>
 
-
 For more information about working with {{site.data.keyword.cloudaccesstrailshort}}, refer the [documentation here](https://cloud.ibm.com/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-activity_tracker_ov#activity_tracker_ov){: new_window}.
-
 
 Currently, the Activity Tracker Events for Push Notifications Service are available only on `IBM Cloud - US South and US East Regions`.
 {: note}
