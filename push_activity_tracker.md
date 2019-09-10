@@ -36,7 +36,6 @@ Cloud Administrators, Security and Developers can:
 	<dd>{{site.data.keyword.cloudaccesstrailshort}} automatically captures your IBM Cloud events.</dd>
 </dl>
 
-
 The {{site.data.keyword.cloudaccesstrailshort}} activity logs can be used to identify the following information:
 
 - The users who made API calls to cloud services.
@@ -49,69 +48,23 @@ The {{site.data.keyword.cloudaccesstrailshort}} activity logs can be used to ide
 
 The following table lists the {{site.data.keyword.cloudaccesstrailshort}} events for {{site.data.keyword.mobilepushshort}}:
 
-<table>
-  <caption>Table 1. List of actions that genererate an event</caption>
-  <tr>
-    <th>Action</th>
-    <th>Description</th>
-  <tr>
-  <tr>
-    <td>imfpush.app.update</td>
-    <td>Updates to the Application</td>
-  </tr>
-  <tr>
-    <td>imfpush.app-conf.delete</td>
-    <td>Application configuration deletion</td>
-  </tr>
-  <tr>
-    <td>imfpush.app-conf.update</td>
-    <td>Application configuration update</td>
-  </tr>
-  <tr>
-    <td>imfpush.app-device.create</td>
-    <td>Device registration</td>
-  </tr>   
-  <tr>
-    <td>imfpush.app-device.delete</td>
-    <td>Device un-registration</td>
-  </tr>   
-  <tr>
-    <td>imfpush.app-tag.create</td>
-    <td>Tag creation</td>
-  </tr>
-  <tr>
-    <td>imfpush.app-tag.delete</td>
-    <td>Tag deletion</td>
-  </tr>
-  <tr>
-    <td>imfpush.app-tag.update</td>
-    <td>Tag update</td>
-  </tr>  
-  <tr>
-    <td>imfpush.app-subscription.create</td>
-    <td>Device subscription for a tag</td>
-  </tr>   
-  <tr>
-    <td>imfpush.app-subscription.delete</td>
-    <td>Device un-subscription for a tag</td>
-  </tr>   
-  <tr>
-    <td>imfpush.app-message.create</td>
-    <td>Send message</td>
-  </tr>   
-  <tr>
-    <td>imfpush.app-webhook.create</td>
-    <td>Webhook creation</td>
-  </tr> 
-  <tr>
-    <td>imfpush.app-webhook.delete</td>
-    <td>Webhook deletion</td>
-  </tr>   
-  <tr>
-    <td>imfpush.app-webhook.update</td>
-    <td>Webhook update</td>
-  </tr>
-</table>
+|Action                             |Description                        |
+|-----------------------------------|-----------------------------------|
+|imfpush.app.update                 |Updates to the Application         |
+|imfpush.app-conf.delete            |Application configuration deletion |
+|imfpush.app-conf.update            |Application configuration update   |
+|imfpush.app-device.create          |Device registration                |
+|imfpush.app-device.delete          |Device un-registration             |
+|imfpush.app-tag.create             |Tag creation                       |
+|imfpush.app-tag.delete             |Tag deletion                       |
+|imfpush.app-tag.update             |Tag update                         |
+|imfpush.app-subscription.create    |Device subscription for a tag      |
+|imfpush.app-subscription.delete    |Device un-subscription for a tag   |
+|imfpush.app-message.create         |Send message                       |
+|imfpush.app-webhook.create         |Webhook creation                   |
+|imfpush.app-webhook.delete         |Webhook deletion                   |
+|imfpush.app-webhook.update         |Webhook update                     |
+{:caption="Table 1. List of actions that genererate an event" caption-side="top"}
 
 For more information about working with {{site.data.keyword.cloudaccesstrailshort}}, refer the [documentation here](https://cloud.ibm.com/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-activity_tracker_ov#activity_tracker_ov){: new_window}.
 
