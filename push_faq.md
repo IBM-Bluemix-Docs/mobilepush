@@ -2,9 +2,9 @@
 
 copyright:
   years: 2015, 2017, 2019
-lastupdated: "2019-07-09"
+lastupdated: "2019-09-24"
 
-keywords: push notifications, notifications, faq, frequently asked questions
+keywords: push notifications, notifications, faq, frequently asked questions, rest api filter, Xcode
 
 subcollection: mobile-pushnotification
 
@@ -182,3 +182,56 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
 {: #faq-unknown-status}	
 
 UNKNOWN status denotes an internal issue that occurred during the processing of the message. Push Notifications works with best effort delivery, as there are multiple network points including the Providers like FCM, and APNS.  To know more details on this message, it is important to check the deliverystatus (`GET /apps/{applicationId}/messages/{messageId}/deliverystatus`) and report (`GET /apps/{applicationId}/messages/{messageId}/report`) of the messageId. If the deliverystatus and report is also empty, then this particular message id should be retried. 
+### How to define Push REST API filters?
+{: #push-api-rest-filters}
+
+Filters define a search criteria that restrict data that is returned from a GET API of {{site.data.keyword.mobilepushshort}}. Apply the filters against the result of the Get operation that you want to filter. The filter restricts the number of entries included in the result. For example, you can use a filter to search for tags that start with "test". 
+
+Filters can be generated using the following syntax:
+
+**name**: The field name on which the filter is being applied.
+
+**operator**: Either == (Exact Match) or =@ (Contains Substring) that describes filter match to use.
+
+**expression**: The values to include in the result.
+
+When a comma and a backslash are displayed in an expression, they must be backslash-escaped.
+
+When you are using multiple filters, they can be combined by using AND and OR logic.
+
+- For AND logic, use multiple filters in the query.
+- For OR logic, use a comma(,) inside of the filter expression.
+- For both AND and OR logic: A single query can have both AND and OR logic. Each filter is evaluated individually before the filters are combined in an AND expression.
+
+For the device GET API the following combinations are supported:
+- The name is the platform field.
+- Except for the platform, the operator can be == or =@
+- For the platform, the operator must be ==. If operator =@ is used, the value can be a sub string.
+- If == is used, the value must be an exact matching string.
+
+For the subscription GET API the following combinations are supported:
+
+- The name can be one of these fields: tagName or deviceId
+- Except for the platform, the operator can be == or =@
+- For the platform, the operator must be ==
+- If the =@ operator is used, the value can be a sub string. If the == operator is used, the value must be an exact matching string.
+- For the tag GET API the following combinations are supported:
+- The name can be one of these fields: “name” or “description”
+- If operator =@ is used, the value can be a sub string.
+- If == is used, the value must be an exact matching string.
+
+### How to make the IBM Cloud Push Notifications based projects/apps work with new Xcode build system?
+{: #push-bms-sdk-failing}
+
+BMS SDKs is failing with the Xcode New Build System. This is due to React Native 0.57+ and Cordova iOS@5.0.0 now supports the XCode (9 and 10+) New Build System. 
+Projects/apps which are updated to these versions and above don't need to do any changes to make the Push SDKs work.
+For the project/apps which are in old versions, there is no way to make the projects to build with latest build system. The suggested workaround is:
+
+**Using XCode**
+1. Go to **File** &gt; **Project Settings** or **Workspace Settings**.
+2. Select **Legacy Build System** from the **Build System** dropdown.
+
+**Using XCode build**
+- For **React Native**, use the **-UseModernBuildSystem=NO** flag to opt out of the new Xcode new build system.
+- For **cordova**, use **--buildFlag="-UseModernBuildSystem=0"** to build.
+
