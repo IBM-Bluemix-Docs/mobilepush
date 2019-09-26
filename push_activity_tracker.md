@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2017, 2019
-lastupdated: "2019-09-05"
+lastupdated: "2019-09-25"
 
 keywords: push notifications, notifications, activity tracker events
 
@@ -21,32 +21,18 @@ subcollection: mobile-pushnotification
 # Activity Tracker Events
 {: #push_activity_tracker}
 
-The {{site.data.keyword.cloudaccesstrailfull}} service monitors a user's interaction with the IBM Cloud services. You can search and analyze how your users and applications interact with IBM Cloud services.
+The {{site.data.keyword.cloudaccesstrailfull}} service monitors a user's interaction with the {{site.data.keyword.cloud_notm}} services. You can search and analyze how your users and applications interact with {{site.data.keyword.cloud_notm}} services.
 
-Cloud Administrators, Security and Developers can:
+Refer to the [Activity Tracker Page](https://cloud.ibm.com/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started){: new_window} for details.
 
-<dl>
-	<dt>Gain insights into your environment to monitor and investigate security breaches</dt>
-	<dd>Capture user and application interactions with your provisioned IBM Cloud resources. Investigate possible security breaches or unauthorized access.</dd>
-	<dt>Achieve your regulatory, compliance and record retention needs</dt>
-	<dd>Store captured events as long as you require, safe guarded on cloud class economical storage solutions. Query your collected event data via API or export your cloud activity data.</dd>
-	<dt>Cloud transparency for your DevOps teams to debug and perform capacity planning</dt>
-	<dd>Cloud activity events provide transparency into your IT operations on the IBM Cloud. Identify when and how your Cloud services are used to isolate and debug your applications. Query collected data over time to anticipate your cloud growth and seasonal needs.</dd>
-	<dt>Simplify collection and improve your cloud security</dt>
-	<dd>{{site.data.keyword.cloudaccesstrailshort}} automatically captures your IBM Cloud events.</dd>
-</dl>
-
-The {{site.data.keyword.cloudaccesstrailshort}} activity logs can be used to identify the following information:
-
-- The users who made API calls to cloud services.
-- The source IP address from where the API calls were made.
-- The time-stamp when the API calls were made.
-- The status of the API call.
-
-## List of events
+## List of events by {{site.data.keyword.IBM}} Cloud {{site.data.keyword.mobilepushshort}} service
 {: #actions}
 
-The following table lists the {{site.data.keyword.cloudaccesstrailshort}} events for {{site.data.keyword.mobilepushshort}}:
+{{site.data.keyword.IBM}} Cloud {{site.data.keyword.mobilepushshort}} service is now able to send events to {{site.data.keyword.cloudaccesstrailfull}}
+ service. You can choose to track activity on the {{site.data.keyword.IBM}} Cloud {{site.data.keyword.mobilepushshort}} service by creating an instance of [{{site.data.keyword.cloudaccesstrailfull}}
+ service](https://cloud.ibm.com/observe/activitytracker/create).
+
+The following table lists the {{site.data.keyword.cloudaccesstrailfull}} events for {{site.data.keyword.IBM}} Cloud {{site.data.keyword.mobilepushshort}} service:
 
 |Action                             |Description                        |
 |-----------------------------------|-----------------------------------|
@@ -66,7 +52,5 @@ The following table lists the {{site.data.keyword.cloudaccesstrailshort}} events
 |imfpush.app-webhook.update         |Webhook update                     |
 {:caption="Table 1. List of actions that genererate an event" caption-side="top"}
 
-For more information about working with {{site.data.keyword.cloudaccesstrailshort}}, refer the [documentation here](https://cloud.ibm.com/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-activity_tracker_ov#activity_tracker_ov){: new_window}.
-
-Currently, the Activity Tracker Events for Push Notifications Service are available only on `IBM Cloud - US South and US East Regions`.
+Currently, the Activity Tracker Events for {{site.data.keyword.IBM}} Cloud {{site.data.keyword.mobilepushshort}} service are available only on `IBM Cloud - US South and US East Regions`.
 {: note}
