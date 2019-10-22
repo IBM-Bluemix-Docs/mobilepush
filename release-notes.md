@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2017, 2018, 2019
-lastupdated: "2019-08-07"
+lastupdated: "2019-10-22"
 
 keywords: push notifications, notifications, release notes
 
@@ -16,6 +16,12 @@ subcollection: mobile-pushnotification
 # Release notes
 
 The following new features and changes to the service are available. These changes do not break existing code:
+
+## October 2019
+
+### APNS Collapse Id Support
+
+Support for multiple notifications with the same collapse identifier to be displayed as single notification to the users with iOS devices.
 
 ## July 2019
 
