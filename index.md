@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2017, 2018, 2019
-lastupdated: "2019-09-10"
+lastupdated: "2019-11-15"
 
 keywords: push notifications, notifications, service credentials, service processes, push message size
 
@@ -10,22 +10,41 @@ subcollection: mobile-pushnotification
 
 ---
 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
-{:screen:.screen}
-{:codeblock:.codeblock}
+{:codeblock: .codeblock}
 {:pre: .pre}
+{:screen: .screen}
+{:tsSymptoms: .tsSymptoms}
+{:tsCauses: .tsCauses}
+{:tsResolve: .tsResolve}
 {:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:download: .download}
+{:java: .ph data-hd-programlang='java'}
+{:ruby: .ph data-hd-programlang='ruby'}
+{:c#: .ph data-hd-programlang='c#'}
+{:objectc: .ph data-hd-programlang='Objective C'}
+{:python: .ph data-hd-programlang='python'}
+{:javascript: .ph data-hd-programlang='javascript'}
+{:php: .ph data-hd-programlang='PHP'}
+{:swift: .ph data-hd-programlang='swift'}
+{:reactnative: .ph data-hd-programlang='React Native'}
+{:csharp: .ph data-hd-programlang='csharp'}
+{:ios: .ph data-hd-programlang='iOS'}
+{:android: .ph data-hd-programlang='Android'}
+{:cordova: .ph data-hd-programlang='Cordova'}
+{:xml: .ph data-hd-programlang='xml'}
 
-# About Push Notifications 
+# About {{site.data.keyword.mobilepushshort}} 
 {: #gettingstartedtemplate}
 
-IBM {{site.data.keyword.mobilepushshort}} is a service with which you can use to send notifications to mobile devices and browsers. Notifications can be targeted to all application users or to a specific set of users and devices using tags. For every message that you submit to the service, the intended audience receives a notification.
+{{site.data.keyword.IBM_notm}} {{site.data.keyword.mobilepushshort}} is a service with which you can use to send notifications to mobile devices and browsers. Notifications can be targeted to all application users or to a specific set of users and devices using tags. For every message that you submit to the service, the intended audience receives a notification.
 
-You can choose to use the {{site.data.keyword.mobilepushshort}} service either as a part of MobileFirst Services Starter Boilerplate or as IBM Cloud [Dedicated Services](https://cloud.ibm.com/docs/dedicated?topic=dedicated-dedicated#dedicated). You can also use an SDK (software development kit) and [REST APIs ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://eu-gb.imfpush.cloud.ibm.com/imfpush/){: new_window} to further develop your client applications.
+You can choose to use the {{site.data.keyword.mobilepushshort}} service either as a part of {{site.data.keyword.mobilefirst_notm}} Services Starter Boilerplate or as IBM Cloud [Dedicated Services](https://cloud.ibm.com/docs/dedicated?topic=dedicated-dedicated#dedicated). You can also use an SDK (software development kit) and [ReST APIs](https://eu-gb.imfpush.cloud.ibm.com/imfpush/){: external} to further develop your client applications.
 
-The {{site.data.keyword.mobilepushshort}} service is also enabled for [IBM Cloud Functions](https://cloud.ibm.com/docs/openwhisk?topic=cloud-functions-getting_started#getting_started). IBM Cloud Functions is a distributed, event-driven compute service that is alternatively known as serverless computing. This allows developers to focus on writing application logic, and create actions that are executed on demand.
-
+The {{site.data.keyword.mobilepushshort}} service is also enabled for [IBM Cloud Functions](https://cloud.ibm.com/docs/openwhisk?topic=cloud-functions-getting_started#getting_started). {{site.data.keyword.openwhisk}} is a distributed, event-driven compute service that is alternatively known as serverless computing. This allows developers to focus on writing application logic, and create actions that are executed on demand.
 
 ## Service processes
 {: #overview_push_process}
@@ -33,7 +52,6 @@ The {{site.data.keyword.mobilepushshort}} service is also enabled for [IBM Cloud
 Mobile, Web browser clients and Google Chrome Apps & Extensions can subscribe and register for the {{site.data.keyword.mobilepushshort}} service. On start-up, the client applications will register and subscribe themselves to the {{site.data.keyword.mobilepushshort}} service. The notifications are dispatched to the Apple Push Notification Service (APNs) or Firebase Cloud Messaging (FCM) server and then sent to registered mobile device, browser clients or Chrome Apps & Extensions.
 
 ![Push Overview](images/overview.jpg "Service processes flow for backend apps configuring and sending notifications through the Push notifications service")
-
 
 ### Mobile, browser applications and Chrome Apps & Extensions
 {: #mobile-applications}
@@ -48,9 +66,9 @@ Back end applications can be either on premise, or in a public cloud. Back end a
 ### App backend owner
 {: #app-backend-owner}
 
-The App back-end owner creates the mobile back end application which bundles an instance of the {{site.data.keyword.mobilepushshort}} service. The App back end owner also configures and sets up the {{site.data.keyword.mobilepushshort}} service to suit the back end applications using the service along with mobile  and browser applications that are target for {{site.data.keyword.mobilepushshort}}.
+The App back-end owner creates the mobile back end application which bundles an instance of the {{site.data.keyword.mobilepushshort}} service. The App back end owner also configures and sets up the {{site.data.keyword.mobilepushshort}} service to suit the back end applications using the service along with mobile and browser applications that are target for {{site.data.keyword.mobilepushshort}}.
 
-### Push Notifications service
+### {{site.data.keyword.mobilepushshort}} service
 {: #push-notification-service}
 
 The {{site.data.keyword.mobilepushshort}} service manages all information related to mobile devices and web browser clients that are registered for notifications. The service keeps your applications transparent to the technology details of sending notifications to heterogeneous mobile and web browser platforms, handling all of this within.
@@ -58,7 +76,7 @@ The {{site.data.keyword.mobilepushshort}} service manages all information relate
 ### Gateways
 {: #gateways}
 
-Platform specific Push Notifications cloud services such as FCM or Apple Push Notification Service (APNs) that is used by IBM {{site.data.keyword.mobilepushshort}} service to dispatch notifications to the mobile and browser applications.
+Platform specific {{site.data.keyword.mobilepushshort}} cloud services such as FCM or Apple Push Notification Service (APNs) that is used by {{site.data.keyword.IBM_notm}} {{site.data.keyword.mobilepushshort}} service to dispatch notifications to the mobile and browser applications.
 
 ## Message size
 {: #push-message-size}
@@ -71,11 +89,10 @@ The {{site.data.keyword.mobilepushshort}} message payload size is dependent on t
 ## Samples
 {: #push-blog}
 
-Sample applications are available for [Android](https://github.com/ibm-bluemix-mobile-services/bms-samples-android-hellopush/), [Cordova](https://github.com/ibm-bluemix-mobile-services/bms-samples-cordova-hellopush), and [iOS](https://github.com/ibm-bluemix-mobile-services/bms-samples-swift-hellopush).
-You can also find more information at the Push Notifications service [videos](https://www.youtube.com/watch?v=1wO30GfiLaI&list=PLzJUGEaRNMfvX7-J6gqczEanWBPiOjEmA).  
-
+Sample applications are available for [Android](https://github.com/ibm-bluemix-mobile-services/bms-samples-android-hellopush/){: external}, [Cordova](https://github.com/ibm-bluemix-mobile-services/bms-samples-cordova-hellopush){: external}, and [iOS](https://github.com/ibm-bluemix-mobile-services/bms-samples-swift-hellopush){: external}.
+You can also find more information at the {{site.data.keyword.mobilepushshort}} service [videos](https://www.youtube.com/watch?v=1wO30GfiLaI&list=PLzJUGEaRNMfvX7-J6gqczEanWBPiOjEmA){: external}.  
 
 ## Sample scenario 
 {: #push-scenario}
 
-The {{site.data.keyword.mobilepushshort}} service is explained using the sample scenario of the ACME Bank. The ACME Bank is in the phase of having their legacy IT infrastructure moved to IBM Cloud services and is currently building mobile back-end for their customer and employee facing apps. They are using {{site.data.keyword.mobilepushshort}} service to send notification to their customers on banking transactions and other important events and reminders.
+The {{site.data.keyword.mobilepushshort}} service is explained using the sample scenario of the ACME Bank. The ACME Bank is in the phase of having their legacy IT infrastructure moved to {{site.data.keyword.cloud_notm}} services and is currently building mobile back-end for their customer and employee facing apps. They are using {{site.data.keyword.mobilepushshort}} service to send notification to their customers on banking transactions and other important events and reminders.

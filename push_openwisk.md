@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2017, 2019
-lastupdated: "2019-06-06"
+lastupdated: "2019-11-15"
 
 keywords: push notifications, notifications, integrate with cloud functions
 
@@ -10,20 +10,37 @@ subcollection: mobile-pushnotification
 
 ---
 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
-{:screen: .screen}
 {:codeblock: .codeblock}
 {:pre: .pre}
+{:screen: .screen}
+{:tsSymptoms: .tsSymptoms}
+{:tsCauses: .tsCauses}
+{:tsResolve: .tsResolve}
 {:tip: .tip}
-{:note: .note}
 {:important: .important}
-{:deprecated: .deprecated}
+{:note: .note}
+{:download: .download}
+{:java: .ph data-hd-programlang='java'}
+{:ruby: .ph data-hd-programlang='ruby'}
+{:c#: .ph data-hd-programlang='c#'}
+{:objectc: .ph data-hd-programlang='Objective C'}
+{:python: .ph data-hd-programlang='python'}
+{:javascript: .ph data-hd-programlang='javascript'}
+{:php: .ph data-hd-programlang='PHP'}
+{:swift: .ph data-hd-programlang='swift'}
+{:reactnative: .ph data-hd-programlang='React Native'}
+{:csharp: .ph data-hd-programlang='csharp'}
+{:ios: .ph data-hd-programlang='iOS'}
+{:android: .ph data-hd-programlang='Android'}
+{:cordova: .ph data-hd-programlang='Cordova'}
+{:xml: .ph data-hd-programlang='xml'}
 
-# Integrate with Cloud Functions
+# Integrate with {{site.data.keyword.openwhisk_short}}
 {: #cloud-functions-integration}
 
-The {{site.data.keyword.mobilepushshort}} package in IBM Cloud functions provides a set of actions for interacting  with IBM {{site.data.keyword.mobilepushshort}}. These actions allow you to send a message or create, update, or delete a webhook. 
+The {{site.data.keyword.mobilepushshort}} package in {{site.data.keyword.IBM_notm}} {{site.data.keyword.openwhisk_short}} provides a set of actions for interacting with {{site.data.keyword.IBM_notm}} {{site.data.keyword.mobilepushshort}}. These actions allow you to send a message or create, update, or delete a webhook. 
 {: shortdesc}
 
-To use the latest Push notification service features in IBM Cloud functions, install the push service package via CLI. For more information about {{site.data.keyword.mobilepushshort}} packages, see [Installable packages](https://cloud.ibm.com/docs/openwhisk?topic=cloud-functions-push-notifications-package#push-notifications-package).
+To use the latest {{site.data.keyword.mobilepushshort}} service features in {{site.data.keyword.IBM_notm}} {{site.data.keyword.openwhisk_short}}, install the push service package via CLI. For more information about {{site.data.keyword.mobilepushshort}} packages, see [Installable packages](https://cloud.ibm.com/docs/openwhisk?topic=cloud-functions-push-notifications-package#push-notifications-package).

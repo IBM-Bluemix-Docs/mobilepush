@@ -1,19 +1,41 @@
 ---
 
 copyright:
-  years: 2015, 2017, 2019
-lastupdated: "2019-09-24"
+  years: 2015, 2019
+lastupdated: "2019-11-15"
 
 keywords: push notifications, notifications, faq, frequently asked questions, rest api filter, Xcode
 
 subcollection: mobile-pushnotification
 
 ---
-{:new_window: target="_blank"}
-{:shortdesc: .shortdesc}
-{:screen:.screen}
-{:codeblock:.codeblock}
 
+{:external: target="_blank" .external}
+{:shortdesc: .shortdesc}
+{:codeblock: .codeblock}
+{:pre: .pre}
+{:screen: .screen}
+{:tsSymptoms: .tsSymptoms}
+{:tsCauses: .tsCauses}
+{:tsResolve: .tsResolve}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:download: .download}
+{:java: .ph data-hd-programlang='java'}
+{:ruby: .ph data-hd-programlang='ruby'}
+{:c#: .ph data-hd-programlang='c#'}
+{:objectc: .ph data-hd-programlang='Objective C'}
+{:python: .ph data-hd-programlang='python'}
+{:javascript: .ph data-hd-programlang='javascript'}
+{:php: .ph data-hd-programlang='PHP'}
+{:swift: .ph data-hd-programlang='swift'}
+{:reactnative: .ph data-hd-programlang='React Native'}
+{:csharp: .ph data-hd-programlang='csharp'}
+{:ios: .ph data-hd-programlang='iOS'}
+{:android: .ph data-hd-programlang='Android'}
+{:cordova: .ph data-hd-programlang='Cordova'}
+{:xml: .ph data-hd-programlang='xml'}
 
 # Frequently Asked Questions 
 {: #faq}
@@ -21,7 +43,7 @@ subcollection: mobile-pushnotification
 ### Why do my tokens get invalidated?
 {: #faq-tokens}	
 
-For device, browser, Chrome Apps & Extensions registrations, the Push Notifications service maintains a unique reference to tokens issued from notification providers - APNs for Apple or FCM for Google. The tokens can be invalidated by the service notification provider for several reasons. 
+For device, browser, Chrome Apps & Extensions registrations, the {{site.data.keyword.mobilepushshort}} service maintains a unique reference to tokens issued from notification providers - APNs for Apple or FCM for Google. The tokens can be invalidated by the service notification provider for several reasons. 
 
 An example is during the uninstallation of an app on the device. In such a scenario, when a notification is attempted to be delivered based on the providers response that the device is invalidated, the {{site.data.keyword.mobilepushshort}} service will remove the device or web browser registrations. This in turn would restrain consequent attempts in sending notification to those invalidated devices. 
 
@@ -32,7 +54,7 @@ Ensure that you obtain a valid Server API Key and Sender ID to continue. See [Ob
 ### Why do I get *Notification is not working for WEB_Chrome.*, when attempting to initialize the Web Push SDK?
 {: #faq-web-chrome}	
 
-You might have changed your FCM credentials for Web push SDK and the message delivery might fail for the Chrome browser. Ensure that you invoke *bmsPush.unRegisterDevice* to avoid failure.
+You might have changed your FCM credentials for Web push SDK and the message delivery might fail for the Chrome browser. Ensure that you invoke `bmsPush.unRegisterDevice` to avoid failure.
 
 ### I get the message *Service workers aren't supported in this browser* when attempting to initialize the SDK for Web Push. What might be the problem? 
 {: #faq-service-workers}	
@@ -40,8 +62,8 @@ You might have changed your FCM credentials for Web push SDK and the message del
 Follow the steps mentioned in [Step 3: Set up Push service client SDK's](/docs/services/mobilepush?topic=mobile-pushnotification-push_step_3). Also ensure that:
 
 1. You use the correct start method. 
-2. Include the `manifest.json` file in the root folder.
-3. Host your website. Preferably create a `node.js` starter in IBM Cloud to try it out. For example: https://<mysamplewebsite>.cloud.ibm.com/.	
+1. Include the `manifest.json` file in the root folder.
+1. Host your website. Preferably create a `node.js` starter in IBM Cloud to try it out. For example: *https://&lt;mysamplewebsite&gt;.cloud.ibm.com/*.	
 
 ### How do I resolve Web push web configuration errors?
 {: #faq-web-config-errors}	
@@ -78,16 +100,14 @@ This feature is not supported.
 ### What are the different pricing plans available for the Push Notifications service?
 {: #faq-pricing-plans}	
 
-* <b>Advanced plan</b>: This is available for $100.00 USD/Instance, $0.50 USD/Million Digital Messages, and $0.50 USD/Million Addressable Devices. With the advanced plan, you can send push notifications to 1 million addressable devices and 100 million digital messages. Advanced plan includes capabilities like Parameterize messages and End-to-End message lifecycle tracking.
-
-* <b>Basic plan</b>: This is available for $1.00 USD/Million Digital Message. With the basic plan, you can send push notifications to a unique device, browser, end- points or a webhook-based event. 
-
-* <b>Lite plan</b>: This is a free plan that features a hundred thousand free digital messages per month. However, Lite plan services are deleted after 30 days of inactivity.	
+- **Advanced plan**: This is available for $100.00 USD/Instance, $0.50 USD/Million Digital Messages, and $0.50 USD/Million Addressable Devices. With the advanced plan, you can send {{site.data.keyword.mobilepushshort}} to 1 million addressable devices and 100 million digital messages. Advanced plan includes capabilities like Parameterize messages and End-to-End message lifecycle tracking.
+- **Basic plan**: This is available for $1.00 USD/Million Digital Message. With the basic plan, you can send {{site.data.keyword.mobilepushshort}} to a unique device, browser, end- points or a webhook-based event. 
+- **Lite plan**: This is a free plan that features a hundred thousand free digital messages per month. However, Lite plan services are deleted after 30 days of inactivity.	
 
 ### Where can I find more information like tutorials or what's new?
 {: #faq-what-is-new}	
 
-Go through the Push Notifications service [videos](https://www.youtube.com/watch?v=1wO30GfiLaI&list=PLzJUGEaRNMfvX7-J6gqczEanWBPiOjEmA).	
+Go through the {{site.data.keyword.mobilepushshort}} service [videos](https://www.youtube.com/watch?v=1wO30GfiLaI&list=PLzJUGEaRNMfvX7-J6gqczEanWBPiOjEmA){: external}.	
 
 ### Is there a difference between a notification and a message?
 {: #faq-diff-notification-message}	
@@ -96,22 +116,22 @@ Yes. A _message_ is what that user is submitting to the {{site.data.keyword.mobi
 
 For every message that you submit to the service, the intended audience receives a notification.	
 
-### Does the Push Notifications monitoring dashboard display any status for the messages that are sent?
+### Does the {{site.data.keyword.mobilepushshort}} monitoring dashboard display any status for the messages that are sent?
 {: #faq-push-monitor-dashboard}	
 
 The monitoring utility displays the status for every sent message. The messages might be in the following state:
 	
-* Sent: The number of devices to which notifications are sent.
-* Seen: The number of devices to which notifications had reached.
-* Open: The number of devices where notification was opened.
-* Invalid: The number of devices on which the token in invalid.
+- **Sent**: The number of devices to which notifications are sent.
+- **Seen**: The number of devices to which notifications had reached.
+- **Open**: The number of devices where notification was opened.
+- **Invalid**: The number of devices on which the token in invalid.
 
-For more information, see the GET messages report in [IBM Push Notifications ReST API](https://eu-gb.imfpush.cloud.ibm.com/imfpush/).	
+For more information, see the GET messages report in [{{site.data.keyword.IBM_notm}} {{site.data.keyword.mobilepushshort}} ReST API](https://eu-gb.imfpush.cloud.ibm.com/imfpush/).	
 
 ### Does push notification monitor the push notification delivery up to the end user device? For both Android and iOS?
 {: #faq-end-user-device}	
 
-Push notifications are monitored based on the number of notifications that are seen or opened from end user device. This is available for both Android and iOS. Device id-based monitoring is not supported. 
+{{site.data.keyword.mobilepushshort}} are monitored based on the number of notifications that are seen or opened from end user device. This is available for both Android and iOS. Device id-based monitoring is not supported. 
 
 ### I get the message that the server is currently unable to handle requests? How can I resolve it?
 {: #faq-server-unable-to-handle-requests}	
@@ -143,16 +163,17 @@ This should be handled in the context of application development.
 
 As per the design, registering/updating a device is called from the mobile applications using SDK. Bulk registrations/updates through REST APIs is not supported. If many device registrations/updates are called simultaneously using REST APIs, it may take a long time or may fail.	
 
-### How do I send Push Notifications or use the Rest API’s when I don’t have the appSecret?
+### How do I send {{site.data.keyword.mobilepushshort}} or use the Rest API’s when I don’t have the appSecret?
 {: #faq-rest-api-appsecret}	
 
 As the {{site.data.keyword.mobilepushshort}} service has adopted IAM, an `apiKey` is displayed instead of the `appSecret` when the user creates the service credentials.
 
-To use any REST APIs, you must generate the access token using the following curl command:
+To use any ReST APIs, you must generate the access token using the following curl command:
 
 ```
 curl -k -X POST --header "Content-Type: application/x-www-form-urlencoded" --header "Accept: application/json" --data-urlencode "grant_type=urn:ibm:params:oauth:grant-type:apikey" --data-urlencode "apikey=G2c7oaUuOjul1RbmbjAeI7YwJSUCW_hmfif3GhLabYPE" "https://iam.cloud.ibm.com/identity/token"
 ```
+{: codeblock}
 
 ```
 {
@@ -177,28 +198,26 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
    } \ 
    }' 'https://us-east.imfpush.cloud.ibm.com/imfpush/v1/apps/4809d407-85ff-4d11-ae4b-0fcdf8a833f1/messages'
 ```	
+{: screen}
 
 ### What is the meaning of UNKNOWN status in the messageId based status (`GET /apps/{applicationId}/messages/{messageId}/status`)?
 {: #faq-unknown-status}	
 
-UNKNOWN status denotes an internal issue that occurred during the processing of the message. Push Notifications works with best effort delivery, as there are multiple network points including the Providers like FCM, and APNS.  To know more details on this message, it is important to check the deliverystatus (`GET /apps/{applicationId}/messages/{messageId}/deliverystatus`) and report (`GET /apps/{applicationId}/messages/{messageId}/report`) of the messageId. If the deliverystatus and report is also empty, then this particular message id should be retried. 
-### How to define Push REST API filters?
+UNKNOWN status denotes an internal issue that occurred during the processing of the message. {{site.data.keyword.mobilepushshort}} works with best effort delivery, as there are multiple network points including the Providers like FCM, and APNS. To know more details on this message, it is important to check the deliverystatus (`GET /apps/{applicationId}/messages/{messageId}/deliverystatus`) and report (`GET /apps/{applicationId}/messages/{messageId}/report`) of the messageId. If the deliverystatus and report is also empty, then this particular message id should be retried. 
+
+### How to define Push ReST API filters?
 {: #push-api-rest-filters}
 
 Filters define a search criteria that restrict data that is returned from a GET API of {{site.data.keyword.mobilepushshort}}. Apply the filters against the result of the Get operation that you want to filter. The filter restricts the number of entries included in the result. For example, you can use a filter to search for tags that start with "test". 
 
 Filters can be generated using the following syntax:
-
-**name**: The field name on which the filter is being applied.
-
-**operator**: Either == (Exact Match) or =@ (Contains Substring) that describes filter match to use.
-
-**expression**: The values to include in the result.
+- **name**: The field name on which the filter is being applied.
+- **operator**: Either == (Exact Match) or =@ (Contains Substring) that describes filter match to use.
+- **expression**: The values to include in the result.
 
 When a comma and a backslash are displayed in an expression, they must be backslash-escaped.
 
 When you are using multiple filters, they can be combined by using AND and OR logic.
-
 - For AND logic, use multiple filters in the query.
 - For OR logic, use a comma(,) inside of the filter expression.
 - For both AND and OR logic: A single query can have both AND and OR logic. Each filter is evaluated individually before the filters are combined in an AND expression.
@@ -210,7 +229,6 @@ For the device GET API the following combinations are supported:
 - If == is used, the value must be an exact matching string.
 
 For the subscription GET API the following combinations are supported:
-
 - The name can be one of these fields: tagName or deviceId
 - Except for the platform, the operator can be == or =@
 - For the platform, the operator must be ==
@@ -220,7 +238,7 @@ For the subscription GET API the following combinations are supported:
 - If operator =@ is used, the value can be a sub string.
 - If == is used, the value must be an exact matching string.
 
-### How to make the IBM Cloud Push Notifications based projects/apps work with new Xcode build system?
+### How to make the {{site.data.keyword.cloud_notm}} {{site.data.keyword.mobilepushshort}} based projects/apps work with new Xcode build system?
 {: #push-bms-sdk-failing}
 
 BMS SDKs is failing with the Xcode New Build System. This is due to React Native 0.57+ and Cordova iOS@5.0.0 now supports the XCode (9 and 10+) New Build System. 
@@ -229,7 +247,7 @@ For the project/apps which are in old versions, there is no way to make the proj
 
 **Using XCode**
 1. Go to **File** &gt; **Project Settings** or **Workspace Settings**.
-2. Select **Legacy Build System** from the **Build System** dropdown.
+1. Select **Legacy Build System** from the **Build System** dropdown.
 
 **Using XCode build**
 - For **React Native**, use the **-UseModernBuildSystem=NO** flag to opt out of the new Xcode new build system.

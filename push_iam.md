@@ -2,7 +2,7 @@
 
 copyright:
   years:  2017, 2019
-lastupdated: "2019-06-13"
+lastupdated: "2019-11-15"
 
 keywords: push notifications, notifications, service access, manage, user roles
 
@@ -10,94 +10,75 @@ subcollection: mobile-pushnotification
 
 ---
 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
-{:screen: .screen}
-{:pre: .pre}
-{:table: .aria-labeledby="caption"}
 {:codeblock: .codeblock}
+{:pre: .pre}
+{:screen: .screen}
+{:tsSymptoms: .tsSymptoms}
+{:tsCauses: .tsCauses}
+{:tsResolve: .tsResolve}
 {:tip: .tip}
+{:important: .important}
+{:note: .note}
 {:download: .download}
+{:java: .ph data-hd-programlang='java'}
+{:ruby: .ph data-hd-programlang='ruby'}
+{:c#: .ph data-hd-programlang='c#'}
+{:objectc: .ph data-hd-programlang='Objective C'}
+{:python: .ph data-hd-programlang='python'}
+{:javascript: .ph data-hd-programlang='javascript'}
+{:php: .ph data-hd-programlang='PHP'}
+{:swift: .ph data-hd-programlang='swift'}
+{:reactnative: .ph data-hd-programlang='React Native'}
+{:csharp: .ph data-hd-programlang='csharp'}
+{:ios: .ph data-hd-programlang='iOS'}
+{:android: .ph data-hd-programlang='Android'}
+{:cordova: .ph data-hd-programlang='Cordova'}
+{:xml: .ph data-hd-programlang='xml'}
 
 # Managing service access
 {: #service-access-management}
 
-With {{site.data.keyword.mobilepushshort}} and {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) account owners can manage user access in your account.
+With {{site.data.keyword.mobilepushshort}} and {{site.data.keyword.iamlong}} (IAM) account owners can manage user access in your account.
 {: shortdesc}
 
 As an account owner, you can set policies within your account to create different levels of access for different users. For example, certain users can have **Read only** access to one instance, but **Write** access to another. You can decide who is allowed to create, update, and delete instances of {{site.data.keyword.mobilepushshort}}.
 
-**Note:** As the {{site.data.keyword.mobilepushshort}} service has adopted IAM, the App secret will not be generated for the new instances. You must use the [API keys instead](https://cloud.ibm.com/docs/iam?topic=iam-manapikey).
+As the {{site.data.keyword.mobilepushshort}} service has adopted IAM, the App secret will not be generated for the new instances. You must use the [API keys instead](https://cloud.ibm.com/docs/iam?topic=iam-manapikey).
+{: note}
 
 ## User roles
 {: #roles}
 
 The scope of an access policy is based on a user's assigned role.
-{: shortdesc}
 
 Policies enable access to be granted at different levels. Some of the options include:
-<ul>
-  <li>Access across all instances of the service in your account</li>
-  <li>Access to an individual service instances in your account</li>
-  <li>Access to a specific resource within an instance</li>
-  <li>Access to all IAM-enabled services in your account</li>
-</ul>
+
+- Access across all instances of the service in your account
+- Access to an individual service instances in your account
+- Access to a specific resource within an instance
+- Access to all IAM-enabled services in your account
 
 Platform management roles enable users to perform tasks on service resources at the platform level. For example, roles can be assigned to determine who can create or delete IDs, create instances, and bind instances to apps. The following table details the actions as they correlate to platform management roles.
 
-<table>
-  <tr>
-    <th>Platform role</th>
-    <th>Permissions</th>
-    <th>Example actions</th>
-  </tr>
-  <tr>
-    <td><i>Viewer</i></td>
-    <td>View {{site.data.keyword.mobilepushshort}} instances.</td>
-    <td>You can see a Cloud Directory user's data or the identity provider configuration.</td>
-  </tr>
-  <tr>
-    <td><i>Editor</i></td>
-    <td>View and bind {{site.data.keyword.mobilepushshort}} instances.</td>
-    <td>You can bind applications to an instance of {{site.data.keyword.mobilepushshort}}.</td>
-  </tr>
-  <tr>
-    <td><i>Operator</i></td>
-    <td>Create, delete, edit, suspend, resume, view, or bind {{site.data.keyword.mobilepushshort}} instances.</td>
-    <td>You can create or delete an {{site.data.keyword.mobilepushshort}} instance from the catalog.</td>
-  </tr>
-  <tr>
-    <td><i>Administrator</i></td>
-    <td>All management actions for all services in the account.</td>
-    <td>You can perform all operator actions and the ability to assign policies to other users.</td>
-  </tr>
-</table>
+| Platform role | Permissions | Example actions |
+|---------------|---------------|---------------|
+| Viewer | View {{site.data.keyword.mobilepushshort}} instances. |You can see a Cloud Directory user's data or the identity provider configuration. |
+| Editor | View and bind {{site.data.keyword.mobilepushshort}} instances. | You can bind applications to an instance of {{site.data.keyword.mobilepushshort}}. |
+| Operator | Create, delete, edit, suspend, resume, view, or bind {{site.data.keyword.mobilepushshort}} instances. | You can create or delete an {{site.data.keyword.mobilepushshort}} instance from the catalog. |
+| Administrator | All management actions for all services in the account. | You can perform all operator actions and the ability to assign policies to other users. |
+{:caption="Table 1. Platform management roles and permissions" caption-side="top"}
 
-</br>
-</br>
 The following table details actions that are mapped to service access roles. Service access roles enable users to access {{site.data.keyword.mobilepushshort}} as well as the ability to call the {{site.data.keyword.mobilepushshort}} API.
 
-
-<table>
-  <tr>
-    <th>Service role</th>
-    <th>Permissions</th>
-    <th>Example actions</th>
-  </tr>
-  <tr>
-    <td><i>Reader</i></td>
-    <td>View {{site.data.keyword.mobilepushshort}} instance data.</td>
-    <td>Can view the details of the service instance such as user data or identity provider information.</td>
-  </tr>
-  <tr>
-    <td> <i>Writer or Manager</i></td>
-    <td>View and change an {{site.data.keyword.mobilepushshort}} instance.</td>
-    <td>Can perform all Reader actions and edit the service instance, such as editing the identity provider configuration. </li></ul></td>
-  </tr>
-</table>
+| Service role  | Permissions | Example actions |
+|---------------|---------------|---------------|
+| Reader | View {{site.data.keyword.mobilepushshort}} instance data. | Can view the details of the service instance such as user data or identity provider information. |
+| Writer or Manager | View and change an {{site.data.keyword.mobilepushshort}} instance. | Can perform all Reader actions and edit the service instance, such as editing the identity provider configuration. |
+{:caption="Table 2. Actions mapping to service access roles" caption-side="top"}
 
 For more information about assigning user roles in the UI, see [Managing IAM access](https://cloud.ibm.com/docs/iam?topic=iam-iammanidaccser#iammanidaccser).
-
 
 ## {{site.data.keyword.mobilepushshort}} access policies
 {: #access}
@@ -107,38 +88,39 @@ Every user who accesses the {{site.data.keyword.mobilepushshort}} service in you
 
 The actions are customized and defined by the {{site.data.keyword.Bluemix_notm}} service as operations that are allowed to be performed in the service. The actions are then mapped to IAM user roles. Some of the actions taken you can track with the {{site.data.keyword.cloudaccesstrailshort}} service. In the following table, the actions and required permissions for {{site.data.keyword.mobilepushshort}} are mapped.
 
-|Action |Explanation |Required role |
+| Action | Explanation | Required role |
 |----------------------------------------------------|------------------|------------------------------|
-|`GET /imfpush/v1/apps/{applicationId}/settings/*` |Get app settings |Manager, Writer, Reader|
-|`DELETE /imfpush/v1/apps/{applicationId}/settings/* |Delete app settings |Manager|
-|`PUT /imfpush/v1/apps/{applicationId}/settings/*` |Update app settings |Manager|
-|`GET /imfpush/v1/apps/{applicationId}/devices/* ` |Get devices |Manager, Writer, Reader|
-|`POST /imfpush/v1/apps/{applicationId}/devices` |Register device |Manager, Writer|
-|`PUT /imfpush/v1/apps/{applicationId}/devices/{deviceId}` |Update device |Manager, Writer|
-|`DELETE /imfpush/v1/apps/{applicationId}/devices/{deviceId}` |Delete device |Manager|
-|`POST /imfpush/v1/apps/{applicationId}/messages` |Send messages |Manager, Writer|
-|`POST /imfpush/v1/apps/{applicationId}/messages/bulk` |Send bulk messages |Manager, Writer|
-|`DELETE /imfpush/v1/apps/{applicationId}/messages/{messageId}` |Delete a message |Manager|
-|`GET /imfpush/v1/apps/{applicationId}/messages/*` |Get messages |Manager, Reader, Writer|
-|`PUT /imfpush/v1/apps/{applicationId}/messages/{messageId}/deliverystatus` |Update message delivery status|Manager, Writer|
-|`POST /imfpush/v1/apps/{applicationId}/tags` |Create tags |Manager, Writer|
-|`PUT /imfpush/v1/apps/{applicationId}/tags/{tagName}` |Update tag   |Manager, Writer|
-|`DELETE /imfpush/v1/apps/{applicationId}/tags/{tagName}` |Delete tag   |Manager|
-|`GET /imfpush/v1/apps/{applicationId}/tags/*` |Get tags |Manager, Reader, Writer|
-|`POST /imfpush/v1/apps/{applicationId}/subscriptions` |Create subscriptions |Manager, Writer|
-|`DELETE /imfpush/v1/apps/{applicationId}/subscriptions` |Delete subscriptions |Manager|
-|`GET /imfpush/v1/apps/{applicationId}/subscriptions` |Get Subscriptions |Manager, Reader, Writer|
-|`POST /imfpush/v1/apps/{applicationId}/webhooks` |Create webhook |Manager, Writer|
-|`PUT /imfpush/v1/apps/{applicationId}/webhooks/{webhookName}` |Update webhook |Manager, Writer|
-|`DELETE /imfpush/v1/apps/{applicationId}/webhooks/{webhookName}` |Delete webhook |Manager|
-|`GET /imfpush/v1/apps/{applicationId}/webhooks/*` |Get webhook |Manager, Reader, Writer|-|
+| `GET /imfpush/v1/apps/{applicationId}/settings/*` | Get app settings | Manager, Writer, Reader |
+| `DELETE /imfpush/v1/apps/{applicationId}/settings/*` | Delete app settings | Manager |
+| `PUT /imfpush/v1/apps/{applicationId}/settings/*` | Update app settings | Manager |
+| `GET /imfpush/v1/apps/{applicationId}/devices/* ` | Get devices | Manager, Writer, Reader |
+| `POST /imfpush/v1/apps/{applicationId}/devices` | Register device | Manager, Writer |
+| `PUT /imfpush/v1/apps/{applicationId}/devices/{deviceId}` | Update device | Manager, Writer |
+| `DELETE /imfpush/v1/apps/{applicationId}/devices/{deviceId}` | Delete device | Manager|
+| `POST /imfpush/v1/apps/{applicationId}/messages` | Send messages | Manager, Writer |
+| `POST /imfpush/v1/apps/{applicationId}/messages/bulk` | Send bulk messages | Manager, Writer |
+| `DELETE /imfpush/v1/apps/{applicationId}/messages/{messageId}` | Delete a message | Manager |
+| `GET /imfpush/v1/apps/{applicationId}/messages/*` | Get messages | Manager, Reader, Writer |
+| `PUT /imfpush/v1/apps/{applicationId}/messages/{messageId}/deliverystatus` | Update message delivery status | Manager, Writer |
+| `POST /imfpush/v1/apps/{applicationId}/tags` | Create tags | Manager, Writer |
+| `PUT /imfpush/v1/apps/{applicationId}/tags/{tagName}` | Update tag | Manager, Writer |
+| `DELETE /imfpush/v1/apps/{applicationId}/tags/{tagName}` | Delete tag | Manager |
+| `GET /imfpush/v1/apps/{applicationId}/tags/*` | Get tags | Manager, Reader, Writer |
+| `POST /imfpush/v1/apps/{applicationId}/subscriptions` | Create subscriptions | Manager, Writer |
+| `DELETE /imfpush/v1/apps/{applicationId}/subscriptions` | Delete subscriptions | Manager |
+| `GET /imfpush/v1/apps/{applicationId}/subscriptions` | Get Subscriptions | Manager, Reader, Writer |
+| `POST /imfpush/v1/apps/{applicationId}/webhooks` | Create webhook | Manager, Writer |
+| `PUT /imfpush/v1/apps/{applicationId}/webhooks/{webhookName}` | Update webhook | Manager, Writer |
+| `DELETE /imfpush/v1/apps/{applicationId}/webhooks/{webhookName}` | Delete webhook | Manager |
+| `GET /imfpush/v1/apps/{applicationId}/webhooks/*` | Get webhook | Manager, Reader, Writer |
+{:caption="Table 3. Actions mapped to different roles" caption-side="top"}
 
 ## Working with API keys
 {: #apikeys}
 
-Upon creating service creadentials, you may notice an apiKey is displayed instead of the appSecret.
+Upon creating service creadentials, you may notice an `apiKey` is displayed instead of the `appSecret`.
 
-To use any REST APIs, you must generate the access token using the following curl command:
+To use any ReST APIs, you must generate the access token using the following curl command:
 
 ### Parameters
 
@@ -150,6 +132,7 @@ To use any REST APIs, you must generate the access token using the following cur
   --data-urlencode "apikey=G2c7oaUuOjul1RbmbjAeI7YwJSUCW_hmfif3GhLabYPE" \
   "https://iam.cloud.ibm.com/identity/token"
 ```
+{: codeblock}
 
 ### Response
 
@@ -164,7 +147,7 @@ To use any REST APIs, you must generate the access token using the following cur
 }
 ```
 
-Upon generating the access token using the preceding curl command, you may now operate the Rest API’s by passing the ‘Bearer <value of access_token>’ in the Authorization header
+Upon generating the access token using the preceding curl command, you may now operate the Rest API’s by passing the `Bearer <value of access_token>` in the Authorization header
 
 For example:
 

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-06-06"
+lastupdated: "2019-11-15"
 
 keywords: push notifications, notification, security, appsecret, api keys
 
@@ -10,37 +10,57 @@ subcollection: mobile-pushnotification
 
 ---
 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
-{:screen:.screen}
-{:codeblock:.codeblock}
+{:codeblock: .codeblock}
 {:pre: .pre}
+{:screen: .screen}
+{:tsSymptoms: .tsSymptoms}
+{:tsCauses: .tsCauses}
+{:tsResolve: .tsResolve}
 {:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:download: .download}
+{:java: .ph data-hd-programlang='java'}
+{:ruby: .ph data-hd-programlang='ruby'}
+{:c#: .ph data-hd-programlang='c#'}
+{:objectc: .ph data-hd-programlang='Objective C'}
+{:python: .ph data-hd-programlang='python'}
+{:javascript: .ph data-hd-programlang='javascript'}
+{:php: .ph data-hd-programlang='PHP'}
+{:swift: .ph data-hd-programlang='swift'}
+{:reactnative: .ph data-hd-programlang='React Native'}
+{:csharp: .ph data-hd-programlang='csharp'}
+{:ios: .ph data-hd-programlang='iOS'}
+{:android: .ph data-hd-programlang='Android'}
+{:cordova: .ph data-hd-programlang='Cordova'}
+{:xml: .ph data-hd-programlang='xml'}
 
-# Security in Push Notifications 
+# Security in {{site.data.keyword.mobilepushshort}} 
 {: #security-in-push-notifications}
 
 The {{site.data.keyword.mobilepushshort}} APIs are secured by -
-
 - **appSecret**: The `appSecret` protects APIs that are typically invoked by back end applications - such as the API to send {{site.data.keyword.mobilepushshort}} and the API to configure settings.
 - **clientSecret**:  The `clientSecret` protects APIs that are typically invoked by mobile client applications. There is only one API related to registration of a device with an associated UserId that requires this `clientSecret`. None of the other APIs invoked from mobile clients require the `clientSecret`. 
-- **API Keys**: Application programming interface keys (API keys) are available through Cloud IAM for you to use to authenticate by using API or CLI as a user or service ID. These API keys are provided through Cloud IAM and therefore cannot be used generally to authenticate with IBMid outside of IBM Cloud. 
+- **API Keys**: Application programming interface keys (API keys) are available through Cloud IAM for you to use to authenticate by using API or CLI as a user or service ID. These API keys are provided through Cloud IAM and therefore cannot be used generally to authenticate with IBMid outside of {{site.data.keyword.cloud_notm}}. 
 
-The `appSecret` and `clientSecret` are allocated to every service instance at the time of binding an application with {{site.data.keyword.mobilepushshort}} service. Refer to the [REST APIs ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://eu-gb.imfpush.cloud.ibm.com/imfpush/) documentation for information on how the secrets are to be passed and for what APIs.
+The `appSecret` and `clientSecret` are allocated to every service instance at the time of binding an application with {{site.data.keyword.mobilepushshort}} service. Refer to the [ReST APIs](https://eu-gb.imfpush.cloud.ibm.com/imfpush/) documentation for information on how the secrets are to be passed and for what APIs.
 
 ## appSecret 
 {: #push-api-rest-secret}
 
-When an application binds to the {{site.data.keyword.mobilepushshort}}, the service generates an appSecret (a unique key) and passes it in the response header. If you are using the IBM {{site.data.keyword.mobilepushshort}} for IBM Cloud Rest API, use the REST API reference to obtain information on which APIs you need to secure. For information, see the [Push REST API ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://eu-gb.imfpush.cloud.ibm.com/imfpush/){: new_window}.
+When an application binds to the {{site.data.keyword.mobilepushshort}}, the service generates an appSecret (a unique key) and passes it in the response header. If you are using the {{site.data.keyword.IBM_notm}} {{site.data.keyword.mobilepushshort}} for {{site.data.keyword.cloud_notm}} ReST API, use the ReST API reference to obtain information on which APIs you need to secure. For information, see the [Push ReST API](https://eu-gb.imfpush.cloud.ibm.com/imfpush/){: external}.
 
-The request header must contain the appSecret. If not, the server returns a 401 Unauthorized Error code. When the {{site.data.keyword.mobilepushshort}} is added to an application, a specific AppID is created. As part of the response, you get a header called appSecret that is used for creating tags or sending messages. The operation happens through services in the catalog or the boilerplate.
+The request header must contain the appSecret. If not, the server returns a `401 Unauthorized Error` code. When the {{site.data.keyword.mobilepushshort}} is added to an application, a specific `AppID` is created. As part of the response, you get a header called appSecret that is used for creating tags or sending messages. The operation happens through services in the catalog or the boilerplate.
 
 To get the appSecret value:
 
 1. Click the *app-name* that is bound to the push service.
-2. Click the **Show Credentials** link to display the appSecret (AppID).
+1. Click the **Show Credentials** link to display the appSecret (AppID).
 
 The **Show Credentials** screen shows information about the AppSecret:
+
 ```
 	{
     "imfpush_Dev": [
@@ -57,14 +77,15 @@ The **Show Credentials** screen shows information about the AppSecret:
     ]
     }
 ```
-	{: codeblock} 
+{: screen} 
 
-
-**Note**: Earlier applications were required to pass the clientSecret only when registering or updating devices with userId field. All other APIs invoked by mobile and browser clients did not require clientSecret. These old applications can continue to use the clientSecret optionally for device registrations or updating calls. However, it is strongly recommended that clientSecret check is enforced for all client API calls. To enforce this in existing applications, there is a new `verifyClientSecret` API that is published.  For new applications, clientSecret check will be enforced on all client API calls and this behavior cannot be changed with the `verifyClientSecret` API.
+Earlier applications were required to pass the clientSecret only when registering or updating devices with userId field. All other APIs invoked by mobile and browser clients did not require clientSecret. These old applications can continue to use the clientSecret optionally for device registrations or updating calls. However, it is strongly recommended that clientSecret check is enforced for all client API calls. To enforce this in existing applications, there is a new `verifyClientSecret` API that is published.  For new applications, clientSecret check will be enforced on all client API calls and this behavior cannot be changed with the `verifyClientSecret` API.
+{: note}
 
 By default, client secret verification is enforced only in new apps. Both existing and new apps are allowed to enable or disable the client secret verification using the verifyClientSecret REST API. It is recommended that you enforce client secret verification to avoid exposing devices to users who might know the applicationId and deviceId.
 
 Ensure that the `clientSecret` is kept confidential and never hard-coded into the mobile app. There are various application initialization patterns that can be used to pull in the `clientSecret` dynamically during the applications runtime. The sequence diagram outlines on such possible pattern.
+
 ![Enable_Push](images/init_client_secret.jpg "Sequence diagram showing patterns for initialization for pulling in the clientSecret") 
 
 ## API keys for user authentication
@@ -73,4 +94,3 @@ Ensure that the `clientSecret` is kept confidential and never hard-coded into th
 An API key is a unique code that is passed in to an API to identify the calling application or user. API keys are used to track and control how the API is being used, for example to prevent malicious use or abuse of the API. The API key often acts as both a unique identifier and a secret token for authentication, and generally has a set of access rights specific to the identity associated with it.
 
 Refer [here](https://cloud.ibm.com/docs/iam?topic=iam-manapikey) for more details on managing and working with API keys.
-

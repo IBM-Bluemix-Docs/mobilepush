@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2017, 2018, 2019
-lastupdated: "2019-10-22"
+  years: 2015, 2019
+lastupdated: "2019-11-15"
 
 keywords: push notifications, notifications, release notes
 
@@ -10,10 +10,35 @@ subcollection: mobile-pushnotification
 
 ---
 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
+{:codeblock: .codeblock}
+{:pre: .pre}
+{:screen: .screen}
+{:tsSymptoms: .tsSymptoms}
+{:tsCauses: .tsCauses}
+{:tsResolve: .tsResolve}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:download: .download}
+{:java: .ph data-hd-programlang='java'}
+{:ruby: .ph data-hd-programlang='ruby'}
+{:c#: .ph data-hd-programlang='c#'}
+{:objectc: .ph data-hd-programlang='Objective C'}
+{:python: .ph data-hd-programlang='python'}
+{:javascript: .ph data-hd-programlang='javascript'}
+{:php: .ph data-hd-programlang='PHP'}
+{:swift: .ph data-hd-programlang='swift'}
+{:reactnative: .ph data-hd-programlang='React Native'}
+{:csharp: .ph data-hd-programlang='csharp'}
+{:ios: .ph data-hd-programlang='iOS'}
+{:android: .ph data-hd-programlang='Android'}
+{:cordova: .ph data-hd-programlang='Cordova'}
+{:xml: .ph data-hd-programlang='xml'}
 
 # Release notes
+{: #release-notes}
 
 The following new features and changes to the service are available. These changes do not break existing code:
 
@@ -66,4 +91,3 @@ You can view the delivery status of every notification that has been submitted t
 ### Parameterize Notifications
 
 You can parameterize and send custom notifications by creating variables and calling them in your notification templates.
-	

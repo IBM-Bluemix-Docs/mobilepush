@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018, 2019
-lastupdated: "2019-06-06"
+  years: 2017, 2019
+lastupdated: "2019-11-15"
 
 keywords: push notifications, notifications, related links, videos
 
@@ -10,14 +10,37 @@ subcollection: mobile-pushnotification
 
 ---
 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
-
+{:codeblock: .codeblock}
+{:pre: .pre}
+{:screen: .screen}
+{:tsSymptoms: .tsSymptoms}
+{:tsCauses: .tsCauses}
+{:tsResolve: .tsResolve}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:download: .download}
+{:java: .ph data-hd-programlang='java'}
+{:ruby: .ph data-hd-programlang='ruby'}
+{:c#: .ph data-hd-programlang='c#'}
+{:objectc: .ph data-hd-programlang='Objective C'}
+{:python: .ph data-hd-programlang='python'}
+{:javascript: .ph data-hd-programlang='javascript'}
+{:php: .ph data-hd-programlang='PHP'}
+{:swift: .ph data-hd-programlang='swift'}
+{:reactnative: .ph data-hd-programlang='React Native'}
+{:csharp: .ph data-hd-programlang='csharp'}
+{:ios: .ph data-hd-programlang='iOS'}
+{:android: .ph data-hd-programlang='Android'}
+{:cordova: .ph data-hd-programlang='Cordova'}
+{:xml: .ph data-hd-programlang='xml'}
 
 # Videos
 {: #videos}
 
-* <a href="https://www.youtube.com/watch?v=IA8RyAxqq4A" target="_blank"> Integrating Push Notification In iOS Application <img src="../../icons/launch-glyph.svg" alt="External link icon"></a>
-* <a href="https://www.youtube.com/watch?v=VMfRkn31zkU" target="_blank"> Integrating Push Notification In Android Application <img src="../../icons/launch-glyph.svg" alt="External link icon"></a>
-* <a href="https://www.youtube.com/watch?v=a8T_sxSvwx0" target="_blank"> End To End Message Tracking <img src="../../icons/launch-glyph.svg" alt="External link icon"></a>
-* <a href="https://www.youtube.com/watch?v=1wO30GfiLaI" target="_blank"> Personalized Messaging <img src="../../icons/launch-glyph.svg" alt="External link icon"></a>
+* [Integrating Push Notification In iOS Application](https://www.youtube.com/watch?v=IA8RyAxqq4A){: external}
+* [Integrating Push Notification In Android Application](https://www.youtube.com/watch?v=VMfRkn31zkU){: external}
+* [End To End Message Tracking](https://www.youtube.com/watch?v=a8T_sxSvwx0){: external}
+* [Personalized Messaging](https://www.youtube.com/watch?v=1wO30GfiLaI){: external}
