@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-11-15"
+lastupdated: "2019-12-18"
 
 keywords: push notifications, notifications, release notes
 
@@ -42,9 +42,15 @@ subcollection: mobile-pushnotification
 
 The following new features and changes to the service are available. These changes do not break existing code:
 
+
+## December 2019
+
+* Launch of IBM Cloud Push Notifications Service in new region (Tokyo)
+* Support for Custom Notifications Channel for Android
+
 ## October 2019
 
-### APNS Collapse Id Support
+### APNS Collapse ID Support
 
 Support for multiple notifications with the same collapse identifier to be displayed as single notification to the users with iOS devices.
 
@@ -64,13 +70,13 @@ React Native SDK released to support react native applications for IBM Cloud Pus
 
 ### PWA Support
 
-Progressive Web Application support introduced for Web push notifications.
+Progressive Web Application support introduced for web push notifications.
 
 ## June 2018
 
 ### Managing access to Push Notifications through IBM Cloud Identity and Access Management (IAM)
 
-As an account owner, you can set policies within your account to create different levels of access for different users using [IAM](/docs/services/mobilepush?topic=mobile-pushnotification-service-access-management).
+As an account owner, you can set policies within your account to create different levels of access for different users by using [IAM](/docs/services/mobilepush?topic=mobile-pushnotification-service-access-management).
 
 ### Activity Tracker
 
@@ -80,7 +86,7 @@ You can monitor a user's interaction with the Push Notifications service. You ca
 
 ### Resource Controller (RC) based service
 
-IBM Push Notifications service is now a RC based service. Service instances should be created using a Resource controller.
+IBM Push Notifications service is now an RC-based service. Service instances must be created by using a Resource controller.
 
 ## March 2018
 

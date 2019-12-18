@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2017, 2018, 2019
-lastupdated: "2019-11-15"
+  years: 2015, 2019
+lastupdated: "2019-12-18"
 
 keywords: push notifications, ibm cloud catalog, push service client sdk, notification provider, getting started
 
@@ -40,19 +40,19 @@ subcollection: mobile-pushnotification
 # Getting started tutorial
 {: #getting-started}
 
-{{site.data.keyword.mobilepushshort}} is available as an {{site.data.keyword.cloud_notm}} Catalog service in the Mobile category and enables you to send and manage mobile and web push notifications. A push notification is an alert indicating a change or update on a mobile device or browser.
+{{site.data.keyword.mobilepushshort}} is available as an {{site.data.keyword.cloud_notm}} catalog service in the Mobile category and enables you to send and manage mobile and web push notifications. A push notification is an alert to indicate a change or update on a mobile device or browser.
 {:shortdesc}
 
-{{site.data.keyword.mobilepushshort}} are an universally accepted communication channel across enterprises or for a wide spectrum of audience. You can deliver these notifications as an onscreen banner alert or to a device's locked screen, thus providing information updates that are quickly and easily accessible.  
+{{site.data.keyword.mobilepushshort}} are a universally accepted communication channel across enterprises or for a wide spectrum of audience. You can deliver these notifications as an onscreen banner alert or to a device's locked screen, thus providing information updates that are quickly and easily accessible.  
 
-The basic steps that will get you started:
+The basic steps that get you started:
 
 1. [Create an IBM Cloud service instance](/docs/services/mobilepush?topic=mobile-pushnotification-push_step_1a)
 1. [Obtain your notification provider credentials](/docs/services/mobilepush?topic=mobile-pushnotification-push_step_1)
 1. [Configure the service instance](/docs/services/mobilepush?topic=mobile-pushnotification-push_step_2)
-1. [Setup Push service client SDK's](/docs/services/mobilepush?topic=mobile-pushnotification-push_step_3)
+1. [Setup Push service client SDKs](/docs/services/mobilepush?topic=mobile-pushnotification-push_step_3)
 1. [Send a notification](/docs/services/mobilepush?topic=mobile-pushnotification-push_step_4)
 
-The following image gives you an overview of the {{site.data.keyword.mobilepushshort}} service life cycle.
+The following image gives you an overview of the {{site.data.keyword.mobilepushshort}} service lifecycle.
 
 ![Push Overview](images/push_notification_lifecycle.jpg "Graphic outlining the basic steps from creating a service instance to sending notifications")
