@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2018, 2019
-lastupdated: "2019-11-15"
+  years: 2018, 2020
+lastupdated: "2020-01-27"
 
-keywords: push notifications, notifications, compliance, hipaa, iso, soc 2 type 1 certification, gdpr
+keywords: push notifications, notifications, compliance, hipaa, iso, soc 2 type 2 certification, gdpr
 
 subcollection: mobile-pushnotification
 
@@ -48,14 +48,14 @@ subcollection: mobile-pushnotification
 
 {{site.data.keyword.IBM_notm}} {{site.data.keyword.mobilepushshort}} Service meets the required {{site.data.keyword.IBM_notm}} Controls that are commensurate with the Health Insurance Portability and Accountability Act of 1996 (HIPAA) Security and Privacy Rule requirements. The {{site.data.keyword.mobilepushshort}} Service stores the data in encrypted format at rest, and transmits the data encrypted.
 
-If you want to send HIPAA regulated information using the {{site.data.keyword.cloud_notm}} {{site.data.keyword.mobilepushshort}} Service you should not be using Post/message API, since the payload sent over third-party Push providers may not meet regulatory guidelines. Instead, you can use the following steps where only messageId is sent over third-party Push providers, but the actual sensitive data is downloaded by the client application over a secure (https) transport.
+If you want to send HIPAA regulated information by using the {{site.data.keyword.cloud_notm}} {{site.data.keyword.mobilepushshort}} Service that you should not be using Post/message API, since the payload sent over third-party Push providers might not meet regulatory guidelines. Instead, you can use the following steps where only messageId is sent over third-party Push providers, but the actual sensitive data is downloaded by the client application over a secure (https) transport.
 
 1. Provision a new instance.
-1. Send a [silent notification](/docs/services/mobilepush?topic=mobile-pushnotification-interactive-notifications#send_silent_notifications_for_ios) using the {{site.data.keyword.mobilepushshort}} Service.
-1. The {{site.data.keyword.mobilepushshort}} Service sends the notification using the push cloud providers like FCM, APNS. By the characteristics of the silent notification alert is not sent as part of the notification.
-1. Once the device receives notification with the ``message id`` / ``nid`` transmitted, application makes a call to the {{site.data.keyword.mobilepushshort}} Service to receive the notification alert using the ``GET /message/{messageId}``.
+1. Send a [silent notification](/docs/services/mobilepush?topic=mobile-pushnotification-interactive-notifications#send_silent_notifications_for_ios) by using the {{site.data.keyword.mobilepushshort}} Service.
+1. The {{site.data.keyword.mobilepushshort}} Service sends the notification by using the push cloud providers like FCM, APNS. By the characteristics of the silent notification alert are not sent as part of the notification.
+1. Once the device receives notification with the ``message id`` / ``nid`` transmitted, application makes a call to the {{site.data.keyword.mobilepushshort}} Service to receive the notification alert by using the ``GET /message/{messageId}``.
 
-This helps in achieving transmission of sensitive text content over a secured channel using the {{site.data.keyword.cloud_notm}} {{site.data.keyword.mobilepushshort}} Service.
+This helps in achieving transmission of sensitive text content over a secured channel by using the {{site.data.keyword.cloud_notm}} {{site.data.keyword.mobilepushshort}} Service.
 
 IBM doesn't have Business Associate Agreements (BAA) relation with APNS/FCM.
 {: note}
@@ -70,19 +70,19 @@ IBM doesn't have Business Associate Agreements (BAA) relation with APNS/FCM.
 * [{{site.data.keyword.cloud_notm}} ISO 27018](https://www-935.ibm.com/services/multimedia/ibmcloud_27018.pdf){: external}
 * [Search all IBM ISO certificates](https://www-935.ibm.com/services/us/en/it-services/iso-management-system-certifications.html){: external}.
  
-## SOC 2 Type 1 Certification
+## SOC Certification
 {: #soccert}
 
-{{site.data.keyword.IBM_notm}} provides a Service Organization Controls (SOC) 2 Type 1 report for {{site.data.keyword.mobilepushshort}} Service. The reports evaluate IBM's operational controls according to the criteria set by the American Institute of Certified Public Accountants (AICPA) Trust Services Principles. 
-The Trust Services Principles define adequate control systems and establish industry standards for service providers such as IBM Cloud to safeguard their customers' data and information.
+{{site.data.keyword.mobilepushshort}} Service is SOC1 Type 2, SOC2 Type 2, SOC3 audit certified for the Security and Availability principles. The reports evaluate IBM's operational controls according to the criteria set by the American Institute of Certified Public Accountants (AICPA) Trust Services Principles. 
+The Trust Services Principles define adequate control systems and establish industry standards for service providers such as {{site.data.keyword.cloud_notm}} to safeguard their customers' data and information. For more information on compliance, visit this [blog](https://admin.blogs.prd.ibm.event.ibm.com/w3-techblog/compliance/).
 
-You can request an SOC 2 Type 1 report from the customer portal or contact your sales representative. Alternatively, you can open a support ticket with 
+You can request an SOC Certification report from the customer portal or contact your sales representative. Alternatively, you can open a support ticket with 
 [IBM Cloud support](https://www.ibm.com/cloud/support){: external}.
 
 ## General Data Protection Regulation (GDPR) 
 {: #gdpr}
 
-The GDPR seeks to create a harmonized data protection law framework across the EU and aims to give citizens back the control of their personal data, whilst imposing strict rules on those hosting and ‘processing’ this data, anywhere in the world. The Regulation also introduces rules relating to the free movement of personal data within and outside the EU. 
+The GDPR seeks to create a harmonized data protection law framework across the EU and aims to give citizens back the control of their personal data, while imposing strict rules on those hostings and ‘processing’ this data, anywhere in the world. The Regulation also introduces rules relating to the free movement of personal data within and outside the EU. 
 
 With the [General Data Protection Regulation](https://www.eugdpr.org/){: external}, {{site.data.keyword.mobilepushshort}} Service customers can rely on 
 the {{site.data.keyword.mobilepushshort}} Service team's understanding and compliance with emerging data privacy standards and legislation and also in {{site.data.keyword.IBM}}'s wider ability to provide a comprehensive suite of solutions to assist businesses of all sizes with their own internal data governance requirements.
