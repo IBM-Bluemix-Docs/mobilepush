@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2019
-lastupdated: "2019-11-15"
+  years: 2015, 2020
+lastupdated: "2020-02-04"
 
 keywords: push notifications, notifications, activity tracker events
 
@@ -58,12 +58,12 @@ The following table lists the {{site.data.keyword.cloudaccesstrailfull}} events 
 |imfpush.app-conf.delete            |Application configuration deletion |
 |imfpush.app-conf.update            |Application configuration update   |
 |imfpush.app-device.create          |Device registration                |
-|imfpush.app-device.delete          |Device un-registration             |
+|imfpush.app-device.delete          |Device unregistration             |
 |imfpush.app-tag.create             |Tag creation                       |
 |imfpush.app-tag.delete             |Tag deletion                       |
 |imfpush.app-tag.update             |Tag update                         |
 |imfpush.app-subscription.create    |Device subscription for a tag      |
-|imfpush.app-subscription.delete    |Device un-subscription for a tag   |
+|imfpush.app-subscription.delete    |Device unsubscription for a tag   |
 |imfpush.app-message.create         |Send message                       |
 |imfpush.app-webhook.create         |Webhook creation                   |
 |imfpush.app-webhook.delete         |Webhook deletion                   |

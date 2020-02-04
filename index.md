@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2019
-lastupdated: "2019-12-18"
+  years: 2015, 2020
+lastupdated: "2020-02-04"
 
 keywords: push notifications, notifications, service credentials, service processes, push message size
 
@@ -83,7 +83,7 @@ Platform-specific {{site.data.keyword.mobilepushshort}} cloud services such as F
 
 The {{site.data.keyword.mobilepushshort}} message payload size depends on the constraints that are laid out by the Gateways (FCM, APNs) and client platforms. 
 
-- For iOS and Safari: For iOS 8 and later, the maximum size that is allowed is 4 kilobytes. APNs does not send notifications that exceed this limit.
+- For iOS and Safari: For iOS 8 and later, the maximum size that is allowed is 4 kilobytes. APNs do not send notifications that exceed this limit.
 - For Android, Firefox browser, Chrome browser, and Chrome Apps & Extensions: There is a limitation of 4 kilobytes as the maximum allowed message payload size.
 
 ## Samples
@@ -95,4 +95,4 @@ You can also find more information at the {{site.data.keyword.mobilepushshort}} 
 ## Sample scenario 
 {: #push-scenario}
 
-The {{site.data.keyword.mobilepushshort}} service is explained using the sample scenario of the ACME Bank. The ACME Bank is in the phase of having their legacy IT infrastructure moved to {{site.data.keyword.cloud_notm}} services and is building mobile back-end for their customer and employee facing apps. They are using {{site.data.keyword.mobilepushshort}} service to send notification to their customers on banking transactions and other important events and reminders.
+The {{site.data.keyword.mobilepushshort}} service is explained by using the sample scenario of the ACME Bank. The ACME Bank is in the phase of having their existing IT infrastructure moved to {{site.data.keyword.cloud_notm}} services and is building mobile back-end for their customer and employee facing apps. They are using {{site.data.keyword.mobilepushshort}} service to send notification to their customers on banking transactions and other important events and reminders.

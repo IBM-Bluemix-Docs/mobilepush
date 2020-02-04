@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2019
-lastupdated: "2019-11-15"
+  years: 2015, 2020
+lastupdated: "2020-02-04"
 
 keywords: push notifications, notifications, service instance, cordova application
 
@@ -45,11 +45,11 @@ Ensure that you have gone through [Obtain your notification credentials](/docs/s
 ## For Android and Chrome Apps & Extensions
 {: #push_step_2_Android}
 
-Ensure that you have gone through [Obtain your notification provider credentials](/docs/services/mobilepush?topic=mobile-pushnotification-push_step_1) to setup the FCM project and obtain your credentials.
+Ensure that you have gone through [Obtain your notification provider credentials](/docs/services/mobilepush?topic=mobile-pushnotification-push_step_1) to set up the FCM project and obtain your credentials.
 
 To configure FCM credentials for Android applications and Google Chrome Apps & Extensions, complete the following steps:
 
-1. Open your IBM Cloud catalog and then click the {{site.data.keyword.mobilepushfull}} service instance you have created. 
+1. Open your IBM Cloud catalog and then click the {{site.data.keyword.mobilepushfull}} service instance that you have created. 
 1. Click **Manage** > **Configure**. 
 1. Choose either of the following options: 
    - For Android: Select **Mobile** and then update the FCM Push Credentials tab with the Sender ID/Project number and API Key. 
@@ -63,7 +63,7 @@ Your next step is to [set up the Push service client SDK's](/docs/services/mobil
 
 Cordova is a platform for building hybrid applications with JavaScript, CSS, and HTML. The {{site.data.keyword.mobilepushshort}} service supports development of Cordova-based iOS and Android applications.
 
-To enable Cordova applications for receiving push notifications to your devices, go through [{{site.data.keyword.mobilepushfull}} Cordova Plugin Push SDK](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-cordova-plugin-push/tree/Doc#ios-app){: external}.
+To enable Cordova applications for receiving push notifications to your devices, go through [{{site.data.keyword.mobilepushfull}} Cordova plug-in Push SDK](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-cordova-plugin-push/tree/Doc#ios-app){: external}.
 
 ## For iOS applications and Safari browser 
 {: #enable-push-ios-notifications}
@@ -81,9 +81,9 @@ To set up APNs on the Push Notification services console, complete the steps:
 1. Choose the **Mobile** option to update the information in the **APNs Push Credentials** form.
 1. Choose either of the following options:
    - For **Mobile** option
-      1. Select **Sandbox** (development) or **Production** (distribution) as appropriate and then upload the `p.12` certificate that you have created. 
+      1. Select **Sandbox** (development) or **Production** (distribution) and then upload the `p.12` certificate that you have created. 
 
-         ![Set push notifications console](images/wizard.jpg "Push Notifications console with the Configure navigation option selected showing the Mobile tab and the APN Push Credentials")
+         ![Set push notifications console](images/wizard.jpg "Push Notifications console with the Configure navigation option that is selected showing the Mobile tab and the APN Push Credentials")
 
       1. In the **Password** field, enter the password that is associated with the `.p12` certificate file, then click **Save**.
    - For **Web** option
@@ -91,21 +91,21 @@ To set up APNs on the Push Notification services console, complete the steps:
          - **Website Name**: This is the name that you have provided in the Notification center.
          - **Website Push ID**: Update with the reverse-domain string for your Website Push ID. For example, web.com.acmebanks.www.
          - **Website URL**: Provide the URL of the website that should be subscribed to push notifications. For example, `https://www.acmebanks.com`.
-         - **Allowed Domains**: This is optional parameter. This is the list of websites that requests permission from the user. Ensure that the URLs are comma separated values. Note that the value in Website URL will be used if this is not provided. 
-         - **URL Format String**: The URL to resolve when the notification is clicked. For example, ["https://www.acmebanks.com"]. Ensure that the URL use the http or https scheme.
+         - **Allowed Domains**: This is optional parameter. This is the list of websites that requests permission from the user. Ensure that the URLs are comma-separated values. Note that the value in Website URL will be used if this is not provided. 
+         - **URL Format String**: The URL to resolve when the notification is clicked. For example, [`https://www.acmebanks.com`]. Ensure that the URL use the http or https scheme.
          -**Safari web push certificate**: Upload the .p12 certificate and provide the password.
 1. Click **Save**.	
 
    ![Push Notifications console](images/push_configure_safari.jpg "Web option page fields")	
 
-After you have set up the service for iOS applications, you need to [Set up Push service client SDK's](/docs/services/mobilepush?topic=mobile-pushnotification-push_step_3).
+After you have set up the service for iOS applications, you need to [Set up Push service client SDKs](/docs/services/mobilepush?topic=mobile-pushnotification-push_step_3).
 
 ## For Chrome and Firefox browsers 
 {: #push_step2_chromefirefox}
 
 1. On the {{site.data.keyword.mobilepushshort}} console, select **Configure**.
 1. Select the Web tab.
-   ![WebPush Configurations](images/webpush_configure.jpg "Web Push Configuration window for definining FCM API Key and URL of your website")
+   ![WebPush Configurations](images/webpush_configure.jpg "Web Push Configuration window for defining FCM API Key and URL of your website")
 1. Configure the FCM API key and the URL of your website that will be registered to receive push notifications.
 1. Click **Save**.
-!. After you have set up the service, you need to [Set up Push service client SDK's](/docs/services/mobilepush?topic=mobile-pushnotification-push_step_3).
+1. After you have set up the service, you need to [Set up Push service client SDKs](/docs/services/mobilepush?topic=mobile-pushnotification-push_step_3).

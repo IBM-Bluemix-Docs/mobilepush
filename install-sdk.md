@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018, 2019
-lastupdated: "2019-11-15"
+  years: 2018, 2020
+lastupdated: "2020-02-04"
 
 keywords: push notifications, notifications, sdk, android sdk, ios sdk, cordova sdk, web sdk, react native sdk
 
@@ -40,7 +40,7 @@ subcollection: mobile-pushnotification
 # SDKs for Push Notification
 {: #install-sdk}
 
-Following are the list of Push Notification Client SDKs and Server-side SDKs. The Push Notification Client SDKs are available for Android, Cordova, iOS and Web. The Push Notification server-side SDKs are available for Swift, JAVA and nodejs. Use the following links to install platform specific SDKs.
+Following are the list of Push Notification Client SDKs and Server-side SDKs. The Push Notification Client SDKs are available for Android, Cordova, iOS, and Web. The Push Notification server-side SDKs are available for Swift, JAVA, and nodejs. Use the following links to install platform-specific SDKs.
 {: shortdesc}
 
 Refer the 'README' document in the SDK for detailed information on installation and technical concepts.
@@ -48,7 +48,7 @@ Refer the 'README' document in the SDK for detailed information on installation 
 |Client SDKs                         |Server-side SDKs                     |
 |------------------------------------|-------------------------------------|
 |[Android Client SDK](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-android-push){: external} |[Swift SDK](https://github.com/ibm-bluemix-mobile-services/bms-pushnotifications-serversdk-swift){: external} |
-|[iOS Client SDK](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-swift-push){: external} |[Java SDK](https://github.com/ibm-bluemix-mobile-services/bms-pushnotifications-serversdk-java){: external} |
+|[iOS Client SDK](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-swift-push){: external} |[Java&trade; SDK](https://github.com/ibm-bluemix-mobile-services/bms-pushnotifications-serversdk-java){: external} |
 |[Cordova Client SDK](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-cordova-plugin-push){: external} |[NodeJs SDK](https://github.com/ibm-bluemix-mobile-services/bms-pushnotifications-serversdk-nodejs){: external} |
 |[Web Client SDK](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-javascript-webpush){: external} | |
 |[React Native Client SDK](https://github.com/ibm-bluemix-mobile-services/bms-push-react-native){: external} | |

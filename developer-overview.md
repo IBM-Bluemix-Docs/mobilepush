@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018, 2019
-lastupdated: "2019-11-15"
+  years: 2018, 2020
+lastupdated: "2020-02-04"
 
 keywords: push notifications, application development, sdk
 
@@ -40,15 +40,16 @@ subcollection: mobile-pushnotification
 # Overview for developers
 {: #developer-overview}
 
-You can access the capabilities of the {{site.data.keyword.mobilepushshort}} service via a HTTP Representational State Transfer (ReST) APIs (application program interface). Platform specific Software Development Kits (SDKs) are also available to simplify application development.
+You can access the capabilities of the {{site.data.keyword.mobilepushshort}} service via an HTTP Representational State Transfer (ReST) APIs (application programming interface). Platform-specific Software Development Kits (SDKs) are also available to simplify application development.
 {: shortdesc}
 
 ## Programming with the service
 {: #programming}
 
-You can either use our SDK or the ReST API to further develop your client applications.
+You can either use the SDK or the ReST API to further develop your client applications.
 
-Access the following {{site.data.keyword.mobilepushshort}} Functions from your backend server applications and the clients through {{site.data.keyword.mobilepushshort}} REST APIs:
+Access the following {{site.data.keyword.mobilepushshort}} Functions from your backend server applications and the clients through {{site.data.keyword.mobilepushshort}} ReST APIs:
+
 - Push Configuration
 - Device registrations
 - Messages
@@ -59,7 +60,7 @@ Access the following {{site.data.keyword.mobilepushshort}} Functions from your b
 ## Using Software Development Kits
 {: #sdks}
 
-The Push Notifications Service supports Android, iOS, Cordova and Web SDKs for simplified application development. [Install and integrate](/docs/services/mobilepush?topic=mobile-pushnotification-install-sdk) the SDK into your app. 
+The {{site.data.keyword.mobilepushshort}} Service supports Android, iOS, Cordova, and Web SDKs for simplified application development. [Install and integrate](/docs/services/mobilepush?topic=mobile-pushnotification-install-sdk) the SDK into your app. 
 
 All SDKs support authenticating by using either your service credentials or an authentication token.
 

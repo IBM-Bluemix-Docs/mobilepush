@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2019
-lastupdated: "2019-11-15"
+  years: 2015, 2020
+lastupdated: "2020-02-04"
 
 keywords: push notifications, notification provider credentials
 
@@ -45,9 +45,9 @@ To set up {{site.data.keyword.mobilepushshort}} service, you need to obtain the 
 ## For Android
 {: #push_step_1_android}
 
-Firebase Cloud Messaging (FCM) is the gateway used to deliver push notifications to Android devices, Google Chrome browser and Chrome Apps & Extensions. To set up the {{site.data.keyword.mobilepushshort}} service on the console, you need to get your FCM credentials (Sender ID and API key). 
+Firebase Cloud Messaging (FCM) is the gateway that is used to deliver push notifications to Android devices, Google Chrome browser and Chrome Apps & Extensions. To set up the {{site.data.keyword.mobilepushshort}} service on the console, you need to get your FCM credentials (Sender ID and API key). 
 
-The API key is stored securely and used by the {{site.data.keyword.mobilepushshort}} service to connect to the FCM server and the sender ID (project number) is used by the Android SDK and the JS SDK for  Google Chrome and Mozilla Firefox on the client side. 
+The API key is stored securely and used by the {{site.data.keyword.mobilepushshort}} service to connect to the FCM server and the sender ID (project number) is used by the Android SDK and the JS SDK for Google Chrome and Mozilla Firefox on the client side. 
 
 To set up FCM and obtain your credentials, complete the steps:
 
@@ -57,28 +57,28 @@ To set up FCM and obtain your credentials, complete the steps:
 1. In the navigation pane, select **Settings** > **Project settings**.
 1. Choose the Cloud Messaging tab to obtain your project credentials - Server API Key and a Sender ID. Note that the Server key listed in FCM is the same as Server API Key.
 
-   ![Obtaining credentials for FCM](images/FCM_settings_2.jpg "Settings page with the Cloud messaging tab selected showing project credentials")
+   ![Obtaining credentials for FCM](images/FCM_settings_2.jpg "Settings page with the Cloud messaging tab-selected showing project credentials")
 
 You would also need to generate the `google-services.json` file. Complete the following steps:
 
 1. In the Firebase console, click the **Project Settings** icon.
 
-   ![Firebase Project Settings](images/FCM_settings_6.jpg "Firebase console with the Project settings option being selected")
+   ![Firebase Project Settings](images/FCM_settings_6.jpg "Firebase consoles with the Project settings option being selected")
 
 1. Select **ADD APP** or **Add Firebase to your Android app** icon from the General tab on the Your apps pane.
 1. In Add Firebase to your Android app window, first add **com.ibm.mobilefirstplatform.clientsdk.android.push** as the Package Name. The App nickname field is optional. Click **REGISTER APP**. 
 
    ![Adding Firebase to your Android window](images/FCM_1.jpg "Add Firebase to your Android app screen on the Enter app details tab showing the package and app name fields")
 
-1. Now, include the package name of your application, by entering the package name in Add Firebase to your Android app window. The App nickname field is optional. Click **REGISTER APP**.  See the following example:
+1. Now, include the package name of your application, by entering the package name in Add Firebase to your Android app window. The App nickname field is optional. Click **REGISTER APP**. See the following example:
 
-   ![Adding the package name of your application](images/FCM_settings_4.jpg "Add Firebase to your Andriod app screen on the Register app tab showing the package and app name fields")
+   ![Adding the package name of your application](images/FCM_settings_4.jpg "Add Firebase to your Android app screen on the Register app tab showing the package and app name fields")
 
 1. The `google-services.json` file is generated. 
 
 Once you have obtained your FCM credentials and have generated the `google-services.json` file, the next step is to [Create a service instance](/docs/services/mobilepush?topic=mobile-pushnotification-push_step_2).
 
-Google has deprecated GCM and has integrated Cloud Messaging with Firebase. You will have to migrate your GCM client apps on Android to FCM.
+Google has deprecated GCM and has integrated Cloud Messaging with Firebase. You have to migrate your GCM client apps on Android to FCM.
 {: note}
 
 ## For iOS
@@ -98,9 +98,9 @@ Ensure that you have an [Apple Developers](https://developer.apple.com/){: exter
 
 1. Go to the [Apple Developer](https://developer.apple.com){: external} portal, click **Member Center**, and select **Certificates, Identifiers & Profiles**.
 1. Go to **Identifiers** > **App IDs section**.
-1. In the **Registering App IDs** page, provide the App name in the App ID Description Name field. For example: ACME Push Notifications.
+1. In the **Registering App IDs** page, provide the App name in the App ID Description Name field. For example, ACME Push Notifications.
 1. Provide a string for the App ID Prefix.  
-1. For the App ID Suffix, choose **Explicit App ID** and provide a Bundle ID value. It is recommended that you provide a reverse domain-name style string. For example: `com.ACME.push`.
+1. For the App ID Suffix, choose **Explicit App ID** and provide a Bundle ID value. It is recommended that you provide a reverse domain-name style string. For example, `com.ACME.push`.
 1. Select the **{{site.data.keyword.mobilepushshort}}** check-box and click **Continue**.
 1. Go through your settings and click **Register** > **Done**.
 
@@ -223,13 +223,13 @@ Ensure that you have an Apple Developer account. You need to register a Website 
 
    ![Push Notifications console](images/safari_1.jpg "Apple Developer portal showing the Website Push IDs navigation option")
 
-1. In the Register Website Push ID panel, provide an appropriate Website Push ID description and identifier ID. It is recommended that this is in reverse-domain name format, starting with `web`. For example: `web.com.acmebanks`.
+1. In the Register Website Push ID pane, provide an appropriate Website Push ID description and identifier ID. It is recommended that this is in reverse-domain name format, starting with `web`. For example, `web.com.acmebanks`.
 1. Register the Website Push ID. You now have your Website Push ID 
 1. Select **Edit** to create a certificate to use for the Website Push ID.
-!. In the Certificate Assistant window for Certificate Information, provide your email ID, and a common name. Leave the Certificate Authority email address as blank.
-!. Click **Save to disk** and select **Continue**.
-!. Choose to save the certificate to an appropriate folder.
+1. In the Certificate Assistant window for Certificate Information, provide your email ID, and a common name. Leave the certificate authority email address as blank.
+1. Click **Save to disk** and select **Continue**.
+1. Choose to save the certificate to an appropriate folder.
 1. Choose the `.certSigningRequest` created on the disk when prompted in the wizard for generating the certificate. Ensure that you download the Website push certificate created in the `.cer` format.
-1. Open the Certificate in the KeyChain Access tool. Right-click and export as a p12 certificate. Note the password provided during the generation of the p12 certificate.
+1. Open the Certificate in the KeyChain Access tool. Right-click and export as a p12 certificate. Note the password that is provided during the generation of the p12 certificate.
 
 After generating a certificate, the next step is to [Configure a service instance](/docs/services/mobilepush?topic=mobile-pushnotification-push_step_2).

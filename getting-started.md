@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2019
-lastupdated: "2019-12-18"
+  years: 2015, 2020
+lastupdated: "2020-02-04"
 
 keywords: push notifications, ibm cloud catalog, push service client sdk, notification provider, getting started
 

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2017, 2019
-lastupdated: "2019-11-15"
+  years:  2017, 2020
+lastupdated: "2020-02-04"
 
 keywords: push notifications, notifications, service access, manage, user roles
 
@@ -118,9 +118,9 @@ The actions are customized and defined by the {{site.data.keyword.Bluemix_notm}}
 ## Working with API keys
 {: #apikeys}
 
-Upon creating service creadentials, you may notice an `apiKey` is displayed instead of the `appSecret`.
+Upon creating service credentials, you might notice an `apiKey` is displayed instead of the `appSecret`.
 
-To use any ReST APIs, you must generate the access token using the following curl command:
+To use any ReST APIs, you must generate the access token by using the following curl command:
 
 ### Parameters
 
@@ -147,9 +147,9 @@ To use any ReST APIs, you must generate the access token using the following cur
 }
 ```
 
-Upon generating the access token using the preceding curl command, you may now operate the Rest API’s by passing the `Bearer <value of access_token>` in the Authorization header
+Upon generating the access token by using the preceding curl command, you might now operate the Rest API’s by passing the `Bearer <value of access_token>` in the Authorization header
 
-For example:
+For example,
 
 ```
 curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'Authorization: Bearer eyJraWQiOiIyMDE3MTAzMC0wMDowMDowMCIsImFsZyI6IlJTMjU2In0.eyJpYW1faWQiOiJpYW0tU2VydmljZUlkLTYxZDdhNzJkLWM3YzAtNGNlZS05Zjg0LWI2ZDc1NzgzMWM2NSIsImlkIjoiaWFtLVNlcnZpY2VJZC02MWQ3YTcyZC1jN2MwLTRjZWUtOWY4NC1iNmQ3NTc4MzFjNjUiLCJyZWFsbWlkIjoiaWFtIiwiaWRlbnRpZmllciI6IlNlcnZpY2VJZC02MWQ3YTcyZC1jN2MwLTRjZWUtOWY4NC1iNmQ3NTc4MzFjNjUiLCJzdWIiOiJTZXJ2aWNlSWQtNjFkN2E3MmQtYzdjMC00Y2VlLTlmODQtYjZkNzU3ODMxYzY1Iiwic3ViX3R5cGUiOiJTZXJ2aWNlSWQiLCJhY2NvdW50Ijp7ImJzcyI6Ijk3MDg5MjkzNTg0OTg1NzBhYjYxMjUwNDk3ZjBmMDI2In0sImlhdCI6MTUzNTM2NTQ5MywiZXhwIjoxNTM1MzY5MDkzLCJpc3MiOiJodHRwczovL2lhbS5ibHVlbWl4Lm5ldC9pZGVudGl0eSIsImdyYW50X3R5cGUiOiJ1cm46aWJtOnBhcmFtczpvYXV0aDpncmFudC10eXBlOmFwaWtleSIsInNjb3BlIjoiaWJtIG9wZW5pZCIsImNsaWVudF9pZCI6ImRlZmF1bHQiLCJhY3IiOjEsImFtciI6WyJwd2QiXX0.ASKxD9Wrz5--OYVkPIsufKK9RNKKhJKuvRldm5mnGNv6PSH7sPBB6NiRG-SSGzEC0ZIei1WqtRE-0TRHwzSnIjXPb3yffBcvNtXuG9wT8GT8zsvxQ7bJk0ovge_0Xrrcym4cCTq2jO6ROWzOZ275wkH0h4fIzukbPv7YpT2Z-DdxIwHY_uALxqcCY83xODtMIs21PO6YwQ3KX4YfNEpKUminJpo45T8po4k049PODQKEK65YrqHYK1_voCJUu9xt9uVoGd-r962fhnbuxeEAe6di9KGVfOGfEdZFHgexoG__wXHa0Rmv9dCl-nNI4WMZfCTj8jgfEOhuZstpW7pW2g' --header 'Accept-Language: en-US' -d '{ \ 
