@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2019
-lastupdated: "2019-11-15"
+  years: 2015, 2020
+lastupdated: "2020-02-04"
 
 keywords: push notifications, notifications, faq, frequently asked questions, rest api filter, Xcode
 
@@ -63,7 +63,7 @@ Follow the steps mentioned in [Step 3: Set up Push service client SDK's](/docs/s
 
 1. You use the correct start method. 
 1. Include the `manifest.json` file in the root folder.
-1. Host your website. Preferably create a `node.js` starter in IBM Cloud to try it out. For example: *https://&lt;mysamplewebsite&gt;.cloud.ibm.com/*.	
+1. Host your website. Preferably create a `node.js` starter in IBM Cloud to try it out. For example: `https://<mysamplewebsite>.cloud.ibm.com/`.	
 
 ### How do I resolve Web push web configuration errors?
 {: #faq-web-config-errors}	
@@ -242,14 +242,18 @@ For the subscription GET API the following combinations are supported:
 {: #push-bms-sdk-failing}
 
 BMS SDKs is failing with the Xcode New Build System. This is due to React Native 0.57+ and Cordova iOS@5.0.0 now supports the XCode (9 and 10+) New Build System. 
-Projects/apps which are updated to these versions and above don't need to do any changes to make the Push SDKs work.
+Projects/apps which are updated to these versions and higher don't need to do any changes to make the Push SDKs work.
 For the project/apps which are in old versions, there is no way to make the projects to build with latest build system. The suggested workaround is:
 
-**Using XCode**
+#### Using XCode
 1. Go to **File** &gt; **Project Settings** or **Workspace Settings**.
 1. Select **Legacy Build System** from the **Build System** dropdown.
 
-**Using XCode build**
+#### Using XCode build
 - For **React Native**, use the **-UseModernBuildSystem=NO** flag to opt out of the new Xcode new build system.
 - For **cordova**, use **--buildFlag="-UseModernBuildSystem=0"** to build.
 
+## Why do the API requests sent to {{site.data.keyword.mobilepushshort}} service via a standalone client like Java program fails with 403 - Forbidden error?
+{: #faq-api-standalone-client}	
+
+The API requests sent to the {{site.data.keyword.mobilepushshort}} service should be set to the `user-agent` request header. The user agent header property is a string that helps identifies the application that calling the API.
