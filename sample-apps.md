@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018, 2019
-lastupdated: "2019-11-15"
+  years: 2018, 2020
+lastupdated: "2020-02-04"
 
 keywords: push notifications, notifications, sample apps
 
@@ -46,7 +46,7 @@ To get you started quickly!
 - [Android Sample App](https://github.com/ibm-bluemix-mobile-services/bms-samples-android-hellopush/){: external}
 - [Cordova Sample App](https://github.com/ibm-bluemix-mobile-services/bms-samples-cordova-hellopush){: external}
 - [iOS Sample App](https://github.com/ibm-bluemix-mobile-services/bms-samples-swift-hellopush){: external}
-- [Online Catalog Store](https://github.com/ibm-bluemix-mobile-services/mobiledashboard-storecatalog-backend){: external}
+- [Online catalog Store](https://github.com/ibm-bluemix-mobile-services/mobiledashboard-storecatalog-backend){: external}
 - [BluePic](https://github.com/IBM/BluePic){: external}
  
 ## Server SDK samples
@@ -54,4 +54,4 @@ To get you started quickly!
 - [Cloud Functions](https://github.com/ibm-bluemix-push-notifications/HelloPush-CloudFunctions){: external}
 - [NodeJS](https://github.com/ibm-bluemix-push-notifications/HelloPush-NodeJS){: external}
 - [Swift Server](https://github.com/ibm-bluemix-push-notifications/HelloPush-Swift-Server){: external}
-- [Java Server](https://github.com/ibm-bluemix-push-notifications/HelloPush-Java-Server){: external}
+- [Java&trade; Server](https://github.com/ibm-bluemix-push-notifications/HelloPush-Java-Server){: external}

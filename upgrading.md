@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2019
-lastupdated: "2019-11-15"
+  years: 2015, 2020
+lastupdated: "2020-02-04"
 
 keywords: push notifications, notifications, upgrading plan, lite, basic, advanced
 
@@ -46,7 +46,7 @@ The {{site.data.keyword.mobilepushshort}} service offers three plans that provid
 ## Pricing plan
 {: #pricing-plan}
 
-- A push notification sent to a unique device/end point or a webhook event constitutes a digital message. 
+- A push notification that is sent to a unique device/end point or a webhook event constitutes a digital message. 
 - An Addressable Device is a device upon which an application is installed that is addressable by the Cloud Service.
 - Lite plan services are deleted after 30 days of inactivity.
 {: note}

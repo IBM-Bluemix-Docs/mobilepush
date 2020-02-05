@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2019
-lastupdated: "2019-11-15"
+  years: 2015, 2020
+lastupdated: "2020-02-04"
 
 keywords: push notifications, notifications, configure sound, payload, ios badge, holding android notification
 
@@ -85,7 +85,7 @@ Configure an iOS badge, sound, and additional JSON payload.
 ## Holding Android notifications 
 {: #hold-notifications-android}
 
-When your application goes into background, you might want {{site.data.keyword.mobilepushshort}} to hold back notifications sent to your application. To hold notifications, call the `hold()` method in the `onPause()` method of the activity that is handling {{site.data.keyword.mobilepushshort}}.
+When your application goes into background, you might want {{site.data.keyword.mobilepushshort}} to hold back notifications that are sent to your application. To hold notifications, call the `hold()` method in the `onPause()` method of the activity that is handling {{site.data.keyword.mobilepushshort}}.
 
 ```
 @Override

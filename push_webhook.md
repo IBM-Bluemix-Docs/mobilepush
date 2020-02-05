@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2019
-lastupdated: "2019-11-15"
+  years: 2015, 2020
+lastupdated: "2020-02-04"
 
 keywords: push notifications, notifications, receive alerts, webhook events
 
@@ -40,18 +40,18 @@ subcollection: mobile-pushnotification
 # Receive alerts on webhook events
 {: #webhook_event_based_notifications}
 
-With the {{site.data.keyword.mobilepushshort}} service, you can choose to receive alerts on information that has changed. Changes to the enterprise information create events, for which you can be notified by registering them as webhook events. These webhook events triggers an alert. 
+With the {{site.data.keyword.mobilepushshort}} service, you can choose to receive alerts on information that has changed. Changes to the enterprise information create events, for which you can be notified by registering them as webhook events. These webhook events trigger an alert. 
 
 Webhooks are user-defined callbacks that are triggered by an event, such as registering a device or subscribing to tags. On the {{site.data.keyword.mobilepushshort}} service, you can register for the following webhook events: 
 
-- **onDeviceRegister**: A webhook event is triggered for devices registered for push.
+- **onDeviceRegister**: A webhook event is triggered for devices that are registered for push.
 - **onDeviceUpdate**: A webhook event is triggered when information on a registered device is updated.
 - **onDeviceUnregister**: A webhook event is triggered when a device is unregistered. 
 - **onSubscribe**: A webhook event is triggered on a user subscribing to a tag.
 - **onUnsubscribe**: A webhook event is triggered for a user unsubscribing to a tag.
-- **onNotificationStatusChange**: A webhook event is  triggered for every notification and denotes the status as SENT, FAILED, OPEN, or SEEN.
+- **onNotificationStatusChange**: A webhook event is triggered for every notification and denotes the status as SENT, FAILED, OPEN, or SEEN.
 
-Notification dispatches are done in batches. A message dispatch can have multiple webhook events, that might include both failures and success. 
+Notification dispatches are done in batches. A message dispatch can have multiple webhook events that might include both failures and success. 
 The webhook events would have the same messageID as that of the dispatched message. 
 {: note}
 

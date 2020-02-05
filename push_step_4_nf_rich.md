@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2019
-lastupdated: "2019-11-15"
+  years: 2015, 2020
+lastupdated: "2020-02-04"
 
 keywords: push notifications, notifications, rich media notification
 
@@ -40,7 +40,7 @@ subcollection: mobile-pushnotification
 # Rich Media notifications
 {: #rich-media-notifications}
 
-You can enable Rich Media {{site.data.keyword.mobilepushshort}} in iOS 10 and later. {{site.data.keyword.mobilepushshort}} can be sent with Audio, Video, GIFs and images. 
+You can enable Rich Media {{site.data.keyword.mobilepushshort}} in iOS 10 and later. {{site.data.keyword.mobilepushshort}} can be sent with Audio, Video, GIFs, and images. 
 
 To set up your application to receive rich push on iOS 10, complete the steps:  
 

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2019
-lastupdated: "2019-11-15"
+  years: 2015, 2020
+lastupdated: "2020-02-04"
 
 keywords: push notifications, notifications, troubleshooting, service issues
 
@@ -40,7 +40,7 @@ subcollection: mobile-pushnotification
 # Troubleshoot service issues
 {: #errors}
 
-This topic guides you in identifying and resolving the likely error scenarios you might encounter when using the {{site.data.keyword.mobilepushshort}} service.
+This topic guides you in identifying and resolving the likely error scenarios that you might encounter when using the {{site.data.keyword.mobilepushshort}} service.
 
 ## Resolving common push notification issues
 {: #troubleshooting_notification_errors}
@@ -48,16 +48,16 @@ This topic guides you in identifying and resolving the likely error scenarios yo
 ### You don't have permission to add the instance to any resource group in this account
 {: #permission_issue}
 
-**Explanation**: {{site.data.keyword.IBM_notm}} {{site.data.keyword.mobilepushshort}} service is now a Resource Controller (RC) based service. Instances should be created using a RC. You may notice the following error if a default resource group is not in your account.
+**Explanation**: {{site.data.keyword.IBM_notm}} {{site.data.keyword.mobilepushshort}} service is now a Resource Controller (RC) based service. Instances should be created by using an RC. You might notice the following error if a default resource group is not in your account.
 
-![Permission issue](images/RC_error.png "Screenshot showing permission error")
+![Permission issue](images/RC_error.png "Screen capture showing permission error")
 
 **User response**:  The admin must create a resource group for the user before creating an instance.
 
 ### The HyperText Transfer Protocol (HTTP) 301 Moved Permanently redirect status while accessing the service
 {: #http_301_redirect}
 
-**Explanation**: This error might occur if you are accessing the service using the `http` protocol. {{site.data.keyword.mobilepushshort}} service requires the website to be accessed with the `https` protocol.
+**Explanation**: This error might occur if you are accessing the service by using the `http` protocol. {{site.data.keyword.mobilepushshort}} service requires the website to be accessed with the `https` protocol.
 
 **User response**: We recommend you to access the service and the Swagger API through the `https` protocol, rather than `http`.
 
@@ -66,7 +66,7 @@ This topic guides you in identifying and resolving the likely error scenarios yo
 
 **Explanation**: If a postman receives a 301 or 302 response code for a POST request, it automatically redirects to the GET request for the same call. The {{site.data.keyword.mobilepushshort}} service requires the website to be accessed with the `https` protocol, rather than `http`.
 
-**User response**: It is recommended that you try connecting to the website using `https`, from the browser.
+**User response**: It is recommended that you try connecting to the website by using `https`, from the browser.
 
 ### Internal server error occurred. Please contact admin. (Internal error code: PUSHD102E)
 {: #troubleshooting_notification_internal}
@@ -92,21 +92,21 @@ This topic guides you in identifying and resolving the likely error scenarios yo
 ### Server Busy: The server is currently unable to handle the request. Try again later.
 {: #troubleshooting_notification_server_busy}
 
-**Explanation**: Users may notice the error while accessing the reports in the Monitoring page. This is an expected behavior when the number of messages sent is very high in the past 90 days.
+**Explanation**: Users might notice the error while accessing the reports in the Monitoring page. This is an expected behavior when the number of messages that are sent is very high in the past 90 days.
  
-**User response**: messageId based reports can be accessed through REST APIs. Refer "getMessageReport" in [ReST API docs](https://cloud.ibm.com/apidocs/push-notifications#api-documentation-for-push-notifications) .
+**User response**: messageId based reports can be accessed through REST APIs. Refer "getMessageReport" in [ReST API docs](https://cloud.ibm.com/apidocs/push-notifications#api-documentation-for-push-notifications).
 
 ### SecurityError: The operation is insecure
 {: #troubleshooting_notification_insecure}
 
 **Explanation**:  You might see the error when enabling the web console in Firefox. Web push support in {{site.data.keyword.mobilepushshort}} service requires the website to be accessed with the `https` protocol, rather than `http`.
 
-**User response**: It is recommended that you try connecting to the website using `https`, from the browser.
+**User response**: It is recommended that you try connecting to the website by using `https`, from the browser.
 
 ## Resolving web push configuration errors
 {: #troubleshooting_configuration_errors}
 
-You can diagnose web push configuration related errors by going through the `BMSPushSDK.js` file. The file contains information on the failure. 
+You can diagnose web push configuration-related errors by going through the `BMSPushSDK.js` file. The file contains information on the failure. 
 
 To parse an error returned in the callback, consider the following sample code:
 
@@ -131,9 +131,9 @@ function showStatus(response) {
 ```
 {: codeblock}
 
-- If the `applicationId` is incorrectly configured, the initial request to {{site.data.keyword.mobilepushshort}} service will fail, hence the statusCode will be set to zero (0).
+- If the `applicationId` is incorrectly configured, the initial request to {{site.data.keyword.mobilepushshort}} service fails, hence the statusCode is set to zero (0).
 - A status code of 200 or 201 denotes a successful response.
-- In case the `clientSecret` is invalid, a 401 response will be set on the statusCode. The `response.reponse` element will contain description of the error.
+- In case the `clientSecret` is invalid. A 401 response will be set on the statusCode. The `response.reponse` element contains description of the error.
 
 ## Resolving {{site.data.keyword.mobilepushshort}} service error messages
 {: #troubleshooting_service_errors}
@@ -228,7 +228,7 @@ To obtain additional information about an error, search the docs for the related
 ### FPWSE0011E
 {: #error_fpwse0011e}
 
-**Explanation**: The subscription for the tag already exists on the server. For example, when you create a subscription that already exists.
+**Explanation**: The subscription for the tag already exists on the server. For example, when you create a subscription that exists.
 
 **User response**: Create the subscription with a unique tag name.
 
@@ -251,14 +251,14 @@ To obtain additional information about an error, search the docs for the related
 
 **Explanation**: The server is currently unable to handle the request.
 
-**User response**: Resubmit the request at a later time.
+**User response**: Resubmit the request later.
 
 ### FPWSE1007E 
 {: #error_fpwse1007e}
 
 **Explanation**: The {{site.data.keyword.mobilepushshort}} service has been disabled for this application. This might be due to billing, or the app might have been disabled by the administrator.
 
-**User response**: See the Troubleshooting topics in the IBM Cloud Docs to check service status, review troubleshooting information, or for information about getting help.
+**User response**: See the troubleshooting topics in the IBM Cloud Docs to check service status, review troubleshooting information, or for information about getting help.
 
 ### FPWSE1079E
 {: #error_fpwse1079e}

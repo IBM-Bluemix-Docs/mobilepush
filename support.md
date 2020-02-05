@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2019
-lastupdated: "2019-11-15"
+  years: 2017, 2020
+lastupdated: "2020-02-04"
 
 keywords: push notifications, notifications, getting help and support
 

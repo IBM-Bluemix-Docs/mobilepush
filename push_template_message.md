@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2019
-lastupdated: "2019-11-15"
+  years: 2015, 2020
+lastupdated: "2020-02-04"
 
 keywords: push notifications, notifications, parameterize notification
 
@@ -54,37 +54,30 @@ MFPPushNotificationOptions options = new MFPPushNotificationOptions();
 
 JSONObject tempValue = new JSONObject();
     try {
-
       tempValue.put("username",userName);
-
       tempValue.put("amountSpent",amount);
-
       tempValue.put("currency",currency);
-
       tempValue.put("avilableBalance",balance);
-
       } catch (JSONException e) {
             e.printStackTrace();
          }
       options.setPushVariables(tempValue); 
-
       push = MFPPush.getInstance();
-
       push.initialize(getApplicationContext(),appGuid,clientSecret,options);
 ```
 {: codeblock}
 
-Once the variables are defined, they can be called in your message template.
+After the variables are defined, they can be called in your message template.
 
 1. On the {{site.data.keyword.mobilepushshort}} console, select the **Messages** tab.
 1. Compose a message by choosing a **Send to** option.
 1. In the **Message** field, compose your message. Call the defined variables in the message template. Click **Send**.
 
-   ![message template](images/message_template.png "Message page showing a message template with Sent to field set to All devices, Message field with example message about a user's bank account balance, and Additional payload field with "key":"value" attribute added.")
+   ![Message template](images/message_template.png "A Message page with a message template with Sent to field set to All devices, Message field with example message about a user's bank account balance, and Additional payload field with "key":"value" attribute added.")
 
-Your custom notfication message will be sent by fetching the variable data -
+Your custom notification message is sent by fetching the variable data -
 
-![message example](images/message_template_example.jpg "Example notification based on the message template")
+![Message example](images/message_template_example.jpg "Example notification based on the message template")
 
 The feature is enabled only for users who have opted the `Advanced Plan`. Select **Plan** in the {{site.data.keyword.mobilepushshort}} service console to [upgrade](https://cloud.ibm.com/docs/account?topic=account-changing#changing).
 {: note}
@@ -93,4 +86,4 @@ The feature is enabled only for users who have opted the `Advanced Plan`. Select
 {: #limitations}
 
 - Currently, this feature is not supported on Safari
-- Variables in the notification template may not work if an app is force quit on iOS. The limitation is not in control of SDK but comes from iOS.
+- Variables in the notification template might not work if an app is force quit on iOS. The limitation is not in control of SDK but comes from iOS.
