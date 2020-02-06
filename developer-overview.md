@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2020
-lastupdated: "2020-02-04"
+lastupdated: "2020-02-06"
 
 keywords: push notifications, application development, sdk
 
@@ -70,5 +70,5 @@ All SDKs support authenticating by using either your service credentials or an a
 For more information about working with Mobile Developer Cloud services and {{site.data.keyword.cloud_notm}}, see the following:
 
 - For an introduction to working with Mobile services and {{site.data.keyword.cloud_notm}}, see [Getting started with Mobile apps on IBM Cloud](/docs/services/mobile?topic=mobile-getting-started).
-- Fast track your mobile app development. Pick up a Starter kit from [here](https://cloud.ibm.com/developer/mobile/dashboard). Download the code. Run the App!
+- Fast track your mobile app development. Pick up a Starter kit from the [App Development console](https://cloud.ibm.com/developer/appservice/dashboard). Download the code. Run the App!
 - You can use the [Swagger UI](https://eu-gb.imfpush.cloud.ibm.com/imfpush/) to quickly review ReST API documentation.
