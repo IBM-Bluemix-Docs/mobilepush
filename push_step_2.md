@@ -56,6 +56,8 @@ To configure FCM credentials for Android applications and Google Chrome Apps & E
    - For Google Chrome Apps & Extensions: Select **Web** and then update the Chrome Apps and Extensions tab with the Sender ID/Project number and API Key. 
 1. Click **Save**. The {{site.data.keyword.mobilepushfull}} service is now configured.
 
+    ![Set push notifications console](images/wizard.jpg "Push Notifications console with the Configure navigation option that is selected showing the Mobile tab and the FCM Push Credentials")
+
 Your next step is to [set up the Push service client SDK's](/docs/services/mobilepush?topic=mobile-pushnotification-push_step_3).
 
 ## For Cordova applications 

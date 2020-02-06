@@ -61,11 +61,10 @@ To set up FCM and obtain your credentials, complete the steps:
 
 You would also need to generate the `google-services.json` file. Complete the following steps:
 
-1. In the Firebase console, click the **Project Settings** icon.
+1. In the Firebase console Project overview section, click the **Add android app** icon.
 
-   ![Firebase Project Settings](images/FCM_settings_6.jpg "Firebase consoles with the Project settings option being selected")
+   ![Firebase Project overview](images/FCM_settings_6.jpg "Firebase Project overview consoles open")
 
-1. Select **ADD APP** or **Add Firebase to your Android app** icon from the General tab on the Your apps pane.
 1. In Add Firebase to your Android app window, first add **com.ibm.mobilefirstplatform.clientsdk.android.push** as the Package Name. The App nickname field is optional. Click **REGISTER APP**. 
 
    ![Adding Firebase to your Android window](images/FCM_1.jpg "Add Firebase to your Android app screen on the Enter app details tab showing the package and app name fields")
@@ -97,11 +96,12 @@ Ensure that you have an [Apple Developers](https://developer.apple.com/){: exter
 {: important}
 
 1. Go to the [Apple Developer](https://developer.apple.com){: external} portal, click **Member Center**, and select **Certificates, Identifiers & Profiles**.
-1. Go to **Identifiers** > **App IDs section**.
-1. In the **Registering App IDs** page, provide the App name in the App ID Description Name field. For example, ACME Push Notifications.
+1. Go to **Identifiers** > **Add identifier button**.
+1. In the **Register a New Identifier** page, select the **AppIDs** option.
+1. Provide the App name in the App ID Description Name field. For example, ACME Push Notifications.
 1. Provide a string for the App ID Prefix.  
-1. For the App ID Suffix, choose **Explicit App ID** and provide a Bundle ID value. It is recommended that you provide a reverse domain-name style string. For example, `com.ACME.push`.
-1. Select the **{{site.data.keyword.mobilepushshort}}** check-box and click **Continue**.
+1. For the Bundle ID, choose **Explicit** and provide a Bundle ID value. It is recommended that you provide a reverse domain-name style string. For example, `com.ACMECloud.push`.
+1. Select the **{{site.data.keyword.mobilepushshort}}** check-box from the Capabilities and click **Continue**.
 1. Go through your settings and click **Register** > **Done**.
 
 Your App ID is now registered. 
@@ -122,36 +122,27 @@ You must obtain separate certificates for your development and distribution envi
 <!-- Create a development and distribution SSL certificate. -->
 
 1. Go to the [Apple Developer](https://developer.apple.com){: external} website, click **Member Center**, and select **Certificates, Identifiers & Profiles**.
-1. In the **Identifiers** area, click **App IDs**.
-1. From your list of App IDs, select your App ID, then select **Edit **.
-1. Select the the **Push Notifications** check-box, and then:
+1. In the **Identifiers** area, select your App ID.
+1. Select the the **Push Notifications** check-box OR select the **configure** option:
    - On Development SSL certificate pane, click **Create Certificate..**.
    - On Production SSL certificate pane, click  **Create Certificate..**.
 
    ![Push Notification SSL certificates](images/certificate_createssl.jpg "Edit App ID screen showing the Push Notifications option, Development SSL certificate, and Production SSL certificate options selected")
 
-1. When the **About Creating a Certificate Signing Request (CSR) screen** displays, start the **Keychain Access** application on your Mac to create a Certificate Signing Request (CSR). Click **Continue**.
+1. Use **Keychain Access** application on your Mac to create a Certificate Signing Request (CSR).
+1. From the menu, select **Keychain Access > Certificate Assistant > Request a Certificate From a Certificate Authority…** 
+1. In **Certificate Information**, enter the email address that is associated with your App Developer account and a common name. Give a meaningful name that helps you identify whether it is a certificate for development (sandbox) or distribution (production); for example, _sandbox-apns-certificate_ or _production-apns-certificate_.
+1. Select **Save to disk** to download the `.certSigningRequest` file to your desktop, then click **Continue**.
+1. In the **Save As** menu option, name the `.certSigningRequest` file and click **Save**.
+1. Click **Done**. You now have a CSR.
+
 1. For the Upload CSR file option, click **Choose File**, and select file  `CertificateSigningRequest.certSigningRequest`. 
 1. Click **Continue**.
 1. On the Download, Install and Backup pane, click **Download**. The `aps_development.cer` file is downloaded.
 	
    ![Download certificate](images/push_certificate_download.jpg "Install and backup page showing the Download button being selected")	
 	
-1. From the menu, select **Keychain Access > Certificate Assistant > Request a Certificate From a Certificate Authority…** 
-1. In **Certificate Information**, enter the email address that is associated with your App Developer account and a common name. Give a meaningful name that helps you identify whether it is a certificate for development (sandbox) or distribution (production); for example, _sandbox-apns-certificate_ or _production-apns-certificate_.
-1. Select **Save to disk** to download the `.certSigningRequest` file to your desktop, then click **Continue**.
-1. In the **Save As** menu option, name the `.certSigningRequest` file and click **Save**.
-1. Click **Done**. You now have a CSR.
-1. Return to the **About Creating a Certificate Siging Request (CSR)** window and click **Continue**. 
-1. From the **Generate** screen, click **Choose File ...** and select the CSR file that you saved on your desktop. Then, click **Generate**.
-
-   ![Generate certificate](images/generate_certificate.jpg "Certificates, Identifiers & Profiles page for generating certificates with the Choose File option being selected")
-
-1. When your certificate is ready, click **Done**.
-1. On the **{{site.data.keyword.mobilepushshort}}** screen, click **Download** to download your certificate, then click **Done**. 
-
-   ![Download certificate](images/certificate_download.jpg "Edit App IDs screen showing the Revoke and Download buttons for the Development SSL certificate")
-
+1. Click **Download** to download your certificate, then click **Done**. 
 1. On your Mac, go to **Keychain Access > My Certificates**, and locate your newly installed certificate. Double-click the certificate to install it into the Keychain Access.
 1. Select the certificate and private key, and then select **Export** to convert the certificate into the personal information exchange format (`.p12` format).
 
@@ -218,18 +209,23 @@ The supported version for {{site.data.keyword.mobilepushshort}} service on Safar
 Ensure that you have an Apple Developer account. You need to register a Website Push ID and generate a certificate to configure your Safari browser to receive notifications. The following steps will help you get started:
 
 1. In the Apple Developer Member center, click **Certificates, ID & Profiles**. 
-1. Click **Identifiers** and then **Website Push IDs**.
-1. Choose to create a new entry by selecting the plus icon.
+1. Click **Identifiers** and then **Add identifier button**.
+1. In the **Register a New Identifier** page, select the **Website Push IDs** option.
 
    ![Push Notifications console](images/safari_1.jpg "Apple Developer portal showing the Website Push IDs navigation option")
 
 1. In the Register Website Push ID pane, provide an appropriate Website Push ID description and identifier ID. It is recommended that this is in reverse-domain name format, starting with `web`. For example, `web.com.acmebanks`.
 1. Register the Website Push ID. You now have your Website Push ID 
-1. Select **Edit** to create a certificate to use for the Website Push ID.
-1. In the Certificate Assistant window for Certificate Information, provide your email ID, and a common name. Leave the certificate authority email address as blank.
-1. Click **Save to disk** and select **Continue**.
-1. Choose to save the certificate to an appropriate folder.
-1. Choose the `.certSigningRequest` created on the disk when prompted in the wizard for generating the certificate. Ensure that you download the Website push certificate created in the `.cer` format.
+1. Open the identifier and select **Create certificate** to create a certificate to use for the Website Push ID.
+1. Use **Keychain Access** application on your Mac to create a Certificate Signing Request (CSR).
+1. From the menu, select **Keychain Access > Certificate Assistant > Request a Certificate From a Certificate Authority…** 
+1. In **Certificate Information**, enter the email address that is associated with your App Developer account and a common name. Give a meaningful name that helps you identify whether it is a certificate for development (sandbox) or distribution (production); for example, _sandbox-apns-certificate_ or _production-apns-certificate_.
+1. Select **Save to disk** to download the `.certSigningRequest` file to your desktop, then click **Continue**.
+1. In the **Save As** menu option, name the `.certSigningRequest` file and click **Save**.
+1. Click **Done**. You now have a CSR.
+1. For the Upload CSR file option, click **Choose File**, and select file  `CertificateSigningRequest.certSigningRequest`. 
+
+1. Click **Continue**. Ensure that you download the Website push certificate created in the `.cer` format.
 1. Open the Certificate in the KeyChain Access tool. Right-click and export as a p12 certificate. Note the password that is provided during the generation of the p12 certificate.
 
 After generating a certificate, the next step is to [Configure a service instance](/docs/services/mobilepush?topic=mobile-pushnotification-push_step_2).
