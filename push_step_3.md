@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-02-04"
+lastupdated: "2020-02-10"
 
 keywords: push notifications, setup client sdk, android application, cordova application, iOS application, web browser
 
@@ -60,9 +60,11 @@ Complete the steps for [{{site.data.keyword.mobilepushshort}} Android SDK](https
 1. In Add Firebase to your Android app window, click **Continue** and then **Finish**. 
 1. Build and run your application. Upon a successful build, the `Gradle build finished` message would appear.
 1. Include the client Push SDK with Gradle.
-   1. Configure your [Gradle](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-android-push/tree/Doc#configure-gradle) file. 
-   2. Configure the [AndroidManifest](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-android-push/tree/Doc#configure-androidmanifest) file.
-   3. Add the `google-services.json` file to your Android application module root directory.
+
+   a. Configure your [Gradle](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-android-push/tree/Doc#configure-gradle) file. 
+   b. Configure the [AndroidManifest](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-android-push/tree/Doc#configure-androidmanifest) file.
+   c. Add the `google-services.json` file to your Android application module root directory.
+
 1. Initialize the SDKs. See [Initializing the Core SDK and the Push SDK](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-android-push/tree/Doc#initializing-the-core-sdk-and-the-push-sdk).
 1. Build the application.
 1. You can choose to register to the {{site.data.keyword.mobilepushshort}} service by clicking the Register Device button on the application or by going through [Registering to the service by using the Push Android SDK](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-android-push/tree/Doc#register-to-push-notifications-ervice).

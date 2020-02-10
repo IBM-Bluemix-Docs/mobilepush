@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-02-04"
+lastupdated: "2020-02-10"
 
 keywords: push notifications, notification provider credentials
 
@@ -55,7 +55,7 @@ To set up FCM and obtain your credentials, complete the steps:
 1. Select **Add project**. 
 1. In the Create a project window, provide a project name, choose a country/region and click **Create project**.
 1. In the navigation pane, select **Settings** > **Project settings**.
-1. Choose the Cloud Messaging tab to obtain your project credentials - Server API Key and a Sender ID. Note that the Server key listed in FCM is the same as Server API Key.
+1. Choose the Cloud Messaging tab to obtain your project credentials - **Server Key** and a **Sender ID**. Note that the Server key listed in FCM is the same as Server API Key.
 
    ![Obtaining credentials for FCM](images/FCM_settings_2.jpg "Settings page with the Cloud messaging tab-selected showing project credentials")
 
@@ -67,17 +67,17 @@ You would also need to generate the `google-services.json` file. Complete the fo
 
 1. In Add Firebase to your Android app window, first add **com.ibm.mobilefirstplatform.clientsdk.android.push** as the Package Name. The App nickname field is optional. Click **REGISTER APP**. 
 
-   ![Adding Firebase to your Android window](images/FCM_1.jpg "Add Firebase to your Android app screen on the Enter app details tab showing the package and app name fields")
+   ![Adding Firebase to your Android window](images/FCM_1.jpg "Add Firebase to your Android app screen on the Enter app details tab with the package and app name fields")
 
 1. Now, include the package name of your application, by entering the package name in Add Firebase to your Android app window. The App nickname field is optional. Click **REGISTER APP**. See the following example:
 
-   ![Adding the package name of your application](images/FCM_settings_4.jpg "Add Firebase to your Android app screen on the Register app tab showing the package and app name fields")
+   ![Adding the package name of your application](images/FCM_settings_4.jpg "Add Firebase to your Android app screen on the Register app tab with the package and app name fields")
 
 1. The `google-services.json` file is generated. 
 
 Once you have obtained your FCM credentials and have generated the `google-services.json` file, the next step is to [Create a service instance](/docs/services/mobilepush?topic=mobile-pushnotification-push_step_2).
 
-Google has deprecated GCM and has integrated Cloud Messaging with Firebase. You have to migrate your GCM client apps on Android to FCM.
+Google has deprecated GCM and has integrated Cloud Messaging with Firebase. You must migrate your GCM client apps on Android to FCM.
 {: note}
 
 ## For iOS
@@ -106,7 +106,7 @@ Ensure that you have an [Apple Developers](https://developer.apple.com/){: exter
 
 Your App ID is now registered. 
 
-![Registered App ID](images/push_ios_register_appid.jpg "Apple Developer portal screen with the App IDs navigation option selected showing App IDs")
+![Registered App ID](images/push_ios_register_appid.jpg "Apple Developer portal screen with the App IDs navigation option-selected showing App IDs")
 
 ### Create a development and distribution APNs SSL certificate
 {: #push_step_1_ios_3}
@@ -122,12 +122,12 @@ You must obtain separate certificates for your development and distribution envi
 <!-- Create a development and distribution SSL certificate. -->
 
 1. Go to the [Apple Developer](https://developer.apple.com){: external} website, click **Member Center**, and select **Certificates, Identifiers & Profiles**.
-1.  1. In the **Identifiers** area, select your App ID. 
-1. Select the the **Push Notifications** check-box OR select the **configure** option, then:
+1. In the **Identifiers** area, select your App ID. 
+1. Select the **Push Notifications** check-box OR select the **configure** option, then:
    - On Development SSL certificate pane, click **Create Certificate..**.
-   - On Production SSL certificate pane, click  **Create Certificate..**.
+   - On Production SSL certificate pane, click **Create Certificate..**.
 
-   ![Push Notification SSL certificates](images/certificate_createssl.jpg "Edit App ID screen showing the Push Notifications option, Development SSL certificate, and Production SSL certificate options selected")
+   ![Push Notification SSL certificates](images/certificate_createssl.jpg "Edit App ID screen with the Push Notifications option, Development SSL certificate, and Production SSL certificate options selected")
 
 1. Use **Keychain Access** application on your Mac to create a Certificate Signing Request (CSR).
 1. From the menu, select **Keychain Access > Certificate Assistant > Request a Certificate From a Certificate Authority…** 
@@ -135,7 +135,6 @@ You must obtain separate certificates for your development and distribution envi
 1. Select **Save to disk** to download the `.certSigningRequest` file to your desktop, then click **Continue**.
 1. In the **Save As** menu option, name the `.certSigningRequest` file and click **Save**.
 1. Click **Done**. You now have a CSR.
-
 1. For the Upload CSR file option, click **Choose File**, and select file  `CertificateSigningRequest.certSigningRequest`. 
 1. Click **Continue**.
 1. On the Download, Install and Backup pane, click **Download**. The `aps_development.cer` file is downloaded.
@@ -192,16 +191,16 @@ The {{site.data.keyword.IBM_notm}} {{site.data.keyword.mobilepushshort}} service
 
 The website URL or the domain name of your website is required by the {{site.data.keyword.mobilepushshort}} service to identify the requests that need to be allowed. 
 
-For example: `https://www.acmebanks.com`
+For example, `https://www.acmebanks.com`
 
-A {{site.data.keyword.mobilepushshort}} service instance supports only one domain name at a time. Hence, ensure that the same value is set for Chrome, Firefox and Safari. Chrome and Safari browsers require additional configuration for web push. You would need an FCM API key, as an FCM endpoint is used to deliver messages in Chrome. 
+A {{site.data.keyword.mobilepushshort}} service instance supports only one domain name at a time. Hence, ensure that the same value is set for Chrome, Firefox, and Safari. Chrome and Safari browsers require more configuration for web push. You would need an FCM API key, as an FCM endpoint is used to deliver messages in Chrome. 
 
 To set up the service for Chrome, Firefox browsers, and Chrome Apps & Extensions, see [Configure a service instance](/docs/services/mobilepush?topic=mobile-pushnotification-push_step_2).
 
 ### Configuring for Safari web push 
 {: #configure-safari}
 
-The supported version for {{site.data.keyword.mobilepushshort}} service on Safari is 10.0. You need to generate a certificate through your Apple Developer account, before you can configure your browser to receive notifications.
+The supported version for {{site.data.keyword.mobilepushshort}} service on Safari is 10.0. You need to generate a certificate through your Apple Developer account before you can configure your browser to receive notifications.
 
 #### Generating a certificate
 {: #certificate-generation}

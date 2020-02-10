@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-02-04"
+lastupdated: "2020-02-10"
 
 keywords: push notifications, notifications, service instance, cordova application
 
@@ -52,13 +52,15 @@ To configure FCM credentials for Android applications and Google Chrome Apps & E
 1. Open your IBM Cloud catalog and then click the {{site.data.keyword.mobilepushfull}} service instance that you have created. 
 1. Click **Manage** > **Configure**. 
 1. Choose either of the following options: 
+
    - For Android: Select **Mobile** and then update the FCM Push Credentials tab with the Sender ID/Project number and API Key. 
    - For Google Chrome Apps & Extensions: Select **Web** and then update the Chrome Apps and Extensions tab with the Sender ID/Project number and API Key. 
+
 1. Click **Save**. The {{site.data.keyword.mobilepushfull}} service is now configured.
 
-    ![Set push notifications console](images/wizard.jpg "Push Notifications console with the Configure navigation option that is selected showing the Mobile tab and the FCM Push Credentials")
-    
-Your next step is to [set up the Push service client SDK's](/docs/services/mobilepush?topic=mobile-pushnotification-push_step_3).
+   ![Set push notifications console](images/wizard.jpg "Push Notifications console with the Configure navigation option that is selected showing the Mobile tab and the FCM Push Credentials")
+     
+Your next step is to [Set up the Push service client SDKs](/docs/services/mobilepush?topic=mobile-pushnotification-push_step_3).
 
 ## For Cordova applications 
 {: #push_step_2_b}
@@ -82,12 +84,12 @@ To set up APNs on the Push Notification services console, complete the steps:
 1. Select **Configure** on the Push Notification services console.
 1. Choose the **Mobile** option to update the information in the **APNs Push Credentials** form.
 1. Choose either of the following options:
+
    - For **Mobile** option
-      1. Select **Sandbox** (development) or **Production** (distribution) and then upload the `p.12` certificate that you have created. 
-
+      a. Select **Sandbox** (development) or **Production** (distribution) and then upload the `p.12` certificate that you have created. 
          ![Set push notifications console](images/wizard.jpg "Push Notifications console with the Configure navigation option that is selected showing the Mobile tab and the APN Push Credentials")
+      b. In the **Password** field, enter the password that is associated with the `.p12` certificate file, then click **Save**.
 
-      1. In the **Password** field, enter the password that is associated with the `.p12` certificate file, then click **Save**.
    - For **Web** option
       - In the Safari Push section, update the form with the required information. 
          - **Website Name**: This is the name that you have provided in the Notification center.
@@ -97,7 +99,6 @@ To set up APNs on the Push Notification services console, complete the steps:
          - **URL Format String**: The URL to resolve when the notification is clicked. For example, [`https://www.acmebanks.com`]. Ensure that the URL use the http or https scheme.
          -**Safari web push certificate**: Upload the .p12 certificate and provide the password.
 1. Click **Save**.	
-
    ![Push Notifications console](images/push_configure_safari.jpg "Web option page fields")	
 
 After you have set up the service for iOS applications, you need to [Set up Push service client SDKs](/docs/services/mobilepush?topic=mobile-pushnotification-push_step_3).

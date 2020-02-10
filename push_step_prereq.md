@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-02-04"
+lastupdated: "2020-02-10"
 
 keywords: push notifications, creating an ibm cloud service instance, ibm cloud service
 
@@ -44,8 +44,8 @@ You need to create an [IBM Cloud account](https://cloud.ibm.com/).
 
 To create a {{site.data.keyword.mobilepushshort}} service from the catalog, complete the following steps:
 
-1. In the IBM Cloud catalog, click **Web and Mobile** > **Push Notifications**.
+1. In the [IBM Cloud catalog](https://cloud.ibm.com/catalog), click **Web and Mobile** > **Push Notifications**.
 1. Provide a Service name. 
 1. Click **Create**. 
 
-Your next step is to [obtain notification provider credentials](/docs/services/mobilepush?topic=mobile-pushnotification-push_step_1).
+Your next step is to [Obtain notification provider credentials](/docs/services/mobilepush?topic=mobile-pushnotification-push_step_1).
