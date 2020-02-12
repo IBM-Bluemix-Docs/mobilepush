@@ -85,12 +85,14 @@ To set up APNs on the Push Notification services console, complete the steps:
 1. Choose the **Mobile** option to update the information in the **APNs Push Credentials** form.
 1. Choose either of the following options:
 
-   - For **Mobile** option
-      a. Select **Sandbox** (development) or **Production** (distribution) and then upload the `p.12` certificate that you have created. 
-         ![Set push notifications console](images/wizard.jpg "Push Notifications console with the Configure navigation option that is selected showing the Mobile tab and the APN Push Credentials")
-      b. In the **Password** field, enter the password that is associated with the `.p12` certificate file, then click **Save**.
+   * For **Mobile** option
+      - Select **Sandbox** (development) or **Production** (distribution) and then upload the `p.12` certificate that you have created. 
 
-   - For **Web** option
+      ![Set push notifications console](images/wizard.jpg "Push Notifications console with the Configure navigation option that is selected showing the Mobile tab and the APN Push Credentials")
+
+      - In the **Password** field, enter the password that is associated with the `.p12` certificate file, then click **Save**.
+
+   * For **Web** option
       - In the Safari Push section, update the form with the required information. 
          - **Website Name**: This is the name that you have provided in the Notification center.
          - **Website Push ID**: Update with the reverse-domain string for your Website Push ID. For example, web.com.acmebanks.www.
@@ -98,7 +100,9 @@ To set up APNs on the Push Notification services console, complete the steps:
          - **Allowed Domains**: This is optional parameter. This is the list of websites that requests permission from the user. Ensure that the URLs are comma-separated values. Note that the value in Website URL will be used if this is not provided. 
          - **URL Format String**: The URL to resolve when the notification is clicked. For example, [`https://www.acmebanks.com`]. Ensure that the URL use the http or https scheme.
          -**Safari web push certificate**: Upload the .p12 certificate and provide the password.
+
 1. Click **Save**.	
+
    ![Push Notifications console](images/push_configure_safari.jpg "Web option page fields")	
 
 After you have set up the service for iOS applications, you need to [Set up Push service client SDKs](/docs/services/mobilepush?topic=mobile-pushnotification-push_step_3).

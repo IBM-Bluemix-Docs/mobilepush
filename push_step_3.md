@@ -61,9 +61,9 @@ Complete the steps for [{{site.data.keyword.mobilepushshort}} Android SDK](https
 1. Build and run your application. Upon a successful build, the `Gradle build finished` message would appear.
 1. Include the client Push SDK with Gradle.
 
-   a. Configure your [Gradle](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-android-push/tree/Doc#configure-gradle) file. 
-   b. Configure the [AndroidManifest](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-android-push/tree/Doc#configure-androidmanifest) file.
-   c. Add the `google-services.json` file to your Android application module root directory.
+   - Configure your [Gradle](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-android-push/tree/Doc#configure-gradle) file. 
+   - Configure the [AndroidManifest](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-android-push/tree/Doc#configure-androidmanifest) file.
+   - Add the `google-services.json` file to your Android application module root directory.
 
 1. Initialize the SDKs. See [Initializing the Core SDK and the Push SDK](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-android-push/tree/Doc#initializing-the-core-sdk-and-the-push-sdk).
 1. Build the application.
