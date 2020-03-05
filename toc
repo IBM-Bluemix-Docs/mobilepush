@@ -2,7 +2,7 @@
 {: navgroup: .navgroup}
 {: topicgroup: .topicgroup}
 
-{: .toc subcollection="mobile-pushnotification" category="mobile" audience="service" arm="358" href="/docs/services/mobilepush?topic=mobilepush-getting-started#getting-started" path="services/mobilepush"}
+{: .toc subcollection="mobile-pushnotification" category="mobile" audience="service" arm="358" href="/docs/services/mobilepush?topic=mobile-pushnotification-getting-started" path="services/mobilepush"}
 Push Notifications
 
     {: .navgroup id="learn"}

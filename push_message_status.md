@@ -67,5 +67,5 @@ The {{site.data.keyword.mobilepushshort}} service **Messages** tab displays the 
 
    ![Detailed status](images/detailed_message_delivery.png "Detailed message delivery status options with User ID selected")
 
-   The feature is enabled only for users who have opted the `Advanced Plan`. Select **Plan** in the {{site.data.keyword.mobilepushshort}} service console to [upgrade](https://cloud.ibm.com/docs/account?topic=account-changing#changing)
+   The feature is enabled only for users who have opted the `Advanced Plan`. Select **Plan** in the {{site.data.keyword.mobilepushshort}} service console to [upgrade](https://cloud.ibm.com/docs/account?topic=account-upgrading-account)
    {: note}

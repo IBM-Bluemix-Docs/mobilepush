@@ -79,7 +79,7 @@ Your custom notification message is sent by fetching the variable data -
 
 ![Message example](images/message_template_example.jpg "Example notification based on the message template")
 
-The feature is enabled only for users who have opted the `Advanced Plan`. Select **Plan** in the {{site.data.keyword.mobilepushshort}} service console to [upgrade](https://cloud.ibm.com/docs/account?topic=account-changing#changing).
+The feature is enabled only for users who have opted the `Advanced Plan`. Select **Plan** in the {{site.data.keyword.mobilepushshort}} service console to [upgrade](https://cloud.ibm.com/docs/account?topic=account-upgrading-account).
 {: note}
 
 ## Limitations

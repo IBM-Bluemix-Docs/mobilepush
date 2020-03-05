@@ -79,10 +79,9 @@ The Trust Services Principles define adequate control systems and establish indu
 You can request an SOC Certification report from the customer portal or contact your sales representative. Alternatively, you can open a support ticket with 
 [IBM Cloud support](https://www.ibm.com/cloud/support){: external}.
 
-## General Data Protection Regulation (GDPR) 
+## General Data Protection Regulation (GDPR) readiness
 {: #gdpr}
 
-The GDPR seeks to create a harmonized data protection law framework across the EU and aims to give citizens back the control of their personal data, while imposing strict rules on those hostings and ‘processing’ this data, anywhere in the world. The Regulation also introduces rules relating to the free movement of personal data within and outside the EU. 
+Please visit [IBM's commitment to GDPR readiness](https://www.ibm.com/data-responsibility/gdpr/) page to learn about IBM’s GDPR readiness journey and our GDPR capabilities and offerings to support your compliance journey. 
 
-With the [General Data Protection Regulation](https://www.eugdpr.org/){: external}, {{site.data.keyword.mobilepushshort}} Service customers can rely on 
-the {{site.data.keyword.mobilepushshort}} Service team's understanding and compliance with emerging data privacy standards and legislation and also in {{site.data.keyword.IBM}}'s wider ability to provide a comprehensive suite of solutions to assist businesses of all sizes with their own internal data governance requirements.
+- [IBM Data Processing Addendum (DPA)](https://www.ibm.com/support/customer/csol/terms/?cat=dpa) 
