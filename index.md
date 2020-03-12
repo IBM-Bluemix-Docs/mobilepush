@@ -44,7 +44,7 @@ subcollection: mobile-pushnotification
 
 You can choose to use the {{site.data.keyword.mobilepushshort}} service either as a part of {{site.data.keyword.mobilefirst_notm}} Services Starter Boilerplate or as IBM Cloud [Dedicated Services](https://cloud.ibm.com/docs/dedicated?topic=dedicated-dedicated#dedicated). You can also use an SDK (software development kit) and [ReST APIs](https://eu-gb.imfpush.cloud.ibm.com/imfpush/){: external} to further develop your client applications.
 
-The {{site.data.keyword.mobilepushshort}} service is also enabled for [IBM Cloud Functions](https://cloud.ibm.com/docs/openwhisk?topic=cloud-functions-getting_started). {{site.data.keyword.openwhisk}} is a distributed, event-driven compute service that is alternatively known as serverless computing. This allows developers to focus on writing application logic, and create actions that are run on demand.
+The {{site.data.keyword.mobilepushshort}} service is also enabled for [IBM Cloud Functions](https://cloud.ibm.com/docs/openwhisk?topic=cloud-functions-getting-started). {{site.data.keyword.openwhisk}} is a distributed, event-driven compute service that is alternatively known as serverless computing. This allows developers to focus on writing application logic, and create actions that are run on demand.
 
 ## Service processes
 {: #overview_push_process}
