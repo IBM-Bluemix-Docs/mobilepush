@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2020
-lastupdated: "2020-02-04"
+lastupdated: "2020-03-19"
 
 keywords: push notifications, notifications, sdk, android sdk, ios sdk, cordova sdk, web sdk, react native sdk
 
@@ -54,3 +54,5 @@ Refer the 'README' document in the SDK for detailed information on installation 
 |[React Native Client SDK](https://github.com/ibm-bluemix-mobile-services/bms-push-react-native){: external} | |
 {:caption="Table 1. Client and Server-side SDKs" caption-side="top"}
 
+You can also access these document and download the SDKs from the Push Notifications console under **SDKs and APIs** on the left navigation menu.
+{: note}

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-02-25"
+lastupdated: "2020-03-19"
 
 keywords: push notifications, notifications, integrate with cloud functions
 

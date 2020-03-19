@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-02-04"
+lastupdated: "2020-03-19"
 
 keywords: push notification, api documentation, api reference for ios, api reference for android, rest api
 

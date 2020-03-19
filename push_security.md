@@ -2,9 +2,9 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-02-04"
+lastupdated: "2020-03-19"
 
-keywords: push notifications, notification, security, appsecret, api keys
+keywords: push notifications, notification, security, api keys
 
 subcollection: mobile-pushnotification
 
@@ -41,52 +41,10 @@ subcollection: mobile-pushnotification
 {: #security-in-push-notifications}
 
 The {{site.data.keyword.mobilepushshort}} APIs are secured by -
-- **appSecret**: The `appSecret` protects APIs that are typically started by back-end applications - such as the API to send {{site.data.keyword.mobilepushshort}} and the API to configure settings.
 - **clientSecret**:  The `clientSecret` protects APIs that are typically started by mobile client applications. There is only one API related to registration of a device with an associated UserId that requires this `clientSecret`. None of the other APIs started from mobile clients require the `clientSecret`. 
 - **API Keys**: Application programming interface keys (API keys) are available through Cloud IAM for you to use to authenticate by using API or CLI as a user or service ID. These API keys are provided through Cloud IAM and therefore cannot be used generally to authenticate with IBMid outside of {{site.data.keyword.cloud_notm}}. 
 
-The `appSecret` and `clientSecret` are allocated to every service instance at the time of binding an application with {{site.data.keyword.mobilepushshort}} service. Refer to the [ReST APIs](https://eu-gb.imfpush.cloud.ibm.com/imfpush/) documentation for information on how the secrets are to be passed and for what APIs.
-
-## appSecret 
-{: #push-api-rest-secret}
-
-When an application binds to the {{site.data.keyword.mobilepushshort}}, the service generates an appSecret (a unique key) and passes it in the response header. If you are using the {{site.data.keyword.IBM_notm}} {{site.data.keyword.mobilepushshort}} for {{site.data.keyword.cloud_notm}} ReST API, use the ReST API reference to obtain information on which APIs you need to secure. For information, see the [Push ReST API](https://eu-gb.imfpush.cloud.ibm.com/imfpush/){: external}.
-
-The request header must contain the appSecret. If not, the server returns a `401 Unauthorized Error` code. When the {{site.data.keyword.mobilepushshort}} is added to an application, a specific `AppID` is created. As part of the response, you get a header called appSecret that is used for creating tags or sending messages. The operation happens through services in the catalog or the boilerplate.
-
-To get the appSecret value:
-
-1. Click the *app-name* that is bound to the push service.
-1. Click the **Show Credentials** link to display the appSecret (AppID).
-
-The **Show Credentials** screen shows information about the AppSecret:
-
-```
-	{
-    "imfpush_Dev": [
-    {
-     "name": "testapp1",
-     "label": "imfpush_Dev",
-     "plan": "Basic",
-     "credentials": {
-       "url": "http://https://eu-gb.imfpush.cloud.ibm.com/imfpush/v1/apps/b615b280-b37e-4042-8815-38a758f234e2",
-       "admin_url": "//mobile.cloud.ibm.com/imfpushdashboard/?appGuid=b615b280-b37e-4042-8815-38a758f234e2",
-       "appSecret": "8dac71a5-2219-42b3-a9f3-dbb828ba1f04",
-       }
-     }
-    ]
-    }
-```
-{: screen} 
-
-Earlier applications were required to pass the clientSecret only when registering or updating devices with userId field. All other APIs started by mobile and browser clients did not require clientSecret. These old applications can continue to use the clientSecret optionally for device registrations or updating calls. However, it is recommended that clientSecret check is enforced for all client API calls. To enforce this in existing applications, there is a new `verifyClientSecret` API that is published. For new applications, clientSecret check is enforced on all client API calls and this behavior cannot be changed with the `verifyClientSecret` API.
-{: note}
-
-By default, client secret verification is enforced only in new apps. Both existing and new apps are allowed to enable or disable the client secret verification by using the verifyClientSecret ReST API. It is recommended that you enforce client secret verification to avoid exposing devices to users who might know the applicationId and deviceId.
-
-Ensure that the `clientSecret` is kept confidential and never hardcoded into the mobile app. There are various application initialization patterns that can be used to pull in the `clientSecret` dynamically during the applications runtime. The sequence diagram outlines on such possible pattern.
-
-![Enable_Push](images/init_client_secret.jpg "Sequence diagram showing patterns for initialization for pulling in the clientSecret") 
+The `clientSecret` is allocated to every service instance at the time of binding an application with {{site.data.keyword.mobilepushshort}} service. Refer to the [ReST APIs](https://eu-gb.imfpush.cloud.ibm.com/imfpush/) documentation for information on how the secrets are to be passed and for what APIs.
 
 ## API keys for user authentication
 {: #push-api-key}

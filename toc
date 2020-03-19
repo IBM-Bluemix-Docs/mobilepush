@@ -35,6 +35,7 @@ Push Notifications
         push_step_4_nf_interactive.md
         push_step_4_nf_rich.md
     	push_step_4_nf_adv.md
+        push_step_4_nf_channel.md
 
     {: .topicgroup}
     Monitoring notifications

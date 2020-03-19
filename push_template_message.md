@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-02-04"
+lastupdated: "2020-03-19"
 
 keywords: push notifications, notifications, parameterize notification
 
@@ -69,8 +69,8 @@ JSONObject tempValue = new JSONObject();
 
 After the variables are defined, they can be called in your message template.
 
-1. On the {{site.data.keyword.mobilepushshort}} console, select the **Messages** tab.
-1. Compose a message by choosing a **Send to** option.
+1. From the {{site.data.keyword.mobilepushshort}} service console, select **Notifications** on the left navigation menu.
+1. Compose a message by choosing a **Device ID** option in the **Target audience** section.
 1. In the **Message** field, compose your message. Call the defined variables in the message template. Click **Send**.
 
    ![Message template](images/message_template.png "A Message page with a message template with Sent to field set to All devices, Message field with example message about a user's bank account balance, and Additional payload field with "key":"value" attribute added.")

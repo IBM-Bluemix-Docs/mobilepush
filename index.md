@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-02-04"
+lastupdated: "2020-03-19"
 
 keywords: push notifications, notifications, service credentials, service processes, push message size
 
@@ -40,7 +40,7 @@ subcollection: mobile-pushnotification
 # About {{site.data.keyword.mobilepushshort}} 
 {: #gettingstartedtemplate}
 
-{{site.data.keyword.IBM_notm}} {{site.data.keyword.mobilepushshort}} is a service with which you can use to send notifications to mobile devices and browsers. Notifications can be targeted to all application users or to a specific set of users and devices that use tags. For every message that you submit to the service, the intended audience receives a notification.
+{{site.data.keyword.cloud_notm}} {{site.data.keyword.mobilepushshort}} is a service with which you can use to send notifications to mobile devices and browsers. Notifications can be targeted to all application users or to a specific set of users and devices that use tags. For every message that you submit to the service, the intended audience receives a notification.
 
 You can choose to use the {{site.data.keyword.mobilepushshort}} service either as a part of {{site.data.keyword.mobilefirst_notm}} Services Starter Boilerplate or as IBM Cloud [Dedicated Services](https://cloud.ibm.com/docs/dedicated?topic=dedicated-dedicated#dedicated). You can also use an SDK (software development kit) and [ReST APIs](https://eu-gb.imfpush.cloud.ibm.com/imfpush/){: external} to further develop your client applications.
 
@@ -76,7 +76,7 @@ The {{site.data.keyword.mobilepushshort}} service manages all information that i
 ### Gateways
 {: #gateways}
 
-Platform-specific {{site.data.keyword.mobilepushshort}} cloud services such as FCM or Apple Push Notification Service (APNs) that is used by {{site.data.keyword.IBM_notm}} {{site.data.keyword.mobilepushshort}} service to dispatch notifications to the mobile and browser applications.
+Platform-specific {{site.data.keyword.mobilepushshort}} cloud services such as FCM or Apple Push Notification Service (APNs) that is used by {{site.data.keyword.cloud_notm}} {{site.data.keyword.mobilepushshort}} service to dispatch notifications to the mobile and browser applications.
 
 ## Message size
 {: #push-message-size}

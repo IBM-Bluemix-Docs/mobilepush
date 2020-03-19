@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-02-10"
+lastupdated: "2020-03-19"
 
 keywords: push notifications, notification provider credentials
 
@@ -37,10 +37,10 @@ subcollection: mobile-pushnotification
 {:cordova: .ph data-hd-programlang='Cordova'}
 {:xml: .ph data-hd-programlang='xml'}
 
-# Step 2: Obtain your notification provider credentials
+# Obtain notification service provider credentials
 {: #push_step_1}
 
-To set up {{site.data.keyword.mobilepushshort}} service, you need to obtain the required credentials from your push notification provider. 
+To set up {{site.data.keyword.mobilepushshort}} service, you need to obtain the required credentials from your push notification service provider. 
 
 ## For Android
 {: #push_step_1_android}
@@ -52,30 +52,36 @@ The API key is stored securely and used by the {{site.data.keyword.mobilepushsho
 To set up FCM and obtain your credentials, complete the steps:
 
 1. Visit the [Firebase Console](https://console.firebase.google.com/?pli=1){: external}. A Google user account is required. 
-1. Select **Add project**. 
-1. In the Create a project window, provide a project name, choose a country/region and click **Create project**.
-1. In the navigation pane, select **Settings** > **Project settings**.
-1. Choose the Cloud Messaging tab to obtain your project credentials - **Server Key** and a **Sender ID**. Note that the Server key listed in FCM is the same as Server API Key.
+1. Click **Create a project**. If you are already having a project, then click **Add Project**.
+1. In the **Create a project** window, provide a project name and accept the terms and click **Continue**.
+1. *Optional*: Enable or disable Google Analytics for this project by selecting the toggle switch and click **Continue**.
+1. If Google Analytics is enabled, then in the **Configure Google Analytics** window, choose the **Analytics location** and accept the terms. Click **Create Project**.
+1. Click **Continue** when the new project is ready.
+1. In the navigation pane, select the settings icon next to the *Project Overview* and select **Settings** > **Project settings**.
+1. Choose the Cloud Messaging tab to obtain your project credentials - **Server Key** and **Sender ID**. Note that the Server key listed in FCM is the same as Server API Key.
 
    ![Obtaining credentials for FCM](images/FCM_settings_2.jpg "Settings page with the Cloud messaging tab-selected showing project credentials")
 
 You would also need to generate the `google-services.json` file. Complete the following steps:
 
-1. In the Firebase console Project overview section, click the **Add android app** icon.
+1. In the Firebase console Project overview section, under *Get started by adding Firebase to your app* section click the **Android** icon.
 
    ![Firebase Project overview](images/FCM_settings_6.jpg "Firebase Project overview consoles open")
 
-1. In Add Firebase to your Android app window, first add **com.ibm.mobilefirstplatform.clientsdk.android.push** as the Package Name. The App nickname field is optional. Click **REGISTER APP**. 
+1. In *Add Firebase to your Android app* window, first add **com.ibm.mobilefirstplatform.clientsdk.android.push** as the Package Name. The App nickname field is optional. Click **Register APP**. 
 
    ![Adding Firebase to your Android window](images/FCM_1.jpg "Add Firebase to your Android app screen on the Enter app details tab with the package and app name fields")
 
-1. Now, include the package name of your application, by entering the package name in Add Firebase to your Android app window. The App nickname field is optional. Click **REGISTER APP**. See the following example:
+1. Now, include the package name of your application, by entering the package name in Add Firebase to your Android app window. The App nickname field is optional. Click **Register APP**. See the following example:
 
    ![Adding the package name of your application](images/FCM_settings_4.jpg "Add Firebase to your Android app screen on the Register app tab with the package and app name fields")
 
+If you don't have any apps to start with, download the Android sample app [here](https://github.com/ibm-bluemix-mobile-services/bms-samples-android-hellopush/).
+{: note}
+
 1. The `google-services.json` file is generated. 
 
-Once you have obtained your FCM credentials and have generated the `google-services.json` file, the next step is to [Create a service instance](/docs/services/mobilepush?topic=mobile-pushnotification-push_step_2).
+Once you have obtained your FCM credentials and have generated the `google-services.json` file, the next step is to [Configure a service instance](/docs/services/mobilepush?topic=mobile-pushnotification-push_step_2).
 
 Google has deprecated GCM and has integrated Cloud Messaging with Firebase. You must migrate your GCM client apps on Android to FCM.
 {: note}

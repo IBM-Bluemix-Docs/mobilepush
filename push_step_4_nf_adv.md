@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-02-04"
+lastupdated: "2020-03-19"
 
 keywords: push notifications, notifications, configure sound, payload, ios badge, holding android notification
 
@@ -47,10 +47,20 @@ Configure an iOS badge, sound, additional JSON payload, actionable notifications
 
 Configure an iOS badge, sound, and additional JSON payload.
 
-1. On the {{site.data.keyword.mobilepushshort}} console, go to the **Notifications** tab.
-1. Go to the **Optional Fields** section to configure the {{site.data.keyword.mobilepushshort}} features. 
-   - **Sound File** - Enter a string to point to the sound file in your mobile app. In the payload, specify the string name of the sound file to use.
-   - **iOS Badge** - For iOS devices, the number to display as the badge of the app icon. If this property is absent, the badge is not changed. To remove the badge, set the value of this property to 0.
+1. In the {{site.data.keyword.mobilepushshort}} service console, click **Notifications** on the left navigation menu.
+1. Click **Create**, and compose a message.
+   - Compose a new notification by providing the following information: **Notification text**, **Notification title** (optional), **Additional payload** (optional).
+   - Select the **Target audience** by one of the following target:
+      - **Platforms** - Options are: **Android**, **iOS**, **Web Notifications**, **Chrome Apps and Extensions**, **Chrome Browser**, **Firefox**, **Safari**, and **All Devices**.
+      - **Tags** - Enter the Tag, topic name or create a new tag.
+      - **Devices/user IDs** - Select either **Device ID** or **User ID** and enter the device/user ID detail for the selection.
+
+   **Note**: When you select the **All Devices** option, all devices that are subscribed to {{site.data.keyword.mobilepushshort}} will receive notifications.
+
+   - Optionally for rich media notifications use **Advanced settings**. Select the **Priority** (valid options are: Default, Max, Min, Low, High) and select the type of notification to be sent (**Default** or **Silent**).
+   - Go to the **Advanced Settings** section and click **View All** and configure the {{site.data.keyword.mobilepushshort}} features. 
+      - **Sound File** - Enter a string to point to the sound file in your mobile app. In the payload, specify the string name of the sound file to use.
+      - **iOS Badge** - For iOS devices, the number to display as the badge of the app icon. If this property is absent, the badge is not changed. To remove the badge, set the value of this property to 0.
 1. Choose either of the following options:	
    - On Android
       Add your sound file in `res/raw` directory of your android application. While sending notification, add the sound file name in the sound field of {{site.data.keyword.mobilepushshort}}:

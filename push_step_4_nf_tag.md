@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-02-04"
+lastupdated: "2020-03-19"
 
 keywords: push notifications, notifications, tag-based, creating tags, managing tags, get tag, subscribe tag
 
@@ -54,11 +54,11 @@ Use the {{site.data.keyword.mobilepushshort}} console to create and delete tags 
 
 Tag-based notifications are messages that are targeted to all devices subscribed to a particular tag. Each device can subscribe to any number of tags. 
 
-1. On the {{site.data.keyword.mobilepushshort}} console, select the **Manage Tags** tab.
-1. Click the + **Create Tag** button.   
-   1. In the **Name** field, enter the name of the tag. For example, "coupons".
-   1. In the **Description** field, enter a tag description.
-   1. Click **Save**.
+1. On the {{site.data.keyword.mobilepushshort}} console, select the **Tags** on the left navigation menu.
+1. Click **Create** button.   
+   - In the **Tag name** field, enter the name of the tag. For example, "coupons".
+   - In the **Description** field, enter a tag description.
+   - Click **Save**.
 
 1. In the **Code Snippets** area, select the platform for your mobile application.
 1. Modify the code snippets to handle errors and then copy the code snippets for each tag into your mobile application.
@@ -66,17 +66,18 @@ Tag-based notifications are messages that are targeted to all devices subscribed
 ### Deleting tags
 {: #delete_tags}
 
-1. From the **Tag** tab, select the tag that you want to delete and click **Delete** icon.
-1. Click **OK**.
+1. On the {{site.data.keyword.mobilepushshort}} console, select the **Tags**.
+1. Select the tag that you want to delete and click **Delete** icon.
 
 When a tag is deleted, information that is associated with the tag, including its subscribers and devices, are deleted. Automatic unsubscribe is not required, as the tag no longer exists. No further action is required from the client side.
 
 ### Editing a tag description
 {: #edit_tags}
 
-1. From the **Tag** tab, select the tag that you want to edit.
+1. On the {{site.data.keyword.mobilepushshort}} console, select the **Tags** on the left navigation menu.
+1. Select the tag that you want to edit.
 1. Click the **Edit** icon.
-1. Edit the tag description and then click the **Save** button.
+1. Edit the tag description and then click **Save**.
 
 ## Get tags
 {: #get_tags}
@@ -91,7 +92,7 @@ Tags provide a way to send targeted notifications to users based on their intere
 ## Subscribe tags
 {: #Subscribe_tags}
 
-Use the following API to allow your devices to retrieve tags, subscribe to a tag, retrieve subscriptions,  and unsubscribe from a tag.
+Use the following API to allow your devices to retrieve tags, subscribe to a tag, retrieve subscriptions, and unsubscribe from a tag.
 
 - For Android, use the `getTags`, `subscribe`, `getSubscriptions`, and `unsubscribeFromTags` API's. See [Push Notifications subscribe tags for Android](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-android-push/tree/Doc#push-notification-service-tags).
 - For Cordova, use the `retrieveAvailableTags()`, `subscribe()`, `retrieveSubscriptions()`, and `unsubscribe()` API's. See [Push Notifications subscribe tags for Cordova](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-cordova-plugin-push/tree/Doc#push-notification-service-tags).
@@ -105,10 +106,10 @@ Tag-based notifications are messages that are targeted to all devices that are s
 
 Create tags on the **Tag** screen. For information about how to create tags, see [Creating tags](/docs/services/mobilepush?topic=mobile-pushnotification-tag_based_notifications#create_tags).
 
-1. From the **Push Notification** console, click **Messages**.
-1. Select the **Device by Tag** option in the **Send To** drop-down list.
-1. Search for the tags that you want to use and select them.
-
-   ![Notifications Screen](images/tag_notification_new2.jpg "Push Notifications console with the Messages navigation option selected showing the Send notifications page. Send to field set to Device by Tag.")
-1. In the **Message Text** field, enter text that would be sent as a notification to the subscribed audience.
+1. From the {{site.data.keyword.mobilepushshort}} console, click **Notifications** on the left navigation menu.
+1. Click **Create**, and compose a message.
+   - Compose a new notification by providing the following information: **Notification text**, **Notification title** (optional), **Additional payload** (optional).
+   - Select the **Target audience** by one of the following target:
+      - **Platforms** - Options are: **Android**, **iOS**, **Web Notifications**, **Chrome Apps and Extensions**, **Chrome Browser**, **Firefox**, **Safari**, and **All Devices**.
+      - **Tags** - Enter the tags that you want to use, topic name or create a new tag.
 1. Click **Send**.

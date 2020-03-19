@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-02-04"
+lastupdated: "2020-03-19"
 
 keywords: push notifications, notifications, message delivery status
 
@@ -44,9 +44,9 @@ With the {{site.data.keyword.mobilepushshort}} service, you can view the deliver
 
 Once the message has been sent, you can track delivery information of a message by looking at its delivery status. At any given time, the service displays status of only the latest 10 messages that is available within a period of 90 days.
 
-The {{site.data.keyword.mobilepushshort}} service **Messages** tab displays the notification status.
+The {{site.data.keyword.mobilepushshort}} service **Notifications** displays the notification and their status.
 
-![notifications status](images/notification_status_new.png "Messages page showing notification status")
+![notifications status](images/Messages.png "Messages page showing notification status")
 
 1. **Message ID** -  A unique identifier to identify a message.
 1. **Message Text** - A message template that was sent to the app users.
@@ -65,7 +65,7 @@ The {{site.data.keyword.mobilepushshort}} service **Messages** tab displays the 
 
 1. **Options** - Gives a detailed status of a notification. Status can be tracked by selecting either the `Device Id` or the `User Id` from the dropdown menu. Getting user/device specific detailed status message can be helpful when you are tracking a failed message.
 
-   ![Detailed status](images/detailed_message_delivery.png "Detailed message delivery status options with User ID selected")
+   ![Detailed status](images/MessageRepot&DeliveryStatus.png "Detailed message delivery status options with User ID selected")
 
    The feature is enabled only for users who have opted the `Advanced Plan`. Select **Plan** in the {{site.data.keyword.mobilepushshort}} service console to [upgrade](https://cloud.ibm.com/docs/account?topic=account-upgrading-account)
    {: note}
