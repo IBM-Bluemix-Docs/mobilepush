@@ -60,9 +60,6 @@ The {{site.data.keyword.mobilepushshort}} service **Notifications** displays the
 1. **View** - Displays delivery status of the notifications that are dispatched. You can view information based on the following aspects:
    - Category: All, Mobile, Web<!---and HTTP--->.
    - Message status: Sent, Seen, Open, and Invalid. 
-
-   ![notifications status](images/message_delivery_status_new.png "Message status chart showing open, sent, seen, and invalid status breakdown")
-
 1. **Options** - Gives a detailed status of a notification. Status can be tracked by selecting either the `Device Id` or the `User Id` from the dropdown menu. Getting user/device specific detailed status message can be helpful when you are tracking a failed message.
 
    ![Detailed status](images/MessageRepot&DeliveryStatus.png "Detailed message delivery status options with User ID selected")

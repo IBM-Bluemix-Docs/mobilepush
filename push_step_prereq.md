@@ -49,8 +49,8 @@ To create a {{site.data.keyword.mobilepushshort}} service from the catalog, comp
 1. Provide a **Service name**. 
 1. `Optional`: Select a resource group.
 
-Consider how you want resources organized in your account. The resource group that you selected cannot be changed after the service instance is created. 
-{: note}
+   Consider how you want resources organized in your account. The resource group that you selected cannot be changed after the service instance is created. 
+   {: note}
 
 1. Click **Create**. 
 
