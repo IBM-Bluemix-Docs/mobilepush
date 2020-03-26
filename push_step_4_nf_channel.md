@@ -73,7 +73,7 @@ To enable {{site.data.keyword.mobilepushshort}} targeted by Channel ID, ensure t
 1. Click **Create**.
 
 ## Using Channel-based notifications
-{: #using_userid}
+{: #using_channel_based}
 
 The Channel-based notifications are notification messages that are targeted to a specific channel.
 
