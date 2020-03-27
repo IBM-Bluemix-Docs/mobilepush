@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-03-19"
+lastupdated: "2020-03-27"
 
 keywords: push notifications, notifications, release notes
 
@@ -37,15 +37,21 @@ subcollection: mobile-pushnotification
 {:cordova: .ph data-hd-programlang='Cordova'}
 {:xml: .ph data-hd-programlang='xml'}
 
-# Release notes
-{: #release-notes}
+# What's New
+{: #whats-new}
 
 The following new features and changes to the service are available. These changes do not break existing code:
 
+## March 2020
+
+1. The new improved design provides uniform experience across IBM Cloud Console and other IBM Cloud Services.
+1. No more multiple left navigation menus. You now have more real estate to work within the console.
+1. Step by step guidance for usage and all SDK's are now downloadable from within the service.
+1. Ease of use across configuration, sending notifications and monitoring the notifications sent.
 
 ## December 2019
 
-* Launch of IBM Cloud Push Notifications Service in new region (Tokyo)
+* Launch of [IBM Cloud Push Notifications Service in new region](https://www.ibm.com/cloud/blog/announcements/push-notifications-on-ibm-cloud-is-now-available-in-the-tokyo-region) (Tokyo)
 * Support for Custom Notifications Channel for Android
 
 ## October 2019

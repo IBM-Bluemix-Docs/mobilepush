@@ -60,7 +60,7 @@ Push Notifications
     {: .navgroup-end}
 	
     {: .navgroup id="reference"}
-    release-notes.md
+    whats-new.md
     sample-apps.md
     push_activity_tracker.md
     push-compliance.md
