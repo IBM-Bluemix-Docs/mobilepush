@@ -2,9 +2,9 @@
 
 copyright:
   years: 2018, 2020
-lastupdated: "2020-03-19"
+lastupdated: "2020-04-15"
 
-keywords: push notifications, notifications, compliance, hipaa, iso, soc 2 type 2 certification, gdpr
+keywords: push notifications, notifications, compliance, hipaa, iso, soc 2 type 2 certification, gdpr, configuration data deletion
 
 subcollection: mobile-pushnotification
 
@@ -85,3 +85,8 @@ You can request an SOC Certification report from the customer portal or contact 
 Please visit [IBM's commitment to GDPR readiness](https://www.ibm.com/data-responsibility/gdpr/) page to learn about IBM’s GDPR readiness journey and our GDPR capabilities and offerings to support your compliance journey. 
 
 - [IBM Data Processing Addendum (DPA)](https://www.ibm.com/support/customer/csol/terms/?cat=dpa) 
+
+## Deletion of Configuration data
+{: #del-config-data}
+
+{{site.data.keyword.cloud_notm}} {{site.data.keyword.mobilepushshort}} service users can delete their platform configuration data using the API explorer exposed [here](https://cloud.ibm.com/apidocs/push-notifications). 
