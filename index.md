@@ -2,9 +2,9 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-03-19"
+lastupdated: "2020-04-21"
 
-keywords: push notifications, notifications, service credentials, service processes, push message size
+keywords: push notifications, notifications, service credentials, service processes, push message size, regional high availability
 
 subcollection: mobile-pushnotification
 
@@ -42,9 +42,20 @@ subcollection: mobile-pushnotification
 
 {{site.data.keyword.cloud_notm}} {{site.data.keyword.mobilepushshort}} is a service with which you can use to send notifications to mobile devices and browsers. Notifications can be targeted to all application users or to a specific set of users and devices that use tags. For every message that you submit to the service, the intended audience receives a notification.
 
-You can choose to use the {{site.data.keyword.mobilepushshort}} service either as a part of {{site.data.keyword.mobilefirst_notm}} Services Starter Boilerplate or as IBM Cloud [Dedicated Services](https://cloud.ibm.com/docs/dedicated?topic=dedicated-dedicated#dedicated). You can also use an SDK (software development kit) and [ReST APIs](https://eu-gb.imfpush.cloud.ibm.com/imfpush/){: external} to further develop your client applications.
+{{site.data.keyword.mobilepushshort}} is a public, shared multi-tenant service on {{site.data.keyword.cloud_notm}}. {{site.data.keyword.mobilepushshort}} service is accessed through public endpoints. Both the control and data plane of the service are shared across tenants. {{site.data.keyword.mobilepushshort}} service is available in the following regions: 
+1. Dallas 
+1. Washington DC
+1. United Kingdom
+1. Germany
+1. Sydney
+1. Tokyo
+
+
+You can use an [SDK](/docs/services/mobilepush?topic=mobile-pushnotification-install-sdk) (software development kit) and [ReST APIs](/docs/services/mobilepush?topic=mobile-pushnotification-apis-for-push-notifications) to further develop your client applications.
+{: note}
 
 The {{site.data.keyword.mobilepushshort}} service is also enabled for [IBM Cloud Functions](https://cloud.ibm.com/docs/openwhisk?topic=cloud-functions-getting-started). {{site.data.keyword.openwhisk}} is a distributed, event-driven compute service that is alternatively known as serverless computing. This allows developers to focus on writing application logic, and create actions that are run on demand.
+{: note}
 
 ## Service processes
 {: #overview_push_process}
@@ -96,3 +107,14 @@ You can also find more information at the {{site.data.keyword.mobilepushshort}} 
 {: #push-scenario}
 
 The {{site.data.keyword.mobilepushshort}} service is explained by using the sample scenario of the ACME Bank. The ACME Bank is in the phase of having their existing IT infrastructure moved to {{site.data.keyword.cloud_notm}} services and is building mobile back-end for their customer and employee facing apps. They are using {{site.data.keyword.mobilepushshort}} service to send notification to their customers on banking transactions and other important events and reminders.
+
+## Regional high availability
+{: #regional-high-availability}
+
+{{site.data.keyword.mobilepushshort}} service is a highly available, regional service that runs in multiple zones.
+
+In each supported multizone region, every zone has its own {{site.data.keyword.cloud_notm}} Kubernetes Service cluster with several worker nodes. Each worker node runs several instances of {{site.data.keyword.mobilepushshort}} service components. Each region is fronted by a global load balancer and a web application firewall.
+
+{{site.data.keyword.mobilepushshort}} service persists tenant data in highly available database. A single regional database is used to store data of all the {{site.data.keyword.mobilepushshort}} tenants in that particular region. The data is stored across multiple zones in each region. Data that is stored in {{site.data.keyword.mobilepushshort}} service is encrypted and persisted in a database cluster that is spread across availability zones. All databases connections use TLS/SSL encryption for data in transit. 
+
+{{site.data.keyword.mobilepushshort}} service is a regional service and it does not provide automated cross-regional failover or cross-regional disaster recovery. If a regional disaster occurs, all data might not be available to be recovered. However, if the recovery of a location is necessary, the available data can be restored. 

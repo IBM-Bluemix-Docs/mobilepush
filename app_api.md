@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-03-19"
+lastupdated: "2020-04-21"
 
 keywords: push notification, api documentation, api reference for ios, api reference for android, rest api
 
@@ -39,7 +39,13 @@ subcollection: mobile-pushnotification
 
 # APIs for {{site.data.keyword.mobilepushshort}}
 
- - API [Documentation](https://cloud.ibm.com/apidocs/push-notifications)
- - API Reference for [iOS](http://ibm-bluemix-mobile-services.github.io/API-docs/client-SDK/BMSPush/Swift/index.html){: external}
- - API Reference for [Android](https://www.javadoc.io/doc/com.ibm.mobilefirstplatform.clientsdk.android/push/3.7.4){: external}
- - [REST API](https://eu-gb.imfpush.cloud.ibm.com/imfpush/)
+- API [Documentation](https://cloud.ibm.com/apidocs/push-notifications)
+- API Reference for [iOS](http://ibm-bluemix-mobile-services.github.io/API-docs/client-SDK/BMSPush/Swift/index.html){: external}
+- API Reference for [Android](https://www.javadoc.io/doc/com.ibm.mobilefirstplatform.clientsdk.android/push/3.7.4){: external}
+- REST API (Base URLs depending on the location in which your service instance is created)
+  * United Kingdom: https://eu-gb.imfpush.cloud.ibm.com/imfpush/
+  * Sydney: https://au-syd.imfpush.cloud.ibm.com/imfpush/
+  * Germany: https://eu-de.imfpush.cloud.ibm.com/imfpush/
+  * Dallas: http://us-south.imfpush.cloud.ibm.com/imfpush/
+  * Washington DC: https://us-east.imfpush.cloud.ibm.com/imfpush/
+  * Tokyo: https://jp-tok.imfpush.cloud.ibm.com/imfpush/
