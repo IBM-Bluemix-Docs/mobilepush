@@ -86,7 +86,7 @@ As an account owner, you can set policies within your account to create differen
 
 ### Activity Tracker
 
-You can monitor a user's interaction with the Push Notifications service. You can search and analyze how your users and applications [interact with the service](/docs/services/mobilepush?topic=mobile-pushnotification-push_activity_tracker).
+You can monitor a user's interaction with the Push Notifications service. You can search and analyze how your users and applications [interact with the service](/docs/services/mobilepush?topic=mobile-pushnotification-at_events).
 
 ## May 2018
 

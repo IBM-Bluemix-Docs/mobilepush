@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-04-21"
+lastupdated: "2020-04-30"
 
 keywords: push notification, api documentation, api reference for ios, api reference for android, rest api
 
@@ -41,7 +41,7 @@ subcollection: mobile-pushnotification
 
 - API [Documentation](https://cloud.ibm.com/apidocs/push-notifications)
 - API Reference for [iOS](http://ibm-bluemix-mobile-services.github.io/API-docs/client-SDK/BMSPush/Swift/index.html){: external}
-- API Reference for [Android](https://www.javadoc.io/doc/com.ibm.mobilefirstplatform.clientsdk.android/push/3.7.4){: external}
+- API Reference for [Android](https://www.javadoc.io/doc/com.ibm.mobilefirstplatform.clientsdk.android/push/latest/index.html){: external}
 - REST API (Base URLs depending on the location in which your service instance is created)
   * United Kingdom: https://eu-gb.imfpush.cloud.ibm.com/imfpush/
   * Sydney: https://au-syd.imfpush.cloud.ibm.com/imfpush/

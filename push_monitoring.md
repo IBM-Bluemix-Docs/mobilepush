@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-03-19"
+lastupdated: "2020-05-04"
 
 keywords: push notifications, notifications, monitoring notification
 
@@ -55,3 +55,10 @@ The monitoring details include:
 
 ![Monthly monitoring](images/Month_Monitor.png "Graphic outlining the configuring push service monitoring for the current month")
 
+You can also view the information based on platforms.
+
+![Day monitoring](images/Day_Monitor-donut.png "Graphic outlining the configuring push service monitoring for the current day")
+
+![Weekly monitoring](images/Week_Monitor-donut.png "Graphic outlining the configuring push service monitoring for the current week")
+
+![Monthly monitoring](images/Month_Monitor-donut.png "Graphic outlining the configuring push service monitoring for the current month")

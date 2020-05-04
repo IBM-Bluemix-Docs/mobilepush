@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2020
-lastupdated: "2020-04-27"
+lastupdated: "2020-04-24"
 
 keywords: push notifications, notifications, compliance, hipaa, iso, soc 2 type 2 certification, gdpr, data deletion
 

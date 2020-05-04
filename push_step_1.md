@@ -53,12 +53,11 @@ To set up FCM and obtain your credentials, complete the steps:
 
 1. Visit the [Firebase Console](https://console.firebase.google.com/?pli=1){: external}. A Google user account is required. 
 1. Click **Create a project**. If you are already having a project, then click **Add Project**.
-1. In the **Create a project** window, provide a project name and accept the terms and click **Continue**.
-1. *Optional*: Enable or disable Google Analytics for this project by selecting the toggle switch and click **Continue**.
+1. In the **Create a project** window, provide a project name and accept the terms and enable or disable Google Analytics (*optional*) by selecting the toggle switch and click **Continue**.
 1. If Google Analytics is enabled, then in the **Configure Google Analytics** window, choose the **Analytics location** and accept the terms. Click **Create Project**.
 1. Click **Continue** when the new project is ready.
 1. In the navigation pane, select the settings icon next to the *Project Overview* and select **Settings** > **Project settings**.
-1. Choose the Cloud Messaging tab to obtain your project credentials - **Server Key** and **Sender ID**. Note that the Server key listed in FCM is the same as Server API Key.
+1. Click **Cloud Messaging** tab to view your project credentials - **Server Key** and **Sender ID**.
 
    ![Obtaining credentials for FCM](images/FCM_settings_2.jpg "Settings page with the Cloud messaging tab-selected showing project credentials")
 

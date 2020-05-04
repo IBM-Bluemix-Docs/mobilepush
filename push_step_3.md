@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-03-19"
+lastupdated: "2020-05-04"
 
 keywords: push notifications, setup client sdk, android application, cordova application, iOS application, web browser
 
@@ -51,15 +51,15 @@ You can enable Android applications to receive push notifications to your device
 
 Ensure that you have gone through [Obtain notification service provider credentials](/docs/services/mobilepush?topic=mobile-pushnotification-push_step_1) to set up the FCM project and obtain your credentials.
 
-Complete the steps for [{{site.data.keyword.mobilepushshort}} Android SDK](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-android-push/tree/Doc) to enable Android apps to receive push notifications sent from the service. 
+Complete the steps for [{{site.data.keyword.mobilepushshort}} Android SDK](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-android-push/tree/master) to enable Android apps to receive push notifications sent from the service. 
 
-1. Follow this [documentation](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-android-push/tree/Doc#installation) to install SDK for your Android app.
+1. Follow this [documentation](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-android-push/tree/master#installation) to install SDK for your Android app.
 
 1. Open the app in Android Studio. Copy the `google-services.json` file that you have created through [Obtain your credentials](/docs/services/mobilepush?topic=mobile-pushnotification-push_step_1) to your Android application module root directory. Note that the `google-service.json` file includes the added package names.
 
    ![Adding the JSON file to the root directory of your application](images/FCM_7.png "Adding the JSON file to the root directory of your application")
 
-1. [Initialize core SDK and Push SDK](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-android-push/tree/Doc#include-core-sdk-and-push-sdk).
+1. [Initialize core SDK and Push SDK](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-android-push/tree/master#include-core-sdk-and-push-sdk).
    - Initialize core SDK with IBM Cloud application region in your app Main Activity file. If you don't have an app, get a [sample app](https://github.com/ibm-bluemix-mobile-services/bms-samples-android-hellopush/) to test it out.
 
       ![Editing Main activity file](images/mp-gradle-main-activity.png "Editing the main activity file with IBM cloud application region")
@@ -83,20 +83,20 @@ Your next step is to [Send a notification](/docs/services/mobilepush?topic=mobil
 
 Cordova is a platform for building hybrid applications with JavaScript, CSS, and HTML. The {{site.data.keyword.mobilepushshort}} service supports development of Cordova-based iOS and Android applications.
 
-To enable Cordova applications to receive, push notifications to your devices, you need to configure the [Cordova plug-in Push SDK](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-cordova-plugin-push/tree/Doc#ios-app).
+To enable Cordova applications to receive, push notifications to your devices, you need to configure the [Cordova plug-in Push SDK](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-cordova-plugin-push/tree/master#ios-app).
 
 After setting up the Cordova plug-in Push SDK, the next step is to [Send a notification](/docs/services/mobilepush?topic=mobile-pushnotification-push_step_4).
 
 ## On iOS applications
 {: #push_step_3_iOS}
 
-To enable iOS applications to receive {{site.data.keyword.mobilepushshort}} to your devices, you need to configure the [iOS SDK for Push Notifications service](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-swift-push/tree/Doc#setup-client-application). 
+To enable iOS applications to receive {{site.data.keyword.mobilepushshort}} to your devices, you need to configure the [iOS SDK for Push Notifications service](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-swift-push/tree/master#setup-client-application). 
 
 After setting up the iOS SDK, your next step is to [Send a notification](/docs/services/mobilepush?topic=mobile-pushnotification-push_step_4).
 
 ## On Web browsers
 {: #push_step_3_web}
 
-To enable your browser applications to receive, push notifications, you need to configure the [Web SDK for Push Notifications service](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-javascript-webpush/blob/Doc/README.md).
+To enable your browser applications to receive, push notifications, you need to configure the [Web SDK for Push Notifications service](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-javascript-webpush/blob/master/README.md).
 
 After setting up the Web SDK, your next step is to [Send a notification](/docs/services/mobilepush?topic=mobile-pushnotification-push_step_4).

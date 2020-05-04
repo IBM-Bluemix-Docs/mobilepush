@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-03-19"
+lastupdated: "2020-05-04"
 
 keywords: push notifications, notifications, service instance, cordova application
 
@@ -43,6 +43,9 @@ subcollection: mobile-pushnotification
 Ensure that you have gone through [Obtain notification service provider credentials](/docs/services/mobilepush?topic=mobile-pushnotification-push_step_1).
 
 You can configure the service for **Android** apps, **iOS** apps, **Chrome** web apps, **Chrome apps and extentions**, **Firefox** web apps, and **Safari** web apps by selecting the **Configure** button in the respective tile.
+
+Click the Menu icon (three vertical dots) in the respective configuration tile to Edit or Delete a configuration. The Menu icon will appear only in the respective configuration tile if configuration details exist.
+{: note}
 
 ## For Android apps
 {: #push_step_2_Android}

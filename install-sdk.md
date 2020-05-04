@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2020
-lastupdated: "2020-03-19"
+lastupdated: "2020-04-30"
 
 keywords: push notifications, notifications, sdk, android sdk, ios sdk, cordova sdk, web sdk, react native sdk
 
@@ -47,8 +47,8 @@ Refer the 'README' document in the SDK for detailed information on installation 
 
 |Client SDKs                         |Server-side SDKs                     |
 |------------------------------------|-------------------------------------|
-|[Android Client SDK](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-android-push){: external} |[Swift SDK](https://github.com/ibm-bluemix-mobile-services/bms-pushnotifications-serversdk-swift){: external} |
-|[iOS Client SDK](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-swift-push){: external} |[Java&trade; SDK](https://github.com/ibm-bluemix-mobile-services/bms-pushnotifications-serversdk-java){: external} |
+|[Android Client SDK](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-android-push){: external} |[Swift SDK](https://github.com/ibm-bluemix-mobile-services/bms-pushnotifications-serversdk-swift){: external} </br>[Swift SDK Documentation](https://ibm-bluemix-mobile-services.github.io/API-docs/server-SDK/IBMPushNotifications/index.html)|
+|[iOS Client SDK](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-swift-push){: external} |[Java&trade; SDK](https://github.com/ibm-bluemix-mobile-services/bms-pushnotifications-serversdk-java){: external} <br>[Java Server SDK documentation](https://www.javadoc.io/doc/com.ibm.mobilefirstplatform.serversdk.java/push/latest/index.html)|
 |[Cordova Client SDK](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-cordova-plugin-push){: external} |[NodeJs SDK](https://github.com/ibm-bluemix-mobile-services/bms-pushnotifications-serversdk-nodejs){: external} |
 |[Web Client SDK](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-javascript-webpush){: external} | |
 |[React Native Client SDK](https://github.com/ibm-bluemix-mobile-services/bms-push-react-native){: external} | |
