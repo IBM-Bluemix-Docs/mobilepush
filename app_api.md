@@ -6,7 +6,7 @@ lastupdated: "2020-04-30"
 
 keywords: push notification, api documentation, api reference for ios, api reference for android, rest api
 
-subcollection: mobile-pushnotification
+subcollection: mobilepush
 
 ---
 

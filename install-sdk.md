@@ -6,7 +6,7 @@ lastupdated: "2020-04-30"
 
 keywords: push notifications, notifications, sdk, android sdk, ios sdk, cordova sdk, web sdk, react native sdk
 
-subcollection: mobile-pushnotification
+subcollection: mobilepush
 
 ---
 

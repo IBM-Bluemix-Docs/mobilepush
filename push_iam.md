@@ -6,7 +6,7 @@ lastupdated: "2020-03-19"
 
 keywords: push notifications, notifications, service access, manage, user roles
 
-subcollection: mobile-pushnotification
+subcollection: mobilepush
 
 ---
 

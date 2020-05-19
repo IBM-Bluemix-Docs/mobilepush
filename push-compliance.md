@@ -6,7 +6,7 @@ lastupdated: "2020-04-24"
 
 keywords: push notifications, notifications, compliance, hipaa, iso, soc 2 type 2 certification, gdpr, data deletion
 
-subcollection: mobile-pushnotification
+subcollection: mobilepush
 
 ---
 
@@ -51,7 +51,7 @@ subcollection: mobile-pushnotification
 If you want to send HIPAA regulated information by using the {{site.data.keyword.cloud_notm}} {{site.data.keyword.mobilepushshort}} Service that you should not be using Post/message API, since the payload sent over third-party Push providers might not meet regulatory guidelines. Instead, you can use the following steps where only messageId is sent over third-party Push providers, but the actual sensitive data is downloaded by the client application over a secure (https) transport.
 
 1. Provision a new instance.
-1. Send a [silent notification](/docs/services/mobilepush?topic=mobile-pushnotification-interactive-notifications#send_silent_notifications_for_ios) by using the {{site.data.keyword.mobilepushshort}} Service.
+1. Send a [silent notification](/docs/services/mobilepush?topic=mobilepush-interactive-notifications#send_silent_notifications_for_ios) by using the {{site.data.keyword.mobilepushshort}} Service.
 1. The {{site.data.keyword.mobilepushshort}} Service sends the notification by using the push cloud providers like FCM, APNS. By the characteristics of the silent notification alert are not sent as part of the notification.
 1. Once the device receives notification with the ``message id`` / ``nid`` transmitted, application makes a call to the {{site.data.keyword.mobilepushshort}} Service to receive the notification alert by using the ``GET /message/{messageId}``.
 

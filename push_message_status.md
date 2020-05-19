@@ -6,7 +6,7 @@ lastupdated: "2020-03-19"
 
 keywords: push notifications, notifications, message delivery status
 
-subcollection: mobile-pushnotification
+subcollection: mobilepush
 
 ---
 

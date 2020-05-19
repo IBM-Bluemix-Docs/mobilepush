@@ -6,7 +6,7 @@ lastupdated: "2020-05-04"
 
 keywords: push notifications, notifications, monitoring notification
 
-subcollection: mobile-pushnotification
+subcollection: mobilepush
 
 ---
 

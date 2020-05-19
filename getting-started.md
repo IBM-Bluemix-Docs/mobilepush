@@ -6,7 +6,7 @@ lastupdated: "2020-03-19"
 
 keywords: push notifications, ibm cloud catalog, push service client sdk, notification provider, getting started
 
-subcollection: mobile-pushnotification
+subcollection: mobilepush
 
 ---
 
@@ -47,11 +47,11 @@ subcollection: mobile-pushnotification
 
 The basic steps that get you started:
 
-1. [Create an IBM Cloud Push Notifications service instance](/docs/services/mobilepush?topic=mobile-pushnotification-push_step_1a)
-1. [Obtain your notification provider credentials](/docs/services/mobilepush?topic=mobile-pushnotification-push_step_1)
-1. [Configure the service instance](/docs/services/mobilepush?topic=mobile-pushnotification-push_step_2)
-1. [Setup Push notifications service client SDKs](/docs/services/mobilepush?topic=mobile-pushnotification-push_step_3)
-1. [Send a notification](/docs/services/mobilepush?topic=mobile-pushnotification-push_step_4)
+1. [Create an IBM Cloud Push Notifications service instance](/docs/services/mobilepush?topic=mobilepush-push_step_1a)
+1. [Obtain your notification provider credentials](/docs/services/mobilepush?topic=mobilepush-push_step_1)
+1. [Configure the service instance](/docs/services/mobilepush?topic=mobilepush-push_step_2)
+1. [Setup Push notifications service client SDKs](/docs/services/mobilepush?topic=mobilepush-push_step_3)
+1. [Send a notification](/docs/services/mobilepush?topic=mobilepush-push_step_4)
 
 The following image gives you an overview of the {{site.data.keyword.mobilepushshort}} service lifecycle.
 

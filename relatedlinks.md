@@ -6,7 +6,7 @@ lastupdated: "2020-03-19"
 
 keywords: push notifications, notifications, related links, videos
 
-subcollection: mobile-pushnotification
+subcollection: mobilepush
 
 ---
 

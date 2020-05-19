@@ -6,7 +6,7 @@ lastupdated: "2020-03-19"
 
 keywords: push notifications, application development, sdk
 
-subcollection: mobile-pushnotification
+subcollection: mobilepush
 
 ---
 
@@ -60,7 +60,7 @@ Access the following {{site.data.keyword.mobilepushshort}} Functions from your b
 ## Using Software Development Kits
 {: #sdks}
 
-The {{site.data.keyword.mobilepushshort}} service supports Android, iOS, Cordova, and Web SDKs for simplified application development. [Install and integrate](/docs/services/mobilepush?topic=mobile-pushnotification-install-sdk) the SDK into your app. 
+The {{site.data.keyword.mobilepushshort}} service supports Android, iOS, Cordova, and Web SDKs for simplified application development. [Install and integrate](/docs/services/mobilepush?topic=mobilepush-install-sdk) the SDK into your app. 
 
 All SDKs support authenticating by using either your service credentials or an authentication token.
 

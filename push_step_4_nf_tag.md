@@ -6,7 +6,7 @@ lastupdated: "2020-03-19"
 
 keywords: push notifications, notifications, tag-based, creating tags, managing tags, get tag, subscribe tag
 
-subcollection: mobile-pushnotification
+subcollection: mobilepush
 
 ---
 
@@ -104,7 +104,7 @@ Use the following API to allow your devices to retrieve tags, subscribe to a tag
 
 Tag-based notifications are messages that are targeted to all devices that are subscribed to a particular tag. Each device can be subscribed to any number of tags. This topic describes how to send tag-based notifications. Subscriptions are maintained by the {{site.data.keyword.mobilepushshort}} service IBM Cloud instance. When a tag is deleted, all information that is associated with that tag, including its subscribers and devices are deleted. No automatic unsubscribe is needed for this tag since it no longer exists and no further action is required from the client side.
 
-Create tags on the **Tag** screen. For information about how to create tags, see [Creating tags](/docs/services/mobilepush?topic=mobile-pushnotification-tag_based_notifications#create_tags).
+Create tags on the **Tag** screen. For information about how to create tags, see [Creating tags](/docs/services/mobilepush?topic=mobilepush-tag_based_notifications#create_tags).
 
 1. From the {{site.data.keyword.mobilepushshort}} console, click **Notifications** on the left navigation menu.
 1. Click **Create**, and compose a message.

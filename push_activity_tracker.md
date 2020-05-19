@@ -6,7 +6,7 @@ lastupdated: "2020-04-08"
 
 keywords: activity tracker for Push Notifications service, LogDNA for Push Notifications service, Push Notifications service events, Push Notifications service security, audit logs for Push Notifications service, viewing Push Notifications service events, Push Notifications service events
 
-subcollection: mobile-pushnotification
+subcollection: mobilepush
 
 ---
 

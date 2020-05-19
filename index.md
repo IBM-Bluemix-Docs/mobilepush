@@ -6,7 +6,7 @@ lastupdated: "2020-04-21"
 
 keywords: push notifications, notifications, service credentials, service processes, push message size, regional high availability
 
-subcollection: mobile-pushnotification
+subcollection: mobilepush
 
 ---
 
@@ -51,7 +51,7 @@ subcollection: mobile-pushnotification
 1. Tokyo
 
 
-You can use an [SDK](/docs/services/mobilepush?topic=mobile-pushnotification-install-sdk) (software development kit) and [ReST APIs](/docs/services/mobilepush?topic=mobile-pushnotification-apis-for-push-notifications) to further develop your client applications.
+You can use an [SDK](/docs/services/mobilepush?topic=mobilepush-install-sdk) (software development kit) and [ReST APIs](/docs/services/mobilepush?topic=mobilepush-apis-for-push-notifications) to further develop your client applications.
 {: note}
 
 The {{site.data.keyword.mobilepushshort}} service is also enabled for [IBM Cloud Functions](https://cloud.ibm.com/docs/openwhisk?topic=cloud-functions-getting-started). {{site.data.keyword.openwhisk}} is a distributed, event-driven compute service that is alternatively known as serverless computing. This allows developers to focus on writing application logic, and create actions that are run on demand.

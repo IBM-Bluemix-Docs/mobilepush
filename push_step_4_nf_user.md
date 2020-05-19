@@ -6,7 +6,7 @@ lastupdated: "2020-03-19"
 
 keywords: push notifications, notifications, user-based, register device with user ID, synchronize user login and logout
 
-subcollection: mobile-pushnotification
+subcollection: mobilepush
 
 ---
 

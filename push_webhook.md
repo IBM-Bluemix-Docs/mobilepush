@@ -6,7 +6,7 @@ lastupdated: "2020-03-19"
 
 keywords: push notifications, notifications, receive alerts, webhook events
 
-subcollection: mobile-pushnotification
+subcollection: mobilepush
 
 ---
 

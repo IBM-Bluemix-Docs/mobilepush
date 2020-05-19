@@ -6,7 +6,7 @@ lastupdated: "2020-03-19"
 
 keywords: push notifications, notifications, channel, channel group, channel id
 
-subcollection: mobile-pushnotification
+subcollection: mobilepush
 
 ---
 
