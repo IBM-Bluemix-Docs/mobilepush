@@ -2,9 +2,9 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-05-04"
+lastupdated: "2020-05-20"
 
-keywords: push notifications, notifications, service instance, cordova application
+keywords: push notification, push notifications, notifications, service instance, cordova application
 
 subcollection: mobilepush
 
@@ -40,7 +40,7 @@ subcollection: mobilepush
 # Configure a service instance 
 {: #push_step_2}
 
-Ensure that you have gone through [Obtain notification service provider credentials](/docs/services/mobilepush?topic=mobilepush-push_step_1).
+Ensure that you have gone through [Obtain notification service provider credentials](/docs/mobilepush?topic=mobilepush-push_step_1).
 
 You can configure the service for **Android** apps, **iOS** apps, **Chrome** web apps, **Chrome apps and extentions**, **Firefox** web apps, and **Safari** web apps by selecting the **Configure** button in the respective tile.
 
@@ -50,7 +50,7 @@ Click the Menu icon (three vertical dots) in the respective configuration tile t
 ## For Android apps
 {: #push_step_2_Android}
 
-Ensure that you have gone through [Obtain notification service provider credentials](/docs/services/mobilepush?topic=mobilepush-push_step_1) to set up the FCM project and obtain your credentials.
+Ensure that you have gone through [Obtain notification service provider credentials](/docs/mobilepush?topic=mobilepush-push_step_1) to set up the FCM project and obtain your credentials.
 
 To configure the service with FCM credentials for Android applications, complete the following steps:
 
@@ -62,12 +62,12 @@ To configure the service with FCM credentials for Android applications, complete
 
 1. Click **Save**. The {{site.data.keyword.mobilepushfull}} service is now configured.
 
-After you have setup the service, you need to [Set up the Push service client SDKs](/docs/services/mobilepush?topic=mobilepush-push_step_3).
+After you have setup the service, you need to [Set up the Push service client SDKs](/docs/mobilepush?topic=mobilepush-push_step_3).
 
 ## For iOS apps 
 {: #enable-push-ios-notifications}
 
-To use the {{site.data.keyword.mobilepushshort}} service to send notifications, upload the `.p12` certificates that you had created in [Obtain notification service provider credentials](/docs/services/mobilepush?topic=mobilepush-push_step_1). This certificate contains the private key and SSL certificates that are required to build and publish your application. You can also use the ReST API to upload an APNs certificate.
+To use the {{site.data.keyword.mobilepushshort}} service to send notifications, upload the `.p12` certificates that you had created in [Obtain notification service provider credentials](/docs/mobilepush?topic=mobilepush-push_step_1). This certificate contains the private key and SSL certificates that are required to build and publish your application. You can also use the ReST API to upload an APNs certificate.
 
 After the `.cer` file is in your key chain access, export it to your computer to create a `.p12` certificate.
 {: note}
@@ -87,7 +87,7 @@ To set up APNs on the Push Notification service console, complete the steps:
 
 1. Click **Save**. The {{site.data.keyword.mobilepushfull}} service is now configured.
 
-After you have setup the service, you need to [Set up the Push service client SDKs](/docs/services/mobilepush?topic=mobilepush-push_step_3).
+After you have setup the service, you need to [Set up the Push service client SDKs](/docs/mobilepush?topic=mobilepush-push_step_3).
 
 ## For Chrome browser
 {: #push_step_2_chrome}
@@ -103,12 +103,12 @@ To configure the service with credentials for your Chrome web app, complete the 
 
 1. Click **Save**. The {{site.data.keyword.mobilepushfull}} service is now configured.
 
-After you have set up the service, you need to [Set up Push service client SDKs](/docs/services/mobilepush?topic=mobilepush-push_step_3).
+After you have set up the service, you need to [Set up Push service client SDKs](/docs/mobilepush?topic=mobilepush-push_step_3).
 
 ## For Chrome apps and extensions
 {: #push_step_2_chrome-apps}
 
-Ensure that you have gone through [Obtain notification service provider credentials](/docs/services/mobilepush?topic=mobilepush-push_step_1) to set up the FCM project and obtain your credentials.
+Ensure that you have gone through [Obtain notification service provider credentials](/docs/mobilepush?topic=mobilepush-push_step_1) to set up the FCM project and obtain your credentials.
 
 To configure the service with FCM credentials for your Chrome apps and extensions, complete the following steps:
 
@@ -120,7 +120,7 @@ To configure the service with FCM credentials for your Chrome apps and extension
 
 1. Click **Save**. The {{site.data.keyword.mobilepushfull}} service is now configured.
 
-After you have setup the service, you need to [Set up the Push service client SDKs](/docs/services/mobilepush?topic=mobilepush-push_step_3).
+After you have setup the service, you need to [Set up the Push service client SDKs](/docs/mobilepush?topic=mobilepush-push_step_3).
 
 ## For Firefox browser
 {: #push_step_2_firefox}
@@ -135,12 +135,12 @@ To configure the service with credentials for your Firefox web app, complete the
 
 1. Click **Save**. The {{site.data.keyword.mobilepushfull}} service is now configured.
 
-After you have set up the service, you need to [Set up Push service client SDKs](/docs/services/mobilepush?topic=mobilepush-push_step_3).
+After you have set up the service, you need to [Set up Push service client SDKs](/docs/mobilepush?topic=mobilepush-push_step_3).
 
 ## For Safari browser
 {: #push_step_2_safari}
 
-To use the {{site.data.keyword.mobilepushshort}} service to send notifications, upload the `.p12` certificates that you had created in [Obtain notification service provider credentials](/docs/services/mobilepush?topic=mobilepush-push_step_1). This certificate contains the private key and SSL certificates that are required to build and publish your application. You can also use the ReST API to upload an APNs certificate.
+To use the {{site.data.keyword.mobilepushshort}} service to send notifications, upload the `.p12` certificates that you had created in [Obtain notification service provider credentials](/docs/mobilepush?topic=mobilepush-push_step_1). This certificate contains the private key and SSL certificates that are required to build and publish your application. You can also use the ReST API to upload an APNs certificate.
 
 After the `.cer` file is in your key chain access, export it to your computer to create a `.p12` certificate.
 {: note}
@@ -164,7 +164,7 @@ To set up APNs on the Push Notification service console, complete the steps:
 
 1. Click **Save**. The {{site.data.keyword.mobilepushfull}} service is now configured.
 
-After you have set up the service for iOS applications, you need to [Set up Push service client SDKs](/docs/services/mobilepush?topic=mobilepush-push_step_3).
+After you have set up the service for iOS applications, you need to [Set up Push service client SDKs](/docs/mobilepush?topic=mobilepush-push_step_3).
 
 ## For Cordova applications 
 {: #push_step_2_b}
@@ -172,4 +172,3 @@ After you have set up the service for iOS applications, you need to [Set up Push
 Cordova is a platform for building hybrid applications with JavaScript, CSS, and HTML. The {{site.data.keyword.mobilepushshort}} service supports development of Cordova-based iOS and Android applications.
 
 To enable Cordova applications for receiving push notifications to your devices, go through [{{site.data.keyword.mobilepushfull}} Cordova plug-in Push SDK](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-cordova-plugin-push/tree/Doc#ios-app){: external}.
-

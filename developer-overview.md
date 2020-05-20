@@ -2,9 +2,9 @@
 
 copyright:
   years: 2018, 2020
-lastupdated: "2020-03-19"
+lastupdated: "2020-05-20"
 
-keywords: push notifications, application development, sdk
+keywords: push notification, push notifications, application development, sdk
 
 subcollection: mobilepush
 
@@ -60,7 +60,7 @@ Access the following {{site.data.keyword.mobilepushshort}} Functions from your b
 ## Using Software Development Kits
 {: #sdks}
 
-The {{site.data.keyword.mobilepushshort}} service supports Android, iOS, Cordova, and Web SDKs for simplified application development. [Install and integrate](/docs/services/mobilepush?topic=mobilepush-install-sdk) the SDK into your app. 
+The {{site.data.keyword.mobilepushshort}} service supports Android, iOS, Cordova, and Web SDKs for simplified application development. [Install and integrate](/docs/mobilepush?topic=mobilepush-install-sdk) the SDK into your app. 
 
 All SDKs support authenticating by using either your service credentials or an authentication token.
 
@@ -69,6 +69,6 @@ All SDKs support authenticating by using either your service credentials or an a
 
 For more information about working with Mobile Developer Cloud services and {{site.data.keyword.cloud_notm}}, see the following:
 
-- For an introduction to working with Mobile services and {{site.data.keyword.cloud_notm}}, see [Getting started with Mobile apps on IBM Cloud](/docs/services/mobile?topic=mobile-getting-started).
+- For an introduction to working with Mobile services and {{site.data.keyword.cloud_notm}}, see [Getting started with Mobile apps on IBM Cloud](/docs/mobile?topic=mobile-getting-started).
 - Fast track your mobile app development. Pick up a Starter kit from the [App Development console](https://cloud.ibm.com/developer/appservice/dashboard). Download the code. Run the App!
 - You can use the [Swagger UI](https://eu-gb.imfpush.cloud.ibm.com/imfpush/) to quickly review ReST API documentation.

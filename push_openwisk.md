@@ -2,9 +2,9 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-03-19"
+lastupdated: "2020-05-20"
 
-keywords: push notifications, notifications, integrate with cloud functions
+keywords: push notification, push notifications, notifications, integrate with cloud functions
 
 subcollection: mobilepush
 
@@ -43,4 +43,4 @@ subcollection: mobilepush
 The {{site.data.keyword.mobilepushshort}} package in {{site.data.keyword.IBM_notm}} {{site.data.keyword.openwhisk_short}} provides a set of actions for interacting with {{site.data.keyword.IBM_notm}} {{site.data.keyword.mobilepushshort}}. This action allows you to send a message or create, update, or delete a webhook. 
 {: shortdesc}
 
-To use the latest {{site.data.keyword.mobilepushshort}} service features in {{site.data.keyword.IBM_notm}} {{site.data.keyword.openwhisk_short}}, install the push service package through CLI. For more information about {{site.data.keyword.mobilepushshort}} packages, see [Installable packages](https://cloud.ibm.com/docs/openwhisk?topic=cloud-functions-pkg_push_notifications#pkg_push_packages).
+To use the latest {{site.data.keyword.mobilepushshort}} service features in {{site.data.keyword.IBM_notm}} {{site.data.keyword.openwhisk_short}}, install the push service package through CLI. For more information about {{site.data.keyword.mobilepushshort}} packages, see [Installable packages](https://cloud.ibm.com/docs/openwhisk?topic=openwhisk-pkg_push_notifications#pkg_push_packages).

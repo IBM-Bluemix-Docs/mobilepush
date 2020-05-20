@@ -2,9 +2,9 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-03-19"
+lastupdated: "2020-05-20"
 
-keywords: push notifications, notifications, sending a notification
+keywords: push notification, push notifications, notifications, sending a notification
 
 subcollection: mobilepush
 

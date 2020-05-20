@@ -2,9 +2,9 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-03-19"
+lastupdated: "2020-05-20"
 
-keywords: push notifications, notifications, faq, frequently asked questions, rest api filter, Xcode
+keywords: push notification, push notifications, notifications, faq, frequently asked questions, rest api filter, Xcode
 
 subcollection: mobilepush
 
@@ -49,7 +49,7 @@ An example is during the uninstallation of an app on the device. In such a scena
 
 You might also get the problem if you have unregistered a device.
 
-Ensure that you obtain a valid Server API Key and Sender ID to continue. See [Obtain your notification provider credentials](/docs/services/mobilepush?topic=mobilepush-push_step_1).
+Ensure that you obtain a valid Server API Key and Sender ID to continue. See [Obtain your notification provider credentials](/docs/mobilepush?topic=mobilepush-push_step_1).
 
 ## Why do I get `Notification is not working for WEB_Chrome.`, when attempting to initialize the Web Push SDK?
 {: #faq-web-chrome}	
@@ -59,7 +59,7 @@ You might have changed your FCM credentials for Web push SDK and the message del
 ## I get the message *Service workers aren't supported in this browser* when attempting to initialize the SDK for Web Push. What might be the problem? 
 {: #faq-service-workers}	
 
-Follow the steps mentioned in [Step 3: Set up Push service client SDKs](/docs/services/mobilepush?topic=mobilepush-push_step_3). Also, ensure that:
+Follow the steps mentioned in [Step 3: Set up Push service client SDKs](/docs/mobilepush?topic=mobilepush-push_step_3). Also, ensure that:
 
 1. You use the correct start method. 
 1. Include the `manifest.json` file in the root folder.
@@ -68,7 +68,7 @@ Follow the steps mentioned in [Step 3: Set up Push service client SDKs](/docs/se
 ## How do I resolve Web push web configuration errors?
 {: #faq-web-config-errors}	
 
-Web push errors from the `BMSPushSDK.js` contain information on the failure. See [Troubleshooting](/docs/services/mobilepush?topic=mobilepush-errors).	
+Web push errors from the `BMSPushSDK.js` contain information on the failure. See [Troubleshooting](/docs/mobilepush?topic=mobilepush-errors).	
 
 ## Do notifications persist if the devices are offline?
 {: #faq-notification-persist}	

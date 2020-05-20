@@ -2,9 +2,9 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-03-19"
+lastupdated: "2020-05-20"
 
-keywords: push notifications, notifications, receive alerts, webhook events
+keywords: push notification, push notifications, notifications, receive alerts, webhook events
 
 subcollection: mobilepush
 

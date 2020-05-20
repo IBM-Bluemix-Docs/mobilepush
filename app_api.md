@@ -2,9 +2,9 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-04-30"
+lastupdated: "2020-05-20"
 
-keywords: push notification, api documentation, api reference for ios, api reference for android, rest api
+keywords: push notification, push notifications, api documentation, api reference for ios, api reference for android, rest api
 
 subcollection: mobilepush
 

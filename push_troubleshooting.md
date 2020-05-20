@@ -2,9 +2,9 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-03-19"
+lastupdated: "2020-05-20"
 
-keywords: push notifications, notifications, troubleshooting, service issues
+keywords: push notification, push notifications, notifications, troubleshooting, service issues
 
 subcollection: mobilepush
 
@@ -171,7 +171,7 @@ To obtain additional information about an error, search the docs for the related
 
 **Explanation**: Prerequisite configuration for {{site.data.keyword.mobilepushshort}} service is not complete. You might be attempting to get Apple Push Notification service (APNs) credentials before they are configured.
 
-**User response**: Ensure that {{site.data.keyword.mobilepushshort}} service has been configured with valid security certificates for the APNs. For more information, see [Obtaining your notification provider credentials](/docs/services/mobilepush?topic=mobilepush-push_step_1).
+**User response**: Ensure that {{site.data.keyword.mobilepushshort}} service has been configured with valid security certificates for the APNs. For more information, see [Obtaining your notification provider credentials](/docs/mobilepush?topic=mobilepush-push_step_1).
 
 ### FPWSE0004E
 {: #error_fpwse0004e}

@@ -2,9 +2,9 @@
 
 copyright:
   years: 2018, 2020
-lastupdated: "2020-04-30"
+lastupdated: "2020-05-20"
 
-keywords: push notifications, notifications, sdk, android sdk, ios sdk, cordova sdk, web sdk, react native sdk
+keywords: push notification, push notifications, notifications, sdk, android sdk, ios sdk, cordova sdk, web sdk, react native sdk
 
 subcollection: mobilepush
 

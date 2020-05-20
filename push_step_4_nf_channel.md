@@ -2,9 +2,9 @@
 
 copyright:
   years: 2020
-lastupdated: "2020-03-19"
+lastupdated: "2020-05-20"
 
-keywords: push notifications, notifications, channel, channel group, channel id
+keywords: push notification, push notifications, notifications, channel, channel group, channel id
 
 subcollection: mobilepush
 
@@ -86,4 +86,3 @@ The Channel-based notifications are notification messages that are targeted to a
       - **Devices/user IDs** - Select the **Device ID** or **User ID** and the detail for the selection.
    - In the **Advanced settings** section, click **View All** and select the **Channel ID**.
 1. Click **Send**.
-

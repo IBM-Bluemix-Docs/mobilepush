@@ -2,9 +2,9 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-03-19"
+lastupdated: "2020-05-20"
 
-keywords: push notifications, creating an ibm cloud service instance, ibm cloud service
+keywords: push notification, push notifications, creating an ibm cloud service instance, ibm cloud service
 
 subcollection: mobilepush
 
@@ -54,4 +54,4 @@ To create a {{site.data.keyword.mobilepushshort}} service from the catalog, comp
 
 1. Click **Create**. 
 
-Your next step is to [Obtain notification service provider credentials](/docs/services/mobilepush?topic=mobilepush-push_step_1).
+Your next step is to [Obtain notification service provider credentials](/docs/mobilepush?topic=mobilepush-push_step_1).

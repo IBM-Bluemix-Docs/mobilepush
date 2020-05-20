@@ -2,9 +2,9 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-03-27"
+lastupdated: "2020-05-20"
 
-keywords: push notifications, notifications, release notes
+keywords: push notification, push notifications, notifications, release notes
 
 subcollection: mobilepush
 
@@ -82,11 +82,11 @@ Progressive Web Application support introduced for web push notifications.
 
 ### Managing access to Push Notifications through IBM Cloud Identity and Access Management (IAM)
 
-As an account owner, you can set policies within your account to create different levels of access for different users by using [IAM](/docs/services/mobilepush?topic=mobilepush-service-access-management).
+As an account owner, you can set policies within your account to create different levels of access for different users by using [IAM](/docs/mobilepush?topic=mobilepush-service-access-management).
 
 ### Activity Tracker
 
-You can monitor a user's interaction with the Push Notifications service. You can search and analyze how your users and applications [interact with the service](/docs/services/mobilepush?topic=mobilepush-at_events).
+You can monitor a user's interaction with the Push Notifications service. You can search and analyze how your users and applications [interact with the service](/docs/mobilepush?topic=mobilepush-at_events).
 
 ## May 2018
 
