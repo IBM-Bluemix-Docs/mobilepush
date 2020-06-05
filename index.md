@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-05-20"
+lastupdated: "2020-06-05"
 
 keywords: push notification, push notifications, notifications, service credentials, service processes, push message size, regional high availability
 
@@ -40,7 +40,7 @@ subcollection: mobilepush
 # About {{site.data.keyword.mobilepushshort}} 
 {: #gettingstartedtemplate}
 
-{{site.data.keyword.cloud_notm}} {{site.data.keyword.mobilepushshort}} is a service with which you can use to send notifications to mobile devices and browsers. Notifications can be targeted to all application users or to a specific set of users and devices that use tags. For every message that you submit to the service, the intended audience receives a notification.
+{{site.data.keyword.cloud_notm}} {{site.data.keyword.mobilepushshort}} is a service which allows you to send notifications to mobile devices and browsers. Notifications can be targeted to all application users or to a specific set of users and devices that use tags. For every message that you submit to the service, the intended audience receives a notification.
 
 {{site.data.keyword.mobilepushshort}} is a public, shared multi-tenant service on {{site.data.keyword.cloud_notm}}. {{site.data.keyword.mobilepushshort}} service is accessed through public endpoints. Both the control and data plane of the service are shared across tenants. {{site.data.keyword.mobilepushshort}} service is available in the following regions: 
 1. Dallas 
@@ -49,7 +49,6 @@ subcollection: mobilepush
 1. Germany
 1. Sydney
 1. Tokyo
-
 
 You can use an [SDK](/docs/mobilepush?topic=mobilepush-install-sdk) (software development kit) and [ReST APIs](/docs/mobilepush?topic=mobilepush-apis-for-push-notifications) to further develop your client applications.
 {: note}
@@ -117,4 +116,13 @@ In each supported multizone region, every zone has its own {{site.data.keyword.c
 
 {{site.data.keyword.mobilepushshort}} service persists tenant data in highly available database. A single regional database is used to store data of all the {{site.data.keyword.mobilepushshort}} tenants in that particular region. The data is stored across multiple zones in each region. Data that is stored in {{site.data.keyword.mobilepushshort}} service is encrypted and persisted in a database cluster that is spread across availability zones. All databases connections use TLS/SSL encryption for data in transit. 
 
-{{site.data.keyword.mobilepushshort}} service is a regional service and it does not provide automated cross-regional failover or cross-regional disaster recovery. If a regional disaster occurs, all data might not be available to be recovered. However, if the recovery of a location is necessary, the available data can be restored. 
+{{site.data.keyword.mobilepushshort}} service is a regional service. It does not provide automated cross-regional failover or cross-regional disaster recovery. If a regional disaster occurs, all data might not be recovered. However, a location recovery is possible and all data can be restored. If there is a need for regional disaster recovery, it is recommended that you create and maintain backup instances in other regions. To synchronize a service instance in one region with an instance in a different region, you can use the APIs mentioned [here](https://us-south.imfpush.cloud.ibm.com/imfpush/).
+
+Review the API documentation to consider the important data that you want to backup and restore.
+
+For example, you may start with the following to be backed up:
+- **applications**: `/apps/{applicationID}/settings` - Your platform configuration
+- **devices**: `/apps/{applicationID}/devices` - All registered devices
+- **subscriptions**: `/apps/{applicationId}/subscriptions` - All the subscriptions
+
+For each of the data set that you need to back up and restore, use the GET calls to get a copy of the data, and use corresponding the PUT / POST API to populate the new instance on a different region.
