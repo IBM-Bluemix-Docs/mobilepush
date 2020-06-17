@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-05-20"
+lastupdated: "2020-06-18"
 
 keywords: push notification, push notifications, notification provider credentials
 
@@ -53,8 +53,8 @@ To set up FCM and obtain your credentials, complete the steps:
 
 1. Visit the [Firebase Console](https://console.firebase.google.com/?pli=1){: external}. A Google user account is required. 
 1. Click **Create a project**. If you are already having a project, then click **Add Project**.
-1. In the **Create a project** window, provide a project name and accept the terms and enable or disable Google Analytics (*optional*) by selecting the toggle switch and click **Continue**.
-1. If Google Analytics is enabled, then in the **Configure Google Analytics** window, choose the **Analytics location** and accept the terms. Click **Create Project**.
+1. In the **Create a project** window, provide a project name, and accept the terms and enable or disable Google Analytics (*optional*) by selecting the toggle switch and click **Continue**.
+1. If Google Analytics is enabled, then in the **Configure Google Analytics** window, choose the **Analytics location**, and accept the terms. Click **Create Project**.
 1. Click **Continue** when the new project is ready.
 1. In the navigation pane, select the settings icon next to the *Project Overview* and select **Settings** > **Project settings**.
 1. Click **Cloud Messaging** tab to view your project credentials - **Server Key** and **Sender ID**.
@@ -75,8 +75,8 @@ You would also need to generate the `google-services.json` file. Complete the fo
 
    ![Adding the package name of your application](images/FCM_settings_4.jpg "Add Firebase to your Android app screen on the Register app tab with the package and app name fields")
 
-If you don't have any apps to start with, download the Android sample app [here](https://github.com/ibm-bluemix-mobile-services/bms-samples-android-hellopush/).
-{: note}
+   If you don't have any apps to start with, download the Android sample app [here](https://github.com/ibm-bluemix-mobile-services/bms-samples-android-hellopush/).
+   {: note}
 
 1. The `google-services.json` file is generated. 
 
@@ -111,7 +111,7 @@ Ensure that you have an [Apple Developers](https://developer.apple.com/){: exter
 
 Your App ID is now registered. 
 
-![Registered App ID](images/push_ios_register_appid.jpg "Apple Developer portal screen with the App IDs navigation option-selected showing App IDs")
+![Registered App ID](images/push_ios_register_appid.jpg "Apple Developer portal screen with the App ID's navigation option-selected showing App IDs")
 
 ### Create a development and distribution APNs SSL certificate
 {: #push_step_1_ios_3}
@@ -133,7 +133,7 @@ You must obtain separate certificates for your development and distribution envi
    - On Production SSL certificate pane, click **Create Certificate..**.
 
    ![Push Notification SSL certificates](images/certificate_createssl.jpg "Edit App ID screen with the Push Notifications option, Development SSL certificate, and Production SSL certificate options selected")
-
+   
 1. Use **Keychain Access** application on your Mac to create a Certificate Signing Request (CSR).
 1. From the menu, select **Keychain Access > Certificate Assistant > Request a Certificate From a Certificate Authority…** 
 1. In **Certificate Information**, enter the email address that is associated with your App Developer account and a common name. Give a meaningful name that helps you identify whether it is a certificate for development (sandbox) or distribution (production); for example, _sandbox-apns-certificate_ or _production-apns-certificate_.
@@ -210,7 +210,7 @@ The supported version for {{site.data.keyword.mobilepushshort}} service on Safar
 #### Generating a certificate
 {: #certificate-generation}
 
-Ensure that you have an Apple Developer account. You need to register a Website Push ID and generate a certificate to configure your Safari browser to receive notifications. The following steps will help you get started:
+Ensure that you have an Apple Developer account. You need to register a website Push ID and generate a certificate to configure your Safari browser to receive notifications. The following steps help you get started:
 
 1. In the Apple Developer Member center, click **Certificates, ID & Profiles**. 
 1. Click **Identifiers** and then **Add identifier button**.
@@ -219,7 +219,7 @@ Ensure that you have an Apple Developer account. You need to register a Website 
    ![Push Notifications console](images/safari_1.jpg "Apple Developer portal showing the Website Push IDs navigation option")
 
 1. In the Register Website Push ID pane, provide an appropriate Website Push ID description and identifier ID. It is recommended that this is in reverse-domain name format, starting with `web`. For example, `web.com.acmebanks`.
-1. Register the Website Push ID. You now have your Website Push ID 
+1. Register the Website Push ID. You now have your Website Push ID. 
 1. Open the identifier and select **Create certificate** to create a certificate to use for the Website Push ID.
 1. Use **Keychain Access** application on your Mac to create a Certificate Signing Request (CSR).
 1. From the menu, select **Keychain Access > Certificate Assistant > Request a Certificate From a Certificate Authority…** 

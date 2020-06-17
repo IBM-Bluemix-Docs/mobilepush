@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-05-20"
+lastupdated: "2020-06-18"
 
 keywords: push notification, push notifications, notifications, parameterize notification
 
@@ -69,7 +69,7 @@ JSONObject tempValue = new JSONObject();
 
 After the variables are defined, they can be called in your message template.
 
-1. From the {{site.data.keyword.mobilepushshort}} service console, select **Notifications** on the left navigation menu.
+1. From the {{site.data.keyword.mobilepushshort}} service console, select **Notifications** on the navigation menu.
 1. Compose a message by choosing a **Device ID** option in the **Target audience** section.
 1. In the **Message** field, compose your message. Call the defined variables in the message template. Click **Send**.
 
@@ -79,7 +79,7 @@ Your custom notification message is sent by fetching the variable data -
 
 ![Message example](images/message_template_example.jpg "Example notification based on the message template")
 
-The feature is enabled only for users who have opted the `Advanced Plan`. Select **Plan** in the {{site.data.keyword.mobilepushshort}} service console to [upgrade](https://cloud.ibm.com/docs/account?topic=account-upgrading-account).
+The feature is enabled only for users who opted the `Advanced Plan`. Select **Plan** in the {{site.data.keyword.mobilepushshort}} service console to [upgrade](https://cloud.ibm.com/docs/account?topic=account-upgrading-account).
 {: note}
 
 ## Limitations

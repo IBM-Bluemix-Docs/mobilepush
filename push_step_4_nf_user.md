@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-05-20"
+lastupdated: "2020-06-18"
 
 keywords: push notification, push notifications, notifications, user-based, register device with user ID, synchronize user login and logout
 
@@ -63,7 +63,7 @@ The userId-based notifications are notification messages that are targeted to a 
 1. From the {{site.data.keyword.mobilepushshort}} console, click **Notifications** on the left navigation menu.
 1. Click **Create**, and compose a message.
    - Compose a new notification by providing the following information: **Notification text**, **Notification title** (optional), **Additional payload** (optional).
-   - Select the **Target audience** by one of the following target:
+   - Select the **Target audience** by one of the following targets:
       - **Platforms** - Options are: **Android**, **iOS**, **Web Notifications**, **Chrome Apps and Extensions**, **Chrome Browser**, **Firefox**, **Safari**, and **All Devices**.
       - **Tags** - Enter the Tag, topic name or create a new tag.
       - **Devices/user IDs** - Select the **User ID** and enter the user ID detail for the selection.

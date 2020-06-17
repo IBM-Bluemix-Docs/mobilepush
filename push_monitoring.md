@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-05-20"
+lastupdated: "2020-06-18"
 
 keywords: push notification, push notifications, notifications, monitoring notification
 
@@ -40,12 +40,12 @@ subcollection: mobilepush
 # Monitor notifications 
 {: #push_monitoring}
 
-From the {{site.data.keyword.mobilepushshort}} service console, select **Monitor** on the left navigation menu. This will display the notification information on a day, weekly, or monthly basis and generate reports for all your notifications.
+From the {{site.data.keyword.mobilepushshort}} service console, select **Monitor** on the left navigation menu. This displays the notification information on a day, weekly, or monthly basis and generates reports for all your notifications.
 
 The monitoring details include:
 * Total Notifications sent
 * Total devices registered
-* Platform information like Mobile (Android, iOS), Web (Safari, Firefox, Chrome & extensions)
+* Platform information like Mobile (Android, iOS), web (Safari, Firefox, Chrome, and extensions)
 * By status of the notifications (Invalid, Sent, Seen, Open)
 * Devices registered
 

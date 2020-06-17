@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-05-20"
+lastupdated: "2020-06-18"
 
 keywords: push notification, push notifications, notifications, sending a notification
 
@@ -40,16 +40,16 @@ subcollection: mobilepush
 # Sending a notification
 {: #push_step_4}
 
-After you have developed your applications, you can send basic push notifications.
+After your applications are developed, you can send basic push notifications.
 
 To send basic push notifications, complete the following steps:
 
 1. In the {{site.data.keyword.mobilepushshort}} service console, click **Notifications** on the left navigation menu.
 1. Click **Create**, and compose a message.
    - Compose a new notification by providing the following information: **Notification text**, **Notification title** (optional), **Additional payload** (optional).
-   - Select the **Target audience** by one of the following target:
+   - Select the **Target audience** by one of the following targets:
       - **Platforms** - Options are: **Android**, **iOS**, **Web Notifications**, **Chrome Apps and Extensions**, **Chrome Browser**, **Firefox**, **Safari**, and **All Devices**.
-      - **Tags** - Enter the Tag, topic name or create a new tag.
+      - **Tags** - Enter the Tag, topic name or create a tag.
       - **Devices/user IDs** - Select either **Device ID** or **User ID** and enter the device/user ID detail for the selection.
 
    When you select the **All Devices** option, all devices that are subscribed to {{site.data.keyword.mobilepushshort}} will receive notifications.
@@ -86,7 +86,7 @@ The following optional customization options are supported:
 - Sound: Indicates a sound clip to be played on the receipt of a notification. Supports default or the name of a sound resource that is bundled in the app.
 - Interactive category: Specify the category for interactive notifications. Ensure that this is the same string you have provided to SDK.
 - Icon: Specify the name of the icon to display for the notification. Ensure that you have packaged the icon in the `res/drawable` folder, with the client application.
-- Time to live: This value is set in seconds. If this parameter is not specified, the FCM server stores the message for four weeks and will try to deliver. The validity expires after four weeks. The possible value range is 0 - 2,419,200 seconds.
+- Time to live: This value is set in seconds. If this parameter is not specified, the FCM server stores the message for four weeks and will try to deliver the message. The validity expires after four weeks. The possible value range is 0 - 2,419,200 seconds.
 - Visibility: You can choose to set the notification visibility option to either `public` or `private`. 
    - The `private` option restricts public viewing and you can choose to enable it if your device is secure with a pin or pattern, and the notification setting is set to **Hide sensitive notification content**. When the visibility is set as `private`, a `redact` field must be mentioned. Only the content that is specified in the `redact` field shows up on a secure locked screen on the device. 
    - The `public` option would render the notifications to be freely read.
@@ -98,7 +98,7 @@ The following optional customization options are supported:
 - Channel ID: Specify the channel to which the notification to be sent.
 - Expandable notification: This provides customers an option to expand a notification with more information, while a basic notification would be visible with the notification collapsed. The following options are supported:
    - Big Picture Notifications: You can choose to include a picture when the notification is expanded. Ensure that you provide a Title text and URL for the picture.
-   - Big Text Notifications: You can choose to include additional text with a title. Ensure that the Big Text message and Title text information are furnished.
+   - Big Text Notifications: You can choose to include more text with a title. Ensure that the Big Text message and Title text information are furnished.
    - Inbox Style Notifications: You can send the notification that is styled as an inbox notification. Provide a Title text and furnish the message in Lines.	 
 
 ## Optional iOS settings 

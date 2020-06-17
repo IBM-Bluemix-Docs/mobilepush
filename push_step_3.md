@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-05-20"
+lastupdated: "2020-06-18"
 
 keywords: push notification, push notifications, setup client sdk, android application, cordova application, iOS application, web browser
 
@@ -40,7 +40,7 @@ subcollection: mobilepush
 # Set up service client SDK's
 {: #push_step_3}
 
-Ensure that you have [obtain notification service provider credentials](/docs/mobilepush?topic=mobilepush-push_step_1) and have [configured a push service instance](/docs/mobilepush?topic=mobilepush-push_step_2). You then need to set up the application for using {{site.data.keyword.mobilepushshort}} service to register, subscribe, and receive push notifications. 
+Ensure that you [obtain notification service provider credentials](/docs/mobilepush?topic=mobilepush-push_step_1) and have [configured a push service instance](/docs/mobilepush?topic=mobilepush-push_step_2). You then need to set up the application for using {{site.data.keyword.mobilepushshort}} service to register, subscribe, and receive push notifications. 
 
 To set up the service client SDK, go through the following steps based on your application type.
 
@@ -73,8 +73,8 @@ Complete the steps for [{{site.data.keyword.mobilepushshort}} Android SDK](https
       ![Editing Main activity file](images/mp-gradle-main-activity1.png "Editing the main activity file with APP GUID and client secret")
 
 1. If you have an android device, connect to your mac/windows and select the device in the Android studio.
-1. Click on the run button. If you don't have an android device, [create an emulator](https://developer.android.com/studio/run/emulator) with API 28 or above.
-1. Run the app and click on Register device button which appears on your app for the push notifications.
+1. Click the run button. If you don't have an android device, [create an emulator](https://developer.android.com/studio/run/emulator) with API 28 or higher.
+1. Run the app and click Register device button that appears on your app for the push notifications.
 
 Your next step is to [Send a notification](/docs/mobilepush?topic=mobilepush-push_step_4).
 

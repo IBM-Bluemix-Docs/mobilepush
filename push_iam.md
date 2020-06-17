@@ -2,7 +2,7 @@
 
 copyright:
   years:  2017, 2020
-lastupdated: "2020-05-20"
+lastupdated: "2020-06-18"
 
 keywords: push notification, push notifications, notifications, service access, manage, user roles
 
@@ -147,7 +147,7 @@ To use any ReST APIs, you must generate the access token by using the following 
 }
 ```
 
-Upon generating the access token by using the preceding curl command, you might now operate the Rest API’s by passing the `Bearer <value of access_token>` in the Authorization header
+Upon generating the access token by using the preceding curl command, you might now operate the Rest APIs by passing the `Bearer <value of access_token>` in the Authorization header
 
 For example,
 

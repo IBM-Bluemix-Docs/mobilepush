@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-06-05"
+lastupdated: "2020-06-18"
 
 keywords: push notification, push notifications, notifications, service credentials, service processes, push message size, regional high availability
 
@@ -40,7 +40,7 @@ subcollection: mobilepush
 # About {{site.data.keyword.mobilepushshort}} 
 {: #gettingstartedtemplate}
 
-{{site.data.keyword.cloud_notm}} {{site.data.keyword.mobilepushshort}} is a service which allows you to send notifications to mobile devices and browsers. Notifications can be targeted to all application users or to a specific set of users and devices that use tags. For every message that you submit to the service, the intended audience receives a notification.
+{{site.data.keyword.cloud_notm}} {{site.data.keyword.mobilepushshort}} is a service, which allows you to send notifications to mobile devices and browsers. Notifications can be targeted to all application users or to a specific set of users and devices that use tags. For every message that you submit to the service, the intended audience receives a notification.
 
 {{site.data.keyword.mobilepushshort}} is a public, shared multi-tenant service on {{site.data.keyword.cloud_notm}}. {{site.data.keyword.mobilepushshort}} service is accessed through public endpoints. Both the control and data plane of the service are shared across tenants. {{site.data.keyword.mobilepushshort}} service is available in the following regions: 
 1. Dallas 
@@ -53,13 +53,13 @@ subcollection: mobilepush
 You can use an [SDK](/docs/mobilepush?topic=mobilepush-install-sdk) (software development kit) and [ReST APIs](/docs/mobilepush?topic=mobilepush-apis-for-push-notifications) to further develop your client applications.
 {: note}
 
-The {{site.data.keyword.mobilepushshort}} service is also enabled for [IBM Cloud Functions](https://cloud.ibm.com/docs/openwhisk?topic=openwhisk-getting-started). {{site.data.keyword.openwhisk}} is a distributed, event-driven compute service that is alternatively known as serverless computing. This allows developers to focus on writing application logic, and create actions that are run on demand.
+The {{site.data.keyword.mobilepushshort}} service is also enabled for [IBM Cloud Functions](https://cloud.ibm.com/docs/openwhisk?topic=openwhisk-getting-started). {{site.data.keyword.openwhisk}} is a distributed, event-driven compute service that is alternatively known as serverless computing. {{site.data.keyword.openwhisk}} allows developers to focus on writing application logic, and create actions that are run on demand.
 {: note}
 
 ## Service processes
 {: #overview_push_process}
 
-Mobile, Web browser clients, and Google Chrome Apps & Extensions can subscribe and register for the {{site.data.keyword.mobilepushshort}} service. On start-up, the client applications registers and subscribe themselves to the {{site.data.keyword.mobilepushshort}} service. The notifications are dispatched to the Apple Push Notification Service (APNs) or Firebase Cloud Messaging (FCM) server and then sent to registered mobile device, browser clients, or Chrome Apps & Extensions.
+Mobile, web browser clients, and Google Chrome Apps & Extensions can subscribe and register for the {{site.data.keyword.mobilepushshort}} service. On start-up, the client applications registers and subscribe themselves to the {{site.data.keyword.mobilepushshort}} service. The notifications are dispatched to the Apple Push Notification Service (APNs) or Firebase Cloud Messaging (FCM) server and then sent to registered mobile device, browser clients, or Chrome Apps & Extensions.
 
 ![Push Overview](images/overview.jpg "Service processes flow for backend apps configuration and sending notifications through the Push notifications service")
 
@@ -118,11 +118,11 @@ In each supported multizone region, every zone has its own {{site.data.keyword.c
 
 {{site.data.keyword.mobilepushshort}} service is a regional service. It does not provide automated cross-regional failover or cross-regional disaster recovery. If a regional disaster occurs, all data might not be recovered. However, a location recovery is possible and all data can be restored. If there is a need for regional disaster recovery, it is recommended that you create and maintain backup instances in other regions. To synchronize a service instance in one region with an instance in a different region, you can use the APIs mentioned [here](https://us-south.imfpush.cloud.ibm.com/imfpush/).
 
-Review the API documentation to consider the important data that you want to backup and restore.
+Review the API documentation to consider the important data that you want to back up and restore.
 
-For example, you may start with the following to be backed up:
-- **applications**: `/apps/{applicationID}/settings` - Your platform configuration
-- **devices**: `/apps/{applicationID}/devices` - All registered devices
-- **subscriptions**: `/apps/{applicationId}/subscriptions` - All the subscriptions
+For example, you might start with the following to be backed up:
+- **applications** - `/apps/{applicationID}/settings` - Your platform configuration
+- **devices** - `/apps/{applicationID}/devices` - All registered devices
+- **subscriptions** - `/apps/{applicationId}/subscriptions` - All the subscriptions
 
 For each of the data set that you need to back up and restore, use the GET calls to get a copy of the data, and use corresponding the PUT / POST API to populate the new instance on a different region.

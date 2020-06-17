@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-05-20"
+lastupdated: "2020-06-18"
 
 keywords: push notification, push notifications, notifications, configure sound, payload, ios badge, holding android notification
 
@@ -40,22 +40,23 @@ subcollection: mobilepush
 # Enabling advanced {{site.data.keyword.mobilepushshort}}
 {: #enabling-advanced-push-notifications}
 
-Configure an iOS badge, sound, additional JSON payload, actionable notifications, and holding notifications.
+Configure an iOS badge, sound, extra JSON payload, actionable notifications, and holding notifications.
 
 ## Configure sound, and payload and iOS badge
 {: #badge-sound-payload}
 
-Configure an iOS badge, sound, and additional JSON payload.
+Configure an iOS badge, sound, and extra JSON payload.
 
 1. In the {{site.data.keyword.mobilepushshort}} service console, click **Notifications** on the left navigation menu.
 1. Click **Create**, and compose a message.
    - Compose a new notification by providing the following information: **Notification text**, **Notification title** (optional), **Additional payload** (optional).
-   - Select the **Target audience** by one of the following target:
+   - Select the **Target audience** by one of the following targets:
       - **Platforms** - Options are: **Android**, **iOS**, **Web Notifications**, **Chrome Apps and Extensions**, **Chrome Browser**, **Firefox**, **Safari**, and **All Devices**.
       - **Tags** - Enter the Tag, topic name or create a new tag.
       - **Devices/user IDs** - Select either **Device ID** or **User ID** and enter the device/user ID detail for the selection.
 
-   **Note**: When you select the **All Devices** option, all devices that are subscribed to {{site.data.keyword.mobilepushshort}} will receive notifications.
+   When you select the **All Devices** option, all devices that are subscribed to {{site.data.keyword.mobilepushshort}} will receive notifications.
+   {: note}
 
    - Optionally for rich media notifications use **Advanced settings**. Select the **Priority** (valid options are: Default, Max, Min, Low, High) and select the type of notification to be sent (**Default** or **Silent**).
    - Go to the **Advanced Settings** section and click **View All** and configure the {{site.data.keyword.mobilepushshort}} features. 

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020
-lastupdated: "2020-05-20"
+lastupdated: "2020-06-18"
 
 keywords: push notification, push notifications, notifications, channel, channel group, channel id
 
@@ -40,7 +40,7 @@ subcollection: mobilepush
 # Channel notifications
 {: #channel_based_notifications}
 
-Channel-based {{site.data.keyword.mobilepushshort}} are targeted at mobile app users with specific category. With channel-based notifications, you can choose to notify specific individuals based on the channel which they are subscribed.
+Channel-based {{site.data.keyword.mobilepushshort}} are targeted at mobile app users with specific category. With channel-based notifications, you can choose to notify specific individuals based on the channel, which they are subscribed.
 
 Starting in Android 8.0 (API level 26), all notifications must be assigned to a channel. For each channel, you can set the visual and auditory behavior that is applied to all notifications in that channel. Then, users can change these settings and decide which notification channels from your app should be intrusive or visible at all.
 {: note}
@@ -55,7 +55,7 @@ To enable {{site.data.keyword.mobilepushshort}} targeted by Channel ID, ensure t
    - Provide the New Channel's **Basic Information**:
       - **Channel ID**, **Channel Name**, **Group ID**, **Description**.
    - Set the following basic channel properties:
-      - **Importance**, **Vibrate** (on or off), **Sound** (provide the sound path), **Vibration pattern** (enter comma separated values for play and pause of sound)
+      - **Importance**, **Vibrate** (on or off), **Sound** (provide the sound path), **Vibration pattern** (enter comma-separated values for play and pause of sound)
    - Set the **Advanced settings** (optional)
       - **Lights** (on or off), **Lock screen visibility**, **Color**, **Override DND** (on or off), **Display Badge** (on or off)
 1. Click **Create**.
@@ -80,7 +80,7 @@ The Channel-based notifications are notification messages that are targeted to a
 1. From the {{site.data.keyword.mobilepushshort}} console, click **Notifications** on the left navigation menu.
 1. Click **Create**, and compose a message.
    - Compose a new notification by providing the following information: **Notification text**, **Notification title** (optional), **Additional payload** (optional).
-   - Select the **Target audience** by one of the following target:
+   - Select the **Target audience** by one of the following targets:
       - **Platforms** - Options are: **Android**, **iOS**, **Web Notifications**, **Chrome Apps and Extensions**, **Chrome Browser**, **Firefox**, **Safari**, and **All Devices**.
       - **Tags** - Enter the Tag, topic name or create a new tag.
       - **Devices/user IDs** - Select the **Device ID** or **User ID** and the detail for the selection.

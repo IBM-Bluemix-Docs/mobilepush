@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-05-20"
+lastupdated: "2020-06-18"
 
 keywords: push notification, push notifications, notifications, release notes
 
@@ -46,7 +46,7 @@ The following new features and changes to the service are available. These chang
 
 1. The new improved design provides uniform experience across IBM Cloud Console and other IBM Cloud Services.
 1. No more multiple left navigation menus. You now have more real estate to work within the console.
-1. Step by step guidance for usage and all SDK's are now downloadable from within the service.
+1. Step-by-step guidance for usage and all SDKs is now downloadable from within the service.
 1. Ease of use across configuration, sending notifications and monitoring the notifications sent.
 
 ## December 2019
@@ -64,7 +64,7 @@ Support for multiple notifications with the same collapse identifier to be displ
 
 ### Application Server Keys Support
  
-Application Server Keys are used to authenticate the application server. (This is defined by the VAPID spec.) This key is used to provide additional security to verify that the application server triggering the web push message is same as the one subscribed by the user.
+Application Server Keys are used to authenticate the application server. (This is defined by the VAPID spec.) This key is used to provide more security to verify that the application server triggering the web push message is same as the one subscribed by the user.
 
 ## February 2019
 

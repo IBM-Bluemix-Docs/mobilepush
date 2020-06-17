@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-05-20"
+lastupdated: "2020-06-18"
 
 keywords: push notification, push notifications, notifications, tag-based, creating tags, managing tags, get tag, subscribe tag
 
@@ -40,7 +40,7 @@ subcollection: mobilepush
 # Tag-based notifications
 {: #tag_based_notifications}
 
-Tag-based notifications are messages targeted to all devices that are subscribed to a particular tag. Tags-based notifications allow segmentation of notifications based on subject areas or topics. Notification recipients can choose to receive notifications only if it is about a subject or topic that is of interest. Therefore, tags-based notification provides a means to segment recipients. This feature enables the ability to define tags and then send and receive messages by tags. A message is targeted to only the client application instances (on mobile, browser or as an app or extensions) that are subscribed to the tag. You must first create tags for the application, set up the tag subscriptions and then initiate the tag-based notifications. To send a tag-based notification that uses the REST API, ensure that the "tagNames" are provided when posting to the message resource.
+Tag-based notifications are messages that are targeted to all devices that are subscribed to a particular tag. Tags-based notifications allow segmentation of notifications based on subject areas or topics. Notification recipients can choose to receive notifications only if it is about a subject or topic that is of interest. Therefore, tags-based notification provides a means to segment recipients. This feature enables the ability to define tags and then send and receive messages by tags. A message is targeted to only the client application instances (on mobile, browser or as an app or extensions) that are subscribed to the tag. You must first create tags for the application, set up the tag subscriptions and then initiate the tag-based notifications. To send a tag-based notification that uses the REST API, ensure that the "tagNames" are provided when posting to the message resource.
 
 You can define tags and then send and receive messages by using tags. You must first create the tags for the application, create subscriptions and then initiate the tag-based notifications. To send a Tag-based notification by using the [ReST API](https://eu-gb.imfpush.cloud.ibm.com/imfpush/){: external}, ensure that the `tagNames` are provided when posting to the message resource.
 
@@ -109,7 +109,7 @@ Create tags on the **Tag** screen. For information about how to create tags, see
 1. From the {{site.data.keyword.mobilepushshort}} console, click **Notifications** on the left navigation menu.
 1. Click **Create**, and compose a message.
    - Compose a new notification by providing the following information: **Notification text**, **Notification title** (optional), **Additional payload** (optional).
-   - Select the **Target audience** by one of the following target:
+   - Select the **Target audience** by one of the following targets:
       - **Platforms** - Options are: **Android**, **iOS**, **Web Notifications**, **Chrome Apps and Extensions**, **Chrome Browser**, **Firefox**, **Safari**, and **All Devices**.
       - **Tags** - Enter the tags that you want to use, topic name or create a new tag.
 1. Click **Send**.

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2020
-lastupdated: "2020-05-20"
+lastupdated: "2020-06-18"
 
 keywords: push notification, push notifications, notifications, compliance, hipaa, iso, soc 2 type 2 certification, gdpr, data deletion
 
@@ -82,7 +82,7 @@ You can request an SOC Certification report from the customer portal or contact 
 ## General Data Protection Regulation (GDPR) readiness
 {: #gdpr}
 
-Please visit [IBM's commitment to GDPR readiness](https://www.ibm.com/data-responsibility/gdpr/) page to learn about IBM’s GDPR readiness journey and our GDPR capabilities and offerings to support your compliance journey. 
+Visit [IBM's commitment to GDPR readiness](https://www.ibm.com/data-responsibility/gdpr/) page to learn about IBM’s GDPR readiness journey and our GDPR capabilities and offerings to support your compliance journey. 
 
 - [IBM Data Processing Addendum (DPA)](https://www.ibm.com/support/customer/csol/terms/?cat=dpa) 
 
@@ -92,17 +92,17 @@ Please visit [IBM's commitment to GDPR readiness](https://www.ibm.com/data-respo
 ### Deleting application settings
 {: #del-app-settings}
 
-The notification provider configuration settings from APNS,GCM, and WebPush can be deleted from your {{site.data.keyword.cloud_notm}} {{site.data.keyword.mobilepushshort}} service instance using the application settings delete API provided [here](https://cloud.ibm.com/apidocs/push-notifications#retrieve-application-settings). When the notification provider configuration setttings are deleted, it is completely deleted from the {{site.data.keyword.cloud_notm}} {{site.data.keyword.mobilepushshort}} service instance and cannot be recovered.
+The notification provider configuration settings from APNS, GCM, and WebPush can be deleted from your {{site.data.keyword.cloud_notm}} {{site.data.keyword.mobilepushshort}} service instance by using the application settings delete API provided [here](https://cloud.ibm.com/apidocs/push-notifications#retrieve-application-settings). When the notification provider configuration settings are deleted, it is completely deleted from the {{site.data.keyword.cloud_notm}} {{site.data.keyword.mobilepushshort}} service instance and cannot be recovered.
 
 ### Deleting a device registration
 {: #del-device-registration}
 
-Devices registered with {{site.data.keyword.cloud_notm}} {{site.data.keyword.mobilepushshort}} service instance for Push Notification can be deleted from the service instance by providing the Device Id details to the API provided [here](https://cloud.ibm.com/apidocs/push-notifications#deletes-unregisters-an-existing-device-registratio). When a device registration is deleted, it is completely deleted from the {{site.data.keyword.cloud_notm}} {{site.data.keyword.mobilepushshort}} service instance and cannot be recovered.
+Devices that are registered with {{site.data.keyword.cloud_notm}} {{site.data.keyword.mobilepushshort}} service instance for Push Notification can be deleted from the service instance by providing the Device Id details to the API provided [here](https://cloud.ibm.com/apidocs/push-notifications#deletes-unregisters-an-existing-device-registratio). When a device registration is deleted, it is completely deleted from the {{site.data.keyword.cloud_notm}} {{site.data.keyword.mobilepushshort}} service instance and cannot be recovered.
 
 ### Deleting a tag
 {: #del-tag}
 
-Tags defined with {{site.data.keyword.cloud_notm}} {{site.data.keyword.mobilepushshort}} service instance to send and receive messages using tags can be deleted from the service instance by providing the Tag Name details to the API provided [here](https://cloud.ibm.com/apidocs/push-notifications#delete-tag). When a tag is deleted, it is completely deleted from the {{site.data.keyword.cloud_notm}} {{site.data.keyword.mobilepushshort}} service instance and cannot be recovered.
+Tags defined with {{site.data.keyword.cloud_notm}} {{site.data.keyword.mobilepushshort}} service instance to send and receive messages by using tags can be deleted from the service instance by providing the Tag Name details to the API provided [here](https://cloud.ibm.com/apidocs/push-notifications#delete-tag). When a tag is deleted, it is completely deleted from the {{site.data.keyword.cloud_notm}} {{site.data.keyword.mobilepushshort}} service instance and cannot be recovered.
 
 ### Deleting a channel and channel group
 {: #del-channel-group}
@@ -112,14 +112,14 @@ Channels defined with {{site.data.keyword.cloud_notm}} {{site.data.keyword.mobil
 ### Deleting a message
 {: #del-message}
 
-Messages sent with {{site.data.keyword.cloud_notm}} {{site.data.keyword.mobilepushshort}} service instance can be deleted from the service instance by providing the Message Id details to the API provided [here](https://cloud.ibm.com/apidocs/push-notifications#delete-message). When a message is deleted, it is completely deleted from the {{site.data.keyword.cloud_notm}} {{site.data.keyword.mobilepushshort}} service instance and cannot be recovered.
+Messages that are sent with {{site.data.keyword.cloud_notm}} {{site.data.keyword.mobilepushshort}} service instance can be deleted from the service instance by providing the Message Id details to the API provided [here](https://cloud.ibm.com/apidocs/push-notifications#delete-message). When a message is deleted, it is completely deleted from the {{site.data.keyword.cloud_notm}} {{site.data.keyword.mobilepushshort}} service instance and cannot be recovered.
 
 ### Deleting a webhook
 {: #del-webhook}
 
-Webhooks registered with {{site.data.keyword.cloud_notm}} {{site.data.keyword.mobilepushshort}} service instance can be deleted from the service instance by providing the Webhook Name Details to the API provided [here](https://cloud.ibm.com/apidocs/push-notifications#delete-the-webhook). When a webhook is deleted, it is completely deleted from the {{site.data.keyword.cloud_notm}} {{site.data.keyword.mobilepushshort}} service instance and cannot be recovered.
+Webhooks that are registered with {{site.data.keyword.cloud_notm}} {{site.data.keyword.mobilepushshort}} service instance can be deleted from the service instance by providing the Webhook Name Details to the API provided [here](https://cloud.ibm.com/apidocs/push-notifications#delete-the-webhook). When a webhook is deleted, it is completely deleted from the {{site.data.keyword.cloud_notm}} {{site.data.keyword.mobilepushshort}} service instance and cannot be recovered.
 
 ### Deleting a service instance
 {: #del-service-instance}
 
-When an {{site.data.keyword.cloud_notm}} {{site.data.keyword.mobilepushshort}} service instance is deleted from the console, all the above mentioned configuration data provided will be retained until the service retention [policy](https://www.ibm.com/software/reports/compatibility/clarity/softwareReqsForProduct.html) ends, after which the data is completely deleted from the service instance and cannot be recovered.
+When an {{site.data.keyword.cloud_notm}} {{site.data.keyword.mobilepushshort}} service instance is deleted from the console, all the above mentioned configuration data that is provided will be retained until the service retention [policy](https://www.ibm.com/software/reports/compatibility/clarity/softwareReqsForProduct.html) ends after which the data is completely deleted from the service instance and cannot be recovered.

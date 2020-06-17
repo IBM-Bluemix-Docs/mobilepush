@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-05-20"
+lastupdated: "2020-06-18"
 
 keywords: push notification, push notifications, ibm cloud catalog, push service client sdk, notification provider, getting started
 
@@ -40,7 +40,7 @@ subcollection: mobilepush
 # Getting started tutorial
 {: #getting-started}
 
-{{site.data.keyword.mobilepushshort}} is available as an {{site.data.keyword.cloud_notm}} catalog service in the **Web and Mobile** category and enables you to send and manage mobile and web push notifications. A push notification is an alert to indicate a change or update on a mobile device or browser.
+{{site.data.keyword.mobilepushshort}} is available as an {{site.data.keyword.cloud_notm}} catalog service in the **Web and Mobile** category and helps you to send and manage mobile and web push notifications. A push notification is an alert to indicate a change or update on a mobile device or browser.
 {:shortdesc}
 
 {{site.data.keyword.mobilepushshort}} are a universally accepted communication channel across enterprises or for a wide spectrum of audience. You can deliver these notifications as an onscreen banner alert or to a device's locked screen, thus providing information updates that are quickly and easily accessible.  

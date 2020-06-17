@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-05-20"
+lastupdated: "2020-06-18"
 
 keywords: push notification, push notifications, creating an ibm cloud service instance, ibm cloud service
 
@@ -49,7 +49,7 @@ To create a {{site.data.keyword.mobilepushshort}} service from the catalog, comp
 1. Provide a **Service name**. 
 1. `Optional`: Select a resource group.
 
-   Consider how you want resources organized in your account. The resource group that you selected cannot be changed after the service instance is created. 
+   Consider how you want the resources that are organized in your account. The resource group that you selected cannot be changed after the service instance is created. 
    {: note}
 
 1. Click **Create**. 

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-05-20"
+lastupdated: "2020-06-18"
 
 keywords: push notification, push notifications, notifications, receive alerts, webhook events
 
@@ -44,12 +44,12 @@ With the {{site.data.keyword.mobilepushshort}} service, you can choose to receiv
 
 Webhooks are user-defined callbacks that are triggered by an event, such as registering a device or subscribing to tags. On the {{site.data.keyword.mobilepushshort}} service, you can register for the following webhook events: 
 
-- **onDeviceRegister**: A webhook event is triggered for devices that are registered for push.
-- **onDeviceUpdate**: A webhook event is triggered when information on a registered device is updated.
-- **onDeviceUnregister**: A webhook event is triggered when a device is unregistered. 
-- **onSubscribe**: A webhook event is triggered on a user subscribing to a tag.
-- **onUnsubscribe**: A webhook event is triggered for a user unsubscribing to a tag.
-- **onNotificationStatusChange**: A webhook event is triggered for every notification and denotes the status as SENT, FAILED, OPEN, or SEEN.
+- **onDeviceRegister** - A webhook event is triggered for devices that are registered for push.
+- **onDeviceUpdate** - A webhook event is triggered when information on a registered device is updated.
+- **onDeviceUnregister** - A webhook event is triggered when a device is unregistered. 
+- **onSubscribe** - A webhook event is triggered on a user subscribing to a tag.
+- **onUnsubscribe** - A webhook event is triggered for a user unsubscribing to a tag.
+- **onNotificationStatusChange** - A webhook event is triggered for every notification and denotes the status as SENT, FAILED, OPEN, or SEEN.
 
 Notification dispatches are done in batches. A message dispatch can have multiple webhook events that might include both failures and success. 
 The webhook events would have the same messageID as that of the dispatched message. 

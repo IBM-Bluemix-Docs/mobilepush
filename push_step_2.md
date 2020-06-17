@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-05-20"
+lastupdated: "2020-06-18"
 
 keywords: push notification, push notifications, notifications, service instance, cordova application
 
@@ -40,17 +40,17 @@ subcollection: mobilepush
 # Configure a service instance 
 {: #push_step_2}
 
-Ensure that you have gone through [Obtain notification service provider credentials](/docs/mobilepush?topic=mobilepush-push_step_1).
+Ensure that you went through [Obtain notification service provider credentials](/docs/mobilepush?topic=mobilepush-push_step_1).
 
 You can configure the service for **Android** apps, **iOS** apps, **Chrome** web apps, **Chrome apps and extentions**, **Firefox** web apps, and **Safari** web apps by selecting the **Configure** button in the respective tile.
 
-Click the Menu icon (three vertical dots) in the respective configuration tile to Edit or Delete a configuration. The Menu icon will appear only in the respective configuration tile if configuration details exist.
+Click the Menu icon (three vertical dots) in the respective configuration tile to Edit or Delete a configuration. The Menu icon appears only in the respective configuration tile if configuration details exist.
 {: note}
 
 ## For Android apps
 {: #push_step_2_Android}
 
-Ensure that you have gone through [Obtain notification service provider credentials](/docs/mobilepush?topic=mobilepush-push_step_1) to set up the FCM project and obtain your credentials.
+Ensure that you went through [Obtain notification service provider credentials](/docs/mobilepush?topic=mobilepush-push_step_1) to set up the FCM project and obtain your credentials.
 
 To configure the service with FCM credentials for Android applications, complete the following steps:
 
@@ -103,7 +103,7 @@ To configure the service with credentials for your Chrome web app, complete the 
 
 1. Click **Save**. The {{site.data.keyword.mobilepushfull}} service is now configured.
 
-After you have set up the service, you need to [Set up Push service client SDKs](/docs/mobilepush?topic=mobilepush-push_step_3).
+After you set up the service, you need to [Set up Push service client SDKs](/docs/mobilepush?topic=mobilepush-push_step_3).
 
 ## For Chrome apps and extensions
 {: #push_step_2_chrome-apps}
@@ -152,11 +152,11 @@ To set up APNs on the Push Notification service console, complete the steps:
 1. In the {{site.data.keyword.mobilepushshort}} service console, click **Configure Service** on the left navigation menu.
 1. In the Safari tile, click **Configure**. 
 1. In the side panel, update the following details:
-   - **Website name**: This is the name that you have provided in the Notification center.
-   - **Website push ID**: Update with the reverse-domain string for your Website Push ID. For example, web.com.acmebanks.www.
-   - **Website URL**: Provide the URL of the website that should be subscribed to push notifications. For example, `https://www.acmebanks.com`.
-   - **URL Format String**: The URL to resolve when the notification is clicked. For example, [`https://www.acmebanks.com`]. Ensure that the URL use the http or https scheme.
-   - **Safari web push certificate**: Upload the .p12 certificate.
+   - **Website name** - This is the name that you have provided in the Notification center.
+   - **Website push ID** - Update with the reverse-domain string for your Website Push ID. For example, web.com.acmebanks.www.
+   - **Website URL** - Provide the URL of the website that should be subscribed to push notifications. For example, `https://www.acmebanks.com`.
+   - **URL Format String** - The URL to resolve when the notification is clicked. For example, [`https://www.acmebanks.com`]. Ensure that the URL use the http or https scheme.
+   - **Safari web push certificate** - Upload the .p12 certificate.
    - In the **Password** field, enter the password that is associated with the `.p12` certificate file.
    - *Optional*: Upload the **Notification icon** of the size specified.
 
@@ -164,7 +164,7 @@ To set up APNs on the Push Notification service console, complete the steps:
 
 1. Click **Save**. The {{site.data.keyword.mobilepushfull}} service is now configured.
 
-After you have set up the service for iOS applications, you need to [Set up Push service client SDKs](/docs/mobilepush?topic=mobilepush-push_step_3).
+After you set up the service for iOS applications, you need to [Set up Push service client SDKs](/docs/mobilepush?topic=mobilepush-push_step_3).
 
 ## For Cordova applications 
 {: #push_step_2_b}
