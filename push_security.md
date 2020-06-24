@@ -2,9 +2,9 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-06-18"
+lastupdated: "2020-06-24"
 
-keywords: push notification, push notifications, notification, security, api keys
+keywords: push notification, push notifications, notification, security, api keys, clientSecret
 
 subcollection: mobilepush
 
@@ -47,7 +47,19 @@ The {{site.data.keyword.mobilepushshort}} APIs are secured by -
 The `clientSecret` is used as authentication mechanism when a client SDK connects to the {{site.data.keyword.mobilepushshort}} service. API Keys are used as the authentication mechanism for the management APIs. 
 {: note}
 
-The `clientSecret` is allocated to every service instance at the time of creation of {{site.data.keyword.mobilepushshort}} service. The `clientSecret` is available in the **Service Credentials** section. Refer to the [ReST APIs](https://eu-gb.imfpush.cloud.ibm.com/imfpush/) documentation for information on how the secrets are to be passed and for what APIs.
+## `clientSecret` for user authentication
+{: #push-client-secret}
+
+The `clientSecret` is allocated to every service instance at the time of creation of {{site.data.keyword.mobilepushshort}} service. The `clientSecret` is available in the **Service Credentials** section. Refer to the [ReST API](https://eu-gb.imfpush.cloud.ibm.com/imfpush/) documentation for information on how the secrets are to be passed and for what APIs.
+
+By default, client secret verification is enforced only in new apps. Both existing and new apps are allowed to enable or disable the client secret verification by using the `verifyClientSecret` REST API. It is suggested that you enforce client secret verification to avoid exposing devices to users who might know the applicationId and deviceId.
+
+Earlier applications were required to pass the `clientSecret` only when registering or updating devices with `userId` field. All other APIs called by mobile and browser clients did not require `clientSecret`. These old applications can continue to use the `clientSecret` optionally for device registrations or updating calls. However, it is recommended that `clientSecret` check is enforced for all client API calls. To enforce this in existing applications, there is a new `verifyClientSecret` API that is published. For new applications, clientSecret check is enforced on all client API calls and this behavior cannot be changed with the `verifyClientSecret` API.
+{: note}
+
+Ensure that the `clientSecret` is kept confidential and never hardcoded into the mobile app. There are various application initialization patterns that can be used to pull in the `clientSecret` dynamically during the applications runtime. The sequence diagram outlines on such possible pattern.
+
+![Enable_Push](images/init_client_secret.jpg "Sequence diagram showing patterns for initialization for pulling in the clientSecret") 
 
 ## API keys for user authentication
 {: #push-api-key}
