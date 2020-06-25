@@ -44,7 +44,7 @@ You need to create an [IBM Cloud account](https://cloud.ibm.com/).
 
 To create a {{site.data.keyword.mobilepushshort}} service from the catalog, complete the following steps:
 
-1. In the [IBM Cloud catalog](https://cloud.ibm.com/catalog), click **Web and Mobile** > **Push Notifications**.
+1. In the [IBM Cloud catalog](https://cloud.ibm.com/catalog#services), click **Mobile** > **Push Notifications**.
 1. **Select a Region** from the dropdown list and **Select a pricing plan**.
 1. Provide a **Service name**. 
 1. `Optional`: Select a resource group.
