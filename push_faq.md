@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-06-18"
+lastupdated: "2020-07-01"
 
 keywords: push notification, push notifications, notifications, faq, frequently asked questions, rest api filter, Xcode
 
@@ -37,7 +37,7 @@ subcollection: mobilepush
 {:cordova: .ph data-hd-programlang='Cordova'}
 {:xml: .ph data-hd-programlang='xml'}
 
-# Frequently Asked Questions 
+# Frequently asked questions 
 {: #faq}
 
 ## Why do my tokens get invalidated?
@@ -128,10 +128,10 @@ The monitoring utility displays the status for every sent message. The messages 
 
 For more information, see the GET messages report in [{{site.data.keyword.IBM_notm}} {{site.data.keyword.mobilepushshort}} ReST API](https://eu-gb.imfpush.cloud.ibm.com/imfpush/).	
 
-## Does push notification monitor the push notification delivery up to the end-user device? For both Android and iOS?
+## Does push notification monitor the push notification delivery up to the user device? For both Android and iOS?
 {: #faq-end-user-device}	
 
-{{site.data.keyword.mobilepushshort}} are monitored based on the number of notifications that are seen or opened from end-user device. This is available for both Android and iOS. Device id-based monitoring is not supported. 
+{{site.data.keyword.mobilepushshort}} are monitored based on the number of notifications that are seen or opened from user device. This is available for both Android and iOS. Device id-based monitoring is not supported. 
 
 ## I get the message that the server is unable to handle requests? How can I resolve it?
 {: #faq-server-unable-to-handle-requests}	
@@ -158,10 +158,10 @@ This feature is not supported.
 
 This should be handled in the context of application development.
 	
-## Can I register/update mobile devices at bulk by using the REST APIs?
+## Can I register or update mobile devices at bulk by using the REST APIs?
 {: #faq-register-mobile-devices}	
 
-As in the design, registering/updating a device is called from the mobile applications by using SDK. Bulk registrations/updates through REST APIs are not supported. If many device registrations/updates are called simultaneously by using REST APIs, it might take a long time or might fail.	
+As in the design, registering or updating a device is called from the mobile applications by using SDK. Bulk registrations or updates through REST APIs are not supported. If many device registrations or updates are called simultaneously by using REST APIs, it might take a long time or might fail.	
 
 ## How do I send {{site.data.keyword.mobilepushshort}} or use the Rest APIs when I don’t have the appSecret?
 {: #faq-rest-api-appsecret}	
@@ -247,7 +247,7 @@ For the project and apps, which are in old versions, you cannot build the projec
 
 * **Using Xcode**
    1. Go to **File** &gt; **Project Settings** or **Workspace Settings**.
-   1. Select **Legacy Build System** from the **Build System** dropdown.
+   1. Select **Legacy Build System** from the **Build System** list.
 
 * **Using Xcode build**
    - For **React Native**, use the **-UseModernBuildSystem=NO** flag to opt out of the new Xcode new build system.
@@ -257,3 +257,10 @@ For the project and apps, which are in old versions, you cannot build the projec
 {: #faq-api-standalone-client}	
 
 The API requests sent to the {{site.data.keyword.mobilepushshort}} service must be set to the `user-agent` request header. The user agent header property is a string that helps to identify the application that calling the API.
+
+## How do I resolve a connection exception?
+{: #faq-retry-logic}	
+
+Applications that communicate over networks and cloud services are subject to transient connection failures. There can be a short blip in connectivity or trigger a failover. To resolve the connection exception in {{site.data.keyword.mobilepushshort}} service, retrying the API calls will bring the system back to normal.
+
+Open a [support ticket](https://cloud.ibm.com/docs/get-support?topic=get-support-getting-customer-support) with details if you have longer periods with no connectivity.
