@@ -37,6 +37,9 @@ subcollection: mobilepush
 {:cordova: .ph data-hd-programlang='Cordova'}
 {:xml: .ph data-hd-programlang='xml'}
 
+<p align="right"><a href="https://cloud.ibm.com/catalog/services/push-notifications"><img src="images/addpushnow.jpg" alt="Add Push Notifications now"/></a>
+</p>
+
 # About {{site.data.keyword.mobilepushshort}} 
 {: #gettingstartedtemplate}
 
