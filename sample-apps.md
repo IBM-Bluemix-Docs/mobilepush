@@ -4,7 +4,7 @@ copyright:
   years: 2018, 2020
 lastupdated: "2020-06-18"
 
-keywords: push notification, push notifications, notifications, sample apps
+keywords: push notifications, push notification, notifications, sample apps
 
 subcollection: mobilepush
 

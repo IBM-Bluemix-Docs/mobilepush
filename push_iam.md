@@ -4,7 +4,7 @@ copyright:
   years:  2017, 2020
 lastupdated: "2020-06-18"
 
-keywords: push notification, push notifications, notifications, service access, manage, user roles
+keywords: push notifications, push notification, notifications, service access, manage, user roles
 
 subcollection: mobilepush
 

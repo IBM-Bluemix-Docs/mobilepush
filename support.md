@@ -4,7 +4,7 @@ copyright:
   years: 2017, 2020
 lastupdated: "2020-06-18"
 
-keywords: push notification, push notifications, notifications, getting help and support
+keywords: push notifications, push notification, notifications, getting help and support
 
 subcollection: mobilepush
 

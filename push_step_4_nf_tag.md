@@ -4,7 +4,7 @@ copyright:
   years: 2015, 2020
 lastupdated: "2020-06-18"
 
-keywords: push notification, push notifications, notifications, tag-based, creating tags, managing tags, get tag, subscribe tag
+keywords: push notifications, push notification, notifications, tag-based, creating tags, managing tags, get tag, subscribe tag
 
 subcollection: mobilepush
 

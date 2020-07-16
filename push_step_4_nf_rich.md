@@ -4,7 +4,7 @@ copyright:
   years: 2015, 2020
 lastupdated: "2020-06-18"
 
-keywords: push notification, push notifications, notifications, rich media notification
+keywords: push notifications, push notification, notifications, rich media notification
 
 subcollection: mobilepush
 

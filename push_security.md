@@ -4,7 +4,7 @@ copyright:
   years: 2015, 2020
 lastupdated: "2020-06-24"
 
-keywords: push notification, push notifications, notification, security, api keys, clientSecret
+keywords: push notifications, push notification, notification, security, api keys, clientSecret
 
 subcollection: mobilepush
 

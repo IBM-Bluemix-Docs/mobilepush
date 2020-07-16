@@ -4,7 +4,7 @@ copyright:
   years: 2015, 2020
 lastupdated: "2020-06-18"
 
-keywords: push notification, push notifications, notifications, release notes
+keywords: push notifications, push notification, notifications, release notes
 
 subcollection: mobilepush
 

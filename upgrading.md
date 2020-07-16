@@ -4,7 +4,7 @@ copyright:
   years: 2015, 2020
 lastupdated: "2020-06-18"
 
-keywords: push notification, push notifications, notifications, upgrading plan, lite, basic, advanced
+keywords: push notifications, push notification, notifications, upgrading plan, lite, basic, advanced
 
 subcollection: mobilepush
 

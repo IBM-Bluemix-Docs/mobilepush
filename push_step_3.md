@@ -4,7 +4,7 @@ copyright:
   years: 2015, 2020
 lastupdated: "2020-06-18"
 
-keywords: push notification, push notifications, setup client sdk, android application, cordova application, iOS application, web browser
+keywords: push notifications, push notification, setup client sdk, android application, cordova application, iOS application, web browser
 
 subcollection: mobilepush
 

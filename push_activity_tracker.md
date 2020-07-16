@@ -4,7 +4,7 @@ copyright:
   years: 2016, 2020
 lastupdated: "2020-06-18"
 
-keywords: push notification, push notifications, activity tracker for Push Notifications service, LogDNA for Push Notifications service, Push Notifications service events, Push Notifications service security, audit logs for Push Notifications service, viewing Push Notifications service events, Push Notifications service events
+keywords: push notifications, push notification, activity tracker for Push Notifications service, LogDNA for Push Notifications service, Push Notifications service events, Push Notifications service security, audit logs for Push Notifications service, viewing Push Notifications service events, Push Notifications service events
 
 subcollection: mobilepush
 

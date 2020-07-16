@@ -4,7 +4,7 @@ copyright:
   years: 2018, 2020
 lastupdated: "2020-06-18"
 
-keywords: push notification, push notifications, notifications, compliance, hipaa, iso, soc 2 type 2 certification, gdpr, data deletion
+keywords: push notifications, push notification, notifications, compliance, hipaa, iso, soc 2 type 2 certification, gdpr, data deletion
 
 subcollection: mobilepush
 

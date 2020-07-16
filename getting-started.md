@@ -4,7 +4,7 @@ copyright:
   years: 2015, 2020
 lastupdated: "2020-06-18"
 
-keywords: push notification, push notifications, ibm cloud catalog, push service client sdk, notification provider, getting started
+keywords: push notifications, push notification, ibm cloud catalog, push service client sdk, notification provider, getting started
 
 subcollection: mobilepush
 
@@ -37,7 +37,7 @@ subcollection: mobilepush
 {:cordova: .ph data-hd-programlang='Cordova'}
 {:xml: .ph data-hd-programlang='xml'}
 
-# Getting started tutorial
+# Getting started with {{site.data.keyword.mobilepushshort}}
 {: #getting-started}
 
 {{site.data.keyword.mobilepushshort}} is available as an {{site.data.keyword.cloud_notm}} catalog service in the **Mobile** category and helps you to send and manage mobile and web push notifications. A push notification is an alert to indicate a change or update on a mobile device or browser.

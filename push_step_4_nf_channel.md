@@ -4,7 +4,7 @@ copyright:
   years: 2020
 lastupdated: "2020-06-18"
 
-keywords: push notification, push notifications, notifications, channel, channel group, channel id
+keywords: push notifications, push notification, notifications, channel, channel group, channel id
 
 subcollection: mobilepush
 

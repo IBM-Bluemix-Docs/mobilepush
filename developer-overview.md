@@ -4,7 +4,7 @@ copyright:
   years: 2018, 2020
 lastupdated: "2020-06-18"
 
-keywords: push notification, push notifications, application development, sdk
+keywords: push notifications, push notification, application development, sdk
 
 subcollection: mobilepush
 

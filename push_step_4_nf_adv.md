@@ -4,7 +4,7 @@ copyright:
   years: 2015, 2020
 lastupdated: "2020-06-18"
 
-keywords: push notification, push notifications, notifications, configure sound, payload, ios badge, holding android notification
+keywords: push notifications, push notification, notifications, configure sound, payload, ios badge, holding android notification
 
 subcollection: mobilepush
 

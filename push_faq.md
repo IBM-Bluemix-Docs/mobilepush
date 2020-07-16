@@ -4,7 +4,7 @@ copyright:
   years: 2015, 2020
 lastupdated: "2020-07-01"
 
-keywords: push notification, push notifications, notifications, faq, frequently asked questions, rest api filter, Xcode
+keywords: push notifications, push notification, notifications, faq, frequently asked questions, rest api filter, Xcode
 
 subcollection: mobilepush
 
