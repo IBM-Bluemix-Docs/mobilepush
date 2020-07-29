@@ -63,6 +63,7 @@ Push Notifications
     {: .navgroup id="reference"}
     whats-new.md
     sample-apps.md
+    push_app_ha.md
     push_activity_tracker.md
     push-compliance.md
 	
