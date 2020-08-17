@@ -66,6 +66,7 @@ Push Notifications
     push_app_ha.md
     push_activity_tracker.md
     push-compliance.md
+    /mobilepush-cli-plugin/mobilepush-cli-plugin-mobilepush-cli
 	
     {: .topicgroup}
     APIs and SDKs
