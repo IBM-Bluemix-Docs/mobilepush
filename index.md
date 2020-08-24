@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-06-18"
+lastupdated: "2020-08-24"
 
 keywords: push notifications, push notification, notifications, service credentials, service processes, push message size, regional high availability
 
@@ -36,6 +36,7 @@ subcollection: mobilepush
 {:android: .ph data-hd-programlang='Android'}
 {:cordova: .ph data-hd-programlang='Cordova'}
 {:xml: .ph data-hd-programlang='xml'}
+{:video: .video}
 
 <p align="right"><a href="https://cloud.ibm.com/catalog/services/push-notifications"><img src="images/addpushnow.jpg" alt="Add Push Notifications now"/></a>
 </p>
@@ -103,14 +104,17 @@ The {{site.data.keyword.mobilepushshort}} message payload size depends on the co
 {: #push-blog}
 
 Sample applications are available for [Android](https://github.com/ibm-bluemix-mobile-services/bms-samples-android-hellopush/){: external}, [Cordova](https://github.com/ibm-bluemix-mobile-services/bms-samples-cordova-hellopush){: external}, and [iOS](https://github.com/ibm-bluemix-mobile-services/bms-samples-swift-hellopush){: external}.
-You can also find more information at the {{site.data.keyword.mobilepushshort}} service [videos](https://www.youtube.com/watch?v=1wO30GfiLaI&list=PLzJUGEaRNMfvX7-J6gqczEanWBPiOjEmA){: external}.  
+
+You can also find more information at the {{site.data.keyword.mobilepushshort}} service videos:
+
+![Personalized Messaging](https://www.youtube.com/embed/1wO30GfiLaI){: video output="iframe" id="youtubeplayer1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen}
 
 ## Sample scenario 
 {: #push-scenario}
 
 The {{site.data.keyword.mobilepushshort}} service is explained by using the sample scenario of the ACME Bank. The ACME Bank is in the phase of having their existing IT infrastructure moved to {{site.data.keyword.cloud_notm}} services and is building mobile back-end for their customer and employee facing apps. They are using {{site.data.keyword.mobilepushshort}} service to send notification to their customers on banking transactions and other important events and reminders.
 
-## Regional high availability
+## Regional high-availability
 {: #regional-high-availability}
 
 {{site.data.keyword.mobilepushshort}} service is a highly available, regional service that runs in multiple zones.

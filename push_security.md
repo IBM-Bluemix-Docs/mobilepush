@@ -66,4 +66,4 @@ Ensure that the `clientSecret` is kept confidential and never hardcoded into the
 
 An API key is a unique code that is passed in to an API to identify the calling application or user. API keys are used to track and control how the API is being used, for example to prevent malicious use or abuse of the API. The API key often acts as both a unique identifier and a secret token for authentication, and generally has a set of access permissions specific to the identity associated with it.
 
-Refer [here](https://cloud.ibm.com/docs/iam?topic=iam-manapikey) for more details on managing and working with API keys.
+Refer [here](https://cloud.ibm.com/docs/account?topic=account-manapikey) for more details on managing and working with API keys.

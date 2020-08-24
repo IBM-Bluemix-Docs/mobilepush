@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-07-01"
+lastupdated: "2020-08-24"
 
 keywords: push notifications, push notification, notifications, faq, frequently asked questions, rest api filter, Xcode
 
@@ -36,6 +36,7 @@ subcollection: mobilepush
 {:android: .ph data-hd-programlang='Android'}
 {:cordova: .ph data-hd-programlang='Cordova'}
 {:xml: .ph data-hd-programlang='xml'}
+{:video: .video}
 
 # Frequently asked questions 
 {: #faq}
@@ -107,7 +108,9 @@ This feature is not supported.
 ## Where can I find more information like tutorials or what's new?
 {: #faq-what-is-new}	
 
-Go through the {{site.data.keyword.mobilepushshort}} service [videos](https://www.youtube.com/watch?v=1wO30GfiLaI&list=PLzJUGEaRNMfvX7-J6gqczEanWBPiOjEmA){: external}.	
+Go through the {{site.data.keyword.mobilepushshort}} service videos:
+
+![Personalized Messaging](https://www.youtube.com/embed/1wO30GfiLaI){: video output="iframe" id="youtubeplayer1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen}
 
 ## Is there a difference between a notification and a message?
 {: #faq-diff-notification-message}	
@@ -263,4 +266,4 @@ The API requests sent to the {{site.data.keyword.mobilepushshort}} service must 
 
 Applications that communicate over networks and cloud services are subject to transient connection failures. There can be a short blip in connectivity or trigger a failover. To resolve the connection exception in {{site.data.keyword.mobilepushshort}} service, retrying the API calls will bring the system back to normal.
 
-Open a [support ticket](https://cloud.ibm.com/docs/get-support?topic=get-support-getting-customer-support) with details if you have longer periods with no connectivity.
+Open a [support ticket](https://cloud.ibm.com/unifiedsupport/cases/form) with details if you have longer periods with no connectivity.

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2020
-lastupdated: "2020-06-18"
+lastupdated: "2020-08-24"
 
 keywords: push notifications, push notification, notifications, related links, videos
 
@@ -15,32 +15,22 @@ subcollection: mobilepush
 {:codeblock: .codeblock}
 {:pre: .pre}
 {:screen: .screen}
-{:tsSymptoms: .tsSymptoms}
-{:tsCauses: .tsCauses}
-{:tsResolve: .tsResolve}
 {:tip: .tip}
 {:important: .important}
 {:note: .note}
 {:download: .download}
-{:java: .ph data-hd-programlang='java'}
-{:ruby: .ph data-hd-programlang='ruby'}
-{:c#: .ph data-hd-programlang='c#'}
-{:objectc: .ph data-hd-programlang='Objective C'}
-{:python: .ph data-hd-programlang='python'}
-{:javascript: .ph data-hd-programlang='javascript'}
-{:php: .ph data-hd-programlang='PHP'}
-{:swift: .ph data-hd-programlang='swift'}
-{:reactnative: .ph data-hd-programlang='React Native'}
-{:csharp: .ph data-hd-programlang='csharp'}
-{:ios: .ph data-hd-programlang='iOS'}
-{:android: .ph data-hd-programlang='Android'}
-{:cordova: .ph data-hd-programlang='Cordova'}
-{:xml: .ph data-hd-programlang='xml'}
+{:video: .video}
 
 # Videos
 {: #videos}
 
-* [Integrating Push Notification In iOS Application](https://www.youtube.com/watch?v=IA8RyAxqq4A){: external}
-* [Integrating Push Notification In Android Application](https://www.youtube.com/watch?v=VMfRkn31zkU){: external}
-* [End To End Message Tracking](https://www.youtube.com/watch?v=a8T_sxSvwx0){: external}
-* [Personalized Messaging](https://www.youtube.com/watch?v=1wO30GfiLaI){: external}
+You can watch these getting started video series to learn more about how to use {{site.data.keyword.cloud_notm}} {{site.data.keyword.mobilepushshort}} Service.
+{: shortdesc}
+
+![Integrating Push Notification in iOS Application](https://www.youtube.com/embed/DgPZwS_63Ws){: video output="iframe" id="youtubeplayer1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen}
+
+![Integrating Push Notification in Android Application](https://www.youtube.com/embed/nHZCPcB0gow){: video output="iframe" id="youtubeplayer2" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen}
+
+![End To End Message Tracking](https://www.youtube.com/embed/L10gwGeYkh4){: video output="iframe" id="youtubeplayer3" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen}
+
+![Personalized Messaging](https://www.youtube.com/embed/1wO30GfiLaI){: video output="iframe" id="youtubeplayer4" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen}

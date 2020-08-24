@@ -2,7 +2,7 @@
 
 copyright:
   years:  2017, 2020
-lastupdated: "2020-06-18"
+lastupdated: "2020-08-24"
 
 keywords: push notifications, push notification, notifications, service access, manage, user roles
 
@@ -45,7 +45,7 @@ With {{site.data.keyword.mobilepushshort}} and {{site.data.keyword.iamlong}} (IA
 
 As an account owner, you can set policies within your account to create different levels of access for different users. For example, certain users can have **Read only** access to one instance, but **Write** access to another. You can decide who is allowed to create, update, and delete instances of {{site.data.keyword.mobilepushshort}}.
 
-As the {{site.data.keyword.mobilepushshort}} service has adopted IAM, the App secret will not be generated for the new instances. You must use the [API keys instead](https://cloud.ibm.com/docs/iam?topic=iam-manapikey).
+As the {{site.data.keyword.mobilepushshort}} service has adopted IAM, the App secret will not be generated for the new instances. You must use the [API keys instead](https://cloud.ibm.com/docs/account?topic=account-manapikey).
 {: note}
 
 ## User roles
@@ -78,7 +78,7 @@ The following table details actions that are mapped to service access roles. Ser
 | Writer or Manager | View and change an {{site.data.keyword.mobilepushshort}} instance. | Can perform all Reader actions and edit the service instance, such as editing the identity provider configuration. |
 {:caption="Table 2. Actions mapping to service access roles" caption-side="top"}
 
-For more information about assigning user roles in the UI, see [Managing IAM access](https://cloud.ibm.com/docs/iam?topic=iam-iammanidaccser#iammanidaccser).
+For more information about assigning user roles in the UI, see [Managing IAM access](/docs/account?topic=account-assign-access-resources#iammanidaccser).
 
 ## {{site.data.keyword.mobilepushshort}} access policies
 {: #access}
@@ -159,4 +159,4 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
  }' 'https://us-east.imfpush.cloud.ibm.com/imfpush/v1/apps/4809d407-85ff-4d11-ae4b-0fcdf8a833f1/messages'
 ```
 
-For more information about IAM, see [IAM Access](https://cloud.ibm.com/docs/iam?topic=iam-userroles).
+For more information about IAM, see [IAM Access](https://cloud.ibm.com/docs/account?topic=account-userroles).

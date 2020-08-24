@@ -38,7 +38,7 @@ subcollection: mobilepush
 {:xml: .ph data-hd-programlang='xml'}
 
 # High Availability
-{: #push_app-ha}
+{: #push_ha}
 
 Your global strategy is important, and {{site.data.keyword.cloud}} uses global load balancing to ensure a redundant, highly-available platform is available for you to host your workloads and applications.
 {: shortdesc}
