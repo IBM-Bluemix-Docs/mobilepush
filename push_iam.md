@@ -78,7 +78,7 @@ The following table details actions that are mapped to service access roles. Ser
 | Writer or Manager | View and change an {{site.data.keyword.mobilepushshort}} instance. | Can perform all Reader actions and edit the service instance, such as editing the identity provider configuration. |
 {:caption="Table 2. Actions mapping to service access roles" caption-side="top"}
 
-For more information about assigning user roles in the UI, see [Managing IAM access](/docs/account?topic=account-assign-access-resources#iammanidaccser).
+For more information about assigning user roles in the UI, see [Managing IAM access](/docs/account?topic=account-assign-access-resources).
 
 ## {{site.data.keyword.mobilepushshort}} access policies
 {: #access}

@@ -49,4 +49,4 @@ You can get help by searching for information or by asking questions through a f
 * If you have technical questions on Push Notifications, post your question on [Stack Overflow](https://stackoverflow.com/questions/tagged/ibm-mobile-services){: external} and tag your question with `ibm-push-notification`.
 * For questions about the service and getting started instructions, use the [IBM developerWorks](https://developer.ibm.com/answers/topics/bluemix-mobile-services/){: external} forum. Include the `push-notification` tag.
 
-For more information about getting support, see [how do I get the support that I need?](/docs/get-support?topic=get-support-getting-customer-support){: external}.
+For more information about getting support, see [how do I get the support that I need?](/docs/get-support?topic=get-support-using-avatar#getting-support){: external}.
