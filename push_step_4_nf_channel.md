@@ -61,7 +61,7 @@ To enable {{site.data.keyword.mobilepushshort}} targeted by Channel ID, ensure t
 1. Click **Create**.
 
 ## Creating Channel Groups
-{: #createing_channelgroup}
+{: #creating_channelgroup}
 
 To enable {{site.data.keyword.mobilepushshort}} targeted by Channel ID, ensure that you register the device with a User ID field set.     
 
