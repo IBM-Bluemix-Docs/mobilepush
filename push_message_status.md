@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-06-18"
+lastupdated: "2020-09-25"
 
 keywords: push notifications, push notification, notifications, message delivery status
 
@@ -42,9 +42,9 @@ subcollection: mobilepush
 
 With the {{site.data.keyword.mobilepushshort}} service, you can view the delivery status of every notification that has been submitted to the service. 
 
-Once the message has been sent, you can track delivery information of a message by looking at its delivery status. At any given time, the service displays status of only the latest 10 messages that is available within a period of 90 days.
+Once the message is sent, you can track delivery information of a message by looking at its delivery status. At any given time, the service displays status of only the latest 10 messages that is available within a period of 90 days.
 
-The {{site.data.keyword.mobilepushshort}} service **Notifications** displays the notification and their status.
+The {{site.data.keyword.mobilepushshort}} service **Notifications** display the notification and their status.
 
 ![Notifications status](images/Messages.png "Messages page with display of notification status")
 
@@ -52,7 +52,8 @@ The {{site.data.keyword.mobilepushshort}} service **Notifications** displays the
 1. **Message Text** - A message template that was sent to the app users.
 1. **Date** - Date and time the message was submitted to the service.
 1. **Status** - Gives a brief summary status of a message. Depending on the delivery status of the message, you can see one of the following statuses:
-   - Accepted - The message has been accepted for delivery by the Push Notifications service.
+   - Accepted - The message has been accepted for delivery by the {{site.data.keyword.mobilepushshort}} service.
+   - Failed - The message failed for delivery due to device not present in {{site.data.keyword.mobilepushshort}} service.
    - Dispatching - The notification has been received by notification provider - APNs, FCM, or web, and is about to be dispatched. A notification that is while being dispatched can also return a failure with the status **Dispatching failed**.
    - Dispatched - The notification has been dispatched by the notification provider.
    - Processing - The message is being processed to be dispatched to the notification provider gateway. A notification that is being processed can also return a failure with the status **Processing failed**.
@@ -60,7 +61,7 @@ The {{site.data.keyword.mobilepushshort}} service **Notifications** displays the
 1. **View** - Displays delivery status of the notifications that are dispatched. You can view information based on the following aspects:
    - Category - All, Mobile, web.
    - Message status - Sent, Seen, Open, and Invalid. 
-1. **Options** - Gives a detailed status of a notification. Status can be tracked by selecting either the `Device Id` or the `User Id` from the dropdown menu. Getting user/device specific detailed status message can be helpful when you are tracking a failed message.
+1. **Options** - Gives a detailed status of a notification. Status can be tracked by selecting either the `Device Id` or the `User Id` from the list. Getting user or device specific detailed status message can be helpful when you are tracking a failed message.
 
    ![Detailed status](images/MessageRepot&DeliveryStatus.png "Detailed message delivery status options with User ID selected")
 
