@@ -28,6 +28,7 @@ Push Notifications
     
     {: .navgroup id="howto"}
     push_security.md
+    push_byok.md
 
     {: .topicgroup}
     Enable notification options

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-08-31"
+lastupdated: "2020-10-07"
 
 keywords: push notifications, push notification, notifications, release notes
 
@@ -27,6 +27,9 @@ subcollection: mobilepush
 {: #whats-new}
 
 The following new features and changes to the service are available. These changes do not break existing code:
+
+## October 2020
+- Support for Key Protection management to Bring Your Own Key (BYOK) (Advanced Plan only). </br>Using IBM Key Protect for {{site.data.keyword.cloud_notm}} instance helps you provision encrypted keys for your {{site.data.keyword.mobilepushshort}} service instance. For more information on {{site.data.keyword.mobilepushshort}} Key Protection Integration, see [here](/docs/mobilepush?topic=mobilepush-push_key_protect_integration).
 
 ## August 2020
 

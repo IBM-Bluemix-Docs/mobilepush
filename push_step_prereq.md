@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-06-18"
+lastupdated: "2020-10-07"
 
 keywords: push notifications, push notification, creating an ibm cloud service instance, ibm cloud service
 
@@ -47,10 +47,25 @@ To create a {{site.data.keyword.mobilepushshort}} service from the catalog, comp
 1. In the [IBM Cloud catalog](https://cloud.ibm.com/catalog#services), click **Mobile** > **Push Notifications**.
 1. **Select a Region** from the dropdown list and **Select a pricing plan**.
 1. Provide a **Service name**. 
-1. `Optional`: Select a resource group.
+1. `Optional` Select a resource group.
 
    Consider how you want the resources that are organized in your account. The resource group that you selected cannot be changed after the service instance is created. 
    {: note}
+
+1. `Optional` Add **Tags**, if required.
+1. `Optional` Select the **Key Managment Service instance** ID from the list of instances, if you want bring your own encryption keys using Key Protect.
+
+   You need to pre-create the Key protect instances and enable service-to-service Authorization before creating {{site.data.keyword.mobilepushshort}} instance, as documented [here](/docs/mobilepush?topic=mobilepush-push_key_protect_integration).
+   {: note}
+
+   Key Management Service is enabled for **Advanced Plan** only.
+   {: important}
+
+   ![Key Management Service instance](images/pn-byok-prereq01.png "Graphic outlining the selection of key management service instance")
+
+1. `Optional` Select the **Key Protect Root Key ID** from the list of keys that you want to use it in this {{site.data.keyword.mobilepushshort}} service instance.
+
+   ![Key Protect Root Key ID](images/pn-byok-prereq02.png "Graphic outlining the selection of Key Protect Root Key ID")
 
 1. Click **Create**. 
 
