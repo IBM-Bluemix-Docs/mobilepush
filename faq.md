@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-08-24"
+lastupdated: "2020-10-09"
 
 keywords: faqs, frequently asked questions, question, push notifications, push notification, notifications, rest api filter, Xcode
 
@@ -43,6 +43,7 @@ subcollection: mobilepush
 {: #mobilepush-faq}
 
 This FAQ provides answers to common questions about the {{site.data.keyword.mobilepushshort}} service.
+{: shortdesc}
 
 ## Why do my tokens get invalidated?
 {: #faq-tokens}	
