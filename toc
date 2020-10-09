@@ -57,7 +57,7 @@ Push Notifications
     {: .topicgroup} 
     Troubleshooting and FAQs
         push_troubleshooting.md
-        push_faq.md	
+        faq.md	
         support.md
     {: .navgroup-end}
 	
