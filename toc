@@ -53,12 +53,22 @@ Push Notifications
     {: .navgroup id="help"}
     upgrading.md
     relatedlinks.md	
+    faq.md	
     
     {: .topicgroup} 
-    Troubleshooting and FAQs
-        push_troubleshooting.md
-        faq.md	
+    Troubleshooting
         support.md
+        {: .topicgroup}
+        Common issues
+            push_troubleshooting.md
+
+        {: .topicgroup}
+        Web push configuration errors
+            push-troubleshoot-web-push-config-error.md
+
+        {: .topicgroup}
+        Service errors
+            push-troubleshoot-service-error.md
     {: .navgroup-end}
 	
     {: .navgroup id="reference"}
