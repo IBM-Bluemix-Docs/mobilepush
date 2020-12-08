@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2020
-lastupdated: "2020-08-24"
+lastupdated: "2020-09-21"
 
 keywords: push notifications, push notification, notifications, getting help and support
 
@@ -15,38 +15,20 @@ subcollection: mobilepush
 {:codeblock: .codeblock}
 {:pre: .pre}
 {:screen: .screen}
-{:tsSymptoms: .tsSymptoms}
-{:tsCauses: .tsCauses}
-{:tsResolve: .tsResolve}
 {:tip: .tip}
 {:important: .important}
 {:note: .note}
 {:download: .download}
-{:java: .ph data-hd-programlang='java'}
-{:ruby: .ph data-hd-programlang='ruby'}
-{:c#: .ph data-hd-programlang='c#'}
-{:objectc: .ph data-hd-programlang='Objective C'}
-{:python: .ph data-hd-programlang='python'}
-{:javascript: .ph data-hd-programlang='javascript'}
-{:php: .ph data-hd-programlang='PHP'}
-{:swift: .ph data-hd-programlang='swift'}
-{:reactnative: .ph data-hd-programlang='React Native'}
-{:csharp: .ph data-hd-programlang='csharp'}
-{:ios: .ph data-hd-programlang='iOS'}
-{:android: .ph data-hd-programlang='Android'}
-{:cordova: .ph data-hd-programlang='Cordova'}
-{:xml: .ph data-hd-programlang='xml'}
-
 
 # Getting help and support
 {: #gettinghelp}
 
-When you have problems while you are working with {{site.data.keyword.mobilepushshort}}, consider these options for getting help.
+When you have problems or questions when you are working with {{site.data.keyword.mobilepushshort}}, you can go directly to the [{{site.data.keyword.cloud_notm}} Support page](https://{DomainName}/unifiedsupport/supportcenter) to review featured FAQs, view cloud status, or post questions on Stack Overflow. You can also open a support case.
 {: shortdesc}
 
-You can get help by searching for information or by asking questions through a forum. You can also open a support ticket. When you are using the forums to ask a question, tag your question so that it is seen by the {{site.data.keyword.Bluemix_notm}} development teams.
+Consider these options for getting help:
 
-* If you have technical questions on Push Notifications, post your question on [Stack Overflow](https://stackoverflow.com/questions/tagged/ibm-mobile-services){: external} and tag your question with `ibm-push-notification`.
+* You can get help by searching for information or by asking questions through a forum. When you are using the forums to ask a question, tag your question so that it is seen by the {{site.data.keyword.cloud_notm}} development teams.
+* If you have technical questions on {{site.data.keyword.mobilepushshort}}, post your question on [Stack Overflow](https://stackoverflow.com/questions/tagged/ibm-mobile-services){: external} and tag your question with `ibm-push-notification`.
 * For questions about the service and getting started instructions, use the [IBM developerWorks](https://developer.ibm.com/answers/topics/bluemix-mobile-services/){: external} forum. Include the `push-notification` tag.
-
-For more information about getting support, see [how do I get the support that I need?](/docs/get-support?topic=get-support-using-avatar#getting-support){: external}.
+* If you still can't resolve the problem, you can open a support case. For information about opening a support case, or about case severities and response times, see [Working with support cases](https://{DomainName}/docs/get-support?topic=get-support-open-case){: external} or [Escalating support cases](https://{DomainName}/docs/get-support?topic=get-support-escalation){: external}.

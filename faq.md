@@ -77,7 +77,7 @@ Follow the steps mentioned in [Step 3: Set up Push service client SDKs](/docs/mo
 {: #faq-web-config-errors}	
 {: faq}
 
-Web push errors from the `BMSPushSDK.js` contain information on the failure. See [Troubleshooting](/docs/mobilepush?topic=mobilepush-errors).	
+Web push errors from the `BMSPushSDK.js` contain information on the failure. See [Troubleshooting](/docs/mobilepush?topic=mobilepush-troubleshoot-web-push-config-errors).	
 
 ## Do notifications persist if the devices are offline?
 {: #faq-notification-persist}	
