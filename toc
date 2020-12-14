@@ -58,6 +58,7 @@ Push Notifications
     {: .topicgroup} 
     Troubleshooting
         support.md
+        mp-reporting-problem.md
 
         {: .topicgroup}
         Common issues
