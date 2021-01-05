@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018, 2020
-lastupdated: "2020-06-18"
+  years: 2018, 2021
+lastupdated: "2021-01-05"
 
 keywords: push notifications, push notification, notifications, compliance, hipaa, iso, soc 2 type 2 certification, gdpr, data deletion
 
@@ -74,7 +74,7 @@ IBM doesn't have Business Associate Agreements (BAA) relation with APNS/FCM.
 {: #soccert}
 
 {{site.data.keyword.mobilepushshort}} Service is SOC1 Type 2, SOC2 Type 2, SOC3 audit certified for the Security and Availability principles. The reports evaluate IBM's operational controls according to the criteria set by the American Institute of Certified Public Accountants (AICPA) Trust Services Principles. 
-The Trust Services Principles define adequate control systems and establish industry standards for service providers such as {{site.data.keyword.cloud_notm}} to safeguard their customers' data and information. For more information on compliance, visit this [blog](https://admin.blogs.prd.ibm.event.ibm.com/w3-techblog/compliance/).
+The Trust Services Principles define adequate control systems and establish industry standards for service providers such as {{site.data.keyword.cloud_notm}} to safeguard their customers' data and information. For more information on compliance, visit this [blog](https://www.ibm.com/cloud/compliance).
 
 You can request an SOC Certification report from the customer portal or contact your sales representative. Alternatively, you can open a support ticket with 
 [IBM Cloud support](https://www.ibm.com/cloud/support){: external}.
