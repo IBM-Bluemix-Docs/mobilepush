@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2020
-lastupdated: "2020-06-18"
+  years: 2016, 2021
+lastupdated: "2021-02-03"
 
 keywords: push notifications, push notification, activity tracker for Push Notifications service, LogDNA for Push Notifications service, Push Notifications service events, Push Notifications service security, audit logs for Push Notifications service, viewing Push Notifications service events, Push Notifications service events
 
@@ -59,22 +59,45 @@ To view and search for the event logs, use any one of the {{site.data.keyword.at
 
 The following table lists the {{site.data.keyword.cloudaccesstrailfull}} events for {{site.data.keyword.cloud_notm}} {{site.data.keyword.mobilepushshort}} service:
 
-|Action                             |Description                        |
-|-----------------------------------|-----------------------------------|
-|imfpush.app.update                 |Updates to the Application         |
-|imfpush.app-conf.update            |Application configuration update   |
-|imfpush.app-conf.delete            |Application configuration deletion |
-|imfpush.app-device.create          |Device registration                |
-|imfpush.app-device.delete          |Device unregistration              |
-|imfpush.app-tag.create             |Tag creation                       |
-|imfpush.app-tag.update             |Tag update                         |
-|imfpush.app-tag.delete             |Tag deletion                       |
-|imfpush.app-subscription.create    |Device subscription for a tag      |
-|imfpush.app-subscription.delete    |Device unsubscription for a tag    |
-|imfpush.app-message.create         |Send message                       |
-|imfpush.app-webhook.create         |Webhook creation                   |
-|imfpush.app-webhook.update         |Webhook update                     |
-|imfpush.app-webhook.delete         |Webhook deletion                   |
+|Action                                |Description                                                                       |
+|--------------------------------------|----------------------------------------------------------------------------------|
+|imfpush.app.credentials.decrypt.error |Event sent if error occurs on decryption of credentials via Key Protect           |
+|imfpush.app.credentials.encrypt.error |Event sent if error occurs while encryption of credentials via key protect        |
+|imfpush.app.credentials.ready-to-use	 |Event sent before sending credentials for encryption or decryption to Key Protect |
+|imfpush.app.forbidden		             |Event sent for non privileged access of API's                                     |
+|imfpush.app.provisioned               |App provisioned                                                                   |
+|imfpush.app.resource-not-found	       |Event sent if resource to be updated or deleted, not there in the service         |
+|imfpush.app.unauthorized		           |Event sent for not authorised access                                              |
+|imfpush.app.unprovisioned             |App unprovisioned                                                                 |
+|imfpush.app.update                    |Updates to the Application                                                        |
+|imfpush.app-channel.read              |App channel information read                                                      |
+|imfpush.app-channels.read             |App channels information read                                                     |
+|imfpush.app-channel-group.read        |App channel group read                                                            |
+|imfpush.app-conf.delete               |Application configuration deletion                                                |
+|imfpush.app-conf.read                 |Application configuration read                                                    |	
+|imfpush.app-conf.update               |Application configuration update                                                  |
+|imfpush.app-device.create             |Device registration                                                               |
+|imfpush.app-device.delete             |Device unregistration                                                             |
+|imfpush.app-device.read               |Device information read                                                           |
+|imfpush.app-device.report.read        |Devices report                                                                    |
+|imfpush.app-devices.read              |Devices information read                                                          |
+|imfpush.app-message.create            |Send message                                                                      |
+|imfpush.app-message.latest.read       |Latest Messages information by timestamp                                          |
+|imfpush.app-message.read              |Message information read                                                          |
+|imfpush.app-messages.read             |Messages information read                                                         |
+|imfpush.app-subscription.create       |Device subscription for a tag                                                     |
+|imfpush.app-subscription.delete       |Device unsubscription for a tag                                                   |
+|imfpush.app-subscription.read         |Subscription information read                                                     |
+|imfpush.app-tag.create                |Tag creation                                                                      |
+|imfpush.app-tag.delete                |Tag deletion                                                                      |
+|imfpush.app-tag.read                  |Tag information read                                                              |
+|imfpush.app-tag.update                |Tag update                                                                        |
+|imfpush.app-tags.read                 |Tags information read                                                             |
+|imfpush.app-webhook.create            |Webhook creation                                                                  |
+|imfpush.app-webhook.delete            |Webhook deletion                                                                  |
+|imfpush.app-webhook.update            |Webhook update                                                                    |
+|imfpush.app-webhook.read              |Webhook information read                                                          |
+|imfpush.app-webhooks.read             |Webhook informations read                                                         |
 {: caption="Table 1. List of actions that genererate an event" caption-side="top"}
 
 Currently, the {{site.data.keyword.cloudaccesstrailshort}} Events for {{site.data.keyword.cloud_notm}} {{site.data.keyword.mobilepushshort}} service are available only on `Dallas, Washington DC, London, Sydney, and Tokyo`.
