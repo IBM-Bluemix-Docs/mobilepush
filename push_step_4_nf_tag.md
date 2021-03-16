@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2020
-lastupdated: "2020-06-18"
+  years: 2015, 2021
+lastupdated: "2021-03-16"
 
 keywords: push notifications, push notification, notifications, tag-based, creating tags, managing tags, get tag, subscribe tag
 
@@ -94,7 +94,7 @@ Tags provide a way to send targeted notifications to users based on their intere
 
 Use the following API to allow your devices to retrieve tags, subscribe to a tag, retrieve subscriptions, and unsubscribe from a tag.
 
-- For Android, use the `getTags`, `subscribe`, `getSubscriptions`, and `unsubscribeFromTags` API's. See [Push Notifications subscribe tags for Android](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-android-push/tree/Doc#push-notification-service-tags).
+- For Android, use the `getTags`, `subscribe`, `getSubscriptions`, and `unsubscribeFromTags` API's. See [Push Notifications subscribe tags for Android](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-android-push/tree/Doc#subscribe-to-tags).
 - For Cordova, use the `retrieveAvailableTags()`, `subscribe()`, `retrieveSubscriptions()`, and `unsubscribe()` API's. See [Push Notifications subscribe tags for Cordova](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-cordova-plugin-push/tree/Doc#push-notification-service-tags).
 - For iOS, use the `retrieveAvailableTagsWithCompletionHandler`, `subscribeToTags`, `retrieveSubscriptionsWithCompletionHandler`, and `unsubscribeFromTags` API's. See [Push Notifications subscribe tags for Swift](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-swift-push/tree/Doc#push-notification-service-tags).
 - For web browsers, use the `retrieveAvailableTags()`, `subscribe()`, `retrieveSubscriptions()`, and `unSubscribe()` API's. See [Push Notifications subscribe tags for web browsers](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-javascript-webpush/blob/Doc/README.md#push-notification-service-tags).

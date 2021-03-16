@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2020
-lastupdated: "2020-06-18"
+  years: 2015, 2021
+lastupdated: "2021-03-16"
 
 keywords: push notifications, push notification, notifications, sending a notification
 
@@ -114,6 +114,6 @@ You can also choose to enable [interactive notifications](https://github.com/ibm
 ## Monitoring for delivered notifications 
 {: #push_step_4_monitor}
 
-The {{site.data.keyword.mobilepushshort}} service provides a monitoring utility to help you check the status of messages that are sent. To configure your monitoring utility, go through either of the following options:
-- [Enable monitoring for Android applications](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-android-push/tree/Doc#monitoring).
+The {{site.data.keyword.mobilepushshort}} service provides a monitoring utility to help you check the status of messages that are sent. To configure your monitoring utility, go through monitoring section of either onef the following options:
+- [Enable monitoring for Android applications](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-android-push/tree/Doc).
 - [Enable monitoring for iOS applications](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-swift-push/tree/Doc#enable-monitoring).
