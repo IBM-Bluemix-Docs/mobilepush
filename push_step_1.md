@@ -172,7 +172,7 @@ Ensure that you have registered an App ID, enabled it for {{site.data.keyword.mo
 Create a development provisioning profile, as follows:
 
 1. Go to the [Apple Developer](https://developer.apple.com){: external} portal, click **Member Center**, and select **Certificates, Identifiers & Profiles**.
-1. Go to the [Mac Developer Library](https://help.apple.com/developer-account/#/devf2eb157f8){: external}, scroll to the **Creating Development Provisioning Profiles** section, and follow the instructions to create a development profile.
+1. Go to the Mac Developer Library, scroll to the **Creating Development Provisioning Profiles** section, and follow the instructions to create a development profile.
 
 When you configure a development provision profile, select the following options:
 * **iOS App Development**
