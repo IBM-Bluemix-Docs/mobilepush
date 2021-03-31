@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2021
-lastupdated: "2021-02-03"
+lastupdated: "2021-03-17"
 
 keywords: push notifications, push notification, activity tracker for Push Notifications service, LogDNA for Push Notifications service, Push Notifications service events, Push Notifications service security, audit logs for Push Notifications service, viewing Push Notifications service events, Push Notifications service events
 
@@ -59,45 +59,72 @@ To view and search for the event logs, use any one of the {{site.data.keyword.at
 
 The following table lists the {{site.data.keyword.cloudaccesstrailfull}} events for {{site.data.keyword.cloud_notm}} {{site.data.keyword.mobilepushshort}} service:
 
-|Action                                |Description                                                                       |
-|--------------------------------------|----------------------------------------------------------------------------------|
-|imfpush.app.credentials.decrypt.error |Event sent if error occurs on decryption of credentials via Key Protect           |
-|imfpush.app.credentials.encrypt.error |Event sent if error occurs while encryption of credentials via key protect        |
-|imfpush.app.credentials.ready-to-use	 |Event sent before sending credentials for encryption or decryption to Key Protect |
-|imfpush.app.forbidden		             |Event sent for non privileged access of API's                                     |
-|imfpush.app.provisioned               |App provisioned                                                                   |
-|imfpush.app.resource-not-found	       |Event sent if resource to be updated or deleted, not there in the service         |
-|imfpush.app.unauthorized		           |Event sent for not authorised access                                              |
-|imfpush.app.unprovisioned             |App unprovisioned                                                                 |
-|imfpush.app.update                    |Updates to the Application                                                        |
-|imfpush.app-channel.read              |App channel information read                                                      |
-|imfpush.app-channels.read             |App channels information read                                                     |
-|imfpush.app-channel-group.read        |App channel group read                                                            |
-|imfpush.app-conf.delete               |Application configuration deletion                                                |
-|imfpush.app-conf.read                 |Application configuration read                                                    |	
-|imfpush.app-conf.update               |Application configuration update                                                  |
-|imfpush.app-device.create             |Device registration                                                               |
-|imfpush.app-device.delete             |Device unregistration                                                             |
-|imfpush.app-device.read               |Device information read                                                           |
-|imfpush.app-device.report.read        |Devices report                                                                    |
-|imfpush.app-devices.read              |Devices information read                                                          |
-|imfpush.app-message.create            |Send message                                                                      |
-|imfpush.app-message.latest.read       |Latest Messages information by timestamp                                          |
-|imfpush.app-message.read              |Message information read                                                          |
-|imfpush.app-messages.read             |Messages information read                                                         |
-|imfpush.app-subscription.create       |Device subscription for a tag                                                     |
-|imfpush.app-subscription.delete       |Device unsubscription for a tag                                                   |
-|imfpush.app-subscription.read         |Subscription information read                                                     |
-|imfpush.app-tag.create                |Tag creation                                                                      |
-|imfpush.app-tag.delete                |Tag deletion                                                                      |
-|imfpush.app-tag.read                  |Tag information read                                                              |
-|imfpush.app-tag.update                |Tag update                                                                        |
-|imfpush.app-tags.read                 |Tags information read                                                             |
-|imfpush.app-webhook.create            |Webhook creation                                                                  |
-|imfpush.app-webhook.delete            |Webhook deletion                                                                  |
-|imfpush.app-webhook.update            |Webhook update                                                                    |
-|imfpush.app-webhook.read              |Webhook information read                                                          |
-|imfpush.app-webhooks.read             |Webhook informations read                                                         |
+|Action                                      |Description                                                                       |
+|--------------------------------------------|----------------------------------------------------------------------------------|
+|imfpush.app.create                          |App provisioned                                                                   |
+|imfpush.app.delete                          |App unprovisioned                                                                 |
+|imfpush.app.list                            |Get all the settings of an application                                            |
+|imfpush.app.update                          |Updates to the Application                                                        |
+|imfpush.app-channel.create                  |Channel creation                                                                  |
+|imfpush.app-channel.delete                  |Channel deletion                                                                  |
+|imfpush.app-channel.list                    |Get all channels of an application                                                |
+|imfpush.app-channel.read                    |App channel information read                                                      |
+|imfpush.app-channel.update                  |Channel updation                                                                  |
+|imfpush.app-channel-group.create            |Channel group create                                                              |
+|imfpush.app-channel-group.delete            |Channel group delete                                                              |
+|imfpush.app-channel-group.list              |Get all channel groups of an application                                          |
+|imfpush.app-channel-group.read              |App channel group read                                                            |
+|imfpush.app-channel-group.update            |Channel group update                                                              |
+|imfpush.app-conf-apns.delete                |Application configuration deletion for apns                                       |
+|imfpush.app-conf-apns.read                  |Application configuration read for apns                                           |
+|imfpush.app-conf-apns.update                |Application configuration update for apns                                         |
+|imfpush.app-conf-chrome.delete              |Application configuration deletion for chrome                                     |
+|imfpush.app-conf-chrome.read                |Application configuration read for chrome                                         |
+|imfpush.app-conf-chrome.update              |Application configuration update for chrome                                       |
+|imfpush.app-conf-chromeapp.delete           |Application configuration deletion for chromeapp                                  |
+|imfpush.app-conf-chromeapp.read             |Application configuration read for chromeapp                                      |
+|imfpush.app-conf-chromeapp.update           |Application configuration update for chromeapp                                    |
+|imfpush.app-conf-firefox.delete             |Application configuration deletion for firefox                                    |
+|imfpush.app-conf-firefox.read               |Application configuration read for firefox                                        |
+|imfpush.app-conf-firefox.update             |Application configuration update for firefox                                      |
+|imfpush.app-conf-gcm.delete                 |Application configuration deletion for gcm                                        |
+|imfpush.app-conf-gcm.read                   |Application configuration read for gcm                                            |
+|imfpush.app-conf-gcm.update                 |Application configuration update for gcm                                          |
+|imfpush.app-conf-safari.delete              |Application configuration deletion for safari                                     |
+|imfpush.app-conf-safari.read                |Application configuration read for safari                                         |
+|imfpush.app-conf-safari.update              |Application configuration update for safari                                       |
+|imfpush.app-device.create                   |Device registration                                                               |
+|imfpush.app-device.delete                   |Device unregistration                                                             |
+|imfpush.app-device.list                     |Get all devices of an application                                                 |
+|imfpush.app-device.read                     |Device information read                                                           |
+|imfpush.app-device.update                   |Update device of an application                                                   |
+|imfpush.app-device.report.read              |Devices report                                                                    |
+|imfpush.app-message.create                  |Send message                                                                      |
+|imfpush.app-message.delete                  |Message deleted for an application                                                |
+|imfpush.app-message.list                    |Get messages for an application                                                   |
+|imfpush.app-message.read                    |Message information read                                                          |
+|imfpush.app-message.delivery_status.read    |Get delivery status of a message                                                  |
+|imfpush.app-message.delivery_status.update  |Update delivery status of a message                                               |
+|imfpush.app-message-latest.read             |Latest Messages information by timestamp                                          |
+|imfpush.app-message-report.read             |Get message report of an application                                              |
+|imfpush.app-message-report.list             |Get all messages report of an application                                         |
+|imfpush.app-message-status.read             |Get status of a message                                                           |
+|imfpush.app-subscription.create             |Device subscription for a tag                                                     |
+|imfpush.app-subscription.delete             |Device unsubscription for a tag                                                   |
+|imfpush.app-subscription.list               |Get subscription of an application                                                |
+|imfpush.app-subscription.read               |Subscription information read                                                     |
+|imfpush.app-tag.create                      |Tag creation                                                                      |
+|imfpush.app-tag.delete                      |Tag deletion                                                                      |
+|imfpush.app-tag.list                        |Get tags of an application                                                        |
+|imfpush.app-tag.read                        |Tag information read                                                              |
+|imfpush.app-tag.update                      |Tag update                                                                        |
+|imfpush.app-webhook.create                  |Webhook creation                                                                  |
+|imfpush.app-webhook.delete                  |Webhook deletion                                                                  |
+|imfpush.app-webhook.list                    |Get all web hooks of an application                                               |
+|imfpush.app-webhook.read                    |Webhook information read                                                          |
+|imfpush.app-webhook.update                  |Webhook update                                                                    |
+|imfpush.credentials.ready-to-use	           |Event sent before sending credentials for encryption or decryption to Key Protect |
+|imfpush.instance-key-state.update           |Events sent for KP lifecycle events like enable, disable, rotation and deletion.  |
 {: caption="Table 1. List of actions that genererate an event" caption-side="top"}
 
 Currently, the {{site.data.keyword.cloudaccesstrailshort}} Events for {{site.data.keyword.cloud_notm}} {{site.data.keyword.mobilepushshort}} service are available only on `Dallas, Washington DC, London, Sydney, and Tokyo`.
@@ -123,7 +150,8 @@ Events that are generated by an instance of the {{site.data.keyword.mobilepushsh
 1. Select **Activity Tracker** from the **Observability** navigation.
 1. Select the instance of Activity Tracker that correlates to the region for which you want to see events.
 1. Click **View LogDNA**. When the dashboard loads, you see an overview of all of the activity that is covered by that instance of Activity Tracker with LogDNA. You can use the search operators to filter the events by tags, sources, apps, or levels. You can also search for specific events or jump to a specific timeframe.
-1. To see events for a specific application, select the app that you want to track from the **All Apps** drop-down. To help meet compliance regulations, you can choose to retain your events or archive them into [IBM Cloud Object Storage](https://www.ibm.com/cloud/object-storage).
+1. To see events for **Push Notification Service** select **imfpush** from the **All Sources** drop-down. To help meet compliance regulations, you can choose to retain your events or archive them into [IBM Cloud Object Storage](https://www.ibm.com/cloud/object-storage).
+1. For update events user can use intialValue and newValue provided as part of **requestData** to check the delta. However if the information is confidential newValue will contain uniqueId of the resource, user can use newValue and applicationId provided as part of **requestData** to cross check the delta.
 
    ![Push Log DNA](images/mp-logDNA.png "View of your Activity Tracker instance with a sample audit event")
 

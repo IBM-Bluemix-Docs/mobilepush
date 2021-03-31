@@ -35,9 +35,9 @@ If you'd like help from the {{site.data.keyword.mobilepushshort}} team, gather a
 
    You can find this ID by looking at the "appGuid" field in the **Service Credentials** tab. For example:
 
-    ```
-    "appGuid": "8e54a510-5e90-4bac-8a03-d03511b20510"
-    ```
+   ```
+   "appGuid": "8e54a510-5e90-4bac-8a03-d03511b20510"
+   ```
 
 1. Do you have application log snippets that display the problem?
 1. What impact is the problem having on your service?

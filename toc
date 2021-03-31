@@ -27,9 +27,12 @@ Push Notifications
 	{: .navgroup-end}
     
     {: .navgroup id="howto"}
-    push_security.md
     push_byok.md
     push_sysdig.md
+
+    {: .topicgroup}
+    Enhancing Security
+        push_security.md
 
     {: .topicgroup}
     Enable notification options
