@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021
-lastupdated: "2021-04-01"
+lastupdated: "2021-04-05"
 
 keywords: push notifications, push notification, notifications, IBM Cloud monitoring
 
@@ -43,7 +43,7 @@ subcollection: mobilepush
 Use {{site.data.keyword.mon_full}} to gain operational visibility into the performance and health of your applications, services, and platforms. It offers administrators, DevOps teams, and developers full stack telemetry with advanced features to monitor and troubleshoot, define alerts, and design custom dashboards.
 {: shortdesc}
 
-To get started, you need to [Provision IBM Cloud Monitoring](https://cloud.ibm.com/catalog/services/ibm-cloud-monitoring?callback=/observe/monitoring/create) instance on your {{site.data.keyword.cloud_notm}} account. For more information on provisioning a IBM Cloud Monitoring instance, see [here](https://cloud.ibm.com/docs/Monitoring-with-Sysdig?topic=Monitoring-with-Sysdig-provision).
+To get started, you need to [Provision IBM Cloud Monitoring](https://cloud.ibm.com/catalog/services/ibm-cloud-monitoring?callback=/observe/monitoring/create) instance on your {{site.data.keyword.cloud_notm}} account. For more information on provisioning a IBM Cloud Monitoring instance, see [here](/docs/monitoring?topic=monitoring-provision).
 
 Currently, {{site.data.keyword.mon_full_notm}} integration is available for {{site.data.keyword.mobilepushshort}} service deployments according to the following table:
 
@@ -59,7 +59,7 @@ Currently, {{site.data.keyword.mon_full_notm}} integration is available for {{si
 ## Opting in to and enabling {{site.data.keyword.mobilepushshort}} monitoring metrics
 {: #push_opt_in_metrics}
 
-Before you can start using {{site.data.keyword.mobilepushshort}} monitoring metrics, you must first opt in and then [enable platform metrics](/docs/Monitoring-with-Sysdig?topic=Monitoring-with-Sysdig-platform_metrics_enabling). 
+Before you can start using {{site.data.keyword.mobilepushshort}} monitoring metrics, you must first opt in and then [enable platform metrics](/docs/monitoring?topic=monitoring-platform_metrics_enabling). 
 
 You can configure only one instance of the {{site.data.keyword.mon_full_notm}} service per region to collect platform metrics. 
 * To configure the IBM Cloud Monitoring instance, you must turn on the *platform metrics* configuration setting. 
@@ -115,7 +115,7 @@ Complete the following steps to launch the IBM Cloud Monitoring web UI from the 
 
 Complete the following steps to launch the IBM Cloud Monitoring web UI from the *Observability* page:
 
-1. [Launch the IBM Cloud Monitoring web UI](/docs/Monitoring-with-Sysdig?topic=Monitoring-with-Sysdig-launch).
+1. [Launch the IBM Cloud Monitoring web UI](/docs/monitoring?topic=monitoring-launch).
 1. Click **DASHBOARDS**.
 1. In the **Default Dashboards** section, expand **{{site.data.keyword.IBM_notm}}**.
 1. Choose the {{site.data.keyword.mobilepushshort}} dashboard from the list.
