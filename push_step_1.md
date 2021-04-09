@@ -40,18 +40,18 @@ subcollection: mobilepush
 # Obtain notification service provider credentials
 {: #push_step_1}
 
-To set up {{site.data.keyword.mobilepushshort}} service, you need to obtain the required credentials from your push notification service provider. 
+To set up {{site.data.keyword.mobilepushshort}} service, you need to obtain the required credentials from your push notification service provider.
 
 ## For Android
 {: #push_step_1_android}
 
-Firebase Cloud Messaging (FCM) is the gateway that is used to deliver push notifications to Android devices, Google Chrome browser and Chrome Apps & Extensions. To set up the {{site.data.keyword.mobilepushshort}} service on the console, you need to get your FCM credentials (Sender ID and API key). 
+Firebase Cloud Messaging (FCM) is the gateway that is used to deliver push notifications to Android devices, Google Chrome browser and Chrome Apps & Extensions. To set up the {{site.data.keyword.mobilepushshort}} service on the console, you need to get your FCM credentials (Sender ID and API key).
 
-The API key is stored securely and used by the {{site.data.keyword.mobilepushshort}} service to connect to the FCM server and the sender ID (project number) is used by the Android SDK and the JS SDK for Google Chrome and Mozilla Firefox on the client side. 
+The API key is stored securely and used by the {{site.data.keyword.mobilepushshort}} service to connect to the FCM server and the sender ID (project number) is used by the Android SDK and the JS SDK for Google Chrome and Mozilla Firefox on the client side.
 
 To set up FCM and obtain your credentials, complete the steps:
 
-1. Visit the [Firebase Console](https://console.firebase.google.com/?pli=1){: external}. A Google user account is required. 
+1. Visit the [Firebase Console](https://console.firebase.google.com/?pli=1){: external}. A Google user account is required.
 1. Click **Create a project**. If you are already having a project, then click **Add Project**.
 1. In the **Create a project** window, provide a project name, and accept the terms and enable or disable Google Analytics (*optional*) by selecting the toggle switch and click **Continue**.
 1. If Google Analytics is enabled, then in the **Configure Google Analytics** window, choose the **Analytics location**, and accept the terms. Click **Create Project**.
@@ -67,7 +67,7 @@ You would also need to generate the `google-services.json` file. Complete the fo
 
    ![Firebase Project overview](images/FCM_settings_6.jpg "Firebase Project overview consoles open")
 
-1. In *Add Firebase to your Android app* window, first add **com.ibm.mobilefirstplatform.clientsdk.android.push** as the Package Name. The App nickname field is optional. Click **Register APP**. 
+1. In *Add Firebase to your Android app* window, first add **com.ibm.mobilefirstplatform.clientsdk.android.push** as the Package Name. The App nickname field is optional. Click **Register APP**.
 
    ![Adding Firebase to your Android window](images/FCM_1.jpg "Add Firebase to your Android app screen on the Enter app details tab with the package and app name fields")
 
@@ -78,7 +78,7 @@ You would also need to generate the `google-services.json` file. Complete the fo
    If you don't have any apps to start with, download the Android sample app [here](https://github.com/ibm-bluemix-mobile-services/bms-samples-android-hellopush/).
    {: note}
 
-1. The `google-services.json` file is generated. 
+1. The `google-services.json` file is generated.
 
 Once you have obtained your FCM credentials and have generated the `google-services.json` file, the next step is to [Configure a service instance](/docs/mobilepush?topic=mobilepush-push_step_2).
 
@@ -88,7 +88,7 @@ Google has deprecated GCM and has integrated Cloud Messaging with Firebase. You 
 ## For iOS
 {: #push_step_1_ios}
 
-For iOS devices and applications, Apple Push Notification Service (APNs) allows application developers to send remote notifications from {{site.data.keyword.mobilepushshort}} service instance on IBM Cloud (the provider) to iOS devices and applications. Messages are sent to a target application on the device. 
+For iOS devices and applications, Apple Push Notification Service (APNs) allows application developers to send remote notifications from {{site.data.keyword.mobilepushshort}} service instance on IBM Cloud (the provider) to iOS devices and applications. Messages are sent to a target application on the device.
 
 You need to obtain and configure your APNs credentials. The APNs certificates are securely managed by {{site.data.keyword.mobilepushshort}} service and used to connect to APNs server as a provider.
 
@@ -102,49 +102,50 @@ Ensure that you have an [Apple Developers](https://developer.apple.com/){: exter
 
 1. Go to the [Apple Developer](https://developer.apple.com){: external} portal, click **Member Center**, and select **Certificates, Identifiers & Profiles**.
 1. Go to **Identifiers** > **Add identifier button**.
-1. In the **Register a New Identifier** page, select the **AppIDs** option. 
+1. In the **Register a New Identifier** page, select the **AppIDs** option.
 1. Provide the App name in the App ID Description Name field. For example, ACME Push Notifications.
 1. Provide a string for the App ID Prefix.  
 1. For the Bundle ID, choose **Explicit** and provide a Bundle ID value. It is recommended that you provide a reverse domain-name style string. For example, `com.ACMECloud.push`
 1. Select the **{{site.data.keyword.mobilepushshort}}** check-box from the Capabilities and click **Continue**.
 1. Go through your settings and click **Register** > **Done**.
 
-Your App ID is now registered. 
+Your App ID is now registered.
 
 ![Registered App ID](images/push_ios_register_appid.jpg "Apple Developer portal screen with the App ID's navigation option-selected showing App IDs")
 
-### Create a development and distribution APNs SSL certificate
+### Create a development and distribution APNs SSL certificate - p12 or p8
 {: #push_step_1_ios_3}
 
 Before you obtain an APNs certificate, you must first generate a certificate signing request (CSR) and submit it to Apple, the certificate authority (CA). The CSR contains information that identifies your company and your public and private key that you use to sign for your Apple push notifications. Then, generate the SSL certificate on the iOS Developer Portal. The certificate, along with its public and private key, is stored in Keychain Access.
 
-You can use APNs in two modes: 
+You can use APNs in two modes:
 - Sandbox mode for development and testing.
 - Production mode when distributing applications through the App Store (or other enterprise distribution mechanisms).
 
 You must obtain separate certificates for your development and distribution environments. The certificates are associated with an App ID for the app that is the recipient of remote notifications. For production, you can create up to two certificates. IBM Cloud uses the certificates to establish an SSL connection with APNs.
 
 <!-- Create a development and distribution SSL certificate. -->
+### p12 Certificate
 
 1. Go to the [Apple Developer](https://developer.apple.com){: external} website, click **Member Center**, and select **Certificates, Identifiers & Profiles**.
-1. In the **Identifiers** area, select your App ID. 
+1. In the **Identifiers** area, select your App ID.
 1. Select the **Push Notifications** check-box OR select the **configure** option, then:
    - On Development SSL certificate pane, click **Create Certificate..**.
    - On Production SSL certificate pane, click **Create Certificate..**.
 
    ![Push Notification SSL certificates](images/certificate_createssl.jpg "Edit App ID screen with the Push Notifications option, Development SSL certificate, and Production SSL certificate options selected")
-   
+
 1. Use **Keychain Access** application on your Mac to create a Certificate Signing Request (CSR).
-1. From the menu, select **Keychain Access > Certificate Assistant > Request a Certificate From a Certificate Authority…** 
+1. From the menu, select **Keychain Access > Certificate Assistant > Request a Certificate From a Certificate Authority…**
 1. In **Certificate Information**, enter the email address that is associated with your App Developer account and a common name. Give a meaningful name that helps you identify whether it is a certificate for development (sandbox) or distribution (production); for example, _sandbox-apns-certificate_ or _production-apns-certificate_.
 1. Select **Save to disk** to download the `.certSigningRequest` file to your desktop, then click **Continue**.
 1. In the **Save As** menu option, name the `.certSigningRequest` file and click **Save**.
 1. Click **Done**. You now have a CSR.
-1. For the Upload CSR file option, click **Choose File**, and select file  `CertificateSigningRequest.certSigningRequest`. 
+1. For the Upload CSR file option, click **Choose File**, and select file  `CertificateSigningRequest.certSigningRequest`.
 1. Click **Continue**.
 1. On the Download, Install and Backup pane, click **Download**. The `aps_development.cer` file is downloaded.
 
-   ![Download certificate](images/push_certificate_download.jpg "Install and backup page showing the Download button being selected")	
+   ![Download certificate](images/push_certificate_download.jpg "Install and backup page showing the Download button being selected")
 
 1. Click **Download** to download your certificate, then click **Done**.
 1. On your Mac, go to **Keychain Access > My Certificates**, and locate your newly installed certificate. Double-click the certificate to install it into the Keychain Access.
@@ -153,14 +154,36 @@ You must obtain separate certificates for your development and distribution envi
    ![Export certificate and keys](images/keychain_export_key.jpg "My Certificates page showing the right-click option on a certificate with the Export menu option highlighted")
 
 1. In the **Save As** field, provide the certificate a meaningful name. For example, `sandbox_apns.p12_certifcate` or `production_apns.p12`, then click **Save**.
-	
+
    ![Export certificate and keys](images/certificate_p12v2.jpg "Save As screen showing text input for the Save As field")
 
 1. In the **Enter a password** field, enter a password to protect the exported items, then click **OK**. You can use this password to configure your APNs settings on the {{site.data.keyword.mobilepushshort}} service console.
-	
+
    ![Export certificate and keys](images/export_p12.jpg "Password and verify fields to enter a password to protect the exported item")
 
 1. The **Key Access.app** prompts you to export your key from the **Keychain** screen. Enter your administrative password for your Mac to allow your system to export these items, and then select the **Always Allow** option. A `.p12` certificate is generated on your desktop.
+
+### p8 Certificate
+
+1. In the Apple Developer portal navigate to - Certificates, Identifiers & Profiles - Left Nav
+
+   ![Install p8 certificate](images/PS81-1.png "Left navigation panel on Apple Developer")
+1. Navigate to **Keys** on Left Nav.
+
+   ![Install p8 certificate](images/PS82.png "Navigate to keys")
+
+1. Enter **Key Name** and enable APNs, click on **continue**.
+
+   ![Register a new key](images/PS83.png "Enable APN")
+
+1. Click **Register**.
+   ![Register p8 certificate](images/PS84.png "Enable APN")
+
+* Make sure to download Keys in new redirected page after registration as it is a one time activity.
+{: note}
+
+   **KeyID** will be visible as part of the file and displayed in the UI, this **KeyID** will be used for registering APNS certificate.  **TeamID** is provided by apple for the developer account, can be seen next to the **Team Name**. **TeamID** will be used for registering APNS certificate.  **BundleID** can be registered same as P12 certificate.
+   {: note}
 
 ### Creating a development provisioning profile
 {: #create-push-credentials-dev-profile}
@@ -194,15 +217,15 @@ After obtaining the credentials, the next step is to [Configure a service instan
 
 The {{site.data.keyword.IBM_notm}} {{site.data.keyword.mobilepushshort}} service extends capabilities to send notifications to your browser and also Chrome Apps & Extensions.
 
-The website URL or the domain name of your website is required by the {{site.data.keyword.mobilepushshort}} service to identify the requests that need to be allowed. 
+The website URL or the domain name of your website is required by the {{site.data.keyword.mobilepushshort}} service to identify the requests that need to be allowed.
 
 For example, `https://www.acmebanks.com`
 
-A {{site.data.keyword.mobilepushshort}} service instance supports only one domain name at a time. Hence, ensure that the same value is set for Chrome, Firefox, and Safari. Chrome and Safari browsers require more configuration for web push. You would need an FCM API key, as an FCM endpoint is used to deliver messages in Chrome. 
+A {{site.data.keyword.mobilepushshort}} service instance supports only one domain name at a time. Hence, ensure that the same value is set for Chrome, Firefox, and Safari. Chrome and Safari browsers require more configuration for web push. You would need an FCM API key, as an FCM endpoint is used to deliver messages in Chrome.
 
 To set up the service for Chrome, Firefox browsers, and Chrome Apps & Extensions, see [Configure a service instance](/docs/mobilepush?topic=mobilepush-push_step_2).
 
-### Configuring for Safari web push 
+### Configuring for Safari web push
 {: #configure-safari}
 
 The supported version for {{site.data.keyword.mobilepushshort}} service on Safari is 10.0. You need to generate a certificate through your Apple Developer account before you can configure your browser to receive notifications.
@@ -212,22 +235,22 @@ The supported version for {{site.data.keyword.mobilepushshort}} service on Safar
 
 Ensure that you have an Apple Developer account. You need to register a website Push ID and generate a certificate to configure your Safari browser to receive notifications. The following steps help you get started:
 
-1. In the Apple Developer Member center, click **Certificates, ID & Profiles**. 
+1. In the Apple Developer Member center, click **Certificates, ID & Profiles**.
 1. Click **Identifiers** and then **Add identifier button**.
 1. In the **Register a New Identifier** page, select the **Website Push IDs** option.
 
    ![Push Notifications console](images/safari_1.jpg "Apple Developer portal showing the Website Push IDs navigation option")
 
 1. In the Register Website Push ID pane, provide an appropriate Website Push ID description and identifier ID. It is recommended that this is in reverse-domain name format, starting with `web`. For example, `web.com.acmebanks`.
-1. Register the Website Push ID. You now have your Website Push ID. 
+1. Register the Website Push ID. You now have your Website Push ID.
 1. Open the identifier and select **Create certificate** to create a certificate to use for the Website Push ID.
 1. Use **Keychain Access** application on your Mac to create a Certificate Signing Request (CSR).
-1. From the menu, select **Keychain Access > Certificate Assistant > Request a Certificate From a Certificate Authority…** 
+1. From the menu, select **Keychain Access > Certificate Assistant > Request a Certificate From a Certificate Authority…**
 1. In **Certificate Information**, enter the email address that is associated with your App Developer account and a common name. Give a meaningful name that helps you identify whether it is a certificate for development (sandbox) or distribution (production); for example, _sandbox-apns-certificate_ or _production-apns-certificate_.
 1. Select **Save to disk** to download the `.certSigningRequest` file to your desktop, then click **Continue**.
 1. In the **Save As** menu option, name the `.certSigningRequest` file and click **Save**.
 1. Click **Done**. You now have a CSR.
-1. For the Upload CSR file option, click **Choose File**, and select file  `CertificateSigningRequest.certSigningRequest`. 
+1. For the Upload CSR file option, click **Choose File**, and select file  `CertificateSigningRequest.certSigningRequest`.
 1. Click **Continue**. Ensure that you download the Website push certificate created in the `.cer` format.
 1. Open the Certificate in the KeyChain Access tool. Right-click and export as a p12 certificate. Note the password that is provided during the generation of the p12 certificate.
 

@@ -37,7 +37,7 @@ subcollection: mobilepush
 {:cordova: .ph data-hd-programlang='Cordova'}
 {:xml: .ph data-hd-programlang='xml'}
 
-# Configure a service instance 
+# Configure a service instance
 {: #push_step_2}
 
 Ensure that you went through [Obtain notification service provider credentials](/docs/mobilepush?topic=mobilepush-push_step_1).
@@ -55,7 +55,7 @@ Ensure that you went through [Obtain notification service provider credentials](
 To configure the service with FCM credentials for Android applications, complete the following steps:
 
 1. In the {{site.data.keyword.mobilepushshort}} service console, click **Configure Service** on the left navigation menu.
-1. In the Android tile, click **Configure**. 
+1. In the Android tile, click **Configure**.
 1. In the side panel, update the FCM Push Credentials with the **Sender ID/Project number** and **Server Key** or **Legacy Server Key**. You can get these details from your FCM **Project Settings &gt; Cloud Messaging** section.
 
    ![Configure Android apps](images/mpush-android-config.png "Graphic outlining the configuring push service instance for Android")
@@ -64,7 +64,7 @@ To configure the service with FCM credentials for Android applications, complete
 
 After you have setup the service, you need to [Set up the Push service client SDKs](/docs/mobilepush?topic=mobilepush-push_step_3).
 
-## For iOS apps 
+## For iOS apps
 {: #enable-push-ios-notifications}
 
 To use the {{site.data.keyword.mobilepushshort}} service to send notifications, upload the `.p12` certificates that you had created in [Obtain notification service provider credentials](/docs/mobilepush?topic=mobilepush-push_step_1). This certificate contains the private key and SSL certificates that are required to build and publish your application. You can also use the ReST API to upload an APNs certificate.
@@ -77,13 +77,16 @@ For more information about using the APNs, see [iOS Developer Library: Local and
 To set up APNs on the Push Notification service console, complete the steps:
 
 1. In the {{site.data.keyword.mobilepushshort}} service console, click **Configure Service** on the left navigation menu.
-1. In the iOS tile, click **Configure**. 
+1. In the iOS tile, click **Configure**.
 1. In the side panel, update the **APNs Push Credentials** information.
-   - Select **Sandbox/development** or **Production** (distribution).
-   - Click **Add file** and upload the `p.12` certificate that you have created. 
-   - In the **Password** field, enter the password that is associated with the `.p12` certificate file.
+   - Select the certificate type: .p12 or .p8.
+If device is registered and environment type (Sandbox/Production) of certificate does not match, push will delete devices on message send - as it will be considered as invalid device. Remember to select correct environment.
+{: note}
+   - Click **Add file** to upload the certificate that you have created.
+   - If the certificate **type** is .p12, enter the password associated with the certificate file.
+   - If the selected certificate **type** is .p8, enter values for **Key id**, **Team id**, and **Bundle id** associated with the certificate file.
 
-   ![Configure iOS apps](images/mpush-ios-config.png "Graphic outlining the configuring push service instance for iOS")
+   ![Configure iOS apps](images/p12-p8-certificate.png "Graphic outlining the configuring push service instance for iOS")
 
 1. Click **Save**. The {{site.data.keyword.mobilepushfull}} service is now configured.
 
@@ -95,9 +98,9 @@ After you have setup the service, you need to [Set up the Push service client SD
 To configure the service with credentials for your Chrome web app, complete the following steps:
 
 1. In the {{site.data.keyword.mobilepushshort}} service console, click **Configure Service** on the left navigation menu.
-1. In the Chrome tile, click **Configure**. 
+1. In the Chrome tile, click **Configure**.
 1. In the side panel, update the **Website URL** of your website that will be registered to receive push notifications.
-1. Enter the **Google server API Key**. 
+1. Enter the **Google server API Key**.
 
    ![Configure Chrome browser apps](images/mpush-chrome-config.png "Graphic outlining the configuring push service instance for Chrome browser")
 
@@ -113,7 +116,7 @@ Ensure that you have gone through [Obtain notification service provider credenti
 To configure the service with FCM credentials for your Chrome apps and extensions, complete the following steps:
 
 1. In the {{site.data.keyword.mobilepushshort}} service console, click **Configure Service** on the left navigation menu.
-1. In the Chrome apps and extensions tile, click **Configure**. 
+1. In the Chrome apps and extensions tile, click **Configure**.
 1. In the side panel, update the FCM Push Credentials with the **Sender ID/Project number** and **Server Key** or **Legacy Server Key**. You can get these details from your FCM **Project Settings &gt; Cloud Messaging** section.
 
    ![Configure Chrome apps and extensions](images/mpush-chrome-apps-config.png "Graphic outlining the configuring push service instance for Chrome apps and extensions")
@@ -128,7 +131,7 @@ After you have setup the service, you need to [Set up the Push service client SD
 To configure the service with credentials for your Firefox web app, complete the following steps:
 
 1. In the {{site.data.keyword.mobilepushshort}} service console, click **Configure Service** on the left navigation menu.
-1. In the Firefox tile, click **Configure**. 
+1. In the Firefox tile, click **Configure**.
 1. In the side panel, update the **Website URL** of your website that will be registered to receive push notifications.
 
    ![Configure Firefox browser](images/mpush-firefox-config.png "Graphic outlining the configuring push service instance for Firefox browser")
@@ -150,7 +153,7 @@ For more information about using the APNs, see [iOS Developer Library: Local and
 To set up APNs on the Push Notification service console, complete the steps:
 
 1. In the {{site.data.keyword.mobilepushshort}} service console, click **Configure Service** on the left navigation menu.
-1. In the Safari tile, click **Configure**. 
+1. In the Safari tile, click **Configure**.
 1. In the side panel, update the following details:
    - **Website name** - This is the name that you have provided in the Notification center.
    - **Website push ID** - Update with the reverse-domain string for your Website Push ID. For example, web.com.acmebanks.www.
@@ -166,7 +169,7 @@ To set up APNs on the Push Notification service console, complete the steps:
 
 After you set up the service for iOS applications, you need to [Set up Push service client SDKs](/docs/mobilepush?topic=mobilepush-push_step_3).
 
-## For Cordova applications 
+## For Cordova applications
 {: #push_step_2_b}
 
 Cordova is a platform for building hybrid applications with JavaScript, CSS, and HTML. The {{site.data.keyword.mobilepushshort}} service supports development of Cordova-based iOS and Android applications.
