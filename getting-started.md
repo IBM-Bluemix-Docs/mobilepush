@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-06-18"
+lastupdated: "2021-04-21"
 
 keywords: push notifications, push notification, ibm cloud catalog, push service client sdk, notification provider, getting started
 
@@ -36,6 +36,10 @@ subcollection: mobilepush
 {:android: .ph data-hd-programlang='Android'}
 {:cordova: .ph data-hd-programlang='Cordova'}
 {:xml: .ph data-hd-programlang='xml'}
+{:deprecated: .deprecated}
+
+{{site.data.keyword.mobilepushfull}} is deprecated. As of 31 July 2020, you cannot provision new {{site.data.keyword.mobilepushshort}} instances. Existing instances are supported until 31 July 2021. Any instance that is still provisioned as of 31 July 2021 will be deleted. More information, on the [deprecation announcement blog](https://www.ibm.com/cloud/blog/announcements/ibm-push-notifications-deprecation){: external}.
+{: deprecated}
 
 # Getting started with {{site.data.keyword.mobilepushshort}}
 {: #getting-started}
