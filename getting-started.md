@@ -38,7 +38,7 @@ subcollection: mobilepush
 {:xml: .ph data-hd-programlang='xml'}
 {:deprecated: .deprecated}
 
-{{site.data.keyword.mobilepushfull}} is deprecated. As of 31 July 2020, you cannot provision new {{site.data.keyword.mobilepushshort}} instances. Existing instances are supported until 31 July 2021. Any instance that is still provisioned as of 31 July 2021 will be deleted. More information, on the [deprecation announcement blog](https://www.ibm.com/cloud/blog/announcements/ibm-push-notifications-deprecation){: external}.
+{{site.data.keyword.mobilepushfull}} is deprecated. Post July 30, 2021, you cannot provision new {{site.data.keyword.mobilepushshort}} instances. Existing instances are supported until June 15 2022, after which any remaining instance will be automatically deleted. More information, on the [deprecation announcement blog](https://www.ibm.com/cloud/blog/announcements/ibm-push-notifications-deprecation){: external}.
 {: deprecated}
 
 # Getting started with {{site.data.keyword.mobilepushshort}}
