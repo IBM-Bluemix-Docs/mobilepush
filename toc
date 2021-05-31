@@ -9,23 +9,22 @@ Push Notifications
     getting-started.md
     [What is push notifications?](https://www.ibm.com/in-en/cloud/push-notifications)
     index.md
-    developer-overview.md	
-    
+    developer-overview.md
+
     {: .topicgroup}
     Basic steps
         push_step_prereq.md
         push_step_1.md
         push_step_2.md
         push_step_3.md
-        push_step_4.md	
+        push_step_4.md
 
 	{: .topicgroup}
     Tutorials
-        [Swift App with Push and Analytics](https://cloud.ibm.com/docs/tutorials?topic=solution-tutorials-ios-mobile-push-analytics#ios-mobile-application-with-push-and-analytics)
-        [Android App with Push and Analytics](https://cloud.ibm.com/docs/tutorials?topic=solution-tutorials-android-mobile-push-analytics#android-native-mobile-application-with-push-and-analytics)	
-        [Hybrid App with Push and Analytics](https://cloud.ibm.com/docs/tutorials?topic=solution-tutorials-hybrid-mobile-push-analytics#hybrid-mobile-application-with-push-and-analytics)	
+        push-tutorial-android.md
+        push-tutorial-ios.md
 	{: .navgroup-end}
-    
+
     {: .navgroup id="howto"}
     push_byok.md
     push_sysdig.md
@@ -45,21 +44,20 @@ Push Notifications
 
     {: .topicgroup}
     Monitoring notifications
-        push_monitoring.md	
+        push_monitoring.md
         push_message_status.md
         push_template_message.md
         push_webhook.md
 
     push_iam.md
-    push_openwisk.md	
+    push_openwisk.md
     {: .navgroup-end}
 
     {: .navgroup id="help"}
     upgrading.md
-    relatedlinks.md	
-    faq.md	
-    
-    {: .topicgroup} 
+    faq.md
+
+    {: .topicgroup}
     Troubleshooting
         support.md
         mp-reporting-problem.md
@@ -76,7 +74,7 @@ Push Notifications
         Service errors
             push-troubleshoot-service-error.md
     {: .navgroup-end}
-	
+
     {: .navgroup id="reference"}
     whats-new.md
     sample-apps.md
@@ -84,9 +82,9 @@ Push Notifications
     push_activity_tracker.md
     push-compliance.md
     /mobilepush-cli-plugin/mobilepush-cli-plugin-mobilepush-cli
-	
+
     {: .topicgroup}
     APIs and SDKs
         app_api.md
-        install-sdk.md	
+        install-sdk.md
     {: .navgroup-end}
